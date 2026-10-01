@@ -776,6 +776,7 @@ bool gpu_shader_create_info_compile_all(const char *name_starts_with_filter)
   int success = 0;
   int skipped_filter = 0;
   int skipped = 0;
+  int skipped_vertex_stores = 0;
   int total = 0;
 
   Vector<AsyncCompilationHandle> handles;
@@ -793,6 +794,14 @@ bool gpu_shader_create_info_compile_all(const char *name_starts_with_filter)
           (GPU_geometry_shader_support() == false && info->geometry_source_ != nullptr))
       {
         skipped++;
+        continue;
+      }
+      if (!GPU_vertex_pipeline_stores_and_atomics_support() &&
+          info->vertex_source_ == "draw_debug_draw_display_vert.glsl")
+      {
+        skipped_vertex_stores++;
+        printf("Shader Test skipped %s: developer lifetime feedback requires "
+               "vertexPipelineStoresAndAtomics\n", info->name_.c_str());
         continue;
       }
       total++;
@@ -857,6 +866,9 @@ bool gpu_shader_create_info_compile_all(const char *name_starts_with_filter)
   }
   if (skipped > 0) {
     printf(" (skipped %d for compatibility reasons)", skipped);
+  }
+  if (skipped_vertex_stores > 0) {
+    printf(" (skipped %d developer shaders requiring vertex stores)", skipped_vertex_stores);
   }
   printf("\n");
   return success == total;

@@ -82,6 +82,7 @@ class VKFrameBuffer : public FrameBuffer {
    * \brief Get color attachment formats in used by the framebuffer.
    */
   Span<VkFormat> color_attachment_formats_get() const;
+  bool tile_blend_color_attachment_is_compatible() const;
 
   /**
    * Ensure that the size of the frame-buffer matches the first attachment resolution.

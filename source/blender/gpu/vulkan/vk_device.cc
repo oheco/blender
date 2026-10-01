@@ -147,6 +147,7 @@ void VKDevice::init(GHOST_IContext *ghost_context)
   vk_queue_ = handles.queue;
   mem_allocator_ = handles.vma_allocator;
   queue_mutex_ = static_cast<std::mutex *>(handles.queue_mutex);
+  shader_tile_image_color_read_enabled_ = handles.shader_tile_image_color_read_enabled;
 
   init_physical_device_extensions();
   init_physical_device_properties();

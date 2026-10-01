@@ -30,6 +30,7 @@
 #include "vk_pixel_buffer.hh"
 #include "vk_query.hh"
 #include "vk_shader.hh"
+#include "vk_tile_blend_compat.hh"
 #include "vk_state_manager.hh"
 #include "vk_storage_buffer.hh"
 #include "vk_texture.hh"
@@ -164,7 +165,9 @@ static Vector<StringRefNull> missing_capabilities_get(VkPhysicalDevice vk_physic
   if (features.features.fragmentStoresAndAtomics == VK_FALSE) {
     missing_capabilities.append("fragment stores and atomics");
   }
-  if (features.features.dualSrcBlend == VK_FALSE) {
+  if (features.features.dualSrcBlend == VK_FALSE &&
+      !vk_tile_blend_physical_device_candidate(vk_physical_device))
+  {
     missing_capabilities.append("dual source blending");
   }
   if (features.features.imageCubeArray == VK_FALSE) {
@@ -249,7 +252,9 @@ static bool vk_instance_create_for_platform_checks(VkInstance *r_instance)
   vk_application_info.applicationVersion = VK_MAKE_VERSION(1, 0, 0);
   vk_application_info.pEngineName = "Blender";
   vk_application_info.engineVersion = VK_MAKE_VERSION(1, 0, 0);
-  vk_application_info.apiVersion = VK_API_VERSION_1_2;
+  vk_application_info.apiVersion = vk_tile_blend_experiment_requested() ?
+                                       VK_API_VERSION_1_3 :
+                                       VK_API_VERSION_1_2;
 
   VkInstanceCreateInfo vk_instance_info = {VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO};
   vk_instance_info.pApplicationInfo = &vk_application_info;
@@ -457,7 +462,9 @@ void VKBackend::platform_init(const VKDevice &device)
   GPUDeviceType device_type = device.device_type();
   GPUDriverType driver = device.driver_type();
   GPUOSType os = determine_os_type();
-  GPUSupportLevel support_level = GPU_SUPPORT_LEVEL_SUPPORTED;
+  GPUSupportLevel support_level = device.shader_tile_image_color_read_enabled() ?
+                                       GPU_SUPPORT_LEVEL_LIMITED :
+                                       GPU_SUPPORT_LEVEL_SUPPORTED;
 
   std::string vendor_name = device.vendor_name();
   std::string driver_version = device.driver_version();
@@ -542,6 +549,8 @@ void VKBackend::detect_workarounds(VKDevice &device)
   extensions.dynamic_rendering_unused_attachments = device.supports_extension(
       VK_EXT_DYNAMIC_RENDERING_UNUSED_ATTACHMENTS_EXTENSION_NAME);
   extensions.logic_ops = device.physical_device_features_get().logicOp;
+  extensions.shader_tile_image_color_read =
+      device.shader_tile_image_color_read_enabled();
   extensions.maintenance4 = device.supports_extension(VK_KHR_MAINTENANCE_4_EXTENSION_NAME);
   extensions.memory_priority = device.supports_extension(VK_EXT_MEMORY_PRIORITY_EXTENSION_NAME);
   extensions.pageable_device_local_memory = device.supports_extension(
@@ -606,6 +615,12 @@ void VKBackend::detect_workarounds(VKDevice &device)
   if ((G.debug & G_DEBUG_GPU_FORCE_VULKAN_LOCAL_READ) == 0 &&
       !GPU_type_matches(GPU_DEVICE_QUALCOMM, GPU_OS_ANY, GPU_DRIVER_ANY))
   {
+    extensions.dynamic_rendering_local_read = false;
+  }
+
+  if (extensions.shader_tile_image_color_read) {
+    /* Initial tile integration uses full pipelines and normal attachment layout. */
+    extensions.graphics_pipeline_library = false;
     extensions.dynamic_rendering_local_read = false;
   }
 

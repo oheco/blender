@@ -24,6 +24,7 @@
 #endif
 
 #include "vulkan/vk_ghost_api.hh"
+#include "vulkan/vk_tile_blend_compat.hh"
 
 #if !defined(_WIN32) or defined(_M_ARM64)
 /* Silence compilation warning on non-windows x64 systems. */
@@ -221,6 +222,7 @@ class GHOST_DeviceVK {
 
   bool use_vk_ext_swapchain_maintenance_1 = false;
   bool use_vk_ext_swapchain_colorspace = false;
+  bool shader_tile_image_color_read_enabled = false;
 
  public:
   GHOST_DeviceVK(VkPhysicalDevice vk_physical_device, const bool use_vk_ext_swapchain_colorspace)
@@ -305,7 +307,9 @@ class GHOST_DeviceVK {
   void init_memory_allocator(VkInstance vk_instance)
   {
     VmaAllocatorCreateInfo vma_allocator_create_info = {};
-    vma_allocator_create_info.vulkanApiVersion = VK_API_VERSION_1_2;
+    vma_allocator_create_info.vulkanApiVersion = shader_tile_image_color_read_enabled ?
+                                                   VK_API_VERSION_1_3 :
+                                                   VK_API_VERSION_1_2;
     vma_allocator_create_info.physicalDevice = vk_physical_device;
     vma_allocator_create_info.device = vk_device;
     vma_allocator_create_info.instance = vk_instance;
@@ -329,6 +333,7 @@ class GHOST_DeviceVK {
 struct GHOST_InstanceVK {
   VkInstance vk_instance = VK_NULL_HANDLE;
   VkPhysicalDevice vk_physical_device = VK_NULL_HANDLE;
+  uint32_t api_version = VK_API_VERSION_1_2;
 
   GHOST_ExtensionsVK extensions;
 
@@ -360,6 +365,17 @@ struct GHOST_InstanceVK {
 
   bool create_instance(uint32_t vulkan_api_version)
   {
+    if (blender::gpu::vk_tile_blend_experiment_requested()) {
+      uint32_t loader_version = 0;
+      if (vkEnumerateInstanceVersion(&loader_version) != VK_SUCCESS ||
+          loader_version < VK_API_VERSION_1_3)
+      {
+        CLOG_ERROR(&LOG, "Experimental shader tile blend requires a Vulkan 1.3 loader");
+        return false;
+      }
+      vulkan_api_version = std::max(vulkan_api_version, uint32_t(VK_API_VERSION_1_3));
+    }
+    api_version = vulkan_api_version;
     VkApplicationInfo vk_application_info = {VK_STRUCTURE_TYPE_APPLICATION_INFO,
                                              nullptr,
                                              "Blender",
@@ -418,7 +434,9 @@ struct GHOST_InstanceVK {
           !device_vk.features.features.fragmentStoresAndAtomics ||
           !device_vk.features.features.multiDrawIndirect ||
           !device_vk.features.features.imageCubeArray ||
-          !device_vk.features.features.dualSrcBlend ||
+          (!device_vk.features.features.dualSrcBlend &&
+           !(api_version >= VK_API_VERSION_1_3 &&
+             blender::gpu::vk_tile_blend_physical_device_candidate(physical_device))) ||
           !device_vk.features.features.imageCubeArray)
       {
         continue;
@@ -533,6 +551,23 @@ struct GHOST_InstanceVK {
     device.extensions.enable(required_device_extensions);
     device.extensions.enable(optional_device_extensions, true);
 
+    const bool use_tile_blend = !device.features.features.dualSrcBlend &&
+                                api_version >= VK_API_VERSION_1_3 &&
+                                blender::gpu::vk_tile_blend_physical_device_candidate(
+                                    vk_physical_device);
+    if (use_tile_blend) {
+      if (!device.extensions.enable(VK_EXT_SHADER_TILE_IMAGE_EXTENSION_NAME)) {
+        return false;
+      }
+      /* The shaders library does not carry the target color format. Keep the
+       * experimental path in full pipelines until GPL tile inputs are tested. */
+      device.extensions.disable(VK_EXT_GRAPHICS_PIPELINE_LIBRARY_EXTENSION_NAME);
+      device.extensions.disable(VK_KHR_DYNAMIC_RENDERING_LOCAL_READ_EXTENSION_NAME);
+      CLOG_WARN(&LOG,
+                "Experimental coherent tile CUSTOM blending enabled; only recorded "
+                "single-sample attachment formats are permitted, not native dualSrcBlend");
+    }
+
     /* Disabling pipeline libraries and dynamic vertex input on AMD drivers due to random crashes
      * that are also happening when enabling the extension, but not using it at all. This needs
      * more investigation as it could be related to development workflows.
@@ -593,7 +628,7 @@ struct GHOST_InstanceVK {
     device_features.shaderClipDistance = VK_TRUE;
     device_features.fragmentStoresAndAtomics = VK_TRUE;
     device_features.logicOp = device.features.features.logicOp;
-    device_features.dualSrcBlend = VK_TRUE;
+    device_features.dualSrcBlend = device.features.features.dualSrcBlend;
     device_features.imageCubeArray = VK_TRUE;
     device_features.multiDrawIndirect = VK_TRUE;
     device_features.drawIndirectFirstInstance = VK_TRUE;
@@ -639,6 +674,14 @@ struct GHOST_InstanceVK {
     dynamic_rendering.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DYNAMIC_RENDERING_FEATURES;
     dynamic_rendering.dynamicRendering = VK_TRUE;
     feature_struct_ptr.push_back(&dynamic_rendering);
+
+    VkPhysicalDeviceShaderTileImageFeaturesEXT tile_image = {
+        VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_TILE_IMAGE_FEATURES_EXT};
+    if (use_tile_blend) {
+      /* Only COLOR was needed and tested. Never silently enable depth/stencil. */
+      tile_image.shaderTileImageColorReadAccess = VK_TRUE;
+      feature_struct_ptr.push_back(&tile_image);
+    }
 
     VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT
         dynamic_rendering_unused_attachments = {};
@@ -756,6 +799,7 @@ struct GHOST_InstanceVK {
     device_create_info.pNext = feature_struct_ptr[0];
     VK_CHECK(vkCreateDevice(vk_physical_device, &device_create_info, nullptr, &device.vk_device),
              GHOST_kFailure);
+    device.shader_tile_image_color_read_enabled = use_tile_blend;
     device.init_generic_queue();
     device.init_memory_allocator(vk_instance);
     return true;
@@ -1148,6 +1192,7 @@ GHOST_TSuccess GHOST_ContextVK::getVulkanHandles(GHOST_VulkanHandles &r_handles)
         device_vk.generic_queue,
         &device_vk.queue_mutex,
         device_vk.vma_allocator,
+        device_vk.shader_tile_image_color_read_enabled,
     };
   }
 

@@ -208,7 +208,11 @@ static bool compile_ex(shaderc::Compiler &compiler,
 
   shaderc::CompileOptions options;
   bool do_optimize = true;
-  options.SetTargetEnvironment(shaderc_target_env_vulkan, shaderc_env_version_vulkan_1_2);
+  options.SetTargetEnvironment(
+      shaderc_target_env_vulkan,
+      shader.uses_tile_dual_source() && stage == shaderc_fragment_shader ?
+          shaderc_env_version_vulkan_1_3 :
+          shaderc_env_version_vulkan_1_2);
   if (G.debug & G_DEBUG_GPU_RENDERDOC) {
     do_optimize = false;
   }

@@ -242,6 +242,22 @@ void rendermap_finalize_main([[resource_table]] RendermapFinalize &srt,
 
   int tile_index = shadow_tile_offset(uint2(tile_co_lod), tilemap_tiles_index, lod);
 
+  /* Largest-viewport fallback can exceed this LOD's mip extent. The normal
+   * valid-thread path fills only lod_res^2 cells; the other cells MUST be
+   * invalidated, not left as a valid page 0 or a previous loop's stale mapping.
+   * This condition is uniform within each 32x32 workgroup / shadow view. */
+  int lod_res = SHADOW_TILEMAP_RES >> lod;
+  if (viewport_size.x > lod_res || viewport_size.y > lod_res) {
+    int render_page_index = shadow_render_page_index_get(view_index, tile_co);
+    srt.render_map_buf[render_page_index] = 0xFFFFFFFFu;
+#ifndef GPU_METAL
+    /* Metal's barrier() already includes mem_device; GLSL needs this explicit
+     * buffer memory dependency before the workgroup execution rendezvous. */
+    memoryBarrierBuffer();
+#endif
+    barrier();
+  }
+
   if (lod_valid_thread) {
     ShadowTileData tile = shadow_tile_unpack(srt.tiles_buf[tile_index]);
     /* Tile coordinate relative to chosen viewport origin. */
@@ -250,7 +266,6 @@ void rendermap_finalize_main([[resource_table]] RendermapFinalize &srt,
      * might extend outside of the shadow-map range. To this end, we need to wrap the threads to
      * always cover the whole mip. This is because the viewport cannot be bigger than the mip
      * level itself. */
-    int lod_res = SHADOW_TILEMAP_RES >> lod;
     int2 relative_tile_co = (viewport_tile_co + lod_res) % lod_res;
     if (all(lessThan(relative_tile_co, viewport_size))) {
       bool do_page_render = tile.is_used && tile.do_update;

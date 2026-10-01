@@ -17,6 +17,7 @@
 #include "vk_shader_interface.hh"
 #include "vk_shader_log.hh"
 #include "vk_state_manager.hh"
+#include "vk_tile_blend_compat.hh"
 #include "vk_vertex_attribute_object.hh"
 
 #include "BLI_string_utils.hh"
@@ -507,6 +508,39 @@ VKShader::VKShader(const char *name) : Shader(name)
   context_ = VKContext::get();
 }
 
+const shader::ShaderCreateInfo &VKShader::patch_create_info(
+    const shader::ShaderCreateInfo &original_info)
+{
+  if (GPU_multi_viewport_support() ||
+      !flag_is_set(original_info.builtins_, BuiltinBits::VIEWPORT_INDEX))
+  {
+    return original_info;
+  }
+  bool static_shadow_multi_viewport = false;
+  for (const CompilationConstant &constant : original_info.compilation_constants_) {
+    static_shadow_multi_viewport |= constant.name == "use_multi_viewport" &&
+                                   constant.type == Type::bool_t && constant.value.u != 0;
+  }
+  if (!static_shadow_multi_viewport) {
+    return original_info;
+  }
+  capability_create_info_ = std::make_unique<shader::ShaderCreateInfo>(original_info);
+  auto &info = *capability_create_info_;
+  for (CompilationConstant &constant : info.compilation_constants_) {
+    if (constant.name == "use_multi_viewport" && constant.type == Type::bool_t) {
+      constant.value.u = 0;
+    }
+  }
+  /* This hook runs AFTER gpu_shader.cc's NO_VIEWPORT_INDEX processing, so also
+   * remove VIEWPORT_INDEX explicitly instead of only adding the bridge flag. */
+  info.builtins_ &= ~BuiltinBits::VIEWPORT_INDEX;
+  info.builtins_ |= BuiltinBits::NO_VIEWPORT_INDEX;
+  for (shader::PipelineState &pipeline : info.pipelines_) {
+    pipeline.viewport_count_ = 1;
+  }
+  return info;
+}
+
 void VKShader::init(const shader::ShaderCreateInfo &info, bool /*is_codegen_only*/)
 {
   VKShaderInterface *vk_interface = new VKShaderInterface();
@@ -515,6 +549,30 @@ void VKShader::init(const shader::ShaderCreateInfo &info, bool /*is_codegen_only
   is_static_shader_ = info.do_static_compilation_;
   is_compute_shader_ = !info.compute_source_.is_empty() || !info.compute_source_generated.empty();
   max_input_attachment_index_ = 0;
+  const VKDevice &device = VKBackend::get().device;
+  bool has_secondary = false;
+  bool valid_pair = info.fragment_outputs_.size() == 2;
+  uint32_t primary_count = 0, secondary_count = 0;
+  for (const ShaderCreateInfo::FragOut &output : info.fragment_outputs_) {
+    has_secondary |= output.blend == DualBlend::SRC_1;
+    primary_count += output.blend == DualBlend::SRC_0;
+    secondary_count += output.blend == DualBlend::SRC_1;
+    valid_pair &= output.index == 0 && output.type == Type::float4_t;
+  }
+  valid_pair &= primary_count == 1 && secondary_count == 1 && info.subpass_inputs_.is_empty() &&
+                !flag_is_set(info.builtins_, BuiltinBits::LAYER) &&
+                !flag_is_set(info.builtins_, BuiltinBits::VIEWPORT_INDEX);
+  uses_tile_dual_source_ = has_secondary && valid_pair &&
+                          !device.physical_device_features_get().dualSrcBlend &&
+                          device.extensions_get().shader_tile_image_color_read;
+  unsupported_dual_source_ = has_secondary &&
+                             !device.physical_device_features_get().dualSrcBlend &&
+                             !uses_tile_dual_source_;
+  if (uses_tile_dual_source_) {
+    for (const SpecializationConstant &constant : info.specialization_constants_) {
+      tile_default_constants_.append(constant.value);
+    }
+  }
   for (const ShaderCreateInfo::SubpassIn &input : info.subpass_inputs_) {
     max_input_attachment_index_ = max_uu(max_input_attachment_index_, uint32_t(input.index));
   }
@@ -560,6 +618,14 @@ void VKShader::build_shader_module(MutableSpan<StringRefNull> sources,
       break;
   }
 
+  if (stage == shaderc_fragment_shader && uses_tile_dual_source_) {
+    /* Tile GLSL requires 460. Insert before the existing compatibility library. */
+    const std::string old_version = "#version 450\n";
+    BLI_assert(source_patch.rfind(old_version, 0) == 0);
+    source_patch.replace(0, old_version.size(),
+                         "#version 460\n#extension GL_EXT_shader_tile_image : require\n");
+  }
+
   sources[SOURCES_INDEX_VERSION] = source_patch;
   r_shader_module.combined_sources = combine_sources(sources);
   VKShaderCompiler::compile_module(*this, stage, r_shader_module);
@@ -597,9 +663,23 @@ void VKShader::warm_cache(int /*limit*/)
 
 bool VKShader::finalize(const shader::ShaderCreateInfo *info)
 {
+  if (unsupported_dual_source_) {
+    CLOG_ERROR(&LOG,
+               "Shader %s requires native dualSrcBlend or a legal experimental tile output pair",
+               name_get().c_str());
+    return false;
+  }
+
   /* Add-ons that still use old API will crash as the shader create info isn't available.
    * See #130555 */
   if (info == nullptr) {
+    return false;
+  }
+
+  if (info != nullptr && !GPU_vertex_pipeline_stores_and_atomics_support() &&
+      info->vertex_source_ == "draw_debug_draw_display_vert.glsl")
+  {
+    CLOG_ERROR(&LOG, "Developer shader %s requires vertex stores and atomics", name_get().c_str());
     return false;
   }
 
@@ -1079,8 +1159,34 @@ std::string VKShader::fragment_interface_declare(const shader::ShaderCreateInfo 
     }
   }
 
-  /* Outputs. */
-  for (const ShaderCreateInfo::FragOut &output : info.fragment_outputs_) {
+  /* Outputs. Tile CUSTOM keeps BOTH sources as private globals: no Index=1
+   * output or native dual-source shader capability is emitted. */
+  std::string post_main;
+  if (uses_tile_dual_source_) {
+    ss << "layout(constant_id=" << info.specialization_constants_.size()
+       << ") const bool gpu_vk_tile_custom_enabled = false;\n";
+    ss << "layout(location=0) tileImageEXT highp attachmentEXT gpu_vk_tile_destination;\n";
+    ss << "layout(location=0) out vec4 gpu_vk_tile_color_out;\n";
+    /* Isolate precision to the blend operations. An out-precise global would
+     * propagate NoContraction back into the original material's S0/S1 math. */
+    ss << "vec4 gpu_vk_tile_blend_apply(vec4 s0, vec4 s1, vec4 dst) {\n";
+    ss << "  precise vec4 product = dst * s1;\n";
+    ss << "  precise vec4 result = s0 + product;\n";
+    ss << "  return result;\n}\n";
+    std::string primary, secondary;
+    for (const ShaderCreateInfo::FragOut &output : info.fragment_outputs_) {
+      ss << "vec4 " << output.name << ";\n";
+      (output.blend == DualBlend::SRC_0 ? primary : secondary) = output.name;
+    }
+    post_main = "  if (gpu_vk_tile_custom_enabled) {\n";
+    post_main += "    gpu_vk_tile_color_out = gpu_vk_tile_blend_apply(" + primary + ", " + secondary +
+                 ", colorAttachmentReadEXT(gpu_vk_tile_destination));\n";
+    post_main += "  } else { gpu_vk_tile_color_out = " + primary + "; }\n";
+  }
+  else if (unsupported_dual_source_) {
+    ss << "#error dual source output is unsupported on this device/configuration\n";
+  }
+  else for (const ShaderCreateInfo::FragOut &output : info.fragment_outputs_) {
     const int location = output.index;
     ss << "layout(location = " << location;
     switch (output.blend) {
@@ -1098,8 +1204,7 @@ std::string VKShader::fragment_interface_declare(const shader::ShaderCreateInfo 
   }
   ss << "\n";
 
-  if (pre_main.empty() == false) {
-    std::string post_main;
+  if (!pre_main.empty() || !post_main.empty()) {
     ss << main_function_wrapper(pre_main, post_main);
   }
   return ss.str();
@@ -1309,6 +1414,47 @@ VkPipeline VKShader::ensure_and_get_compute_pipeline(
   return vk_pipeline;
 }
 
+bool VKShader::configure_tile_blend_pipeline(VKGraphicsInfo &graphics_info) const
+{
+  const VKDevice &device = VKBackend::get().device;
+  const bool custom = graphics_info.fragment_out.state.blend == GPU_BLEND_CUSTOM;
+  if (unsupported_dual_source_ ||
+      (custom && !device.physical_device_features_get().dualSrcBlend && !uses_tile_dual_source_))
+  {
+    CLOG_ERROR(&LOG, "Unsupported dual-source/CUSTOM pipeline for shader %s", name_get().c_str());
+    return false;
+  }
+  if (!uses_tile_dual_source_) {
+    return true;
+  }
+  const Span<VkFormat> formats = graphics_info.fragment_out.color_attachment_formats;
+  if (formats.size() != 1 || !vk_tile_blend_format_is_verified(formats[0]) ||
+      (custom && graphics_info.fragment_out.state.logic_op_xor))
+  {
+    CLOG_ERROR(&LOG,
+               "Experimental tile CUSTOM rejected shader %s: expected one recorded format, "
+               "single sample, no logic-op state (SRGB/MRT/MSAA are not inferred)",
+               name_get().c_str());
+    return false;
+  }
+  /* v5.2 Vulkan textures and pipeline rasterizationSamples are always 1. Do not
+   * carry this path into future MSAA support without an explicit sample gate. */
+  graphics_info.shaders.tile_custom_blend = custom;
+  graphics_info.fragment_out.tile_custom_blend = custom;
+  auto &values = graphics_info.shaders.specialization_constants;
+  if (values.size() > tile_default_constants_.size()) {
+    CLOG_ERROR(&LOG, "Unexpected specialization constant count for %s", name_get().c_str());
+    return false;
+  }
+  for (int64_t i = values.size(); i < tile_default_constants_.size(); i++) {
+    values.append(tile_default_constants_[i]);
+  }
+  SpecializationConstant::Value enabled = {};
+  enabled.u = custom ? 1u : 0u;
+  values.append(enabled);
+  return true;
+}
+
 bool VKShader::ensure_graphics_pipelines(Span<shader::PipelineState> pipeline_states)
 {
   BLI_assert(!is_compute_shader_);
@@ -1356,6 +1502,9 @@ bool VKShader::ensure_graphics_pipelines(Span<shader::PipelineState> pipeline_st
       graphics_info.fragment_out.color_attachment_formats.append(to_vk_format(color_format));
     }
     graphics_info.fragment_out.state = pipeline_state.state_;
+    if (!configure_tile_blend_pipeline(graphics_info)) {
+      return false;
+    }
 
     bool pipeline_created = false;
     VkPipeline vk_pipeline = device.pipelines.get_or_create_graphics_pipeline(
@@ -1428,6 +1577,15 @@ VkPipeline VKShader::ensure_and_get_graphics_pipeline(
   graphics_info.fragment_out.color_attachment_formats.extend(
       framebuffer.color_attachment_formats_get());
   graphics_info.fragment_out.state = graphics_info.shaders.state;
+  if (uses_tile_dual_source_ && !framebuffer.tile_blend_color_attachment_is_compatible())
+  {
+    CLOG_ERROR(&LOG, "Tile CUSTOM rejected non-writable/layered/mip color target for %s",
+               name_get().c_str());
+    return VK_NULL_HANDLE;
+  }
+  if (!configure_tile_blend_pipeline(graphics_info)) {
+    return VK_NULL_HANDLE;
+  }
 
   bool pipeline_created = false;
   VkPipeline vk_pipeline = device.pipelines.get_or_create_graphics_pipeline(

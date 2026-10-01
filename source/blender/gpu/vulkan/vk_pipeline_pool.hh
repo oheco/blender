@@ -87,6 +87,7 @@ struct VKGraphicsInfo {
     bool has_depth;
     bool has_stencil;
     uint32_t max_input_attachment_index = 0;
+    bool tile_custom_blend = false;
 
     bool operator==(const Shaders &other) const
     {
@@ -97,7 +98,8 @@ struct VKGraphicsInfo {
              viewport_count == other.viewport_count && state == other.state &&
              specialization_constants == other.specialization_constants &&
              has_depth == other.has_depth && has_stencil == other.has_stencil &&
-             max_input_attachment_index == other.max_input_attachment_index;
+             max_input_attachment_index == other.max_input_attachment_index &&
+             tile_custom_blend == other.tile_custom_blend;
     }
 
     uint64_t hash() const
@@ -112,6 +114,7 @@ struct VKGraphicsInfo {
       hash = hash * 33 ^ specialization_constants.hash();
       hash = hash * 33 ^ (uint64_t(has_depth) << 1 | uint64_t(has_stencil));
       hash = hash * 33 ^ uint64_t(max_input_attachment_index);
+      hash = hash * 33 ^ uint64_t(tile_custom_blend);
       return hash;
     }
 
@@ -122,6 +125,7 @@ struct VKGraphicsInfo {
   };
   struct FragmentOut {
     GPUState state;
+    bool tile_custom_blend = false;
 
     /* Dynamic rendering */
     VkFormat depth_attachment_format;
@@ -133,7 +137,8 @@ struct VKGraphicsInfo {
 #if 0
       return hash() == other.hash();
 #else
-      if (state != other.state || depth_attachment_format != other.depth_attachment_format ||
+      if (state != other.state || tile_custom_blend != other.tile_custom_blend ||
+          depth_attachment_format != other.depth_attachment_format ||
           stencil_attachment_format != other.stencil_attachment_format ||
           color_attachment_formats != other.color_attachment_formats)
       {
@@ -151,6 +156,7 @@ struct VKGraphicsInfo {
       hash = hash * 33 ^ XXH3_64bits(color_attachment_formats.data(),
                                      color_attachment_formats.size() * sizeof(VkFormat));
       hash = hash * 33 ^ state.data;
+      hash = hash * 33 ^ uint64_t(tile_custom_blend);
       return hash;
     }
   };

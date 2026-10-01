@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include <memory>
+
 #include "BLI_string_ref.hh"
 
 #include "gpu_shader_private.hh"
@@ -26,6 +28,7 @@ class VKShaderInterface;
 class VKShader : public Shader {
  private:
   VKContext *context_ = nullptr;
+  std::unique_ptr<shader::ShaderCreateInfo> capability_create_info_;
 
   /**
    * Not owning handle to the descriptor layout.
@@ -59,6 +62,10 @@ class VKShader : public Shader {
    */
   uint32_t max_input_attachment_index_ = 0;
 
+  bool uses_tile_dual_source_ = false;
+  bool unsupported_dual_source_ = false;
+  Vector<shader::SpecializationConstant::Value> tile_default_constants_;
+
  public:
   VKShaderModule vertex_module;
   VKShaderModule geometry_module;
@@ -74,10 +81,7 @@ class VKShader : public Shader {
   void init(const shader::ShaderCreateInfo &info, bool is_codegen_only) override;
 
   const shader::ShaderCreateInfo &patch_create_info(
-      const shader::ShaderCreateInfo &original_info) override
-  {
-    return original_info;
-  }
+      const shader::ShaderCreateInfo &original_info) override;
 
   void vertex_shader_from_glsl(const shader::ShaderCreateInfo &info,
                                MutableSpan<StringRefNull> sources) override;
@@ -117,6 +121,11 @@ class VKShader : public Shader {
 
   const VKShaderInterface &interface_get() const;
 
+  bool uses_tile_dual_source() const
+  {
+    return uses_tile_dual_source_;
+  }
+
   /**
    * Some shaders don't have a descriptor set and should not bind any descriptor set to the
    * pipeline. This function can be used to determine if a descriptor set can be bound when this
@@ -147,6 +156,7 @@ class VKShader : public Shader {
    */
   std::string workaround_geometry_shader_source_create(const shader::ShaderCreateInfo &info);
   bool do_geometry_shader_injection(const shader::ShaderCreateInfo *info) const;
+  bool configure_tile_blend_pipeline(VKGraphicsInfo &graphics_info) const;
 };
 
 static inline VKShader &unwrap(Shader &shader)

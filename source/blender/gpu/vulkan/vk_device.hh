@@ -71,6 +71,9 @@ struct VKExtensions {
    */
   bool logic_ops = false;
 
+  /** Actual enabled tile-color read feature, not advertised extension support. */
+  bool shader_tile_image_color_read = false;
+
   /**
    * Does the device support VK_EXT_memory_priority
    */
@@ -157,6 +160,7 @@ class VKDevice : public NonCopyable {
   std::mutex *queue_mutex_ = nullptr;
 
   bool is_initialized_ = false;
+  bool shader_tile_image_color_read_enabled_ = false;
 
   /**
    * Task pool for render graph submission.
@@ -392,6 +396,11 @@ class VKDevice : public NonCopyable {
   {
     return workarounds_;
   }
+  bool shader_tile_image_color_read_enabled() const
+  {
+    return shader_tile_image_color_read_enabled_;
+  }
+
   inline const VKExtensions &extensions_get() const
   {
     return extensions_;

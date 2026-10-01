@@ -95,7 +95,9 @@ void VKImmediate::end()
     context.update_pipeline_data(
         framebuffer, prim_type, vertex_attributes_, draw.node_data.graphics);
 
-    context.render_graph().add_node(draw);
+    if (draw.node_data.graphics.pipeline_data.vk_pipeline != VK_NULL_HANDLE) {
+      context.render_graph().add_node(draw);
+    }
   }
 
   buffer_offset_ += current_subbuffer_len_;

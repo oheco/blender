@@ -4,6 +4,8 @@
 
 #include "testing/testing.h"
 
+#include <algorithm>
+
 #include "GPU_batch.hh"
 #include "GPU_capabilities.hh"
 #include "GPU_batch_utils.hh"
@@ -767,11 +769,9 @@ static void test_eevee_shadow_alloc()
 }
 DRAW_TEST(eevee_shadow_alloc)
 
-static void test_eevee_shadow_finalize()
+static void test_eevee_shadow_finalize_impl(const bool use_multi_viewport)
 {
-  if (!GPU_multi_viewport_support()) {
-    GTEST_SKIP() << "This test requires native multi viewport support.";
-  }
+  /* Both variants are COMPUTE tests and do not request hardware viewport arrays. */
   GPU_render_begin();
   ShadowTileMapDataBuf tilemaps_data = {"tilemaps_data"};
   ShadowTileDataBuf tiles_data = {"tiles_data"};
@@ -891,8 +891,17 @@ static void test_eevee_shadow_finalize()
   StorageArrayBuffer<uint, SHADOW_RENDER_MAP_SIZE> render_map_buf = {"render_map_buf"};
   StorageArrayBuffer<uint, SHADOW_VIEW_MAX> viewport_index_buf = {"viewport_index_buf"};
 
-  render_map_buf.clear_to_zero();
+  if (use_multi_viewport) {
+    render_map_buf.clear_to_zero();
+  }
+  else {
+    /* A non-invalid poison distinguishes explicit invalidation from untouched
+     * data. Page 0 is also valid, so initializing to zero hides this bug. */
+    render_map_buf.as_span().fill(0xDEADBEEFu);
+    render_map_buf.push_update();
+  }
   clear_dispatch_buf.clear_to_zero();
+  tile_draw_buf.clear_to_zero();
 
   gpu::Shader *sh = GPU_shader_create_from_info_name("eevee_shadow_tilemap_finalize");
   PassSimple pass("Test");
@@ -905,7 +914,7 @@ static void test_eevee_shadow_finalize()
   pass.bind_ssbo("render_view_buf", render_views_buf);
   pass.bind_ssbo("tilemaps_clip_buf", tilemaps_clip);
   pass.bind_image("tilemaps_img", tilemap_tx);
-  pass.push_constant("use_multi_viewport", GPU_multi_viewport_support());
+  pass.push_constant("use_multi_viewport", use_multi_viewport);
   pass.dispatch(int3(1, 1, tilemaps_data.size()));
   pass.barrier(GPU_BARRIER_SHADER_STORAGE);
 
@@ -934,16 +943,44 @@ static void test_eevee_shadow_finalize()
       EXPECT_EQ(shadow_multi_view_buf[i].viewinv, float4x4::identity());
     }
 
-    EXPECT_EQ(shadow_multi_view_buf[0].winmat,
-              math::projection::perspective(-1.0f, 1.0f, -1.0f, 1.0f, 1.0f, 10.0f));
-    EXPECT_EQ(shadow_multi_view_buf[1].winmat,
-              math::projection::perspective(-1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 10.0f));
-    EXPECT_EQ(shadow_multi_view_buf[2].winmat,
-              math::projection::perspective(-1.0f, 1.0f, -1.0f, 1.0f, 1.0f, 10.0f));
-    EXPECT_EQ(shadow_multi_view_buf[3].winmat,
-              math::projection::perspective(-1.0f, -0.75f, -1.0f, -0.75f, 1.0f, 10.0f));
-    EXPECT_EQ(shadow_multi_view_buf[4].winmat,
-              math::projection::perspective(0.5f, 1.5f, -1.0f, 0.0f, 1.0f, 10.0f));
+    if (use_multi_viewport) {
+      EXPECT_EQ(shadow_multi_view_buf[0].winmat,
+                math::projection::perspective(-1.0f, 1.0f, -1.0f, 1.0f, 1.0f, 10.0f));
+      EXPECT_EQ(shadow_multi_view_buf[1].winmat,
+                math::projection::perspective(-1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 10.0f));
+      EXPECT_EQ(shadow_multi_view_buf[2].winmat,
+                math::projection::perspective(-1.0f, 1.0f, -1.0f, 1.0f, 1.0f, 10.0f));
+      EXPECT_EQ(shadow_multi_view_buf[3].winmat,
+                math::projection::perspective(-1.0f, -0.75f, -1.0f, -0.75f, 1.0f, 10.0f));
+      EXPECT_EQ(shadow_multi_view_buf[4].winmat,
+                math::projection::perspective(0.5f, 1.5f, -1.0f, 0.0f, 1.0f, 10.0f));
+    }
+    else {
+      const int lods[5] = {5, 4, 3, 2, 0};
+      const int2 origins[5] = {int2(0), int2(0), int2(0), int2(0), int2(24, 0)};
+      render_views_buf.read();
+      for (int view_index : IndexRange(5)) {
+        const ShadowRenderView &render_view = render_views_buf[view_index];
+        EXPECT_EQ(render_view.viewport_index, uint(SHADOW_TILEMAP_LOD));
+        EXPECT_EQ(render_view.tilemap_lod, lods[view_index]);
+        EXPECT_EQ(render_view.rect_min, origins[view_index]);
+        const float lod_res = float(SHADOW_TILEMAP_RES >> lods[view_index]);
+        const float2 view_start = (float2(origins[view_index]) / lod_res) * 2.0f - 1.0f;
+        const float2 view_end =
+            (float2(origins[view_index] + int2(SHADOW_TILEMAP_RES)) / lod_res) * 2.0f - 1.0f;
+        const float4x4 expected = math::projection::perspective(
+            view_start.x, view_end.x, view_start.y, view_end.y, 1.0f, 10.0f);
+        const float4x4 expected_inverse = math::invert(expected);
+        for (int column : IndexRange(4)) {
+          for (int row : IndexRange(4)) {
+            EXPECT_NEAR(shadow_multi_view_buf[view_index].winmat[column][row],
+                        expected[column][row], 1e-5f);
+            EXPECT_NEAR(shadow_multi_view_buf[view_index].wininv[column][row],
+                        expected_inverse[column][row], 1e-5f);
+          }
+        }
+      }
+    }
   }
 
   {
@@ -997,7 +1034,7 @@ static void test_eevee_shadow_finalize()
     EXPECT_EQ(expected_pages, result);
   }
 
-  {
+  if (use_multi_viewport) {
     auto stringify_view = [](Span<uint> data) -> std::string {
       std::string result;
       for (auto x : data) {
@@ -1196,6 +1233,65 @@ static void test_eevee_shadow_finalize()
               expected_view4);
   }
 
+  if (!use_multi_viewport) {
+    render_map_buf.read();
+    render_views_buf.read();
+    /* Keep the original host tile fixture for independent expected mappings;
+     * do not derive expected values from GPU-mutated tile tags. */
+    statistics_buf.read();
+    clear_dispatch_buf.read();
+    tile_draw_buf.read();
+    src_coord_buf.read();
+    dst_coord_buf.read();
+    EXPECT_EQ(statistics_buf.view_needed_count, 5);
+    EXPECT_EQ(clear_dispatch_buf.num_groups_z, 7u);
+    EXPECT_EQ(tile_draw_buf.vertex_len, 42u);
+    const int lod_offsets[6] = {int(lod0_ofs), int(lod1_ofs), int(lod2_ofs),
+                                int(lod3_ofs), int(lod4_ofs), int(lod5_ofs)};
+    const int expected_lods[5] = {5, 4, 3, 2, 0};
+    const int2 expected_origins[5] = {int2(0), int2(0), int2(0), int2(0), int2(24, 0)};
+    Vector<uint2> expected_mappings;
+    for (int view_index : IndexRange(5)) {
+      const int lod = expected_lods[view_index];
+      const int2 origin = expected_origins[view_index];
+      const int lod_res = SHADOW_TILEMAP_RES >> lod;
+      for (int y : IndexRange(SHADOW_TILEMAP_RES)) {
+        for (int x : IndexRange(SHADOW_TILEMAP_RES)) {
+          uint expected_page = 0xFFFFFFFFu;
+          if (x < lod_res && y < lod_res) {
+            const int tile_x = (x + origin.x) % lod_res;
+            const int tile_y = (y + origin.y) % lod_res;
+            const int tile_index = lod_offsets[lod] + tile_x + tile_y * lod_res;
+            const ShadowTileData tile = shadow_tile_unpack(tiles_data[tile_index]);
+            if (tile.is_used && tile.do_update) {
+              expected_page = shadow_page_pack(tile.page);
+              /* GPU atomic append order is intentionally not assumed. */
+              const uint expected_src = uint(x) | (uint(y) << 8) | (uint(view_index) << 16);
+              expected_mappings.append(uint2(expected_page, expected_src));
+            }
+          }
+          const int map_index = view_index * SHADOW_TILEMAP_LOD0_LEN +
+                                y * SHADOW_TILEMAP_RES + x;
+          EXPECT_EQ(render_map_buf[map_index], expected_page)
+              << "view=" << view_index << " lod=" << lod
+              << " relative_tile=(" << x << "," << y << ")";
+        }
+      }
+    }
+    Vector<uint2> actual_mappings;
+    const uint mapping_count = std::min(clear_dispatch_buf.num_groups_z,
+                                        uint(expected_mappings.size()));
+    for (uint index : IndexRange(mapping_count)) {
+      actual_mappings.append(uint2(dst_coord_buf[index], src_coord_buf[index]));
+    }
+    auto order_mapping = [](const uint2 &a, const uint2 &b) {
+      return a.x < b.x || (a.x == b.x && a.y < b.y);
+    };
+    std::sort(expected_mappings.begin(), expected_mappings.end(), order_mapping);
+    std::sort(actual_mappings.begin(), actual_mappings.end(), order_mapping);
+    EXPECT_EQ(actual_mappings, expected_mappings);
+  }
+
   pages_infos_data.read();
   EXPECT_EQ(pages_infos_data.page_free_count, 0);
 
@@ -1209,7 +1305,19 @@ static void test_eevee_shadow_finalize()
   DRW_shaders_free();
   GPU_render_end();
 }
+
+static void test_eevee_shadow_finalize()
+{
+  test_eevee_shadow_finalize_impl(true);
+}
 DRAW_TEST(eevee_shadow_finalize)
+
+static void test_eevee_shadow_finalize_single_viewport()
+{
+  /* Force the fallback even on native multiViewport devices. No cap skip. */
+  test_eevee_shadow_finalize_impl(false);
+}
+DRAW_TEST(eevee_shadow_finalize_single_viewport)
 
 static void test_eevee_shadow_tile_packing()
 {

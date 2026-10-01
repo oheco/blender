@@ -1017,6 +1017,8 @@ struct GHOST_VulkanHandles {
   void *queue_mutex;
   /** Vulkan memory allocator of the device. */
   VmaAllocator vma_allocator;
+  /** True only when the logical device actually enabled tile COLOR read access. */
+  bool shader_tile_image_color_read_enabled = false;
 };
 
 #endif

@@ -681,6 +681,13 @@ struct VKGraphicsPipelineCreateInfoBuilder {
         break;
 
       case GPU_BLEND_CUSTOM:
+        if (fragment_output_info.tile_custom_blend) {
+          attachment_state.srcColorBlendFactor = VK_BLEND_FACTOR_ONE;
+          attachment_state.dstColorBlendFactor = VK_BLEND_FACTOR_ZERO;
+          attachment_state.srcAlphaBlendFactor = VK_BLEND_FACTOR_ONE;
+          attachment_state.dstAlphaBlendFactor = VK_BLEND_FACTOR_ZERO;
+          break;
+        }
         attachment_state.srcColorBlendFactor = VK_BLEND_FACTOR_ONE;
         attachment_state.dstColorBlendFactor = VK_BLEND_FACTOR_SRC1_COLOR;
         attachment_state.srcAlphaBlendFactor = VK_BLEND_FACTOR_ONE;
@@ -719,7 +726,9 @@ struct VKGraphicsPipelineCreateInfoBuilder {
       attachment_state.colorBlendOp = VK_BLEND_OP_ADD;
     }
 
-    if (fragment_output_info.state.blend != GPU_BLEND_NONE) {
+    if (fragment_output_info.state.blend != GPU_BLEND_NONE &&
+        !fragment_output_info.tile_custom_blend)
+    {
       attachment_state.blendEnable = VK_TRUE;
     }
     else {

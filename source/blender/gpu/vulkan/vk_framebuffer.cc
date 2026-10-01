@@ -74,6 +74,20 @@ uint32_t VKFrameBuffer::viewport_size() const
   return this->multi_viewport_ ? GPU_MAX_VIEWPORTS : 1;
 }
 
+bool VKFrameBuffer::tile_blend_color_attachment_is_compatible() const
+{
+  const GPUAttachment &attachment = attachments_[GPU_FB_COLOR_ATTACHMENT0];
+  if (attachment.tex == nullptr || attachment.mip != 0 ||
+      !ELEM(attachment.layer, -1, 0) ||
+      attachment_states_[GPU_FB_COLOR_ATTACHMENT0] != GPU_ATTACHMENT_WRITE)
+  {
+    return false;
+  }
+  const VKTexture &texture = *unwrap(unwrap(attachment.tex));
+  return texture.type_get() == GPU_TEXTURE_2D &&
+         (texture.usage_get() & GPU_TEXTURE_USAGE_ATTACHMENT) != 0;
+}
+
 void VKFrameBuffer::vk_viewports_append(Vector<VkViewport> &r_viewports) const
 {
   BLI_assert(r_viewports.is_empty());
@@ -648,6 +662,9 @@ void VKFrameBuffer::rendering_ensure_dynamic_rendering(VKContext &context,
 
     set_load_store(attachment_info, data_format, load_stores[color_attachment_index]);
 
+    /* Coherent tile reads are attachment reads in FRAGMENT_SHADER. BEGIN_RENDERING
+     * is tracked at ALL_GRAPHICS (includes fragment shading and color output);
+     * preserve this READ|WRITE dependency and set_load_store above. */
     access_info.images.append(
         {color_texture.vk_image_handle(),
          VK_ACCESS_COLOR_ATTACHMENT_READ_BIT | VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT,
