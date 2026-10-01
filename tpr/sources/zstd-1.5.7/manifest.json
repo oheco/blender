@@ -1,0 +1,23 @@
+{
+  "name": "zstd",
+  "version": "1.5.7",
+  "kind": "source",
+  "filename": "zstd-1.5.7.tar.gz",
+  "url": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+  "license": "BSD-3-Clause OR GPL-2.0-or-later",
+  "license_files": [
+    "LICENSE",
+    "COPYING"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 2434947,
+  "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 2434947,
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+    }
+  ]
+}

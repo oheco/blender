@@ -1,0 +1,3 @@
+# Fixed complete source archive parts are ordinary Git objects, not Blender LFS.
+# Each part is <=32 MiB. Original archive and part SHA-256 are both recorded.
+sources/** -filter -diff -merge -text

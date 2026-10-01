@@ -1,0 +1,23 @@
+{
+  "name": "libffi",
+  "version": "3.5.2",
+  "kind": "source",
+  "filename": "libffi-3.5.2.tar.gz",
+  "url": "https://github.com/libffi/libffi/releases/download/v3.5.2/libffi-3.5.2.tar.gz",
+  "license": "MIT; build tooling separate licenses",
+  "license_files": [
+    "LICENSE",
+    "LICENSE-BUILDTOOLS"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 1423124,
+  "sha256": "f3a3082a23b37c293a4fcd1053147b371f2ff91fa7ea1b2a52e335676bac82dc",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 1423124,
+      "sha256": "f3a3082a23b37c293a4fcd1053147b371f2ff91fa7ea1b2a52e335676bac82dc"
+    }
+  ]
+}

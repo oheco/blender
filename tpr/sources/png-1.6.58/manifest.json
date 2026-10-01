@@ -1,0 +1,22 @@
+{
+  "name": "png",
+  "version": "1.6.58",
+  "kind": "source",
+  "filename": "libpng-1.6.58.tar.xz",
+  "url": "http://prdownloads.sourceforge.net/libpng/libpng-1.6.58.tar.xz",
+  "license": "SPDX:libpng-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 1070096,
+  "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 1070096,
+      "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775"
+    }
+  ]
+}

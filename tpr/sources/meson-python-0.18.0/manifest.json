@@ -1,0 +1,22 @@
+{
+  "name": "meson-python",
+  "version": "0.18.0",
+  "kind": "source",
+  "filename": "meson_python-0.18.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/26/bd/fdb26366443620f1a8a4d4ec7bfa37d1fbbe7bf737b257c205bbcf95ba95/meson_python-0.18.0.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 95630,
+  "sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 95630,
+      "sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d"
+    }
+  ]
+}

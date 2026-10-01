@@ -1,0 +1,22 @@
+{
+  "name": "imath",
+  "version": "3.2.2",
+  "kind": "source",
+  "filename": "imath-3.2.2.tar.gz",
+  "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/v3.2.2.tar.gz",
+  "license": "SPDX:BSD-3-Clause",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 689217,
+  "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 689217,
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462"
+    }
+  ]
+}

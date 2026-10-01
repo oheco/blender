@@ -1,0 +1,26 @@
+{
+  "name": "xz",
+  "version": "5.8.4",
+  "kind": "source",
+  "filename": "xz-5.8.4.tar.gz",
+  "url": "https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.gz",
+  "license": "liblzma 0BSD; complete source archive retains LGPL/GPL build/scripts notices",
+  "license_files": [
+    "COPYING",
+    "COPYING.0BSD",
+    "COPYING.LGPLv2.1",
+    "COPYING.GPLv2",
+    "COPYING.GPLv3"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 2799797,
+  "sha256": "0014c7886930454fe8bd4228665b51af55eeae560ea135c9c4cd33f55b2591d9",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 2799797,
+      "sha256": "0014c7886930454fe8bd4228665b51af55eeae560ea135c9c4cd33f55b2591d9"
+    }
+  ]
+}

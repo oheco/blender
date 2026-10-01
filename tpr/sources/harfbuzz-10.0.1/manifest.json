@@ -1,0 +1,27 @@
+{
+  "name": "harfbuzz",
+  "version": "10.0.1",
+  "kind": "source",
+  "filename": "harfbuzz-10.0.1.tar.gz",
+  "url": "https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.1.tar.gz",
+  "license": "see upstream COPYING",
+  "license_files": [
+    "COPYING"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 36785875,
+  "sha256": "e7358ea86fe10fb9261931af6f010d4358dac64f7074420ca9bc94aae2bdd542",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 33554432,
+      "sha256": "9b4c527d8c5b300424d1b068b0f571b872cf147235641a5ab167dcac16bb0315"
+    },
+    {
+      "filename": "source.part0001",
+      "size": 3231443,
+      "sha256": "09ff33b7202770a8b5ceaf00decd7ab2a07dd227855e589c3c8dfc30a2610634"
+    }
+  ]
+}

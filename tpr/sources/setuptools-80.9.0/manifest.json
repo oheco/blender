@@ -1,0 +1,22 @@
+{
+  "name": "setuptools",
+  "version": "80.9.0",
+  "kind": "source",
+  "filename": "setuptools-80.9.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/18/5d/3bf57dcd21979b887f014ea83c24ae194cfcd12b9e0fda66b957c69d1fca/setuptools-80.9.0.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 1319958,
+  "sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 1319958,
+      "sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c"
+    }
+  ]
+}

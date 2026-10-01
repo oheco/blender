@@ -1,0 +1,22 @@
+{
+  "name": "pyproject-metadata",
+  "version": "0.9.1",
+  "kind": "source",
+  "filename": "pyproject_metadata-0.9.1.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/64/ae/5fa065b049e97f96880de0611dbba513f0ee313b6edd0a64664c7b46a8e8/pyproject_metadata-0.9.1.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 38415,
+  "sha256": "b8b2253dd1b7062b78cf949a115f02ba7fa4114aabe63fa10528e9e1a954a816",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 38415,
+      "sha256": "b8b2253dd1b7062b78cf949a115f02ba7fa4114aabe63fa10528e9e1a954a816"
+    }
+  ]
+}

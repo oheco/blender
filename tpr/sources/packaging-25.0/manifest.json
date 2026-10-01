@@ -1,0 +1,25 @@
+{
+  "name": "packaging",
+  "version": "25.0",
+  "kind": "source",
+  "filename": "packaging-25.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz",
+  "license": "Apache-2.0 OR BSD-2-Clause",
+  "license_files": [
+    "LICENSE",
+    "LICENSE.APACHE",
+    "LICENSE.BSD",
+    "docs/licenses.rst"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 165727,
+  "sha256": "d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 165727,
+      "sha256": "d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f"
+    }
+  ]
+}

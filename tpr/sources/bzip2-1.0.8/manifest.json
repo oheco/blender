@@ -1,0 +1,22 @@
+{
+  "name": "bzip2",
+  "version": "1.0.8",
+  "kind": "source",
+  "filename": "bzip2-1.0.8.tar.gz",
+  "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+  "license": "bzip2-1.0.6",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 810029,
+  "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 810029,
+      "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269"
+    }
+  ]
+}

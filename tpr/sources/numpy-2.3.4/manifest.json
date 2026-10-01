@@ -1,0 +1,24 @@
+{
+  "name": "numpy",
+  "version": "2.3.4",
+  "kind": "source",
+  "filename": "numpy-2.3.4.tar.gz",
+  "url": "https://github.com/numpy/numpy/releases/download/v2.3.4/numpy-2.3.4.tar.gz",
+  "license": "BSD-3-Clause",
+  "license_files": [
+    ".spin/LICENSE",
+    "LICENSE.txt",
+    "LICENSES_bundled.txt"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 20582187,
+  "sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 20582187,
+      "sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a"
+    }
+  ]
+}

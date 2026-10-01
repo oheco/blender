@@ -1,0 +1,22 @@
+{
+  "name": "pyproject-hooks",
+  "version": "1.2.0",
+  "kind": "source",
+  "filename": "pyproject_hooks-1.2.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/e7/82/28175b2414effca1cdac8dc99f76d660e7a4fb0ceefa4b4ab8f5f6742925/pyproject_hooks-1.2.0.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 19228,
+  "sha256": "1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 19228,
+      "sha256": "1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8"
+    }
+  ]
+}

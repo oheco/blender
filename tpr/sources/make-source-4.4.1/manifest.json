@@ -1,0 +1,22 @@
+{
+  "name": "make-source",
+  "version": "4.4.1",
+  "kind": "source",
+  "filename": "make-4.4.1.tar.gz",
+  "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+  "license": "GPL-3.0-or-later",
+  "license_files": [
+    "COPYING"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 2348200,
+  "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 2348200,
+      "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3"
+    }
+  ]
+}

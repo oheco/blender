@@ -1,0 +1,22 @@
+{
+  "name": "brotli",
+  "version": "1.0.9",
+  "kind": "source",
+  "filename": "brotli-v1.0.9.tar.gz",
+  "url": "https://github.com/google/brotli/archive/refs/tags/v1.0.9.tar.gz",
+  "license": "SPDX:MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 486984,
+  "sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 486984,
+      "sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46"
+    }
+  ]
+}

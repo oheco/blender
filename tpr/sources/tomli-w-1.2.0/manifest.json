@@ -1,0 +1,22 @@
+{
+  "name": "tomli-w",
+  "version": "1.2.0",
+  "kind": "source",
+  "filename": "tomli_w-1.2.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/19/75/241269d1da26b624c0d5e110e8149093c759b7a286138f4efd61a60e75fe/tomli_w-1.2.0.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 7184,
+  "sha256": "2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 7184,
+      "sha256": "2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021"
+    }
+  ]
+}

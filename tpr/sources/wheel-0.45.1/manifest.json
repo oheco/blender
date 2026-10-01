@@ -1,0 +1,22 @@
+{
+  "name": "wheel",
+  "version": "0.45.1",
+  "kind": "source",
+  "filename": "wheel-0.45.1.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/8a/98/2d9906746cdc6a6ef809ae6338005b3f21bb568bea3165cfc6a243fdc25c/wheel-0.45.1.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE.txt"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 107545,
+  "sha256": "661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 107545,
+      "sha256": "661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729"
+    }
+  ]
+}

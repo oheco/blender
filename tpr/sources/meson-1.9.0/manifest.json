@@ -1,0 +1,23 @@
+{
+  "name": "meson",
+  "version": "1.9.0",
+  "kind": "source",
+  "filename": "meson-1.9.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/0a/8a/8315a2711dd269533019d7fdad1cf79416aadff454c539c2da88bc6e7200/meson-1.9.0.tar.gz",
+  "license": "Apache-2.0",
+  "license_files": [
+    "COPYING",
+    "packaging/License.rtf"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 2366082,
+  "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 2366082,
+      "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d"
+    }
+  ]
+}

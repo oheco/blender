@@ -1,0 +1,49 @@
+{
+  "name": "llvm",
+  "version": "20.1.8",
+  "kind": "source",
+  "filename": "llvm-project-20.1.8.src.tar.xz",
+  "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_files": [
+    "llvm/LICENSE.TXT",
+    "clang/LICENSE.TXT",
+    "lld/LICENSE.TXT",
+    "libcxx/LICENSE.TXT",
+    "libcxxabi/LICENSE.TXT",
+    "libunwind/LICENSE.TXT"
+  ],
+  "upstream_repository": "https://github.com/llvm/llvm-project",
+  "tag": "llvmorg-20.1.8",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 147242952,
+  "sha256": "6898f963c8e938981e6c4a302e83ec5beb4630147c7311183cf61069af16333d",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 33554432,
+      "sha256": "06cacc1f26bacd4922cd23fec7427e44fd8db08d8c9836a7bab4dcae60a995c3"
+    },
+    {
+      "filename": "source.part0001",
+      "size": 33554432,
+      "sha256": "1b856c90bb260434ad78e25f3039b2e6bde9c68a52e336a10e833c28a37ddf54"
+    },
+    {
+      "filename": "source.part0002",
+      "size": 33554432,
+      "sha256": "b1ab7836bf5ec1a625cb1b3960dea831b9e7712642b689e74b3a3658c44c85e7"
+    },
+    {
+      "filename": "source.part0003",
+      "size": 33554432,
+      "sha256": "6da90b2fb7baff11b58326ce88e4e5a37a81670472c471cba94a1dd520876c6e"
+    },
+    {
+      "filename": "source.part0004",
+      "size": 13025224,
+      "sha256": "1a539e731a2245d52318f78524dadac90b07ddadbd6ec1ed0279e9f5c68131e8"
+    }
+  ]
+}

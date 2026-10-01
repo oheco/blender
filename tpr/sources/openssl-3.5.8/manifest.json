@@ -1,0 +1,27 @@
+{
+  "name": "openssl",
+  "version": "3.5.8",
+  "kind": "source",
+  "filename": "openssl-3.5.8.tar.gz",
+  "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.8/openssl-3.5.8.tar.gz",
+  "license": "Apache-2.0",
+  "license_files": [
+    "LICENSE.txt"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 53213818,
+  "sha256": "a8f84a39918ec6415ce765d9b429d313ba97b8143169c172e734b9514464f5b2",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 33554432,
+      "sha256": "74c6bfd848c355bae0292151617839fbc9ce87405b0b9c540113652bc924f4c8"
+    },
+    {
+      "filename": "source.part0001",
+      "size": 19659386,
+      "sha256": "ca862f2fe5320068a11c59e90af910c663168c8f8ccabbcc644e472d636cfb90"
+    }
+  ]
+}

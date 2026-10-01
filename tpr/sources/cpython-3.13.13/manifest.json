@@ -1,0 +1,28 @@
+{
+  "name": "cpython",
+  "version": "3.13.13",
+  "kind": "source",
+  "filename": "Python-3.13.13.tar.xz",
+  "url": "https://www.python.org/ftp/python/3.13.13/Python-3.13.13.tar.xz",
+  "license": "PSF-2.0 and retained incorporated-software notices; documentation examples PSF-2.0 OR 0BSD",
+  "license_files": [
+    "LICENSE",
+    "Modules/expat/COPYING",
+    "Modules/_decimal/libmpdec/mpdecimal.h",
+    "Modules/_hacl/Hacl_Hash_MD5.c"
+  ],
+  "upstream_repository": "https://github.com/python/cpython",
+  "tag": "v3.13.13",
+  "commit": "01104ce1beb3135c2e0c01ec835b994c1f55a1c0",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 22957612,
+  "sha256": "2ab91ff401783ccca64f75d10c882e957bdfd60e2bf5a72f8421793729b78a71",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 22957612,
+      "sha256": "2ab91ff401783ccca64f75d10c882e957bdfd60e2bf5a72f8421793729b78a71"
+    }
+  ]
+}
