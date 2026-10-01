@@ -9,6 +9,7 @@
 #include "gpu_testing.hh"
 
 #include "GPU_batch.hh"
+#include "GPU_capabilities.hh"
 #include "GPU_context.hh"
 #include "GPU_framebuffer.hh"
 
@@ -35,6 +36,9 @@ GPU_TEST(static_shaders)
 
 static void test_shader_create_info_pipeline()
 {
+  if (!GPU_multi_viewport_support()) {
+    GTEST_SKIP() << "This test requires native multi viewport support.";
+  }
   if (GPU_type_matches_ex(
           GPU_DEVICE_NVIDIA, GPU_OS_ANY, GPU_DRIVER_OFFICIAL, GPU_BACKEND_OPENGL) &&
       G.debug & G_DEBUG_GPU_FORCE_WORKAROUNDS)

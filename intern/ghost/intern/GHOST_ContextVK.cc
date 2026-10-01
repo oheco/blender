@@ -414,13 +414,11 @@ struct GHOST_InstanceVK {
 #ifndef __APPLE__
           !device_vk.features.features.geometryShader ||
 #endif
-          !device_vk.features.features.vertexPipelineStoresAndAtomics ||
-          !device_vk.features.features.multiViewport ||
           !device_vk.features.features.shaderClipDistance ||
           !device_vk.features.features.fragmentStoresAndAtomics ||
           !device_vk.features.features.multiDrawIndirect ||
           !device_vk.features.features.imageCubeArray ||
-          !device_vk.features.features.dualSrcBlend || !device_vk.features.features.logicOp ||
+          !device_vk.features.features.dualSrcBlend ||
           !device_vk.features.features.imageCubeArray)
       {
         continue;
@@ -589,11 +587,12 @@ struct GHOST_InstanceVK {
 #ifndef __APPLE__
     device_features.geometryShader = VK_TRUE;
 #endif
-    device_features.vertexPipelineStoresAndAtomics = VK_TRUE;
-    device_features.multiViewport = VK_TRUE;
+    device_features.vertexPipelineStoresAndAtomics =
+        device.features.features.vertexPipelineStoresAndAtomics;
+    device_features.multiViewport = device.features.features.multiViewport;
     device_features.shaderClipDistance = VK_TRUE;
     device_features.fragmentStoresAndAtomics = VK_TRUE;
-    device_features.logicOp = VK_TRUE;
+    device_features.logicOp = device.features.features.logicOp;
     device_features.dualSrcBlend = VK_TRUE;
     device_features.imageCubeArray = VK_TRUE;
     device_features.multiDrawIndirect = VK_TRUE;

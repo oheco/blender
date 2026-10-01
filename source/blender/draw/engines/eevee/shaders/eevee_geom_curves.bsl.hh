@@ -74,7 +74,9 @@ struct GeomCurve {
     auto &shadow_iface = interface_get(eevee_shadow_iface_info, shadow_iface);
 
     shadow_iface.shadow_view_id = int(view_id);
-    out_viewport = int(shadow.render_view_buf[view_id].viewport_index);
+    if (pipe.use_multi_viewport) [[static_branch]] {
+      out_viewport = int(shadow.render_view_buf[view_id].viewport_index);
+    }
   }
 
   init_interface(id.raw_id);

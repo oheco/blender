@@ -5,6 +5,7 @@
 #include "testing/testing.h"
 
 #include "GPU_batch.hh"
+#include "GPU_capabilities.hh"
 #include "GPU_context.hh"
 #include "GPU_framebuffer.hh"
 #include "GPU_shader.hh"
@@ -243,6 +244,9 @@ GPU_TEST(framebuffer_cube)
 /* Effectively tests the same way EEVEE-Next shadows are rendered. */
 static void test_framebuffer_multi_viewport()
 {
+  if (!GPU_multi_viewport_support()) {
+    GTEST_SKIP() << "This test requires native multi viewport support.";
+  }
   using namespace gpu::shader;
   if (GPU_type_matches_ex(
           GPU_DEVICE_NVIDIA, GPU_OS_ANY, GPU_DRIVER_OFFICIAL, GPU_BACKEND_OPENGL) &&

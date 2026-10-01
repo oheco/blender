@@ -646,6 +646,8 @@ void GLBackend::capabilities_init()
                             epoxy_has_gl_extension("GL_ATI_meminfo");
   GCaps.geometry_shader_support = true;
   GCaps.hdr_viewport_support = false;
+  GCaps.multi_viewport_support = true;
+  GCaps.vertex_pipeline_stores_and_atomics_support = true;
 
   glGetIntegeri_v(GL_MAX_COMPUTE_WORK_GROUP_COUNT, 0, &GCaps.max_work_group_count[0]);
   glGetIntegeri_v(GL_MAX_COMPUTE_WORK_GROUP_COUNT, 1, &GCaps.max_work_group_count[1]);

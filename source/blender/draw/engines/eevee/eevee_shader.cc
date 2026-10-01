@@ -701,6 +701,10 @@ static SlotAllocator add_pipeline_create_info(gpu::shader::ShaderCreateInfo &inf
 
   info.compilation_constant(
       gpu::shader::Type::bool_t, "is_shadow_pipe", pipeline_type == MAT_PIPE_SHADOW);
+  if (pipeline_type == MAT_PIPE_SHADOW) {
+    info.compilation_constant(
+        gpu::shader::Type::bool_t, "use_multi_viewport", GPU_multi_viewport_support());
+  }
   info.compilation_constant(
       gpu::shader::Type::bool_t, "use_clip_plane", pipeline_type == MAT_PIPE_PREPASS_PLANAR);
 
@@ -785,8 +789,10 @@ static SlotAllocator add_pipeline_create_info(gpu::shader::ShaderCreateInfo &inf
           info.define("DRW_VIEW_LEN", STRINGIFY(SHADOW_VIEW_MAX));
           info.define("MAT_SHADOW");
           info.define("closure_to_rgba", "closure_to_rgba_shadow");
-          /* WORKAROUND: Enable viewport index for shadows. */
-          info.builtins_ &= ~BuiltinBits::NO_VIEWPORT_INDEX;
+          /* v5.2 BSL bridge: only expose the builtin when native multi viewport exists. */
+          if (GPU_multi_viewport_support()) {
+            info.builtins_ &= ~BuiltinBits::NO_VIEWPORT_INDEX;
+          }
           /* Until every vertex shader are ported, we need to bridge the gap here by defining the
            * pipeline. */
           info.fragment_source("eevee_surf_shadow.bsl.hh");

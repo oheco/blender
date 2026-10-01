@@ -10,6 +10,7 @@
 
 #include "BLI_math_matrix.hh"
 #include "GPU_batch_utils.hh"
+#include "GPU_capabilities.hh"
 #include "GPU_compute.hh"
 
 #include "GPU_context.hh"
@@ -1071,6 +1072,7 @@ void ShadowModule::end_sync()
         sub.bind_ssbo("render_view_buf", &render_view_buf_);
         sub.bind_ssbo("tilemaps_clip_buf", &tilemap_pool.tilemaps_clip);
         sub.bind_image("tilemaps_img", &tilemap_pool.tilemap_tx);
+        sub.push_constant("use_multi_viewport", GPU_multi_viewport_support());
         sub.dispatch(int3(1, 1, tilemap_pool.tilemaps_data.size()));
         sub.barrier(GPU_BARRIER_SHADER_STORAGE | GPU_BARRIER_UNIFORM | GPU_BARRIER_TEXTURE_FETCH |
                     GPU_BARRIER_SHADER_IMAGE_ACCESS);
@@ -1352,8 +1354,16 @@ void ShadowModule::render(View &view, int2 extent)
       }
 
       GPU_framebuffer_bind(render_fb_);
-      GPU_framebuffer_multi_viewports_set(render_fb_,
-                                          reinterpret_cast<int (*)[4]>(multi_viewports_.data()));
+      if (GPU_multi_viewport_support()) {
+        GPU_framebuffer_multi_viewports_set(
+            render_fb_, reinterpret_cast<int (*)[4]>(multi_viewports_.data()));
+      }
+      else {
+        /* Upstream f7d5dec2: projection and render-map setup use this same largest size. */
+        const int4 &viewport = multi_viewports_[SHADOW_TILEMAP_LOD];
+        GPU_framebuffer_viewport_set(
+            render_fb_, viewport.x, viewport.y, viewport.z, viewport.w);
+      }
 
       inst_.pipelines.shadow.render(shadow_multi_view_);
 

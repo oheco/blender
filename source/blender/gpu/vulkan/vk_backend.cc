@@ -17,6 +17,7 @@
 #include "CLG_log.h"
 
 #include "GPU_capabilities.hh"
+#include "GPU_framebuffer.hh"
 #include "gpu_capabilities_private.hh"
 #include "gpu_platform_private.hh"
 
@@ -157,20 +158,11 @@ static Vector<StringRefNull> missing_capabilities_get(VkPhysicalDevice vk_physic
     missing_capabilities.append("geometry shaders");
   }
 #endif
-  if (features.features.vertexPipelineStoresAndAtomics == VK_FALSE) {
-    missing_capabilities.append("vertex pipeline stores and atomics");
-  }
-  if (features.features.multiViewport == VK_FALSE) {
-    missing_capabilities.append("multi viewport");
-  }
   if (features.features.shaderClipDistance == VK_FALSE) {
     missing_capabilities.append("shader clip distance");
   }
   if (features.features.fragmentStoresAndAtomics == VK_FALSE) {
     missing_capabilities.append("fragment stores and atomics");
-  }
-  if (features.features.logicOp == VK_FALSE) {
-    missing_capabilities.append("logical operations");
   }
   if (features.features.dualSrcBlend == VK_FALSE) {
     missing_capabilities.append("dual source blending");
@@ -526,6 +518,8 @@ void VKBackend::detect_workarounds(VKDevice &device)
     extensions.extended_dynamic_state = false;
     GCaps.stencil_export_support = false;
     GCaps.texture_pool_workaround = true;
+    GCaps.multi_viewport_support = false;
+    GCaps.vertex_pipeline_stores_and_atomics_support = false;
 
     device.workarounds_ = workarounds;
     device.extensions_ = extensions;
@@ -851,6 +845,10 @@ void VKBackend::capabilities_init(VKDevice &device)
   /* Reset all capabilities from previous context. */
   GCaps = {};
   GCaps.geometry_shader_support = true;
+  GCaps.multi_viewport_support = device.physical_device_features_get().multiViewport &&
+                                 limits.maxViewports >= GPU_MAX_VIEWPORTS;
+  GCaps.vertex_pipeline_stores_and_atomics_support =
+      device.physical_device_features_get().vertexPipelineStoresAndAtomics;
   GCaps.stencil_export_support = device.supports_extension(
       VK_EXT_SHADER_STENCIL_EXPORT_EXTENSION_NAME);
 

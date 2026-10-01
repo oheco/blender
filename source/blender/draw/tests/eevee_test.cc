@@ -5,6 +5,7 @@
 #include "testing/testing.h"
 
 #include "GPU_batch.hh"
+#include "GPU_capabilities.hh"
 #include "GPU_batch_utils.hh"
 #include "GPU_context.hh"
 #include "draw_shader.hh"
@@ -768,6 +769,9 @@ DRAW_TEST(eevee_shadow_alloc)
 
 static void test_eevee_shadow_finalize()
 {
+  if (!GPU_multi_viewport_support()) {
+    GTEST_SKIP() << "This test requires native multi viewport support.";
+  }
   GPU_render_begin();
   ShadowTileMapDataBuf tilemaps_data = {"tilemaps_data"};
   ShadowTileDataBuf tiles_data = {"tiles_data"};
@@ -901,6 +905,7 @@ static void test_eevee_shadow_finalize()
   pass.bind_ssbo("render_view_buf", render_views_buf);
   pass.bind_ssbo("tilemaps_clip_buf", tilemaps_clip);
   pass.bind_image("tilemaps_img", tilemap_tx);
+  pass.push_constant("use_multi_viewport", GPU_multi_viewport_support());
   pass.dispatch(int3(1, 1, tilemaps_data.size()));
   pass.barrier(GPU_BARRIER_SHADER_STORAGE);
 
