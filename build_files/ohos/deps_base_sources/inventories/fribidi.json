@@ -1,0 +1,816 @@
+{
+  "source_archive_sha256": "2e9e859876571f03567ac91e5ed3b5308791f31cda083408c2b60fa1fe00a39d",
+  "archive_root": "fribidi-1.0.12",
+  "files": [
+    {
+      "path": ".ci/build-c2man.sh",
+      "type": "file",
+      "size": 338,
+      "sha256": "f00bdec6e84a5243b0cc5e8304cd4ff0ff23594dceb5eb1df9614dead732df06"
+    },
+    {
+      "path": ".github/workflows/make.yml",
+      "type": "file",
+      "size": 653,
+      "sha256": "8a283c0663dfc1831aa53fa0f225fe00073cc624691a22bd45d1da57315a86eb"
+    },
+    {
+      "path": ".github/workflows/meson.yml",
+      "type": "file",
+      "size": 1158,
+      "sha256": "c0a5dd298c69d36440b984ef530e313bc037c5722b40717d6c970af6abc18dc1"
+    },
+    {
+      "path": ".indent.pro",
+      "type": "file",
+      "size": 245,
+      "sha256": "542939d9cb7525f5692075e95fe12397d9b5f38ec1a4851c7ffc47b35614ab69"
+    },
+    {
+      "path": ".travis.yml",
+      "type": "file",
+      "size": 721,
+      "sha256": "bb165ffed1792a46681a45031a9bf3cde8d0b3a41aed3429cf6ae18db91ba77a"
+    },
+    {
+      "path": "AUTHORS",
+      "type": "file",
+      "size": 1640,
+      "sha256": "cb173f55c9514c8f38f4647ac3fedd5f8611358d331e65ab955da931e826861c"
+    },
+    {
+      "path": "COPYING",
+      "type": "file",
+      "size": 26440,
+      "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+    },
+    {
+      "path": "ChangeLog.old",
+      "type": "file",
+      "size": 32290,
+      "sha256": "0a196566c34a62398c78dd261a19823f175f15914b8a6de48e6171d0b016cdfc"
+    },
+    {
+      "path": "HISTORY",
+      "type": "file",
+      "size": 1545,
+      "sha256": "441a55ae463cac832fa39c5d78f69086f62525d781e1aae0e399a82cc6eb7ca0"
+    },
+    {
+      "path": "Makefile.am",
+      "type": "file",
+      "size": 2362,
+      "sha256": "8e5bd2942d17c5e2f71740a8192607c138afc408a2101377c12ee59168599651"
+    },
+    {
+      "path": "NEWS",
+      "type": "file",
+      "size": 5910,
+      "sha256": "e55d9e97fc6430716b9949fabf64e765567d95986701d2539af58277dc542e1b"
+    },
+    {
+      "path": "README",
+      "type": "file",
+      "size": 14,
+      "sha256": "3debe734c777df09c3c762cadd0fea1bebdb857c55243d605dc5b09211895bf3"
+    },
+    {
+      "path": "README.md",
+      "type": "file",
+      "size": 6269,
+      "sha256": "332c43f81281d8817b13d3e1d93519f2a938b95b507b416b5adbbc331bfe5624"
+    },
+    {
+      "path": "THANKS",
+      "type": "file",
+      "size": 1242,
+      "sha256": "25add6c5ee91b15d6f7932905762d7fc71315a76f4b9750c19b8327880038655"
+    },
+    {
+      "path": "TODO",
+      "type": "file",
+      "size": 2629,
+      "sha256": "e391176791f01aabf1065da5dc741079816b49c0cc042073ac1576f8d57a0d3a"
+    },
+    {
+      "path": "USERS",
+      "type": "file",
+      "size": 1944,
+      "sha256": "eb3bb137b3c5bc40047e5838db743d8828dcb83306699cecd637af332d66be9b"
+    },
+    {
+      "path": "appveyor.yml",
+      "type": "file",
+      "size": 401,
+      "sha256": "72262003c57fd231db768d8f9840908f249973848bef6341d5bc64cdbcf1cf29"
+    },
+    {
+      "path": "autogen.sh",
+      "type": "file",
+      "size": 786,
+      "sha256": "3275c6269a71ef9e3e8b318599714948173e9f989c8263e88ce3f5d7d2c7f71d"
+    },
+    {
+      "path": "bin/Makefile.am",
+      "type": "file",
+      "size": 550,
+      "sha256": "6b0e3e41b54c6b37044c8676237d0ede7c9cc8918848d881a5ad7a13e809c14b"
+    },
+    {
+      "path": "bin/fribidi-benchmark.c",
+      "type": "file",
+      "size": 6996,
+      "sha256": "9cbe3c1895f08ef81fe4bea6029f63790879ef6504030307d13a2d4be00cf18f"
+    },
+    {
+      "path": "bin/fribidi-bidi-types.c",
+      "type": "file",
+      "size": 243,
+      "sha256": "5281d01d11bcc1ea99427860c8c42faf69a984ddbca967581a8980fc47e1c2a2"
+    },
+    {
+      "path": "bin/fribidi-caprtl2utf8.c",
+      "type": "file",
+      "size": 736,
+      "sha256": "618415c3f0862d7d878f2a91c3745cc4349811c2afed80d89d9d3dc2c35e3eae"
+    },
+    {
+      "path": "bin/fribidi-fuzzer.c",
+      "type": "file",
+      "size": 1869,
+      "sha256": "eb6d8024bb3c30c99845f22c7065f503e04c0ee3f38b85179e457200582ad3c0"
+    },
+    {
+      "path": "bin/fribidi-main.c",
+      "type": "file",
+      "size": 14453,
+      "sha256": "d5b6ac55697dd4b789bae5650945a6e9141102484d361ad33855dfdead341b5a"
+    },
+    {
+      "path": "bin/getopt.c",
+      "type": "file",
+      "size": 34076,
+      "sha256": "c28370b58d2b1b671249a35913fa7fddd57770c1ec60e46cbcdfbc380f95a541"
+    },
+    {
+      "path": "bin/getopt.h",
+      "type": "file",
+      "size": 6101,
+      "sha256": "06831177269a0c3a169463e32ea817919247eb249da9c22df81a01b0d2bc15b0"
+    },
+    {
+      "path": "bin/getopt1.c",
+      "type": "file",
+      "size": 4746,
+      "sha256": "cd98cec6151230732e76359608e2f4a93b5ad5d2b058a569ad2db01566a95a7d"
+    },
+    {
+      "path": "bin/getopt_int.h",
+      "type": "file",
+      "size": 4669,
+      "sha256": "6234c49a4151bcc2f8cf6cf92b03a6b0dea1db1815665ced9717e37cb86921b1"
+    },
+    {
+      "path": "bin/gettext.h",
+      "type": "file",
+      "size": 31,
+      "sha256": "f64ac9a6a7efcac83ba674cbccf1eff0ab50d87922cc0ab0ef9240dac7583731"
+    },
+    {
+      "path": "bin/meson.build",
+      "type": "file",
+      "size": 1314,
+      "sha256": "e72435b2815fec37ce1e1155053c403c7820f36ca134518666812b70d3d3f3a9"
+    },
+    {
+      "path": "configure.ac",
+      "type": "file",
+      "size": 4902,
+      "sha256": "3c0f434e96ccc29ac64abe1d5eda8ee8a8df0822c9a011235e53e2db3db99f45"
+    },
+    {
+      "path": "doc/Makefile.am",
+      "type": "file",
+      "size": 1290,
+      "sha256": "04f68ce22714c29b8372db4c81592fefe3803ac73c468933de4b1d3a5e0fec2c"
+    },
+    {
+      "path": "doc/meson.build",
+      "type": "file",
+      "size": 1929,
+      "sha256": "168ea6da2ed182adbfc4c8c0442c71253063db97899f735e57bc3dd89d6800d8"
+    },
+    {
+      "path": "fribidi.pc.in",
+      "type": "file",
+      "size": 408,
+      "sha256": "f41d7907c9486a7be6f1a47ca9afadc45b8cf9f9cf157d9236e38ccd764d05cf"
+    },
+    {
+      "path": "gen.tab/Makefile.am",
+      "type": "file",
+      "size": 3949,
+      "sha256": "56acb70e8837ba4847418178fe3f6368459dc2a2a0f821d807caf82a8d4b773f"
+    },
+    {
+      "path": "gen.tab/gen-arabic-liga.sh",
+      "type": "file",
+      "size": 354,
+      "sha256": "7447a19b842ed58a875afa2afa8aa8c57263a8486540288183d2c083038db6b1"
+    },
+    {
+      "path": "gen.tab/gen-arabic-shaping-tab.c",
+      "type": "file",
+      "size": 6513,
+      "sha256": "c4d40b6be2f38317b65651f7b22399007c5a15f852e7be6b73cb252eabb58c62"
+    },
+    {
+      "path": "gen.tab/gen-bidi-type-tab.c",
+      "type": "file",
+      "size": 7423,
+      "sha256": "bf2f7ec2c5e077cecbcab4d4b1aa62338328b991a1a82eecc878c467d95cd3ff"
+    },
+    {
+      "path": "gen.tab/gen-brackets-tab.c",
+      "type": "file",
+      "size": 7866,
+      "sha256": "ecb6671e106e6dcfc8ef642c78a4ed46ed31997176e1b0769e2107c449362458"
+    },
+    {
+      "path": "gen.tab/gen-brackets-type-tab.c",
+      "type": "file",
+      "size": 4903,
+      "sha256": "b13ad6b724fe55c89828c0413b16d47fe4334c68c310ce00677286a8eb698322"
+    },
+    {
+      "path": "gen.tab/gen-joining-type-tab.c",
+      "type": "file",
+      "size": 7196,
+      "sha256": "3f182b29b9b6a9d0fd541e1d1d85aa18567911411a3d1d31e8e9b1cb224247fa"
+    },
+    {
+      "path": "gen.tab/gen-mirroring-tab.c",
+      "type": "file",
+      "size": 5058,
+      "sha256": "c118c13170ce1e2ecf48a5e1764edb105d64f3574eed7652cea858892bb0683f"
+    },
+    {
+      "path": "gen.tab/gen-unicode-version.c",
+      "type": "file",
+      "size": 4061,
+      "sha256": "1810ef5c6c641ebdf33c10191008df133966e6ad4941be50ed291ccb228fc430"
+    },
+    {
+      "path": "gen.tab/meson.build",
+      "type": "file",
+      "size": 2552,
+      "sha256": "3c7d7118340e65747458b87b05426f9a6769424d1166e9cd74219f641539b88c"
+    },
+    {
+      "path": "gen.tab/packtab.c",
+      "type": "file",
+      "size": 9602,
+      "sha256": "7296d4ab454b83b15b89496bee81669d096fdb05506bdfd70efc24a227d85afa"
+    },
+    {
+      "path": "gen.tab/packtab.h",
+      "type": "file",
+      "size": 1373,
+      "sha256": "433df96f42270b460dbfe0b1b56d2e3756f7342b7db41fbc97b598f6ff090bec"
+    },
+    {
+      "path": "gen.tab/unidata/ArabicShaping.txt",
+      "type": "file",
+      "size": 40528,
+      "sha256": "c7698811e9adb6cc98fb996a7de4be2b6532f2ac67e76055cc8afdbf6ee18af3"
+    },
+    {
+      "path": "gen.tab/unidata/BidiBrackets.txt",
+      "type": "file",
+      "size": 8950,
+      "sha256": "24a74555f918bbe99f5b3f1b83cf36fc0e205bb8a600a6a3aa539c710a3dcf27"
+    },
+    {
+      "path": "gen.tab/unidata/BidiMirroring.txt",
+      "type": "file",
+      "size": 26690,
+      "sha256": "7a5c74cedc1616a9af0a9d22e108ae592d86fe93649c144ae6ba49f193a44122"
+    },
+    {
+      "path": "gen.tab/unidata/ReadMe.txt",
+      "type": "file",
+      "size": 654,
+      "sha256": "7316825946e47cdfb77f6c9037c611d74d58b2e55761ea0d6dfa162fa07a926a"
+    },
+    {
+      "path": "gen.tab/unidata/UnicodeData.txt",
+      "type": "file",
+      "size": 1897793,
+      "sha256": "36018e68657fdcb3485f636630ffe8c8532e01c977703d2803f5b89d6c5feafb"
+    },
+    {
+      "path": "git.mk",
+      "type": "file",
+      "size": 12643,
+      "sha256": "013d6256c85501fad8b3f3c13d21bcb59967b597f9816e193de55fbef75c6baf"
+    },
+    {
+      "path": "lib/Headers.mk",
+      "type": "file",
+      "size": 646,
+      "sha256": "53f81cf506024b0862272480689fa1a270a6f56187d5aad587a8be4c8c3551c3"
+    },
+    {
+      "path": "lib/Makefile.am",
+      "type": "file",
+      "size": 2108,
+      "sha256": "2d6278a3b4d01ae9c81d2d2fc5a3839b87dfef875e56c9d735a2cb0aafb83413"
+    },
+    {
+      "path": "lib/arabic-misc.tab.i",
+      "type": "file",
+      "size": 2708,
+      "sha256": "0cfac5c0124f11e1df8a01102321035eb420311d67968b21c96d3b67ac2edf90"
+    },
+    {
+      "path": "lib/bidi-types.h",
+      "type": "file",
+      "size": 1584,
+      "sha256": "9834f79a7e0d15116a902a1a97493411e8347806373fd97d3c00b0136baaca22"
+    },
+    {
+      "path": "lib/common.h",
+      "type": "file",
+      "size": 3987,
+      "sha256": "bc9702345b53c6263efeec0c96ad465d91a0de9759e01427719c508ed85d1da3"
+    },
+    {
+      "path": "lib/debug.h",
+      "type": "file",
+      "size": 3072,
+      "sha256": "e7aed7b76ff81142f464afd14474aed6eece449f6446d0dda124421e0b1cef8c"
+    },
+    {
+      "path": "lib/fribidi-arabic.c",
+      "type": "file",
+      "size": 5434,
+      "sha256": "76a13aa93be6981d5ef3758bccce70ecba88a82d2168a0c4cfea5b8fac5cb519"
+    },
+    {
+      "path": "lib/fribidi-arabic.h",
+      "type": "file",
+      "size": 2823,
+      "sha256": "f4c5231a027536077ff577aa375e95f93ccd3275fd31a1951244ec449d4fd7cb"
+    },
+    {
+      "path": "lib/fribidi-begindecls.h",
+      "type": "file",
+      "size": 80,
+      "sha256": "7a8cd3e05e46dee19f658d67e485fca4acd06b96b4773bbf4607530564f3117f"
+    },
+    {
+      "path": "lib/fribidi-bidi-types-list.h",
+      "type": "file",
+      "size": 3773,
+      "sha256": "f8bbfd157de60bd62b2f565488c22630dda9315e50af7002856de557c0a1daa3"
+    },
+    {
+      "path": "lib/fribidi-bidi-types.c",
+      "type": "file",
+      "size": 2880,
+      "sha256": "428a2779558f214d2c433fab1e7891448aa59117a16bad609a195cced731cadb"
+    },
+    {
+      "path": "lib/fribidi-bidi-types.h",
+      "type": "file",
+      "size": 14990,
+      "sha256": "693930457d718570f795fb0a02d3aa85188dc702e62f9707dc44a28ab5d2b260"
+    },
+    {
+      "path": "lib/fribidi-bidi.c",
+      "type": "file",
+      "size": 48114,
+      "sha256": "6aa9daf17b23154ee45f65e27336d26abdf319d6fb01fc96e8e5e49f6de3ad6e"
+    },
+    {
+      "path": "lib/fribidi-bidi.h",
+      "type": "file",
+      "size": 6253,
+      "sha256": "819ec96d0a479a8516260b1a3b3993a244214ad6c0586d304249a691e1b5b274"
+    },
+    {
+      "path": "lib/fribidi-brackets.c",
+      "type": "file",
+      "size": 2810,
+      "sha256": "ca97f3b6fee2546fb9f0d9b26efa3e98279d8a0f8bf1cac52d509858ec772a79"
+    },
+    {
+      "path": "lib/fribidi-brackets.h",
+      "type": "file",
+      "size": 3180,
+      "sha256": "f5a32f2ac8c0cdc445f82b9d81f6a5b4ae103ca65e03838eb09453b5185988d1"
+    },
+    {
+      "path": "lib/fribidi-char-sets-cap-rtl.c",
+      "type": "file",
+      "size": 8712,
+      "sha256": "210046d7bc36e8956620918549d9c3ef7d0179373779ea86348d2fa42f377284"
+    },
+    {
+      "path": "lib/fribidi-char-sets-cap-rtl.h",
+      "type": "file",
+      "size": 1848,
+      "sha256": "bd25adf8f55c63fb49518e2215301135f787d78d9c19e9dc9a395df7eb0ad231"
+    },
+    {
+      "path": "lib/fribidi-char-sets-cp1255.c",
+      "type": "file",
+      "size": 3649,
+      "sha256": "25a952f4f076b7ad962d4b888ac85d1ebfea1b4a05f5e6c45b6d9eccbd39eb0c"
+    },
+    {
+      "path": "lib/fribidi-char-sets-cp1255.h",
+      "type": "file",
+      "size": 1735,
+      "sha256": "a9a15bba6fe9de247a9ee92e4d8cf45f7e28fb99e3b2981dec1e803be79c44a1"
+    },
+    {
+      "path": "lib/fribidi-char-sets-cp1256.c",
+      "type": "file",
+      "size": 5494,
+      "sha256": "861ff96cf0140c0331515c75ea7c8c6c41f86ec0d5f18168feec8de4f181e912"
+    },
+    {
+      "path": "lib/fribidi-char-sets-cp1256.h",
+      "type": "file",
+      "size": 1727,
+      "sha256": "04cfd262ef6a20ad048eb9fdea340928afa1f9c69703746998a8b03c7f56847f"
+    },
+    {
+      "path": "lib/fribidi-char-sets-iso8859-6.c",
+      "type": "file",
+      "size": 2020,
+      "sha256": "88c65fcb22941b51d81dca44aafb93b768967245d6b8f830ecfaa2b815aec31e"
+    },
+    {
+      "path": "lib/fribidi-char-sets-iso8859-6.h",
+      "type": "file",
+      "size": 1760,
+      "sha256": "88d7140e53ff20c41722ef25c83d0d66aa4e7894b6f39f26b5eb6fd462e4332b"
+    },
+    {
+      "path": "lib/fribidi-char-sets-iso8859-8.c",
+      "type": "file",
+      "size": 3075,
+      "sha256": "9cf90ab7c085c7e71bb226a4125ffba0e73faf0545962b9644aef2a0134eb058"
+    },
+    {
+      "path": "lib/fribidi-char-sets-iso8859-8.h",
+      "type": "file",
+      "size": 1760,
+      "sha256": "c4295d8ae4e098b306cf68d2c2004e322a211c2c6f1edf3387314c25f3a5627d"
+    },
+    {
+      "path": "lib/fribidi-char-sets-list.h",
+      "type": "file",
+      "size": 2266,
+      "sha256": "93aec7f29320d82933f5a4f18bf5bed4a4be8bb9a16cc0b7ad6452f4647840ef"
+    },
+    {
+      "path": "lib/fribidi-char-sets-utf8.c",
+      "type": "file",
+      "size": 3472,
+      "sha256": "a443421a8955261ad62af1117d1819dd0bdc7eefff7a49d474d02e534abf1d0e"
+    },
+    {
+      "path": "lib/fribidi-char-sets-utf8.h",
+      "type": "file",
+      "size": 1809,
+      "sha256": "59f201f0e77ecbf04c75ab0e52172c81ac8812bc274932ccb0346d94d6de5f3c"
+    },
+    {
+      "path": "lib/fribidi-char-sets.c",
+      "type": "file",
+      "size": 5027,
+      "sha256": "14ba20a9d4e9372f47817be2c466c9c53567781b623a58fa0004b4e24a835b2f"
+    },
+    {
+      "path": "lib/fribidi-char-sets.h",
+      "type": "file",
+      "size": 3322,
+      "sha256": "bb3b0fea74d9e4d456a1241cc63a557365260180b8382bb622891df3c164647c"
+    },
+    {
+      "path": "lib/fribidi-common.h",
+      "type": "file",
+      "size": 4751,
+      "sha256": "14246b56c61a1c869568445948db641aa15cccb35e33835e4651a80efc35a55b"
+    },
+    {
+      "path": "lib/fribidi-config.h.in",
+      "type": "file",
+      "size": 770,
+      "sha256": "9f91604dbcbf1a4856a80eca87f047dd79d096b82b0ff8a572047ae45c76c406"
+    },
+    {
+      "path": "lib/fribidi-deprecated.c",
+      "type": "file",
+      "size": 3624,
+      "sha256": "a2a3c686388445e828d4409688d3085e97547b00f97bf62013d7b912eaa80693"
+    },
+    {
+      "path": "lib/fribidi-deprecated.h",
+      "type": "file",
+      "size": 6049,
+      "sha256": "8839fbc0faaa654dc2f166862962d74ec2c29932373eed1e35809b35eaa352f3"
+    },
+    {
+      "path": "lib/fribidi-enddecls.h",
+      "type": "file",
+      "size": 74,
+      "sha256": "5d140c2e49a3d4d0b5d9519df860e56ebeabbbf991fec37bde9ce7d868d12236"
+    },
+    {
+      "path": "lib/fribidi-flags.h",
+      "type": "file",
+      "size": 2038,
+      "sha256": "819bf2e462e20a3f79a9f959be173550aa609f12eeecbf62e87109b8034dfb20"
+    },
+    {
+      "path": "lib/fribidi-joining-types-list.h",
+      "type": "file",
+      "size": 1697,
+      "sha256": "00b499c280d1331d802c5c778b66d4c2f80fb894c94dbdcb162c05fe8cfe4f8e"
+    },
+    {
+      "path": "lib/fribidi-joining-types.c",
+      "type": "file",
+      "size": 2787,
+      "sha256": "5a06d1cf7b5575b9bae3dee01863c88cef469856418a2f7452c3fa3b254af203"
+    },
+    {
+      "path": "lib/fribidi-joining-types.h",
+      "type": "file",
+      "size": 8180,
+      "sha256": "f4703cad6845a1e4c11702999716b1667ad6e268ecfa64f91585d739e2ffd913"
+    },
+    {
+      "path": "lib/fribidi-joining.c",
+      "type": "file",
+      "size": 5211,
+      "sha256": "0e7da04154bd6c584b98aef21637b754e7aeee64e4f2c00014964ccf74bd357e"
+    },
+    {
+      "path": "lib/fribidi-joining.h",
+      "type": "file",
+      "size": 2868,
+      "sha256": "c9bbe87f5c5ce2ce99cd8568a0a79fc715c216de9f677973e711a798085099a1"
+    },
+    {
+      "path": "lib/fribidi-mirroring.c",
+      "type": "file",
+      "size": 2392,
+      "sha256": "2839e84bba5edfb43e3be21006ea698376b007533f4c7bb52e6362ff98085315"
+    },
+    {
+      "path": "lib/fribidi-mirroring.h",
+      "type": "file",
+      "size": 3028,
+      "sha256": "cc531e106e7b42748a997459464c8a08cc38cef4273d41afdbf2aa1bc36393f3"
+    },
+    {
+      "path": "lib/fribidi-run.c",
+      "type": "file",
+      "size": 7441,
+      "sha256": "60d487f4b0e062d8c8dcc3ce1dd6905d440eac29aeee0e692a04ae5b57504721"
+    },
+    {
+      "path": "lib/fribidi-shape.c",
+      "type": "file",
+      "size": 1753,
+      "sha256": "3ae216eef48ec7572b7ead3b063c255c956fe02249890e651231e8a04b564705"
+    },
+    {
+      "path": "lib/fribidi-shape.h",
+      "type": "file",
+      "size": 2670,
+      "sha256": "4c57bf3ed59c8f425990ca5df1a696a98f87075db00e0f1b6c99b8de0c2588d7"
+    },
+    {
+      "path": "lib/fribidi-types.h",
+      "type": "file",
+      "size": 2428,
+      "sha256": "c959bf5f15c0fc405205136cc0ed9c03aa63a9fc285696444dc594b0d6f4845f"
+    },
+    {
+      "path": "lib/fribidi-unicode.h",
+      "type": "file",
+      "size": 3352,
+      "sha256": "21ee4bf3f7a6dd19e5b35566cdf10a2cdf22b52d01aa3fe467d2da8f11cec2fe"
+    },
+    {
+      "path": "lib/fribidi.c",
+      "type": "file",
+      "size": 8903,
+      "sha256": "826707f6ddb46bd15b5d6799d01fb76c413b4b06fb48b8811ae151636cb638cd"
+    },
+    {
+      "path": "lib/fribidi.def",
+      "type": "file",
+      "size": 798,
+      "sha256": "f7b307f510fb92243a642bb623ef3d0e6877f3e866a1b80d67dded8e212e222e"
+    },
+    {
+      "path": "lib/fribidi.h",
+      "type": "file",
+      "size": 4831,
+      "sha256": "a3c26eda78b6563361253a094f2a7f5b725ed2bd7c6a8dfaa65883cf174ee18b"
+    },
+    {
+      "path": "lib/joining-types.h",
+      "type": "file",
+      "size": 1564,
+      "sha256": "fa2da81134e45eea638bb8cd91d1fc9f359015579d0ffb8cdfd050e0271a8424"
+    },
+    {
+      "path": "lib/meson.build",
+      "type": "file",
+      "size": 2737,
+      "sha256": "740b7d2ceb167ae77add6dcb3e77bb97204eae10dd9232639f9a2c7d23d9af42"
+    },
+    {
+      "path": "lib/run.h",
+      "type": "file",
+      "size": 3521,
+      "sha256": "36e08efc0d4d67595e25dd0ab7689258a3d3ed1b18b8a8b6c577bb6dfc8796ca"
+    },
+    {
+      "path": "m4/m4_ax_prog_cc_for_build.m4",
+      "type": "file",
+      "size": 4035,
+      "sha256": "d1c6a543a8ef0a3c4c4595304306640beefdfb95b51c02588dd1f9f4b1b199f2"
+    },
+    {
+      "path": "meson.build",
+      "type": "file",
+      "size": 2947,
+      "sha256": "58e7b4c76f01184adfac4480c86072c40b6efaaf3f448dedfba3946af8fc3213"
+    },
+    {
+      "path": "meson_options.txt",
+      "type": "file",
+      "size": 458,
+      "sha256": "4f43276ba0e983d3a2d9ffc0afd49eaa3097f1bfc64a36a6cf621f1e5a4bf356"
+    },
+    {
+      "path": "test/Makefile.am",
+      "type": "file",
+      "size": 1172,
+      "sha256": "eb7c01489966f7aa9fef7fbaae59d0ede5b5303a1ac672b1a41b7d6047bd7b6a"
+    },
+    {
+      "path": "test/fuzzing/crash-69ebdb74927bd63911e9af32e7da3b0216279461",
+      "type": "file",
+      "size": 38,
+      "sha256": "749622b6e9f9bf6c5827fb804fbcaa4e9567ad13da167e07c522ae88a993f388"
+    },
+    {
+      "path": "test/fuzzing/crash-ca62f992817f09c2072b0bb6c41f061d20bb7efe",
+      "type": "file",
+      "size": 1420,
+      "sha256": "bf60f89141ec074ac294d32bfd519ccac8fe898cefe268b617cc95a6d3e76e5b"
+    },
+    {
+      "path": "test/meson.build",
+      "type": "file",
+      "size": 967,
+      "sha256": "c52dde9900af8cdc3447c6a95edb70860e3ac4561c3f4dcd1a24825eba3065e0"
+    },
+    {
+      "path": "test/run.tests",
+      "type": "file",
+      "size": 2148,
+      "sha256": "873e52bbf1f6cff8baa085f7a76e011e750f0f70076124aa33953abf13d1eb6e"
+    },
+    {
+      "path": "test/test-runner.py",
+      "type": "file",
+      "size": 1300,
+      "sha256": "a8994ed63d5732bd5f1bdaab7de3d678d4c547734b6ad3e7ac126f8261120316"
+    },
+    {
+      "path": "test/test_CapRTL_explicit.input",
+      "type": "file",
+      "size": 410,
+      "sha256": "80907575aa3569d735b195e8be395e914477cfd66d772874a66071ff4f7ca677"
+    },
+    {
+      "path": "test/test_CapRTL_explicit.reference",
+      "type": "file",
+      "size": 949,
+      "sha256": "4c7a28dedd85084b84655ddb4fbea40550c90165bd9d0b3c8a8c08fd47b00840"
+    },
+    {
+      "path": "test/test_CapRTL_implicit.input",
+      "type": "file",
+      "size": 663,
+      "sha256": "08a6d94bf353c0f6eea17d14d47fde956e02337dc0f0211f5fe44fb60aebe064"
+    },
+    {
+      "path": "test/test_CapRTL_implicit.reference",
+      "type": "file",
+      "size": 1928,
+      "sha256": "2dc1bd91e92b9d1a29132519c9ed012b5abc82e142e7b0f357f95a6f5d4e7372"
+    },
+    {
+      "path": "test/test_CapRTL_isolate.input",
+      "type": "file",
+      "size": 176,
+      "sha256": "05e795e31ad3b0c19945171e8800b67c66468626585128ab22deee5d4318213e"
+    },
+    {
+      "path": "test/test_CapRTL_isolate.reference",
+      "type": "file",
+      "size": 528,
+      "sha256": "61d9c63a1f9cae28bfa3663cb769707642cf1e07cb2ea575cb8e84a643d8c162"
+    },
+    {
+      "path": "test/test_ISO8859-8_hebrew.input",
+      "type": "file",
+      "size": 284,
+      "sha256": "c4c4cbe8e5be70cac8bda6b7c8a28fa2c2aa7f1b970c512302164b69b1aad478"
+    },
+    {
+      "path": "test/test_ISO8859-8_hebrew.reference",
+      "type": "file",
+      "size": 1152,
+      "sha256": "ccecbe7ba7da36b66727a54747712182cba5684b110d42b5650fc4d5aec127a2"
+    },
+    {
+      "path": "test/test_UTF-8_persian.input",
+      "type": "file",
+      "size": 969,
+      "sha256": "d2a5c9284b8924828152e4a66fe04300cfe2b345830b338568abddfe16ec72d8"
+    },
+    {
+      "path": "test/test_UTF-8_persian.reference",
+      "type": "file",
+      "size": 2362,
+      "sha256": "8da878c82fc89f219694b00e7c5c8c7801cd920144d6b8983eb7c7bf6b466079"
+    },
+    {
+      "path": "test/test_UTF-8_reordernsm.input",
+      "type": "file",
+      "size": 555,
+      "sha256": "c2775ce82713ee2a768c6e4baa364d7769f093745f7a9268fbfbafa97ef09855"
+    },
+    {
+      "path": "test/test_UTF-8_reordernsm.reference",
+      "type": "file",
+      "size": 1370,
+      "sha256": "a84bebc6cf0de7b1f63bd17e7eec8e9579058afdf600bdb60f7728377ef1db52"
+    },
+    {
+      "path": "test/unicode-conformance/BidiCharacterTest.c",
+      "type": "file",
+      "size": 12268,
+      "sha256": "5baea6721611e8a1a7bda47b740617c360ad05ed7fb3f02a1e86455ff13071d6"
+    },
+    {
+      "path": "test/unicode-conformance/BidiCharacterTest.txt",
+      "type": "file",
+      "size": 6880546,
+      "sha256": "7739891361250475fe55cfc7eeee7024ba2626bdce8c7db02bf7ae9d1bcdfb3f"
+    },
+    {
+      "path": "test/unicode-conformance/BidiTest.c",
+      "type": "file",
+      "size": 11152,
+      "sha256": "21f339fcb6f1d7bb7e83f6ebe2e935a4ec4f88605e469e856b136fbaad73329c"
+    },
+    {
+      "path": "test/unicode-conformance/BidiTest.txt",
+      "type": "file",
+      "size": 7959972,
+      "sha256": "306a86c1c29458531e56c29ffde6badede65897275a5941ac7fc6985d6b0994f"
+    },
+    {
+      "path": "test/unicode-conformance/Makefile.am",
+      "type": "file",
+      "size": 734,
+      "sha256": "6ea03c6adb0ffb2f3c9f73d3f01fe590cb98da5155f95020b3e3a44455caee72"
+    },
+    {
+      "path": "test/unicode-conformance/meson.build",
+      "type": "file",
+      "size": 368,
+      "sha256": "db1dcb901f551ed5750c35a6ee9ec56b56c792938085ea61debc842e662bfaae"
+    },
+    {
+      "path": "test/unicode-conformance/run.tests",
+      "type": "file",
+      "size": 412,
+      "sha256": "44e9f95d98bf0d9e3352e3c922652247d4fdf7a407c392a7e4bff1c02b9dd652"
+    }
+  ]
+}

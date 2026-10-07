@@ -11,11 +11,14 @@
  */
 
 #include <vector>
+#include <stdexcept>
 
 #include "GHOST_ISystem.hh"
 #include "GHOST_SystemHeadless.hh"
 
-#if defined(WITH_GHOST_X11) && defined(WITH_GHOST_WAYLAND)
+#if defined(WITH_GHOST_OHOS)
+#  include "GHOST_SystemOHOS.hh"
+#elif defined(WITH_GHOST_X11) && defined(WITH_GHOST_WAYLAND)
 #  include "GHOST_SystemWayland.hh"
 #  include "GHOST_SystemX11.hh"
 #elif defined(WITH_GHOST_X11)
@@ -67,6 +70,16 @@ GHOST_TSuccess GHOST_ISystem::createSystem(bool verbose, [[maybe_unused]] bool b
 
 #if defined(WITH_HEADLESS)
     /* Pass. */
+#elif defined(WITH_GHOST_OHOS)
+    backends_attempted.push_back({"OHOS", {}});
+    try {
+      system_ = new GHOST_SystemOHOS();
+    }
+    catch (const std::runtime_error &e) {
+      if (verbose) backends_attempted.back().failure_msg = e.what();
+      delete system_;
+      system_ = nullptr;
+    }
 #elif defined(WITH_GHOST_X11) && defined(WITH_GHOST_WAYLAND)
     /* Special case, try Wayland, fall back to X11. */
     if (has_wayland_libraries) {

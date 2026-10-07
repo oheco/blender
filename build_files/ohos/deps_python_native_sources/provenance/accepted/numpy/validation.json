@@ -1,0 +1,253 @@
+{
+  "python": "3.13.13 (main, Oct  4 2026, 15:55:13) [Clang 15.0.4 (/srv/workspace/llvm-release/2026_0617_llvm15_release/toolchain/ll",
+  "platform": "ohos",
+  "SOABI": "cpython-313-aarch64-linux-ohos",
+  "numpy": "2.3.4",
+  "module_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install/lib/python3.13/site-packages/numpy/__init__.py",
+  "checks": [
+    "dtype/shape/strided-copy/array buffer core",
+    "portable LAPACK solve/inv/SVD/eigh/determinant",
+    "C++17 pocketfft complex/real roundtrips",
+    "native RNG reproducibility/distributions",
+    "ufunc trigonometric/exp/log + portable BLAS dot",
+    "actual NumPy buffer ctypes pointer + signed ffi callback",
+    "all installed NumPy extension modules import"
+  ],
+  "extensions": [
+    "numpy._core._multiarray_tests",
+    "numpy._core._multiarray_umath",
+    "numpy._core._operand_flag_tests",
+    "numpy._core._rational_tests",
+    "numpy._core._simd",
+    "numpy._core._struct_ufunc_tests",
+    "numpy._core._umath_tests",
+    "numpy.fft._pocketfft_umath",
+    "numpy.linalg._umath_linalg",
+    "numpy.linalg.lapack_lite",
+    "numpy.random._bounded_integers",
+    "numpy.random._common",
+    "numpy.random._generator",
+    "numpy.random._mt19937",
+    "numpy.random._pcg64",
+    "numpy.random._philox",
+    "numpy.random._sfc64",
+    "numpy.random.bit_generator",
+    "numpy.random.mtrand"
+  ],
+  "elf_audit": [
+    {
+      "path": "lib/python3.13/site-packages/numpy/_core/_multiarray_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "79674d27c11ec288dec4723a771ba5bd1a11e98572d9763b877cc0c34307350c",
+      "size": 166272,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "21e2502b70d99c18da957ec5b1046b366e8a81f24c216416d16c4f76c7218ffd",
+      "size": 5270016,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/_core/_operand_flag_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "fae1c3eac295264115f964813a3b3d40cce650a55aee32ef3c0e58ccc1e24425",
+      "size": 22848,
+      "needed": [
+        "libpython3.13.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/_core/_rational_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "910a341bb414404807fa10a1296714a81acd7d4be5d9d3f3d9ad9040e30e4562",
+      "size": 55680,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/_core/_simd.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "79b541f6ad50075b804b45355501d9369581d07e56deabce2d529558cfe40c8f",
+      "size": 395712,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/_core/_struct_ufunc_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "3ec1fbad0e7cfc04e86b62ecd413cfd4acf09a6dfebcf58a7ee944b0f50a1e72",
+      "size": 22848,
+      "needed": [
+        "libpython3.13.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/_core/_umath_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "153888245e216c43fb4eabb70fe34c022c6147886f87debd5f621044c64db474",
+      "size": 51584,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/fft/_pocketfft_umath.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "5ce73b524716947108f24adfdc921aba2e44e314c7ded783546952b8e820eade",
+      "size": 2161152,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "b04af082cdbcdefb29010a3f72625cc9fdb2fc76f0469f24bdb561608b172f14",
+      "size": 1624448,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/linalg/lapack_lite.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "e7dcd362611ffef66b342d8cd450dd762955d91008244517477fb940bca137d7",
+      "size": 1452352,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/_bounded_integers.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "33c48a4a4a4192282dc4f7a60efe8d3dd6e7b53c53419dc4a889eab71239a102",
+      "size": 280896,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/_common.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "e5b5f6859bcb2b04462695ac874d42f260850b6d24fa3afe1d7eae5c409da1c5",
+      "size": 227648,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/_generator.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "27ea6eeece046415bad73a46cbcec2cd18f75dcc004024415dfc2e19fe523f2b",
+      "size": 842048,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/_mt19937.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "ee299318749e268adf5b96ccde527cad3587606e2adb0153c6246b3cb8f6e6d9",
+      "size": 121152,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/_pcg64.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "6aed58f2ef42569402518bd480d2216beeeae58ebe4c383e9a0cc838036c8387",
+      "size": 125248,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/_philox.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "d10282666f506e2ee20008996bc64222fe4aa67f5be2a06785e5bcf09bc4e4d2",
+      "size": 108864,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/_sfc64.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "2a62ee2b9e3c483cd0da3d1b36ab104e78c7272dcedb0d734b9a1e4b73b77943",
+      "size": 84288,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/bit_generator.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "8b6204c0b26dc793b04ea1cf03872f517ab5afb5468f7b0c321ba28d9afe812c",
+      "size": 211264,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    },
+    {
+      "path": "lib/python3.13/site-packages/numpy/random/mtrand.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "20767bf324a84d3548fbdf7fb9c9101f5905b94f1b61b8c72f1403d1864f71b3",
+      "size": 702784,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "runpaths": [],
+      "codesign": true
+    }
+  ],
+  "performance": "NumPy existing portable BLAS/LAPACK fallback, no external Fortran/BLAS; can be much slower than optimized OpenBLAS",
+  "not_claimed": [
+    "complete NumPy suite",
+    "Blender",
+    "HAP",
+    "optimized BLAS performance"
+  ]
+}

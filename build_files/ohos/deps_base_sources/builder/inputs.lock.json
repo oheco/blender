@@ -1,0 +1,519 @@
+{
+  "schema_version": 1,
+  "kind": "independent-complete-source-built-portable-Base",
+  "sealed_files": [
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/acceptance.py",
+      "sha256": "892694f2acd7376060450fc1abf917fa045a157972da74c287bfda2d2eaf2733",
+      "size": 11960
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/audit.py",
+      "sha256": "758c6d661fc22c041cbf5fd770e9ca8d8890dd50b0babe747f4d51aea586e3b5",
+      "size": 4492
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/builder.py",
+      "sha256": "2100c653e11f0ba6795e2489b001200f0c809d92afe03d9c9559a8c73cd51639",
+      "size": 13441
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538",
+      "size": 808
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/cmake/native-host.cmake",
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302",
+      "size": 812
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/cmake/zlib/CMakeLists.txt",
+      "sha256": "9ca66cfce53c2cb288760d1a0cc9dbbf40febd1c6a06cc67b8e443199fd01197",
+      "size": 2288
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/CMakeLists.txt",
+      "sha256": "5b66e9e0831dc5eabcf63f3f98e8ca93796f185bb689bd8e6c6ca07e6d0bacf6",
+      "size": 5636
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/affinity_probe.cc",
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6",
+      "size": 1421
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/base_cover_api.h",
+      "sha256": "6efb32c203f06283fada019fa98c6c90bf6620ab223ef8f2265fe2ef75e47cad",
+      "size": 1261
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/bridge.cc",
+      "sha256": "8828dae172620b7595271de532c47e8832947ad9c11a62936ac470dc3d90d92c",
+      "size": 2996
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/bridge.exports",
+      "sha256": "ac8b08d3da5b66585cc24ebf331c1b38e0d04a0863cca1dd7adfe7dd543a7c10",
+      "size": 199
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/imath_config_alias.cc",
+      "sha256": "7f54eb15f7ab2d933679ff454f6aac580d20b96477b7c464c1f9c21b79aca718",
+      "size": 258
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/module_owner.cc",
+      "sha256": "15c1b7ab7b3bcededb20fbb52b4531311774a44864c076ce6f4169b8d8ec4783",
+      "size": 6787
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/native-acceptance.cpp",
+      "sha256": "9ec238a318d08a156ab5a5e99697618366134348942f4000dd645a886ee0e7e4",
+      "size": 16126
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/native_probe.cc",
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1",
+      "size": 1161
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/package_api.cc",
+      "sha256": "b9a61885f9df4b54a4e0822ada35c6a2820be72d798ee02b8b836ee1068bc617",
+      "size": 4188
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/text_layout.cc",
+      "sha256": "dde1a9e64a8a2d9a3d4d542196a344eadc7e3ead7a43eefdf92a9b9b74a0bc93",
+      "size": 7193
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/zstd_cover_concurrent.cc",
+      "sha256": "e4782eeff06e81f80c7547e195e45ce9d7045dcd58251df481a50c25110e4bf4",
+      "size": 15222
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/consumers/zstd_cover_module.hh",
+      "sha256": "578e039a6bf0017861009c3d1e398923a07274ecec649c5dfa3636409cd46a5f",
+      "size": 15318
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/font-provenance/perf/fonts/Roboto-Regular.ttf",
+      "sha256": "797e35f7f5d6020a5c6ea13b42ecd668bcfb3bbc4baa0e74773527e5b6cb3174",
+      "size": 305608
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/font-provenance/test/subset/data/fonts/Roboto-Regular.ttf",
+      "sha256": "79e851404657dac2106b3d22ad256d47824a9a5765458edb72c9102a45816d95",
+      "size": 171676
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/fonts/Qahiri-Regular.ttf",
+      "sha256": "549cb573a7947d06eede06c049fb1fe3af162550e351eaecee17c278e73d269e",
+      "size": 35984
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/fonts/Roboto-Regular.abc.ttf",
+      "sha256": "60dc8176190f31721fed3095551ee7cf84659a67af6f15f1c99e4666c11f1154",
+      "size": 2132
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/fonts/Roboto-Regular.gsub.fi.ttf",
+      "sha256": "d650c07580759a9389190c8cd39b2d1acaa489ab9e951d094f4358bd6081fb2b",
+      "size": 2652
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/licenses/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/licenses/test/COPYING",
+      "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7",
+      "size": 4370
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/fixtures/licenses/test/api/fonts/README",
+      "sha256": "e9e1378e31250844392c34089f629d7a8e01772f2dca9e4c3f2535eab2ec93b1",
+      "size": 685
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/io_utils.py",
+      "sha256": "812dcc15528a6c6169fd84017080e7f692c141eeaf4819944be0f0cd01e91b76",
+      "size": 6802
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/launcher.py",
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339",
+      "size": 3118
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/metadata.py",
+      "sha256": "2595ac39fe6ef4d3b39191a7bc146ee75e61b5312b0045147e4d0dd8d67ba19a",
+      "size": 9147
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/patches/harfbuzz-10.0.1-ohos-static-subset.patch",
+      "sha256": "5ac8ccf899a4032c38859d9b6a0f02220b4b6392bf7d964baa6d46d38b3ac16d",
+      "size": 871
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/patches/jpeg-2.1.3-ohos-static-owner.patch",
+      "sha256": "223fbd55cf59b5cb8c739c3fc1920db4077e6eaed1158ef3826e4df73c743ad3",
+      "size": 1072
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/patches/zstd-1.5.7-ohos-cover-tls.patch",
+      "sha256": "d71212e7500c7dd528ce07315dbe8062a4a6eb097e8dfe7eb51c42c1848d36ac",
+      "size": 3657
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/preflight/CMakeLists.txt",
+      "sha256": "a3bfb691a35b8879457b3c5710785c0ab4bb63ea88d2d03743a1f0a6794d8453",
+      "size": 715
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/recipe.json",
+      "sha256": "a75bff7fe2ed24a5f3324fba63d2153d9ea7198d276547ac0988f65c3b4f5286",
+      "size": 6111
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/source_tree.py",
+      "sha256": "ef3e3c9a0223661b20ae52dbba27ddee329b0c3a7ba6b284e58c5ffa6563ec57",
+      "size": 9507
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/sources.lock.json",
+      "sha256": "0b887a57253dd91efae5eda9e520e46024201386634e4bf381866f8063012449",
+      "size": 27539
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/toolchain.py",
+      "sha256": "46e08da8e73e83f322cc6d1b92ca100bae0753c97a33493c96242502a44c55a2",
+      "size": 7170
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/builder/vendor_archive.py",
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09",
+      "size": 8263
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/brotli.json",
+      "sha256": "f701564f8149b031228f3124f712fd4fb75f5a1c3b712d9f17f4538dec0c7299",
+      "size": 23907
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/fmt.json",
+      "sha256": "96f7d86156b2f58117fed5e90bd4497a4a83edf253a086b0d42752a1a4fee3f7",
+      "size": 22894
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/freetype.json",
+      "sha256": "c3f2bf9c3393286b44cba7ac975ffaccd1010def8dd9508dccfa79cc65dd2f04",
+      "size": 153315
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/fribidi.json",
+      "sha256": "7811216a5b071a8752ad0b4fbc09a210e35f6c9228e39ad43662fd41d72e25b7",
+      "size": 24250
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/harfbuzz.json",
+      "sha256": "f253e30d677a16c7be3a3238ee95bd69bc9f1c144be69eeadc7af0be25665a00",
+      "size": 780759
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/imath.json",
+      "sha256": "df418ebd12788ef9253e9cfda78afda752d3f10f5190e30b78a09e89f937bf27",
+      "size": 74818
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/jpeg.json",
+      "sha256": "a120791172fa77904db5f5160c7fe99ceabed3cccb27879e11c11a9e583b5e64",
+      "size": 91956
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/meson.json",
+      "sha256": "26286274e67550661f4e7f589bf32b8a08a017ed4ce5637b82ac81ce3ef6fb6a",
+      "size": 968396
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/pkgconf.json",
+      "sha256": "47da1d0c88299ff4e7561fbe7ccbf632deefe361efbadd8fd63b54537bfa64a6",
+      "size": 33900
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/png.json",
+      "sha256": "6e991f657f60e89bfe4b13e161ac6da52f313b71be1bd212557b94a584acc7e7",
+      "size": 112710
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/zlib.json",
+      "sha256": "4d89427806c709067b49f9eeca81e72653aa86ae99840da771a14e9aa3e4fc24",
+      "size": 45582
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/inventories/zstd.json",
+      "sha256": "e8931264744650d8d8ca0b8e19375af556e365bd5de713543ec0e6a0fbc9eac9",
+      "size": 119670
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/brotli/LICENSE",
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94",
+      "size": 1084
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/fmt/LICENSE",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+      "size": 1431
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/freetype/LICENSE.TXT",
+      "sha256": "2e3bbb7d7c5c396368dd0853a790ec29ce5b8647163dde42a0493fb0d6556b2b",
+      "size": 2074
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/freetype/docs/FTL.TXT",
+      "sha256": "08c135755dd589039470f1fdbb400daaabaaa50d0b366d19cebff4d22986baa1",
+      "size": 6743
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/freetype/docs/GPLv2.TXT",
+      "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18",
+      "size": 17994
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/fribidi/COPYING",
+      "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b",
+      "size": 26440
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/harfbuzz/COPYING",
+      "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64",
+      "size": 1971
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/harfbuzz/src/ms-use/COPYING",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "size": 1141
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/harfbuzz/test/COPYING",
+      "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7",
+      "size": 4370
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/harfbuzz/test/shape/data/aots/COPYING",
+      "sha256": "f55f74bf740db07bb032a90aa74af4307adea3d489c1ccba12453cf0c0a764cb",
+      "size": 593
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/harfbuzz/test/shape/data/text-rendering-tests/COPYING",
+      "sha256": "d24039e4d22c9bc72096f6174374539d92a3d6e1163938546ec59179fe095e6f",
+      "size": 584
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/imath/LICENSE.md",
+      "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601",
+      "size": 1497
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/jpeg/LICENSE.md",
+      "sha256": "ee1eaf194d5924b6360af8a6ba6a4e1554037091f7505943300cdeec65f1aebb",
+      "size": 5213
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/jpeg/README.ijg",
+      "sha256": "4b7b9f8c03bb8d60270dfd12684e70ab21e4abfd27e73905cd1a7c4cae6f5cdb",
+      "size": 12732
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/meson/COPYING",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/pkgconf/COPYING",
+      "sha256": "07ee94b50a41ee3fc4e13a9b9c60b26fc28488494c465639f7e5f07a3952ec04",
+      "size": 509
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/png/LICENSE",
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "size": 5345
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/png/contrib/gregbook/COPYING",
+      "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572",
+      "size": 18097
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/png/contrib/gregbook/LICENSE",
+      "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438",
+      "size": 2373
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/png/contrib/pngminus/LICENSE.txt",
+      "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330",
+      "size": 1164
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/zlib/LICENSE",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "size": 1002
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/zstd/COPYING",
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+      "size": 18091
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/zstd/LICENSE",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "size": 1549
+    },
+    {
+      "path": "build_files/ohos/deps_base_sources/licenses/zstd/build/LICENSE",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "tpr/sources/brotli-1.0.9/manifest.json",
+      "sha256": "ef254960f7a380e0b9a42c76d1d9c98fc00df97189b2402b638ea9f31e37f5c5",
+      "size": 576
+    },
+    {
+      "path": "tpr/sources/brotli-1.0.9/source.part0000",
+      "sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+      "size": 486984
+    },
+    {
+      "path": "tpr/sources/fmt-12.1.0/manifest.json",
+      "sha256": "a02c824082442095e35ea523d86094b53a843efde23b0f75014fcdcd87a27c84",
+      "size": 568
+    },
+    {
+      "path": "tpr/sources/fmt-12.1.0/source.part0000",
+      "sha256": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea",
+      "size": 711419
+    },
+    {
+      "path": "tpr/sources/freetype-2.13.3/manifest.json",
+      "sha256": "f19d3eff8926da14ba0cd598fa2ccee9878a6c122657f4431030ce22555afbdb",
+      "size": 631
+    },
+    {
+      "path": "tpr/sources/freetype-2.13.3/source.part0000",
+      "sha256": "5c3a8e78f7b24c20b25b54ee575d6daa40007a5f4eea2845861c3409b3021747",
+      "size": 4063324
+    },
+    {
+      "path": "tpr/sources/fribidi-v1.0.12/manifest.json",
+      "sha256": "47d1eb46c98306409530a0b2cbef1313ba3c7154a9985dd6080ad9a6141c8c83",
+      "size": 600
+    },
+    {
+      "path": "tpr/sources/fribidi-v1.0.12/source.part0000",
+      "sha256": "2e9e859876571f03567ac91e5ed3b5308791f31cda083408c2b60fa1fe00a39d",
+      "size": 2110289
+    },
+    {
+      "path": "tpr/sources/harfbuzz-10.0.1/manifest.json",
+      "sha256": "daa831d63ac5f73827cf276c2a2c48488fe55c1780f246419599dec50026a6ee",
+      "size": 757
+    },
+    {
+      "path": "tpr/sources/harfbuzz-10.0.1/source.part0000",
+      "sha256": "9b4c527d8c5b300424d1b068b0f571b872cf147235641a5ab167dcac16bb0315",
+      "size": 33554432
+    },
+    {
+      "path": "tpr/sources/harfbuzz-10.0.1/source.part0001",
+      "sha256": "09ff33b7202770a8b5ceaf00decd7ab2a07dd227855e589c3c8dfc30a2610634",
+      "size": 3231443
+    },
+    {
+      "path": "tpr/sources/imath-3.2.2/manifest.json",
+      "sha256": "5d9eeb215f41ef21ff1bf5e9b99cd987d9d4a574a9a39ac1fc6c102e25ee54e2",
+      "size": 593
+    },
+    {
+      "path": "tpr/sources/imath-3.2.2/source.part0000",
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
+      "size": 689217
+    },
+    {
+      "path": "tpr/sources/jpeg-2.1.3/manifest.json",
+      "sha256": "7f40562f04c1095bda946e43e8a3a5d8cc7ff4b82f8bda3db8e6be7728132ce4",
+      "size": 615
+    },
+    {
+      "path": "tpr/sources/jpeg-2.1.3/source.part0000",
+      "sha256": "dbda0c685942aa3ea908496592491e5ec8160d2cf1ec9d5fd5470e50768e7859",
+      "size": 2260756
+    },
+    {
+      "path": "tpr/sources/meson-1.9.0/manifest.json",
+      "sha256": "f2d7140bde4c5b074c50abb163f1de9dcdd96977891a7a2615bd3adf50e10e77",
+      "size": 667
+    },
+    {
+      "path": "tpr/sources/meson-1.9.0/source.part0000",
+      "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+      "size": 2366082
+    },
+    {
+      "path": "tpr/sources/pkgconf-2.5.1/manifest.json",
+      "sha256": "dc135c29f0114b15e38452f1c29e15659745468447b4c8c8e2fb40369bcffdbc",
+      "size": 573
+    },
+    {
+      "path": "tpr/sources/pkgconf-2.5.1/source.part0000",
+      "sha256": "cd05c9589b9f86ecf044c10a2269822bc9eb001eced2582cfffd658b0a50c243",
+      "size": 328064
+    },
+    {
+      "path": "tpr/sources/png-1.6.58/manifest.json",
+      "sha256": "2796f6fca6c5a6e151ee644e04cb2cf76f1e342dcc2a08be6792dcfff7aba795",
+      "size": 581
+    },
+    {
+      "path": "tpr/sources/png-1.6.58/source.part0000",
+      "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+      "size": 1070096
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/manifest.json",
+      "sha256": "57d2b1dac5b12798d3d6d1aedcd36584efc77e933b1a40c41e08669e5467f26c",
+      "size": 560
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/source.part0000",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791
+    },
+    {
+      "path": "tpr/sources/zstd-1.5.7/manifest.json",
+      "sha256": "f0dd8f50451b5760e23e6c4d0c00e3e55d3b8e4a1bb8c53ec5490f59a055f259",
+      "size": 623
+    },
+    {
+      "path": "tpr/sources/zstd-1.5.7/source.part0000",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "size": 2434947
+    }
+  ],
+  "complete_original_archives": 12,
+  "source_record_count": 12130,
+  "runtime_dependencies": 10,
+  "source_build_tools": [
+    "Meson1.9.0",
+    "pkgconf2.5.1"
+  ],
+  "new_registry_ids": 0,
+  "new_full_native": "NOT_RUN",
+  "BlenderTextImage": "NOT_TESTED",
+  "HAP": "NOT_TESTED",
+  "source_revision": 6,
+  "parent_revision_inputs_lock_sha256": "25e6f0eb46b4fec593d24f082f820cb22d54d26d8414a7b5445d256cd3961e29"
+}

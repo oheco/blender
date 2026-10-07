@@ -28,6 +28,9 @@
 #include "BLT_translation.hh"
 
 #include "GHOST_ISystemPaths.hh"
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+#  include "GHOST_OHOSHost.h"
+#endif
 
 #include "CLG_log.h"
 
@@ -206,6 +209,14 @@ bool BKE_appdir_folder_documents(char *dir)
 void BKE_appdir_folder_caches(char *path, const size_t path_maxncpy)
 {
   path[0] = '\0';
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  GHOST_OHOSPaths host_paths{};
+  if (ghost_ohos_host_get_paths(ghost_ohos_host_installed(), &host_paths) == GHOST_OHOS_OK) {
+    BLI_path_join(path, path_maxncpy, host_paths.cache, SEP_STR);
+    return;
+  }
+  return; /* Missing host is an error, not permission to fall back to system paths. */
+#endif
 
   const GHOST_ISystemPaths *ghost_system_paths = GHOST_ISystemPaths::get();
   std::optional<std::string> caches_root_path = ghost_system_paths->getUserSpecialDir(
@@ -651,6 +662,37 @@ bool BKE_appdir_folder_id_ex(const int folder_id,
                              char *path,
                              size_t path_maxncpy)
 {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  GHOST_OHOSPaths paths{};
+  if (ghost_ohos_host_get_paths(ghost_ohos_host_installed(), &paths) != GHOST_OHOS_OK) {
+    return false;
+  }
+  const bool user = ELEM(folder_id, BLENDER_USER_CONFIG, BLENDER_USER_DATAFILES,
+                          BLENDER_USER_SCRIPTS, BLENDER_USER_EXTENSIONS);
+  const char *leaf = nullptr;
+  switch (folder_id) {
+    case BLENDER_USER_CONFIG: leaf = "config"; break;
+    case BLENDER_DATAFILES:
+    case BLENDER_USER_DATAFILES:
+    case BLENDER_SYSTEM_DATAFILES: leaf = "datafiles"; break;
+    case BLENDER_USER_SCRIPTS:
+    case BLENDER_SYSTEM_SCRIPTS: leaf = "scripts"; break;
+    case BLENDER_USER_EXTENSIONS:
+    case BLENDER_SYSTEM_EXTENSIONS: leaf = "extensions"; break;
+    case BLENDER_SYSTEM_PYTHON: leaf = "python"; break;
+    default: return false;
+  }
+  char version[16];
+  BLI_snprintf(version, sizeof(version), "%d.%d", BLENDER_VERSION / 100, BLENDER_VERSION % 100);
+  BLI_path_join(path,
+                path_maxncpy,
+                user ? paths.config : paths.runtime,
+                version,
+                leaf,
+                subfolder ? subfolder : "");
+  if (folder_id == BLENDER_USER_CONFIG) { BLI_dir_create_recursive(path); }
+  return BLI_is_dir(path);
+#endif
   switch (folder_id) {
     case BLENDER_DATAFILES: /* general case */
       if (get_path_environment(path, path_maxncpy, subfolder, "BLENDER_USER_DATAFILES")) {
@@ -977,6 +1019,15 @@ static void where_am_i(char *program_filepath,
 
 void BKE_appdir_program_path_init(const char *argv0)
 {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  UNUSED_VARS(argv0);
+  GHOST_OHOSPaths paths{};
+  if (ghost_ohos_host_get_paths(ghost_ohos_host_installed(), &paths) == GHOST_OHOS_OK) {
+    BLI_path_join(g_app.program_filepath, sizeof(g_app.program_filepath), paths.runtime, "blender-embedded");
+    BLI_path_join(g_app.program_dirname, sizeof(g_app.program_dirname), paths.runtime, SEP_STR);
+  }
+  return; /* A resource-root label, never an executable search or spawn target. */
+#endif
 #ifdef WITH_PYTHON_MODULE
   /* NOTE(@ideasman42): Always use `argv[0]` as is, when building as a Python module.
    * Otherwise other methods of detecting the binary that override this argument
@@ -1018,6 +1069,11 @@ bool BKE_appdir_program_python_search(char *program_filepath,
                                       const int version_minor)
 {
   ASSERT_IS_INIT();
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  UNUSED_VARS(version_major, version_minor);
+  if (program_filepath_maxncpy) { program_filepath[0] = '\0'; }
+  return false; /* No Python subprocess executable in the HAP/embedded runtime. */
+#endif
 
 #ifdef PYTHON_EXECUTABLE_NAME
   /* Passed in from the build-systems 'PYTHON_EXECUTABLE'. */
@@ -1253,6 +1309,20 @@ void BKE_tempdir_init(const char *userdir)
   BKE_tempdir_session_purge();
 
   g_app.temp_dirname_session_can_be_deleted = false;
+
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  /* Preferences cannot redirect host temporary I/O outside the private temp root. */
+  GHOST_OHOSPaths paths{};
+  if (ghost_ohos_host_get_paths(ghost_ohos_host_installed(), &paths) != GHOST_OHOS_OK) {
+    return;
+  }
+  if (where_is_temp(g_app.temp_dirname_base, sizeof(g_app.temp_dirname_base), paths.temp) &&
+      tempdir_session_create(g_app.temp_dirname_session, sizeof(g_app.temp_dirname_session),
+                             g_app.temp_dirname_base)) {
+    g_app.temp_dirname_session_can_be_deleted = true;
+  }
+  return;
+#endif
 
   /* Only do one pass if `userdir` is null. */
   int userdir_args_num = userdir ? 2 : 1;

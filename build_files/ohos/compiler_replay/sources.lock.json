@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "LLVM": {
+    "name": "llvm",
+    "version": "20.1.8",
+    "kind": "source",
+    "filename": "llvm-project-20.1.8.src.tar.xz",
+    "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz",
+    "license": "Apache-2.0 WITH LLVM-exception",
+    "license_files": [
+      "llvm/LICENSE.TXT",
+      "clang/LICENSE.TXT",
+      "lld/LICENSE.TXT",
+      "libcxx/LICENSE.TXT",
+      "libcxxabi/LICENSE.TXT",
+      "libunwind/LICENSE.TXT"
+    ],
+    "upstream_repository": "https://github.com/llvm/llvm-project",
+    "tag": "llvmorg-20.1.8",
+    "schema_version": 1,
+    "format": "original-archive-parts",
+    "size": 147242952,
+    "sha256": "6898f963c8e938981e6c4a302e83ec5beb4630147c7311183cf61069af16333d",
+    "parts": [
+      {
+        "filename": "source.part0000",
+        "size": 33554432,
+        "sha256": "06cacc1f26bacd4922cd23fec7427e44fd8db08d8c9836a7bab4dcae60a995c3"
+      },
+      {
+        "filename": "source.part0001",
+        "size": 33554432,
+        "sha256": "1b856c90bb260434ad78e25f3039b2e6bde9c68a52e336a10e833c28a37ddf54"
+      },
+      {
+        "filename": "source.part0002",
+        "size": 33554432,
+        "sha256": "b1ab7836bf5ec1a625cb1b3960dea831b9e7712642b689e74b3a3658c44c85e7"
+      },
+      {
+        "filename": "source.part0003",
+        "size": 33554432,
+        "sha256": "6da90b2fb7baff11b58326ce88e4e5a37a81670472c471cba94a1dd520876c6e"
+      },
+      {
+        "filename": "source.part0004",
+        "size": 13025224,
+        "sha256": "1a539e731a2245d52318f78524dadac90b07ddadbd6ec1ed0279e9f5c68131e8"
+      }
+    ]
+  },
+  "registry_manifest": "tpr/sources/llvm-20.1.8/manifest.json",
+  "original_md5": "915e251a657450a2ba8e4c106e4f9555",
+  "archive_root": "llvm-project-20.1.8.src",
+  "inventory": "build_files/ohos/compiler_replay/inventory.json",
+  "inventory_sha256": "9a7ddb5f52f16ef273ca685cb724efb2bba2e7e7dc960bfc8257490df033081d",
+  "patch": {
+    "version": "20.1.8",
+    "target": "llvm/cmake/modules/GetHostTriple.cmake",
+    "upstream_sha256": "412a66c5fc33d13ae28734ff3856f9f12e473ce2aaee3d4018ca31d6bc346952",
+    "patched_sha256": "e20e6d900cdc32236f19b42d3fc82cb04ce532a5240fd5e591c3b49ebea02641",
+    "patch_file": "0001-native-ohos-host-triple.diff",
+    "patch_sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d",
+    "fragment_sha256": "d1b8a8aa762421d415c17fe60a0090c8d5660ef751f49dbfed5cc6165d71d252",
+    "license": "Apache-2.0 WITH LLVM-exception",
+    "reason": "Upstream config.guess does not recognize HarmonyOS; on verified native ARM64 OHOS only, query actual compiler -dumpmachine",
+    "scope": "Only private cache LLVM source; original locked upstream archive is unchanged; no compiler version/probe/platform-name forgery"
+  },
+  "notices": [
+    {
+      "path": "LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/14538857e2a6cdbe65ea17aa22362d5effe5a7c6eb2ad49eebd2eea45a2202cd.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "bolt/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/eb84fa6401c04678b07a3e8b8eda34d5ba4655565fd79bc67855e31a109c9609.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "clang-tools-extra/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/0a0f0827eb45d1a56f5bae1a2db68dd9c5d70d555f2dc259a3bdfce078f49563.txt",
+      "size": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "clang-tools-extra/clang-tidy/cert/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/e03681fac13dd850860205cc2a6b7707eb05d9f3abad22d2a33d182fb83f2596.txt",
+      "size": 1136,
+      "sha256": "d8e09a37202601346ed9f3962c843cf60d985570111602399a9b845c44a654ba"
+    },
+    {
+      "path": "clang-tools-extra/clang-tidy/hicpp/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/a0ce125894f2131a1c21e1ec4abe95542a955d62f418aa412b7f962adf88e881.txt",
+      "size": 541,
+      "sha256": "271b9c47cbf07475b8012f708fe08a348821261d66795daefed400e9238db379"
+    },
+    {
+      "path": "clang/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/29d0d2f4203502698bcb73b7d6d524b40c3c5e3de4fe3556809aa9f8c65aaf26.txt",
+      "size": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "compiler-rt/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/b797cc8c83acd6f6aa171082becb7123aff988546aee6e97cc98cb8dcc4a35be.txt",
+      "size": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "path": "cross-project-tests/debuginfo-tests/dexter/LICENSE.txt",
+      "mirror": "build_files/ohos/compiler_replay/licenses/5c002f4a254e498fb96bdc85ffc9eec6fb30701261a5a357793ff9a64c12f687.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "flang/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/ce608e220a33d6d80ad7392996ef5fb8bb38167e36f5b405eec4efd8d423b2cd.txt",
+      "size": 13151,
+      "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374"
+    },
+    {
+      "path": "flang/test/Semantics/OpenMP/copying.f90",
+      "mirror": "build_files/ohos/compiler_replay/licenses/17a255a7c82b3c694c22bbbdc25b9349af31d98dc2697ecbf7bfdc05b79e580a.txt",
+      "size": 1411,
+      "sha256": "976ff27305a486bec99de9aa0e1756ffeaa726618fc4ba7752b42d165f876dee"
+    },
+    {
+      "path": "libc/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/cb6835c9032b245bd191d2752e9c9c3cba256c31804b5a2028744a97c825ea7d.txt",
+      "size": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "libclc/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/f0ec64381518d2cf3b33565a3edbe3baf2f74352383181950537702c547c5af1.txt",
+      "size": 16469,
+      "sha256": "3c536c052db9afd997809e38785c9f2a9e54e2892330fa7c5b438e18a7413479"
+    },
+    {
+      "path": "libcxx/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/28bb2d5e714e998f2c0c37ae3643dadb45f8cc28b2b8498a47a97a7254a371a1.txt",
+      "size": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "path": "libcxxabi/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/39c4019a7d674e5048524cbe745f1b2021a940876cd18606cd0d40c94a90bee4.txt",
+      "size": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "path": "libunwind/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/f68d03d6cc5e1849dd0de0a22819de0a03989b7604f422803e9079d3e57b2443.txt",
+      "size": 16706,
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    {
+      "path": "lld/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/06503d0131d16daeb21382b9e2949e3a7f6600adeca0a0e50de6a5afef860e09.txt",
+      "size": 15138,
+      "sha256": "f7891568956e34643eb6a0db1462db30820d40d7266e2a78063f2fe233ece5a0"
+    },
+    {
+      "path": "lldb/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/ae2b0897bb3d9bedd84891163c2564c43955a28c036275b22a125dbbdb6955b6.txt",
+      "size": 15032,
+      "sha256": "76be4deddeef87f6fa9940f4992a9506c7bb222af60eb3b2a47cf65719528bbe"
+    },
+    {
+      "path": "lldb/tools/lldb-dap/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/468250e9c82f6bfd6c074cf4cbe62e2f32ab13969c9d0166cb2755cc00860196.txt",
+      "size": 13151,
+      "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374"
+    },
+    {
+      "path": "llvm/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/866d856b1524cca19ce6dbad57244adade6bb3f345f6d22aecb51c0f66e34aa2.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "llvm/include/llvm/Support/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/ff0ada5dfa7a57bdb70c74e17007be12f8bfce014199cd97643064d0277c6497.txt",
+      "size": 303,
+      "sha256": "54cbc326a78b9400065bfc5830a57fdcdaf808286d4ac35d8a9e324aa77b7241"
+    },
+    {
+      "path": "llvm/lib/Support/BLAKE3/LICENSE",
+      "mirror": "build_files/ohos/compiler_replay/licenses/20e2619dd82e9cf09a1b535e92fd4985083ab2c4513f5b71a4ee1eacb08aa7a3.txt",
+      "size": 18691,
+      "sha256": "6a94bedb8b707ed97f6e310d0d015ab14e0683ffa0a612b02958581b9cc9fc0e"
+    },
+    {
+      "path": "llvm/lib/Support/COPYRIGHT.regex",
+      "mirror": "build_files/ohos/compiler_replay/licenses/657302e109fb5d04e56cf1440e92fd15be9ce5d3ba615e8b16777b77a0a3e4df.txt",
+      "size": 2718,
+      "sha256": "0424e57d4303164dc59a8509c20dae0518b853692e5c2b0e98b11816fdbc97c7"
+    },
+    {
+      "path": "llvm/test/YAMLParser/LICENSE.txt",
+      "mirror": "build_files/ohos/compiler_replay/licenses/38569d627c6908a1b0a677eff6a318588415ae0e71a57b028c0770af7af36b80.txt",
+      "size": 1058,
+      "sha256": "d0d8b09800a45cd982e9568fc7669d9c1a4c330e275a821bbe24d54366d16fe9"
+    },
+    {
+      "path": "llvm/utils/lit/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/d9d4fdcd6e428a63fbeadb7024144cc449c259c7f31384c1c67a696c94b3458a.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "mlir/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/5791ec66bc03b3bee4d5d9021fc189fb1394c9c36037db080359e29d309b3a33.txt",
+      "size": 13151,
+      "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374"
+    },
+    {
+      "path": "openmp/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/ab09415dabf86838a52494394c3170d3d748ea2f290a71a0b7a579a8a17a39dc.txt",
+      "size": 19741,
+      "sha256": "fdad1758a9e1f9d5a81e18879b3406772115edc92c24bfa36b70c654f325e8e4"
+    },
+    {
+      "path": "openmp/runtime/src/thirdparty/ittnotify/LICENSE.txt",
+      "mirror": "build_files/ohos/compiler_replay/licenses/d7b06930e16f4df9277449eeadb11f6c22d67a210f404d4caf38c813f28e7fc3.txt",
+      "size": 1485,
+      "sha256": "cf48cdd9ed87c2031b68fb1b9f4cfb55d00dcf815b21a30bf8304aa1e5e6f76a"
+    },
+    {
+      "path": "polly/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/b292c2d62fc8d2a90e0c5576d3b17f790b96287f194b3e57d54315b1346dc125.txt",
+      "size": 15009,
+      "sha256": "eef85b40250d830eb76577fb44933cc5d81a8650f3848e5f3d89229e6995ffd3"
+    },
+    {
+      "path": "polly/lib/External/isl/LICENSE",
+      "mirror": "build_files/ohos/compiler_replay/licenses/ae789ae2cb44c754425444ef30a4ada959ffa9afd8fee6defdfa32899bb94a9f.txt",
+      "size": 1042,
+      "sha256": "3a2c398103f6bca0f50a9a9465deca9230b370b0212af5fdf31ed88a36215c30"
+    },
+    {
+      "path": "polly/lib/External/isl/imath/LICENSE",
+      "mirror": "build_files/ohos/compiler_replay/licenses/6011fe674a50b14211750b8be533a316d819b1e8ba4b06a7fb08866ab57b33d9.txt",
+      "size": 1136,
+      "sha256": "4556b2d9e53920d10c972b2a4a78fbbb3aedb510686f2a1cd8d41e6a8adf24e5"
+    },
+    {
+      "path": "pstl/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/09140e19be14367d63d8d1efc12b51d13efe0c911638ad55314d9c17a12a6e5f.txt",
+      "size": 16700,
+      "sha256": "0ca8cbe9219a841f9bc8fbb1f8ecdf5e39b1b0e23ee10fb6b0c090d8987dd1eb"
+    },
+    {
+      "path": "third-party/benchmark/LICENSE",
+      "mirror": "build_files/ohos/compiler_replay/licenses/dbbc4203c8345cec1710598526c8fc6ae012051f8822c8f32e94239b97c4e338.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third-party/unittest/googlemock/LICENSE.txt",
+      "mirror": "build_files/ohos/compiler_replay/licenses/bbb0e632c298894150a5a9daff4a2ebe08d16ee20d4f311113de845653ffa77e.txt",
+      "size": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    {
+      "path": "third-party/unittest/googletest/LICENSE.TXT",
+      "mirror": "build_files/ohos/compiler_replay/licenses/92149c79b4cedf9a0b3e70fca073d3c47f12b02f5a789c2c77fa27dac8862816.txt",
+      "size": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    }
+  ],
+  "copied_helper_lineage": [
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/patches/manifest.json",
+      "copied_path": "build_files/ohos/compiler_replay/patches/manifest.json",
+      "sha256": "383af52a75cac48de49eb1f25bca4000f748cb7ba004f6fa15fa919b5b2f5000"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/patches/0001-native-ohos-host-triple.diff",
+      "copied_path": "build_files/ohos/compiler_replay/patches/0001-native-ohos-host-triple.diff",
+      "sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/historical/llvm-source.lock.json",
+      "copied_path": "build_files/ohos/compiler_replay/historical/llvm-source.lock.json",
+      "sha256": "c209fc335fb3ad9579ad2b06562094331ce93e5c03753c22629ee1ca208bcdee"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/historical/native_llvm.py",
+      "copied_path": "build_files/ohos/compiler_replay/historical/native_llvm.py",
+      "sha256": "818c9220f89f9c224a8270abdee62e8b1713e24506b78187aeca6755dd626db6"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/historical/accepted-native-report.json",
+      "copied_path": "build_files/ohos/compiler_replay/historical/accepted-native-report.json",
+      "sha256": "b11f6b9831998bb50443633882f105e5bac7bcefb444cf4fb4fd98a0900e02d3"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/env_policy.py",
+      "copied_path": "build_files/ohos/compiler_replay/helpers/env_policy.py",
+      "sha256": "4d94f1df51cfd8fab2e66063d28e097d607e71736cfe92205e460fd496ae8e7c"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/launcher.py",
+      "copied_path": "build_files/ohos/compiler_replay/helpers/launcher.py",
+      "sha256": "9134c9fe561a90a6c19fcaa4ce24ee63e94cb496e221d5898d8a623314019a24"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_base_sources/builder/vendor_archive.py",
+      "copied_path": "build_files/ohos/compiler_replay/helpers/vendor_archive.py",
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/cmake/Platform/HarmonyOS.cmake",
+      "copied_path": "build_files/ohos/compiler_replay/cmake/Platform/HarmonyOS.cmake",
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/cmake/native-host.cmake",
+      "copied_path": "build_files/ohos/compiler_replay/cmake/native-host.cmake",
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302"
+    }
+  ],
+  "compiler_output_REBUILD": "NOT_RUN",
+  "historical_acceptance": "Separate old receipt only; no new compiler build PASS",
+  "bootstrap_modes": [
+    "sdk15-bootstrap",
+    "provided20-selfhost"
+  ]
+}

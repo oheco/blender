@@ -1,0 +1,23 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -648,9 +648,17 @@
+   endif()
+ 
+   if(ENABLE_STATIC)
+-    add_library(turbojpeg-static STATIC ${JPEG_SOURCES} $<TARGET_OBJECTS:simd>
+-      ${SIMD_OBJS} turbojpeg.c transupp.c jdatadst-tj.c jdatasrc-tj.c rdbmp.c
+-      rdppm.c wrbmp.c wrppm.c)
++    if(CMAKE_SYSTEM_NAME STREQUAL "HarmonyOS" AND NOT ENABLE_SHARED)
++      # JPEG core and SIMD objects have one owner for static whole-archive links.
++      # Keep TurboJPEG-specific memory I/O, transforms and BMP/PPM support here.
++      add_library(turbojpeg-static STATIC turbojpeg.c transupp.c jdatadst-tj.c
++        jdatasrc-tj.c rdbmp.c rdppm.c wrbmp.c wrppm.c)
++      target_link_libraries(turbojpeg-static PUBLIC jpeg-static)
++    else()
++      add_library(turbojpeg-static STATIC ${JPEG_SOURCES} $<TARGET_OBJECTS:simd>
++        ${SIMD_OBJS} turbojpeg.c transupp.c jdatadst-tj.c jdatasrc-tj.c rdbmp.c
++        rdppm.c wrbmp.c wrppm.c)
++    endif()
+     set_property(TARGET turbojpeg-static PROPERTY COMPILE_FLAGS
+       "-DBMP_SUPPORTED -DPPM_SUPPORTED")
+     if(NOT MSVC)

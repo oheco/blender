@@ -167,6 +167,10 @@ if(WITH_PYTHON)
   list(APPEND INC
     ../python
   )
+  if(WITH_GHOST_OHOS_EMBEDDED)
+    # The embedded extension shutdown gate calls the Python C API directly.
+    list(APPEND LIB PRIVATE bf::dependencies::optional::python)
+  endif()
   add_definitions(-DWITH_PYTHON)
   if(WITH_PYTHON_MODULE)
     add_definitions(-DWITH_PYTHON_MODULE)

@@ -1,0 +1,30 @@
+{
+  "name": "openimageio",
+  "version": "v3.1.13.1",
+  "kind": "source",
+  "filename": "OpenImageIO-v3.1.13.1.tar.gz",
+  "url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v3.1.13.1.tar.gz",
+  "license": "SPDX:Apache-2.0",
+  "license_files": [
+    "LICENSE.md",
+    "RELICENSING.md",
+    "THIRD-PARTY.md",
+    "src/doc/copyr.rst"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 55338242,
+  "sha256": "0fc59b8e2708ded02d3793b8f3331f037ed49bfcde38158f05ac0e876ebb85b7",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 33554432,
+      "sha256": "71f284af7bb512d0b480e23d53a0d8cd78c0d12e2802f9541da9d2f45afad80e"
+    },
+    {
+      "filename": "source.part0001",
+      "size": 21783810,
+      "sha256": "f3e34f8ae5908e1e418356b614efc9598f8c9e9160c569b1ab2cad5cbfb388d7"
+    }
+  ]
+}

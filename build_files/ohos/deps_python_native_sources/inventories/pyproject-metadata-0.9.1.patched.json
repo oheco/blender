@@ -1,0 +1,230 @@
+[
+  {
+    "executable": false,
+    "path": ".gitignore",
+    "sha256": "5e2c671ddc9e301dafc241ad1a7c07aa85a91fef560a17721b41977b9eddba17",
+    "size": 3078
+  },
+  {
+    "executable": false,
+    "path": "LICENSE",
+    "sha256": "aaf9a29ca5907971ccf07de025375db34539a8d5eeebce20b46099805722106f",
+    "size": 1113
+  },
+  {
+    "executable": false,
+    "path": "PKG-INFO",
+    "sha256": "b650a7414b675b7734a17f7f773d7b6040ffdf0126a962108b7f4bbaa224ae4b",
+    "size": 6958
+  },
+  {
+    "executable": false,
+    "path": "README.md",
+    "sha256": "4979a21f9866c21065583eb584e2457a4ad6a80f9d0df8a7bcf959881cf982a6",
+    "size": 5433
+  },
+  {
+    "executable": false,
+    "path": "docs/api/pyproject_metadata.rst",
+    "sha256": "19812c792ad2770bf88e79c5f42218158bd15b85f2bc7907060b0bcb7cd4ca00",
+    "size": 711
+  },
+  {
+    "executable": false,
+    "path": "docs/changelog.md",
+    "sha256": "2d8fca1892ebcc802ef4b8c31cc478d8f37886f75a667b7e1b051fd7c14963bd",
+    "size": 4795
+  },
+  {
+    "executable": false,
+    "path": "docs/conf.py",
+    "sha256": "09f0cd3bbfc222255e040ecc1a7879a7bcf11ca5034199e7be6e4d31f0f864a3",
+    "size": 2208
+  },
+  {
+    "executable": false,
+    "path": "docs/index.md",
+    "sha256": "1d52e422e421aa535c2c0d3d602e09c2ad6794391cd8c53c678728cd74ac2e40",
+    "size": 296
+  },
+  {
+    "executable": false,
+    "path": "pyproject.toml",
+    "sha256": "96dce74762582343498ab824c218f182f135967d8609a0f9b685b26cab6878b9",
+    "size": 2995
+  },
+  {
+    "executable": false,
+    "path": "pyproject_metadata/__init__.py",
+    "sha256": "34dc0f02405e1af09af13f8cb49c900111dc8028f264a63d63751b4fc074080d",
+    "size": 26203
+  },
+  {
+    "executable": false,
+    "path": "pyproject_metadata/constants.py",
+    "sha256": "4d620009cc22fd22990e314a3579225b6b323be7dd45633f6d31896d25056511",
+    "size": 3065
+  },
+  {
+    "executable": false,
+    "path": "pyproject_metadata/errors.py",
+    "sha256": "104827e5ab9575b8920a302253bf574d0ef87775745b31335e5938bb4f4ae120",
+    "size": 3484
+  },
+  {
+    "executable": false,
+    "path": "pyproject_metadata/project_table.py",
+    "sha256": "80f19a24de0ab65241628042c403e04f161fd998bf43e128a4e394e683bc30cb",
+    "size": 3466
+  },
+  {
+    "executable": false,
+    "path": "pyproject_metadata/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "pyproject_metadata/pyproject.py",
+    "sha256": "c4b3d8faf8b6f3ee90d31183f5f4f3a94832ed7ad1baa2158ad91a1c9d31c7f3",
+    "size": 17436
+  },
+  {
+    "executable": false,
+    "path": "tests/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/broken_license/LICENSE",
+    "sha256": "2b0c8f433d672cf5c5e3e42c0fcef6920ed0388641cc0cbb443859da03edd96d",
+    "size": 15145
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/dynamic-description/dynamic_description.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/dynamic-description/pyproject.toml",
+    "sha256": "a9798aa08259a12d6fefbdbb599e8cbed785c12bba479b5684ca6300ab064dcf",
+    "size": 90
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata/README.md",
+    "sha256": "c6f5044a3fbb6ab171813c12c5d50ec9684ced7b56ae91aaf072101c6618de2e",
+    "size": 17
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata/full_metadata.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata/pyproject.toml",
+    "sha256": "9fb794531389d64a23bed3b9248d98c4e601c6b0eed38141db9a934af52fd948",
+    "size": 1204
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata2/LICENSE",
+    "sha256": "e36351811c08bacc41838bc5d9c609e71e9df48818d9a5a0537808dd0db83d7f",
+    "size": 19
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata2/README.rst",
+    "sha256": "c6f5044a3fbb6ab171813c12c5d50ec9684ced7b56ae91aaf072101c6618de2e",
+    "size": 17
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata2/full_metadata2.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata2/pyproject.toml",
+    "sha256": "92d374de4bd8e45d63dd849a7089b006e95b00763bb7e6478cfbcea61b4d75bd",
+    "size": 1196
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/fulltext_license/LICENSE.txt",
+    "sha256": "aaf9a29ca5907971ccf07de025375db34539a8d5eeebce20b46099805722106f",
+    "size": 1113
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/spdx/AUTHORS.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/spdx/LICENSE.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/spdx/LICENSE.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/spdx/licenses/LICENSE.MIT",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/spdx/pyproject.toml",
+    "sha256": "883347ed809144d23d21ff2420dd49cb0e2828eddd677485a07c59bcbf703c35",
+    "size": 177
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/unknown-readme-type/README.just-made-this-up-now",
+    "sha256": "621009abe24ef08a7776780b2ac4b2a924d0c36bc89f6e161bd52d08345791f3",
+    "size": 12
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/unknown-readme-type/pyproject.toml",
+    "sha256": "84c6642066ce80dc698e37a6eb2da6d3f5c59c093a5bf9d3989be12220fd9b37",
+    "size": 97
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/unknown-readme-type/unknown_readme_type.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/test_internals.py",
+    "sha256": "d842b2355ecb9891c3ff3005065308cced8c68c1a8d087219856407391cebbeb",
+    "size": 669
+  },
+  {
+    "executable": false,
+    "path": "tests/test_rfc822.py",
+    "sha256": "13f7f035355e01d154f5e17021a2caac2cb35690d80e443067f1a82060417ca9",
+    "size": 8053
+  },
+  {
+    "executable": false,
+    "path": "tests/test_standard_metadata.py",
+    "sha256": "f1c738da2a6de1576efebde5f31b8344f68ddfc82465e87885578ef44e5fb772",
+    "size": 54013
+  }
+]

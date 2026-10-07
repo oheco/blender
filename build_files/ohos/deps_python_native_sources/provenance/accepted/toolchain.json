@@ -1,0 +1,18 @@
+{
+  "bootstrap_python": "/storage/Users/currentUser/.oheco/packages/python3/3.14.7-ohos.1/bin/python3",
+  "compiler": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang",
+  "compiler_sha256": "9b223e08b65958d79838f28cfff8dde98e438825a0129d3c0fde297d6ccb2121",
+  "compiler_version": "clang version 15.0.4 (/srv/workspace/llvm-release/2026_0617_llvm15_release/toolchain/llvm-project/clang 3f002d04ba6b3a7659c601207c89d3a896b82546)\nTarget: aarch64-unknown-linux-ohos\nThread model: posix\nInstalledDir: /storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin\n",
+  "jobs": 2,
+  "link_threads": 1,
+  "make": "/storage/Users/currentUser/dev/ohos/tmux/out/tools/make",
+  "make_version": "GNU Make 4.4.1",
+  "native": true,
+  "regenerator": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-3.13.13-build/runtime/bin/python3.13",
+  "regenerator_scope": "read-only native3.13 source generation only, never target sysconfig",
+  "regenerator_sha256": "56f4ee29ebca8bf5cbe63c90570eecda1a2c59a2f2e86692f5944ca3585681fb",
+  "regenerator_version": "3.13.13 (main, Oct  2 2026, 01:42:50) [Clang 15.0.4 (/srv/workspace/llvm-release/2026_0617_llvm15_release/toolchain/ll\n",
+  "sdk": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta",
+  "signer_environment": "LD_LIBRARY_PATH/LD_PRELOAD removed",
+  "target_headers_sysconfig": "only newly built CPython3.13.13"
+}

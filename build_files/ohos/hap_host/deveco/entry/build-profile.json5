@@ -1,0 +1,23 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+    "nativeLib": {
+      "debugSymbol": {
+        "strip": false,
+        "exclude": []
+      }
+    },
+    "externalNativeOptions": {
+      "path": "./src/main/cpp/CMakeLists.txt",
+      "arguments": "-DBLENDER_SOURCE=/ABSOLUTE/PATCHED_BLENDER_SOURCE -DBLENDER_CORE_LIBRARY=/ABSOLUTE/SIGNED/libblender_core.so -DOHOS_STL=c++_static -DCMAKE_SKIP_RPATH:BOOL=ON -DBLENDER_OHOS_MALEOON_TILE_EXPERIMENT:BOOL=ON",
+      "abiFilters": [
+        "arm64-v8a"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "name": "default"
+    }
+  ]
+}

@@ -1,0 +1,565 @@
+{
+  "schema": 1,
+  "kind": "offline-pure-source-closure",
+  "target_cpython": "3.13.13",
+  "external_native_numpy": "2.3.4",
+  "native_payload_assembled": false,
+  "local_upstream_source_modifications": [],
+  "network_at_build_time": false,
+  "vendor_helper": {
+    "path": "build_files/ohos/vendor_archive.py",
+    "size": 8263,
+    "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+  },
+  "inputs": [
+    {
+      "name": "requests",
+      "version": "2.33.0",
+      "filename": "requests-2.33.0.tar.gz",
+      "sha256": "c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652",
+      "size": 134232,
+      "source_url": "https://files.pythonhosted.org/packages/34/64/8860370b167a9721e8956ae116825caff829224fbca0ca6e7bf8ddef8430/requests-2.33.0.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/requests/2.33.0/json",
+      "license": "Apache-2.0",
+      "upload_time": "2026-03-25T15:10:41.586809Z",
+      "registry_id": "tpr/sources/requests-2.33.0",
+      "registry_manifest": {
+        "path": "tpr/sources/requests-2.33.0/manifest.json",
+        "size": 662,
+        "sha256": "4f0a975513d6e9b2bb51c5d1af91f220612347d2be196063a3dc3ad0654b4c9a"
+      },
+      "reuse_existing": false,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 134232,
+          "sha256": "c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652"
+        }
+      ],
+      "archive_root": "requests-2.33.0",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/requests-2.33.0.json",
+        "size": 12384,
+        "sha256": "de46fa3da5e0bf7d17789d95cb799b14d37494a4ddb389e934f8dd8ca73057e6"
+      },
+      "source_file_count": 83,
+      "source_tree_sha256": "261fc203978f557db2f9e9bc40d77a001d94ea192d5ef9f90970614fefe91bd8",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/requests-2.33.0.json",
+        "size": 7074,
+        "sha256": "f3b8c020d62a23207f4d001d74d86592f58ab40fabb71e0773d36c06e311d18d"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/requests-2.33.0/LICENSE",
+          "size": 10142,
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+          "source_path": "LICENSE"
+        },
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/requests-2.33.0/NOTICE",
+          "size": 38,
+          "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc",
+          "source_path": "NOTICE"
+        }
+      ],
+      "packages": [
+        {
+          "source": "src/requests",
+          "target": "requests"
+        }
+      ],
+      "dist_info": "requests-2.33.0.dist-info",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "charset_normalizer<4,>=2",
+        "idna<4,>=2.5",
+        "urllib3<3,>=1.26",
+        "certifi>=2023.5.7",
+        "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+        "chardet<8,>=3.0.2; extra == \"use-chardet-on-py3\"",
+        "pytest-httpbin==2.1.0; extra == \"test\"",
+        "pytest-cov; extra == \"test\"",
+        "pytest-mock; extra == \"test\"",
+        "pytest-xdist; extra == \"test\"",
+        "PySocks!=1.5.7,>=1.5.6; extra == \"test\"",
+        "pytest>=3; extra == \"test\""
+      ]
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "filename": "urllib3-2.8.0.tar.gz",
+      "sha256": "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63",
+      "size": 458972,
+      "source_url": "https://files.pythonhosted.org/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/urllib3/2.8.0/json",
+      "license": "MIT",
+      "upload_time": "2026-09-15T19:29:36.253420Z",
+      "registry_id": "tpr/sources/urllib3-2.8.0",
+      "registry_manifest": {
+        "path": "tpr/sources/urllib3-2.8.0/manifest.json",
+        "size": 639,
+        "sha256": "33544beb6d1fcc7039bdd94dacf0460182e1befcf1aaf06f21ac4e5bc034c399"
+      },
+      "reuse_existing": false,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 458972,
+          "sha256": "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63"
+        }
+      ],
+      "archive_root": "urllib3-2.8.0",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/urllib3-2.8.0.json",
+        "size": 19487,
+        "sha256": "ac32ef7349ef06191eaf0b98501133a9b204d749f239565728c1558f69cb3648"
+      },
+      "source_file_count": 129,
+      "source_tree_sha256": "1e1730f1a38d387b243412259a37d878a51247e918c306ed649286445931b8aa",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/urllib3-2.8.0.json",
+        "size": 9510,
+        "sha256": "5315e7401db3cacccd0c2ce5daf81f752a9cc3614b18c37f2b79930b7159ce2f"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/urllib3-2.8.0/LICENSE.txt",
+          "size": 1093,
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686",
+          "source_path": "LICENSE.txt"
+        }
+      ],
+      "packages": [
+        {
+          "source": "src/urllib3",
+          "target": "urllib3"
+        }
+      ],
+      "dist_info": "urllib3-2.8.0.dist-info",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+        "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+        "h2<5,>=4; extra == 'h2'",
+        "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+        "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.15",
+      "filename": "idna-3.15.tar.gz",
+      "sha256": "ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc",
+      "size": 199245,
+      "source_url": "https://files.pythonhosted.org/packages/82/77/7b3966d0b9d1d31a36ddf1746926a11dface89a83409bf1483f0237aa758/idna-3.15.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/idna/3.15/json",
+      "license": "BSD-3-Clause",
+      "upload_time": "2026-05-12T22:45:57.011321Z",
+      "registry_id": "tpr/sources/idna-3.15",
+      "registry_manifest": {
+        "path": "tpr/sources/idna-3.15/manifest.json",
+        "size": 635,
+        "sha256": "a78044fd22c01907e48156e095a74a4001b86fb67fcec4d41e8b76c88bd83382"
+      },
+      "reuse_existing": false,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 199245,
+          "sha256": "ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc"
+        }
+      ],
+      "archive_root": "idna-3.15",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/idna-3.15.json",
+        "size": 2941,
+        "sha256": "75efd25ed4c5a70d146d286247021fa687552d04a8bf5efc4c4c58ea8ec11e75"
+      },
+      "source_file_count": 21,
+      "source_tree_sha256": "036b80c23c2695d640236129c9e3cf4cc7afd8572d6f2af79309ff4b8c7d57a5",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/idna-3.15.json",
+        "size": 9756,
+        "sha256": "e939f2f3e7e1b302d6b8ade5553b713bf6ff3409ecb3fe0b98ab2eaf54965a60"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/idna-3.15/LICENSE.md",
+          "size": 1541,
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04",
+          "source_path": "LICENSE.md"
+        }
+      ],
+      "packages": [
+        {
+          "source": "idna",
+          "target": "idna"
+        }
+      ],
+      "dist_info": "idna-3.15.dist-info",
+      "requires_python": ">=3.8",
+      "requires_dist": [
+        "ruff >= 0.6.2 ; extra == \"all\"",
+        "mypy >= 1.11.2 ; extra == \"all\"",
+        "pytest >= 8.3.2 ; extra == \"all\""
+      ]
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "filename": "certifi-2026.7.22.tar.gz",
+      "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55",
+      "size": 138112,
+      "source_url": "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/certifi/2026.7.22/json",
+      "license": "MPL-2.0",
+      "upload_time": "2026-07-22T03:35:12.644458Z",
+      "registry_id": "tpr/sources/certifi-2026.7.22",
+      "registry_manifest": {
+        "path": "tpr/sources/certifi-2026.7.22/manifest.json",
+        "size": 651,
+        "sha256": "2d30030d096af46c93d050350fd9490aa4394521d26f5ab04927293502ec27d9"
+      },
+      "reuse_existing": false,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 138112,
+          "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
+        }
+      ],
+      "archive_root": "certifi-2026.7.22",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/certifi-2026.7.22.json",
+        "size": 2692,
+        "sha256": "c5e3d605c57ada7bb6130095c68c4cfdcb684aedc95f9134ae72bc004c084849"
+      },
+      "source_file_count": 19,
+      "source_tree_sha256": "5c8afc4d5ec7ff5a81f5a1215edac57c363a3780f070a0a993a6051fcd02f20a",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/certifi-2026.7.22.json",
+        "size": 4584,
+        "sha256": "c6fe912677e373608eab51e324946005998faeb0fa999e6ddada24676e3556d3"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/certifi-2026.7.22/LICENSE",
+          "size": 989,
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+          "source_path": "LICENSE"
+        }
+      ],
+      "packages": [
+        {
+          "source": "certifi",
+          "target": "certifi"
+        }
+      ],
+      "dist_info": "certifi-2026.7.22.dist-info",
+      "requires_python": ">=3.7",
+      "requires_dist": []
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.1",
+      "filename": "charset_normalizer-3.4.1.tar.gz",
+      "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3",
+      "size": 123188,
+      "source_url": "https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/charset-normalizer/3.4.1/json",
+      "license": "MIT",
+      "upload_time": "2024-12-24T18:12:35.430325Z",
+      "registry_id": "tpr/sources/charset-normalizer-3.4.1",
+      "registry_manifest": {
+        "path": "tpr/sources/charset-normalizer-3.4.1/manifest.json",
+        "size": 668,
+        "sha256": "f21560e9e470f3ad7c584a5e82f58dee18553f01fbca35ad7c35044ed788ab86"
+      },
+      "reuse_existing": true,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 123188,
+          "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3"
+        }
+      ],
+      "archive_root": "charset_normalizer-3.4.1",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/charset-normalizer-3.4.1.json",
+        "size": 14322,
+        "sha256": "1877d60bda938bc55a776809c4b282c9ce99a61a632b7d650ae184276f85acc9"
+      },
+      "source_file_count": 97,
+      "source_tree_sha256": "c0309f208938d796cbfc3e22a22b8e5e456da3ec230c70de63a36fe9edfffe87",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/charset-normalizer-3.4.1.json",
+        "size": 118196,
+        "sha256": "4586ad4bd57a3f1ab3f7ba6a30d0e0ecfe1a20912bdfbaa69e5b661dc53293ef"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/charset-normalizer-3.4.1/LICENSE",
+          "size": 1071,
+          "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887",
+          "source_path": "LICENSE"
+        },
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/charset-normalizer-3.4.1/data/NOTICE.md",
+          "size": 490,
+          "sha256": "0cb3efcfd8f7a02a337e98dc3de4b0b57424d7208a332b26e7deb8cb94c13922",
+          "source_path": "data/NOTICE.md"
+        }
+      ],
+      "packages": [
+        {
+          "source": "src/charset_normalizer",
+          "target": "charset_normalizer"
+        }
+      ],
+      "dist_info": "charset_normalizer-3.4.1.dist-info",
+      "requires_python": ">=3.7",
+      "requires_dist": []
+    },
+    {
+      "name": "cattrs",
+      "version": "25.1.1",
+      "filename": "cattrs-25.1.1.tar.gz",
+      "sha256": "c914b734e0f2d59e5b720d145ee010f1fd9a13ee93900922a2f3f9d593b8382c",
+      "size": 435016,
+      "source_url": "https://files.pythonhosted.org/packages/57/2b/561d78f488dcc303da4639e02021311728fb7fda8006dd2835550cddd9ed/cattrs-25.1.1.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/cattrs/25.1.1/json",
+      "license": "MIT",
+      "upload_time": "2025-06-04T20:27:15.440707Z",
+      "registry_id": "tpr/sources/cattrs-25.1.1",
+      "registry_manifest": {
+        "path": "tpr/sources/cattrs-25.1.1/manifest.json",
+        "size": 635,
+        "sha256": "b15c807929a512bfa526d1bdaa2671d557aa4e6d64f6478160742e2b718cce44"
+      },
+      "reuse_existing": false,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 435016,
+          "sha256": "c914b734e0f2d59e5b720d145ee010f1fd9a13ee93900922a2f3f9d593b8382c"
+        }
+      ],
+      "archive_root": "cattrs-25.1.1",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/cattrs-25.1.1.json",
+        "size": 23788,
+        "sha256": "74d55e76c55a80b77f98885f9bb62dc398166c1dbc376bc674590a29d41ffc91"
+      },
+      "source_file_count": 161,
+      "source_tree_sha256": "3f571463475c14bfc60822ec477d969a47de609e10f7a1eac982d90732aa011d",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/cattrs-25.1.1.json",
+        "size": 10311,
+        "sha256": "d559167d624d59df856ca42e366393fef8e8af1c6a7cedbfe55dd24de583c92c"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/cattrs-25.1.1/LICENSE",
+          "size": 1074,
+          "sha256": "f5fb9d1ede37a88ca47f420c499dca0f4a05bc993e12c77d23520aad291c01bf",
+          "source_path": "LICENSE"
+        }
+      ],
+      "packages": [
+        {
+          "source": "src/cattrs",
+          "target": "cattrs"
+        },
+        {
+          "source": "src/cattr",
+          "target": "cattr"
+        }
+      ],
+      "dist_info": "cattrs-25.1.1.dist-info",
+      "requires_python": ">=3.9",
+      "requires_dist": [
+        "attrs>=24.3.0",
+        "exceptiongroup>=1.1.1; python_version < '3.11'",
+        "typing-extensions>=4.12.2",
+        "pymongo>=4.4.0; extra == 'bson'",
+        "cbor2>=5.4.6; extra == 'cbor2'",
+        "msgpack>=1.0.5; extra == 'msgpack'",
+        "msgspec>=0.19.0; (implementation_name == 'cpython') and extra == 'msgspec'",
+        "orjson>=3.10.7; (implementation_name == 'cpython') and extra == 'orjson'",
+        "pyyaml>=6.0; extra == 'pyyaml'",
+        "tomlkit>=0.11.8; extra == 'tomlkit'",
+        "ujson>=5.10.0; extra == 'ujson'"
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "25.3.0",
+      "filename": "attrs-25.3.0.tar.gz",
+      "sha256": "75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b",
+      "size": 812032,
+      "source_url": "https://files.pythonhosted.org/packages/5a/b0/1367933a8532ee6ff8d63537de4f1177af4bff9f3e829baf7331f595bb24/attrs-25.3.0.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/attrs/25.3.0/json",
+      "license": "MIT",
+      "upload_time": "2025-03-13T11:10:22.779106Z",
+      "registry_id": "tpr/sources/attrs-25.3.0",
+      "registry_manifest": {
+        "path": "tpr/sources/attrs-25.3.0/manifest.json",
+        "size": 655,
+        "sha256": "b8c61753bd338b4540e9b0614aba6960f6ae27293b9d3a7f234aa2cfe40bb346"
+      },
+      "reuse_existing": false,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 812032,
+          "sha256": "75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b"
+        }
+      ],
+      "archive_root": "attrs-25.3.0",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/attrs-25.3.0.json",
+        "size": 18039,
+        "sha256": "9d8498c67b19aec579c15b6e51103f9a546cfe1ec241679963a68d2ba3871aed"
+      },
+      "source_file_count": 124,
+      "source_tree_sha256": "b06b3783264295f6b79719cced0fe11446956b33853f08de4d789cee58e6ad2d",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/attrs-25.3.0.json",
+        "size": 12774,
+        "sha256": "ad151c5dee1509ad54cb49911a801ef06629556beaf3a18c49c8077b2af5c5bb"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/attrs-25.3.0/LICENSE",
+          "size": 1109,
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+          "source_path": "LICENSE"
+        },
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/attrs-25.3.0/docs/license.md",
+          "size": 1289,
+          "sha256": "2da25a89fa0fe1957e42b32fb438290e2796009788c161da4fb9792d53f0146e",
+          "source_path": "docs/license.md"
+        }
+      ],
+      "packages": [
+        {
+          "source": "src/attrs",
+          "target": "attrs"
+        },
+        {
+          "source": "src/attr",
+          "target": "attr"
+        }
+      ],
+      "dist_info": "attrs-25.3.0.dist-info",
+      "requires_python": ">=3.8",
+      "requires_dist": [
+        "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'benchmark'",
+        "hypothesis; extra == 'benchmark'",
+        "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+        "pympler; extra == 'benchmark'",
+        "pytest-codspeed; extra == 'benchmark'",
+        "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+        "pytest-xdist[psutil]; extra == 'benchmark'",
+        "pytest>=4.3.0; extra == 'benchmark'",
+        "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'cov'",
+        "coverage[toml]>=5.3; extra == 'cov'",
+        "hypothesis; extra == 'cov'",
+        "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+        "pympler; extra == 'cov'",
+        "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+        "pytest-xdist[psutil]; extra == 'cov'",
+        "pytest>=4.3.0; extra == 'cov'",
+        "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'dev'",
+        "hypothesis; extra == 'dev'",
+        "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+        "pre-commit-uv; extra == 'dev'",
+        "pympler; extra == 'dev'",
+        "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+        "pytest-xdist[psutil]; extra == 'dev'",
+        "pytest>=4.3.0; extra == 'dev'",
+        "cogapp; extra == 'docs'",
+        "furo; extra == 'docs'",
+        "myst-parser; extra == 'docs'",
+        "sphinx; extra == 'docs'",
+        "sphinx-notfound-page; extra == 'docs'",
+        "sphinxcontrib-towncrier; extra == 'docs'",
+        "towncrier; extra == 'docs'",
+        "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'tests'",
+        "hypothesis; extra == 'tests'",
+        "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+        "pympler; extra == 'tests'",
+        "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+        "pytest-xdist[psutil]; extra == 'tests'",
+        "pytest>=4.3.0; extra == 'tests'",
+        "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'",
+        "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.14.1",
+      "filename": "typing_extensions-4.14.1.tar.gz",
+      "sha256": "38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36",
+      "size": 107673,
+      "source_url": "https://files.pythonhosted.org/packages/98/5a/da40306b885cc8c09109dc2e1abd358d5684b1425678151cdaed4731c822/typing_extensions-4.14.1.tar.gz",
+      "metadata_url": "https://pypi.org/pypi/typing_extensions/4.14.1/json",
+      "license": "PSF-2.0",
+      "upload_time": "2025-07-04T13:28:34.160298Z",
+      "registry_id": "tpr/sources/typing-extensions-4.14.1",
+      "registry_manifest": {
+        "path": "tpr/sources/typing-extensions-4.14.1/manifest.json",
+        "size": 672,
+        "sha256": "ac437ce6bada6c841b7afc82b38bab44e42523e1de60c97748ff1343e7b47d30"
+      },
+      "reuse_existing": false,
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "size": 107673,
+          "sha256": "38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36"
+        }
+      ],
+      "archive_root": "typing_extensions-4.14.1",
+      "source_inventory": {
+        "path": "build_files/ohos/deps_python_resources_sources/inventories/typing-extensions-4.14.1.json",
+        "size": 1263,
+        "sha256": "03601dd9aba50aec8597783cf17dc2c5c34c342937f1f4bc5a1a2cbdd659e43d"
+      },
+      "source_file_count": 9,
+      "source_tree_sha256": "7d5c69b6725fc3cdec8c0639bceeed3082a8075d1ac1ed50d4f337e2a9157968",
+      "pypi_metadata": {
+        "path": "build_files/ohos/deps_python_resources_sources/metadata/typing-extensions-4.14.1.json",
+        "size": 5322,
+        "sha256": "a2e299574cfe80ea00b556c17d7c7de4ebad275a40d6acbbc7c5b01dddad892f"
+      },
+      "notices": [
+        {
+          "path": "build_files/ohos/deps_python_resources_sources/notices/typing-extensions-4.14.1/LICENSE",
+          "size": 13936,
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+          "source_path": "LICENSE"
+        }
+      ],
+      "packages": [
+        {
+          "source": "src/typing_extensions.py",
+          "target": "typing_extensions.py"
+        }
+      ],
+      "dist_info": "typing_extensions-4.14.1.dist-info",
+      "requires_python": ">=3.9",
+      "requires_dist": []
+    }
+  ],
+  "complete_source_file_count": 643,
+  "source_input_provenance": {
+    "security_candidate_sources_sha256": "cff5a1a5434109b137a19b35ef1185282a66a20c45a42f5d4ec2a9987bc97e51",
+    "security_candidate_pins_sha256": "420cb30b97b5e239a49b456956983f2b372a964265bdfb08e6fd095b94934421",
+    "security_candidate_prepared_sha256": "c93e126efa4daeb4a2d7874e2b80560f9e7edf43ce1b2e2de71510e6a468ccff",
+    "http_budget_deps_lock_sha256": "cb1a9ea0290d5250c81944d031b223ec1243a15e8b7a6196adee88111b466340"
+  }
+}

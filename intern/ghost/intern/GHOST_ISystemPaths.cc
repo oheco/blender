@@ -12,7 +12,9 @@
 
 #include "GHOST_ISystemPaths.hh"
 
-#ifdef WIN32
+#ifdef WITH_GHOST_OHOS
+#  include "GHOST_SystemPathsOHOS.hh"
+#elif defined(WIN32)
 #  include "GHOST_SystemPathsWin32.hh"
 #else
 #  ifdef __APPLE__
@@ -28,7 +30,10 @@ GHOST_TSuccess GHOST_ISystemPaths::create()
 {
   GHOST_TSuccess success;
   if (!system_paths_) {
-#ifdef WIN32
+#ifdef WITH_GHOST_OHOS
+    if (!ghost_ohos_host_installed()) return GHOST_kFailure;
+    system_paths_ = new GHOST_SystemPathsOHOS();
+#elif defined(WIN32)
     system_paths_ = new GHOST_SystemPathsWin32();
 #else
 #  ifdef __APPLE__

@@ -1,0 +1,44 @@
+[
+  {
+    "executable": false,
+    "path": "LICENSE",
+    "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+    "size": 1072
+  },
+  {
+    "executable": false,
+    "path": "PKG-INFO",
+    "sha256": "66e81ac2e41775b5ebddcfbb9f4ae77158e4c5739fd52d231e14f2fffda9c8de",
+    "size": 5703
+  },
+  {
+    "executable": false,
+    "path": "README.md",
+    "sha256": "aeba06af25ac4ee4c1cda057e386e21a508a0ead6f5f504901db489988f1bee9",
+    "size": 4847
+  },
+  {
+    "executable": false,
+    "path": "pyproject.toml",
+    "sha256": "52181926170a05b23a612c9c1308bb62f489171b1543e51ed7b85e112569795b",
+    "size": 4184
+  },
+  {
+    "executable": false,
+    "path": "src/tomli_w/__init__.py",
+    "sha256": "b85ea5a4b65f3f974a6a0327ece2d7d5702256eff8847315b8fba162afa3f410",
+    "size": 157
+  },
+  {
+    "executable": false,
+    "path": "src/tomli_w/_writer.py",
+    "sha256": "76c89f152db161fd62efa9a64727f3f72d76e710bb67f1d0f38e592a126c617b",
+    "size": 6961
+  },
+  {
+    "executable": false,
+    "path": "src/tomli_w/py.typed",
+    "sha256": "f0f8f2675695a10a5156fb7bd66bafbaae6a13e8d315990af862c792175e6e67",
+    "size": 26
+  }
+]

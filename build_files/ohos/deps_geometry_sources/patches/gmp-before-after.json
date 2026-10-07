@@ -1,0 +1,22 @@
+{
+  "patch": "patches/gmp-native-ohos.patch",
+  "patch_sha256": "3cf4c7af10aaf8b5c9894848a58996b50b149ca75b1746963d8bceffcb44f9b0",
+  "files": [
+    {
+      "path": "configfsf.sub",
+      "before_sha256": "3dcdc99d654fe86107a045fcb1879f6c72609eb390d639990df807d2da056646",
+      "after_sha256": "7089b84fdfe913aca4e7688fa415f2786f6750714c13c37725b6036070b84bf3"
+    },
+    {
+      "path": "Makefile.am",
+      "before_sha256": "15e49ea5d3889eaaafe2dc704ac676d41e139cd39b886efe37ac074ea1d9d605",
+      "after_sha256": "5b4fafadf22f5b045437cc1b6c0de2e3c790eba5dd50f5dde7e41db8f7c1cae1"
+    },
+    {
+      "path": "Makefile.in",
+      "before_sha256": "437533a520e7a1d0ece6962f8ce7f40a659036e762164284e060d668faa5d5eb",
+      "after_sha256": "c666356b0559f556a6459f413c622990f9da88ad3b646235a7b7975f3c75683d"
+    }
+  ],
+  "reason": "Accept real native aarch64-unknown-ohos; omit docs as official Blender recipe does. Windows-only gmp.diff hunks do not apply to HarmonyOS."
+}

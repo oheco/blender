@@ -1,0 +1,22 @@
+{
+  "name": "sse2neon",
+  "version": "227cc413fb2d50b2a10073087be96b59d5364aea",
+  "kind": "source",
+  "filename": "sse2neon-227cc413fb2d50b2a10073087be96b59d5364aea.tar.gz",
+  "url": "https://github.com/DLTcollab/sse2neon/archive/227cc413fb2d50b2a10073087be96b59d5364aea.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 136342,
+  "sha256": "3427a495743bb6fd1b5f9f806b80f57d67b1ac7ccf39a5f44aedd487fd7e6da1",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 136342,
+      "sha256": "3427a495743bb6fd1b5f9f806b80f57d67b1ac7ccf39a5f44aedd487fd7e6da1"
+    }
+  ]
+}

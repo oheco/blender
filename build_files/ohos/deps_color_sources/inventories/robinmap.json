@@ -1,0 +1,162 @@
+{
+  "archive_root": "robin-map-1.3.0",
+  "source_archive_sha256": "a8424ad3b0affd4c57ed26f0f3d8a29604f0e1f2ef2089f497f614b1c94c7236",
+  "members": 27,
+  "files": [
+    {
+      "path": ".clang-format",
+      "sha256": "51977317b1771c3789febc994d1072092996de145e0f588a9ed6fe8deac2cbea",
+      "size": 21,
+      "mode": 436
+    },
+    {
+      "path": ".codecov.yml",
+      "sha256": "8f4e35df75f50c3c0c024c9170c5a3532839cd4ffdcf88ffaca2d36f83bc2be1",
+      "size": 65,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "90fddc7f587cf5bc8193bfc7ac62e8f0a3baa0f69785dac493619c862c8cc719",
+      "size": 4725,
+      "mode": 436
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "b847da42565783534fd6f6a2409476de3be5e2ec70834833e50eb61d8ad359d3",
+      "size": 3397,
+      "mode": 436
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "11f2c685ba565a31aef1219f63a7a8845602c97bff70016b9e3278dfe51a2ec5",
+      "size": 1102,
+      "mode": 436
+    },
+    {
+      "path": "README.md",
+      "sha256": "baf3e7367aca4b0900209167c9ac34abfa44290be3bdeffe152598178d42cfe8",
+      "size": 23256,
+      "mode": 436
+    },
+    {
+      "path": "cmake/tsl-robin-mapConfig.cmake.in",
+      "sha256": "4fdc2c4c22b55fc4ea48c1541e973cc24432e8f80cf3610faa1c62ba54c3c440",
+      "size": 407,
+      "mode": 436
+    },
+    {
+      "path": "doxygen.conf",
+      "sha256": "f08e7cad2a1171b0c7fd6b93418977d9c7bfc8019bb725a49ace2682ecf8ad2b",
+      "size": 108206,
+      "mode": 436
+    },
+    {
+      "path": "include/tsl/robin_growth_policy.h",
+      "sha256": "e0698fb2350d47ed5664af3457431dcabc3004b1a034038ae704cab04bef200b",
+      "size": 12181,
+      "mode": 436
+    },
+    {
+      "path": "include/tsl/robin_hash.h",
+      "sha256": "1065186b57b984a0fff646c9f7817692fcfe3ece936dc3551392e1e0e90b2f29",
+      "size": 54606,
+      "mode": 436
+    },
+    {
+      "path": "include/tsl/robin_map.h",
+      "sha256": "23bf96fe93dc5aea9b1e002d0df1cb91fa24cccbfa74ce0573f44bba865d20ab",
+      "size": 28770,
+      "mode": 436
+    },
+    {
+      "path": "include/tsl/robin_set.h",
+      "sha256": "1cfb73344b604c60cec68e21c67796945985f0924d79b145f151d717704c7f54",
+      "size": 23947,
+      "mode": 436
+    },
+    {
+      "path": "tests/CMakeLists.txt",
+      "sha256": "8c7cf70b26355e91d4892c1184426e7c77b6fb8c385e63cfeba3c95f5956d0ef",
+      "size": 1141,
+      "mode": 436
+    },
+    {
+      "path": "tests/custom_allocator_tests.cpp",
+      "sha256": "faaa4c44983f44c8feb90c3b7892f8f21725ddacecee7003c6398906e200e1d5",
+      "size": 3875,
+      "mode": 436
+    },
+    {
+      "path": "tests/main.cpp",
+      "sha256": "aaf162a0b2e4cf77bd562fa2f26123fd7798329101529c42f2350fe54a33b539",
+      "size": 1247,
+      "mode": 436
+    },
+    {
+      "path": "tests/policy_tests.cpp",
+      "sha256": "98a956dbd3973014a0eca53d77b807f4462519c2aca6498edb53a97c0e038af7",
+      "size": 3351,
+      "mode": 436
+    },
+    {
+      "path": "tests/robin_map_tests.cpp",
+      "sha256": "820b07a5d709bfffa2784f92d6f701d32f349fd8770ec82ae71c7a22c63ba871",
+      "size": 46146,
+      "mode": 436
+    },
+    {
+      "path": "tests/robin_set_tests.cpp",
+      "sha256": "27aa492bb541fc453412608431060987673d927cf48afc52cbb817d02f993491",
+      "size": 5980,
+      "mode": 436
+    },
+    {
+      "path": "tests/utils.h",
+      "sha256": "46478f52c52c8518cf607122f7130312e4968ec51d601086cc4789f229547391",
+      "size": 12624,
+      "mode": 436
+    },
+    {
+      "path": "tsl-robin-map.natvis",
+      "sha256": "15bc3121896bb00f5284387392e6471de335bb31e8a6afa9cac58399d98b8622",
+      "size": 4623,
+      "mode": 436
+    }
+  ],
+  "directories": [
+    {
+      "path": ".github",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows",
+      "mode": 509
+    },
+    {
+      "path": "cmake",
+      "mode": 509
+    },
+    {
+      "path": "include",
+      "mode": 509
+    },
+    {
+      "path": "include/tsl",
+      "mode": 509
+    },
+    {
+      "path": "tests",
+      "mode": 509
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "LICENSE",
+      "sha256": "11f2c685ba565a31aef1219f63a7a8845602c97bff70016b9e3278dfe51a2ec5",
+      "size": 1102
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

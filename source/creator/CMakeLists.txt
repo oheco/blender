@@ -140,6 +140,18 @@ if(WITH_TBB_MALLOC_PROXY)
   add_definitions(-DWITH_TBB_MALLOC)
 endif()
 
+if(WITH_GHOST_OHOS_EMBEDDED)
+  if(WITH_PYTHON_MODULE OR NOT WITH_PYTHON OR WITH_HEADLESS OR NOT WITH_INSTALL_PORTABLE)
+    message(FATAL_ERROR "OHOS core requires Python, GUI-capable GHOST, portable resources; Python-module/headless are separate targets")
+  endif()
+  if(NOT PYTHON_VERSION VERSION_EQUAL "3.13" OR PYTHON_LIBRARIES MATCHES "\\.a($|;)")
+    message(FATAL_ERROR "OHOS core requires ONE shared Python 3.13 runtime, matching its extensions")
+  endif()
+  if(WITH_CPU_CHECK OR WITH_BLENDER_THUMBNAILER OR WITH_BINRELOC)
+    message(FATAL_ERROR "Disable CPU launcher, thumbnailer and binreloc for the embedded target")
+  endif()
+endif()
+
 # Setup the EXE sources and `buildinfo`.
 set(SRC
   creator.cc
@@ -334,6 +346,13 @@ if(WITH_PYTHON_MODULE)
     )
   endif()
 
+elseif(WITH_GHOST_OHOS_EMBEDDED)
+  add_library(blender SHARED ${SRC})
+  # Embedded session startup and drain call the Python C API directly.
+  target_link_libraries(blender PRIVATE bf::dependencies::optional::python)
+  add_library(blender_core ALIAS blender)
+  # Deliberately unversioned SONAME for the signed HAP native library directory.
+  set_target_properties(blender PROPERTIES OUTPUT_NAME blender_core POSITION_INDEPENDENT_CODE ON)
 else()
   add_executable(blender ${EXETYPE} ${SRC})
   if(WITH_CPU_CHECK)
@@ -774,6 +793,8 @@ if(UNIX AND NOT APPLE)
     endif()
 
     # none of the other files are needed currently
+  elseif(WITH_GHOST_OHOS_EMBEDDED)
+    install(TARGETS blender LIBRARY DESTINATION lib)
   elseif(WITH_INSTALL_PORTABLE)
     set(BLENDER_BIN "blender")
     install(
@@ -1962,7 +1983,32 @@ unset(LIB)
 
 setup_platform_linker_flags(blender)
 setup_platform_linker_libs(blender)
-setup_platform_linker_symbol_hiding(blender)
+if(WITH_GHOST_OHOS_EMBEDDED)
+  target_link_options(blender PRIVATE
+    "LINKER:--no-undefined"
+    # External host consumers need these entry points from the static GHOST archive.
+    "LINKER:--undefined=ghost_ohos_engine_start"
+    "LINKER:--undefined=ghost_ohos_engine_join"
+    "LINKER:--version-script=${CMAKE_CURRENT_SOURCE_DIR}/ohos/core.exports.map"
+  )
+  set_property(TARGET blender APPEND PROPERTY LINK_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/ohos/core.exports.map")
+else()
+  setup_platform_linker_symbol_hiding(blender)
+endif()
+
+if(WITH_GHOST_OHOS_DIAGNOSTIC)
+  add_executable(blender-ohos-diagnostic ohos/blender_ohos_diagnostic.cc)
+  target_include_directories(blender-ohos-diagnostic PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/intern/ghost")
+  target_link_libraries(blender-ohos-diagnostic PRIVATE blender)
+  target_link_options(blender-ohos-diagnostic PRIVATE "LINKER:--no-undefined")
+  set_target_properties(blender-ohos-diagnostic PROPERTIES
+    BUILD_RPATH "$ORIGIN/../lib"
+    INSTALL_RPATH "$ORIGIN/../lib"
+    BUILD_WITH_INSTALL_RPATH TRUE
+  )
+  install(TARGETS blender-ohos-diagnostic RUNTIME DESTINATION bin)
+endif()
 
 blender_target_include_dirs(blender ${INC})
 

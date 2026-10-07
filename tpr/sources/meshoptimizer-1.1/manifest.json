@@ -1,0 +1,22 @@
+{
+  "name": "meshoptimizer",
+  "version": "1.1",
+  "kind": "source",
+  "filename": "meshoptimizer-v1.1.zip",
+  "url": "https://github.com/zeux/meshoptimizer/archive/refs/tags/v1.1.zip",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 579571,
+  "sha256": "6aecc2d3b4328f1f5f4127fb16a144de80cc9eb35c32387807c8c04b0b6dbbf3",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 579571,
+      "sha256": "6aecc2d3b4328f1f5f4127fb16a144de80cc9eb35c32387807c8c04b0b6dbbf3"
+    }
+  ]
+}

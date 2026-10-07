@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "kind": "geometry-source-provenance",
+  "status": "Complete source-only new namespace; native fresh pipeline NOTRUN",
+  "sources": [
+    {
+      "name": "tbb",
+      "version": "v2022.3.0",
+      "registry_manifest": "tpr/sources/tbb-v2022.3.0/manifest.json",
+      "archive_filename": "oneTBB-v2022.3.0.tar.gz",
+      "archive_root": "oneTBB-2022.3.0",
+      "sha256": "01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a",
+      "size": 6836514,
+      "inventory": "build_files/ohos/deps_geometry_sources/inventories/tbb.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "2b242c465b194ac8e1451ea1354873ae"
+      },
+      "formal_declared_license": "SPDX:Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE.txt",
+          "mirror": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        },
+        {
+          "source_path": "third-party-programs.txt",
+          "mirror": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+          "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c",
+          "size": 11631
+        }
+      ],
+      "inspected_source_spdx": [],
+      "reuse": "Existing immutable formal volume TBB archive; source-built in every fresh geometry root"
+    },
+    {
+      "name": "opensubdiv",
+      "version": "v3_7_0",
+      "url": "https://github.com/PixarAnimationStudios/OpenSubdiv/archive/v3_7_0.tar.gz",
+      "registry_manifest": "tpr/sources/opensubdiv-v3_7_0/manifest.json",
+      "archive_filename": "opensubdiv-v3_7_0.tar.gz",
+      "archive_root": "OpenSubdiv-3_7_0",
+      "sha256": "f843eb49daf20264007d807cbc64516a1fed9cdb1149aaf84ff47691d97491f9",
+      "size": 40736075,
+      "inventory": "build_files/ohos/deps_geometry_sources/inventories/opensubdiv.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "470d53c4d4335a601c33a052ce7c33b4"
+      },
+      "formal_declared_license": "TOST-1.0",
+      "notices": [
+        {
+          "source_path": "LICENSE.txt",
+          "mirror": "tpr/sources/opensubdiv-v3_7_0/licenses/LICENSE.txt",
+          "sha256": "9211071ceaea05cec948f44a025ede3030f41506960d68b50e7ddb6edc2abe5b",
+          "size": 10186
+        },
+        {
+          "source_path": "NOTICE.txt",
+          "mirror": "tpr/sources/opensubdiv-v3_7_0/licenses/NOTICE.txt",
+          "sha256": "c9a283f0d3752b74d348a57e1d45e71cf69651ce6cbdce866983e459f6422c7c",
+          "size": 357
+        },
+        {
+          "source_path": "documentation/license.rst",
+          "mirror": "tpr/sources/opensubdiv-v3_7_0/licenses/documentation/license.rst",
+          "sha256": "d0d65ebdc57aa223ade28059e9a39c3761ac34552df76ae349897fb147aa986c",
+          "size": 329
+        }
+      ]
+    },
+    {
+      "name": "gmp",
+      "version": "6.3.0",
+      "url": "https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz",
+      "registry_manifest": "tpr/sources/gmp-6.3.0/manifest.json",
+      "archive_filename": "gmp-6.3.0.tar.xz",
+      "archive_root": "gmp-6.3.0",
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+      "size": 2094196,
+      "inventory": "build_files/ohos/deps_geometry_sources/inventories/gmp.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "956dc04e864001a9c22429f761f2c283"
+      },
+      "formal_declared_license": "SPDX:GPL-2.0-or-later",
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "tpr/sources/gmp-6.3.0/licenses/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "size": 35147
+        },
+        {
+          "source_path": "COPYING.LESSERv3",
+          "mirror": "tpr/sources/gmp-6.3.0/licenses/COPYING.LESSERv3",
+          "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+          "size": 7639
+        },
+        {
+          "source_path": "COPYINGv3",
+          "mirror": "tpr/sources/gmp-6.3.0/licenses/COPYINGv3",
+          "sha256": "e6037104443f9a7829b2aa7c5370d0789a7bda3ca65a0b904cdc0c2e285d9195",
+          "size": 35150
+        },
+        {
+          "source_path": "COPYINGv2",
+          "mirror": "tpr/sources/gmp-6.3.0/licenses/COPYINGv2",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "size": 18092
+        }
+      ]
+    },
+    {
+      "name": "manifold",
+      "version": "v3.5.2",
+      "url": "https://github.com/elalish/manifold/archive/refs/tags/v3.5.2.tar.gz",
+      "registry_manifest": "tpr/sources/manifold-v3.5.2/manifest.json",
+      "archive_filename": "Manifold-v3.5.2.tar.gz",
+      "archive_root": "manifold-3.5.2",
+      "sha256": "35cb5e0d78882f461ec39b17d8f09c2aceca761356f3ce948e3f3908289b8f2e",
+      "size": 30975714,
+      "inventory": "build_files/ohos/deps_geometry_sources/inventories/manifold.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "4fc28c8318bd052f54e66b86b5947601"
+      },
+      "formal_declared_license": "SPDX:Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/manifold-v3.5.2/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        },
+        {
+          "source_path": "bindings/wasm/LICENSE",
+          "mirror": "tpr/sources/manifold-v3.5.2/licenses/bindings/wasm/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        },
+        {
+          "source_path": "include/manifold/linalg.h",
+          "mirror": "tpr/sources/manifold-v3.5.2/licenses/include/manifold/linalg.h",
+          "sha256": "0a1ae64ec20c3e38f1f90d5d4a43942ea9a076fe91acaf0f9937404634858426",
+          "size": 79516
+        },
+        {
+          "source_path": "src/svd.h",
+          "mirror": "tpr/sources/manifold-v3.5.2/licenses/src/svd.h",
+          "sha256": "afa69ed18d35d8210afedece8c6a43730ac2edbea1896b44f1ff4b9fa7a491d8",
+          "size": 10732
+        }
+      ]
+    }
+  ],
+  "patches": [
+    {
+      "patch": "patches/gmp-native-ohos.patch",
+      "patch_sha256": "3cf4c7af10aaf8b5c9894848a58996b50b149ca75b1746963d8bceffcb44f9b0",
+      "files": [
+        {
+          "path": "configfsf.sub",
+          "before_sha256": "3dcdc99d654fe86107a045fcb1879f6c72609eb390d639990df807d2da056646",
+          "after_sha256": "7089b84fdfe913aca4e7688fa415f2786f6750714c13c37725b6036070b84bf3"
+        },
+        {
+          "path": "Makefile.am",
+          "before_sha256": "15e49ea5d3889eaaafe2dc704ac676d41e139cd39b886efe37ac074ea1d9d605",
+          "after_sha256": "5b4fafadf22f5b045437cc1b6c0de2e3c790eba5dd50f5dde7e41db8f7c1cae1"
+        },
+        {
+          "path": "Makefile.in",
+          "before_sha256": "437533a520e7a1d0ece6962f8ce7f40a659036e762164284e060d668faa5d5eb",
+          "after_sha256": "c666356b0559f556a6459f413c622990f9da88ad3b646235a7b7975f3c75683d"
+        }
+      ],
+      "reason": "Accept real native aarch64-unknown-ohos; omit docs as official Blender recipe does. Windows-only gmp.diff hunks do not apply to HarmonyOS.",
+      "name": "gmp",
+      "path": "build_files/ohos/deps_geometry_sources/patches/gmp-native-ohos.patch"
+    }
+  ],
+  "new_full_native_acceptance": false,
+  "fixed_external_make_source": {
+    "registry_manifest": "tpr/sources/make-source-4.4.1/manifest.json",
+    "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3",
+    "version": "4.4.1"
+  }
+}

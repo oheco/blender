@@ -1,0 +1,1115 @@
+[
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "bin/python3.13",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "a41fc52466eddffaed9c732e3ae6cb3e19f188077f77f52873220bb57078e5c2",
+    "size": 22848,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libc.so"
+    ],
+    "path": "lib/libpython3.13.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "889688a24be6df3ccb8b069beb846797671dfabdf0ead6a1af6c77d06e6ecb40",
+    "size": 20539904,
+    "sonames": [
+      "libpython3.13.so"
+    ]
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/libpython3.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "310f4781dafc4c5379630072ff9eb4bbc434b269d2f0080f19f65f474ac1a04e",
+    "size": 18752,
+    "sonames": [
+      "libpython3.so"
+    ]
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_asyncio.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "565e4a6bc8621729449e9b5bb3913de836d1f5f0d22da65aef2c36f72963d30e",
+    "size": 301504,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_bisect.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "83e349f1e662e7fdd3092b99f5d33a5b0703bf0675c112ff993350452b1e15fe",
+    "size": 55744,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_blake2.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "07a22f213856690445b07316cf6739b67a0cf6d928864d00e8a8a17c45c5245a",
+    "size": 412096,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_bz2.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "c359dccc90248b465ea38b3adb8558082b0e52c450e65eea9269565bc9cd0443",
+    "size": 133568,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_codecs_cn.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "fe79bed00c2cdfee69031f10349750450a30a9730145abe51d158cf799cf2704",
+    "size": 182720,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_codecs_hk.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "ab51cafccfb876145cbd73de874ec220ea818d236f36961560d9b03546916673",
+    "size": 190912,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_codecs_iso2022.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "e846188087f15d8629729bf26810e4fb4cdc9da85018f02894d5311c1f87df40",
+    "size": 68032,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_codecs_jp.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "1d6141501caf4d6fa8768b8ff070eb81395ad6171bd82482900617c809963806",
+    "size": 305600,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_codecs_kr.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "80f7db36f7871ace753452def96b5d6148c29aae37b1505100b9659d73e1eac7",
+    "size": 170432,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_codecs_tw.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "9cce04e000a239cbf8d312fb2c16bb8ed9f465274c46c3fb7191212ccde34379",
+    "size": 141760,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_contextvars.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "4355927d4a102a358e679bd6a9c96ef6d25754d196654de3823666744bfa502b",
+    "size": 31104,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_csv.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "eaa77c8e7493e29dc4211dc37de0a0cfd65eab757bdbdd4bf4113ba943abaf82",
+    "size": 104896,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_ctypes.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "78f91c106c527084217c8c7e2782b863f8537a94abfcd2eaa95a60b8e2858505",
+    "size": 735680,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_ctypes_test.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "31df3600cdef20f9bfbc5ebc3aa61241cd830f3daa3a24d281afbaf1398ac8d0",
+    "size": 92544,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_datetime.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "121347e8a9bfeb3ec72cda9282a1fd2d1947b9cb5007f7db65ef067d3f897115",
+    "size": 428480,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_decimal.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "85158b29d99820ea0f16671cb9ede0faeacd81de5c2d4c2856a76a89737b1ee3",
+    "size": 1235392,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_elementtree.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "a9e236bf958511e1bacb155b04a6bd0d4dba85da036d999f3f36d4a61993ee7e",
+    "size": 338368,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_hashlib.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "530c7b3c48a418f8a71a8297999e42507d7efdd731592712a913fce4d6f97057",
+    "size": 5650880,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_heapq.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "30209d4369f9f36bc04cfc413ace01b44de675ad506177d31e531e0e72711031",
+    "size": 55680,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_interpchannels.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "8cb5a13e8e5099cd542bc04386fad3270ced33cc6e78eff39833d6f7a8e64db5",
+    "size": 231808,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_interpqueues.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "cd937ff01dc4fbec1fa25452f89714330eeeef05b5d6ebdf7b069e01a8b2e31b",
+    "size": 92608,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_interpreters.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "abc7caa6a5503b8847019b36406ba09f0a0defbacdb0808effde6fab6c97f3aa",
+    "size": 182656,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_json.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "7ef764abd9c5c24b607bb013e2085cfc52b2223e93e0d7d3bf94768a16bfa5a2",
+    "size": 215424,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_lsprof.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "4e9d0a8c6bbe44f8538f22fb6a9ed00c56ffe76a0eacce40e7d8fb3b64aa11f5",
+    "size": 174528,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_lzma.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "939816bfe8b47f3507e3315fc1238a642d0b061cb32c5a6afd447941b095d205",
+    "size": 248256,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_md5.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "1e7f8d101d45230e65df86c68e869810569052944b222ecda9626d54d186a313",
+    "size": 96704,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_multibytecodec.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "43cedfa54bf0930cdf08e95fd9243305a5aa080d31e4b6c49dd626f3a57a9978",
+    "size": 133568,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_multiprocessing.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "616343f53e85a605f5bd99b10333a6d5d09117ea06345c6a51b131e32a7b14fd",
+    "size": 158144,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_opcode.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "dbfb12676e50ac99cb986e0ade4b8403d4606e68564c17bebdd2503ff160bb4f",
+    "size": 63936,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_pickle.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "d4964e24f6f4126dfc3e6cbfcf5b742af3a713f04f5a98f2de7ab544bed0c0ed",
+    "size": 461248,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_posixshmem.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "33c14634f33c3921b1c87f5782b9ff9c8c69c2c1fa6f98d870bab005e30a7305",
+    "size": 31104,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_posixsubprocess.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "0d8e5c41d10882412d4f7afae958e303e31bf6df130027a5ccc763c2eb3508cb",
+    "size": 158080,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_queue.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "fc1b17b4db724f98f5d657f412b6a638e2058b2fb92693fdc88925fed0af4567",
+    "size": 55744,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_random.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "071c537496d2547d324970d906bc727ed93f0391596cc3ace20c18374623175f",
+    "size": 55680,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_sha1.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "7ede84cb70955060760b92d41c6cd42ba8df841ddd440a08bb8e01c42df865ba",
+    "size": 68032,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_sha2.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "1ca449fd682191545dd00ba99f3ea45d38aadd337bd2cae40ae89908cb35ce9f",
+    "size": 248256,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_sha3.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "51f813fece2b1120318f5691219ecd14074970cadfba9f2ad18a90e2c8284803",
+    "size": 195008,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_socket.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "4d9b85a633499e62861c35e753bfe38dbe2c22b83b47ca2c2fb9bc0ad5b4866f",
+    "size": 260544,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_sqlite3.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "2b0f7f799ef9d22ee0000759fca6b3ce2314f6f857654b71a4c9f46d83d3ef52",
+    "size": 2005440,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_ssl.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "905ba0150aa7ea79610424c2afc5acad42f3f57cde44334ad8ce784b3e451215",
+    "size": 7088576,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_statistics.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "2a78ac49353faf8034d0dfda9ff2f6fc4d24cdf63f026b660aa82badab30a926",
+    "size": 27008,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_struct.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "1ff56d0e78a48de04a6e165c158a05772fb2a2f24105573a4c8f990a587ab1a4",
+    "size": 137664,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testbuffer.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "1125a89dcf18cc114eefe5205e47d1918464674b2fc90b735c339c5282b82149",
+    "size": 121280,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testcapi.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "f3ac02e7e31f3c8ce80b5d103b42f1520d1946bbe26c1d42156599ae3bcb8387",
+    "size": 915904,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testclinic.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "c8da177f53b8b211bca2d231ea0f69fb02dab9ff7304e56cb2e0d4f18e62e21b",
+    "size": 256448,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testclinic_limited.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "942fb9e82523d3034cc6d46c3777a9087eaf8323abc8dd8cbe293f34d383a7f4",
+    "size": 31104,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testexternalinspection.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "4a07ab627c448de1710b865e82e2bc4de23c33bd4f7951a78adad116b446bd9c",
+    "size": 51584,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testimportmultiple.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "a0bcb3e82c6ebf1b02377803c077b438390a40239c81440c94de805a62e18739",
+    "size": 22848,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testinternalcapi.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "13d9d6509478a7d5573e56712da7349c1907678cf0ca8a3b76e8c9dfcd09a2a6",
+    "size": 362944,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testlimitedcapi.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "683a87b3633e0f41609408a2d37bf9e38abeb657bec436a43669b51f211afdf3",
+    "size": 469440,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testmultiphase.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "b45ae99ecbb864dad01793762167d68a8e9de39f8a5b58300a437b103f43efc1",
+    "size": 76224,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_testsinglephase.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "7a6a04ed567bb31d3462e4c8026581413da00cf26b2d42474168277b36273890",
+    "size": 51584,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_xxtestfuzz.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "719da69fef2e85117e3a477dfcc859e46c1abee1b09ed12d21fc3505a690af7e",
+    "size": 63872,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/_zoneinfo.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "e5f0c312d1c992b0c310c644205fb7355a6bc6be7f659289522587313999956d",
+    "size": 125376,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/array.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "92859561d88bc3700d2717fcb3dd4652995db40e5cff44e41d13fc02d1c98d83",
+    "size": 174528,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/binascii.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "facd80dcf0f0180dcb8a9c24eda41f9490e5880363310b80e1ce8504740fa6c0",
+    "size": 178624,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/cmath.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "4e180edf956dc6f2943d48745c01d929eadbacf24158572f4d73503114762c65",
+    "size": 88512,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/fcntl.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "d90aba256fa5343fc4394e0f3bd6c1eb5ed112184b70feb60215ed409ec24e80",
+    "size": 51584,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/grp.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "321d16cbd0b26a1e1896f05eb09a7e0172aa95a1830efbb019394bed0b3020ff",
+    "size": 51648,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/math.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "626f5db72050f9e2b45718ee7cc978ad0b4098ec54d803f7fc536508b1add038",
+    "size": 272832,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/mmap.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "0cca5829d8abe706776ea3d9e5998e240797e133de1b44051fd1d7d2d5161334",
+    "size": 174464,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/pyexpat.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "a6dae9666d68fb50218ae03823e98a0443a71eededcf0bcf9140b13573976c89",
+    "size": 731584,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/resource.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "09b28a40d1eb026b72a1f1f07bbbdef05044f016c86a09f50e2cbea94efaae16",
+    "size": 55680,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/select.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "0bcb096303d2985236723a8afd11e68182f0eef28afb57f82aa167f813fbfd93",
+    "size": 182720,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/syslog.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "e7b692468658ca72029a2f6a91fcb2490660c1dec06843adf1361859134d900c",
+    "size": 141760,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/termios.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "bb49af578cf1ed50b50f4add0631ba3d5b6b8e1f9703be640bc5f7270ffea846",
+    "size": 68032,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/unicodedata.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "27832ba56aa1b57a653aa04ac9b28b2c359fda52f224d670a16563b6e2d3d467",
+    "size": 772544,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/xxlimited.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "3835a0930e5283c0b3241af0fca30d1ec782905c3caede7952facf5a8bc011f9",
+    "size": 39296,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/xxlimited_35.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "ddf0839cffe85d87d820820025d3d38fd2bbc6cb455401548912a8d6ed91a768",
+    "size": 35200,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/xxsubtype.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "cc6031f5d1d4eb29e58f3490fbe4e27baf26ae080370813424eaf23d91ed4fa0",
+    "size": 39296,
+    "sonames": []
+  },
+  {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "lib/python3.13/lib-dynload/zlib.cpython-313-aarch64-linux-ohos.so",
+    "runpaths": [
+      "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+    ],
+    "sha256": "2c0c7214c6ccfb0fbcb5d33c5fe7bc42d8106f7515824ce85a80c5ae163feb3e",
+    "size": 207296,
+    "sonames": []
+  }
+]

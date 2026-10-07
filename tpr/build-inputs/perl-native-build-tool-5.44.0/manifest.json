@@ -1,0 +1,23 @@
+{
+  "filename": "perl-5.44.0-ohos-arm64.tar.gz",
+  "format": "original-archive-parts",
+  "kind": "build-tool-binary",
+  "license": "Artistic-1.0 OR GPL-1.0-or-later",
+  "license_files": [
+    "Copying",
+    "AUTHORS"
+  ],
+  "name": "perl",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "sha256": "053e5252d736fa55a98a09e5124ead6391103717eb3bd465c1da882705a9cfef",
+      "size": 17551204
+    }
+  ],
+  "schema_version": 1,
+  "sha256": "053e5252d736fa55a98a09e5124ead6391103717eb3bd465c1da882705a9cfef",
+  "size": 17551204,
+  "url": "https://github.com/Harmonybrew/ohos-perl/releases/download/5.44.0/perl-5.44.0-ohos-arm64.tar.gz",
+  "version": "5.44.0"
+}

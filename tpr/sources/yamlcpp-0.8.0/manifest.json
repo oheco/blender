@@ -1,0 +1,24 @@
+{
+  "name": "yamlcpp",
+  "version": "0.8.0",
+  "kind": "source",
+  "filename": "yaml-cpp-0.8.0.tar.gz",
+  "url": "https://github.com/jbeder/yaml-cpp/archive/refs/tags/0.8.0.tar.gz",
+  "license": "SPDX:MIT",
+  "license_files": [
+    "LICENSE",
+    "test/gtest-1.11.0/LICENSE",
+    "test/gtest-1.11.0/googlemock/scripts/generator/LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 1017151,
+  "sha256": "fbe74bbdcee21d656715688706da3c8becfd946d92cd44705cc6098bb23b3a16",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 1017151,
+      "sha256": "fbe74bbdcee21d656715688706da3c8becfd946d92cd44705cc6098bb23b3a16"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "copied_inputs": [
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/vendor_archive.py",
+      "input_sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/vendor_archive.py",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/io_utils.py",
+      "input_sha256": "ff8c7d2a824977025e980f7f0a1a6a73811b08b66d3ba6e11ac893d52c6698be",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/io_utils.py",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/source_tree.py",
+      "input_sha256": "2ed1694aea2ba2a0bf6eae9d38e13c068cf57ccedbe9ccb1872de31656d69e8b",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/source_tree.py",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/toolchain.py",
+      "input_sha256": "5802b6324d68720e10f17190f9377100fe75fd9cad8332f86d287b8f98a77977",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/toolchain.py",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/launcher.py",
+      "input_sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/launcher.py",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/audit.py",
+      "input_sha256": "bf0b93dd102881101ea8a7f30fd91f302f26b2cb701df939ebb1963f954c004b",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/audit.py",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "input_sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/cmake/native-host.cmake",
+      "input_sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/cmake/native-host.cmake",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/consumers/native_probe.cc",
+      "input_sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/native_probe.cc",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "build_files/ohos/deps_volume_sources/builder/consumers/affinity_probe.cc",
+      "input_sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/affinity_probe.cc",
+      "derivation": "Frozen copy/adaptation into own GPL geometry namespace"
+    },
+    {
+      "input": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-geometry/tests/tbb_acceptance.cc",
+      "input_sha256": "d57ffc6bbc5e6c18e383b4e8b77dc15e153af8a3268eaa821bc7ee8f08fc9ad3",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/tbb_acceptance.cc",
+      "derivation": "Existing meaningful native test retained; additional GMP serialization/manifold raw mesh export gates"
+    },
+    {
+      "input": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-geometry/tests/opensubdiv_acceptance.cc",
+      "input_sha256": "98c43d093fc2954482fbd9ca2fc293f3cfa21b95d5b60400da433c10eaa3f4b6",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/opensubdiv_acceptance.cc",
+      "derivation": "Existing meaningful native test retained; additional GMP serialization/manifold raw mesh export gates"
+    },
+    {
+      "input": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-geometry/tests/gmp_acceptance.cc",
+      "input_sha256": "6d73076291a9784a6619d1a6f1dbf2772de59000ef8a929870b7e48fa0589393",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/gmp_acceptance.cc",
+      "derivation": "Existing meaningful native test retained; additional GMP serialization/manifold raw mesh export gates"
+    },
+    {
+      "input": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-geometry/tests/manifold_acceptance.cc",
+      "input_sha256": "da2999a661bc1ff48e1507ff972613e5af9466e135d4b12c005b4ac66a0d688f",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/manifold_acceptance.cc",
+      "derivation": "Existing meaningful native test retained; additional GMP serialization/manifold raw mesh export gates"
+    },
+    {
+      "input": "build_files/cmake/Modules/FindGMP.cmake",
+      "input_sha256": "4460cec0a4ef58dbd68b32d7e522c0086fede86b3c8dace22ae0699ca9942ccb",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/blender-find/FindGMP.cmake",
+      "derivation": "Byte-identical BSD3 Blender Authors module with original notice preserved"
+    },
+    {
+      "input": "build_files/cmake/Modules/FindOpenSubdiv.cmake",
+      "input_sha256": "84f897e00459efb66cdbe7e3fd73a2b0378edc72ed375d30de01aa169ac2847e",
+      "derived": "build_files/ohos/deps_geometry_sources/builder/consumers/blender-find/FindOpenSubdiv.cmake",
+      "derivation": "Byte-identical BSD3 Blender Authors module with original notice preserved"
+    }
+  ],
+  "old_recipe_sha256": "2a00dc77efbfed20c1c8e1d6361f668937e38bbe76c5e6e4c7ccf66078d822ba",
+  "new_full_native_acceptance": false
+}

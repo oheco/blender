@@ -47,6 +47,13 @@
 #include "DNA_text_types.h"
 
 #include "BKE_appdir.hh"
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+#  include "WM_api.hh"
+#  include "GHOST_OHOSHost.h"
+#  include "bpy_ohos_tls.hh"
+static_assert(PY_MAJOR_VERSION == 3 && PY_MINOR_VERSION == 13,
+              "OHOS runtime manifest and embedded Python must both be Python 3.13");
+#endif
 #include "BKE_context.hh"
 #include "BKE_global.hh" /* Only for script checking. */
 #include "BKE_main.hh"
@@ -365,10 +372,20 @@ static void pystatus_exit_on_error(const PyStatus &status)
 {
   if (UNLIKELY(PyStatus_Exception(status))) {
     fputs("Internal error initializing Python!\n", stderr);
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+    fprintf(stderr, "Python initialization: %s\n", status.err_msg ? status.err_msg : "unknown error");
+    throw WMEmbeddedInitExit{EXIT_FAILURE};
+#else
     /* This calls `exit`. */
     Py_ExitStatusException(status);
+#endif
   }
 }
+#endif
+
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+static BPYEmbeddedPhase embedded_python_phase = BPYEmbeddedPhase::NotStarted;
+BPYEmbeddedPhase BPY_embedded_phase() { return embedded_python_phase; }
 #endif
 
 void BPY_python_start(bContext *C, int argc, const char **argv)
@@ -454,9 +471,27 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
       config.install_signal_handlers = 1;
     }
 
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+    /* Construct only after PyConfig_Init*: Clear is valid on every subsequent unwind. */
+    struct ConfigGuard { PyConfig *config; ~ConfigGuard() { PyConfig_Clear(config); } } guard{&config};
+#  endif
     if (isolated_override) {
       config.isolated = isolated_override.value();
     }
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+    config.install_signal_handlers = 0;
+    config.use_environment = 0;
+    config.user_site_directory = 0;
+    config.isolated = 1;
+    GHOST_OHOSPaths host_paths{};
+    if (ghost_ohos_host_get_paths(ghost_ohos_host_installed(), &host_paths) != GHOST_OHOS_OK) {
+      throw WMEmbeddedInitExit{EXIT_FAILURE};
+    }
+    char pycache_path[FILE_MAX];
+    BLI_path_join(pycache_path, sizeof(pycache_path), host_paths.cache, "python-pycache");
+    status = PyConfig_SetBytesString(&config, &config.pycache_prefix, pycache_path);
+    pystatus_exit_on_error(status);
+#  endif
 
     /* Suppress error messages when calculating the module search path.
      * While harmless, it's noisy. */
@@ -502,7 +537,9 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
      * - See `site.USER_BASE` for the location PIP will install user packages
      *   this could be customized if we want to support a separate "blender-user" user path.
      */
+#  ifndef WITH_GHOST_OHOS_EMBEDDED
     config.user_site_directory = py_use_user_env;
+#  endif
 
     /* While `sys.argv` is set, we don't want Python to interpret it. */
     config.parse_argv = 0;
@@ -520,6 +557,7 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
       pystatus_exit_on_error(status);
     }
 
+#  ifndef WITH_GHOST_OHOS_EMBEDDED
     /* Setting the program name is important so the 'multiprocessing' module
      * can launch new Python instances. */
     {
@@ -539,6 +577,7 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
       }
     }
 
+#  endif
     /* Allow to use our own included Python. `py_path_bundle` may be nullptr. */
     {
       const std::optional<std::string> py_path_bundle = BKE_appdir_folder_id(BLENDER_SYSTEM_PYTHON,
@@ -558,8 +597,23 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
 
         status = PyConfig_SetBytesString(&config, &config.home, py_path_bundle->c_str());
         pystatus_exit_on_error(status);
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+        /* Explicit paths prevent prefix/executable probing and follow runtime relocation. */
+        const char *suffixes[] = {"lib/python3.13", "lib/python3.13/lib-dynload",
+                                  "lib/python3.13/site-packages"};
+        for (const char *suffix : suffixes) {
+          char module_path[FILE_MAX];
+          BLI_path_join(module_path, sizeof(module_path), py_path_bundle->c_str(), suffix);
+          wchar_t *wide = Py_DecodeLocale(module_path, nullptr);
+          if (!wide) { throw WMEmbeddedInitExit{EXIT_FAILURE}; }
+          status = PyWideStringList_Append(&config.module_search_paths, wide);
+          PyMem_RawFree(wide);
+          pystatus_exit_on_error(status);
+        }
+        config.module_search_paths_set = 1;
+#  endif
 
-#  ifdef PYTHON_SSL_CERT_FILE
+#  if defined(PYTHON_SSL_CERT_FILE) && !defined(WITH_GHOST_OHOS_EMBEDDED)
         /* Point to the portable SSL certificate to support HTTPS access, see: #102300. */
         const char *ssl_cert_file_env = "SSL_CERT_FILE";
         if (BLI_getenv(ssl_cert_file_env) == nullptr) {
@@ -569,9 +623,13 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
               ssl_cert_file, sizeof(ssl_cert_file), py_path_bundle->c_str(), ssl_cert_file_suffix);
           BLI_setenv(ssl_cert_file_env, ssl_cert_file);
         }
-#  endif /* PYTHON_SSL_CERT_FILE */
+#  endif /* PYTHON_SSL_CERT_FILE && !WITH_GHOST_OHOS_EMBEDDED */
       }
       else {
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+        fputs("OHOS bundled Python 3.13 runtime is missing\n", stderr);
+        throw WMEmbeddedInitExit{EXIT_FAILURE};
+#  endif
 /* Common enough to use the system Python on Linux/Unix, warn on other systems. */
 #  if defined(__APPLE__) || defined(_WIN32)
         fprintf(stderr,
@@ -583,13 +641,39 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
 
     /* Initialize Python (also acquires lock). */
     status = Py_InitializeFromConfig(&config);
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+    if (Py_IsInitialized()) { embedded_python_phase = BPYEmbeddedPhase::RawInterpreter; }
+#  endif
+#  ifndef WITH_GHOST_OHOS_EMBEDDED
     PyConfig_Clear(&config);
+#  endif
 
     pystatus_exit_on_error(status);
 
     if (!has_python_executable) {
       PySys_SetObject("executable", Py_None);
     }
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+    /* Python tempfile must use the same private temp root without changing process environment. */
+    PyObject *tempfile_module = PyImport_ImportModule("tempfile");
+    PyObject *temp_path = PyUnicode_DecodeFSDefault(host_paths.temp);
+    const bool temp_ok = tempfile_module && temp_path &&
+                        PyObject_SetAttrString(tempfile_module, "tempdir", temp_path) == 0;
+    Py_XDECREF(temp_path);
+    Py_XDECREF(tempfile_module);
+    if (!temp_ok) {
+      PyErr_Print();
+      /* Creator owns this raw initialized interpreter. It must close admission
+       * and finish bounded lifecycle ticks before finalization/context removal. */
+      throw WMEmbeddedInitExit{EXIT_FAILURE};
+    }
+    if (!bpy_ohos_tls_configure()) {
+      PyErr_Print();
+      /* Creator rev2 retains this initialized raw interpreter until the owned
+       * lifecycle gate is ready. Never finalize merely because init returned an error. */
+      throw WMEmbeddedInitExit{EXIT_FAILURE};
+    }
+#  endif
   }
 
 #  ifdef WITH_FLUID
@@ -611,6 +695,9 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
 
 #endif /* WITH_PYTHON_MODULE */
 
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  embedded_python_phase = BPYEmbeddedPhase::BindingsStarting;
+#endif
   bpy_intern_string_init();
 
 #ifdef WITH_PYTHON_MODULE
@@ -639,6 +726,9 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
   BPy_init_modules(C);
 
   pyrna_alloc_types();
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  embedded_python_phase = BPYEmbeddedPhase::Ready;
+#endif
 
 #ifndef WITH_PYTHON_MODULE
   /* Python module runs `atexit` when `bpy` is freed. */
@@ -658,6 +748,11 @@ void BPY_python_start(bContext *C, int argc, const char **argv)
 
 void BPY_python_end(const bool do_python_exit)
 {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  if (!WM_embedded_teardown_authorized() || !WM_embedded_teardown_finalcheck()) {
+    throw WMEmbeddedInitExit{EXIT_FAILURE};
+  }
+#endif
 #ifndef WITH_PYTHON_MODULE
   BLI_assert_msg(Py_IsInitialized() != 0, "Python must be initialized");
 #endif
@@ -691,6 +786,11 @@ void BPY_python_end(const bool do_python_exit)
   BPY_atexit_unregister();
 
   if (do_python_exit) {
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+    /* Native destruction may have released Python objects. If their finalizers
+     * created new owned work, retain a fatal session; never resume BPY callbacks. */
+    if (!WM_embedded_teardown_finalcheck()) { throw WMEmbeddedInitExit{EXIT_FAILURE}; }
+#  endif
     Py_Finalize();
   }
   (void)gilstate;

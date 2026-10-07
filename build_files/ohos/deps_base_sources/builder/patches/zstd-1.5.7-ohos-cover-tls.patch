@@ -1,0 +1,98 @@
+--- a/lib/dictBuilder/cover.c
++++ b/lib/dictBuilder/cover.c
+@@ -64,7 +64,11 @@
+ *  Console display
+ ***************************************/
+ #ifndef LOCALDISPLAYLEVEL
++#if defined(__OHOS__)
++static _Thread_local int g_displayLevel = 0;
++#else
+ static int g_displayLevel = 0;
++#endif
+ #endif
+ #undef  DISPLAY
+ #define DISPLAY(...)                                                           \
+@@ -82,7 +86,11 @@
+ 
+ #ifndef LOCALDISPLAYUPDATE
+ static const clock_t g_refreshRate = CLOCKS_PER_SEC * 15 / 100;
++#if defined(__OHOS__)
++static _Thread_local clock_t g_time = 0;
++#else
+ static clock_t g_time = 0;
++#endif
+ #endif
+ #undef  LOCALDISPLAYUPDATE
+ #define LOCALDISPLAYUPDATE(displayLevel, l, ...)                               \
+@@ -241,7 +249,10 @@
+   unsigned d;
+ } COVER_ctx_t;
+ 
+-#if !defined(_GNU_SOURCE) && !defined(__APPLE__) && !defined(_MSC_VER)
++#if defined(__OHOS__)
++/* OHOS has qsort(), but no qsort_r(). Keep the context per thread. */
++static _Thread_local COVER_ctx_t *g_coverCtx = NULL;
++#elif !defined(_GNU_SOURCE) && !defined(__APPLE__) && !defined(_MSC_VER)
+ /* C90 only offers qsort() that needs a global context. */
+ static COVER_ctx_t *g_coverCtx = NULL;
+ #endif
+@@ -288,7 +299,9 @@
+ /**
+  * Same as COVER_cmp() except ties are broken by pointer value
+  */
+-#if (defined(_WIN32) && defined(_MSC_VER)) || defined(__APPLE__)
++#if defined(__OHOS__)
++static int COVER_strict_cmp(const void *lp, const void *rp) {
++#elif (defined(_WIN32) && defined(_MSC_VER)) || defined(__APPLE__)
+ static int WIN_CDECL COVER_strict_cmp(void* g_coverCtx, const void* lp, const void* rp) {
+ #elif defined(_GNU_SOURCE)
+ static int COVER_strict_cmp(const void *lp, const void *rp, void *g_coverCtx) {
+@@ -304,7 +317,9 @@
+ /**
+  * Faster version for d <= 8.
+  */
+-#if (defined(_WIN32) && defined(_MSC_VER)) || defined(__APPLE__)
++#if defined(__OHOS__)
++static int COVER_strict_cmp8(const void *lp, const void *rp) {
++#elif (defined(_WIN32) && defined(_MSC_VER)) || defined(__APPLE__)
+ static int WIN_CDECL COVER_strict_cmp8(void* g_coverCtx, const void* lp, const void* rp) {
+ #elif defined(_GNU_SOURCE)
+ static int COVER_strict_cmp8(const void *lp, const void *rp, void *g_coverCtx) {
+@@ -324,7 +339,14 @@
+  * to clean it up.
+  */
+ static void stableSort(COVER_ctx_t *ctx) {
+-#if defined(__APPLE__)
++#if defined(__OHOS__)
++    COVER_ctx_t *const previousCtx = g_coverCtx;
++    g_coverCtx = ctx;
++    qsort(ctx->suffix, ctx->suffixSize, sizeof(U32),
++          (ctx->d <= 8 ? &COVER_strict_cmp8 : &COVER_strict_cmp));
++    /* Restore the context if a sort is nested on the same thread. */
++    g_coverCtx = previousCtx;
++#elif defined(__APPLE__)
+     qsort_r(ctx->suffix, ctx->suffixSize, sizeof(U32),
+             ctx,
+             (ctx->d <= 8 ? &COVER_strict_cmp8 : &COVER_strict_cmp));
+@@ -1132,6 +1154,11 @@
+   BYTE* const dict = (BYTE*)malloc(dictBufferCapacity);
+   COVER_dictSelection_t selection = COVER_dictSelectionError(ERROR(GENERIC));
+   U32* const freqs = (U32*)malloc(ctx->suffixSize * sizeof(U32));
++#if defined(__OHOS__)
++  int const previousDisplayLevel = g_displayLevel;
++  /* Pool workers must use the notification level passed by the caller. */
++  g_displayLevel = (int)parameters.zParams.notificationLevel;
++#endif
+   if (!COVER_map_init(&activeDmers, parameters.k - parameters.d + 1)) {
+     DISPLAYLEVEL(1, "Failed to allocate dmer map: out of memory\n");
+     goto _cleanup;
+@@ -1162,6 +1189,9 @@
+   COVER_map_destroy(&activeDmers);
+   COVER_dictSelectionFree(selection);
+   free(freqs);
++#if defined(__OHOS__)
++  g_displayLevel = previousDisplayLevel;
++#endif
+ }
+ 
+ ZDICTLIB_STATIC_API size_t ZDICT_optimizeTrainFromBuffer_cover(

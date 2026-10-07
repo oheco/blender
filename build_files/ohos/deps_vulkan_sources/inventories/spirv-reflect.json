@@ -1,0 +1,2002 @@
+{
+  "source_archive_sha256": "3f55d5ad7dc6f02214633c851d4ea3872abe3a1ecec6b5d80cfc3255012c4b6a",
+  "archive_root": "SPIRV-Reflect-vulkan-sdk-1.4.341.0",
+  "git_commit": "62ca825c692334ed758027b908c5aafbbc76243f",
+  "files": [
+    {
+      "path": ".clang-format",
+      "size": 109,
+      "sha256": "de040c73feb17a0e50cc9fdff633e5de6e85a71c88146eab4af2f22e74bfd7ed"
+    },
+    {
+      "path": ".git-blame-ignore-revs",
+      "size": 82,
+      "sha256": "ab1cc088b2ad18e91ad38d6369ab57ee775d67fd9fe6169ecb79d4af34ec49d7"
+    },
+    {
+      "path": ".github/workflows/check-formatting.yml",
+      "size": 1543,
+      "sha256": "a94dc041d0d3387d9b56ac9cbe2a6badd3ec7bf48a65e6961ea615fea945e6f2"
+    },
+    {
+      "path": ".github/workflows/linux-cmake-build.yml",
+      "size": 1789,
+      "sha256": "199b4d404f77efd3e6e447b7a141af2732e06e94a48900925e6f859338d2458a"
+    },
+    {
+      "path": ".github/workflows/windows-cmake-build.yml",
+      "size": 740,
+      "sha256": "89d8e67a8908d2a3907e16b9b4bd44f72e8dac037daca54f4ea3c0bff6e15155"
+    },
+    {
+      "path": ".gitignore",
+      "size": 118,
+      "sha256": "7388b5a85df6325afc7652c0dfccf86af1efce51630aa758eb0d2e570638068e"
+    },
+    {
+      "path": ".gitmodules",
+      "size": 112,
+      "sha256": "e99a548ffd614fb7daacc75b4246e0b7bc74abc3b817c16ff41a140e1a6647bf"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "size": 6576,
+      "sha256": "c33808062f78f47cf629f7226774096c83e52ea72bb9bf11401651089a520259"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.adoc",
+      "size": 390,
+      "sha256": "af81de4203e9511f5c471b063139131b7c983c89001afef37ec6dd7361bf0f54"
+    },
+    {
+      "path": "LICENSE",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "size": 5635,
+      "sha256": "2d9c2392bd1ec29af8502900f4a5ae404b3340a7dc3e7f6f2230eae1d6d93db1"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 699,
+      "sha256": "521aac950d15b6f585303c6cd23f1e164160732c76ad7faf0e11e2fc7154e23d"
+    },
+    {
+      "path": "common/output_stream.cpp",
+      "size": 88756,
+      "sha256": "e89928be9c1a03afe104de7b6389791c7bf4b9e29df7ed5e939b75c1eaea7ec1"
+    },
+    {
+      "path": "common/output_stream.h",
+      "size": 3721,
+      "sha256": "5d33295ce5d6130917769c0ac9557fa4263050a176035887126a87dd8f8eeffb"
+    },
+    {
+      "path": "examples/CMakeLists.txt",
+      "size": 3446,
+      "sha256": "4243966b69e0ae5e871bca315e43dbda58cbb546c8037c73f6dcbd40b2b1bfbf"
+    },
+    {
+      "path": "examples/arg_parser.cpp",
+      "size": 9792,
+      "sha256": "f0f1d2d8d29e305fa99a521158c4f06dff8319ec80c9d22bdc89490f1984365e"
+    },
+    {
+      "path": "examples/arg_parser.h",
+      "size": 2267,
+      "sha256": "b0f5d745264d7b0bc2e6f23b44866586ecf2824e82ff02a71c191382df698b68"
+    },
+    {
+      "path": "examples/build_sample_spv_h.sh",
+      "size": 902,
+      "sha256": "7cfbbbc77cdf44c4f8fa5229bfba2428063e4d6c84d0f0e29c00f8da5223bf1f"
+    },
+    {
+      "path": "examples/common.cpp",
+      "size": 4241,
+      "sha256": "47a46237a2278cf216c12c33c3dacca54bb869b756bb1e7409599a70cfcf08f9"
+    },
+    {
+      "path": "examples/common.h",
+      "size": 633,
+      "sha256": "5c7ef78b07e8c9571b5d03e91f4614a8647618abbf21f5d5fbb1ec3f8367d50b"
+    },
+    {
+      "path": "examples/main_descriptors.cpp",
+      "size": 3280,
+      "sha256": "ec1f6ecf1d7a2668c0087391904081afc0c9e7773387361478c8978c99070c61"
+    },
+    {
+      "path": "examples/main_explorer.cpp",
+      "size": 4320,
+      "sha256": "832cf81b6de8939ae83df9a07b5de30e80c2143d125f49e1e0aece711a88334d"
+    },
+    {
+      "path": "examples/main_hlsl_resource_types.cpp",
+      "size": 5137,
+      "sha256": "0de632f352fbc58c612a97c08d6e8147136105f12ec47b7e6bc86c1eb43eaa4f"
+    },
+    {
+      "path": "examples/main_io_variables.cpp",
+      "size": 15468,
+      "sha256": "fba986b418bad00b47822bd441c145a158dcb9a7aa37c23194a5337213b6a9f3"
+    },
+    {
+      "path": "examples/sample.hlsl",
+      "size": 1582,
+      "sha256": "bdaa4be71eef28cccdef5523f0d218d5d7d78a85a7d0aef97f3f063a9f8a7936"
+    },
+    {
+      "path": "examples/sample.spv",
+      "size": 3820,
+      "sha256": "937f884f008ce08f782ac53628b723086cd12eb258524ede102e0853f598c245"
+    },
+    {
+      "path": "examples/sample_spv.h",
+      "size": 20839,
+      "sha256": "b5ede6cba71258436ca1096dc72339d0070c71b0574d99fe82d2a0e752b825ab"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.h",
+      "size": 321925,
+      "sha256": "626b6fef292feb4bf5793247eb543f31bcefd86b95f39d860e4cdae3a92bbef4"
+    },
+    {
+      "path": "main.cpp",
+      "size": 7758,
+      "sha256": "4f787dfe65ad0d72251040084ce32586ac65c4a3982827fafe512c73d79fda60"
+    },
+    {
+      "path": "spirv_reflect.c",
+      "size": 222270,
+      "sha256": "1e6c732a61859175c280131b3a9aa9e322123f2bfb3e1d9f268c758532b68f25"
+    },
+    {
+      "path": "spirv_reflect.cpp",
+      "size": 95,
+      "sha256": "498198cef8a9a84b8cf38bf9bed6f24d835483210b2e5856263d4db5bf28410d"
+    },
+    {
+      "path": "spirv_reflect.h",
+      "size": 96740,
+      "sha256": "3b15f03e650c0a134fbfa6c65a7694f59ff936cb175426e2d9e7160f9b388eb4"
+    },
+    {
+      "path": "tests/16bit/vert_in_out_16.spv",
+      "size": 1592,
+      "sha256": "235f9ef382b834ef8c3396aab1bae56b525151ecc88a48f6c07b4c0d3a9a9607"
+    },
+    {
+      "path": "tests/16bit/vert_in_out_16.spv.yaml",
+      "size": 10276,
+      "sha256": "9391282b4d651a9cb26ba571d67fc7ffd158296e310e66004a1e926d01a07082"
+    },
+    {
+      "path": "tests/16bit/vert_in_out_16.vert",
+      "size": 747,
+      "sha256": "a5ce54ea7162d32dca6068531122f6b286a73842ce136fb39127e140001df87a"
+    },
+    {
+      "path": "tests/access_chains/array_length_from_access_chain.spv",
+      "size": 392,
+      "sha256": "98c38129a8f9163f275500a17700ecad20c75d611140c5b8a69b010e80bfc535"
+    },
+    {
+      "path": "tests/access_chains/array_length_from_access_chain.spv.yaml",
+      "size": 4233,
+      "sha256": "d2b3508d41fdf693d53aeba4855642874abaa329dfe2a66c71ccc32b4b7b5be7"
+    },
+    {
+      "path": "tests/access_chains/pointer_access_chain_phy_storage_buffer.slang",
+      "size": 196,
+      "sha256": "5c12acc2a5f3802c6bef0d2253507857c8c221a81ebb43fcc7bf79f8549d6ea6"
+    },
+    {
+      "path": "tests/access_chains/pointer_access_chain_phy_storage_buffer.spv",
+      "size": 952,
+      "sha256": "09ee85f183c81637527faafeeefc6e8e499fca56b59a75a91b080d0d9c827836"
+    },
+    {
+      "path": "tests/access_chains/pointer_access_chain_phy_storage_buffer.spv.yaml",
+      "size": 5816,
+      "sha256": "f34f6cd2c3449e6011e9caa8c69d1209db611133532a903c1c358d7b804ebcad"
+    },
+    {
+      "path": "tests/build_all_shaders.py",
+      "size": 3425,
+      "sha256": "7f4f543ec0d52c884d1465a964d8f8b7d8895b14f3bc27f544b48a00f35ce974"
+    },
+    {
+      "path": "tests/build_golden_yaml.py",
+      "size": 2570,
+      "sha256": "d08eb9de6faea88c7f35a2bc72b7a8ab277c6d3641337c59f6d6373c31b826c1"
+    },
+    {
+      "path": "tests/cbuffer_unused/cbuffer_unused_001.hlsl",
+      "size": 5450,
+      "sha256": "bfc6503d2979aa6493ea631757e8e9e991cc4aa6a4367fe3e7666c08085df8fc"
+    },
+    {
+      "path": "tests/cbuffer_unused/cbuffer_unused_001.spv",
+      "size": 14020,
+      "sha256": "2c005a6e90f7cbe5a03a9d6e5a5cfb6f2ee176fccb0ca17f9ec5bf7373cd81f5"
+    },
+    {
+      "path": "tests/cbuffer_unused/cbuffer_unused_001.spv.yaml",
+      "size": 105228,
+      "sha256": "b83d0f319f2d6c3ae063b275ed73bde6c8b11a41af242bb628a4c8baf8abfd50"
+    },
+    {
+      "path": "tests/ci_database.py",
+      "size": 917,
+      "sha256": "3b7fbe9b7373dd6ccfe8205295872cd24e10ed6e662a8586235fa642e022e829"
+    },
+    {
+      "path": "tests/cpp/noncopyable/CMakeLists.txt",
+      "size": 616,
+      "sha256": "4793a68a5d92737a07d4866b904b92791201113413a9492744d55106099ad117"
+    },
+    {
+      "path": "tests/cpp/noncopyable/main.cpp",
+      "size": 163,
+      "sha256": "edd69d66bf07ec7c3d49782e5eec71ebf6c1d08e451ab67ee92ad40eb091acdb"
+    },
+    {
+      "path": "tests/entry_exec_mode/comp_local_size.glsl",
+      "size": 270,
+      "sha256": "4c65d2a2646c98f6f04400778ded6ee80efdd565f99ce5a27f3fb947202d6ba0"
+    },
+    {
+      "path": "tests/entry_exec_mode/comp_local_size.spv",
+      "size": 748,
+      "sha256": "25d43a12ddc020ebbc375242a9b8aaf415a98324647626e32d734ccdc80b2f49"
+    },
+    {
+      "path": "tests/entry_exec_mode/comp_local_size.spv.yaml",
+      "size": 3282,
+      "sha256": "6e00e8c852da938411bcefdad19e1f2a5b84dd7414cc8066e61432f5b5899b06"
+    },
+    {
+      "path": "tests/entry_exec_mode/geom_inv_out_vert.glsl",
+      "size": 319,
+      "sha256": "206bb71c47401f197628da98d03637fda26d732ea856bd31bc671a3cbaa3a347"
+    },
+    {
+      "path": "tests/entry_exec_mode/geom_inv_out_vert.spv",
+      "size": 1276,
+      "sha256": "42d33395998c390066b975e1f5b31cb900cd471e103a3b86ccca29114c2a11ce"
+    },
+    {
+      "path": "tests/entry_exec_mode/geom_inv_out_vert.spv.yaml",
+      "size": 11818,
+      "sha256": "5f41b5cdbf63085ae05f541757436bec8287309184c37bdbf32e91d6efad509a"
+    },
+    {
+      "path": "tests/execution_mode/local_size_id.spv",
+      "size": 224,
+      "sha256": "08bea30b400c1cd076c81ce97c76476484e50282da9f3e1948c6ad00fe2bbbbb"
+    },
+    {
+      "path": "tests/execution_mode/local_size_id.spv.yaml",
+      "size": 645,
+      "sha256": "02839cfa92d8b70574533343aa05f817381f0ba294fb33e3d3b82283851b8e58"
+    },
+    {
+      "path": "tests/execution_mode/local_size_id_spec.spv",
+      "size": 224,
+      "sha256": "6ac14c5dc2f13718b179b93ea73b898929e3d2666c2998560e4244a9383b5217"
+    },
+    {
+      "path": "tests/execution_mode/local_size_id_spec.spv.yaml",
+      "size": 645,
+      "sha256": "02839cfa92d8b70574533343aa05f817381f0ba294fb33e3d3b82283851b8e58"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_0.glsl",
+      "size": 639,
+      "sha256": "3c14ebf52c28011df83a344562971052b48cac125c99b34ddbb3defe2299fa97"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_0.spv",
+      "size": 1248,
+      "sha256": "fcabe12c68747f4478dc3dae765ac25ef23c54bee571ce3e2417921e68e589b7"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_0.spv.yaml",
+      "size": 41792,
+      "sha256": "db6de96367355adeced0a862bb4cce7f5467424b6417600e3ffa282eb1de6dfa"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_1.glsl",
+      "size": 519,
+      "sha256": "b359182a6dc3d10572199331e8fbe2288514a715b0104520e1fa7c35ff9e27e3"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_1.spv",
+      "size": 1852,
+      "sha256": "b5b788c65c53367c4e1759259a9428d34e7d706512ddace67392a1c0ab3d92a9"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_1.spv.yaml",
+      "size": 21385,
+      "sha256": "032a11def46fbb93f47379b2a09deb7af5b286eb28e3e68ea32083b6ef800ade"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_2.glsl",
+      "size": 1157,
+      "sha256": "f2a9f27b4527c323e5efa5cfc2eb8605e882c34fee8fdd74d6f209bcd7a4ccda"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_2.spv",
+      "size": 4168,
+      "sha256": "6ceae16b1b4a048d445c2de755b57beb2a3ce7d6a6d2aa83d3ed0942e12074a5"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_2.spv.yaml",
+      "size": 25985,
+      "sha256": "43570fb6f45d4f4c4beb64f7e82680c03a73fd5f2b49d9e344f6214cf05bed37"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_3.glsl",
+      "size": 368,
+      "sha256": "d8647ceb94a4937fb6426b0c7ebba205795305f8baa6d5f8b3ae6e895695e999"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_3.spv",
+      "size": 888,
+      "sha256": "791e415ba168b0272718d21be5c9ca637456785e9ba9e24060c0c5752aed9bec"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_3.spv.yaml",
+      "size": 13288,
+      "sha256": "b73d82bbcc22fc414ba56b14b6fa61c814b92d2acbc39cad0c862590615c4787"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_4.glsl",
+      "size": 926,
+      "sha256": "82c479871f162fd9c3bf73b3b8bca10b9e238be19b4d58c1d3f2038494bff194"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_4.spv",
+      "size": 2200,
+      "sha256": "23880fad9308f104280a43dd4442ea0dd31ccf99a44ef3fee058dcc51be5bd79"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_4.spv.yaml",
+      "size": 10344,
+      "sha256": "88ef6126f42fa2fc74dc5c0f584eaa22613d2364ed57a80214ca9155909d8774"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_5.glsl",
+      "size": 397,
+      "sha256": "a838b0e344bbcebc28b3f93f5f590ef60dff307d319a6de658437573b0667043"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_5.spv",
+      "size": 1036,
+      "sha256": "c843f459127d6bc71e94a8cf945ff41f21dece0073f5cc2953dbf02df05c4c08"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_5.spv.yaml",
+      "size": 7177,
+      "sha256": "b85ebe93e77c8458b40e756ad05c82e8eba6522b7cf382b5656ba4839bae9b60"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_6.glsl",
+      "size": 904,
+      "sha256": "ea61425a82ed769ea821a153f0e5c3cbc8df17e2f124b15ce0460f0ff00cc07f"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_6.spv",
+      "size": 1176,
+      "sha256": "f389548d692755fc10f226b68572d0f91844f17debb0f2f39655752c8708c12e"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_6.spv.yaml",
+      "size": 8794,
+      "sha256": "9a3dbd5042cf51004dc07a73ffee7859ebbd59fa7f89844bfb7f12d1d8fe3607"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_7.glsl",
+      "size": 489,
+      "sha256": "c20a33ab98d168dd17e0ee2b596d3e6164f09207813fa4bd52a6665d74bd1032"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_7.spv",
+      "size": 1256,
+      "sha256": "f031016b7c6539bfab686810d4ed436e9cb8022772596a69d026e82e352c1cd2"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_7.spv.yaml",
+      "size": 10619,
+      "sha256": "322f7541bb35ddc7469f21072f7313d45961ebc490b9c0ff450644c91cb2b5c8"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_8.glsl",
+      "size": 246,
+      "sha256": "3423ec9d2df9d129097ef1b02fc8464d2aa5f0ebb1a49b00878ca41a17d62484"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_8.spv",
+      "size": 684,
+      "sha256": "abee7ff1f5b83868cc9097cf58dff08d536543c54299190d23d8442155cbea67"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_8.spv.yaml",
+      "size": 5814,
+      "sha256": "5cde62dcfe9e9d7e5fc7506fc529ac2f01fef177e509ae55bc2af9ffd0d71cec"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_9.glsl",
+      "size": 408,
+      "sha256": "7d0feededea2f5993d1d314439c10a5be5cd34c25b3f4b2140be561f443ecf93"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_9.spv",
+      "size": 1356,
+      "sha256": "9b0e8f1aa847d6197471b8a59835fedae95272810c2b1d8838c8fa427f1578a3"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_9.spv.yaml",
+      "size": 11712,
+      "sha256": "7d31d10dc75133b3c7e21302d8fa9450729a4e32ec4f770313a14b46cee94196"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_uvec2_pc.glsl",
+      "size": 388,
+      "sha256": "ebab60f967431771ed5f1f7f26c82b435f5731f87b9f68e3529dc7671406aa23"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_uvec2_pc.spv",
+      "size": 768,
+      "sha256": "f0ca1140b0d22c353f5bde90d6c4f9bd23740f70b8e9f59bfbac90a88f827f06"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_uvec2_pc.spv.yaml",
+      "size": 2691,
+      "sha256": "9aef55b6bb0b66b1efdd9a2f686492e308cfa77843b510e7cca02d838679b4e7"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_uvec2_ssbo.glsl",
+      "size": 380,
+      "sha256": "ce6235eadc477d726e0ee1a194ca37ceec92345b7224824297fbf1730a062cb0"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_uvec2_ssbo.spv",
+      "size": 836,
+      "sha256": "869556f22a55820578e2c20143de20d7b9218c7f4e238646ea7815d6bace8c05"
+    },
+    {
+      "path": "tests/glsl/buffer_handle_uvec2_ssbo.spv.yaml",
+      "size": 3295,
+      "sha256": "4b538dbc076e987cfb83da0c9ab6a0e47cefbf34200265960a35172f3e5d2426"
+    },
+    {
+      "path": "tests/glsl/buffer_pointer.glsl",
+      "size": 372,
+      "sha256": "a25c825f6abda24eee49c265806841b1edd15174dbf88f32d0971c89ea9bbf72"
+    },
+    {
+      "path": "tests/glsl/buffer_pointer.spv",
+      "size": 1496,
+      "sha256": "f78ce126cdff90d2641fdcb1243821c5b4a4dfd3524cc879e3b33ebc03cf63ff"
+    },
+    {
+      "path": "tests/glsl/buffer_pointer.spv.yaml",
+      "size": 8516,
+      "sha256": "e56e964037d253537df7b8c3b58ec9121f5e061eb54cbb5677a8f550c3530426"
+    },
+    {
+      "path": "tests/glsl/buffer_pointer.txt",
+      "size": 923,
+      "sha256": "4d3a734955baa1e5e9a7bd52c8c93d9e9f46a8744878b595163d2a23e0d01fc6"
+    },
+    {
+      "path": "tests/glsl/built_in_format.glsl",
+      "size": 173,
+      "sha256": "ff63ccb6d143f34f69037fd76227b64638179e28526afa2d31a0d2f441c7ea41"
+    },
+    {
+      "path": "tests/glsl/built_in_format.spv",
+      "size": 984,
+      "sha256": "56bd3465bc54817828211fc0eb719b542bee1449c15a9c963403be6d7d097232"
+    },
+    {
+      "path": "tests/glsl/built_in_format.spv.yaml",
+      "size": 8484,
+      "sha256": "6530f15043af42b80acb11c10f36751feaa4757ccb371aea9a006e05e3378b2d"
+    },
+    {
+      "path": "tests/glsl/fn_struct_param.glsl",
+      "size": 469,
+      "sha256": "20d9060a103cdd512d3c658c3b23754416faa951f3f77cdf2c906fb991af2a99"
+    },
+    {
+      "path": "tests/glsl/fn_struct_param.spv",
+      "size": 1236,
+      "sha256": "028cb6c16f0c7cf9142ac897bebd3416b38666591a852d6646d1c910cc8572d6"
+    },
+    {
+      "path": "tests/glsl/fn_struct_param.spv.yaml",
+      "size": 5410,
+      "sha256": "8baee610a407b70ff449279f08d1a808b0046cacb583c74fc6b7cb8658142b90"
+    },
+    {
+      "path": "tests/glsl/frag_array_input.glsl",
+      "size": 489,
+      "sha256": "fce99aad074753a145e9feea07153a2b60ca31fb6fc9130a3bbb3d92e00a23cd"
+    },
+    {
+      "path": "tests/glsl/frag_array_input.spv",
+      "size": 1040,
+      "sha256": "41f07158c7380fa27767b22fcadc80a956f754cf723968ba2f43eebfb829c5bb"
+    },
+    {
+      "path": "tests/glsl/frag_array_input.spv.yaml",
+      "size": 22709,
+      "sha256": "5d496457baba9b7022bb58be72dce81066f311e2e12b5b04516cfdf8c3208b79"
+    },
+    {
+      "path": "tests/glsl/frag_barycentric.glsl",
+      "size": 617,
+      "sha256": "a6f7c74941b4e339f2c3072733a077ca1a726670c83b212824de1dbd9d80d1ed"
+    },
+    {
+      "path": "tests/glsl/frag_barycentric.spv",
+      "size": 1468,
+      "sha256": "811df21a4b0c74f2eccce934ab11bc04e5e672a9d569b4a0f091661690b7c121"
+    },
+    {
+      "path": "tests/glsl/frag_barycentric.spv.yaml",
+      "size": 4535,
+      "sha256": "263d4ed472983a50ebe86dfd3908a130514d4012e983bab2f290df327e4c2a51"
+    },
+    {
+      "path": "tests/glsl/input_attachment.glsl",
+      "size": 618,
+      "sha256": "fd091e480519a227c790b59ecfbabe86f70787ddd08e28fc1d7a7da989be8cd8"
+    },
+    {
+      "path": "tests/glsl/input_attachment.spv",
+      "size": 984,
+      "sha256": "813071ad323cd388a43c34f73bb204ba3427352d4959cef21e7ec5a25b7aeda4"
+    },
+    {
+      "path": "tests/glsl/input_attachment.spv.yaml",
+      "size": 5507,
+      "sha256": "c7c94da0d6598035f504d75255ff6c851b96b2c8bcbcfc87b4a4c67e2cfe7bd1"
+    },
+    {
+      "path": "tests/glsl/input_attachment.txt",
+      "size": 993,
+      "sha256": "277af10ba8e0d627471b1043c1923154dced3c7935f85170332763ce8619d85e"
+    },
+    {
+      "path": "tests/glsl/io_vars_vs.glsl",
+      "size": 317,
+      "sha256": "5d90091d1b136ea5d416d512df926dd78ada4562c6e365f8db840909d916386c"
+    },
+    {
+      "path": "tests/glsl/io_vars_vs.spv",
+      "size": 1308,
+      "sha256": "59ef69370346cee06e2b77b5cd4aa8b0c19542270ea504a35e5a67245544a1ed"
+    },
+    {
+      "path": "tests/glsl/io_vars_vs.spv.yaml",
+      "size": 10726,
+      "sha256": "ba393916b8c9c6514d75d99a46d005277cf4e77bbfc0f290a6084fdb5d1f8ef2"
+    },
+    {
+      "path": "tests/glsl/matrix_major_order_glsl.glsl",
+      "size": 2265,
+      "sha256": "f6113645fd10a973d07b86e2d394b1df65bb4525802f3758a877c71081cdccd6"
+    },
+    {
+      "path": "tests/glsl/matrix_major_order_glsl.spv",
+      "size": 3132,
+      "sha256": "a8b9d0b4d8be801fdad0a8f3593a6ff39e3531ca9845a3823f9a2d66f6d71c99"
+    },
+    {
+      "path": "tests/glsl/matrix_major_order_glsl.spv.yaml",
+      "size": 32822,
+      "sha256": "c38db25f9ce7907dcffd02c5a72dea8b3f11232bd20305ed35cf76b213690745"
+    },
+    {
+      "path": "tests/glsl/non_writable_image.glsl",
+      "size": 489,
+      "sha256": "47efd28a1ae968c5f2f4d352503642dcd464b441929b6fc910b8e2a4116d7828"
+    },
+    {
+      "path": "tests/glsl/non_writable_image.spv",
+      "size": 888,
+      "sha256": "4de8f133ad6d75900997e0c70cbc0e6093038e2e54edd3346077d49567719e52"
+    },
+    {
+      "path": "tests/glsl/non_writable_image.spv.yaml",
+      "size": 4444,
+      "sha256": "4379a9df88ce44b023b90fc390daf12ecb6738b77559459395181be170a7a14e"
+    },
+    {
+      "path": "tests/glsl/readonly_writeonly.glsl",
+      "size": 501,
+      "sha256": "af84e8191ef868340f1ce4e7bc007353dd6875710808e7cde3338fc61daf078d"
+    },
+    {
+      "path": "tests/glsl/readonly_writeonly.spv",
+      "size": 1120,
+      "sha256": "eacdae4a8a2430cbb24fd202a4dc31cb6ce8c25dd5f7c2b4e3b71b2dcc2798ef"
+    },
+    {
+      "path": "tests/glsl/readonly_writeonly.spv.yaml",
+      "size": 6555,
+      "sha256": "d865ff5d83de2e8f9b75a3c1bef11be1f339e5ef10bdc6f883c500ee3867d5c7"
+    },
+    {
+      "path": "tests/glsl/runtime_array_of_array_of_struct.glsl",
+      "size": 469,
+      "sha256": "5a2e92377ceaabf3ecfee0e8008b08119b89c8fbed3a5127dc52f4a57dd9f32b"
+    },
+    {
+      "path": "tests/glsl/runtime_array_of_array_of_struct.spv",
+      "size": 2276,
+      "sha256": "d441b95b55a652dac0257fba6b813faabd81855ad1c0d26d0d47dd564a4246b9"
+    },
+    {
+      "path": "tests/glsl/runtime_array_of_array_of_struct.spv.yaml",
+      "size": 11109,
+      "sha256": "19ea1865d4d439901efcd99738c1946fcab014901bdb2456c70c3593af2577df"
+    },
+    {
+      "path": "tests/glsl/storage_buffer.glsl",
+      "size": 428,
+      "sha256": "5754967127c34ee9166a4f63ad9566e4c4c839cd0791a6ea569501835083e012"
+    },
+    {
+      "path": "tests/glsl/storage_buffer.spv",
+      "size": 1836,
+      "sha256": "6a0d97e311369de9d3cc901b494a6e1588d03e4b8c2ef4dfa1548aa0e25575f0"
+    },
+    {
+      "path": "tests/glsl/storage_buffer.spv.yaml",
+      "size": 7058,
+      "sha256": "9fcd2e923a5485da9284cad7566c67670f135c1fb76afb4699b1e30536c26124"
+    },
+    {
+      "path": "tests/glsl/storage_buffer.txt",
+      "size": 1304,
+      "sha256": "73b47d0acaaf3507d46704624f9e16ef1307a744715addfd3623548c366c0953"
+    },
+    {
+      "path": "tests/glsl/struct_offset_order.glsl",
+      "size": 396,
+      "sha256": "acdc2c9f1ccb835532f97a63b66e65727fff646eec0d59ced2d196b3356062af"
+    },
+    {
+      "path": "tests/glsl/struct_offset_order.spv",
+      "size": 812,
+      "sha256": "48bd13557226d51e98979c5526b334a655194d0a3608feb29a3cd7ed074a12a6"
+    },
+    {
+      "path": "tests/glsl/struct_offset_order.spv.yaml",
+      "size": 11932,
+      "sha256": "ce901f569ac455a97c1506799eb627a6fc0d329b3688bdf9227c3e1d5ad1c0d6"
+    },
+    {
+      "path": "tests/glsl/texel_buffer.glsl",
+      "size": 450,
+      "sha256": "12d16db4ce5aaae6bb70f13519c15b1cf3705d96be279c138ba16798ca366648"
+    },
+    {
+      "path": "tests/glsl/texel_buffer.spv",
+      "size": 1552,
+      "sha256": "686b0472eb21d7f4c3004f3a7ff780895f16ea78b095850cf3310ebf151a0c27"
+    },
+    {
+      "path": "tests/glsl/texel_buffer.spv.yaml",
+      "size": 10678,
+      "sha256": "c1e0617727e66c20c93d76b366ce4d0f3be566a5596d15e369685866807705b6"
+    },
+    {
+      "path": "tests/glsl/texel_buffer.txt",
+      "size": 956,
+      "sha256": "e4090e3450f7ad59254097cdb20e7be2cc2d519b49ba50462372e47e97089d6d"
+    },
+    {
+      "path": "tests/glsl/weight_texture_qcom.glsl",
+      "size": 526,
+      "sha256": "90fc62b513a00a5eb32643695e4ea4cddb2beb3d52df14c9b9a256c3a213021f"
+    },
+    {
+      "path": "tests/glsl/weight_texture_qcom.spv",
+      "size": 1028,
+      "sha256": "09a802d7efee17be23645ecaf9fd0df92196547f74f44b2291afad7e63ecfee2"
+    },
+    {
+      "path": "tests/glsl/weight_texture_qcom.spv.yaml",
+      "size": 8614,
+      "sha256": "1aa566164d1218bd1c0a300288caef0728d2b820bb3c92dd20d695e96088fa10"
+    },
+    {
+      "path": "tests/hlsl/append_consume.hlsl",
+      "size": 315,
+      "sha256": "9327c1ce750acc938689c43bc3b883dfdd1f93d6508464b01b9c829c52b16891"
+    },
+    {
+      "path": "tests/hlsl/append_consume.spv",
+      "size": 2324,
+      "sha256": "bfbc8c411af1a8d206304fe4fb3cba19cddc08e0b0786a3c215025e58f90869d"
+    },
+    {
+      "path": "tests/hlsl/append_consume.spv.yaml",
+      "size": 13997,
+      "sha256": "b8009afd22f30b3ce11e1f5c0c197d79fff8c1cb46a6d758e43d1c016a9e59d0"
+    },
+    {
+      "path": "tests/hlsl/append_consume.txt",
+      "size": 2717,
+      "sha256": "d123954b22598fdb79ff763b12a6c9639f01eca8afe19319b94bb34f57cc9224"
+    },
+    {
+      "path": "tests/hlsl/array_of_structured_buffer.hlsl",
+      "size": 291,
+      "sha256": "c2d6d1341d5b5982a855ca4697510f96e4110ca8e8b11d9d9febf3200745259b"
+    },
+    {
+      "path": "tests/hlsl/array_of_structured_buffer.spv",
+      "size": 1152,
+      "sha256": "881f80d20ec8c39efa3d6a28c8b55482a70c32603d2c163938065659c317f7d4"
+    },
+    {
+      "path": "tests/hlsl/array_of_structured_buffer.spv.yaml",
+      "size": 7067,
+      "sha256": "1a725679b4231eda0e17717ec3e13f4890c9ace634fbb0eb060039e5c5e4b200"
+    },
+    {
+      "path": "tests/hlsl/binding_array.hlsl",
+      "size": 374,
+      "sha256": "86ab73576a2655e91542ceaf504133fea660dbc0571c22d9795729872ef10abd"
+    },
+    {
+      "path": "tests/hlsl/binding_array.spv",
+      "size": 1920,
+      "sha256": "94f7f0dc3c1ad1bb6755753cd8a0a35fcde7c11420037a30687c9a107d3b4abe"
+    },
+    {
+      "path": "tests/hlsl/binding_array.spv.yaml",
+      "size": 5545,
+      "sha256": "824c63f90fb86145fb75311976f04be965222bbf0d8331d00145f4650a723b1b"
+    },
+    {
+      "path": "tests/hlsl/binding_array.txt",
+      "size": 1025,
+      "sha256": "4c79ac66f7809c114ac340e2597dddf950ed7cd7afe0c130ee21ba6eddc26b43"
+    },
+    {
+      "path": "tests/hlsl/binding_types.hlsl",
+      "size": 1543,
+      "sha256": "00498d09246e60a7f592b56c0f75556158d6adae286371788daf4a93facb572d"
+    },
+    {
+      "path": "tests/hlsl/binding_types.spv",
+      "size": 6660,
+      "sha256": "7169a3d1aa5a8cbc4cf9d27b9c08fb0ea096fa8c8e547303f6cacca484d063e3"
+    },
+    {
+      "path": "tests/hlsl/binding_types.spv.yaml",
+      "size": 61373,
+      "sha256": "889728e401cd49554d269d8324c0cae83d5d6b9f45f6acd81efef304edd49654"
+    },
+    {
+      "path": "tests/hlsl/binding_types.txt",
+      "size": 10194,
+      "sha256": "e13affea69c4a1ddca4463b6f905174338a14098681faf4e289a70f662ac763f"
+    },
+    {
+      "path": "tests/hlsl/binding_types_hlsl_resource_types.txt",
+      "size": 10194,
+      "sha256": "e13affea69c4a1ddca4463b6f905174338a14098681faf4e289a70f662ac763f"
+    },
+    {
+      "path": "tests/hlsl/cbuffer.hlsl",
+      "size": 863,
+      "sha256": "017cfdccdbfc426055f453376aa95bab7f566b575ff861ac26beb684fd3ea589"
+    },
+    {
+      "path": "tests/hlsl/cbuffer.spv",
+      "size": 3360,
+      "sha256": "70fb213eaea72a6c14e63714e5e9e6826219b7c60459c0e1acc7fd7351dd0ff5"
+    },
+    {
+      "path": "tests/hlsl/cbuffer.spv.yaml",
+      "size": 28882,
+      "sha256": "2e0c7990a73648485c6892f79758772a078027a073eb523b3ce57d75e68c663e"
+    },
+    {
+      "path": "tests/hlsl/constantbuffer.hlsl",
+      "size": 929,
+      "sha256": "3fb592a8730b7d0ab6608585c0c758cc9430e2ac55932ff0e6624eb96d5171f9"
+    },
+    {
+      "path": "tests/hlsl/constantbuffer.spv",
+      "size": 2540,
+      "sha256": "e96fe857fa674dd7cee21dd2ba3fcb0e866795e2217b0278d7bac9adecaee0bf"
+    },
+    {
+      "path": "tests/hlsl/constantbuffer.spv.yaml",
+      "size": 33974,
+      "sha256": "fd416b5d41d48d38a9f7bc8525a9bd011408abb312d9dd5da9851c441690787a"
+    },
+    {
+      "path": "tests/hlsl/constantbuffer_nested_structs.hlsl",
+      "size": 1286,
+      "sha256": "63299ccc1e89a576832603ac773bb333f66cdb8455eb7eb1f3cd76cd1c8c00bd"
+    },
+    {
+      "path": "tests/hlsl/constantbuffer_nested_structs.spv",
+      "size": 3524,
+      "sha256": "8c6e16b0ee3d169b59e0401d5afcd161df91e5543810fc5915c7492243d40eda"
+    },
+    {
+      "path": "tests/hlsl/constantbuffer_nested_structs.spv.yaml",
+      "size": 203466,
+      "sha256": "a30ad26d7a59b4585a31b08fb51b80dc74c5a8aebd5d03f4ca2cdf2fe8901034"
+    },
+    {
+      "path": "tests/hlsl/counter_buffers.hlsl",
+      "size": 464,
+      "sha256": "641b5861b45bb9f314dda1c7b9d4dde4a479d0f8be017e2a0bdc02739d77d34e"
+    },
+    {
+      "path": "tests/hlsl/counter_buffers.spv",
+      "size": 2424,
+      "sha256": "33ffeb4e6ae6db85dbcd32362ab0bf1d6d662586009cccda7780f9913a0459ef"
+    },
+    {
+      "path": "tests/hlsl/counter_buffers.spv.yaml",
+      "size": 16022,
+      "sha256": "d6f4ca7373ab310ca778d514cd9b6401d37af031dc24b70320b31ed57227ef4c"
+    },
+    {
+      "path": "tests/hlsl/localsize.hlsl",
+      "size": 42,
+      "sha256": "abbe578f6859a7975fce252bb44ba4638764e32dc0d833d6a744872a3fe29938"
+    },
+    {
+      "path": "tests/hlsl/localsize.spv",
+      "size": 168,
+      "sha256": "f04ae3d674ef4af644c4b2434056e854cb5d5b6bf32ed6b30e676885d20d2de4"
+    },
+    {
+      "path": "tests/hlsl/localsize.spv.yaml",
+      "size": 632,
+      "sha256": "7fb651d7900c27f367b1d3ae35415e04229e240c287fdb3e4df545380a1284b4"
+    },
+    {
+      "path": "tests/hlsl/matrix_major_order_hlsl.hlsl",
+      "size": 1884,
+      "sha256": "bb53feeb9d1d996c252acb447b23a20ca61f0741be7ff041371079d0ca2c593e"
+    },
+    {
+      "path": "tests/hlsl/matrix_major_order_hlsl.spv",
+      "size": 3320,
+      "sha256": "e0709c6b9dd399bdf5aaa33106f1d74aa340440ade193826d985fcfade68282a"
+    },
+    {
+      "path": "tests/hlsl/matrix_major_order_hlsl.spv.yaml",
+      "size": 32814,
+      "sha256": "e89c8b7514c651919c3ca3ecf3d3d5a6849c49bf80a602b6c3110809715cb31b"
+    },
+    {
+      "path": "tests/hlsl/pushconstant.hlsl",
+      "size": 253,
+      "sha256": "0f6c6d488cef91a205a7b6b48b89160d5d72bc453c3e69dc1820b3bc78ff02f9"
+    },
+    {
+      "path": "tests/hlsl/pushconstant.spv",
+      "size": 652,
+      "sha256": "6a3fd0609ed54801ed67bc24b04bfe33d66fb04be5a76ac953f6880191939e7b"
+    },
+    {
+      "path": "tests/hlsl/pushconstant.spv.yaml",
+      "size": 5851,
+      "sha256": "0e45b9378d1e79075e74ff355e8daec3238a5722c6fc1837835aec6e2350ff54"
+    },
+    {
+      "path": "tests/hlsl/semantics.hlsl",
+      "size": 1342,
+      "sha256": "d22f265903f908bb61c97c8fa2329a62db8cc1bab0a07cbb40db670be50eef9d"
+    },
+    {
+      "path": "tests/hlsl/semantics.spv",
+      "size": 6124,
+      "sha256": "1d5cb105a897f1d34c94144062e75b9a6f78525f2f14421eda499fb183dfe7bc"
+    },
+    {
+      "path": "tests/hlsl/semantics.spv.yaml",
+      "size": 18898,
+      "sha256": "b94d7d23126135b187880270e560b833fdb31374f15b58c2b931da8f4125a626"
+    },
+    {
+      "path": "tests/hlsl/structuredbuffer.hlsl",
+      "size": 427,
+      "sha256": "00d6e5ace2096ffa03ad8873b707c660461f6f2eedc14fa44ad8e2853c4af8df"
+    },
+    {
+      "path": "tests/hlsl/structuredbuffer.spv",
+      "size": 1532,
+      "sha256": "0e872e7edd557accb9ed21d29619cefb80b57b510b490dae0ab17bee8af06e4c"
+    },
+    {
+      "path": "tests/hlsl/structuredbuffer.spv.yaml",
+      "size": 18780,
+      "sha256": "4a2a219e3fa27debb2381d6b46e43f1921efa690293d4ac6e51e307c56f642f6"
+    },
+    {
+      "path": "tests/hlsl/user_type.hlsl",
+      "size": 1307,
+      "sha256": "e500ba30ba7747f048db60c6f859efb5252980183962dd1663dc831493a53059"
+    },
+    {
+      "path": "tests/hlsl/user_type.spv",
+      "size": 9760,
+      "sha256": "e89ba4b23ac2c044ffa952b64dfd3b553e77b9169f906a79614d35db7b20eec3"
+    },
+    {
+      "path": "tests/hlsl/user_type.spv.yaml",
+      "size": 90854,
+      "sha256": "fb66d09a16a06f369a7ce16ac1c4f0349c68bec09aeb3d9d9bdbe888b160ddbc"
+    },
+    {
+      "path": "tests/interface/geom_input_builtin_array.glsl",
+      "size": 376,
+      "sha256": "852cf056dce0c4c85e25424a4dd332fdd8797bb707499ab4266b8f65ef9bcb99"
+    },
+    {
+      "path": "tests/interface/geom_input_builtin_array.spv",
+      "size": 1040,
+      "sha256": "0e1737e0b81bcd517422f08c59c9b96944b5e95abf1ee7737cddc1923e519220"
+    },
+    {
+      "path": "tests/interface/geom_input_builtin_array.spv.yaml",
+      "size": 6233,
+      "sha256": "2088f19fa7ebca413eca01ceb71f8c34b7778204fa86b71a717fe7f964488115"
+    },
+    {
+      "path": "tests/interface/vertex_input_builtin_block.spv",
+      "size": 928,
+      "sha256": "201d13a06a7babf406ee80f1c30b782cb7d55dd318b06069aadd74bcadc795b9"
+    },
+    {
+      "path": "tests/interface/vertex_input_builtin_block.spv.yaml",
+      "size": 7289,
+      "sha256": "82030d218282d2186dd10688b6a223b02b09202bdb04601632d1bebc4bb7292a"
+    },
+    {
+      "path": "tests/interface/vertex_input_builtin_non_block.glsl",
+      "size": 205,
+      "sha256": "a60b16bf463d609eb232c33c6a58d0adbffc079f5d37268391eca4de38620194"
+    },
+    {
+      "path": "tests/interface/vertex_input_builtin_non_block.spv",
+      "size": 968,
+      "sha256": "bb7c8c2d6ad707d9ad00a586142051833068f4b76a5529d559a519e6e9b550a7"
+    },
+    {
+      "path": "tests/interface/vertex_input_builtin_non_block.spv.yaml",
+      "size": 5678,
+      "sha256": "e90b8373e8fc5d4986bb615d86027dc1a088664cb59db88f6aac34253a6db61a"
+    },
+    {
+      "path": "tests/issues/102/function_parameter_access.glsl",
+      "size": 1364,
+      "sha256": "30ee277f5ec8f090318997a979fed18918f585266b1bf94dbede3c3d42583e34"
+    },
+    {
+      "path": "tests/issues/102/function_parameter_access.spv",
+      "size": 2288,
+      "sha256": "5ec373cbecbb125b3a2833597b8112765337c88acad56d78cce76a2009367234"
+    },
+    {
+      "path": "tests/issues/102/function_parameter_access.spv.yaml",
+      "size": 9320,
+      "sha256": "1dfce77a5523bc7208a3d6d7819b88c5c611c3ec46802ed9438611df6d0959f4"
+    },
+    {
+      "path": "tests/issues/178/vertex_input_struct.spv",
+      "size": 308,
+      "sha256": "74b9758e883c05ffc322f24bdb6ae9fd1ebd18d859fa75375d0c8b2dcc00dd3a"
+    },
+    {
+      "path": "tests/issues/178/vertex_input_struct.spv.yaml",
+      "size": 3954,
+      "sha256": "7dda07dfdd3b8401c398512a90f3c73fef6922b80a2fce873f19e5b220677f10"
+    },
+    {
+      "path": "tests/issues/178/vertex_input_struct2.spv",
+      "size": 336,
+      "sha256": "4863aba8c5351b234b3d9023cfef98a77dd57d98475cfdb998bfacd1cf1b0823"
+    },
+    {
+      "path": "tests/issues/178/vertex_input_struct2.spv.yaml",
+      "size": 5054,
+      "sha256": "20769b372811ca6a149f5dcd470b91e8ad2e064028c168922f031c5f5298d4bf"
+    },
+    {
+      "path": "tests/issues/227/README.md",
+      "size": 255,
+      "sha256": "6faec030a8385ef1056147382b695b7347b956d10041023f466b58d8931efa55"
+    },
+    {
+      "path": "tests/issues/227/null_node.spv",
+      "size": 1000,
+      "sha256": "fa43c53825837d34fe0af486f3a5c223d3ecfc1f1fa3ce16e272fbf42bf9e0f9"
+    },
+    {
+      "path": "tests/issues/227/null_node.spv.yaml",
+      "size": 7335,
+      "sha256": "6b84ad9c1498f326e33864dd89fcdf7606b1c8f8d577c0e4c43c699e883ee087"
+    },
+    {
+      "path": "tests/issues/68/64_bit_float.glsl",
+      "size": 312,
+      "sha256": "505eba4a15ac9796c39e7e8c583bb1dc3cb248102968e172de58b55ea7cd5d0d"
+    },
+    {
+      "path": "tests/issues/68/sample_spv.h",
+      "size": 4055,
+      "sha256": "35908fbece35e049bb371f09a95961eb7a7ec729f21c5f016e817fc43ae3e407"
+    },
+    {
+      "path": "tests/issues/77/hlsl/array_from_ubo.hlsl",
+      "size": 756,
+      "sha256": "8530bd81457745c4f13f701526197f68b49bf5a728f7be582d8e003cdda70734"
+    },
+    {
+      "path": "tests/issues/77/hlsl/array_from_ubo.spv",
+      "size": 1288,
+      "sha256": "7f3ef408abf77e758e2af078d5fcf85c087f53967a099f4966d2bbe60732d265"
+    },
+    {
+      "path": "tests/issues/77/hlsl/array_from_ubo.spv.yaml",
+      "size": 7804,
+      "sha256": "4897bd2c8ec942613ec5e64faec6ab536dababe39f933c757b477a604e26d551"
+    },
+    {
+      "path": "tests/issues/77/hlsl/array_from_ubo_with_O0.spv",
+      "size": 101028,
+      "sha256": "10fdaf9f6aab554782daa53561b9ae94726b0680c91a26d46c0ac211120ce4b6"
+    },
+    {
+      "path": "tests/issues/77/hlsl/array_from_ubo_with_O0.spv.yaml",
+      "size": 7809,
+      "sha256": "c400ad728557474236334b8743e4b2606b1e8deb15b124540dd5a55716f213e1"
+    },
+    {
+      "path": "tests/issues/77/hlsl/rocketz.hlsl",
+      "size": 886,
+      "sha256": "655190e8799164519fa08a4b3962e84ee529f9972758b82b76a78a8ae0665c9e"
+    },
+    {
+      "path": "tests/issues/77/hlsl/rocketz.spv",
+      "size": 1288,
+      "sha256": "7f3ef408abf77e758e2af078d5fcf85c087f53967a099f4966d2bbe60732d265"
+    },
+    {
+      "path": "tests/issues/77/hlsl/rocketz.spv.yaml",
+      "size": 7804,
+      "sha256": "4897bd2c8ec942613ec5e64faec6ab536dababe39f933c757b477a604e26d551"
+    },
+    {
+      "path": "tests/mesh_shader_ext/mesh_shader_ext.mesh.hlsl",
+      "size": 819,
+      "sha256": "caed9f929931948a14e8de26f0b2d5bd369b4e092b345314b46a7c18e936d801"
+    },
+    {
+      "path": "tests/mesh_shader_ext/mesh_shader_ext.mesh.hlsl.spv",
+      "size": 2120,
+      "sha256": "7b56d85cc82a0840ab05aa1dfd3df5058fb1f59fa557faf6aa43deb4288ff2d2"
+    },
+    {
+      "path": "tests/mesh_shader_ext/mesh_shader_ext.mesh.hlsl.spv.yaml",
+      "size": 7227,
+      "sha256": "69a7cebf8e9e128d449839cfd1aea2ea5b906eb7bb28d6c3d66e0ee72046a97e"
+    },
+    {
+      "path": "tests/mesh_shader_ext/mesh_shader_ext.task.hlsl",
+      "size": 464,
+      "sha256": "6d9a8585ae0dbc8c700146478ada0c9c5ecb3afd0cc4359ead613f4d7599b423"
+    },
+    {
+      "path": "tests/mesh_shader_ext/mesh_shader_ext.task.hlsl.spv",
+      "size": 1168,
+      "sha256": "672afbe814d0d72a05a116dffc615381bb0a3af8c734d3c17d19c9acaa906027"
+    },
+    {
+      "path": "tests/mesh_shader_ext/mesh_shader_ext.task.hlsl.spv.yaml",
+      "size": 3895,
+      "sha256": "109037c88ae4c189455316e19cea0710e382a122513272234900986676f26487"
+    },
+    {
+      "path": "tests/multi_entrypoint/multi_entrypoint.glsl",
+      "size": 782,
+      "sha256": "9dc59ff50c2e0173a2b740df203721755fc1f1636cbc4196dd455bc0887a9d74"
+    },
+    {
+      "path": "tests/multi_entrypoint/multi_entrypoint.spv",
+      "size": 1956,
+      "sha256": "b8580e9a288ca9c181c080e38f5ccca2efbb89d4340cdaac1eabc0b2ee990055"
+    },
+    {
+      "path": "tests/multi_entrypoint/multi_entrypoint.spv.dis",
+      "size": 5464,
+      "sha256": "1109fa3322ba0278d039629cc62d9c90b318d1ca19520246a3fc0a7bd1f45ef6"
+    },
+    {
+      "path": "tests/multi_entrypoint/multi_entrypoint.spv.dis.diff",
+      "size": 1203,
+      "sha256": "ce746b557488c3ab03f009f6e515f3551491856aaeafb112bd91cc3e334ad9f2"
+    },
+    {
+      "path": "tests/multi_entrypoint/multi_entrypoint.spv.yaml",
+      "size": 13951,
+      "sha256": "59b3c24f0f1844a9a781e9ad2f048ab750183952fe53478b48010bbf3adc1cdc"
+    },
+    {
+      "path": "tests/multi_entrypoint/rebuild.sh",
+      "size": 355,
+      "sha256": "7b147e1efa57223107c9934b6b1c57877e26e77bc323c2d4b3b698fc1077b0aa"
+    },
+    {
+      "path": "tests/push_constants/non_zero_block_offset.spv",
+      "size": 948,
+      "sha256": "b2703700dd98dbfc503ef7e7c4f416d2ad654b6ba46c6f26b9dd7fa91cb7566e"
+    },
+    {
+      "path": "tests/push_constants/non_zero_block_offset.spv.yaml",
+      "size": 10317,
+      "sha256": "eadb17ad95bb41cde2d491727a079c2c8ecae165bd335c77717d685ecc35fa3c"
+    },
+    {
+      "path": "tests/push_constants/pointer_in_struct.slang",
+      "size": 242,
+      "sha256": "a7a352ab8e7cb389eee6f2a8a7073d0687a8da557ba3d77391bd20a7aa181c34"
+    },
+    {
+      "path": "tests/push_constants/pointer_in_struct.spv",
+      "size": 984,
+      "sha256": "36316480b57b4864ba5ee1e0dd35e0066c546a342b6435894e8cddc49e1b6b47"
+    },
+    {
+      "path": "tests/push_constants/pointer_in_struct.spv.yaml",
+      "size": 7329,
+      "sha256": "569cc2f28501bbea674e1225aa176a5a490dc5425e14598677422b81bdcc4d6b"
+    },
+    {
+      "path": "tests/push_constants/pointer_in_struct_2.slang",
+      "size": 288,
+      "sha256": "e6cd222bd6f366b8a90649d8f9dcaaee2feb9ffa8f881231617f8e43fcff4008"
+    },
+    {
+      "path": "tests/push_constants/pointer_in_struct_2.spv",
+      "size": 1236,
+      "sha256": "fc5bf6ddcdb8e4d7208469c5a1a990dd615d84adf1576dff5f6c43a8b7214c01"
+    },
+    {
+      "path": "tests/push_constants/pointer_in_struct_2.spv.yaml",
+      "size": 10504,
+      "sha256": "36ff422446f439a8c04deb4b84d6e387ef2779855a09265d2210a9c3d3b76d54"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_0.glsl",
+      "size": 371,
+      "sha256": "53ef23e021acee9659f664efea1d64a9653f078ca378c4175848522cdaa17d95"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_0.spv",
+      "size": 976,
+      "sha256": "8c9ac99f0c7ae835d1c8fcb2ecb1303c5e716f2a72a6d3e598673f8698cc3283"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_0.spv.yaml",
+      "size": 11949,
+      "sha256": "a272c3034a727331c414fe3d09a995cd042b43e7a21f460760cbd2fc99eb1ee3"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_1.glsl",
+      "size": 419,
+      "sha256": "a7a39a7271ade45e123c8b5237561bc03347171019fc2bb72c890b9ba4981605"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_1.spv",
+      "size": 1444,
+      "sha256": "851a5ba901e82214027cf62ff618c766fc89e834eb54722772a27e2f5c5ff377"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_1.spv.yaml",
+      "size": 11925,
+      "sha256": "828e6ee734fce6dd3e5ac19dd3d34f689fb085e83aec1c7b9e2d100c46a08ace"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_2.slang",
+      "size": 375,
+      "sha256": "3eac445b30902eb22dc8360fdf72143e89fbc9861f139f6ea522b6ff34fb5baa"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_2.spv",
+      "size": 1708,
+      "sha256": "50188fb5d9acc2539c66c037bdfc195867ce0264a64609e15cdc15e5c7c42530"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_2.spv.yaml",
+      "size": 11425,
+      "sha256": "7b939e4edb3d740f54dbc9fca5a8e14684357cb1fa4bdc185612a845a8f44811"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_3.slang",
+      "size": 441,
+      "sha256": "ce9e39e9c205fb8878fb67eb0912dbd04d42e82cf4968d274620c89a0e93b039"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_3.spv",
+      "size": 1868,
+      "sha256": "a7043203d0bcd8f114872ba6a45f9bb323f5e2cfd402ca965938df97ef9fda38"
+    },
+    {
+      "path": "tests/push_constants/push_constant_basic_3.spv.yaml",
+      "size": 18861,
+      "sha256": "e1ecd4d81dc79f7345d7f3c9353c0b636f3e51fdbcd99a32b436face183ce603"
+    },
+    {
+      "path": "tests/raytrace/compile_shaders.sh",
+      "size": 3379,
+      "sha256": "ab8e11017c043e5579f353d85c5fd488a9eebf32ddd5d953c04fb19046b9d9a6"
+    },
+    {
+      "path": "tests/raytrace/rayquery_assign.cs.hlsl",
+      "size": 384,
+      "sha256": "34df7ad62baaa6baa80032318d05cdb2e95dc638391ba98da11d330238dc9c30"
+    },
+    {
+      "path": "tests/raytrace/rayquery_equal.cs.hlsl",
+      "size": 1000,
+      "sha256": "30537f2cc6231df8bac48d9a2776bc599f96ecfafc7f12fe7147a9b95e442323"
+    },
+    {
+      "path": "tests/raytrace/rayquery_equal.cs.spv",
+      "size": 1272,
+      "sha256": "067ae7ca27572dfe006eb19cdeaf435b8eb909de458d7ea065efd373d2978b98"
+    },
+    {
+      "path": "tests/raytrace/rayquery_equal.cs.spv.yaml",
+      "size": 4956,
+      "sha256": "07eefb51f6802faaf2cefd0d073932c60689aaa40efa5f188e54436736d00782"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_ds.hlsl",
+      "size": 2165,
+      "sha256": "0e2611d68644d1a45ee501090a1e2fa88694d774bda33181f458a331d473986b"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_ds.spv",
+      "size": 1452,
+      "sha256": "a29d016804cadbfdcbfd8a355fa824c8d304757d5a54012027090afc75e45a91"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_ds.spv.yaml",
+      "size": 7839,
+      "sha256": "d63ab0e795ce28ce55c7d7dd4b43aa75b9b133a2b00fc44ecb04bf36aa48f1a6"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_gs.hlsl",
+      "size": 1263,
+      "sha256": "cb0ff8b08beb8d6c956a54b6129043a443dadd3203e0e04e253445505c16f235"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_gs.spv",
+      "size": 840,
+      "sha256": "381f0ba76412b37ba6950b88950e8e42c1bbe77606aa5e8f845f6b8124db9dc1"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_gs.spv.yaml",
+      "size": 3406,
+      "sha256": "c87bf85c2e41a03b6570086bd2e4fcdd06ce36a5536483551a9327f5f83d2200"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_hs.hlsl",
+      "size": 2324,
+      "sha256": "226b458ba329e861225da07dac8f20d12becd1fe13c04e7abe350e44dfabcbc2"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_hs.spv",
+      "size": 1440,
+      "sha256": "0f1188d6f8015150e72f319c96e122ca282726bcbccf83df2d00b2cdf1d24487"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_hs.spv.yaml",
+      "size": 7299,
+      "sha256": "e98e7c6c7ff76937118bcff29609c48a10963272ecfac24131c8b0f612ed86e7"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_ps.hlsl",
+      "size": 1120,
+      "sha256": "030cd2365494bdd912edfe5c21b027c41d8d3057dfe21461068e47be33aab439"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_ps.spv",
+      "size": 848,
+      "sha256": "8a12ff68bcac9cd00fbbeb11169803898741285a8f62a06ce5b1fdcb6a9a8842"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_ps.spv.yaml",
+      "size": 3428,
+      "sha256": "b0673906bed953d87cc1b532476da6af05e29298bf8770db5072cb506fc01161"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rahit.hlsl",
+      "size": 1358,
+      "sha256": "b899b36433d8017ca66c966081ca25cd70981a7d4341f03ba904c1c63b648cb1"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rahit.spv",
+      "size": 824,
+      "sha256": "b7d29c011831848a47d45c21f73a4919067949b2a78dafc85dcbfcf448a10b3c"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rahit.spv.yaml",
+      "size": 2317,
+      "sha256": "f92134d784fb3dd3a341a0bc8ed030c49633b4c58a111ba41f87980398d6eb74"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rcall.hlsl",
+      "size": 1247,
+      "sha256": "0155901fb216130275d713f0f2e0610d3c3d8aca1a78a6915ffbbda676522d2b"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rcall.spv",
+      "size": 824,
+      "sha256": "d2fdfdace213d0a2500683a8ef2b3f876f88101d01e3c1b584ca9491c9958272"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rcall.spv.yaml",
+      "size": 2312,
+      "sha256": "60d373cb5ac3fd41863abdb80111bec0bdc577f45151cf618cb86b26e526ab79"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rchit.hlsl",
+      "size": 1362,
+      "sha256": "651d27b6f7317b342fcfe940c782a70fa78376e5809e3250b7c7f9cb10b72e04"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rchit.spv",
+      "size": 824,
+      "sha256": "80c5f74cb86925c408a4f14985258af052ea5b99eee7ff27121fabc60ab3ca2c"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rchit.spv.yaml",
+      "size": 2325,
+      "sha256": "7b41f556cc41bd876b137404a2b736ce963a86dd97171e3f0e4f7522071710aa"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rgen.hlsl",
+      "size": 1483,
+      "sha256": "5276e5696fa4de89106ff4c29fd9af32abe46291d0d260e327bc2439fde16f6d"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rgen.spv",
+      "size": 932,
+      "sha256": "8281680c1c6aba7c4d7480816f9684b9ab91685820e31f5669d862a004be8cac"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rgen.spv.yaml",
+      "size": 2323,
+      "sha256": "5b93369e9f1a3f87c54cf4ac821ba4b759a10ab3073cb35af98369664110d6b9"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rint.hlsl",
+      "size": 1323,
+      "sha256": "da393c8b9f6736b7b9e4faff9f5349a03fd88ecedffa0d3ad1aec76a1a62e4f7"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rmiss.hlsl",
+      "size": 1247,
+      "sha256": "0155901fb216130275d713f0f2e0610d3c3d8aca1a78a6915ffbbda676522d2b"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rmiss.spv",
+      "size": 824,
+      "sha256": "d2fdfdace213d0a2500683a8ef2b3f876f88101d01e3c1b584ca9491c9958272"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_rmiss.spv.yaml",
+      "size": 2312,
+      "sha256": "60d373cb5ac3fd41863abdb80111bec0bdc577f45151cf618cb86b26e526ab79"
+    },
+    {
+      "path": "tests/raytrace/rayquery_init_vs.hlsl",
+      "size": 1476,
+      "sha256": "741baad481292fed00a3c926403c2bed82a8ee32b627bfe5a06cb7a4e1e40930"
+    },
+    {
+      "path": "tests/raytrace/rayquery_tryAllOps.cs.hlsl",
+      "size": 6894,
+      "sha256": "f774b5c12964ac0d1dda96fb6f72d6a5405551e814b30bb8fcb607f3ae55ce82"
+    },
+    {
+      "path": "tests/raytrace/raytracing.acceleration-structure.hlsl",
+      "size": 246,
+      "sha256": "a68fb114e8848f371bffb7672eccc4c1b2c5bed761b5d09e9b8dd3a7826c6f9b"
+    },
+    {
+      "path": "tests/raytrace/raytracing.acceleration-structure.spv",
+      "size": 200,
+      "sha256": "c1ca295c428e53298bc5e54ae27b33df8d6dce52036fa9662b352d8ff2628194"
+    },
+    {
+      "path": "tests/raytrace/raytracing.acceleration-structure.spv.yaml",
+      "size": 630,
+      "sha256": "3eb491ed4330d0d7c8c1d69279533c31d340d59b9c23d03bc3b6daeda0bdfc2d"
+    },
+    {
+      "path": "tests/raytrace/raytracing.khr.closesthit.hlsl",
+      "size": 3227,
+      "sha256": "0f41baaee7f5915ad41819944cc4682dce2263fe18f0f1050f7e9d924bb51355"
+    },
+    {
+      "path": "tests/raytrace/raytracing.khr.closesthit.spv",
+      "size": 1632,
+      "sha256": "97c341c689c441528b52167a24b2d7478ed613c275c72888c906196812ae5435"
+    },
+    {
+      "path": "tests/raytrace/raytracing.khr.closesthit.spv.yaml",
+      "size": 13174,
+      "sha256": "e6124fb0010692a84546285d4975c9f50e258974a68a1fcdbc1b67d278b9e5ef"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.acceleration-structure.hlsl",
+      "size": 323,
+      "sha256": "710d0194aa957e3e3ce99a9c3e766804f8d15ebf8fe90ff805a99b92ebfdf93e"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.acceleration-structure.spv",
+      "size": 200,
+      "sha256": "c1ca295c428e53298bc5e54ae27b33df8d6dce52036fa9662b352d8ff2628194"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.acceleration-structure.spv.yaml",
+      "size": 630,
+      "sha256": "3eb491ed4330d0d7c8c1d69279533c31d340d59b9c23d03bc3b6daeda0bdfc2d"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.anyhit.hlsl",
+      "size": 2884,
+      "sha256": "3439c690b19580b549fc955bc04c5c8bb36c75166bdcfa2ca80292ddef579008"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.anyhit.spv",
+      "size": 1136,
+      "sha256": "b22a887a588892f281eba4fe353d817e66d37716ef184092e8cd37ed99b19870"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.anyhit.spv.yaml",
+      "size": 10999,
+      "sha256": "2cfe981b38dc527884a3e3b9e9c3695bfb87655e5eb870cbaab2009f99bb1e1d"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.callable.hlsl",
+      "size": 540,
+      "sha256": "6838e1141b1b105da191541aaf4d7fd616c0ccad8722713a2d304d5698d8baa0"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.callable.spv",
+      "size": 452,
+      "sha256": "fb86a24915e7637bc29176d0ff17c049f3afadb1d796d12591157686e55bb579"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.callable.spv.yaml",
+      "size": 2278,
+      "sha256": "d806ce9d3df7abfa409d0af4147d2623913131d91c4898a6436d75a5b91b23e6"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.closesthit.hlsl",
+      "size": 2892,
+      "sha256": "a73f2de70817eaf10de14b8ca8f35e6932c8de4e9b46bb3427a6c9ce37bd153e"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.closesthit.spv",
+      "size": 1432,
+      "sha256": "eb97fe8c752d83e1c2336e2d3d6097f55b27cbd89e22c458be7f8c0205440ef5"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.closesthit.spv.yaml",
+      "size": 12633,
+      "sha256": "312009fd99feb1b47c50de06a3c7cb153bb5be6ebec351449dc96ab2a68e6b17"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.enum.hlsl",
+      "size": 1343,
+      "sha256": "545314e382dc02e9e818558bde717c29f3879b6c7ea00dae37e294f4716778a3"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.enum.spv",
+      "size": 1000,
+      "sha256": "8cbe6d0fd80745aff09a00e5dbdf0cb45b0d67ea6d2538ba51c21df955789d28"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.enum.spv.yaml",
+      "size": 3903,
+      "sha256": "6f007cc1f3109916a5a6bb4c1ddbc24c83869bf1ff8fc89c2f111dfb3384570c"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.intersection.hlsl",
+      "size": 2260,
+      "sha256": "d380a3527fe8bf3b572c5df1b93f922c111bffc03805288ce212ab1038023fd4"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.intersection.spv",
+      "size": 1028,
+      "sha256": "15d33de429c0975d13f558ab870a634ec6578a7140ce3e1d3720841558a33d73"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.intersection.spv.yaml",
+      "size": 10477,
+      "sha256": "9fb6e2f8956fb9dccde6e1b67ec89da51c15ff2200eec298c8f08085bf9b227d"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.library.hlsl",
+      "size": 9977,
+      "sha256": "9cc6f6c828cba5cba91abac84e7dfa745537094cec10d4ede9a85c9812156518"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.library.spv",
+      "size": 4688,
+      "sha256": "ba95254a7b1988712f2df6b550a9b647d78418f841eaaed62e421c6e6709347f"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.library.spv.yaml",
+      "size": 12641,
+      "sha256": "33f6a9782bb402c8d754409c1860c1ee188eead8ff870866e8fef9a760764ab1"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.miss.hlsl",
+      "size": 1005,
+      "sha256": "4de4afb277a03d348e05ae85df61506fed7831731ae2ad4cf596eb7c69003ff9"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.miss.spv",
+      "size": 656,
+      "sha256": "52c7960b9fdb5f1e09a138b3b5ef746330325aa69b42ea316448e8d54d0eed3d"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.miss.spv.yaml",
+      "size": 6106,
+      "sha256": "3d404bac6d3214a2de24da3ab22b14f3163dd068a6ee50f633cf91d70ca3daa7"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.raygen.hlsl",
+      "size": 1126,
+      "sha256": "4d1a92e4fcb894f83efaccafab0fc396e84bd2b8cd439f73ed3e6304421804cd"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.raygen.spv",
+      "size": 1000,
+      "sha256": "8cbe6d0fd80745aff09a00e5dbdf0cb45b0d67ea6d2538ba51c21df955789d28"
+    },
+    {
+      "path": "tests/raytrace/raytracing.nv.raygen.spv.yaml",
+      "size": 3903,
+      "sha256": "6f007cc1f3109916a5a6bb4c1ddbc24c83869bf1ff8fc89c2f111dfb3384570c"
+    },
+    {
+      "path": "tests/spec_constants/basic.comp",
+      "size": 197,
+      "sha256": "205cd08bb911a9ef1dd04e2d544761d906b5d717c6b12b50d91d885fb0174415"
+    },
+    {
+      "path": "tests/spec_constants/basic.spv",
+      "size": 584,
+      "sha256": "303f3138c9c06cd65302df966b11b10ae48b4337050737c885ff154ddea529af"
+    },
+    {
+      "path": "tests/spec_constants/basic.spv.yaml",
+      "size": 4374,
+      "sha256": "60d28f81c10db1105bd11e975dc2a43ba6cc693c4b76b4907cd7b42fede55fc1"
+    },
+    {
+      "path": "tests/spec_constants/convert.comp",
+      "size": 880,
+      "sha256": "d21fde85e699985cb8db4bd1f8eeb9a8517b62f12a06a50ef28c8dde6268560e"
+    },
+    {
+      "path": "tests/spec_constants/convert.spv",
+      "size": 2024,
+      "sha256": "deabe2fa9d7fb2974b7bf9b1ae8cd87b4cb511e872583964d00acaf05a59ae4c"
+    },
+    {
+      "path": "tests/spec_constants/convert.spv.yaml",
+      "size": 15519,
+      "sha256": "23dbe03409932e98530af3d433e27910a813eb52dc6d402ea8d758f02057c690"
+    },
+    {
+      "path": "tests/spec_constants/local_size_id.comp",
+      "size": 196,
+      "sha256": "4600312568fbb7f92e31368210938173fd5e62d18017a83201e9111366f00373"
+    },
+    {
+      "path": "tests/spec_constants/local_size_id_10.spv",
+      "size": 344,
+      "sha256": "a2f98e3d9ed6aeedf2ff8eb2dbad6b7583c186e1657152cee0d6537e6d7f5e2d"
+    },
+    {
+      "path": "tests/spec_constants/local_size_id_10.spv.yaml",
+      "size": 766,
+      "sha256": "c41857c14168b3cc2f0639d4b4a71412f4105518744435c2b2c4419b88f92b8b"
+    },
+    {
+      "path": "tests/spec_constants/local_size_id_13.spv",
+      "size": 392,
+      "sha256": "91034c43fbb869e6d738b5e22fda1390c94e426ef83d51450c23e8709354126c"
+    },
+    {
+      "path": "tests/spec_constants/local_size_id_13.spv.yaml",
+      "size": 884,
+      "sha256": "5d54e250e99a1c7b34e55cca08628bbc753cdc5a961d09935276504f31aa3362"
+    },
+    {
+      "path": "tests/spec_constants/ssbo_array.glsl",
+      "size": 250,
+      "sha256": "f1b5b5b9772723ce3c1d1890741dd0f8d40c91f0b6689cab81c53a86ef80e765"
+    },
+    {
+      "path": "tests/spec_constants/ssbo_array.spv",
+      "size": 716,
+      "sha256": "6a1bddc81a1bb64358d2d54f049e32cc27220f7a1a0967c8e2e1448629b5df4b"
+    },
+    {
+      "path": "tests/spec_constants/ssbo_array.spv.yaml",
+      "size": 4445,
+      "sha256": "635b77df03c6b32432db5d7e92705d4140db6f25c23a5247df33fa8d0bb66362"
+    },
+    {
+      "path": "tests/spec_constants/test_32bit.comp",
+      "size": 6818,
+      "sha256": "9add306d5cd862cc19d6659822b12738a7ba3284df4ad4929edc33b7f7b9281e"
+    },
+    {
+      "path": "tests/spec_constants/test_32bit.spv",
+      "size": 11832,
+      "sha256": "7c7cd7be612ebb46e8d018b9d7fc57d8fc2f1e3052ae1601b5b185fa54d53fa5"
+    },
+    {
+      "path": "tests/spec_constants/test_32bit.spv.yaml",
+      "size": 114005,
+      "sha256": "5eec047bc068bbaf2b4f299959355d7d219d423360666a873afa2d9e0a807bc5"
+    },
+    {
+      "path": "tests/spec_constants/test_64bit.spv",
+      "size": 11944,
+      "sha256": "b0a45a902795c1d0ec8a1a91d81461012ed1c9717ea765f4544cf2b138332723"
+    },
+    {
+      "path": "tests/spec_constants/test_64bit.spv.yaml",
+      "size": 114005,
+      "sha256": "9795e279ddd829b68e94cd77fb03aa55c786ced9904923b690bff2fdf3f44494"
+    },
+    {
+      "path": "tests/spirv15/VertexShader.hlsl",
+      "size": 163,
+      "sha256": "f7e4236197c2ca06a6dfa776f2de633a1a9ba65d474ff1ed7cc7f34f7c056181"
+    },
+    {
+      "path": "tests/spirv15/VertexShader.spv",
+      "size": 840,
+      "sha256": "e66cf6052f8a1401aa615bee2e4598470c7dddc90f470a7894db860d1d5b5e75"
+    },
+    {
+      "path": "tests/spirv15/VertexShader.spv.yaml",
+      "size": 5506,
+      "sha256": "9b4626aeda8fe6c45d0d03679335e58edce32d4e8eb1e729e34db5139ea19fdf"
+    },
+    {
+      "path": "tests/test-spirv-reflect.cpp",
+      "size": 57755,
+      "sha256": "32ff0f5df089f4453cbcd50d4b80e4879be6b989d6e88bcf9ccec5d91ec9dc58"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_0.hlsl",
+      "size": 1097,
+      "sha256": "35e2db3fb3a9f1bbfc8c3472aebf121ff08948176535400dd82a51bd094ecc2f"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_0.spv",
+      "size": 1524,
+      "sha256": "f994adf0141498a642a259ed69225091393f3d40d47f4affd1525d577626a776"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_0.spv.yaml",
+      "size": 4533,
+      "sha256": "835a62e74767c94046523ac461729e3d35e4cda57f75667071d49b35ea0a9504"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_1.hlsl",
+      "size": 648,
+      "sha256": "83560019358e797a546066b8a2179b1a1e482324ae26079e528c9c0b21b6b7e5"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_1.spv",
+      "size": 1596,
+      "sha256": "2d54e87d508468814059d06a340328bc7f240de3f419244f20857435f10a7e74"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_1.spv.yaml",
+      "size": 9878,
+      "sha256": "5e4aaf51f5409f07adf87a508303f4b49d7922da1720bde6c778750aa967f6ba"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_2.hlsl",
+      "size": 508,
+      "sha256": "f653e0221c40e84d40ef481faaa7caaf6abfac71cae5635a1465e5039999daba"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_2.spv",
+      "size": 1168,
+      "sha256": "925202893f7f4266a30f824b4bceb25353d2a408f01d3b5af6e01af02c8ed9b9"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_2.spv.yaml",
+      "size": 7248,
+      "sha256": "fef3aac3b71573c1c50c3953523bd0d7b22efa017ce682d6b27d5900a04fff9b"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_3.hlsl",
+      "size": 1082,
+      "sha256": "62011487759356cb1e01fd49cc7f92e39cad75e8faaf00bce52d6ffc08264e28"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_3.spv",
+      "size": 1404,
+      "sha256": "f248f465a922b3fb143bc5d408c663e89de2c23d043f99955d6213256cf68491"
+    },
+    {
+      "path": "tests/user_type/byte_address_buffer_3.spv.yaml",
+      "size": 4531,
+      "sha256": "12abb8c36b0a9280c2ae85dece12be4465ed0402a4d80d87ce90a73f44cf84f1"
+    },
+    {
+      "path": "tests/user_type/rw_byte_address_buffer.hlsl",
+      "size": 1099,
+      "sha256": "3a3e50a4a3bbfaf6d50c1e97c92dd378492f791bb9aee1dfa69e367288c7a0ee"
+    },
+    {
+      "path": "tests/user_type/rw_byte_address_buffer.spv",
+      "size": 1512,
+      "sha256": "e8dce9eb832422d9dc158cc9e0f5ab455d897b75a165fb1344afb6a5892d7df0"
+    },
+    {
+      "path": "tests/user_type/rw_byte_address_buffer.spv.yaml",
+      "size": 4510,
+      "sha256": "c567997472ab0230e9909037dc9cb2090ea7cdbda94e2a49589e9a5d996f4541"
+    },
+    {
+      "path": "tests/variable_access/atomics_0.glsl",
+      "size": 420,
+      "sha256": "db012cfa2d8666188dee02e29a45241d8ecfb6176e4843e11729938a5580ebf3"
+    },
+    {
+      "path": "tests/variable_access/atomics_0.spv",
+      "size": 996,
+      "sha256": "a4bf5dffb1ca80d3f096c1dbdd4ef21fae5e8048200bbe44b46e1afd1402b3ee"
+    },
+    {
+      "path": "tests/variable_access/atomics_0.spv.yaml",
+      "size": 8270,
+      "sha256": "e1ccfe06f058e2b9b2224e2f9cf434aac441143972e24257be20ad881d729317"
+    },
+    {
+      "path": "tests/variable_access/atomics_1.slang",
+      "size": 341,
+      "sha256": "f936d07dae31758fb01784008de7c532a0a7c9ffdf835f14fd294b5bfe83c58a"
+    },
+    {
+      "path": "tests/variable_access/atomics_1.spv",
+      "size": 1016,
+      "sha256": "55477bcd0908d4f2a29950890112820264e941698c9217575edccc947583f522"
+    },
+    {
+      "path": "tests/variable_access/atomics_1.spv.yaml",
+      "size": 9313,
+      "sha256": "589ee4f5302c6c8f9e04a461ee3b83d4474aaad140e117f3fc56906a9fddb12e"
+    },
+    {
+      "path": "tests/variable_access/copy_array_0.glsl",
+      "size": 187,
+      "sha256": "1ad881dce00a7e6de6a96eb0ab4b862bfc03912e1d9ee8c1fac9dbab1cbfbb35"
+    },
+    {
+      "path": "tests/variable_access/copy_array_0.spv",
+      "size": 628,
+      "sha256": "006b9719f4ac4bd2e53e748098594fa7ca5773eb045115a6384e34009f5ac1bd"
+    },
+    {
+      "path": "tests/variable_access/copy_array_0.spv.yaml",
+      "size": 5245,
+      "sha256": "c78d6dbb8e823d2542a2df38df72cabc52d6419e80bb29bafe70da3cfb9aa018"
+    },
+    {
+      "path": "tests/variable_access/copy_array_1.slang",
+      "size": 192,
+      "sha256": "e7aa2bb6376cc90faae9da42dd7434b2e4eb127a3ec045875b3bea55a53c68ef"
+    },
+    {
+      "path": "tests/variable_access/copy_array_1.spv",
+      "size": 1164,
+      "sha256": "da2de42445a5e2daeb75539f4a0c98e4be651831e913f875562139da6448c5e6"
+    },
+    {
+      "path": "tests/variable_access/copy_array_1.spv.yaml",
+      "size": 7385,
+      "sha256": "3f35cd46d6573d610e149d4cf05decfab5c755b568b6c6ff2de58bad0a8d3dec"
+    },
+    {
+      "path": "tests/variable_access/copy_array_2.glsl",
+      "size": 229,
+      "sha256": "ab466e00f5de75dcf086b967ae935762a8f065cfb32c3101f2b68a2d8f3cbc0c"
+    },
+    {
+      "path": "tests/variable_access/copy_array_2.spv",
+      "size": 1176,
+      "sha256": "6a28f69593cbd3751c7c328b4c99b2c9da35e50ef4a9f0e571beb1db4a133734"
+    },
+    {
+      "path": "tests/variable_access/copy_array_2.spv.yaml",
+      "size": 9887,
+      "sha256": "c7f29cf2d2d5cee7cbe4a61378e0e5beeae8e5e9aa04c1fa767da28f2826312f"
+    },
+    {
+      "path": "tests/variable_access/copy_array_3.slang",
+      "size": 286,
+      "sha256": "79dff3d4ef27dac02aa41ae344ae42b52613df80527afd3513f011e41c9038f1"
+    },
+    {
+      "path": "tests/variable_access/copy_array_3.spv",
+      "size": 1676,
+      "sha256": "7a727ab1731156943247ed1c7022ac3b479819b9e10cffb3f4359cf5ddd445d0"
+    },
+    {
+      "path": "tests/variable_access/copy_array_3.spv.yaml",
+      "size": 14155,
+      "sha256": "b40040fd126dca041452dc14f4ae7a5971f0e9a282dfb5925ff47a1e313bdde9"
+    },
+    {
+      "path": "tests/variable_access/copy_memory.spv",
+      "size": 432,
+      "sha256": "6ed4353c03ac5ed1e6c8b8909b015a35238463393bd91cc36a61e411bf39578c"
+    },
+    {
+      "path": "tests/variable_access/copy_memory.spv.yaml",
+      "size": 4661,
+      "sha256": "22e30307ff996a0d3a2cdc4df34689fbbb20d86c28a10baa0b3f76d5b4c22cef"
+    },
+    {
+      "path": "tests/variable_access/copy_struct_0.glsl",
+      "size": 275,
+      "sha256": "e1cf348cee548782a24c69d91bc9fefb53239a07198f2cc4c8445c016c863210"
+    },
+    {
+      "path": "tests/variable_access/copy_struct_0.spv",
+      "size": 760,
+      "sha256": "bf096eff6a96bb33f149355a97be1e1b3d326204f6c0e64198d9100ef501dd22"
+    },
+    {
+      "path": "tests/variable_access/copy_struct_0.spv.yaml",
+      "size": 15820,
+      "sha256": "b6f532a65ca8144f3a1cfaa593685158d5e4826a138ffb48156daa91986115cc"
+    },
+    {
+      "path": "tests/variable_access/copy_struct_1.slang",
+      "size": 360,
+      "sha256": "0f1025b02fa7468341ca3c425c7af278f15b977e73aa1a318a99597fc4591acd"
+    },
+    {
+      "path": "tests/variable_access/copy_struct_1.spv",
+      "size": 1604,
+      "sha256": "60c4b652bfc39021c5c73d9884e9657e326fb7a81cc043b0c990abf238504747"
+    },
+    {
+      "path": "tests/variable_access/copy_struct_1.spv.yaml",
+      "size": 20254,
+      "sha256": "d805ea66cecb510531f4855ac74fe75b1e25ed2efbc550541d2ae6ba07153d5e"
+    },
+    {
+      "path": "tests/variable_access/descriptor_indexing_0.glsl",
+      "size": 165,
+      "sha256": "c79fe6d21a1c4c7e458955b08fa971bcc06029939a880db7afc03ca2748518b2"
+    },
+    {
+      "path": "tests/variable_access/descriptor_indexing_0.spv",
+      "size": 660,
+      "sha256": "d780d46db303c36f52e116ba3b4b97cb0f8881f595e33dc2271bde89f0cc98fb"
+    },
+    {
+      "path": "tests/variable_access/descriptor_indexing_0.spv.yaml",
+      "size": 6290,
+      "sha256": "fed2d9d96fad5e9dba92e0602e39afc0dc828b491b72fd20491d790784ba58ac"
+    },
+    {
+      "path": "tests/variable_access/descriptor_indexing_1.slang",
+      "size": 171,
+      "sha256": "5476f54f4b5554bcb5b63f9017de6b0d5465e7e595ca68141b25c5cb2cf50a34"
+    },
+    {
+      "path": "tests/variable_access/descriptor_indexing_1.spv",
+      "size": 1024,
+      "sha256": "6fba476d4724e9d1d0f2562c90df3666abfafe7eb058b1b55067d37a0ac068d4"
+    },
+    {
+      "path": "tests/variable_access/descriptor_indexing_1.spv.yaml",
+      "size": 7378,
+      "sha256": "480a29a355461790214acd9469b7dd0df0d6e52599ec76dd51ba707709d15480"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_0.glsl",
+      "size": 402,
+      "sha256": "34468f380965252c4be505e8f37a2542819be2c9f27c78f6778e2bdf79944d92"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_0.spv",
+      "size": 1036,
+      "sha256": "175a3c0aab4b021f94fdf48d75a42833286f8fa777e9fdbfc97f2bd0bbae7555"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_0.spv.yaml",
+      "size": 8557,
+      "sha256": "20db1b43f72d651ef5f38417e7c17e4b841ae31e8a79d9a7fda5e8044f887234"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_1.glsl",
+      "size": 524,
+      "sha256": "0e1b08c5eb7a99e888a5d3d030844ea191e9040b5456805003f18e224cab4480"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_1.spv",
+      "size": 1204,
+      "sha256": "6c47d6e9888c4a368056660775cbb4b5ba13b57e25f3b24aa4486e9c17943902"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_1.spv.yaml",
+      "size": 13482,
+      "sha256": "0a55b71c52adc391cb1154d880ed7eaf68270852efe77fb93b34487e4b5bc4b5"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_2.slang",
+      "size": 262,
+      "sha256": "c5c1869abee5203a63bb6bc7015d9385d8b1c2f211d65edee51324172d4e4410"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_2.spv",
+      "size": 1020,
+      "sha256": "48858f8037e931d59c2a458fedefec0f281b7f0bae658e851d204c6092749990"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_2.spv.yaml",
+      "size": 8624,
+      "sha256": "a8c6879bd40e0f66437fb0bf14bad2601e7e40550528abb83f44fb29fe35cebd"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_3.slang",
+      "size": 295,
+      "sha256": "e78aaff3041f97eaa801469cac34b86b4c7588e9d6e7e92d7df93b17d664cadb"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_3.spv",
+      "size": 1040,
+      "sha256": "963f87323f6f9f771c38215e83e74786e7febb4aa6fee184834535f1ffb31a71"
+    },
+    {
+      "path": "tests/variable_access/phy_storage_buffer_used_3.spv.yaml",
+      "size": 11532,
+      "sha256": "7af96f6ad84d8bee0e7f765ad0dcb4222f0819071a1d6433eb0e04e3541cd0e8"
+    }
+  ]
+}

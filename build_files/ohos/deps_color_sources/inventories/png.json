@@ -1,0 +1,3945 @@
+{
+  "archive_root": "libpng-1.6.58",
+  "source_archive_sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+  "members": 669,
+  "files": [
+    {
+      "path": ".appveyor.yml",
+      "sha256": "88b0bdabbf437a64ecc97ddf69ce0b791ea13f22e39e6568d98439d41311eb30",
+      "size": 3260,
+      "mode": 420
+    },
+    {
+      "path": ".cmake-format.yaml",
+      "sha256": "dc8d0a29b8c6aae896ae5cc0358c00bbe4f2108d3f5c470f555ff2c0d45e7ea3",
+      "size": 2989,
+      "mode": 420
+    },
+    {
+      "path": ".editorconfig",
+      "sha256": "ebf486a91a5fb8bdcaf3a51b0ed521fb85f698c8d62dbd08192eff4e587f0b5f",
+      "size": 884,
+      "mode": 420
+    },
+    {
+      "path": ".editorconfig-checker.json",
+      "sha256": "4b15861dc261be6924eaa00f771c1fbff360ff5cdd42a8a7a33eba5dcb29c109",
+      "size": 111,
+      "mode": 420
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "sha256": "86bbbe131fc844072c68c3286b37a4494db4c6309da0743eef9c0160c052801c",
+      "size": 754,
+      "mode": 420
+    },
+    {
+      "path": ".github/workflows/verify-linux.yml",
+      "sha256": "7237e5e37ba182bcdcd7340c867a35ae7ea697b08c65094a9508217e92632e17",
+      "size": 876,
+      "mode": 420
+    },
+    {
+      "path": ".github/workflows/verify-macos.yml",
+      "sha256": "d09a7191c2e8d35208aef8450610723867d7e5b0f9aa509e169cade47adb7000",
+      "size": 513,
+      "mode": 420
+    },
+    {
+      "path": ".github/workflows/verify-windows.yml",
+      "sha256": "d9ccc6902c131cf1917f244b19e50f461a0f5c6906957807e8a3783b6f39fd8c",
+      "size": 1027,
+      "mode": 420
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "617d7828973af5d01c46d8296acb34c626a7b1b0f6924b1674188fd82b1d1299",
+      "size": 1758,
+      "mode": 420
+    },
+    {
+      "path": ".markdownlint.yml",
+      "sha256": "fc1d264951181281b5e864bbefd243d07d1e1f1f9ce70e936a53a9845a0ee26b",
+      "size": 358,
+      "mode": 420
+    },
+    {
+      "path": ".yamllint.yml",
+      "sha256": "19a2d497f69ca91ebd3c45c6019bcc6d49581e5db09f56cc8ef665802cfe8877",
+      "size": 129,
+      "mode": 420
+    },
+    {
+      "path": "ANNOUNCE",
+      "sha256": "19ca61f3287d225b29a6e4822024e510884b8f67eb2c74e0643c2a7a09b5ab16",
+      "size": 983,
+      "mode": 420
+    },
+    {
+      "path": "AUTHORS",
+      "sha256": "0c777e9f2a67bd4058ab91050eb7a56106c92ed038ba8fe5f54c83344f2d93ca",
+      "size": 1773,
+      "mode": 420
+    },
+    {
+      "path": "CHANGES",
+      "sha256": "cbed970588bf137969c3737cdbd269a816765cb4e32f94b11bba3a2a3ae3ddf1",
+      "size": 317965,
+      "mode": 420
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "0de785364c9157b2f1097efe617131ae5f3fadf25ceceea748f389a0d1e45cf5",
+      "size": 49235,
+      "mode": 420
+    },
+    {
+      "path": "INSTALL",
+      "sha256": "8929b3633a1f59832900ebd89da05e8975307f6cdb9ddb46bd8d8853e5385019",
+      "size": 19364,
+      "mode": 420
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "size": 5345,
+      "mode": 420
+    },
+    {
+      "path": "Makefile.am",
+      "sha256": "632abf8ef8621d3d71017fcc8dcdd23812a7998c80a6da5b5da0684407664de6",
+      "size": 15570,
+      "mode": 420
+    },
+    {
+      "path": "Makefile.in",
+      "sha256": "294c0265de5c6ddf07be896360254c0e088af82b68398bf231845d4f3ec8d86e",
+      "size": 115098,
+      "mode": 420
+    },
+    {
+      "path": "README",
+      "sha256": "4a575153ac848dfbbdb250cb1220c736c68e7f63161677d7b0886711538ae925",
+      "size": 9485,
+      "mode": 420
+    },
+    {
+      "path": "TODO",
+      "sha256": "3750b7b01da30120e08d9532bb7bff72be2e6e9c9096fad579bd85618786c222",
+      "size": 950,
+      "mode": 420
+    },
+    {
+      "path": "TRADEMARK",
+      "sha256": "9c47b01500b4324091d85e3ca3335adbdf6966858dd124f9fe85bcd1f705880b",
+      "size": 343,
+      "mode": 420
+    },
+    {
+      "path": "aclocal.m4",
+      "sha256": "f2ab1c9babe44b423ac8674829f877f2e9dcd41f7130ea5a99b794dca19a7fc7",
+      "size": 51840,
+      "mode": 420
+    },
+    {
+      "path": "arm/arm_init.c",
+      "sha256": "7be7d3861d45a81285c6af455466d652355d481f17c8e00146578738c0896768",
+      "size": 5009,
+      "mode": 420
+    },
+    {
+      "path": "arm/filter_neon.S",
+      "sha256": "51b5346d40150e2566706f0b1151ad0203691ee7fb566fd1d4aa30705e47c090",
+      "size": 2199,
+      "mode": 420
+    },
+    {
+      "path": "arm/filter_neon_intrinsics.c",
+      "sha256": "4c32620a9ff40036a1671bdbb5a3ebd2e4780d95988af2cb7295af97859c6930",
+      "size": 11843,
+      "mode": 420
+    },
+    {
+      "path": "arm/palette_neon_intrinsics.c",
+      "sha256": "a844760f611829df29ca583f1b08832cac1440c74a2a22b35bc35a464ddf6b5e",
+      "size": 4665,
+      "mode": 420
+    },
+    {
+      "path": "autogen.sh",
+      "sha256": "32ae5bbb27d8a14408e66e70129cf41cd8c052071837725ba4933a09375f1a41",
+      "size": 8029,
+      "mode": 493
+    },
+    {
+      "path": "ci/.shellcheckrc",
+      "sha256": "02f3bb1d6010b7c39c0ec48e3c8c022533d305bb1548707d2bd220a5ffc3c056",
+      "size": 495,
+      "mode": 420
+    },
+    {
+      "path": "ci/LICENSE_MIT.txt",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "size": 1036,
+      "mode": 420
+    },
+    {
+      "path": "ci/README.md",
+      "sha256": "4937a95cee5d89000684ee880e33f43bc6c64e639437f556b410343ca29af849",
+      "size": 1080,
+      "mode": 420
+    },
+    {
+      "path": "ci/ci_lint.sh",
+      "sha256": "a9dd708fbb2274c9dbaff21ea1278bc69303048cfd0753b513ff3d63d9bc90ba",
+      "size": 4075,
+      "mode": 493
+    },
+    {
+      "path": "ci/ci_verify_cmake.sh",
+      "sha256": "d9de2b95d7f4f8c2c0049e4f8af9666a4cb8016d97c67321d3d50bd2230b5666",
+      "size": 8247,
+      "mode": 493
+    },
+    {
+      "path": "ci/ci_verify_configure.sh",
+      "sha256": "1e1db32dc651454a23072373f41de5d8456eccd3f55338d99002e5ebf93fb191",
+      "size": 6885,
+      "mode": 493
+    },
+    {
+      "path": "ci/ci_verify_makefiles.sh",
+      "sha256": "c14bdae6965b0a25e634e9db9a903f79e6f74e5286fb54a5b55844fbb41c61eb",
+      "size": 6936,
+      "mode": 493
+    },
+    {
+      "path": "ci/ci_verify_version.sh",
+      "sha256": "05509b8ca10d13a1f2fd7a8af513d2e5899dbb3983ffa22389435a15418cf896",
+      "size": 6869,
+      "mode": 493
+    },
+    {
+      "path": "ci/lib/ci.lib.sh",
+      "sha256": "b253db06ad325a731051db9620fe4994c57a970adcb63276cc0d4c875fedbd1f",
+      "size": 3483,
+      "mode": 420
+    },
+    {
+      "path": "ci/libexec/ci_shellify_autoconf.sh",
+      "sha256": "480e281a162b963d6be679a07ed4b84341e02e8a8f8103f6236fc66899278a13",
+      "size": 1423,
+      "mode": 493
+    },
+    {
+      "path": "ci/libexec/ci_shellify_c.sh",
+      "sha256": "2e270481d6f52c3d37a3102f801bee84677d02bd36ef486d55c8ad483570518f",
+      "size": 1458,
+      "mode": 493
+    },
+    {
+      "path": "ci/libexec/ci_shellify_cmake.sh",
+      "sha256": "d0d4ddcedeb42ccfc26c99b8f2e6919f344d1993c8e795c447b15815e0fcba0e",
+      "size": 1470,
+      "mode": 493
+    },
+    {
+      "path": "ci/libexec/ci_shellify_shell.sh",
+      "sha256": "1ceb64a297e251b02162ea8d569d06513707b13abd832ec2637d02bcc483702e",
+      "size": 1334,
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/android/ci_env.aarch64-linux-android.sh",
+      "sha256": "98562255eba47bbe75a34d2cb32cc9a1ed99ee29a6fdb19cf4d7db1923b40b8e",
+      "size": 483,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/android/ci_env.armv7a-linux-androideabi.sh",
+      "sha256": "b1aa75d7f3fa2e606d9644b39dbd347a5ce30cfdcf5a60da83ccaaac02052c74",
+      "size": 486,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/android/ci_env.i686-linux-android.sh",
+      "sha256": "45809085cd1e36a9ed977356d6041ec16735939fcede5331ba3fb03c047e6b41",
+      "size": 477,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/android/ci_env.x86_64-linux-android.sh",
+      "sha256": "73246aa8c292a7308d1d17cec66a4ed69bbf0f3f479a2b305734548fcd7810b4",
+      "size": 481,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/cygwin/ci_env.i686-pc-cygwin.sh",
+      "sha256": "18a92e36ce296c9a75974f4a3d1bb206d276126b68c26766471b4ff61fcb10cc",
+      "size": 471,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/cygwin/ci_env.x86_64-pc-cygwin.sh",
+      "sha256": "f2414bbf85296bbf182289f272538578789a1014cfccfa6e2fb4a45c34dae1a2",
+      "size": 473,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/darwin/ci_env.arm64-apple-darwin.sh",
+      "sha256": "2ba7cc6f15fb82a63633f1dc73c8a8c940d09c786af8399a43b5f0a2670b6bc2",
+      "size": 403,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/darwin/ci_env.x86_64-apple-darwin.sh",
+      "sha256": "3a09f27a5cf2086ada5eb1ca84bc7927d15d5c26cfbf2b9ac4ce9fc7472407d0",
+      "size": 404,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/freebsd/ci_env.aarch64-unknown-freebsd.sh",
+      "sha256": "e84993919c24e7dd31a1b48d9df567a2474cd074209ae5ca1724d3e88a9e4859",
+      "size": 361,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/freebsd/ci_env.i686-unknown-freebsd.sh",
+      "sha256": "07388e0abf6b90a296c72ef94ed2789e86796d4a7a66b267705dd5cd45edf514",
+      "size": 358,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/freebsd/ci_env.riscv64-unknown-freebsd.sh",
+      "sha256": "617ae2c83c7645682e4ecf56aa204577c0b1845e675d2ffb5a06b7e70d12019b",
+      "size": 361,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/freebsd/ci_env.x86_64-unknown-freebsd.sh",
+      "sha256": "8edeada71bbc9fe31768a855e808bb94e6153bae90a287cadb3bd00044136d7c",
+      "size": 360,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.aarch64-linux-gnu.sh",
+      "sha256": "3101f993209ed19165ff89356e31ddfb49c9a76d854bbe21028ceba210016b07",
+      "size": 628,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.arm-linux-gnueabi.sh",
+      "sha256": "b97855959adf4f2941496c236e23569ede230e85a77b3b4c9950c1e9ac112534",
+      "size": 628,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.arm-linux-gnueabihf.sh",
+      "sha256": "31885cbaad64ff7dbf40dd08e4edcb5c2a5d9a8e37c07ecad2b05262dd78ca9d",
+      "size": 630,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.i686-linux-gnu.sh",
+      "sha256": "9981f01305efa642bb6fa517939e0c7c6b467a9d9ec50c52f975974ed0a1984a",
+      "size": 625,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mips-linux-gnu.sh",
+      "sha256": "45d2466ec3e18f7b4a0a5eb7c04dc0ec578317a6799e4a73cb60d32cb1849b3b",
+      "size": 625,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mips64-linux-gnuabi64.sh",
+      "sha256": "b8c1feae943e585f192b4737f2d423f6edf8ae59bb2c69179e00c43b410eeb2b",
+      "size": 632,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mips64el-linux-gnuabi64.sh",
+      "sha256": "163df76f608f418907cc7495884ba14c56e509c97d66277cef60081b0a394925",
+      "size": 634,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mipsel-linux-gnu.sh",
+      "sha256": "69c0683be507b22e409bf8849b4ac198c9ee3efe35f34e0b2757773624a4945f",
+      "size": 627,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mipsisa32r6-linux-gnu.sh",
+      "sha256": "c6b49a6155056ca680c76a21f835a065d32182b1d20be6678c553e9797d2cb53",
+      "size": 632,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mipsisa32r6el-linux-gnu.sh",
+      "sha256": "4993bfa30b41ac162da6cb9b353c6286304dda3acbc76a75c912316e5f7a7dbe",
+      "size": 634,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mipsisa64r6-linux-gnuabi64.sh",
+      "sha256": "46fbc77dba60979ad3062665a502bc9cbb947739f5c66815100756442d478695",
+      "size": 637,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.mipsisa64r6el-linux-gnuabi64.sh",
+      "sha256": "b52b3b1f955412cdcaf70ec1fdcdf77e144acf3bfcdcf5545d8a956d65e23042",
+      "size": 639,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.powerpc-linux-gnu.sh",
+      "sha256": "8f2919cdf9078e7bd9431f23cfe713aac64a5a91cc06eb0229aaf31ac8ff68ea",
+      "size": 628,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.powerpc64-linux-gnu.sh",
+      "sha256": "13131893c9fcd599ffb80629c5b55bb7c5f4376c9ad6f18f54742fe4aba254b5",
+      "size": 630,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.powerpc64le-linux-gnu.sh",
+      "sha256": "1fd126ee477b0e270fc0d35423b114859ecaa44f89f5c1045441b75cf49c78f6",
+      "size": 632,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.riscv64-linux-gnu.sh",
+      "sha256": "f100ae68e1c9b80f7aa1313de10d2b411a874bbe8889a6a767f93f6791a04983",
+      "size": 628,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/linux/ci_env.x86_64-linux-gnu.sh",
+      "sha256": "4d0860dcb5f4bb9658477a8f617049629f2a677cfa81b50bc41cc4d7861b44af",
+      "size": 627,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/msdos/ci_env.i386-pc-msdoswatcom.sh",
+      "sha256": "0f596c6ed81568d0fb771bfa2c1d6fdcb7f3555d2163c80f380ff921c412dd2b",
+      "size": 470,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/msdos/ci_env.i586-pc-msdosdjgpp.sh",
+      "sha256": "7a162b3df6f75ede1ab803bc1c4190b3c85b381471544fbf677d0ab91bfcfd0a",
+      "size": 476,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/msdos/ci_env.i86-pc-msdoswatcom.sh",
+      "sha256": "c7bbaca95237df99b0025a43345642f3b9d65c636cc1afaee73694b9b58477f3",
+      "size": 499,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/windows/ci_env.aarch64-windows-llvm.sh",
+      "sha256": "e6f48e34dbac824d7f35dd67819d45491d48d49df4e6ee2a21883e6141b5b124",
+      "size": 437,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/windows/ci_env.i686-w64-mingw32.sh",
+      "sha256": "d965ac9a41111206e4811c63161d3e97a763d04ddd49ed5580fa4383ed513ce4",
+      "size": 661,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/windows/ci_env.i686-windows-llvm.sh",
+      "sha256": "ce03ac40d1a4a101d3b8fa9a60a4adcfe0b7338a2bfe4c0c6a71fce6af33d51f",
+      "size": 434,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/windows/ci_env.x86_64-w64-mingw32.sh",
+      "sha256": "c211716515fb5743989d92c8190b6ae50c66c0e73d5a0e66181eb9fac76b910d",
+      "size": 663,
+      "mode": 420
+    },
+    {
+      "path": "ci/targets/windows/ci_env.x86_64-windows-llvm.sh",
+      "sha256": "9823e01638f4fdde40eb471ab550cdcccb43551bb1d973b1c2984c997a43247e",
+      "size": 436,
+      "mode": 420
+    },
+    {
+      "path": "compile",
+      "sha256": "92ed7feeda61ad958dc3c4cc4efd724e1414482f1cad60b74b09e0633a93dfd6",
+      "size": 8064,
+      "mode": 493
+    },
+    {
+      "path": "config.guess",
+      "sha256": "50205cf3ec5c7615b17f937a0a57babf4ec5cd0aade3d7b3cccbe5f1bf91a7ef",
+      "size": 50850,
+      "mode": 493
+    },
+    {
+      "path": "config.h.in",
+      "sha256": "6f91741fbb921af9ae59fc0b98ba51b1eb6cc75e100313e6d1999d49f896e712",
+      "size": 3942,
+      "mode": 420
+    },
+    {
+      "path": "config.sub",
+      "sha256": "26b852f75a637448360a956931439f7e818bf63150eaadb9b85484347628d1fd",
+      "size": 39943,
+      "mode": 493
+    },
+    {
+      "path": "configure",
+      "sha256": "50af44f49b84bc86756a90810be87310d6b019e89fad5cfeb4fc383c16017719",
+      "size": 545748,
+      "mode": 493
+    },
+    {
+      "path": "configure.ac",
+      "sha256": "03c798af46ec01b912d6bf17d6b045ca3172fd2e7ce24de73d2e8dcd839b90e6",
+      "size": 27253,
+      "mode": 420
+    },
+    {
+      "path": "contrib/.editorconfig",
+      "sha256": "bb251c20237c4b46d3f075e62b0d58d3438c03d02713f09d446ca4e035c383fe",
+      "size": 139,
+      "mode": 420
+    },
+    {
+      "path": "contrib/README.txt",
+      "sha256": "35cecc0bc3bd24572cc7f9061c4379e8fc4944dcac8f14a33d86955b03516da5",
+      "size": 341,
+      "mode": 420
+    },
+    {
+      "path": "contrib/arm-neon/README",
+      "sha256": "1d6c6af98b4b93e9f7c888079daf64c519f50d299f31ee031bb8d5d0df3cc0fd",
+      "size": 3453,
+      "mode": 420
+    },
+    {
+      "path": "contrib/arm-neon/android-ndk.c",
+      "sha256": "f6bdabed1fceccbc20ae4c851228ecaa768ce4f5de7a5f293f391326a356d249",
+      "size": 1311,
+      "mode": 420
+    },
+    {
+      "path": "contrib/arm-neon/linux-auxv.c",
+      "sha256": "e035a27394f21d2fabc12efad558d8a856d3c6316024bf9824da755ede87cd4b",
+      "size": 3214,
+      "mode": 420
+    },
+    {
+      "path": "contrib/arm-neon/linux.c",
+      "sha256": "8a34ca5f92409ba2296798bf06ad1f4fe0107bd2e9c32f9eaae7992b06ca020e",
+      "size": 4446,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/README",
+      "sha256": "729cd5af93945ebb9f4659407379d35b61d2d5d2ed85fafbef5e9aaec245ce1d",
+      "size": 1882,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/basic.dfa",
+      "sha256": "6b2b7946b15a53e8691341d34082b840c03e41f83426c139d8a5d29efefb0777",
+      "size": 3260,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/fixed.dfa",
+      "sha256": "082726c61267c467bf2515c01cab4bcb6f9348eb596938791f72cc00f0864027",
+      "size": 485,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/float-fixed.dfa",
+      "sha256": "d8685fd0a628e4771e4287a18379964f7bb2d02dda8b7457fb7cbc9e1f57ec97",
+      "size": 465,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/nocompile-limits.dfa",
+      "sha256": "fb7a6050d073ecb18ab2fb8811e15a8b937fdef3c4a5e5481e368a5d927568ed",
+      "size": 682,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/nolimits.dfa",
+      "sha256": "20e0b2873c1874e8f4d94238bab8069fe05fd97633ecd1ab55a683438d2bc4f5",
+      "size": 566,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/pngcp.dfa",
+      "sha256": "bcf972b9cbc9c636f6d360fdeacf04b7629a0fd96b31d8f8aa5cc5a9545f5ef4",
+      "size": 1957,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/read-full.dfa",
+      "sha256": "c8f555293dfb24f06d947b04a656861323e9135a8b274c1245a65a3f1252d0b0",
+      "size": 382,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/read.dfa",
+      "sha256": "2ba3cc900fc804caf573ae51e9c8ddf22e9f6a6b35fcdb632c60263b5a9d076a",
+      "size": 2086,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/s_read.dfa",
+      "sha256": "04bfb5a100254a47a84667cd7947dbb5b9caa0e9d6a853caf62c9d94fc2f9f1f",
+      "size": 1359,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/s_write.dfa",
+      "sha256": "ce77527f5d8a3ac180390cdc117c3e6157ab2fbb465e00f8a400924b9233a1ec",
+      "size": 1228,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/simple.dfa",
+      "sha256": "23e3e607888c6e4742d767cb1b491a40a7ac6cc0247ebf5787abc3daa5626828",
+      "size": 1327,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/write-full.dfa",
+      "sha256": "16ff0ebf824c7f96ebe2228003c9ce6dec341db27684d0e3d2b37eb3bea9211d",
+      "size": 382,
+      "mode": 420
+    },
+    {
+      "path": "contrib/conftest/write.dfa",
+      "sha256": "ccbf3d992f4a63613588d344ecbb4243b60c951fb4b05e3d50e58b8c2f7ede1a",
+      "size": 1510,
+      "mode": 420
+    },
+    {
+      "path": "contrib/examples/.clang-format",
+      "sha256": "62b6cb221aea40cc3b067a4764bed707788bd8dccafe8836881afccddd7d3077",
+      "size": 4023,
+      "mode": 420
+    },
+    {
+      "path": "contrib/examples/README.txt",
+      "sha256": "e0267872eefdaeca721f92f3b641d256b39700464cb2417554b7bd16deeecf9f",
+      "size": 960,
+      "mode": 420
+    },
+    {
+      "path": "contrib/examples/iccfrompng.c",
+      "sha256": "6b4243b56693f74ffc2420cd0f5fe0cdf144a56903454ef6132a110a9dab9522",
+      "size": 4772,
+      "mode": 420
+    },
+    {
+      "path": "contrib/examples/pngpixel.c",
+      "sha256": "d8875db2dc873c9da61ab864ead955d4e73ebedd9799d890cb161199b18f4d34",
+      "size": 15521,
+      "mode": 420
+    },
+    {
+      "path": "contrib/examples/pngtopng.c",
+      "sha256": "a1e9ec5722a37b52f2013fac9b3dcfe71c0e0799b609a0b01359bfed36219d72",
+      "size": 3083,
+      "mode": 420
+    },
+    {
+      "path": "contrib/examples/simpleover.c",
+      "sha256": "6a2eaebb52d6ae141de444461799ce8fe54ee52c8f6c45d9a006b630ff472b55",
+      "size": 20897,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/COPYING",
+      "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572",
+      "size": 18097,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/LICENSE",
+      "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438",
+      "size": 2373,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/Makefile.mingw32",
+      "sha256": "3f30d00d4df92dcec0c8d0dd527d7d4c842b371b8af31065907603cbe12cc005",
+      "size": 3940,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/Makefile.sgi",
+      "sha256": "1c14fa991463578d22b523fa8c3587b40474008ac23d3eb27e49b441e487ebac",
+      "size": 2990,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/Makefile.unx",
+      "sha256": "bcae47092de9e9623b3ecdf9de6bb5b9454ceb22faaf47f6ef35d1b222a71fee",
+      "size": 4093,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/Makefile.w32",
+      "sha256": "b3faf8f697e85f0236fb063180102c8fbe66bce63b995522cbab0dd5a2c8481a",
+      "size": 3357,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/README",
+      "sha256": "2dce8a3e0753f3bbac3edf502323bd59cbcc05f742fe71f5667481cf91eb7c15",
+      "size": 7852,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/makevms.com",
+      "sha256": "4a49b7fc0d911fed8deab7fec5fa2b1e311f0b5e6bbbe1c69dc6080a022f8a08",
+      "size": 3555,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/readpng.c",
+      "sha256": "890827fd946133628925099a1ba7ad79312c5a738553b3ccc6e6ca814298ca0b",
+      "size": 10217,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/readpng.h",
+      "sha256": "acf554e1345113a96c76f7079d881cc3f83e962b9a2951a14ddb1989fa57a869",
+      "size": 3260,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/readpng2.c",
+      "sha256": "43cac90cf4bba6ab0a6d20a99523fa6051bed682742bd9cb8789a97e5ccc9a3f",
+      "size": 18152,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/readpng2.h",
+      "sha256": "2458824eb84d122cfa8d7f062ea2a3196e27bb0ff49a5c9b13aaf22aa1dfa98f",
+      "size": 3800,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/readppm.c",
+      "sha256": "63ada3c7cd067debcd3f280edca249a41271fc74dd1f5daea8e1d8f60dfd89c5",
+      "size": 5730,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/rpng-win.c",
+      "sha256": "2bb03c06c367d3250a692c1e93ceb12a7ee9e6473176646f5bf4ed0a7cb41562",
+      "size": 24052,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/rpng-x.c",
+      "sha256": "f02fd78b539fdaa7d069fa32af2c6c26cade06cc31f3e9ce23926acf3f31ae10",
+      "size": 31024,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/rpng2-win.c",
+      "sha256": "3e7001f001b6e693e9380c98585f128a9464e731382cfbed0330b14bdb5f7567",
+      "size": 45666,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/rpng2-x.c",
+      "sha256": "c1e679b26a1ffb80c5f50fed8bb33ddd7b31ecad9a5953cfe24769bd1867bd60",
+      "size": 82417,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/toucan.png",
+      "sha256": "9813e3a499eb5145c88dec52327de8493362155f43ced42737caad513db94de7",
+      "size": 12901,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/wpng.c",
+      "sha256": "1d88f124291953e19417506ead97370b384e5ce3a0427812c37a97d6d4040ca4",
+      "size": 31444,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/writepng.c",
+      "sha256": "97d1b1dcd761ecfeaf806fd8d128c5934b00d88aaea6a357a35751950db88272",
+      "size": 13292,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gregbook/writepng.h",
+      "sha256": "dda3073320239fa065376aa3478f143e808ba180e165cad5ed9f8d82707367a1",
+      "size": 4237,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/fakepng.c",
+      "sha256": "019701122197edbebfa23a9fdb55a42f492583d2b878cead5a13ba3bd58e2080",
+      "size": 1288,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/gentests.sh",
+      "sha256": "5f8e65194a9c1ed33b93fa6fe15c94690c88cb9f9450a006f8f09d4d19491ead",
+      "size": 2213,
+      "mode": 493
+    },
+    {
+      "path": "contrib/libtests/makepng.c",
+      "sha256": "a4d7f2c77daef5f6962832fb766a8ab2edbc7ad0fc3f77d54d3c1d4606d0d534",
+      "size": 54245,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/pnggetset.c",
+      "sha256": "f752d3ba5886004aa9a877bc3db5c4757d4e8a2d67d6774d49e2c27c9fb121ec",
+      "size": 24235,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/pngimage.c",
+      "sha256": "71e2337b68b4f03e408048022245505d0f2d73cfe2972113bad79f7456b2fc2c",
+      "size": 52241,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/pngstest-errors.h",
+      "sha256": "4667169feca0db47e1879e19390f81e6cbaa6ee3f66d6a65726e8151f71d691f",
+      "size": 8903,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/pngstest.c",
+      "sha256": "3677827f04141858c342e64e5875ecb7b67860aacc21054c17ce6349f92c7f1b",
+      "size": 107607,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/pngunknown.c",
+      "sha256": "de0c615fc8691c544bc2460cc1787a370c8e213e3e1ae0054cb67fba98e091f1",
+      "size": 35721,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/pngvalid.c",
+      "sha256": "ac58a43c2dabc6ef3f0a6476d9c1d23522c30cb40ef36e73c0b522df45cb340c",
+      "size": 382136,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/readpng.c",
+      "sha256": "ec344728573f43ddbb63b9feb0bf85a2366a38579c2e34cf1ff2278eab8a2507",
+      "size": 3183,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/tarith.c",
+      "sha256": "db18792808798d07c7fed8446e80715f582b103eea6091c2d2e1936006291e82",
+      "size": 28234,
+      "mode": 420
+    },
+    {
+      "path": "contrib/libtests/timepng.c",
+      "sha256": "d2bd8d9fdb5bfd0ab776f80c259f2f3ecf11fa8fb4b7d52b2a71eafb727fc107",
+      "size": 15432,
+      "mode": 420
+    },
+    {
+      "path": "contrib/mips-mmi/linux.c",
+      "sha256": "cbe33e365b78f704fc59dae0e427652898a6076d832ce8cfb7706bb15e084281",
+      "size": 3917,
+      "mode": 420
+    },
+    {
+      "path": "contrib/mips-msa/README",
+      "sha256": "fc391df4169934c34aff694dcb5e7c91f6805e76b191bdce91c87c2aa56902d6",
+      "size": 3456,
+      "mode": 420
+    },
+    {
+      "path": "contrib/mips-msa/linux.c",
+      "sha256": "258ce43121243e2c5711d424da71c1344109432ec8058783e3610422f2a3056b",
+      "size": 1205,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/Dockerfile",
+      "sha256": "cc9e49ab4c4fc6120bcfa4e7fb4bcac8b594928599594dffb81ed9d656e731a7",
+      "size": 988,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/README.txt",
+      "sha256": "908d24ebd7ba52d1617a6f84cff2d872abb11c80984e53daa51a821964262c90",
+      "size": 1825,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/build.sh",
+      "sha256": "f278843e0551472ea9c9f1b0590f2b67477f270580b2fdd6a4e59834d8ef10e4",
+      "size": 2589,
+      "mode": 493
+    },
+    {
+      "path": "contrib/oss-fuzz/libpng_colormap_fuzzer.cc",
+      "sha256": "fc4f3075fb5163413a59e68b9c624b0a034b3665b84e145af335a9eee0c2ea47",
+      "size": 2291,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/libpng_read_fuzzer.cc",
+      "sha256": "8620c59abb2560d1673794088da1f2e96dc4d064691a7f1662c6808bd064b984",
+      "size": 6789,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/libpng_read_fuzzer.options",
+      "sha256": "40917518e475742c298e8d368cc16d6f39c43e8ffe72b6f704727e2a7cabab41",
+      "size": 28,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/libpng_readapi_fuzzer.cc",
+      "sha256": "601ef7f15f7cc777f560437f03bbb8975fe15b6f667c7a11883cf070b9d0eb46",
+      "size": 1671,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/libpng_transformations_fuzzer.cc",
+      "sha256": "1ae668d0312d2e23e1be620d46785da0ce36bfab8c9b065db0053333453b6d80",
+      "size": 3974,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/nalloc.h",
+      "sha256": "8f7a98abb7b8965c25294a3304d782bd3929dd0d88b50fa75e6391e33b3e1dff",
+      "size": 11550,
+      "mode": 420
+    },
+    {
+      "path": "contrib/oss-fuzz/png.dict",
+      "sha256": "1ea21a58e2eba2730c88cc1cba158ea464249da0f99690c8ae77baa39c20285c",
+      "size": 788,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngexif/.editorconfig",
+      "sha256": "56ca4912db445258afbb02f61492f916b050d5eed0a036c0f80a33fb3f2899eb",
+      "size": 199,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngexif/.gitignore",
+      "sha256": "0bcde31c76829d67fadb457f3ae7caa3ae58dd6b4c4eab63e0b7df974243c0ed",
+      "size": 32,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngexif/.pylintrc",
+      "sha256": "b2600ff34fcdcb8018b995908fae07363b6a4abc2300084e05b53a654310badb",
+      "size": 152,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngexif/LICENSE_MIT.txt",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "size": 1036,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngexif/README.md",
+      "sha256": "0eaed89ec3f286d04bc41d6c6299b64c3d429ccfb59c4d5f823498be1684036e",
+      "size": 344,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngexif/bytepack.py",
+      "sha256": "fec4513e4a3077391a4b9068f79e467fa9c4eba3419d9d258615ae15fa4f8ada",
+      "size": 1497,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngexif/exifinfo.py",
+      "sha256": "97ab5e04fb2df124b6ab759a61a7d99c4e47ef6d1a13c1c26cac27257ef198c5",
+      "size": 10021,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngexif/pngexifinfo",
+      "sha256": "7f23bc9aba469f8686bf8e94e55f97fb27ae14087e6b01f88c191b00fd546665",
+      "size": 253,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngexif/pngexifinfo.bat",
+      "sha256": "ecf748c8c26f803cff98e01f16454bb062c0a4f23ee0eb9f03f1246b7622d828",
+      "size": 79,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngexif/pngexifinfo.py",
+      "sha256": "4c418fb8335eef6a070ba177cc465a6b1841cd145e19bd41c13014ca461eef4c",
+      "size": 6328,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminim/README",
+      "sha256": "5633cdf8bcf3139c246e1f57c079a212a4d487b5a5cffc1e663eabac91220614",
+      "size": 212,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/decoder/README",
+      "sha256": "19040552cc84806d87ecc58ec948a6c45d8fc2909061e3f478744f238bf7a110",
+      "size": 353,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/decoder/makefile",
+      "sha256": "9b423f7ae70c6dd789ce37c75cc70590ca3365f07ac8ddda08d354e759455c01",
+      "size": 3594,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/decoder/pngusr.dfa",
+      "sha256": "acf3401e55289666ef25f83646f51fe9301c238ecabda8ffab4c2a3368cb57a5",
+      "size": 1115,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/decoder/pngusr.h",
+      "sha256": "a571aba01273ab18703380fca3c0150b388daf246b7750013696ee873f8d138b",
+      "size": 642,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/encoder/README",
+      "sha256": "246b10d6643875424f24ec090c2118d488950cf1c73beaf959cdcdd70bca3f9c",
+      "size": 342,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/encoder/makefile",
+      "sha256": "731d09dc58135b6130e438366ec227563e7d01294f2f3894547ef6ecdd9689cb",
+      "size": 3600,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/encoder/pngusr.dfa",
+      "sha256": "6895dbb5e28064e9f78252e6f136a1b4d5cbf78b6f5ec3b4b1d5287e67bd5a14",
+      "size": 1066,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/encoder/pngusr.h",
+      "sha256": "dd0ee94f5d113f9329610397af25acecafc34a6f6e481cb22165ac586955de5a",
+      "size": 643,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/preader/README",
+      "sha256": "fc821f87cd6c6ab8e49e957ec493b6fb3b51663b0a438e7747664ea289e9113e",
+      "size": 481,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/preader/makefile",
+      "sha256": "7e596b1ea23ca90585522b6cf561302116a486ae86bfda2aa50d148d3360ecaf",
+      "size": 4171,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/preader/pngusr.dfa",
+      "sha256": "cd8794315648d8ca0116557b4881b12727240a147415b1dc0996b05645d4b0bf",
+      "size": 1052,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminim/preader/pngusr.h",
+      "sha256": "d20077d3961444951a80c3a62112ae72e9ed3f54044c191a154aa15587570c63",
+      "size": 645,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/.editorconfig",
+      "sha256": "23b67ef258955bf1d0c3fb92917f63930df81ce214f159e87853ae675e934820",
+      "size": 474,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/.gitignore",
+      "sha256": "f6975d1c85e4945a172ca5f24bbbec3db57950cd97ec5b29e29fd134a7e6ff0d",
+      "size": 131,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/CHANGES.txt",
+      "sha256": "3b03049e8c588c0fff1d77069f861628e07114a97d58431faab7a4b0d40f3420",
+      "size": 849,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/CMakeLists.txt",
+      "sha256": "815f368793e4a2aff5dc3312ca2fa4166976b7f17d1968f8f398e745ecbfaea6",
+      "size": 1524,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/LICENSE.txt",
+      "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330",
+      "size": 1164,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/Makefile",
+      "sha256": "e2b72d69783d01f1e9d45317896788954c03979f5e643ead4d847fb943680d51",
+      "size": 1425,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/README.txt",
+      "sha256": "a6d7c3c37b7298f2bf432488876fa58b257e164fe392fadb4c1b69a91f996003",
+      "size": 4929,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/makevms.com",
+      "sha256": "ea54c1a96ac21fbb66849c3fc14cd8ebe539db977878941faa0df8bc875e3260",
+      "size": 2345,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/png2pnm.c",
+      "sha256": "36506f105ca7f183be69b69806af44fcf8c4172b88d83c7f9efcd62e40a57b6c",
+      "size": 9787,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/pnm2png.c",
+      "sha256": "3aeb06045387f19372f7bc43c7de466a8633936da737e9488c43a5914af2cad8",
+      "size": 17957,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/test_png2pnm.bat",
+      "sha256": "24e9689992c3a86241040bb141f04f4f467d5ad4d251e7b26b131fda9e0a038e",
+      "size": 1993,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/test_png2pnm.sh",
+      "sha256": "542b03979f78605009020aa2d6d4301cb5b926494c4a8f00d31244264eefa409",
+      "size": 1923,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminus/test_pngminus.bat",
+      "sha256": "2eb0de22a0e6404a0e76863879249df019d766907bf3e54a4437a4aff7ae0796",
+      "size": 40,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminus/test_pngminus.sh",
+      "sha256": "062be4d9894d06a98041aafc32e4c787369c7c84b7c173802f315b70a61e72e1",
+      "size": 44,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminus/test_pnm2png.bat",
+      "sha256": "817ef4da49bc211c686b7d9adaf5aa953f368a30b859e2b514a927f9783956e5",
+      "size": 1529,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngminus/test_pnm2png.sh",
+      "sha256": "0ffddc5a5def5244d1225b844e3aba2efdbe24f52ab5e8f373b5d45eed1b2117",
+      "size": 1459,
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngsuite/README",
+      "sha256": "0b8b3ace979daa00b182a3972e82523ec4701635add93a959422b9013c125439",
+      "size": 3773,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/bad_interlace_conversions.txt",
+      "sha256": "29c1fe911a2d32afecb61ef00f6cdeb86f5a7549187b60218fa6ae1968805646",
+      "size": 120,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn0g01.png",
+      "sha256": "c23c1848002082e128f533dc3c24a49fc57329293cc1468cc9dc36339b1abcac",
+      "size": 164,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn0g02.png",
+      "sha256": "833dd137ab757d1aaa138148d82f3ee8109efb423a80918f47c7889b56fd8e83",
+      "size": 104,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn0g04.png",
+      "sha256": "4e0cc6742bb06cfa379323266f699a54dc483bf735288e68527d94b4f97c1f30",
+      "size": 145,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn0g08.png",
+      "sha256": "85b19fcda452d6cbf02f570c353cfa9e47c29237f2fc8f0114deb6cd0b23f97a",
+      "size": 138,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn0g16.png",
+      "sha256": "f26eb27e99300829c42c0832acd26fa499e0f317cb4d6f165e6663024b16bf6c",
+      "size": 167,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn2c08.png",
+      "sha256": "ecea1ef4a001a999ce9b82d18abf47401eb92998708b306b6c9a8ac3a6a9a2c8",
+      "size": 145,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn2c16.png",
+      "sha256": "71179d2905aadb86adc25de7f737869b52e80e154c5335f5e6b614942515b2d4",
+      "size": 302,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn3p01.png",
+      "sha256": "d3831ba7c495e0fb20ebf03bd7cf02766c1dc5f1a09dd1f3336e536ac9f1cd42",
+      "size": 112,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn3p02.png",
+      "sha256": "784508d49be8187c6e0126f942cce65202616384f7d0a3a112d8ce01c6c8a413",
+      "size": 146,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn3p04.png",
+      "sha256": "96e34367290e1776aa4b5971272d6df136cf530baced82c63569b56adc021b16",
+      "size": 216,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn3p08.png",
+      "sha256": "eca1db90338a8481e4d3f2469befa06d7564534e9323b6a8040ed0cdd281d952",
+      "size": 1286,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn4a08.png",
+      "sha256": "377a67510b4ccc74cdcce14847b02035e75ccab36e9d8e00586c4c24d1ae385a",
+      "size": 126,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn4a16.png",
+      "sha256": "51896523625b1ffea7464e954e13cfff1c596c8e2c46925270dc408315e7fe71",
+      "size": 2206,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn6a08.png",
+      "sha256": "756a03364c02e3c9f85d6f4029eb3cef2488c081dc537d46e102bebcb9e02732",
+      "size": 184,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/basn6a16.png",
+      "sha256": "569040d3237a5552935a44b8bbe165cf02afe0d71caf30fba81955922ac9373f",
+      "size": 3435,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbbn0g01.png",
+      "sha256": "401b527775e56254434ba0acbdf25111823b2c8812665665e36b420f4532831f",
+      "size": 176,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbbn0g02.png",
+      "sha256": "7f75074fb427b8b2342b504012f272c52e82a27474cf65c2f6b19b05cd67b2e6",
+      "size": 197,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbbn0g04.png",
+      "sha256": "c5e7eeaffa677bfac002ee968a0423e0fea3be7701d39ccd6a015df1d2d85e40",
+      "size": 429,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbbn2c16.png",
+      "sha256": "8fcfd031a5b716201854fdab25691feed6cd3ed7b713a51b94e1f43fc63fe0c1",
+      "size": 2041,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbbn3p08.png",
+      "sha256": "8eb43a6020fda8ed7c8c9b88b974ef794ee8452db29212ae7e5c11003bfd76a3",
+      "size": 1499,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbgn2c16.png",
+      "sha256": "49711ee271f96099521b83b75d58ed2f76d42ed46cb3c06656fde2cad697cf59",
+      "size": 2041,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbgn3p08.png",
+      "sha256": "6f798628935a021fe446dce3d62861d1f7369aaf01bad10daa4917c5abccad7d",
+      "size": 1499,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbrn2c08.png",
+      "sha256": "8223d8b0c5f84b149f0c1f0e1f658346e07fcbd03ffc02b2e9eeea1481eb19bf",
+      "size": 1633,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbwn0g16.png",
+      "sha256": "01e86f108b244bdee4d72e384aced8a62369965ca2993ee6ef88f131c647f7d1",
+      "size": 1313,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbwn3p08.png",
+      "sha256": "978b28cec43bd219517083b63661bb30a7b9cdf9fd4476ab4e70844565980d51",
+      "size": 1496,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftbyn3p08.png",
+      "sha256": "7b4eb64b4bd7eb36417752873ddaca027ce77a07f474b2af569f4eea1e984111",
+      "size": 1499,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftp0n0g08.png",
+      "sha256": "a253e055d8cd94049cd95e9392e7aa60f3d5c922a8f0cccb84762b0c5f547545",
+      "size": 719,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftp0n2c08.png",
+      "sha256": "5dced3fde56b950e61ce86f4ad54458336f66389ce8ca68524d4fd8ec546ff5b",
+      "size": 1594,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftp0n3p08.png",
+      "sha256": "da40ddb18bd45db32ed03dc89e2250b096d808efe975a88477e4f5a91a4677c9",
+      "size": 1476,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ftp1n3p08.png",
+      "sha256": "50bc927fe6cf1816454a7c27f8c743734be8db45e37e5ee3ede540f4e895e6c5",
+      "size": 1483,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn0g08.png",
+      "sha256": "75387bec61ea3fe41cd25045378683ed9bcd34a5a02f7dd77da60235b28dac3b",
+      "size": 237,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn0g16.png",
+      "sha256": "dbd3442baced21b4a8fedfbb6aff4092c3ca9130c5d08ec89ce7dd8d02166139",
+      "size": 274,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn2c08.png",
+      "sha256": "67ac80581c63559889a9f5d5ba8f70ab1e77d304a2e54b916dd23953bf7d3fc7",
+      "size": 299,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn2c16.png",
+      "sha256": "7dcf933f1920c4564756596a8b2b7118d0dd4394f95173e32a79c5275e3c9d0e",
+      "size": 558,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn3p08.png",
+      "sha256": "b91d91eeee3efef90bf9a4730422c3e39a07d163afba8567ab870ab91418d1c8",
+      "size": 1492,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn4a08.png",
+      "sha256": "cf7543f7077d3fab986e03b73808fe68173a56d20cf1457b50d0e4ef05391694",
+      "size": 198,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn4a16.png",
+      "sha256": "11b160d4ec5b43b430f7587bee0f01a6ec5a9087b0f611d90805dff4f9e25b8d",
+      "size": 2839,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn6a08.png",
+      "sha256": "30e559de4768346e8f55b340b0f29ca17b259e2da2de614f1fb21d4f747dd396",
+      "size": 339,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/ibasn6a16.png",
+      "sha256": "35eea9e75f8a4abb003a5f6c265078ef779856c75f5d68fda26ec55f322f497d",
+      "size": 4164,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbbn2c16.png",
+      "sha256": "733a3f940d41b320ae884ba74339bc94ec8ad5f5a37479ea23b19c1e7b0d0274",
+      "size": 2624,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbbn3p08.png",
+      "sha256": "4dd0ef44d942aa43fdd57a4a56c794201d27b2f6228008927db0a4f3d469bffb",
+      "size": 1507,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbgn2c16.png",
+      "sha256": "733a3f940d41b320ae884ba74339bc94ec8ad5f5a37479ea23b19c1e7b0d0274",
+      "size": 2624,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbgn3p08.png",
+      "sha256": "4dd0ef44d942aa43fdd57a4a56c794201d27b2f6228008927db0a4f3d469bffb",
+      "size": 1507,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbrn2c08.png",
+      "sha256": "d98223a9a3084f34609bb5dbf55b5ca156559743240bef3406466775a9950e9d",
+      "size": 1624,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbwn0g16.png",
+      "sha256": "8367d01b7d0f926f6c89d6e545735a50cd35815ba7c13367ad5b0489069bd735",
+      "size": 1448,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbwn3p08.png",
+      "sha256": "4dd0ef44d942aa43fdd57a4a56c794201d27b2f6228008927db0a4f3d469bffb",
+      "size": 1507,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftbyn3p08.png",
+      "sha256": "4dd0ef44d942aa43fdd57a4a56c794201d27b2f6228008927db0a4f3d469bffb",
+      "size": 1507,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftp0n0g08.png",
+      "sha256": "497c7e4babca68371b11291bdbb4d682e397dc586d0dabad5cd349da76cf2bb7",
+      "size": 847,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftp0n2c08.png",
+      "sha256": "da119c4c2c4aa520ae32473d6f789d5f0602ae9f39c033971cdc6a95a29bfbaa",
+      "size": 2020,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftp0n3p08.png",
+      "sha256": "c3d318f544fe2a54bd252bffffd1c4c5f79cb3d0f863b9bd12052d88fbf1bf3b",
+      "size": 1495,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/iftp1n3p08.png",
+      "sha256": "4dd0ef44d942aa43fdd57a4a56c794201d27b2f6228008927db0a4f3d469bffb",
+      "size": 1507,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/README",
+      "sha256": "32c4f3b966e662ecc7e551e89db3b6e7e67ac16aa521445467460048609d836b",
+      "size": 66,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/ibasn0g01.png",
+      "sha256": "03c0c52fb162aa247817b982a4378220be36543c5249c5953b4981bb44376a0d",
+      "size": 201,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/ibasn0g02.png",
+      "sha256": "8dcbb64630b4d8950dfa915b633fcc86abc152fe110938c0d2ea3c3468e6e630",
+      "size": 138,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/ibasn0g04.png",
+      "sha256": "a6162cd894d3bda80dab0e20ce256ebb60457757b7d28159a1584ce7d12cd4d0",
+      "size": 231,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/ibasn3p01.png",
+      "sha256": "6283a61b1f7344c0cfa741076d6aed4a16a6bc5582e81db8dd7374a34230b0df",
+      "size": 116,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/ibasn3p02.png",
+      "sha256": "8818c654faafbd3c19a9584bfc93fa45bd413e550b513d2ba8b57e907b2acc72",
+      "size": 163,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/ibasn3p04.png",
+      "sha256": "7a7331a28190b89aafef3c8e41d9d65659b1939fa87a14446570373b1832c865",
+      "size": 288,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/iftbbn0g01.png",
+      "sha256": "1eea6f2448e9d3f4365b34d1f849c057c7199564f18cecad07c3a362926b11db",
+      "size": 214,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/iftbbn0g02.png",
+      "sha256": "82324d48b769628d4d8a4b6e7830c6d7dc778e5656d6e1e7556f4e53737a1dfc",
+      "size": 211,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pngsuite/interlaced/iftbbn0g04.png",
+      "sha256": "47d393150de4cec7152f1ed61ea25bca9de628865e37ad735e7f162c58340916",
+      "size": 489,
+      "mode": 420
+    },
+    {
+      "path": "contrib/powerpc-vsx/README",
+      "sha256": "61b41632624430eafa40619dc0fac743c21d7817b1b0ca1670ecd876f39d1ae1",
+      "size": 3329,
+      "mode": 420
+    },
+    {
+      "path": "contrib/powerpc-vsx/linux.c",
+      "sha256": "831718709c8c851e7cb54be4acdc3e517d586b8ef92363e5c7dc9d55d1aade71",
+      "size": 1249,
+      "mode": 420
+    },
+    {
+      "path": "contrib/powerpc-vsx/linux_aux.c",
+      "sha256": "b7a9e1004aac2b639a3b91ea6a74ff22ded2b4ac428e869b700ca01283e21059",
+      "size": 830,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/regression-palette-8.png",
+      "sha256": "1ce6bd9cbb0d629536be97bdad85e884a9134757b29e93cc8dd44b85802a74a6",
+      "size": 1033,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/small-palette-1.png",
+      "sha256": "38c53311096a7dc093d84c31de610b947d64fe3865e0749cbdd5ec42748a47e8",
+      "size": 271,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/small-palette-2.png",
+      "sha256": "394fd8f89ce621f5861bbb15d0a6b398da6b29a80d8aea42c8d515de54625e0b",
+      "size": 277,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/small-palette-4.png",
+      "sha256": "3da64f421e3d749da1bae162e3962ca38441d46f4efc8972ca590aafa2574d13",
+      "size": 315,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/small-palette-8.png",
+      "sha256": "d2bdebb6579dad1f1651db6444e1edf653553a301aec4e2c1ecfb32d89c9a2ca",
+      "size": 1035,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/test-palette-1.png",
+      "sha256": "4309d14a57f5b222a4a6fa70320189ada6f87313edc45adb4337ea17fa278301",
+      "size": 432,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/test-palette-2.png",
+      "sha256": "c1ffc5c85b81fdef4b0d4c3ae928755db51230f79f78f62baefc383bb575a132",
+      "size": 499,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/test-palette-4.png",
+      "sha256": "54f0778e5597c2236c4db3dc6a47b1879f9a772894bab3573240ad20a1790f24",
+      "size": 591,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/badpal/test-palette-8.png",
+      "sha256": "a7ad86745295de758a91cc9cdfd6172f6e112296ac2411a93f0b452de1499f36",
+      "size": 2728,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/bad_iCCP.png",
+      "sha256": "0c1ec5ece28d8574e80a3842939e8939f3451c71e8b2e013dcf26a80d292168e",
+      "size": 321,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/badadler.png",
+      "sha256": "3614bbe9494f6374567cbf897e022a16abb8edd3f166745ce73a2f472eef6136",
+      "size": 67,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/badcrc.png",
+      "sha256": "ec5b6a711ea2325404ea56575df2f8a28292e5ef15a950f42a1d39ce06a6a96a",
+      "size": 67,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/empty_ancillary_chunks.png",
+      "sha256": "bdc133d532c03cdaa6b6a8188a722c3845d4b2f76e89c63e1c70c1bf6a364be7",
+      "size": 730,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_IDAT.png",
+      "sha256": "e5080baec5e30c020cc75a16534ffa906ac1130234c511d774e0305408021b9c",
+      "size": 79,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_bKGD_chunk.png",
+      "sha256": "082aeb6b4ab247fef9ba5d4e45807942878326298d1df625b605d1da0801f454",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_cHRM_chunk.png",
+      "sha256": "ac630e5172baede942f4b6129c8b12468b5c723e443cd8a470edea2a8efa1b5d",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_eXIf_chunk.png",
+      "sha256": "def32ebac5a7c25ae469c5eb228d71f78d746edbbc088bcab13e3aefcf92af23",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_gAMA_chunk.png",
+      "sha256": "c645113de3ab585b92e0c0f626761f18271f65c60844230071f2632fe4f70895",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_hIST_chunk.png",
+      "sha256": "132f6a3bef3964ff05bad7f35f585d18680fa21acd4f9b2e51b7fe665aabc713",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_iCCP_chunk.png",
+      "sha256": "81efdcb97e6261332ee2d6d6c0761d3a51a22a5f432da87d2cdb579629fe98e5",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_iTXt_chunk.png",
+      "sha256": "cf52cbac99198baf5e72e0d1423de217aa9cff327981356ab20e9b47d32ab0fd",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_juNK_unsafe_to_copy.png",
+      "sha256": "8f9ef7f8931919fc8a73d896ff2e3bd5cf233141dc6b7801e4fbe7c0c7b4037b",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_juNk_safe_to_copy.png",
+      "sha256": "85325cb6bc93bf513aea184f610f856f306278ad6bedd98935a0a96d9416d5f0",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_pCAL_chunk.png",
+      "sha256": "aa551af23f38a4477025a66a81c0d60a8cd5bbf20daed3526b1427c89ef7666b",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_pHYs_chunk.png",
+      "sha256": "96057fe3351aafd59ba490c08edefce40a1f2d03b168973ad97a34d0be9d9ec3",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_sCAL_chunk.png",
+      "sha256": "8c10f1d5cc9efa236a9a9ddc337ecca60d877c5d496ff0864bf044f446b88c3a",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_sPLT_chunk.png",
+      "sha256": "0e1b57826471471792d4f36fc5a6f14f0c91d3d2a3d96aaf4ef59af941ec838d",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_sRGB_chunk.png",
+      "sha256": "985df4412486a50b1738d0152e177cf6cb70063081c8475d0b72ca33f8e1c708",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_sTER_chunk.png",
+      "sha256": "10b7ebf8af5730f6886b433742bddab4949fa08188bb2e3cd5dea186839762c4",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_tEXt_chunk.png",
+      "sha256": "0c9f65ca8ff8e756b834e624af837b2c97cf91e42671c7042fc937c0ce677a14",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_tIME_chunk.png",
+      "sha256": "60cc784eeba739354001e1023de7553a78cc32d6c5554c297f12d74b6e458f67",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/crashers/huge_zTXt_chunk.png",
+      "sha256": "b5b9231e7464ffd30d681829baa032160137672c4d783885d765c4c87222917e",
+      "size": 57,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1-1.8-tRNS.png",
+      "sha256": "83f2309fe4ea2c06109a9fa8b0a507ac58ba5b7d41b0c1cda13138c4a7622cb8",
+      "size": 325,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1-1.8.png",
+      "sha256": "3d173dcec82b8c878bf65dfee7799d05fad0117b68ccf56d260fa5f1eddc42da",
+      "size": 311,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1-linear-tRNS.png",
+      "sha256": "106f15335fb98d96149113f79657f2c1bdf3e939b2e8d6be8a4c94c995e9f931",
+      "size": 325,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1-linear.png",
+      "sha256": "1bc53e1e00c6e21e0bd1d7cf40904948366303f98c7ff6a4463d142b4802385d",
+      "size": 311,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1-sRGB-tRNS.png",
+      "sha256": "17cf26259f3ba6a6b70f9ff972996dfc83f73e95a7486dc3cba9699c8473c6d1",
+      "size": 278,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1-sRGB.png",
+      "sha256": "44c5d094008a2388b4d3088b261eb2af668cc800f4d11fcb828fc24e47913a19",
+      "size": 264,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1-tRNS.png",
+      "sha256": "2e31d68e0073b66c8077f5db7cbde1dc7edcf0a66839b1330b9cc972f4f7a604",
+      "size": 265,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-1.png",
+      "sha256": "c747f0a2b921c64c2ac85e58a44710a1559a87aa8d9ffb26fc7cb616a085ebfd",
+      "size": 251,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16-1.8-tRNS.png",
+      "sha256": "5b7b3179a4ad997f1d12ae020cb28536d89e71086118bd93e5774cd2de14e236",
+      "size": 744,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16-1.8.png",
+      "sha256": "5b7b3179a4ad997f1d12ae020cb28536d89e71086118bd93e5774cd2de14e236",
+      "size": 744,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16-linear-tRNS.png",
+      "sha256": "4f079601662e06fa01dbbfb09a6e0e5d154e084f52e97abc4f9c142ec3aff755",
+      "size": 744,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16-linear.png",
+      "sha256": "4f079601662e06fa01dbbfb09a6e0e5d154e084f52e97abc4f9c142ec3aff755",
+      "size": 744,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16-sRGB-tRNS.png",
+      "sha256": "7528a538e8ca97f49569dc58616314efa113aac96e959f168dd1aa91fd6d4f5e",
+      "size": 697,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16-sRGB.png",
+      "sha256": "7528a538e8ca97f49569dc58616314efa113aac96e959f168dd1aa91fd6d4f5e",
+      "size": 697,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16-tRNS.png",
+      "sha256": "f150b76c824e4870322d6564a214a8ef00b4b100d5fd6f5ba551f6f242005bcc",
+      "size": 684,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-16.png",
+      "sha256": "f150b76c824e4870322d6564a214a8ef00b4b100d5fd6f5ba551f6f242005bcc",
+      "size": 684,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2-1.8-tRNS.png",
+      "sha256": "2339a4da318d49e1f7ab1881893801d4597fcd1bb34b6a0a566e1b88829f6343",
+      "size": 325,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2-1.8.png",
+      "sha256": "409565119d3783e9f31637871fd39bbdf55bab0991dd593324461b85475b76f5",
+      "size": 311,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2-linear-tRNS.png",
+      "sha256": "314690b2ed9949b3c0b9db646bec9e1bbdcd2460960a80816b19f57f9679d463",
+      "size": 325,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2-linear.png",
+      "sha256": "24f8aa3b3f28a693c58e92af8ba1240244894886e64ce36fb5ca4f0b33e799b4",
+      "size": 311,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2-sRGB-tRNS.png",
+      "sha256": "e51c60e394fb8ab61e6550f6ef3b167d61f610b2e1c58983b8ff2fa80f0677d6",
+      "size": 278,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2-sRGB.png",
+      "sha256": "61910a8564ff4251e7dbc8f2043f85b981817f36c0c3fd2cc0dcfba90468056f",
+      "size": 264,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2-tRNS.png",
+      "sha256": "c36d10c8498bbe148bc44d41e0243137e47b07402dfb8e58978d1a9b5029cabc",
+      "size": 265,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-2.png",
+      "sha256": "9578cb4d1fc771b10a1e7c048d78cd22e39098f915513dd6885b7ac596d0c476",
+      "size": 251,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4-1.8-tRNS.png",
+      "sha256": "6cf0e2dcaeeeb7746401db10630604e3b5b5cbf958c1da5de69371c0208c9203",
+      "size": 327,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4-1.8.png",
+      "sha256": "9921e23cb5a23980fda74ac5a09c786608c7d8c33cfe07ca5bd715609adf0ba6",
+      "size": 313,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4-linear-tRNS.png",
+      "sha256": "0aaa42f91dd242a144e49c1bb896c170cc5261d9b04eb299ea1bb7baf25a606e",
+      "size": 327,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4-linear.png",
+      "sha256": "160e41e774b6c1de8f247cd76f959bb5b1033a2e99f9f2ab57f20380f18ba2bd",
+      "size": 313,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4-sRGB-tRNS.png",
+      "sha256": "b61a35601140c6bff052ef32d1df2287df23bb9244853392e06dc362b5efe39f",
+      "size": 280,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4-sRGB.png",
+      "sha256": "ae1be17bf3f6c4f9e918a78cbad376854f4f76580ca56583829b466ec74fcda4",
+      "size": 266,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4-tRNS.png",
+      "sha256": "217248c079a0ed7896803a2bf5d9719b6060ef898314a5f6ab898c6c4349f341",
+      "size": 267,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-4.png",
+      "sha256": "480042992a4aace736b7f85e3957eeb5f00cba6f403d1a299a0041b06d442012",
+      "size": 253,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8-1.8-tRNS.png",
+      "sha256": "ce8031e8a126ecbbbc7db125bcd257050e8243de2b58fc70f6d72133f29d5c35",
+      "size": 327,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8-1.8.png",
+      "sha256": "ec9d366875f40f08b13bbc5f8fd679d97bd1221d98d1358fd7cec1107697f353",
+      "size": 313,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8-linear-tRNS.png",
+      "sha256": "a2a557651db88d89072293202d53ccb52fe126cfd4dbd5c5eef21bb896d7bd24",
+      "size": 327,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8-linear.png",
+      "sha256": "1e92f0d4bca22c8857d99608027a1e1be45a93efe22d2a7d2626c49a7a462961",
+      "size": 313,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8-sRGB-tRNS.png",
+      "sha256": "538a6040f599c19dbfa652728a39bb3e4caab04e08f03556ca5a6397d5d96b68",
+      "size": 280,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8-sRGB.png",
+      "sha256": "98475c6238165fd682ddbfb937ad9ccfbceb7ed31dd6f82df6b538a1fc8b5cb8",
+      "size": 266,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8-tRNS.png",
+      "sha256": "6e14dce9350fc40f7ee542d1dc788fbf6c1c0178515ea8b76ffa0b18bcf54e8a",
+      "size": 267,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-8.png",
+      "sha256": "5c52e4295af12673caf6e9bb5b690a4a50ddf807ec9ddcceef4d1d5ab5b914a4",
+      "size": 253,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-16-1.8.png",
+      "sha256": "5f13d6371db68d41d3564465cb7fa781585966c27bf53ffddfbbba67ff6f33ce",
+      "size": 919,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-16-linear.png",
+      "sha256": "2c4c428caf6b37bc16fb1a8dcaee2765114195eca7fd995053dbe5803636e53c",
+      "size": 919,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-16-sRGB.png",
+      "sha256": "f6810ae417083de5fbcfe9375b1c98892c389efcae9726c89dabbcfc6554d394",
+      "size": 872,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-16.png",
+      "sha256": "dc3444bd2457c7c3414359bed6f05d1a5b84c08186b3b54a9ab4a4c503775f63",
+      "size": 859,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-8-1.8.png",
+      "sha256": "3fcacd9656324b5fc86d35db1975292013dc10c789080e1693a100e544eb4536",
+      "size": 744,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-8-linear.png",
+      "sha256": "92f93403a4337e88a441d7ac99bce62ea74df0c7766476397c5a476c214f54a5",
+      "size": 744,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-8-sRGB.png",
+      "sha256": "02edd1e34627de45fe9268237be35dc108776a19f6b6b8714e790e843ff3770d",
+      "size": 697,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/gray-alpha-8.png",
+      "sha256": "c0e327f49e2b0deda69811cdf20d36f2ff54f9335e11647755ad4473a6f1408a",
+      "size": 684,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/makepngs.sh",
+      "sha256": "6ef1b3f6b103f228336bd032143b01d8c6b25f8218543e070de0d2e19247a88c",
+      "size": 2403,
+      "mode": 493
+    },
+    {
+      "path": "contrib/testpngs/palette-1-1.8-tRNS.png",
+      "sha256": "b4cf6a8c47e460a1a4ad29ec2916269d213cd3dd772f1f4dcdb468367234c22b",
+      "size": 342,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-1-1.8.png",
+      "sha256": "5c39a0828ff4465c0ee94a1a2fdad3f9c48f5872ffe9f03346ccd5af123f1adb",
+      "size": 329,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-1-linear-tRNS.png",
+      "sha256": "85b8e3fdc8f8f2cf428aa9e17d97be9bca6505ca6a1b7ae959493561513cf1f4",
+      "size": 342,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-1-linear.png",
+      "sha256": "e178aa539cce738e48ff3ea5f89df613b145cd11e5fa92b7edf603f6c07ab117",
+      "size": 329,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-1-sRGB-tRNS.png",
+      "sha256": "714616fffff6390217351421f090278445006ddb6001ee26f6fadc60dbced4a6",
+      "size": 295,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-1-sRGB.png",
+      "sha256": "edf70be4be4a8fd9ed389d08cff57187d30bde76bc84e9792213460896e95095",
+      "size": 282,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-1-tRNS.png",
+      "sha256": "682529f498010270f8ca43aaac3c6ec201e1d7f7d6c25ce4208aa8fa5419967f",
+      "size": 282,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-1.png",
+      "sha256": "d7c22fed3b7c656a01eb341120d9a2c2cd385999ff8ad92861eaee77332f2a29",
+      "size": 269,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2-1.8-tRNS.png",
+      "sha256": "fcb00b3d3483dd39da6300bad6f69c99e73feafc7f949090c676b026217371e9",
+      "size": 350,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2-1.8.png",
+      "sha256": "1ef69808e99c802c3e9acf9df4c746ef56213a182b0e4edc7533f04700b00f72",
+      "size": 335,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2-linear-tRNS.png",
+      "sha256": "528fcb15d455644f10b29764ea803c7d7a4c805cc8c472e81e6816a0bd8e9421",
+      "size": 350,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2-linear.png",
+      "sha256": "106005d948ce3bf2e98b63b8c6b101211ab75ce09e81ab49a55a609f01a574e7",
+      "size": 335,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2-sRGB-tRNS.png",
+      "sha256": "83617b93c4ceae9d189d4f525aea06482c597ee00d27ed2ec94a9339d16701ca",
+      "size": 303,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2-sRGB.png",
+      "sha256": "25348858e2c849a810d52cbd3ca5753627b3faef68a4acfa4323538dcfb1d8df",
+      "size": 288,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2-tRNS.png",
+      "sha256": "f965aa727b47aaa90f72b9f0be8280dfa6bc3db2b63b5f61873e7b1e21eac18c",
+      "size": 290,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-2.png",
+      "sha256": "e28b2664c9b82a67eba425d2fa28b8810fcec2d9583f4cffea987cf40707ec05",
+      "size": 275,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4-1.8-tRNS.png",
+      "sha256": "5bf570c503f6a61dba15650aaa0a0e5811b67bf16c4ae6406be80425fff8e8e0",
+      "size": 400,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4-1.8.png",
+      "sha256": "851647f2626636281c4b12fdd818fc6f3ea991cca1fcbd8b00ffea06f9af55d3",
+      "size": 373,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4-linear-tRNS.png",
+      "sha256": "ee2d0bd72ff9603e15f5f859ab2a772b4a147d20ab4287d1bc1858f19882e8a2",
+      "size": 400,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4-linear.png",
+      "sha256": "45ab6301361d74c977b06a48ec20f07416c379181c0b20d9effc178904a156a5",
+      "size": 373,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4-sRGB-tRNS.png",
+      "sha256": "b3b48702322c452194bac9cf6636980330f1cf3447372ac8ef3571a1ae80b46b",
+      "size": 353,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4-sRGB.png",
+      "sha256": "d102574a943afa20a71719ce0c057aadc301bc53aa3cf93d172d037520a9d9b7",
+      "size": 326,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4-tRNS.png",
+      "sha256": "413a87aec95575901fb82e00868f440b926df17f2ffe54a41b9ad0a55c2bec9f",
+      "size": 340,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-4.png",
+      "sha256": "a55a9ebe7d8b5e1cdae732f2869d7ca5895d2f646ca1155d4da732f6350f779b",
+      "size": 313,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8-1.8-tRNS.png",
+      "sha256": "f29ddb4399dddafc811acd720a9a3f40664dfd1d8263f1397a329fc1ebac4281",
+      "size": 1360,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8-1.8.png",
+      "sha256": "0cd86a57de1413269b2474682dcd487ff0aaf1d8b7f1305483df42a69f58afcf",
+      "size": 1093,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8-linear-tRNS.png",
+      "sha256": "8e9292dbe39ad9ff8652f325acfd47f72d81fcb10206b4813507d9090a88d585",
+      "size": 1360,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8-linear.png",
+      "sha256": "0090cb6d1ba6ae49d0612104ab2ecd0b284d20550a8aa62ed9fc92ec440c2de0",
+      "size": 1093,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8-sRGB-tRNS.png",
+      "sha256": "7e1465ed17f633b6dde5da989a44d910b815ffa78e77892864ab2e2ac56d6261",
+      "size": 1313,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8-sRGB.png",
+      "sha256": "c9bf765b2ebf3e29d9b017a752a8b98e961f28053d1413d329c269762e3391fa",
+      "size": 1046,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8-tRNS.png",
+      "sha256": "4b7760d6c0d44763b35253c44cf821845525e0ec3322fb469e6a9fc2b27476b1",
+      "size": 1300,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/palette-8.png",
+      "sha256": "9faaa11262e79c423e51aadf7115aa2632787b2f657b1abf2e562e33ed51fb7d",
+      "size": 1033,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/png-3/cicp-display-p3_reencoded.png",
+      "sha256": "e162b7af4677c088f8ae584d1f0cbc852901e020fdfa0f41b54b4e001b7a2d23",
+      "size": 142,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16-1.8-tRNS.png",
+      "sha256": "effa3bde0f578e4e650288219ad157d32f2ab89c7580bfc9b69a7b23d1d80283",
+      "size": 1211,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16-1.8.png",
+      "sha256": "effa3bde0f578e4e650288219ad157d32f2ab89c7580bfc9b69a7b23d1d80283",
+      "size": 1211,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16-linear-tRNS.png",
+      "sha256": "f1cf85c2b1c3a5798849365c6e69f0b9a0e27ebeef5515067efb3b6325c903ed",
+      "size": 1211,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16-linear.png",
+      "sha256": "f1cf85c2b1c3a5798849365c6e69f0b9a0e27ebeef5515067efb3b6325c903ed",
+      "size": 1211,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16-sRGB-tRNS.png",
+      "sha256": "5e97879a1c29411e0b0ce45b0d3c46a12346e7b71780b84ad192014f26b2bc55",
+      "size": 1164,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16-sRGB.png",
+      "sha256": "5e97879a1c29411e0b0ce45b0d3c46a12346e7b71780b84ad192014f26b2bc55",
+      "size": 1164,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16-tRNS.png",
+      "sha256": "77a6388eed4c26761b1b45eca905f88a9267b2a3324fb4606d3e253f431f56d1",
+      "size": 1151,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-16.png",
+      "sha256": "77a6388eed4c26761b1b45eca905f88a9267b2a3324fb4606d3e253f431f56d1",
+      "size": 1151,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8-1.8-tRNS.png",
+      "sha256": "ccb82ecb0653dead1e0040ae2f3af1ab77911236d1e064b81a6f0c854b0eac46",
+      "size": 837,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8-1.8.png",
+      "sha256": "327589867a6a3a21fe17ffc55b29f34ceb8446cf87bc4435c80aa098d8ae7b4a",
+      "size": 819,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8-linear-tRNS.png",
+      "sha256": "e13db73750b7e03ed838bffe4e09ef7108eca63b7b9623ecdcacc67bf1ed2afc",
+      "size": 837,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8-linear.png",
+      "sha256": "3146d648d36f1e5242630c176b799f1dae0d3a43b3569e0ede008393f0674d6d",
+      "size": 819,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8-sRGB-tRNS.png",
+      "sha256": "22539beaa7eb2c3de9f75db214b1be06a0a8eb61558f53052181b8ccfe412349",
+      "size": 790,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8-sRGB.png",
+      "sha256": "4f94dfdb92acaeffab3aff43fbaf935fe0e5816566792b56a75a9f8802028e7e",
+      "size": 772,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8-tRNS.png",
+      "sha256": "42d6f96da278fa6264a9e267caa4cbfc75ddf0734ef67187e4c4b2d29e2d26fc",
+      "size": 777,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-8.png",
+      "sha256": "3407f9f64ae6d26dd41aea534732465da0f8e9f9c8bd7bce91ee97fd2dadf4e0",
+      "size": 759,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-16-1.8.png",
+      "sha256": "dbc6dbd15b7c2826bfb7ef8207a18a962b14d1cbb3b6d9a83b3d09dede19dbfe",
+      "size": 1437,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-16-linear.png",
+      "sha256": "56c640fd72bc0eeb057ba67c87010f5538a7e99ea8572151e39eab0ffcaa3fca",
+      "size": 1437,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-16-sRGB.png",
+      "sha256": "f287dc434a985a9478aadc0f8fe6c6053899ea61735ec15f41db47816bd184d3",
+      "size": 1390,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-16.png",
+      "sha256": "3ad2152ee0de2aaa8745757a9ff5e90a30b6e84365bd90f450286eb2734bd78a",
+      "size": 1377,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-8-1.8.png",
+      "sha256": "c0cb7269692c2b307cd72989caeff43c3654be18ff485855ddae5e40461803b8",
+      "size": 919,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-8-linear.png",
+      "sha256": "eb5a2b9b4055a9f138bcb0d9595c6d18771de98ce0d4ae6563fa965a29bb1cb4",
+      "size": 919,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-8-sRGB.png",
+      "sha256": "db1aec1b05bcef91031ebcaf9e8139867585f15136348126112b2f5d210ff86d",
+      "size": 872,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testpngs/rgb-alpha-8.png",
+      "sha256": "b9e359c8c77848cf4621ff1ae7bb033a1933044d4ca85e132b1e262e87b80a25",
+      "size": 859,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/README.txt",
+      "sha256": "dbbfb52b1d0a1fce57e00e9f4f1a2ba96a5e8261e17756232b05186cd810b268",
+      "size": 1151,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/checksum-icc.c",
+      "sha256": "610ee2d109a6e5419f2c6fe2a819ce0cbb9292a2d69778ef58c9763ac7fe1e64",
+      "size": 2361,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/cvtcolor.c",
+      "sha256": "2053078412c1c2f9d1497d5316bb3525cc795ee28ce915f1b7ea9fa53868e22a",
+      "size": 3849,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/genpng.c",
+      "sha256": "882964784435858074a0520f2b38b8536bd9385ea37aa0e57d379efe26d0d35b",
+      "size": 26472,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/intgamma.sh",
+      "sha256": "3d4b74866271abad3d900e3cac5de6dfc58769c8c3b5d8b0100b03c98b8057c5",
+      "size": 2875,
+      "mode": 493
+    },
+    {
+      "path": "contrib/tools/makesRGB.c",
+      "sha256": "143f91a7748a07cb639db5f15a204221d4e7096ef5178b16f79b7e8656ded46c",
+      "size": 11083,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/png-fix-itxt.c",
+      "sha256": "fa649bc0f244f034fd23c0a750994ae55ee8461e498486f128262807df35b5c6",
+      "size": 4137,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/pngcp.c",
+      "sha256": "90228c16583df4590b33e13f11659edafb3724c1ccce64b1c70b9242767a0910",
+      "size": 75064,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/pngfix.c",
+      "sha256": "6696372ebb4306bc1fc9f015c3e97c10f1e35e146fcfcce70cf0366ca1d21d9d",
+      "size": 129991,
+      "mode": 420
+    },
+    {
+      "path": "contrib/tools/sRGB.h",
+      "sha256": "48977aadf92ee3946787e853f853fba6d8740e67df5e0a72c12bf331e08c026f",
+      "size": 1165,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/.editorconfig",
+      "sha256": "64686e9cae73853299bd6909139eec5b99c1aae2bc72fa48ac6f5ea703f1e96d",
+      "size": 391,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/PngFile.c",
+      "sha256": "d3411406bfc61c1deabeba034d0bcf047981ba793b591a8a9f06bb40c0cee234",
+      "size": 11909,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/PngFile.h",
+      "sha256": "7ae986e6ab7cb27c3c2f24ccf89a22dc75777cbada927cbe8528ec8444799aeb",
+      "size": 1109,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/README.txt",
+      "sha256": "441faf9eb6e23857e216abeea1f5aedd89c594ecc5ae9f0dc4b5047b732b2993",
+      "size": 2083,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/VisualPng.c",
+      "sha256": "7f8d1aec84c962d66422c353919b9244c88df00936f1ce7070f2247471da55fa",
+      "size": 26532,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/VisualPng.dsp",
+      "sha256": "8db20718a8e865326e7c705c0e999efc5407038ab2595589a54961db091264de",
+      "size": 5204,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/VisualPng.dsw",
+      "sha256": "15a0c35692c77cb9e2cce2893e70631a3906e157e6b01da13f493850d9cf4c66",
+      "size": 541,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/VisualPng.ico",
+      "sha256": "879b9013a27086540fbb94731ca2c83f4b404659b014689fa9d6f17c3251e46f",
+      "size": 766,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/VisualPng.png",
+      "sha256": "ac61cc20e8ea21fa6c0ca301f141bf9761645b8a8715585d9052e8407ddc3deb",
+      "size": 208,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/VisualPng.rc",
+      "sha256": "3e03c903345ef738d7607a5ba86139bb377c80f30e572c52478ea5e640ff8a98",
+      "size": 3944,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/cexcept.h",
+      "sha256": "c4619441c43d8e9db674ee8eaefd1f66325584d08f00e40e72261f5f0648ecec",
+      "size": 10244,
+      "mode": 420
+    },
+    {
+      "path": "contrib/visupng/resource.h",
+      "sha256": "81c419886773576f9f9c02891437c14ceb7ea3dd825ab41cac1b0d2270216147",
+      "size": 765,
+      "mode": 420
+    },
+    {
+      "path": "depcomp",
+      "sha256": "ac3ae010382a83144ff6ec1a4c368a3f16a14ea2b12751aa73ddfb548d931574",
+      "size": 23700,
+      "mode": 493
+    },
+    {
+      "path": "example.c",
+      "sha256": "e9908d7dc35c43f729f562603894b70dc23dc31518f745aa08677ccf8fb6bd5d",
+      "size": 40399,
+      "mode": 420
+    },
+    {
+      "path": "install-sh",
+      "sha256": "776876b3909b096439109a4c7642eb0f9100f6ba3fb42fa93d05351e50a0a7ef",
+      "size": 15442,
+      "mode": 493
+    },
+    {
+      "path": "intel/filter_sse2_intrinsics.c",
+      "sha256": "0b41c355dc139991ebe9bb8a6979497e89228ac2576897270e306136b8f90091",
+      "size": 11322,
+      "mode": 420
+    },
+    {
+      "path": "intel/intel_init.c",
+      "sha256": "4474dd4e7afdeaee470746d24af4c57134c31a7e3f511ed58df0c6717657e44e",
+      "size": 1792,
+      "mode": 420
+    },
+    {
+      "path": "libpng-config.in",
+      "sha256": "03225b535108c4031cbab5c7a1fdd8a60edb4806d01e8c2ce80c1b8dd36e2883",
+      "size": 2396,
+      "mode": 420
+    },
+    {
+      "path": "libpng-manual.txt",
+      "sha256": "b3f7d25c34c242715b9da47a1f80e63bd455966b867c0f3a76d0d843f8ce1d62",
+      "size": 227753,
+      "mode": 420
+    },
+    {
+      "path": "libpng.3",
+      "sha256": "38f40d361247c39fe4b60507ac67105b6bddda4025e0aacc895591ffb2a28c6f",
+      "size": 265449,
+      "mode": 420
+    },
+    {
+      "path": "libpng.pc.in",
+      "sha256": "e0effabd8cd2fe92633749fc6ce2595afbbbfd36be28859d2950f7edef2ce406",
+      "size": 316,
+      "mode": 420
+    },
+    {
+      "path": "libpngpf.3",
+      "sha256": "be5d5d2ace3b423ac9b88eb5fa35d5b17a12d4a759fcfdbc67fbbc3a3a14b398",
+      "size": 420,
+      "mode": 420
+    },
+    {
+      "path": "loongarch/.editorconfig",
+      "sha256": "31a017d556b8957389e270058ea2571641a53f68822f6b144a399d06c77ffa57",
+      "size": 106,
+      "mode": 420
+    },
+    {
+      "path": "loongarch/filter_lsx_intrinsics.c",
+      "sha256": "c114d1d5159750a1910522a30bc01381baa45214418bef3199fd3a2f7e560a75",
+      "size": 11220,
+      "mode": 420
+    },
+    {
+      "path": "loongarch/loongarch_lsx_init.c",
+      "sha256": "86c468e73d0efcb3be44e07e92a3c43cac3385ca597a3578b3e0ae4e9c6436ea",
+      "size": 2005,
+      "mode": 420
+    },
+    {
+      "path": "ltmain.sh",
+      "sha256": "30712e3401deb6e6d5255c71f7bd57f374429d220cfc199ba1f2376ab42c2e35",
+      "size": 337554,
+      "mode": 493
+    },
+    {
+      "path": "mips/.editorconfig",
+      "sha256": "31a017d556b8957389e270058ea2571641a53f68822f6b144a399d06c77ffa57",
+      "size": 106,
+      "mode": 420
+    },
+    {
+      "path": "mips/filter_mmi_inline_assembly.c",
+      "sha256": "5a4b292eadd364c31884919cdea402743b8874632b458dcadde646054f8f8c1c",
+      "size": 26477,
+      "mode": 420
+    },
+    {
+      "path": "mips/filter_msa_intrinsics.c",
+      "sha256": "d9eb3c688b2893e7d51972a91ff2b9b82f9ebb9c4cd952de25b0cd3b0dd4d1bf",
+      "size": 29209,
+      "mode": 420
+    },
+    {
+      "path": "mips/mips_init.c",
+      "sha256": "5da97e5cae0f76580590ed6b72c32961406ec0055401eee6b21aa3b6235fb41d",
+      "size": 6599,
+      "mode": 420
+    },
+    {
+      "path": "missing",
+      "sha256": "4f17c4a66ec5b8000d44573a576f6b5d9c0c84848e8fd1286f84a52f439db4e9",
+      "size": 7733,
+      "mode": 493
+    },
+    {
+      "path": "png.5",
+      "sha256": "79726c3528c3711bca20dbdef6d622012f736683e2c4fae9e11839963abe7d72",
+      "size": 2264,
+      "mode": 420
+    },
+    {
+      "path": "png.c",
+      "sha256": "e675e106a5cc637a824c4ad9b5c1ee82c43bde9a47466e9ea36d38bb29aa095c",
+      "size": 135428,
+      "mode": 420
+    },
+    {
+      "path": "png.h",
+      "sha256": "81501c268ec5c3dc79efc6ac9fddb63b22a25e4931360ddd7b29b1744d6cb6b8",
+      "size": 148525,
+      "mode": 420
+    },
+    {
+      "path": "pngbar.jpg",
+      "sha256": "dac6b8aecef465935b9445b8f134ae0d66069f01d0b05fcdb42f6fdf45972f7b",
+      "size": 2498,
+      "mode": 420
+    },
+    {
+      "path": "pngbar.png",
+      "sha256": "a0d210e0261eb720677c61b59245b653eb3182cc0e089282971443397527f89a",
+      "size": 2399,
+      "mode": 420
+    },
+    {
+      "path": "pngconf.h",
+      "sha256": "ba8620bbc7612b656cf547eab806ea90bf16b6c0b97fc99e9d39568dc926b802",
+      "size": 22673,
+      "mode": 420
+    },
+    {
+      "path": "pngdebug.h",
+      "sha256": "923e849bded3f15a74fa943ed87b423d88ba5699feeed214872fea09997c44fc",
+      "size": 5342,
+      "mode": 420
+    },
+    {
+      "path": "pngerror.c",
+      "sha256": "6e8f475172d8c1e34982f4fa4130042110d5591dccdf95723345c2a7e5c7f761",
+      "size": 26366,
+      "mode": 420
+    },
+    {
+      "path": "pngget.c",
+      "sha256": "3098a692f096c58b9c0f039fbfd38c29b0a86c464a498a9c775c22698a2bec95",
+      "size": 37561,
+      "mode": 420
+    },
+    {
+      "path": "pnginfo.h",
+      "sha256": "95fd19c965b86c6f279e426b9ee42c62e83af41a372b51fe8feb52a3427cb44d",
+      "size": 10964,
+      "mode": 420
+    },
+    {
+      "path": "pngmem.c",
+      "sha256": "2dcf91e5f7d4aaa11c53cdac246223f405e5cc3e1c7ccccb7a40650c41465b56",
+      "size": 8574,
+      "mode": 420
+    },
+    {
+      "path": "pngnow.png",
+      "sha256": "3198a5d8f197d6b45a7124390c245a886be0be9b8e7891cfc7525ad65fbeb0a9",
+      "size": 2069,
+      "mode": 420
+    },
+    {
+      "path": "pngpread.c",
+      "sha256": "230e4e01a9748922a33a936d1c4a2f599d61fc6425b49270197949fd3f38443e",
+      "size": 28098,
+      "mode": 420
+    },
+    {
+      "path": "pngpriv.h",
+      "sha256": "44f9ecf9664767ec55632f900bb6d59f81b63d24f0039258813695ef428f7c48",
+      "size": 94057,
+      "mode": 420
+    },
+    {
+      "path": "pngread.c",
+      "sha256": "2a2c02673c7dcd6853f3efe8cc16c893df3f7bdffe7b53abde835e7c6e4c6fc3",
+      "size": 143404,
+      "mode": 420
+    },
+    {
+      "path": "pngrio.c",
+      "sha256": "3c710643f274fd2b4aa2bc154c9dc53a512edae773dda1434f205fb005f2e93e",
+      "size": 3898,
+      "mode": 420
+    },
+    {
+      "path": "pngrtran.c",
+      "sha256": "e7f9bcd1e85763ca5efeb2de7b1e5c59222f7cfc1935e0b3ce14a6c1d6f195f4",
+      "size": 172583,
+      "mode": 420
+    },
+    {
+      "path": "pngrutil.c",
+      "sha256": "748f956c603df9bafeaf82ad23f5d9ce57e2d7b0be21a68868eba46615cf8ddc",
+      "size": 152278,
+      "mode": 420
+    },
+    {
+      "path": "pngset.c",
+      "sha256": "59b8e464113235447540a3e542660967a9ebc8dca7716eae8494cd59ddcf66c8",
+      "size": 60382,
+      "mode": 420
+    },
+    {
+      "path": "pngstruct.h",
+      "sha256": "46b48213ed1691ddb989cfa7844a272e13fe7a7eb67a97037ca96d76b242bac4",
+      "size": 19190,
+      "mode": 420
+    },
+    {
+      "path": "pngtest.c",
+      "sha256": "41e7256bf2b609a8c7662b5b19153abc30bc8a71f828d12c68090c542460c265",
+      "size": 64307,
+      "mode": 420
+    },
+    {
+      "path": "pngtest.png",
+      "sha256": "b7a468324556bf6924058acb0fb477320355da0d864728e614be83ffa6966148",
+      "size": 8831,
+      "mode": 420
+    },
+    {
+      "path": "pngtrans.c",
+      "sha256": "38aa34b51567a06428b15be16c5819e6f2ae0d3bfce4e1f777ae6242f74eb6d4",
+      "size": 26220,
+      "mode": 420
+    },
+    {
+      "path": "pngusr.dfa",
+      "sha256": "064423707d7981d1477f20da3ec5852079ce09236da49bdb7e524111cd684c7c",
+      "size": 497,
+      "mode": 420
+    },
+    {
+      "path": "pngwio.c",
+      "sha256": "a25def3351807ed3f2e12a02a7801d4208f0033516185f4ad524d804d2f00ce3",
+      "size": 5588,
+      "mode": 420
+    },
+    {
+      "path": "pngwrite.c",
+      "sha256": "85533196464e11d7ee4602fc19c887bd3923636cff7c44c8c0dab97624a17797",
+      "size": 78819,
+      "mode": 420
+    },
+    {
+      "path": "pngwtran.c",
+      "sha256": "6355098f20b9058ab607cebd01f3130c61ac858dceb339c3a7d83407c1067b94",
+      "size": 15336,
+      "mode": 420
+    },
+    {
+      "path": "pngwutil.c",
+      "sha256": "a6e725ce8439edadea1e1f5092c4bcbf101d0a63cff0906271af6aceef89dfd3",
+      "size": 80258,
+      "mode": 420
+    },
+    {
+      "path": "powerpc/.editorconfig",
+      "sha256": "31a017d556b8957389e270058ea2571641a53f68822f6b144a399d06c77ffa57",
+      "size": 106,
+      "mode": 420
+    },
+    {
+      "path": "powerpc/filter_vsx_intrinsics.c",
+      "sha256": "3252cc5242019539cad4ad482892687c1c7e4b55c04cdc54db6c3bba33373070",
+      "size": 25406,
+      "mode": 420
+    },
+    {
+      "path": "powerpc/powerpc_init.c",
+      "sha256": "15464b7ce5b2cd6494ae4710b8a1ab72bc1a1aebeb47c68c4ec99a1952f1357e",
+      "size": 4302,
+      "mode": 420
+    },
+    {
+      "path": "projects/.editorconfig",
+      "sha256": "c95533ec6e77a13fe5c4f6f266c97b65561ea9c4d985a89119f88abf6e0004be",
+      "size": 40,
+      "mode": 420
+    },
+    {
+      "path": "projects/owatcom/libpng.tgt",
+      "sha256": "10ae0aed1fe4b3013f99f7bbd5a81699a73bbf7d459c424799c0f5f8387605e3",
+      "size": 2171,
+      "mode": 420
+    },
+    {
+      "path": "projects/owatcom/libpng.wpj",
+      "sha256": "72b084812585ada86522122fd6ab2068ce5b983883bfa8ee3c98fb6b9f177a95",
+      "size": 972,
+      "mode": 420
+    },
+    {
+      "path": "projects/owatcom/pngconfig.mak",
+      "sha256": "11eaf037e3cc1292423064b4a3b2bf5337acc54db100bb8bba60d49d9557b2b9",
+      "size": 6368,
+      "mode": 420
+    },
+    {
+      "path": "projects/owatcom/pngstest.tgt",
+      "sha256": "029861ef755ccb92c248cf0db0febe892c1f0761387148a7cd71f32b34c50e22",
+      "size": 2565,
+      "mode": 420
+    },
+    {
+      "path": "projects/owatcom/pngtest.tgt",
+      "sha256": "a38682aa0e53998bae5bb9dbedfdbe77d066f9ce12d0da72b53ad3131c04762a",
+      "size": 1213,
+      "mode": 420
+    },
+    {
+      "path": "projects/owatcom/pngvalid.tgt",
+      "sha256": "9cff66c909622067c63c8618fa5d2927167046365083c3dacb26d6da6df2c8d0",
+      "size": 1397,
+      "mode": 420
+    },
+    {
+      "path": "projects/visualc71/PRJ0041.mak",
+      "sha256": "e13ea694f472b819e9a77a94fbfb77b39227125e418463291fe3b00cda754c9f",
+      "size": 446,
+      "mode": 420
+    },
+    {
+      "path": "projects/visualc71/README.txt",
+      "sha256": "6ea48b2b051362f546d11e4ef0d1656cc67788bd2a08a25ddc6b8beda3b68d62",
+      "size": 2321,
+      "mode": 420
+    },
+    {
+      "path": "projects/visualc71/README_zlib.txt",
+      "sha256": "50aae87ccb273d03bc54e4b20dbc2b4d3fcc523cb3f411c4a028908e0587e2de",
+      "size": 1634,
+      "mode": 420
+    },
+    {
+      "path": "projects/visualc71/libpng.sln",
+      "sha256": "f324452926d8011cdd2ec605369f389e50106628ca29924c984df87f7f02bfcc",
+      "size": 3604,
+      "mode": 420
+    },
+    {
+      "path": "projects/visualc71/libpng.vcproj",
+      "sha256": "35de927026b714181fc022da441c24526fc1b62f6689597cec6c968c75e22a7f",
+      "size": 11760,
+      "mode": 420
+    },
+    {
+      "path": "projects/visualc71/pngtest.vcproj",
+      "sha256": "8b204903867e59d90ab285beab1c977a0be3806ce61fabb27aa79b77e70baa03",
+      "size": 7256,
+      "mode": 420
+    },
+    {
+      "path": "projects/visualc71/zlib.vcproj",
+      "sha256": "e5d2addc212c43f859c9a977b7806a414ef3d3ad3d0c5e7dfb15109537e7e670",
+      "size": 9683,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/README.txt",
+      "sha256": "3ab271886b1ee03f915704d8d86213b8e779facf91dd0d38a3984ac6551af101",
+      "size": 3509,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/build.bat",
+      "sha256": "bfc530b4e177262fbf3011b0042b843e34b4515b736736f7ca37655b0a7f0a40",
+      "size": 559,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/libpng/libpng.vcxproj",
+      "sha256": "8f64c8b61c381812bf56464bb887ba05f37e8ee64e0b6427fa8215290b686882",
+      "size": 26117,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/pnglibconf/pnglibconf.vcxproj",
+      "sha256": "b8683606fa8656d0996d5b729c04a3d720861f2aa3527ba5ae8dec0640598657",
+      "size": 4700,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/pngstest/pngstest.vcxproj",
+      "sha256": "6eb38b7b4e16e7900292ce9d9cf26f18306f05ddebedc08584c83133b6b4af9c",
+      "size": 32634,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/pngtest/pngtest.vcxproj",
+      "sha256": "146223c48346b4aca41443311f6a7c615cb6bd87a79ef251a4bf87ceb22d9478",
+      "size": 23221,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/pngunknown/pngunknown.vcxproj",
+      "sha256": "d77a3fc4d845ce67ae8035bd52fde62c1875d9a9868a9158c97d494ddd0daa1b",
+      "size": 23326,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/pngvalid/pngvalid.vcxproj",
+      "sha256": "5426738626045cfdc5754c4d0ee7118240acf78175742b67e79cc8199b6de409",
+      "size": 22974,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/vstudio.sln",
+      "sha256": "4172be96aaa08ba1333ccea437c2de6829cebca5de298e2ab1317402b606eb8f",
+      "size": 12953,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/zlib.props",
+      "sha256": "72c40a31a01cbf545f47f3336784bad9f7d1702c8e832c076f4582545f3ca265",
+      "size": 2296,
+      "mode": 420
+    },
+    {
+      "path": "projects/vstudio/zlib/zlib.vcxproj",
+      "sha256": "f72d803ba45bc3867a21ac046a53c64e0f2dda1439d492ce36d5232affad5284",
+      "size": 16649,
+      "mode": 420
+    },
+    {
+      "path": "riscv/.editorconfig",
+      "sha256": "31a017d556b8957389e270058ea2571641a53f68822f6b144a399d06c77ffa57",
+      "size": 106,
+      "mode": 420
+    },
+    {
+      "path": "riscv/filter_rvv_intrinsics.c",
+      "sha256": "2ac28677fb5f02ce735d719a25e3540c181199b222ee3c04a08adc3f16122bf9",
+      "size": 6674,
+      "mode": 420
+    },
+    {
+      "path": "riscv/riscv_init.c",
+      "sha256": "4a44d74fd7e9eb87a5ac34a30280a0a44401e063894874d096c771bffd27c45d",
+      "size": 1420,
+      "mode": 420
+    },
+    {
+      "path": "scripts/README.txt",
+      "sha256": "40a00a18c163db14718d62e6c733ebc7ca7fce49074f153874853163eff89a19",
+      "size": 3693,
+      "mode": 420
+    },
+    {
+      "path": "scripts/SCOPTIONS.ppc",
+      "sha256": "c372ce5ec69906de29755df05ebec4074b36a3b29a73bcbb982eaee2c15e35f3",
+      "size": 90,
+      "mode": 420
+    },
+    {
+      "path": "scripts/autoconf/README.md",
+      "sha256": "02716e9de6d2663506cf482bfe4361e1d1034e64023ab95c640cf60b1692a1b8",
+      "size": 313,
+      "mode": 420
+    },
+    {
+      "path": "scripts/autoconf/libtool.m4",
+      "sha256": "fe3baac94510d4b563ed7562035bdff366e37f9e0ac274bf10e4f22d08e8664e",
+      "size": 310981,
+      "mode": 420
+    },
+    {
+      "path": "scripts/autoconf/ltoptions.m4",
+      "sha256": "4cc29b667909fcde7a08c984367bce1a1902c860acf8774794484a2e1adeb07b",
+      "size": 15441,
+      "mode": 420
+    },
+    {
+      "path": "scripts/autoconf/ltsugar.m4",
+      "sha256": "4f022724d2703c0c318eed04e04e833b82761b0a0cc02c865d0b7c1e5b2c6aba",
+      "size": 4395,
+      "mode": 420
+    },
+    {
+      "path": "scripts/autoconf/ltversion.m4",
+      "sha256": "40207e691ec7d3f06cedd592e50e44d7bc187b21ad791aeabdd50871b6606799",
+      "size": 714,
+      "mode": 420
+    },
+    {
+      "path": "scripts/autoconf/lt~obsolete.m4",
+      "sha256": "5a416905cc27c5d99ff81b61b9cf6a85c168b80178bb88f4c3eaf2e8f76c8cac",
+      "size": 6151,
+      "mode": 420
+    },
+    {
+      "path": "scripts/checksym.awk",
+      "sha256": "2c5eef2fa232bbaa6f42673449bd600cc0cb4c850ade380bbee7af7896ebaa88",
+      "size": 5822,
+      "mode": 493
+    },
+    {
+      "path": "scripts/cmake/AUTHORS.md",
+      "sha256": "50633b976f0133862c921aa67d56de2c0b42eb344c8ca3853686efb092a447db",
+      "size": 862,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/PNGCheckLibconf.cmake",
+      "sha256": "e1ac3b44c20087fff4b27e0316917ca34d930469df96ec41ae6e945dbd78bb43",
+      "size": 1542,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/PNGConfig.cmake",
+      "sha256": "658ffa30d7073e31f4c4194b83496cc03835d7340e84eda324f308345751874d",
+      "size": 833,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/PNGGenConfig.cmake",
+      "sha256": "0db4b0dee30ee4ac4b36e5cfbdf266a32d002915d3372cc9bebcca71155fb811",
+      "size": 4201,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/PNGTest.cmake",
+      "sha256": "5a4e5e4d4a31e27617b511f853da08776b1216b5785eb7a5db1ee02c85e68069",
+      "size": 1598,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/README.md",
+      "sha256": "0e24f5d0d450f838a2b2bb344d60ebc52921b3e90de04a328b639d6f22d714e3",
+      "size": 1285,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/genchk.cmake.in",
+      "sha256": "28b6dce0d2641aae9f8cecd739ed0ac05c13b68f32064a8acd61a2e315623e92",
+      "size": 1609,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/genout.cmake.in",
+      "sha256": "96c7879627c9b3ed6054403392a3c80bcf07e189203f191a405c0b091f61263d",
+      "size": 3544,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/gensrc.cmake.in",
+      "sha256": "50d2434bfa422852d810acc8c30dce77b01361213044b7b11b9109116c3cd238",
+      "size": 5301,
+      "mode": 420
+    },
+    {
+      "path": "scripts/cmake/test.cmake.in",
+      "sha256": "8ee91aeaed49ee075bf2bcb1a5cedc6691f2586768e49f495ea0138ffaa3faad",
+      "size": 1165,
+      "mode": 420
+    },
+    {
+      "path": "scripts/descrip.mms",
+      "sha256": "c334f87f904ae26a5a1eb1e5505a14a332f3832442791b619de20ad7580d98cd",
+      "size": 2082,
+      "mode": 420
+    },
+    {
+      "path": "scripts/dfn.awk",
+      "sha256": "4523c2bd73bf4252e0ab731bf6ed3f09c4ffb80539a26f09b2b25f76577e5b41",
+      "size": 5604,
+      "mode": 493
+    },
+    {
+      "path": "scripts/intprefix.c",
+      "sha256": "a2c65844bb5d184473b2b7b8b7832c74fdddf120631f2f29021b1c7b03f9f2ec",
+      "size": 582,
+      "mode": 420
+    },
+    {
+      "path": "scripts/libpng-config-body.in",
+      "sha256": "90cfa8c11c2057b1fbebb1da17848b57f12908e63f71e7a393c27fe745ea585c",
+      "size": 1700,
+      "mode": 420
+    },
+    {
+      "path": "scripts/libpng-config-head.in",
+      "sha256": "a2817b3c7d864d5de8421e2407753503802f215e5eab88e8d4b62c705334d9e3",
+      "size": 388,
+      "mode": 420
+    },
+    {
+      "path": "scripts/libpng.pc.in",
+      "sha256": "45615804f744840c3b2ee13a37e78e83373ecb46effa07788c2be6d69ad3fb62",
+      "size": 210,
+      "mode": 420
+    },
+    {
+      "path": "scripts/macro.lst",
+      "sha256": "50eb2fd1f9fea0def8c07e5b16399ea174af5088625ab9f59ec74bd1109e934c",
+      "size": 50,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.32sunu",
+      "sha256": "218324d3da37e635502a1de38d7c8c4b5fc58510c4126e207fc0e7d995d43791",
+      "size": 4303,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.64sunu",
+      "sha256": "954d3bb2315c8e6a5a798ca62585d513313ff1cb1554194adce74935ef001c79",
+      "size": 4330,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.aix",
+      "sha256": "e2a325eb9289df6584fb10709c683432e6b8d79c0afb25c7a0b1d83986203215",
+      "size": 2729,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.amiga",
+      "sha256": "acb3de203ea9c118d6a859a4358bf55c35c879cf5830a3349d8452bbae7c8d21",
+      "size": 1467,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.atari",
+      "sha256": "ce0a686a74ffa32ca6d30d2238a29788f34e0b77f96e99c9bb6de4cf036da9e3",
+      "size": 1332,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.bc32",
+      "sha256": "7d9bfd90456410d4544162ef7df8589e9f94e0bdcef5d15dc3f846be6b3410b8",
+      "size": 3976,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.beos",
+      "sha256": "4c4269cbc82d320171023a16cc128108d5a41f9500a4f945eae84b91a51aea62",
+      "size": 3902,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.c89",
+      "sha256": "32e83d0172332e677239fb335a8d799b8afc6871f1a52008851cc2814a63e94b",
+      "size": 3462,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.clang",
+      "sha256": "441429fa3bb949b762d9da8c4f3b53ed9df93d796435f6415f444f44804c4507",
+      "size": 3468,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.darwin",
+      "sha256": "35f2702c569e8dbc73fde6d83bf46bd2bd9a85af2702db9c561806cfb23d395c",
+      "size": 4591,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.dec",
+      "sha256": "935390fe89b95afc51dbc54fa690fa5e9c844cdbc5eedae005ef9477adeceae8",
+      "size": 3275,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.dj2",
+      "sha256": "c6668f8f52adbac8a7eb4f4a61ebb8d197f10efbeb13e3020d8c0b7dd8157fc9",
+      "size": 2630,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.emcc",
+      "sha256": "9bda7552c9afffc6e7913c968d3651824c02fdb7352a984421a778597f189ad3",
+      "size": 3234,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.freebsd",
+      "sha256": "91f5b159302982f817b13ea453775e965aa2e82f9b96e838b7485288363fef3a",
+      "size": 1328,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.gcc",
+      "sha256": "9aff86ca04b2dc99e57852f25162ed621e125bca8481f678a296352b084f7f5a",
+      "size": 3464,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.hp64",
+      "sha256": "6d2c08a5fe2c21a074a58d6719202f10f458011e681b8d7d849369a286af1849",
+      "size": 3940,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.hpgcc",
+      "sha256": "b25e50134266c361b6f6a16124eeb5583d4e0fb128bafceb66f3ad833a0c249c",
+      "size": 3864,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.hpux",
+      "sha256": "ebf55d96784ecb5417ccc1bb168d8b700a0bf672c1bbe5e2fdb3911d70fd6cf6",
+      "size": 3823,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.ibmc",
+      "sha256": "b224be2bd5b45930012529931161c194846bbf2c76affe4719ffd301bc8db6a1",
+      "size": 2913,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.intel",
+      "sha256": "7b74ee7ce9671582473af51d8274ad846642fa0d790f607fc9aa9a44f9e264ce",
+      "size": 3889,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.linux",
+      "sha256": "367bb5a0d1c034305e65a17a43d5d76a3c863f49c3ce8527230f3a3f4f41b492",
+      "size": 4471,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.mips",
+      "sha256": "437544aa26cdb357557931bb6ff55569bc50c9b949095380575dd84b900fc9e8",
+      "size": 2574,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.msys",
+      "sha256": "a63eea21ab1438d34266febec78cf630d3961498bd88ad747694f47126009d83",
+      "size": 4092,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.netbsd",
+      "sha256": "2aaf44c8cd968899f44a619d713da592fd3195768ff306b3d3af1043e38d79ba",
+      "size": 1360,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.openbsd",
+      "sha256": "5d5ae1d3ca04423615753e8d116454cb855c48bfe9331879e3bd72cab276ee4c",
+      "size": 1226,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.riscos",
+      "sha256": "cc9cbba8092d1e0a27b7429c7bed6e13f8e10f784196f533debf8ec6893d30d1",
+      "size": 1901,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.sco",
+      "sha256": "d230e18bd1508112af236b8886cc08a7afcf6178b6800212601add0b86bb5f5f",
+      "size": 3814,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.sggcc",
+      "sha256": "0bcc4757d68b2a4b1e12a405c96eca4b35f9d1305a41f6d082aa4332d63c9d34",
+      "size": 3686,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.sgi",
+      "sha256": "33ef3c47a4f4423eff730d9ccc92c901486909042fd8bdfd447c3e2c514c8e65",
+      "size": 3798,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.so9",
+      "sha256": "d0a3e128d3d5c8c51ccb09882e571af64353402c400666b333e6adaff6a69779",
+      "size": 4484,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.solaris",
+      "sha256": "95b532573bdb980e9e9ddd3b21c44c84f1bb4ba4aaae91c126ee5e7247bbcc35",
+      "size": 4346,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.std",
+      "sha256": "6f4f8a8c31f32017fb2b3fa9dccced3d289f4c4871535933049cd6f57ed09217",
+      "size": 4020,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.sunos",
+      "sha256": "1089861180a105419c9cbd3c3c7feef0d4f90c008c532b8642e24319bdd66a2e",
+      "size": 2716,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.vcwin-arm64",
+      "sha256": "b0496d4059d58a6d3851dcfd7029d4d88ecc8936ea95f812cda55ed002a49b93",
+      "size": 4303,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makefile.vcwin32",
+      "sha256": "59fc401c5f9a1ebe0f85c5a2055c34f71a8ad895ac2134054d650e3029258c81",
+      "size": 3699,
+      "mode": 420
+    },
+    {
+      "path": "scripts/makevms.com",
+      "sha256": "97ce330a2bb1e8b8b9204d3637e4a10ebbdbbe7ab8814ba11990a0dd19d9d3d8",
+      "size": 4818,
+      "mode": 420
+    },
+    {
+      "path": "scripts/options.awk",
+      "sha256": "a1308d56e989a270fb6d9a6e432c0a0aafc8579df510b8183c7dd90ba0f94233",
+      "size": 31661,
+      "mode": 493
+    },
+    {
+      "path": "scripts/pnglibconf.dfa",
+      "sha256": "4d69c96f076935ce491f76cae75c19bde1304ebdd26083cbfe5e37995412185c",
+      "size": 42654,
+      "mode": 420
+    },
+    {
+      "path": "scripts/pnglibconf.h.prebuilt",
+      "sha256": "1911b17912d9cc9f62126a9daf11e6f6560bd0ec1b8886d08440c92815fc82bf",
+      "size": 8090,
+      "mode": 420
+    },
+    {
+      "path": "scripts/pnglibconf.mak",
+      "sha256": "aa93155ff096f112a44a4dc8fcaf69838a8d95acb042e5d347a8f2e297c0ceef",
+      "size": 2135,
+      "mode": 493
+    },
+    {
+      "path": "scripts/pngwin.rc",
+      "sha256": "0cfcc77ec4dff5a27f69ba3df78ad4521720f205b6a294db1d98a44616ebdab6",
+      "size": 3958,
+      "mode": 420
+    },
+    {
+      "path": "scripts/prefix.c",
+      "sha256": "75c3816e4c23ac8950e10251db83d57fbba84e617d9000da6aa8e0bb22f37db9",
+      "size": 553,
+      "mode": 420
+    },
+    {
+      "path": "scripts/smakefile.ppc",
+      "sha256": "c7b7079cce67030a3cbad26445f04f50dc8806d03edd291dc4ce17f6411c8acd",
+      "size": 1016,
+      "mode": 420
+    },
+    {
+      "path": "scripts/sym.c",
+      "sha256": "da050711e6f77456f354e22ec5a6d4b5e1c1b83e52058a290e88ca79752dee53",
+      "size": 365,
+      "mode": 420
+    },
+    {
+      "path": "scripts/symbols.c",
+      "sha256": "9b6e8f25ab196c18af0b98e6e2161d079ff0bc785ac803d62e752071d2d7d2ca",
+      "size": 1933,
+      "mode": 420
+    },
+    {
+      "path": "scripts/symbols.def",
+      "sha256": "9f819078de642aaed192c0c160e7cfcf5c07bb9ba004313c9536657787d4f7ea",
+      "size": 6772,
+      "mode": 420
+    },
+    {
+      "path": "scripts/vers.c",
+      "sha256": "7bcccb146dfa075551b741be851799965c93d1387241d54cd31f5ab34d970c0b",
+      "size": 434,
+      "mode": 420
+    },
+    {
+      "path": "test-driver",
+      "sha256": "f5031431dfc824ee2f012950aef35530e5acf3eb412421c8050662b616deaded",
+      "size": 5220,
+      "mode": 493
+    },
+    {
+      "path": "tests/pnggetset",
+      "sha256": "5cd6feb9a408843be3265fc3e9609258d837f88bf53efa041282c831906f5cc6",
+      "size": 101,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngimage-full",
+      "sha256": "6e3ca650073445a47f6b240825b8f6aa0a0943a36566bb609660f0b3a3ee0346",
+      "size": 175,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngimage-quick",
+      "sha256": "53265215e6bac5c1ae2fdf30455ff2fc5ed605a9f2ec1ee3a1745c6c4a3afd63",
+      "size": 158,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest",
+      "sha256": "6660d3ce78e16e5ae4e21440b80c509f567317085445995f7e3c86f14839ffc1",
+      "size": 1246,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-1.8",
+      "sha256": "1397bee2ec65a4fe87727d3b0d30c79e63131e6f239434919bdb878fca26ab08",
+      "size": 52,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-1.8-alpha",
+      "sha256": "882b9a08aaf068d54a5d14d432eee0f1aada1ffab6df4a72eca867669071f2b7",
+      "size": 53,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-large-stride",
+      "sha256": "ffe42c4f15b504384f8454d1ed387d581acdb9c5905cf9478e8e855b8b9fe982",
+      "size": 250,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-linear",
+      "sha256": "c636af668f9776c1718da8afd1ed991f4613a6410f8d63b3089332b9cb8de43c",
+      "size": 55,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-linear-alpha",
+      "sha256": "cf4222ad88bc1a6cb851b3ee9e6772107ea9107945828cace1a41bd4ce2e23b4",
+      "size": 56,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-negative-stride",
+      "sha256": "e7bc4c5a55c26c20215de893bd0f52e238a8797bc88fcf1197425cbd2ace6540",
+      "size": 732,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-negative-stride-extra",
+      "sha256": "0dd000204bd51ac48be2e54ce46b6fe67560ea690e7c0b3c7afc8da16e646508",
+      "size": 764,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-none",
+      "sha256": "c0811ec375499a256c9a2f03f76cf918adfcb49a443d190465c360d1e62a0e47",
+      "size": 53,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-none-alpha",
+      "sha256": "9b5b5b41fe080ff85142b7a2e3cf4ccba3db5719ff5dc6fe7d1b63c79631c221",
+      "size": 54,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-sRGB",
+      "sha256": "6c8ffed87859ce43bd2f42929c6f9d8fe09f25f6398cf626b3ec499de7a47e71",
+      "size": 53,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngstest-sRGB-alpha",
+      "sha256": "1aae6b567a9a368531754623c43a502f09ee06ccabd749d46c464e2a61653b82",
+      "size": 54,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngtest-all",
+      "sha256": "be7e410bd6fec9528a01cf9edf67b9b71b3e14acf012f87d27a6af8ff027f33e",
+      "size": 3734,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngunknown-IDAT",
+      "sha256": "31e636450ed2269813bfe3d0e6c2720fd286a49785e1f4c115000bd594c36fc3",
+      "size": 88,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngunknown-discard",
+      "sha256": "ac66ad88043325a2473faf4f7cd1d1d271375e65080a8f5596487f376739e090",
+      "size": 78,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngunknown-if-safe",
+      "sha256": "60d5af723d1da82ad6d87d1001a43432cf65ba421176e722f3bde91d68c932e8",
+      "size": 78,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngunknown-sAPI",
+      "sha256": "d58e39fa433e29d8f924f2242762a3782c547333457d6ff22bfc6fb899459a13",
+      "size": 144,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngunknown-sTER",
+      "sha256": "4c431549219849fdd174e327d869b470c6a6ff615617ddf24f9e17e8a815a7e1",
+      "size": 75,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngunknown-save",
+      "sha256": "ff7010fd4700945fc25c6ec1164297bf6a6fa2a242b5f6f8daf1de27e726369f",
+      "size": 75,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngunknown-vpAg",
+      "sha256": "f74580fbb13910741e5e7ed50d6f48b94a5f863ac8519337f2ed5154eae27929",
+      "size": 75,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-16-to-8",
+      "sha256": "b7e54a66bd78463a2676fd1407b1bbb4da1d4fbfe80f3ab3e062e1af0f2ef8b7",
+      "size": 52,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-alpha-mode",
+      "sha256": "924123f9bc7229ea27771e2522b3c3d954738fba89518f5c3b28d0b95a582384",
+      "size": 55,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-background",
+      "sha256": "2b465ddb3fe39e0043d149269590399b6cd1b708e5104a791f672c0357a405f2",
+      "size": 55,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-expand16-alpha-mode",
+      "sha256": "4d262f4d2fd5ccb2f4a07ed017e5c3c439304a47c0c53d75b8c768a37418f5f8",
+      "size": 66,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-expand16-background",
+      "sha256": "e698cdc5c47791d392977835198682a56ee25038fb25cdf8de98f809bc99899a",
+      "size": 66,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-expand16-transform",
+      "sha256": "2951b8d7e2d427fdd79beca2a62cf86bf46e0cf156f178040bd014047848f7d9",
+      "size": 65,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-sbit",
+      "sha256": "62ef9c6f6a18a37e1baf4b2d6a22f9f3948edff14bd3ab31b066ec05ac547e66",
+      "size": 49,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-threshold",
+      "sha256": "dc1017d020fd35b54de2a1b9db41e44e933cf6a839edc24e26f04b5d70d49b33",
+      "size": 54,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-gamma-transform",
+      "sha256": "3157b5da5c86d93439ce557972838a4a54f0e846742378a3e75d813e4d170c22",
+      "size": 54,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-progressive-interlace-standard",
+      "sha256": "324017de8672e7a74fbe5599ed197545a0b5636491ed7ae7441fc3208ddeacef",
+      "size": 78,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-progressive-size",
+      "sha256": "925a860485e5a2a4665410da601d3b2e675298ba040568449cbd76eaa4e42ac2",
+      "size": 62,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-progressive-standard",
+      "sha256": "d2f0a12181a2f4a3e57a2d1bdc3b7d8155f2ff8f38a0d7fd6bf9bae640811c93",
+      "size": 66,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-standard",
+      "sha256": "2455e14848865cb2f91a5a8ba0702999d28f48b0225491c662393997f7c4aaf8",
+      "size": 47,
+      "mode": 493
+    },
+    {
+      "path": "tests/pngvalid-transform",
+      "sha256": "da2c563b6842280abb6cf2b7f9eda3fb853631b3526fce1015ca6a24a1d06883",
+      "size": 48,
+      "mode": 493
+    }
+  ],
+  "directories": [
+    {
+      "path": ".github",
+      "mode": 493
+    },
+    {
+      "path": ".github/workflows",
+      "mode": 493
+    },
+    {
+      "path": "arm",
+      "mode": 493
+    },
+    {
+      "path": "ci",
+      "mode": 493
+    },
+    {
+      "path": "ci/lib",
+      "mode": 493
+    },
+    {
+      "path": "ci/libexec",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/android",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/cygwin",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/darwin",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/freebsd",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/linux",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/msdos",
+      "mode": 493
+    },
+    {
+      "path": "ci/targets/windows",
+      "mode": 493
+    },
+    {
+      "path": "contrib",
+      "mode": 493
+    },
+    {
+      "path": "contrib/arm-neon",
+      "mode": 493
+    },
+    {
+      "path": "contrib/conftest",
+      "mode": 493
+    },
+    {
+      "path": "contrib/examples",
+      "mode": 493
+    },
+    {
+      "path": "contrib/gregbook",
+      "mode": 493
+    },
+    {
+      "path": "contrib/libtests",
+      "mode": 493
+    },
+    {
+      "path": "contrib/mips-mmi",
+      "mode": 493
+    },
+    {
+      "path": "contrib/mips-msa",
+      "mode": 493
+    },
+    {
+      "path": "contrib/oss-fuzz",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngexif",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminim",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminim/decoder",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminim/encoder",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminim/preader",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngminus",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngsuite",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pngsuite/interlaced",
+      "mode": 493
+    },
+    {
+      "path": "contrib/powerpc-vsx",
+      "mode": 493
+    },
+    {
+      "path": "contrib/testpngs",
+      "mode": 493
+    },
+    {
+      "path": "contrib/testpngs/badpal",
+      "mode": 493
+    },
+    {
+      "path": "contrib/testpngs/crashers",
+      "mode": 493
+    },
+    {
+      "path": "contrib/testpngs/png-3",
+      "mode": 493
+    },
+    {
+      "path": "contrib/tools",
+      "mode": 493
+    },
+    {
+      "path": "contrib/visupng",
+      "mode": 493
+    },
+    {
+      "path": "intel",
+      "mode": 493
+    },
+    {
+      "path": "loongarch",
+      "mode": 493
+    },
+    {
+      "path": "mips",
+      "mode": 493
+    },
+    {
+      "path": "powerpc",
+      "mode": 493
+    },
+    {
+      "path": "projects",
+      "mode": 493
+    },
+    {
+      "path": "projects/owatcom",
+      "mode": 493
+    },
+    {
+      "path": "projects/visualc71",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio/libpng",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio/pnglibconf",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio/pngstest",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio/pngtest",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio/pngunknown",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio/pngvalid",
+      "mode": 493
+    },
+    {
+      "path": "projects/vstudio/zlib",
+      "mode": 493
+    },
+    {
+      "path": "riscv",
+      "mode": 493
+    },
+    {
+      "path": "scripts",
+      "mode": 493
+    },
+    {
+      "path": "scripts/autoconf",
+      "mode": 493
+    },
+    {
+      "path": "scripts/cmake",
+      "mode": 493
+    },
+    {
+      "path": "tests",
+      "mode": 493
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "AUTHORS",
+      "sha256": "0c777e9f2a67bd4058ab91050eb7a56106c92ed038ba8fe5f54c83344f2d93ca",
+      "size": 1773
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "size": 5345
+    },
+    {
+      "path": "ci/LICENSE_MIT.txt",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "size": 1036
+    },
+    {
+      "path": "contrib/gregbook/COPYING",
+      "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572",
+      "size": 18097
+    },
+    {
+      "path": "contrib/gregbook/LICENSE",
+      "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438",
+      "size": 2373
+    },
+    {
+      "path": "contrib/pngexif/LICENSE_MIT.txt",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "size": 1036
+    },
+    {
+      "path": "contrib/pngminus/LICENSE.txt",
+      "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330",
+      "size": 1164
+    },
+    {
+      "path": "scripts/cmake/AUTHORS.md",
+      "sha256": "50633b976f0133862c921aa67d56de2c0b42eb344c8ca3853686efb092a447db",
+      "size": 862
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

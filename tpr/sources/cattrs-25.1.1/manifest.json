@@ -1,0 +1,22 @@
+{
+  "name": "cattrs",
+  "version": "25.1.1",
+  "kind": "source",
+  "filename": "cattrs-25.1.1.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/57/2b/561d78f488dcc303da4639e02021311728fb7fda8006dd2835550cddd9ed/cattrs-25.1.1.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 435016,
+  "sha256": "c914b734e0f2d59e5b720d145ee010f1fd9a13ee93900922a2f3f9d593b8382c",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 435016,
+      "sha256": "c914b734e0f2d59e5b720d145ee010f1fd9a13ee93900922a2f3f9d593b8382c"
+    }
+  ]
+}

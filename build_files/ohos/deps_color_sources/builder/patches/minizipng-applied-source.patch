@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -191,7 +191,7 @@
+         message(STATUS "Using ZLIB ${ZLIB_VERSION}")
+ 
+         list(APPEND MINIZIP_INC ${ZLIB_INCLUDE_DIRS})
+-        list(APPEND MINIZIP_LIB ${ZLIB_LIBRARIES})
++        list(APPEND MINIZIP_LIB ZLIB::ZLIB)
+         list(APPEND MINIZIP_LBD ${ZLIB_LIBRARY_DIRS})
+ 
+         set(PC_PRIVATE_DEPS "zlib")

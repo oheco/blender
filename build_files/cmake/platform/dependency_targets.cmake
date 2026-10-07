@@ -57,11 +57,15 @@ if(WITH_OPENVDB)
   endif()
 
   target_include_directories(bf_deps_optional_openvdb SYSTEM INTERFACE ${OPENVDB_INCLUDE_DIRS})
-  target_link_libraries(bf_deps_optional_openvdb
-    INTERFACE
-    ${OPENVDB_LIBRARIES}
-    bf::dependencies::optional::tbb
-  )
+  if(WITH_GHOST_OHOS AND _OHOS_VOLUME_CONFIG_ACTIVE)
+    target_link_libraries(bf_deps_optional_openvdb INTERFACE OpenVDB::openvdb)
+  else()
+    target_link_libraries(bf_deps_optional_openvdb
+      INTERFACE
+      ${OPENVDB_LIBRARIES}
+      bf::dependencies::optional::tbb
+    )
+  endif()
 endif()
 
 # -----------------------------------------------------------------------------
@@ -99,7 +103,11 @@ add_library(bf_deps_zlib INTERFACE)
 add_library(bf::dependencies::zlib ALIAS bf_deps_zlib)
 
 target_include_directories(bf_deps_zlib SYSTEM INTERFACE ${ZLIB_INCLUDE_DIRS})
-target_link_libraries(bf_deps_zlib INTERFACE ${ZLIB_LIBRARIES})
+if(WITH_GHOST_OHOS AND _OHOS_VOLUME_CONFIG_ACTIVE)
+  target_link_libraries(bf_deps_zlib INTERFACE ZLIB::ZLIB)
+else()
+  target_link_libraries(bf_deps_zlib INTERFACE ${ZLIB_LIBRARIES})
+endif()
 
 # -----------------------------------------------------------------------------
 # Configure ZSTD
@@ -118,6 +126,10 @@ add_library(bf::dependencies::freetype ALIAS bf_deps_freetype)
 
 target_include_directories(bf_deps_freetype SYSTEM INTERFACE ${FREETYPE_INCLUDE_DIRS})
 target_link_libraries(bf_deps_freetype INTERFACE ${FREETYPE_LIBRARIES} ${BROTLI_LIBRARIES})
+if(WITH_GHOST_OHOS)
+  # FindFreetype exposes the archive, not its static PNG/zlib dependency closure.
+  target_link_libraries(bf_deps_freetype INTERFACE ${PNG_LIBRARIES} ${ZLIB_LIBRARIES})
+endif()
 
 # -----------------------------------------------------------------------------
 # Configure JPEG
@@ -141,7 +153,12 @@ target_link_libraries(bf_deps_png INTERFACE ${PNG_LIBRARIES})
 # Configure OpenImageIO
 
 add_library(bf::dependencies::openimageio ALIAS OpenImageIO::OpenImageIO)
-get_target_property(OPENIMAGEIO_TOOL OpenImageIO::oiiotool LOCATION)
+# OIIO library installations can omit their standalone utility executables.
+if(TARGET OpenImageIO::oiiotool)
+  get_target_property(OPENIMAGEIO_TOOL OpenImageIO::oiiotool LOCATION)
+else()
+  unset(OPENIMAGEIO_TOOL)
+endif()
 
 # -----------------------------------------------------------------------------
 # Configure USD
@@ -193,7 +210,15 @@ add_library(bf::dependencies::optional::webp ALIAS bf_deps_optional_webp)
 if(WITH_IMAGE_WEBP)
   target_compile_definitions(bf_deps_optional_webp INTERFACE WITH_IMAGE_WEBP)
   target_include_directories(bf_deps_optional_webp SYSTEM INTERFACE ${WEBP_INCLUDE_DIRS})
-  target_link_libraries(bf_deps_optional_webp INTERFACE ${WEBP_LIBRARIES})
+  if(WITH_GHOST_OHOS AND TARGET WebP::webp AND TARGET WebP::libwebpmux AND
+     TARGET WebP::webpdemux AND TARGET WebP::sharpyuv)
+    # OpenImageIO may reload WebP CONFIG and replace the legacy list with bare names.
+    target_link_libraries(bf_deps_optional_webp INTERFACE
+      WebP::webp WebP::libwebpmux WebP::webpdemux WebP::sharpyuv
+    )
+  else()
+    target_link_libraries(bf_deps_optional_webp INTERFACE ${WEBP_LIBRARIES})
+  endif()
 endif()
 
 # -----------------------------------------------------------------------------
@@ -340,6 +365,9 @@ add_library(bf::dependencies::optional::nanovdb ALIAS bf_deps_optional_nanovdb)
 
 if(WITH_NANOVDB)
   target_include_directories(bf_deps_optional_nanovdb SYSTEM INTERFACE ${NANOVDB_INCLUDE_DIR})
+  if(WITH_GHOST_OHOS AND _OHOS_VOLUME_CONFIG_ACTIVE)
+    target_link_libraries(bf_deps_optional_nanovdb INTERFACE OpenVDB::nanovdb)
+  endif()
 endif()
 
 # -----------------------------------------------------------------------------
@@ -358,9 +386,14 @@ add_library(bf_deps_gflags INTERFACE)
 add_library(bf::dependencies::gflags ALIAS bf_deps_gflags)
 
 if(WITH_LIBMV OR WITH_GTESTS)
-  target_compile_definitions(bf_deps_gflags INTERFACE ${GFLAGS_DEFINES})
-  target_include_directories(bf_deps_gflags SYSTEM INTERFACE ${GFLAGS_INCLUDE_DIRS})
-  target_link_libraries(bf_deps_gflags INTERFACE ${GFLAGS_LIBRARIES})
+  if(WITH_GHOST_OHOS AND _OHOS_LIBMV_CONFIG_ACTIVE)
+    # Preserve the selected package's real interface, including empty DLL macros.
+    target_link_libraries(bf_deps_gflags INTERFACE gflags)
+  else()
+    target_compile_definitions(bf_deps_gflags INTERFACE ${GFLAGS_DEFINES})
+    target_include_directories(bf_deps_gflags SYSTEM INTERFACE ${GFLAGS_INCLUDE_DIRS})
+    target_link_libraries(bf_deps_gflags INTERFACE ${GFLAGS_LIBRARIES})
+  endif()
 endif()
 
 # -----------------------------------------------------------------------------
@@ -370,9 +403,14 @@ add_library(bf_deps_glog INTERFACE)
 add_library(bf::dependencies::glog ALIAS bf_deps_glog)
 
 if(WITH_LIBMV OR WITH_GTESTS)
-  target_compile_definitions(bf_deps_glog INTERFACE ${GLOG_DEFINES})
-  target_include_directories(bf_deps_glog SYSTEM INTERFACE ${GLOG_INCLUDE_DIRS})
-  target_link_libraries(bf_deps_glog INTERFACE ${GLOG_LIBRARIES})
+  if(WITH_GHOST_OHOS AND _OHOS_LIBMV_CONFIG_ACTIVE)
+    # Preserve the selected package's real interface, including empty DLL macros.
+    target_link_libraries(bf_deps_glog INTERFACE glog::glog)
+  else()
+    target_compile_definitions(bf_deps_glog INTERFACE ${GLOG_DEFINES})
+    target_include_directories(bf_deps_glog SYSTEM INTERFACE ${GLOG_INCLUDE_DIRS})
+    target_link_libraries(bf_deps_glog INTERFACE ${GLOG_LIBRARIES})
+  endif()
 endif()
 
 # -----------------------------------------------------------------------------

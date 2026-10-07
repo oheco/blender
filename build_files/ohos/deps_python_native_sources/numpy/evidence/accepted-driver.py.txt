@@ -1,0 +1,209 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+"""Fresh source-complete NumPy build for the HAP unversioned shared CPython.
+All source/objects/install directories belong to cache/blender-ohos-python-hap.
+No accepted NumPy source/build/install is opened for write.
+"""
+from __future__ import annotations
+import argparse
+import fcntl
+import json
+import os
+from pathlib import Path
+import platform
+import shlex
+import shutil
+import subprocess
+import sys
+import tempfile
+sys.dont_write_bytecode = True
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parent))
+import driver as python_driver
+import recipe
+LOCK = json.loads((HERE / 'sources.lock.json').read_text())
+
+
+def verify_source(root):
+    state = json.loads((root / 'source-state.json').read_text())
+    if state['lock_sha256'] != python_driver.digest(HERE / 'sources.lock.json') or state['patch_sha256'] != python_driver.digest(HERE / 'numpy-vendored-meson-ohos.patch'):
+        raise RuntimeError('NumPy source lock/patch changed')
+    for entry in LOCK['sources']:
+        if recipe.tree_manifest(root / 'sources' / entry['directory']) != state['manifests'][entry['registry_id']]:
+            raise RuntimeError('Prepared NumPy/tool source changed: ' + entry['registry_id'])
+    return state
+
+
+def prepare(args, root):
+    root.mkdir(parents=True, exist_ok=True)
+    archives = root / 'archives'; archives.mkdir(exist_ok=True)
+    (root / 'logs').mkdir(exist_ok=True)
+    vendor = recipe.load_vendor(args.repo_root)
+    for entry in LOCK['sources']:
+        directory = args.repo_root / 'tpr/sources' / entry['registry_id']
+        observed = vendor.verify(directory)
+        for key in ('version', 'filename', 'size', 'sha256', 'url', 'license'):
+            if observed[key] != entry[key]:
+                raise RuntimeError('Formal NumPy registry differs: ' + entry['registry_id'] + ':' + key)
+        if observed['name'].lower() != entry['name'].lower():
+            raise RuntimeError('Formal NumPy registry name differs')
+        vendor.materialize(directory, archives / entry['filename'])
+    if (root / 'source-state.json').exists():
+        verify_source(root); return
+    if (root / 'sources').exists():
+        raise RuntimeError('Refusing unowned NumPy source tree')
+    with tempfile.TemporaryDirectory(prefix='hap-numpy-source-', dir=os.environ['TMPDIR']) as td:
+        stage = Path(td)
+        for entry in LOCK['sources']:
+            recipe.safe_extract(archives / entry['filename'], stage, entry['directory'])
+            for relative in entry['license_files']:
+                if not (stage / entry['directory'] / relative).is_file():
+                    raise RuntimeError('Missing original source notice: ' + relative)
+        source = stage / 'numpy-2.3.4'
+        patch = HERE / 'numpy-vendored-meson-ohos.patch'
+        subprocess.run(['git', 'apply', '--check', str(patch)], cwd=source, check=True)
+        subprocess.run(['git', 'apply', str(patch)], cwd=source, check=True)
+        manifests = {entry['registry_id']: recipe.tree_manifest(stage / entry['directory']) for entry in LOCK['sources']}
+        shutil.copytree(stage, root / 'sources', symlinks=True)
+    python_driver.json_write(root / 'source-state.json', {'lock_sha256': python_driver.digest(HERE / 'sources.lock.json'),
+        'patch_sha256': python_driver.digest(patch), 'manifests': manifests, 'source_count': len(LOCK['sources']),
+        'bootstrap': 'Complete formal source sdists only; no binary wheels/CPython3.14 sysconfig'})
+    verify_source(root)
+    print('Prepared fresh NumPy2.3.4 and 11 complete build-tool sources from formal tpr', flush=True)
+
+
+def environment(args, root):
+    if platform.system() not in ('HarmonyOS', 'OHOS', 'OpenHarmony') or platform.machine() != 'aarch64':
+        raise RuntimeError('Native OHOS ARM64 required')
+    prefix = args.build_root / 'runtime'; python = prefix / 'bin/python3.13'
+    env = python_driver.clean_env()
+    sdk = Path.home() / '.oheco/packages/ohos-sdk-native/26.0.0.35-Beta'
+    pin = json.loads((HERE / 'toolchain-inputs.json').read_text())
+    for item in pin['files']:
+        path = HERE / 'sign_compiler.py' if Path(item['path']).name == 'sign_compiler.py' else Path(item['path'])
+        if python_driver.digest(path) != item['sha256']:
+            raise RuntimeError('Pinned NumPy static SDK/tool changed: ' + str(path))
+    env['PATH'] = str(root / 'launchers') + ':' + str(sdk / 'llvm/bin') + ':' + env['PATH']
+    identity = json.loads(subprocess.check_output([str(python), '-I', '-c',
+        'import sys,sysconfig,json;print(json.dumps([list(sys.version_info[:3]),sys.platform,sysconfig.get_config_var("SOABI"),sysconfig.get_config_var("INSTSONAME")]))'], env=env, text=True))
+    if identity != [[3, 13, 13], 'ohos', 'cpython-313-aarch64-linux-ohos', 'libpython3.13.so']:
+        raise RuntimeError('NumPy must use newly built unversioned native3.13 shared Python')
+    verify_source(root)
+    # Direct Meson/Cython execution needs pure source imports, not a wheel install.
+    boot = []
+    for entry in LOCK['sources']:
+        if entry['name'] in ('numpy', 'meson'):
+            continue
+        path = root / 'sources' / entry['directory']
+        boot.extend([str(path / 'src'), str(path)])
+    env.update(PYTHONPATH=':'.join(boot), NUMPY_PYTHON_PREFIX=str(prefix), PIP_NO_INDEX='1',
+        MESON_NUM_PROCESSES='2', CMAKE_BUILD_PARALLEL_LEVEL='2', LC_ALL='C')
+    launch = root / 'launchers'; launch.mkdir(exist_ok=True)
+    base = ['--target=aarch64-unknown-linux-ohos', '--sysroot=' + str(sdk / 'sysroot'), '-fuse-ld=lld', '-Wl,--threads=1']
+    for name, compiler, extra in [('cc', sdk / 'llvm/bin/clang', []), ('cxx', sdk / 'llvm/bin/clang++', ['-static-libstdc++'])]:
+        file = launch / name
+        text = '#!/usr/bin/sh\nexec ' + shlex.join([str(python), str(HERE / 'sign_compiler.py'), str(compiler), *base, *extra, '--']) + ' "$@"\n'
+        if file.exists() and file.read_text() != text:
+            raise RuntimeError('NumPy launcher changed')
+        file.write_text(text); file.chmod(0o755)
+    cython = root / 'sources/cython-3.0.11/cython.py'
+    meson = root / 'work/numpy-2.3.4/vendored-meson/meson/meson.py'
+    file = launch / 'cython'; file.write_text('#!/usr/bin/sh\nexec ' + shlex.join([str(python), str(cython)]) + ' "$@"\n'); file.chmod(0o755)
+    native = root / 'native.ini'
+    native.write_text("[binaries]\nc = '" + str(launch / 'cc') + "'\ncpp = '" + str(launch / 'cxx') + "'\ncython = '" + str(launch / 'cython') + "'\npython = '" + str(python) + "'\nar = '" + str(sdk / 'llvm/bin/llvm-ar') + "'\nstrip = '" + str(sdk / 'llvm/bin/llvm-strip') + "'\n")
+    for tool in ('ninja', 'binary-sign-tool', 'llvm-readelf'):
+        if not shutil.which(tool, path=env['PATH']):
+            raise RuntimeError('Native NumPy tool absent: ' + tool)
+    return python, meson, cython, env
+
+
+def run(root, env, command, label, cwd=None):
+    return python_driver.run(command, root, env, label, cwd)
+
+
+def configure(args, root):
+    source = root / 'work/numpy-2.3.4'
+    if source.exists() or (root / 'build').exists():
+        raise RuntimeError('Refusing existing mutable NumPy source/object configuration')
+    verify_source(root)
+    source.parent.mkdir(exist_ok=True)
+    shutil.copytree(root / 'sources/numpy-2.3.4', source, symlinks=True)
+    python, meson, cython, env = environment(args, root)
+    run(root, env, [python, cython, '--version'], 'cython-version')
+    run(root, env, [python, meson, '--version'], 'vendored-meson-version')
+    run(root, env, [python, meson, 'setup', root / 'build', source, '--native-file', root / 'native.ini',
+        '--prefix', root / 'install', '--libdir', 'lib', '--buildtype', 'release', '--wrap-mode', 'nodownload',
+        '-Dstrip=false', '-Ddebug=false', '-Dblas=none', '-Dlapack=none', '-Dallow-noblas=true', '-Dpython.bytecompile=0',
+        '-Dpython.platlibdir=lib/python3.13/site-packages', '-Dpython.purelibdir=lib/python3.13/site-packages'], 'configure')
+    python_driver.json_write(root / 'configured.json', {'source_lock': python_driver.digest(HERE / 'sources.lock.json'),
+        'python_prefix': str(args.build_root / 'runtime'), 'soname': 'libpython3.13.so', 'jobs': 2, 'link_threads': 1,
+        'native_ini': python_driver.digest(root / 'native.ini'), 'build_started': False})
+
+
+def build_and_install(args, root):
+    python, meson, _, env = environment(args, root)
+    if not (root / 'configured.json').exists():
+        raise RuntimeError('Configure the fresh native NumPy build first')
+    prefix = root / 'install'
+    if prefix.exists() or (root / 'ready-runtime').exists():
+        raise RuntimeError('Refusing to overwrite an executed/published NumPy prefix')
+    run(root, env, ['ninja', '-C', root / 'build', '-j2'], 'build')
+    # Meson depfixer only writes brand-new never-executed TMPDIR copied inodes.
+    # Final signatures follow all RPATH edits, then one same-filesystem publish.
+    with tempfile.TemporaryDirectory(prefix='hap-numpy-install-', dir=os.environ['TMPDIR']) as td:
+        stage = Path(td)
+        run(root, env, [python, meson, 'install', '-C', root / 'build', '--no-rebuild', '--destdir', stage], 'install-staged')
+        staged = stage / prefix.relative_to('/')
+        if not staged.is_dir():
+            raise RuntimeError('NumPy isolated DESTDIR missing')
+        libraries = sorted(staged.rglob('*.so'))
+        if len(libraries) != 19:
+            raise RuntimeError('NumPy install must contain exactly 19 extensions')
+        for file in libraries:
+            recipe.sign_file(file, env)
+        notices = staged / 'share/licenses/numpy'; notices.mkdir(parents=True)
+        for name in ('LICENSE.txt', 'LICENSES_bundled.txt'):
+            shutil.copyfile(root / 'sources/numpy-2.3.4' / name, notices / name)
+        shutil.copyfile(HERE / 'sources.lock.json', notices / 'sources.lock.json')
+        sdk = Path.home() / '.oheco/packages/ohos-sdk-native/26.0.0.35-Beta'
+        shutil.copyfile(sdk / 'NOTICE.txt', notices / 'NOTICE.sdk-static-libcxx15.txt')
+        shutil.copytree(staged, root / 'ready-runtime', symlinks=True)
+    os.replace(root / 'ready-runtime', prefix)
+    run(root, env, [python, '-I', HERE / 'verify.py', prefix, root / 'validation.json'], 'verify')
+    verify_source(root)
+    print('Fresh unversioned NumPy native build/install/sign/array/linalg/FFT/random/FFI verified', flush=True)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('stage', choices=['prepare', 'configure', 'build', 'all', 'verify-source', 'verify'])
+    parser.add_argument('--repo-root', type=Path, default=HERE.parents[3] / 'blender')
+    parser.add_argument('--build-root', type=Path, default=Path(os.environ['XDG_CACHE_HOME']) / 'blender-ohos-python-hap')
+    args = parser.parse_args(); args.repo_root = args.repo_root.resolve()
+    args.build_root = recipe.private_build(args.build_root)
+    python_driver.seal()
+    root = args.build_root / 'numpy'
+    if args.stage == 'prepare':
+        prepare(args, root); return
+    with (root / '.build.lock').open('a+') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        os.setpriority(os.PRIO_PROCESS, 0, 10)
+        if args.stage == 'verify-source':
+            verify_source(root)
+        elif args.stage == 'configure':
+            configure(args, root)
+        elif args.stage == 'all':
+            prepare(args, root); configure(args, root); build_and_install(args, root)
+        elif args.stage == 'build':
+            build_and_install(args, root)
+        else:
+            python, _, _, env = environment(args, root)
+            run(root, env, [python, '-I', HERE / 'verify.py', root / 'install', root / 'validation.json'], 'verify')
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except (ValueError, RuntimeError, OSError, subprocess.CalledProcessError) as error:
+        print('hap-numpy: ' + str(error), file=sys.stderr)
+        sys.exit(1)

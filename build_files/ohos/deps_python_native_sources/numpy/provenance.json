@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "evidence": [
+    {
+      "new_path": "evidence/accepted-sources.lock.json",
+      "original_readonly_origin": "blender-ohos-work/python/hap/numpy/sources.lock.json",
+      "size": 9405,
+      "sha256": "9b513c9cafc2b91de64c755f09cdb25cc18ca1ed6b46b02b9275e4d42608b79d",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-driver.py.txt",
+      "original_readonly_origin": "blender-ohos-work/python/hap/numpy/driver.py",
+      "size": 11971,
+      "sha256": "0941b36103a2373294d16a230231119e138d64db81cea813b058732fb876dad1",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-sign-compiler.py.txt",
+      "original_readonly_origin": "blender-ohos-work/python/hap/numpy/sign_compiler.py",
+      "size": 5107,
+      "sha256": "b8fd03097d6472c69a006c84ce36c582b499cce9e7322ef08d8f8fbb5f9a6c61",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-verify.py.txt",
+      "original_readonly_origin": "blender-ohos-work/python/hap/numpy/verify.py",
+      "size": 4584,
+      "sha256": "0559970e730cbe6ca634521c93a0a55174f15822125caa277d74a4584170933e",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-toolchain-inputs.json",
+      "original_readonly_origin": "blender-ohos-work/python/hap/numpy/toolchain-inputs.json",
+      "size": 1805,
+      "sha256": "eb8f1d4c589bcfef678f353b72a861e97c3dc76b3d9772b9a54b9b9f5013d926",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-numpy-validation.json",
+      "original_readonly_origin": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/validation.json",
+      "size": 8123,
+      "sha256": "180f5ac5a977a050df7b614f86a97eb8a3a4cd939c2ff925c5587a860065c2cb",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-configured.json",
+      "original_readonly_origin": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/configured.json",
+      "size": 358,
+      "sha256": "243782d3d8942db7ab88ad390ec68d7e88a25cfba55e357bdbf997754165274a",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-runtime-immutability.json",
+      "original_readonly_origin": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime-immutability.json",
+      "size": 141,
+      "sha256": "76294701a9a3eebf989bc8f29afea512607a3830402c1debed1a3ca5e371f0dc",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    },
+    {
+      "new_path": "evidence/accepted-python-validation.json",
+      "original_readonly_origin": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/validation.json",
+      "size": 5094,
+      "sha256": "ead6ba9ef64c260c02171ba1d69e01c68fed90a052354ed8b059624a74cfe934",
+      "scope": "Historical source/profile evidence only; never executed, imported or consumed as new runtime output"
+    }
+  ],
+  "old_versioned_recipe_inspected": "blender-ohos-work/python/numpy/native_numpy.py and handoff.json; libpython3.13.so.1.0 profile excluded from replay",
+  "scope": "ONLY new NumPy namespace; no existing source/cache/SDK/accepted root/formal150 mutations",
+  "native_configure_compile_probe": "NOTRUN",
+  "NumPy_runtime": "NOTRUN",
+  "HAP": "NOTRUN"
+}

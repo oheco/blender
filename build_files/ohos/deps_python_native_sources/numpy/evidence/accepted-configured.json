@@ -1,0 +1,9 @@
+{
+  "build_started": false,
+  "jobs": 2,
+  "link_threads": 1,
+  "native_ini": "7644e72c1da6c0c3bc8754c165eb1c1512743c00f06acf8526d3c0fad3fe56af",
+  "python_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime",
+  "soname": "libpython3.13.so",
+  "source_lock": "9b513c9cafc2b91de64c755f09cdb25cc18ca1ed6b46b02b9275e4d42608b79d"
+}

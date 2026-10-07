@@ -1,0 +1,1 @@
+import blender_hap_native; blender_hap_native.install()

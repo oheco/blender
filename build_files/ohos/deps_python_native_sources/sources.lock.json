@@ -1,0 +1,814 @@
+{
+  "kind": "python-numpy-native-offline-complete-source-replay",
+  "native_toolchain": "SDK26.0.0.35-Beta Clang15.0.4",
+  "network_at_build_time": false,
+  "numpy": "2.3.4",
+  "python": "3.13.13",
+  "real_SONAME": "source-selected libpython3.13.so before link/sign",
+  "schema": 1,
+  "selected_pure8_lock": "build_files/ohos/deps_python_native_sources/resources/selected-pure8.lock.json",
+  "six_PIC_dependencies": "all independently source built, accepted closure provenance only",
+  "source_groups": [
+    "python",
+    "numpy",
+    "tools"
+  ],
+  "sources": [
+    {
+      "commit": "01104ce1beb3135c2e0c01ec835b994c1f55a1c0",
+      "directory": "Python-3.13.13",
+      "filename": "Python-3.13.13.tar.xz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "PSF-2.0 and retained incorporated-software notices; documentation examples PSF-2.0 OR 0BSD",
+      "license_files": [
+        "LICENSE",
+        "Modules/expat/COPYING",
+        "Modules/_decimal/libmpdec/mpdecimal.h",
+        "Modules/_hacl/Hacl_Hash_MD5.c"
+      ],
+      "manifest": "tpr/sources/cpython-3.13.13/manifest.json",
+      "name": "cpython",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "2ab91ff401783ccca64f75d10c882e957bdfd60e2bf5a72f8421793729b78a71",
+          "size": 22957612
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/cpython-3.13.13.patched.json",
+      "patched_inventory_sha256": "66cfcfdb18dd5608a2a5663885b3b177311ca0bba61ad105de24524ee6212ab1",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/cpython-3.13.13.pristine.json",
+      "pristine_inventory_sha256": "7fde2058846ee794bd7a92337c43e0d2b376400ae02f08e6c2471fc024078ad9",
+      "registry_id": "cpython-3.13.13",
+      "role": "cpython",
+      "schema_version": 1,
+      "sha256": "2ab91ff401783ccca64f75d10c882e957bdfd60e2bf5a72f8421793729b78a71",
+      "size": 22957612,
+      "source_file_objects": 4839,
+      "tag": "v3.13.13",
+      "upstream_repository": "https://github.com/python/cpython",
+      "url": "https://www.python.org/ftp/python/3.13.13/Python-3.13.13.tar.xz",
+      "version": "3.13.13"
+    },
+    {
+      "directory": "openssl-3.5.8",
+      "filename": "openssl-3.5.8.tar.gz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "Apache-2.0",
+      "license_files": [
+        "LICENSE.txt"
+      ],
+      "manifest": "tpr/sources/openssl-3.5.8/manifest.json",
+      "name": "openssl",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "74c6bfd848c355bae0292151617839fbc9ce87405b0b9c540113652bc924f4c8",
+          "size": 33554432
+        },
+        {
+          "filename": "source.part0001",
+          "sha256": "ca862f2fe5320068a11c59e90af910c663168c8f8ccabbcc644e472d636cfb90",
+          "size": 19659386
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/openssl-3.5.8.patched.json",
+      "patched_inventory_sha256": "045c7e07f26b10a9b352e41bfd6b0cc594e7c85937a8ae97830ee363d1de70e8",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/openssl-3.5.8.pristine.json",
+      "pristine_inventory_sha256": "18b8b70689741b1a335b938bfc1e55b238284e225900eb19e3d57e6aa7db2217",
+      "registry_id": "openssl-3.5.8",
+      "role": "runtime",
+      "schema_version": 1,
+      "sha256": "a8f84a39918ec6415ce765d9b429d313ba97b8143169c172e734b9514464f5b2",
+      "size": 53213818,
+      "source_file_objects": 5768,
+      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.8/openssl-3.5.8.tar.gz",
+      "version": "3.5.8"
+    },
+    {
+      "directory": "libffi-3.5.2",
+      "filename": "libffi-3.5.2.tar.gz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "MIT; build tooling separate licenses",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-BUILDTOOLS"
+      ],
+      "manifest": "tpr/sources/libffi-3.5.2/manifest.json",
+      "name": "libffi",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "f3a3082a23b37c293a4fcd1053147b371f2ff91fa7ea1b2a52e335676bac82dc",
+          "size": 1423124
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/libffi-3.5.2.patched.json",
+      "patched_inventory_sha256": "f19f955f9312f5559e35bdc108a6a62e6de743078d7434785e42546db7f24ab5",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/libffi-3.5.2.pristine.json",
+      "pristine_inventory_sha256": "66697b7b1b418e81c24a101eeb307564e15c9c61b4a33d5948ffe2ba09bc4b36",
+      "registry_id": "libffi-3.5.2",
+      "role": "runtime",
+      "schema_version": 1,
+      "sha256": "f3a3082a23b37c293a4fcd1053147b371f2ff91fa7ea1b2a52e335676bac82dc",
+      "size": 1423124,
+      "source_file_objects": 455,
+      "url": "https://github.com/libffi/libffi/releases/download/v3.5.2/libffi-3.5.2.tar.gz",
+      "version": "3.5.2"
+    },
+    {
+      "directory": "xz-5.8.4",
+      "filename": "xz-5.8.4.tar.gz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "liblzma 0BSD; complete source archive retains LGPL/GPL build/scripts notices",
+      "license_files": [
+        "COPYING",
+        "COPYING.0BSD",
+        "COPYING.LGPLv2.1",
+        "COPYING.GPLv2",
+        "COPYING.GPLv3"
+      ],
+      "manifest": "tpr/sources/xz-5.8.4/manifest.json",
+      "name": "xz",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "0014c7886930454fe8bd4228665b51af55eeae560ea135c9c4cd33f55b2591d9",
+          "size": 2799797
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/xz-5.8.4.patched.json",
+      "patched_inventory_sha256": "74b725be8a5edf8f7df820585f57fd3824ff60a431dc078c3e99206044e28d9a",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/xz-5.8.4.pristine.json",
+      "pristine_inventory_sha256": "661cd1951fd3858930055a8e1a77e5f9908d698c90f80e75d0e6b1e82bb8aef3",
+      "registry_id": "xz-5.8.4",
+      "role": "runtime",
+      "schema_version": 1,
+      "sha256": "0014c7886930454fe8bd4228665b51af55eeae560ea135c9c4cd33f55b2591d9",
+      "size": 2799797,
+      "source_file_objects": 655,
+      "url": "https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.gz",
+      "version": "5.8.4"
+    },
+    {
+      "directory": "sqlite-autoconf-3510200",
+      "filename": "sqlite-autoconf-3510200.tar.gz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "SQLite public domain; autosetup/build tooling retains separate notices",
+      "license_files": [
+        "sqlite3.h",
+        "autosetup/LICENSE"
+      ],
+      "manifest": "tpr/sources/sqlite-3.51.2/manifest.json",
+      "name": "sqlite",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "fbd89f866b1403bb66a143065440089dd76100f2238314d92274a082d4f2b7bb",
+          "size": 3208444
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/sqlite-3.51.2.patched.json",
+      "patched_inventory_sha256": "9c41a5b2c234309c8f58884eb51c99ad98acacfd10860d72e61d672213f270c5",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/sqlite-3.51.2.pristine.json",
+      "pristine_inventory_sha256": "9c41a5b2c234309c8f58884eb51c99ad98acacfd10860d72e61d672213f270c5",
+      "registry_id": "sqlite-3.51.2",
+      "role": "runtime",
+      "schema_version": 1,
+      "sha256": "fbd89f866b1403bb66a143065440089dd76100f2238314d92274a082d4f2b7bb",
+      "size": 3208444,
+      "source_file_objects": 48,
+      "url": "https://sqlite.org/2026/sqlite-autoconf-3510200.tar.gz",
+      "version": "3.51.2"
+    },
+    {
+      "directory": "bzip2-1.0.8",
+      "filename": "bzip2-1.0.8.tar.gz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "bzip2-1.0.6",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/bzip2-1.0.8/manifest.json",
+      "name": "bzip2",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+          "size": 810029
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/bzip2-1.0.8.patched.json",
+      "patched_inventory_sha256": "76228b44a370b79d1301197fc14962b58b51870b74d49a4b03a191f65d9c87ee",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/bzip2-1.0.8.pristine.json",
+      "pristine_inventory_sha256": "76228b44a370b79d1301197fc14962b58b51870b74d49a4b03a191f65d9c87ee",
+      "registry_id": "bzip2-1.0.8",
+      "role": "runtime",
+      "schema_version": 1,
+      "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+      "size": 810029,
+      "source_file_objects": 56,
+      "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+      "version": "1.0.8"
+    },
+    {
+      "directory": "zlib-1.3.1",
+      "filename": "zlib-1.3.1.tar.gz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "Zlib",
+      "license_files": [
+        "README",
+        "zlib.h"
+      ],
+      "manifest": "tpr/sources/zlib-1.3.1/manifest.json",
+      "name": "zlib",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+          "size": 1512791
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/zlib-1.3.1.patched.json",
+      "patched_inventory_sha256": "73e2b80c03d7b4893496c9e9f34416dfe1014c857d5e5cf64a107552b525335c",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/zlib-1.3.1.pristine.json",
+      "pristine_inventory_sha256": "73e2b80c03d7b4893496c9e9f34416dfe1014c857d5e5cf64a107552b525335c",
+      "registry_id": "zlib-1.3.1",
+      "role": "runtime",
+      "schema_version": 1,
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791,
+      "source_file_objects": 253,
+      "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+      "version": "1.3.1"
+    },
+    {
+      "directory": "make-4.4.1",
+      "filename": "make-4.4.1.tar.gz",
+      "format": "original-archive-parts",
+      "group": "python",
+      "kind": "source",
+      "license": "GPL-3.0-or-later",
+      "license_files": [
+        "COPYING"
+      ],
+      "manifest": "tpr/sources/make-source-4.4.1/manifest.json",
+      "name": "make-source",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3",
+          "size": 2348200
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/make-source-4.4.1.patched.json",
+      "patched_inventory_sha256": "86c36cbc61daa3bbaf3f6755659c33a502ad440c5dd6e20a2b777e0353c1fc49",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/make-source-4.4.1.pristine.json",
+      "pristine_inventory_sha256": "b30e800273d8791d078e50ea9e4544343eb89503baa71a0f44b6f99ba153ca3f",
+      "registry_id": "make-source-4.4.1",
+      "role": "tool-source",
+      "schema_version": 1,
+      "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3",
+      "size": 2348200,
+      "source_file_objects": 395,
+      "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+      "version": "4.4.1"
+    },
+    {
+      "directory": "numpy-2.3.4",
+      "filename": "numpy-2.3.4.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        ".spin/LICENSE",
+        "LICENSE.txt",
+        "LICENSES_bundled.txt"
+      ],
+      "manifest": "tpr/sources/numpy-2.3.4/manifest.json",
+      "name": "numpy",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+          "size": 20582187
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/numpy-2.3.4.patched.json",
+      "patched_inventory_sha256": "0a962f0eb71b67da77d6e45f922da856024eb6459c4f7b337437c3f9411169e4",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/numpy-2.3.4.pristine.json",
+      "pristine_inventory_sha256": "daf33667e2f6410b33d4c7723bb0c068b22f8f2ce674a043d3108f97cfc3e453",
+      "registry_id": "numpy-2.3.4",
+      "role": "numpy",
+      "schema_version": 1,
+      "sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+      "size": 20582187,
+      "source_file_objects": 8129,
+      "url": "https://github.com/numpy/numpy/releases/download/v2.3.4/numpy-2.3.4.tar.gz",
+      "version": "2.3.4"
+    },
+    {
+      "directory": "cython-3.0.11",
+      "filename": "cython-3.0.11.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "Apache-2.0",
+      "license_files": [
+        "COPYING.txt",
+        "LICENSE.txt"
+      ],
+      "manifest": "tpr/sources/cython-3.0.11/manifest.json",
+      "name": "cython",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff",
+          "size": 2755544
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/cython-3.0.11.patched.json",
+      "patched_inventory_sha256": "75d3da51a66f727b53bcea850742d4cb1367d88a4cc5217217a38de122add795",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/cython-3.0.11.pristine.json",
+      "pristine_inventory_sha256": "75d3da51a66f727b53bcea850742d4cb1367d88a4cc5217217a38de122add795",
+      "registry_id": "cython-3.0.11",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff",
+      "size": 2755544,
+      "source_file_objects": 2427,
+      "url": "https://github.com/cython/cython/releases/download/3.0.11-1/cython-3.0.11.tar.gz",
+      "version": "3.0.11"
+    },
+    {
+      "directory": "meson-1.9.0",
+      "filename": "meson-1.9.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "Apache-2.0",
+      "license_files": [
+        "COPYING",
+        "packaging/License.rtf"
+      ],
+      "manifest": "tpr/sources/meson-1.9.0/manifest.json",
+      "name": "meson",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+          "size": 2366082
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/meson-1.9.0.patched.json",
+      "patched_inventory_sha256": "a29c5b1ad4e2899a4481857befab2a2b2313b6141c0ba97bac2f7c116b813f8d",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/meson-1.9.0.pristine.json",
+      "pristine_inventory_sha256": "a29c5b1ad4e2899a4481857befab2a2b2313b6141c0ba97bac2f7c116b813f8d",
+      "registry_id": "meson-1.9.0",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+      "size": 2366082,
+      "source_file_objects": 4720,
+      "url": "https://files.pythonhosted.org/packages/0a/8a/8315a2711dd269533019d7fdad1cf79416aadff454c539c2da88bc6e7200/meson-1.9.0.tar.gz",
+      "version": "1.9.0"
+    },
+    {
+      "directory": "meson_python-0.18.0",
+      "filename": "meson_python-0.18.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/meson-python-0.18.0/manifest.json",
+      "name": "meson-python",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d",
+          "size": 95630
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/meson-python-0.18.0.patched.json",
+      "patched_inventory_sha256": "9c3723c959f1aa1da0d48d68354cf2d1b13944f5deeb2aa4db05dacbad900f5f",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/meson-python-0.18.0.pristine.json",
+      "pristine_inventory_sha256": "9c3723c959f1aa1da0d48d68354cf2d1b13944f5deeb2aa4db05dacbad900f5f",
+      "registry_id": "meson-python-0.18.0",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d",
+      "size": 95630,
+      "source_file_objects": 241,
+      "url": "https://files.pythonhosted.org/packages/26/bd/fdb26366443620f1a8a4d4ec7bfa37d1fbbe7bf737b257c205bbcf95ba95/meson_python-0.18.0.tar.gz",
+      "version": "0.18.0"
+    },
+    {
+      "directory": "setuptools-80.9.0",
+      "filename": "setuptools-80.9.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/setuptools-80.9.0/manifest.json",
+      "name": "setuptools",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c",
+          "size": 1319958
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/setuptools-80.9.0.patched.json",
+      "patched_inventory_sha256": "613861390e31b0b1fdcc141d047e6e20d5ed077efa21a8da1fbe610015254a00",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/setuptools-80.9.0.pristine.json",
+      "pristine_inventory_sha256": "613861390e31b0b1fdcc141d047e6e20d5ed077efa21a8da1fbe610015254a00",
+      "registry_id": "setuptools-80.9.0",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c",
+      "size": 1319958,
+      "source_file_objects": 582,
+      "url": "https://files.pythonhosted.org/packages/18/5d/3bf57dcd21979b887f014ea83c24ae194cfcd12b9e0fda66b957c69d1fca/setuptools-80.9.0.tar.gz",
+      "version": "80.9.0"
+    },
+    {
+      "directory": "setuptools_scm-9.2.2",
+      "filename": "setuptools_scm-9.2.2.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/setuptools-scm-9.2.2/manifest.json",
+      "name": "setuptools-scm",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "1c674ab4665686a0887d7e24c03ab25f24201c213e82ea689d2f3e169ef7ef57",
+          "size": 203385
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/setuptools-scm-9.2.2.patched.json",
+      "patched_inventory_sha256": "a434328a0f46e922d625c43757b7329e72d51073bec5b5b9df54d89194ef37c3",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/setuptools-scm-9.2.2.pristine.json",
+      "pristine_inventory_sha256": "a434328a0f46e922d625c43757b7329e72d51073bec5b5b9df54d89194ef37c3",
+      "registry_id": "setuptools-scm-9.2.2",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "1c674ab4665686a0887d7e24c03ab25f24201c213e82ea689d2f3e169ef7ef57",
+      "size": 203385,
+      "source_file_objects": 104,
+      "url": "https://files.pythonhosted.org/packages/7b/b1/19587742aad604f1988a8a362e660e8c3ac03adccdb71c96d86526e5eb62/setuptools_scm-9.2.2.tar.gz",
+      "version": "9.2.2"
+    },
+    {
+      "directory": "packaging-25.0",
+      "filename": "packaging-25.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "license_files": [
+        "LICENSE",
+        "LICENSE.APACHE",
+        "LICENSE.BSD",
+        "docs/licenses.rst"
+      ],
+      "manifest": "tpr/sources/packaging-25.0/manifest.json",
+      "name": "packaging",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f",
+          "size": 165727
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/packaging-25.0.patched.json",
+      "patched_inventory_sha256": "b82a1b06eea22a8c45ce7af00a294986ed044817c1f193bdd8ac66b9b21d597f",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/packaging-25.0.pristine.json",
+      "pristine_inventory_sha256": "b82a1b06eea22a8c45ce7af00a294986ed044817c1f193bdd8ac66b9b21d597f",
+      "registry_id": "packaging-25.0",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f",
+      "size": 165727,
+      "source_file_objects": 79,
+      "url": "https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz",
+      "version": "25.0"
+    },
+    {
+      "directory": "pyproject_metadata-0.9.1",
+      "filename": "pyproject_metadata-0.9.1.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/pyproject-metadata-0.9.1/manifest.json",
+      "name": "pyproject-metadata",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "b8b2253dd1b7062b78cf949a115f02ba7fa4114aabe63fa10528e9e1a954a816",
+          "size": 38415
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/pyproject-metadata-0.9.1.patched.json",
+      "patched_inventory_sha256": "2c215cc8437a753acd29dc079a91d9bc473aa91449d348f6c72917310f13448c",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/pyproject-metadata-0.9.1.pristine.json",
+      "pristine_inventory_sha256": "2c215cc8437a753acd29dc079a91d9bc473aa91449d348f6c72917310f13448c",
+      "registry_id": "pyproject-metadata-0.9.1",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "b8b2253dd1b7062b78cf949a115f02ba7fa4114aabe63fa10528e9e1a954a816",
+      "size": 38415,
+      "source_file_objects": 38,
+      "url": "https://files.pythonhosted.org/packages/64/ae/5fa065b049e97f96880de0611dbba513f0ee313b6edd0a64664c7b46a8e8/pyproject_metadata-0.9.1.tar.gz",
+      "version": "0.9.1"
+    },
+    {
+      "directory": "tomli_w-1.2.0",
+      "filename": "tomli_w-1.2.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/tomli-w-1.2.0/manifest.json",
+      "name": "tomli-w",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021",
+          "size": 7184
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/tomli-w-1.2.0.patched.json",
+      "patched_inventory_sha256": "7995fc264581cd07c7ea81d13413a867fc9a0ed46e10f0f3e947556a08417d85",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/tomli-w-1.2.0.pristine.json",
+      "pristine_inventory_sha256": "7995fc264581cd07c7ea81d13413a867fc9a0ed46e10f0f3e947556a08417d85",
+      "registry_id": "tomli-w-1.2.0",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021",
+      "size": 7184,
+      "source_file_objects": 7,
+      "url": "https://files.pythonhosted.org/packages/19/75/241269d1da26b624c0d5e110e8149093c759b7a286138f4efd61a60e75fe/tomli_w-1.2.0.tar.gz",
+      "version": "1.2.0"
+    },
+    {
+      "directory": "wheel-0.45.1",
+      "filename": "wheel-0.45.1.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE.txt"
+      ],
+      "manifest": "tpr/sources/wheel-0.45.1/manifest.json",
+      "name": "wheel",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729",
+          "size": 107545
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/wheel-0.45.1.patched.json",
+      "patched_inventory_sha256": "9f93e10781adf1245e99663e2a104b5a8376f09e1f5ef8e6845dea2ff52ea7ea",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/wheel-0.45.1.pristine.json",
+      "pristine_inventory_sha256": "9f93e10781adf1245e99663e2a104b5a8376f09e1f5ef8e6845dea2ff52ea7ea",
+      "registry_id": "wheel-0.45.1",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729",
+      "size": 107545,
+      "source_file_objects": 102,
+      "url": "https://files.pythonhosted.org/packages/8a/98/2d9906746cdc6a6ef809ae6338005b3f21bb568bea3165cfc6a243fdc25c/wheel-0.45.1.tar.gz",
+      "version": "0.45.1"
+    },
+    {
+      "directory": "build-1.3.0",
+      "filename": "build-1.3.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/build-1.3.0/manifest.json",
+      "name": "build",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "698edd0ea270bde950f53aed21f3a0135672206f3911e0176261a31e0e07b397",
+          "size": 48544
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/build-1.3.0.patched.json",
+      "patched_inventory_sha256": "23ec03b78de3fcf173418ed9bde1831bf8b9aeeb27936ea61671a2947acd14a0",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/build-1.3.0.pristine.json",
+      "pristine_inventory_sha256": "23ec03b78de3fcf173418ed9bde1831bf8b9aeeb27936ea61671a2947acd14a0",
+      "registry_id": "build-1.3.0",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "698edd0ea270bde950f53aed21f3a0135672206f3911e0176261a31e0e07b397",
+      "size": 48544,
+      "source_file_objects": 72,
+      "url": "https://files.pythonhosted.org/packages/25/1c/23e33405a7c9eac261dff640926b8b5adaed6a6eb3e1767d441ed611d0c0/build-1.3.0.tar.gz",
+      "version": "1.3.0"
+    },
+    {
+      "directory": "pyproject_hooks-1.2.0",
+      "filename": "pyproject_hooks-1.2.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "numpy",
+      "kind": "source",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/pyproject-hooks-1.2.0/manifest.json",
+      "name": "pyproject-hooks",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8",
+          "size": 19228
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/pyproject-hooks-1.2.0.patched.json",
+      "patched_inventory_sha256": "d4c8c4f4dc3a50f98b0868d2d419717740a6a5a290c741b2afceb87899cc57ec",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/pyproject-hooks-1.2.0.pristine.json",
+      "pristine_inventory_sha256": "d4c8c4f4dc3a50f98b0868d2d419717740a6a5a290c741b2afceb87899cc57ec",
+      "registry_id": "pyproject-hooks-1.2.0",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8",
+      "size": 19228,
+      "source_file_objects": 58,
+      "url": "https://files.pythonhosted.org/packages/e7/82/28175b2414effca1cdac8dc99f76d660e7a4fb0ceefa4b4ab8f5f6742925/pyproject_hooks-1.2.0.tar.gz",
+      "version": "1.2.0"
+    },
+    {
+      "directory": "ninja-1.13.2",
+      "filename": "ninja-v1.13.2.tar.gz",
+      "format": "original-archive-parts",
+      "group": "tools",
+      "kind": "source",
+      "license": "Apache-2.0",
+      "license_files": [
+        "COPYING"
+      ],
+      "manifest": "tpr/sources/ninja-1.13.2/manifest.json",
+      "name": "ninja",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+          "size": 292385
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/ninja-1.13.2.patched.json",
+      "patched_inventory_sha256": "ff7378ffedcf123a374690d7f7968a6380151a78d7e082b633d54aeea8f6ba3a",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/ninja-1.13.2.pristine.json",
+      "pristine_inventory_sha256": "ff7378ffedcf123a374690d7f7968a6380151a78d7e082b633d54aeea8f6ba3a",
+      "registry_id": "ninja-1.13.2",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+      "size": 292385,
+      "source_file_objects": 185,
+      "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz",
+      "version": "1.13.2"
+    },
+    {
+      "directory": "perl-5.44.0",
+      "filename": "perl-5.44.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "tools",
+      "kind": "source",
+      "license": "Artistic-1.0 OR GPL-1.0-or-later; original bundled notices",
+      "license_files": [
+        "Copying",
+        "Artistic"
+      ],
+      "manifest": "tpr/sources/perl-5.44.0/manifest.json",
+      "name": "perl",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3",
+          "size": 21265451
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/perl-5.44.0.patched.json",
+      "patched_inventory_sha256": "45bc93bc6bdfdcae52fc5969f4f5d227bd1983fc3f8d04c7bc8f4740024e2d0f",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/perl-5.44.0.pristine.json",
+      "pristine_inventory_sha256": "45bc93bc6bdfdcae52fc5969f4f5d227bd1983fc3f8d04c7bc8f4740024e2d0f",
+      "registry_id": "perl-5.44.0",
+      "role": "supplemental-CPAN-original-distinct-from-actual-used-Git-archive",
+      "schema_version": 1,
+      "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3",
+      "size": 21265451,
+      "source_file_objects": 6858,
+      "url": "https://www.cpan.org/src/5.0/perl-5.44.0.tar.gz",
+      "version": "5.44.0"
+    },
+    {
+      "directory": "ohos-perl-bb0517e7437015b24025438084aed0661fb80553",
+      "filename": "ohos-perl-bb0517e7437015b24025438084aed0661fb80553.tar.gz",
+      "format": "original-archive-parts",
+      "group": "tools",
+      "kind": "source",
+      "license": "BSD-2-Clause",
+      "license_files": [
+        "LICENSE"
+      ],
+      "manifest": "tpr/sources/ohos-perl-bb0517e7437015b24025438084aed0661fb80553/manifest.json",
+      "name": "ohos",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "e86252557c71ba633d6f0d9898790efa863d45c7375d5b2429a4484a5c95ec96",
+          "size": 5280
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/ohos-perl-bb0517e7437015b24025438084aed0661fb80553.patched.json",
+      "patched_inventory_sha256": "255ff3632ea17ba056896680fde6c880a1b446ab08ec7c4735b2a4169ddf5990",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/ohos-perl-bb0517e7437015b24025438084aed0661fb80553.pristine.json",
+      "pristine_inventory_sha256": "255ff3632ea17ba056896680fde6c880a1b446ab08ec7c4735b2a4169ddf5990",
+      "registry_id": "ohos-perl-bb0517e7437015b24025438084aed0661fb80553",
+      "role": "source-build-tool",
+      "schema_version": 1,
+      "sha256": "e86252557c71ba633d6f0d9898790efa863d45c7375d5b2429a4484a5c95ec96",
+      "size": 5280,
+      "source_file_objects": 5,
+      "url": "https://github.com/Harmonybrew/ohos-perl/archive/bb0517e7437015b24025438084aed0661fb80553.tar.gz",
+      "version": "bb0517e7437015b24025438084aed0661fb80553"
+    },
+    {
+      "directory": "perl5-5.44.0",
+      "filename": "perl5-v5.44.0.tar.gz",
+      "format": "original-archive-parts",
+      "group": "tools",
+      "kind": "source",
+      "license": "Artistic-1.0 OR GPL-1.0-or-later",
+      "license_files": [
+        "Copying",
+        "Artistic"
+      ],
+      "manifest": "tpr/sources/perl5-v5.44.0/manifest.json",
+      "name": "perl",
+      "parts": [
+        {
+          "filename": "source.part0000",
+          "sha256": "b9a53d539af95412ecce2bdd548eac9beaf559ea48ace5dd8427504c25b01b46",
+          "size": 23036248
+        }
+      ],
+      "patched_inventory": "build_files/ohos/deps_python_native_sources/inventories/perl5-v5.44.0.patched.json",
+      "patched_inventory_sha256": "72b505face7bdf281f50d56b17c4d537608b65976cd9044fbecc0b8dca4ca4cc",
+      "pristine_inventory": "build_files/ohos/deps_python_native_sources/inventories/perl5-v5.44.0.pristine.json",
+      "pristine_inventory_sha256": "b33704b07dec4f203a25f511d5240dde1569fec4ab0b75fde4224b0912639ec1",
+      "registry_id": "perl5-v5.44.0",
+      "role": "actual-used-perl-build-tool-source",
+      "schema_version": 1,
+      "sha256": "b9a53d539af95412ecce2bdd548eac9beaf559ea48ace5dd8427504c25b01b46",
+      "size": 23036248,
+      "source_file_objects": 6949,
+      "url": "https://github.com/Perl/perl5/archive/refs/tags/v5.44.0.tar.gz",
+      "version": "5.44.0"
+    }
+  ],
+  "target_sysconfig_origin": "freshly built CPython3.13.13 only"
+}

@@ -1,0 +1,381 @@
+--- a/config.sub
++++ b/config.sub
+@@ -1769,7 +1769,7 @@
+ 	     | onefs* | tirtos* | phoenix* | fuchsia* | redox* | bme* \
+ 	     | midnightbsd* | amdhsa* | unleashed* | emscripten* | wasi* \
+ 	     | nsk* | powerunix* | genode* | zvmoe* | qnx* | emx* | zephyr* \
+-	     | fiwix* | mlibc* | cos* | mbr* | ironclad* )
++	     | fiwix* | mlibc* | cos* | mbr* | ironclad* | ohos* )
+ 		;;
+ 	# This one is extra strict with allowed versions
+ 	sco3.2v2 | sco3.2v[4-9]* | sco5v6*)
+@@ -1830,7 +1830,7 @@
+ case $kernel-$os-$obj in
+ 	linux-gnu*- | linux-android*- | linux-dietlibc*- | linux-llvm*- \
+ 		    | linux-mlibc*- | linux-musl*- | linux-newlib*- \
+-		    | linux-relibc*- | linux-uclibc*- )
++		    | linux-relibc*- | linux-uclibc*- | linux-ohos*- )
+ 		;;
+ 	uclinux-uclibc*- )
+ 		;;
+--- a/Misc/platform_triplet.c
++++ b/Misc/platform_triplet.c
+@@ -24,6 +24,17 @@
+ PLATFORM_TRIPLET=arm-linux-androideabi
+ #  else
+ #    error unknown Android platform
++#  endif
++
++#elif defined(__OHOS__)
++#  if defined(__aarch64__)
++PLATFORM_TRIPLET=aarch64-linux-ohos
++#  elif defined(__arm__)
++PLATFORM_TRIPLET=arm-linux-ohos
++#  elif defined(__x86_64__)
++PLATFORM_TRIPLET=x86_64-linux-ohos
++#  else
++#    error unknown OpenHarmony platform
+ #  endif
+ 
+ #elif defined(__linux__)
+--- a/Makefile.pre.in
++++ b/Makefile.pre.in
+@@ -168,6 +168,11 @@
+ EXT_SUFFIX=	@EXT_SUFFIX@
+ LDSHARED=	@LDSHARED@ $(PY_LDFLAGS)
+ BLDSHARED=	@BLDSHARED@ $(PY_CORE_LDFLAGS)
++# 3.13's makesetup does not add the build directory to extension link paths.
++# Keep LIBPYTHON versioned and suitable for installed build metadata.
++ifeq ($(MACHDEP),ohos)
++BLDSHARED+= -L.
++endif
+ LDCXXSHARED=	@LDCXXSHARED@ $(PY_LDFLAGS)
+ DESTSHARED=	$(BINLIBDEST)/lib-dynload
+ 
+@@ -917,7 +922,11 @@
+ 		$(BLDSHARED) -o $@ $(LIBRARY_OBJS) $(MODLIBS) $(SHLIBS) $(LIBC) $(LIBM); \
+ 	fi
+ 	if test $(INSTSONAME) != $@; then \
+-		$(LN) -f $(INSTSONAME) $@; \
++		if test "$(MACHDEP)" = "ohos"; then \
++			$(LN) -sf $(INSTSONAME) $@; \
++		else \
++			$(LN) -f $(INSTSONAME) $@; \
++		fi; \
+ 	fi
+ 
+ libpython3.so:	libpython$(LDVERSION).so
+--- a/configure.ac
++++ b/configure.ac
+@@ -318,6 +318,9 @@
+        # a lot of different things including 'define_xopen_source'
+        # in the case statement below.
+ 	case "$host" in
++	*-*-linux-ohos* | *-*-ohos*)
++		ac_sys_system=OpenHarmony
++		;;
+ 	*-*-linux-android*)
+ 		ac_sys_system=Linux-android
+ 		;;
+@@ -347,6 +350,9 @@
+ 	ac_sys_release=
+     else
+ 	ac_sys_system=`uname -s`
++	case $ac_sys_system in
++	    HarmonyOS | OHOS) ac_sys_system=OpenHarmony ;;
++	esac
+ 	if test "$ac_sys_system" = "AIX" \
+ 	-o "$ac_sys_system" = "UnixWare" -o "$ac_sys_system" = "OpenUNIX"; then
+ 		ac_sys_release=`uname -v`
+@@ -363,6 +369,7 @@
+     case $MACHDEP in
+ 	aix*) MACHDEP="aix";;
+ 	linux-android*) MACHDEP="android";;
++	openharmony*) MACHDEP="ohos";;
+ 	linux*) MACHDEP="linux";;
+ 	cygwin*) MACHDEP="cygwin";;
+ 	darwin*) MACHDEP="darwin";;
+@@ -1557,7 +1564,7 @@
+         PY3LIBRARY=libpython3.so
+       fi
+       ;;
+-    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*|OpenBSD*|VxWorks*)
++    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*|OpenBSD*|VxWorks*|OpenHarmony*)
+       LDLIBRARY='libpython$(LDVERSION).so'
+       BLDLIBRARY='-L. -lpython$(LDVERSION)'
+       RUNSHARED=LD_LIBRARY_PATH=`pwd`${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+@@ -3002,6 +3009,10 @@
+           [Define to 1 if you have the ANSI C header files.])
+ 
+ # checks for header files
++AS_IF([test "$ac_sys_system" = "OpenHarmony"], [
++  dnl The SDK may provide an empty libintl.h without gettext declarations.
++  AC_CHECK_DECL([gettext], [], [ac_cv_header_libintl_h=no], [[#include <libintl.h>]])
++])
+ AC_CHECK_HEADERS([ \
+   alloca.h asm/types.h bluetooth.h conio.h direct.h dlfcn.h endian.h errno.h fcntl.h grp.h \
+   io.h langinfo.h libintl.h libutil.h linux/auxvec.h sys/auxv.h linux/fs.h linux/limits.h linux/memfd.h \
+@@ -3497,7 +3508,7 @@
+ 	Emscripten*|WASI*)
+ 		LDSHARED='$(CC) -shared'
+ 		LDCXXSHARED='$(CXX) -shared';;
+-	Linux*|GNU*|QNX*|VxWorks*|Haiku*)
++	Linux*|GNU*|QNX*|VxWorks*|Haiku*|OpenHarmony*)
+ 		LDSHARED='$(CC) -shared'
+ 		LDCXXSHARED='$(CXX) -shared';;
+ 	FreeBSD*)
+@@ -3578,7 +3589,7 @@
+ 		 then CCSHARED="-fPIC";
+ 		 else CCSHARED="+z";
+ 		 fi;;
+-	Linux*|GNU*) CCSHARED="-fPIC";;
++	Linux*|GNU*|OpenHarmony*) CCSHARED="-fPIC";;
+ 	Emscripten*|WASI*)
+ 		AS_VAR_IF([enable_wasm_dynamic_linking], [yes], [
+ 			CCSHARED="-fPIC"
+@@ -3611,7 +3622,7 @@
+ 	    LINKFORSHARED="-Wl,-E -Wl,+s";;
+ #	    LINKFORSHARED="-Wl,-E -Wl,+s -Wl,+b\$(BINLIBDEST)/lib-dynload";;
+ 	Linux-android*) LINKFORSHARED="-pie -Xlinker -export-dynamic";;
+-	Linux*|GNU*) LINKFORSHARED="-Xlinker -export-dynamic";;
++	Linux*|GNU*|OpenHarmony*) LINKFORSHARED="-Xlinker -export-dynamic";;
+ 	# -u libsys_s pulls in all symbols in libsys
+ 	Darwin/*|iOS/*)
+ 		LINKFORSHARED="$extra_undefs -framework CoreFoundation"
+@@ -6318,6 +6329,12 @@
+ AC_SUBST([LIBPYTHON])
+ MODULE_DEPS_SHARED='$(MODULE_DEPS_STATIC) $(EXPORTSYMS)'
+ LIBPYTHON=''
++
++# On OHOS shared modules must explicitly resolve the embedded Python runtime.
++if test "$PY_ENABLE_SHARED" = "1" && test "$MACHDEP" = "ohos"; then
++  MODULE_DEPS_SHARED="$MODULE_DEPS_SHARED \$(LDLIBRARY)"
++  LIBPYTHON="-lpython${VERSION}${ABIFLAGS}"
++fi
+ 
+ # On Android and Cygwin the shared libraries must be linked with libpython.
+ if test "$PY_ENABLE_SHARED" = "1" && ( test -n "$ANDROID_API_LEVEL" || test "$MACHDEP" = "cygwin"); then
+--- a/configure
++++ b/configure
+@@ -4046,6 +4046,9 @@
+        # a lot of different things including 'define_xopen_source'
+        # in the case statement below.
+ 	case "$host" in
++	*-*-linux-ohos* | *-*-ohos*)
++		ac_sys_system=OpenHarmony
++		;;
+ 	*-*-linux-android*)
+ 		ac_sys_system=Linux-android
+ 		;;
+@@ -4075,6 +4078,9 @@
+ 	ac_sys_release=
+     else
+ 	ac_sys_system=`uname -s`
++	case $ac_sys_system in
++	    HarmonyOS | OHOS) ac_sys_system=OpenHarmony ;;
++	esac
+ 	if test "$ac_sys_system" = "AIX" \
+ 	-o "$ac_sys_system" = "UnixWare" -o "$ac_sys_system" = "OpenUNIX"; then
+ 		ac_sys_release=`uname -v`
+@@ -4091,6 +4097,7 @@
+     case $MACHDEP in
+ 	aix*) MACHDEP="aix";;
+ 	linux-android*) MACHDEP="android";;
++	openharmony*) MACHDEP="ohos";;
+ 	linux*) MACHDEP="linux";;
+ 	cygwin*) MACHDEP="cygwin";;
+ 	darwin*) MACHDEP="darwin";;
+@@ -7587,7 +7594,7 @@
+         PY3LIBRARY=libpython3.so
+       fi
+       ;;
+-    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*|OpenBSD*|VxWorks*)
++    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*|OpenBSD*|VxWorks*|OpenHarmony*)
+       LDLIBRARY='libpython$(LDVERSION).so'
+       BLDLIBRARY='-L. -lpython$(LDVERSION)'
+       RUNSHARED=LD_LIBRARY_PATH=`pwd`${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+@@ -10708,6 +10715,14 @@
+ 
+ 
+ # checks for header files
++# OHOS: native declaration probe, equivalent to the paired AC_CHECK_DECL.
++if test "$ac_sys_system" = "OpenHarmony"; then
++  ac_fn_check_decl "$LINENO" "gettext" "ac_cv_have_decl_gettext" "#include <libintl.h>
++" "" "CFLAGS"
++  if test "x$ac_cv_have_decl_gettext" != xyes; then
++    ac_cv_header_libintl_h=no
++  fi
++fi
+ ac_fn_c_check_header_compile "$LINENO" "alloca.h" "ac_cv_header_alloca_h" "$ac_includes_default"
+ if test "x$ac_cv_header_alloca_h" = xyes
+ then :
+@@ -13020,7 +13035,7 @@
+ 	Emscripten*|WASI*)
+ 		LDSHARED='$(CC) -shared'
+ 		LDCXXSHARED='$(CXX) -shared';;
+-	Linux*|GNU*|QNX*|VxWorks*|Haiku*)
++	Linux*|GNU*|QNX*|VxWorks*|Haiku*|OpenHarmony*)
+ 		LDSHARED='$(CC) -shared'
+ 		LDCXXSHARED='$(CXX) -shared';;
+ 	FreeBSD*)
+@@ -13105,7 +13120,7 @@
+ 		 then CCSHARED="-fPIC";
+ 		 else CCSHARED="+z";
+ 		 fi;;
+-	Linux*|GNU*) CCSHARED="-fPIC";;
++	Linux*|GNU*|OpenHarmony*) CCSHARED="-fPIC";;
+ 	Emscripten*|WASI*)
+ 		if test "x$enable_wasm_dynamic_linking" = xyes
+ then :
+@@ -13143,7 +13158,7 @@
+ 	    LINKFORSHARED="-Wl,-E -Wl,+s";;
+ #	    LINKFORSHARED="-Wl,-E -Wl,+s -Wl,+b\$(BINLIBDEST)/lib-dynload";;
+ 	Linux-android*) LINKFORSHARED="-pie -Xlinker -export-dynamic";;
+-	Linux*|GNU*) LINKFORSHARED="-Xlinker -export-dynamic";;
++	Linux*|GNU*|OpenHarmony*) LINKFORSHARED="-Xlinker -export-dynamic";;
+ 	# -u libsys_s pulls in all symbols in libsys
+ 	Darwin/*|iOS/*)
+ 		LINKFORSHARED="$extra_undefs -framework CoreFoundation"
+@@ -24900,6 +24915,12 @@
+ MODULE_DEPS_SHARED='$(MODULE_DEPS_STATIC) $(EXPORTSYMS)'
+ LIBPYTHON=''
+ 
++# On OHOS shared modules must explicitly resolve the embedded Python runtime.
++if test "$PY_ENABLE_SHARED" = "1" && test "$MACHDEP" = "ohos"; then
++  MODULE_DEPS_SHARED="$MODULE_DEPS_SHARED \$(LDLIBRARY)"
++  LIBPYTHON="-lpython${VERSION}${ABIFLAGS}"
++fi
++
+ # On Android and Cygwin the shared libraries must be linked with libpython.
+ if test "$PY_ENABLE_SHARED" = "1" && ( test -n "$ANDROID_API_LEVEL" || test "$MACHDEP" = "cygwin"); then
+   MODULE_DEPS_SHARED="$MODULE_DEPS_SHARED \$(LDLIBRARY)"
+--- a/Lib/ctypes/util.py
++++ b/Lib/ctypes/util.py
+@@ -88,6 +88,17 @@
+     # see issue#26439 and _aix.py for more details
+ 
+     from ctypes._aix import find_library
++
++elif sys.platform == "ohos":
++    def find_library(name):
++        directory = "/system/lib64" if "64" in os.uname().machine else "/system/lib"
++        paths = [path for path in os.environ.get("LD_LIBRARY_PATH", "").split(":") if path]
++        paths.extend((directory, directory + "/platformsdk"))
++        for path in paths:
++            filename = os.path.join(path, f"lib{name}.so")
++            if os.path.isfile(filename):
++                return filename
++        return None
+ 
+ elif sys.platform == "android":
+     def find_library(name):
+--- a/Lib/sysconfig/__init__.py
++++ b/Lib/sysconfig/__init__.py
+@@ -361,6 +361,9 @@
+         _temp = __import__(name, globals(), locals(), ['build_time_vars'], 0)
+     build_time_vars = _temp.build_time_vars
+     vars.update(build_time_vars)
++    if sys.platform == 'ohos' and not _PYTHON_BUILD:
++        from _ohos_support import customize_config_vars
++        customize_config_vars(vars)
+ 
+ def _init_non_posix(vars):
+     """Initialize the module as appropriate for NT"""
+@@ -638,7 +641,9 @@
+     machine = machine.replace(' ', '_')
+     machine = machine.replace('/', '-')
+ 
+-    if osname[:5] == "linux":
++    if osname in ("ohos", "openharmony", "harmonyos") or sys.platform == "ohos":
++        return f"ohos-{machine}"
++    elif osname[:5] == "linux":
+         if sys.platform == "android":
+             osname = "android"
+             release = get_config_var("ANDROID_API_LEVEL")
+--- a/Lib/venv/__init__.py
++++ b/Lib/venv/__init__.py
+@@ -304,6 +304,14 @@
+             copier(context.executable, path)
+             if not os.path.islink(path):
+                 os.chmod(path, 0o755)
++            if sys.platform == 'ohos' and sysconfig.get_config_var('Py_ENABLE_SHARED'):
++                # Copied interpreters resolve $ORIGIN relative to this venv.
++                library = sysconfig.get_config_var('INSTSONAME')
++                source = os.path.join(sys.base_exec_prefix, 'lib', library)
++                destination = os.path.join(context.env_dir, 'lib', library)
++                if not os.path.exists(destination):
++                    copier(source, destination)
++
+             for suffix in ('python', 'python3',
+                            f'python3.{sys.version_info[1]}'):
+                 path = os.path.join(binpath, suffix)
+--- a/Lib/test/test_sysconfig.py
++++ b/Lib/test/test_sysconfig.py
+@@ -384,6 +384,13 @@
+                 self._set_uname(('Linux', 'localhost', '3.18.91+',
+                                 '#1 Tue Jan 9 20:35:43 UTC 2018', machine))
+                 self.assertEqual(get_platform(), f'android-9-{abi}')
++
++        # HarmonyOS PCs and OpenHarmony devices use the same wheel platform.
++        sys.platform = 'ohos'
++        for system in ('HarmonyOS', 'OpenHarmony', 'OHOS'):
++            with self.subTest(system=system):
++                self._set_uname((system, 'localhost', '1.13.0', '', 'aarch64'))
++                self.assertEqual(get_platform(), 'ohos-aarch64')
+ 
+         # XXX more platforms to tests here
+ 
+--- a/Lib/_ohos_support.py
++++ b/Lib/_ohos_support.py
+@@ -0,0 +1,51 @@
++"""Configuration support for relocatable native OpenHarmony installations."""
++import os
++import shlex
++import sys
++
++
++def customize_config_vars(config):
++    # sysconfig's installation schemes already use sys.base_prefix, but its
++    # compiler metadata also contains absolute directories from configure.
++    replacements = (
++        (config.get("exec_prefix"), sys.base_exec_prefix),
++        (config.get("prefix"), sys.base_prefix),
++    )
++    path_keys = (
++        "BINDIR", "LIBDIR", "LIBPL", "LIBDEST", "BINLIBDEST", "DESTSHARED",
++        "INCLUDEDIR", "CONFINCLUDEDIR", "INCLUDEPY", "CONFINCLUDEPY",
++        "SCRIPTDIR", "LIBPC", "MANDIR", "datarootdir", "datadir",
++    )
++    for key in path_keys:
++        value = config.get(key)
++        if not isinstance(value, str):
++            continue
++        for old, new in replacements:
++            if old and old != os.sep and (value == old or value.startswith(old + os.sep)):
++                config[key] = new + value[len(old):]
++                break
++
++    # Only the packaged distribution sets this marker. Ordinary source builds
++    # retain their configured compiler and dependency search paths.
++    deps = config.get("OHOS_BUILD_DEPS")
++    if not deps:
++        return
++    for key in ("CPPFLAGS", "CFLAGS", "PY_CFLAGS", "LDFLAGS", "PY_LDFLAGS",
++                "CONFIGURE_CPPFLAGS", "CONFIGURE_CFLAGS", "CONFIGURE_LDFLAGS"):
++        value = config.get(key)
++        if isinstance(value, str):
++            words = shlex.split(value)
++            config[key] = shlex.join(
++                word for word in words
++                if not (word.startswith(("-I", "-L")) and deps in word)
++                and not ("-rpath" in word and "ORIGIN" in word)
++            )
++    compiler = os.path.join(sys.base_prefix, "bin", "ohos-clang")
++    cxx = os.path.join(sys.base_prefix, "bin", "ohos-clang++")
++    config["CC"] = "/usr/bin/sh " + shlex.quote(compiler)
++    config["CXX"] = "/usr/bin/sh " + shlex.quote(cxx)
++    config["LDSHARED"] = config["CC"] + " -shared"
++    config["LDCXXSHARED"] = config["CXX"] + " -shared"
++    config["BLDSHARED"] = config["LDSHARED"]
++    config["AR"] = "llvm-ar"
++    config["RANLIB"] = "llvm-ranlib"

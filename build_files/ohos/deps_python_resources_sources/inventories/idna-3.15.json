@@ -1,0 +1,107 @@
+[
+  {
+    "path": "HISTORY.md",
+    "size": 9177,
+    "sha256": "0c8cd750d1459eec927c6a1a2dc4eb66c91911129cd0aa4748e85191721a21e3"
+  },
+  {
+    "path": "LICENSE.md",
+    "size": 1541,
+    "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+  },
+  {
+    "path": "PKG-INFO",
+    "size": 7699,
+    "sha256": "cb8ac245bf249c9e2346427bc54bbf79971c96b7bf6b46862e4335fa76001827"
+  },
+  {
+    "path": "README.md",
+    "size": 6069,
+    "sha256": "71950a13c2d46bbd24945d0f280b4bdd44618a6ce7a5f4e79fa36ae041a28418"
+  },
+  {
+    "path": "idna/__init__.py",
+    "size": 868,
+    "sha256": "30fa8d0cb65b5ea19a35d5f1005862a853ca1105e3bb68cd42109ecbafb97893"
+  },
+  {
+    "path": "idna/codec.py",
+    "size": 5047,
+    "sha256": "c2dc978833562b63ed22cf0b0214c747b14508d0b811c330c004a4b0726a071b"
+  },
+  {
+    "path": "idna/compat.py",
+    "size": 1353,
+    "sha256": "01ea40dfd71e447c647c73f8d7e16f296e4a8be7f83df519f7445432508d766a"
+  },
+  {
+    "path": "idna/core.py",
+    "size": 23119,
+    "sha256": "eeb32752db2c5ad9e4917ad1ee54405ef1197b6c4ab4b71ce3d7590cdd804f15"
+  },
+  {
+    "path": "idna/idnadata.py",
+    "size": 92613,
+    "sha256": "118921aa13b37b45a1c35a4832e9bffaa10733ef2eb54c1cfc8068214596f06a"
+  },
+  {
+    "path": "idna/intranges.py",
+    "size": 1882,
+    "sha256": "7a0a5211760327a044d048e8f1d8d1761b1be09254b72a0043f7b8f463feed51"
+  },
+  {
+    "path": "idna/package_data.py",
+    "size": 21,
+    "sha256": "69dad7c413931f8a97b2deca5d5ff3f162703f938a6d07c6f1238705f14ae36b"
+  },
+  {
+    "path": "idna/py.typed",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "idna/uts46data.py",
+    "size": 202681,
+    "sha256": "f15a9ade36a4138656618324b7e713929ec8ce9c09126a2b603c8068064e3c8e"
+  },
+  {
+    "path": "pyproject.toml",
+    "size": 2009,
+    "sha256": "3f0ad66f88baca01e8f1dd9dc24e6611b8ba71a3bbdf4428aeef718cffa6e2ba"
+  },
+  {
+    "path": "tests/__init__.py",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "tests/test_idna.py",
+    "size": 16433,
+    "sha256": "3e45217709d6d7c7f5e852b6fd2ea58ae3af9a95c557a4713a09d40aef67f3b2"
+  },
+  {
+    "path": "tests/test_idna_codec.py",
+    "size": 3931,
+    "sha256": "61c45aaf82b8cf44676c9086a57cd83912f5bc57447e732c91fe920f71f5b445"
+  },
+  {
+    "path": "tests/test_idna_compat.py",
+    "size": 603,
+    "sha256": "165e7cf2c6133e9ad1c81c64df1e407d88728cf89d44f7e22db8bd0b98b0517d"
+  },
+  {
+    "path": "tests/test_idna_uts46.py",
+    "size": 1462156,
+    "sha256": "c7de7a6115389156740f480bff6221716e80ab36e8217f16401bddf18e5478c4"
+  },
+  {
+    "path": "tests/test_intranges.py",
+    "size": 2142,
+    "sha256": "0504b96daa3f9bd9805effe7ffa685c31f07b8efd2bc863ca4c02592ed502f57"
+  },
+  {
+    "path": "tools/idna-data",
+    "size": 32500,
+    "sha256": "4d6f6c8e46caebfb464acba1f23a3c96f6b4993c015801cce31752734ba33bd8"
+  }
+]

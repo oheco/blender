@@ -1,0 +1,25 @@
+{
+  "name": "ceres",
+  "version": "0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db",
+  "kind": "source",
+  "filename": "ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db.tar.gz",
+  "url": "https://github.com/ceres-solver/ceres-solver/archive/0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db.tar.gz",
+  "license": "BSD-3-Clause",
+  "license_files": [
+    "LICENSE",
+    "docs/source/license.rst"
+  ],
+  "upstream_repository": "https://github.com/ceres-solver/ceres-solver",
+  "commit": "0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 3476732,
+  "sha256": "bf0bcc78fae884e59dd893693e52510da7cc6866a7444fdae9ba8f19eae266cd",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 3476732,
+      "sha256": "bf0bcc78fae884e59dd893693e52510da7cc6866a7444fdae9ba8f19eae266cd"
+    }
+  ]
+}

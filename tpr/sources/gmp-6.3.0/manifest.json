@@ -1,0 +1,26 @@
+{
+  "name": "gmp",
+  "version": "6.3.0",
+  "kind": "source",
+  "filename": "gmp-6.3.0.tar.xz",
+  "url": "https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz",
+  "license": "SPDX:GPL-2.0-or-later",
+  "license_files": [
+    "COPYING",
+    "COPYING.LESSERv3",
+    "COPYINGv2",
+    "COPYINGv3"
+  ],
+  "upstream_repository": "https://gmplib.org/",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 2094196,
+  "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 2094196,
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898"
+    }
+  ]
+}

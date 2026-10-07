@@ -1,0 +1,29 @@
+{
+  "name": "blosc",
+  "version": "1.21.1",
+  "kind": "source",
+  "filename": "blosc-1.21.1.tar.gz",
+  "url": "https://github.com/Blosc/c-blosc/archive/v1.21.1.tar.gz",
+  "license": "BSD-3-Clause",
+  "license_files": [
+    "LICENSES/BITSHUFFLE.txt",
+    "LICENSES/BLOSC.txt",
+    "LICENSES/FASTLZ.txt",
+    "LICENSES/LZ4.txt",
+    "LICENSES/SNAPPY.txt",
+    "LICENSES/STDINT.txt",
+    "LICENSES/ZLIB.txt",
+    "internal-complibs/zlib-1.2.11/contrib/dotzlib/LICENSE_1_0.txt"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 1456777,
+  "sha256": "f387149eab24efa01c308e4cba0f59f64ccae57292ec9c794002232f7903b55b",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 1456777,
+      "sha256": "f387149eab24efa01c308e4cba0f59f64ccae57292ec9c794002232f7903b55b"
+    }
+  ]
+}

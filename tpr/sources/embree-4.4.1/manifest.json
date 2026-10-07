@@ -1,0 +1,40 @@
+{
+  "name": "embree",
+  "version": "4.4.1",
+  "kind": "source",
+  "filename": "embree-v4.4.1.zip",
+  "url": "https://github.com/RenderKit/embree/archive/v4.4.1.zip",
+  "license": "Apache-2.0",
+  "license_files": [
+    "LICENSE.txt",
+    "third-party-programs-DPCPP.txt",
+    "third-party-programs-OIDN.txt",
+    "third-party-programs-TBB.txt",
+    "third-party-programs-oneAPI-DPCPP.txt",
+    "third-party-programs.txt",
+    "tutorials/common/imgui/LICENSE.txt"
+  ],
+  "upstream_repository": "https://github.com/RenderKit/embree",
+  "tag": "v4.4.1",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 71461018,
+  "sha256": "643b87490b207475872b0721019ebe3947feb9104f36c25795455516e4e85b82",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 33554432,
+      "sha256": "300bfabcc2ac65b04cf1ad549594de983a57a7642ae3e8ddca7755afda2fd6f7"
+    },
+    {
+      "filename": "source.part0001",
+      "size": 33554432,
+      "sha256": "54f477c1ab10108eed141908c8f4e637292afc43e37fc52484a5d1835f05b430"
+    },
+    {
+      "filename": "source.part0002",
+      "size": 4352154,
+      "sha256": "fae50b8b359354d43dfab73c624f263ee1b9f662cbb2398670f3781a67c6630a"
+    }
+  ]
+}

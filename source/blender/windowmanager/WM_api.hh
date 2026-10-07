@@ -157,6 +157,24 @@ void WM_exit_ex(bContext *C, bool do_python_exit, bool do_user_exit_actions);
 void WM_exit(bContext *C, int exit_code) ATTR_NORETURN;
 
 void WM_main(bContext *C) ATTR_NORETURN;
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+/* Thrown only by synchronous initialization paths, caught inside creator initialize.
+ * Normal event-handler quits use the request flag and never throw through callbacks. */
+struct WMEmbeddedInitExit { int exit_code; };
+void WM_embedded_main_begin(bContext *C);
+void WM_embedded_main_step(bContext *C, bool foreground);
+void WM_embedded_exit_request(int exit_code);
+bool WM_embedded_exit_pending(int *exit_code);
+enum class WMEmbeddedExtensionsState { Running, Ready, Pending, Error };
+WMEmbeddedExtensionsState WM_embedded_extensions_begin(bContext *C);
+WMEmbeddedExtensionsState WM_embedded_extensions_step(bContext *C);
+WMEmbeddedExtensionsState WM_embedded_extensions_status();
+bool WM_embedded_teardown_enter();
+bool WM_embedded_teardown_authorized();
+WMEmbeddedExtensionsState WM_embedded_exit_prepare(bContext *C, bool do_user_exit_actions);
+bool WM_embedded_exit_prepared();
+bool WM_embedded_teardown_finalcheck();
+#endif
 
 /**
  * Show the splash screen as needed on startup.

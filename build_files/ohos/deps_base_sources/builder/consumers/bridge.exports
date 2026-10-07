@@ -1,0 +1,6 @@
+BASE_1 {
+  global: base_create; base_check; base_destroy;
+          base_cover_create; base_cover_start_internal; base_cover_external;
+          base_cover_finish; base_cover_destroy;
+  local: *;
+};

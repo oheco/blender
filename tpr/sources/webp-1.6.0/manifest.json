@@ -1,0 +1,24 @@
+{
+  "name": "webp",
+  "version": "1.6.0",
+  "kind": "source",
+  "filename": "libwebp-1.6.0.tar.gz",
+  "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz",
+  "license": "SPDX:BSD-3-Clause",
+  "license_files": [
+    "AUTHORS",
+    "COPYING",
+    "PATENTS"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 4296070,
+  "sha256": "e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 4296070,
+      "sha256": "e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564"
+    }
+  ]
+}

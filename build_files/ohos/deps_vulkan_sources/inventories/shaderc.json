@@ -1,0 +1,1082 @@
+{
+  "source_archive_sha256": "8a89fb6612ace8954470aae004623374a8fc8b7a34a4277bee5527173b064faf",
+  "archive_root": "shaderc-2025.4",
+  "git_commit": "73743588fe9c39f2f1c780a087d94afac691a189",
+  "files": [
+    {
+      "path": ".clang-format",
+      "size": 79,
+      "sha256": "8908a2ce713984c55a2f7f912119fa54e06ce9460887b4aa3a8f459471debbac"
+    },
+    {
+      "path": ".github/workflows/autoroll.yml",
+      "size": 2075,
+      "sha256": "207a50a03f6b6670853265e1eec8a1703edb8c19724072ca8ac66857bd25ea29"
+    },
+    {
+      "path": ".gitignore",
+      "size": 333,
+      "sha256": "9406efb24d0b3404277f52ebf02b55922afdc5e507f519fc961b3442779f3931"
+    },
+    {
+      "path": "AUTHORS",
+      "size": 310,
+      "sha256": "9fb4b067e4c9a1f91ea1c26465b3d1c6b515cb24860e0dbb719879925a5a1248"
+    },
+    {
+      "path": "Android.mk",
+      "size": 2806,
+      "sha256": "b454d0a1f921555a94295fcce7905573ef49507a03a1636506e0c49d735f738c"
+    },
+    {
+      "path": "BUILD.gn",
+      "size": 3286,
+      "sha256": "f4443e6d4709a911d5fe964fcbb47812dc758402a199d6b7e3947d2d83393075"
+    },
+    {
+      "path": "CHANGES",
+      "size": 16285,
+      "sha256": "c08061d9cf934316af7dd98464db266ee5b30dd6663d43f9e9e5b4ffe2a9e50c"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "size": 6066,
+      "sha256": "3f06b14ea9596cd2b988271858ed1bc02adaf0ec58069ef28d385142e87b96d2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 1385,
+      "sha256": "5b025c9a93045c895653415de744d3420763ac6551daff92c6bd5ad4628a7130"
+    },
+    {
+      "path": "CONTRIBUTORS",
+      "size": 882,
+      "sha256": "6bbbac32b9cee2122bb56aa630f3c213e1e99e664c531e3f263ac10e748a891e"
+    },
+    {
+      "path": "DEPS",
+      "size": 1360,
+      "sha256": "0e50c3d78b4571181c14582e29916aeee91289388a9094a104e89165ed74ca81"
+    },
+    {
+      "path": "DEVELOPMENT.howto.md",
+      "size": 2578,
+      "sha256": "f5a005bc7d678d21bf2973890c8ce7baae6607ecb4eb33960a928701d49f7f5e"
+    },
+    {
+      "path": "Dockerfile",
+      "size": 1150,
+      "sha256": "8a5d28a12232aba42780f7540de894f1a50f1a516ad40760ffad4e8471112e32"
+    },
+    {
+      "path": "LICENSE",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "size": 10226,
+      "sha256": "3f7e730221b17ec20131799aea5d6250fefee5e28a494cb631650ae4c44ea294"
+    },
+    {
+      "path": "android_test/Android.mk",
+      "size": 941,
+      "sha256": "f2d1471c0829816f6db5ee10ef986ff0c3a862a1758812bee1e0f4fee26fecbe"
+    },
+    {
+      "path": "android_test/jni/Android.mk",
+      "size": 671,
+      "sha256": "fa4e8ed9931365a28ab404976bdc923e82352ad8983c3356d94effac78b2563e"
+    },
+    {
+      "path": "android_test/jni/Application.mk",
+      "size": 792,
+      "sha256": "16f622e849b7f6512cd481554b1a09d18dd681648bc705d7b5206c8130471d53"
+    },
+    {
+      "path": "android_test/test.cpp",
+      "size": 945,
+      "sha256": "136b524d1d0896e2fafad976ac394fc4ec1d9b40d998efa2bf357242716b7da3"
+    },
+    {
+      "path": "build_overrides/build.gni",
+      "size": 772,
+      "sha256": "d22f852d6ecdf120ea4649cfbfa97e53f3b713ec765c121051148a2460b83942"
+    },
+    {
+      "path": "build_overrides/shaderc.gni",
+      "size": 882,
+      "sha256": "4f4ed5b2b15a3e873f186e1cef972f3ab9e8a471ef078db0120ba15dd20e1ffa"
+    },
+    {
+      "path": "cmake/linux-mingw-toolchain.cmake",
+      "size": 1519,
+      "sha256": "c18186e68c18e8c39266ba628567247816e7943065c7afeb754f91e7fd126b43"
+    },
+    {
+      "path": "cmake/setup_build.cmake",
+      "size": 2238,
+      "sha256": "bfafa51b19502a54314497dc2b50955a37e95a40fc88b3e5ab3c45af3f120af7"
+    },
+    {
+      "path": "cmake/shaderc.pc.in",
+      "size": 334,
+      "sha256": "be8bd4100aae6c5de89a275d93fc97beacd4ec8320ffe72df282bea9f4727873"
+    },
+    {
+      "path": "cmake/shaderc_combined.pc.in",
+      "size": 334,
+      "sha256": "be8bd4100aae6c5de89a275d93fc97beacd4ec8320ffe72df282bea9f4727873"
+    },
+    {
+      "path": "cmake/shaderc_static.pc.in",
+      "size": 334,
+      "sha256": "be8bd4100aae6c5de89a275d93fc97beacd4ec8320ffe72df282bea9f4727873"
+    },
+    {
+      "path": "cmake/utils.cmake",
+      "size": 7337,
+      "sha256": "bf3ddd5f623a04dddb173140b038f6446ba6b88f72809a18fd3c5a2721d867a5"
+    },
+    {
+      "path": "cmake/write_pkg_config.cmake",
+      "size": 1186,
+      "sha256": "d67e3d03d99f49779efbfe95708c28e42c930168d1e578a80e9fe4ffca6f156f"
+    },
+    {
+      "path": "downloads.md",
+      "size": 1066,
+      "sha256": "54d94755d011ad17102e612adab43f68fcbff644032a0c8113510b76938898f7"
+    },
+    {
+      "path": "examples/CMakeLists.txt",
+      "size": 639,
+      "sha256": "d0db5ea55135995e1592e3003daeec50ec4d70736208b158557d3ada68ddaf97"
+    },
+    {
+      "path": "examples/online-compile/CMakeLists.txt",
+      "size": 875,
+      "sha256": "33a3a4a09fa60e703a35c97fb9febf8f53c805037c3e11de9165f4677969c99b"
+    },
+    {
+      "path": "examples/online-compile/main.cc",
+      "size": 6348,
+      "sha256": "018e8bd9cbe7bcd42b1c19e5697498ebcf261eaadc73b4171328a545d0bcbd89"
+    },
+    {
+      "path": "glslc/CMakeLists.txt",
+      "size": 2626,
+      "sha256": "f9670ae267a89ff89a0b6bddf2c41e3edf94a6512fc853789b53a33fa553268f"
+    },
+    {
+      "path": "glslc/README.asciidoc",
+      "size": 27271,
+      "sha256": "d6daff87e9935955b3769da7cc86186951ed960474de4cbc514327b9a6e4aa06"
+    },
+    {
+      "path": "glslc/src/dependency_info.cc",
+      "size": 3617,
+      "sha256": "4d400aa92a65d66cc7ea54f5729cbffc57e09591554c9ae2457bd2b4fa6a7d5c"
+    },
+    {
+      "path": "glslc/src/dependency_info.h",
+      "size": 6033,
+      "sha256": "42dce0ef6f9818fae60d64018c595162379d1ce7dc42e2f4562dda84a720fe30"
+    },
+    {
+      "path": "glslc/src/file.cc",
+      "size": 925,
+      "sha256": "c3061d5ffcf9e10dfd224ee1974e3e9155e917d8a09087883e7b9a50f579f60f"
+    },
+    {
+      "path": "glslc/src/file.h",
+      "size": 1702,
+      "sha256": "d797fa85ce362ba425f370fb43b6cd0b30e53434901616c1f564e072915d7d29"
+    },
+    {
+      "path": "glslc/src/file_compiler.cc",
+      "size": 16516,
+      "sha256": "0933310c1a293b3808ff44cf41c03ccbed1ac15b8c0ac3bb25d336ab4caf1742"
+    },
+    {
+      "path": "glslc/src/file_compiler.h",
+      "size": 9878,
+      "sha256": "0d3dd35e6e0e0151f65542c128699a34a1160ee990e498e2dfbaa40b2598d21d"
+    },
+    {
+      "path": "glslc/src/file_includer.cc",
+      "size": 2327,
+      "sha256": "1379d46fb2216612a5b833834558be94813c4c18024af7b083b4fd7d9041d9c1"
+    },
+    {
+      "path": "glslc/src/file_includer.h",
+      "size": 2710,
+      "sha256": "e15c4958595fca0adcbf72bafb2da508a0e64d8c29c40883f70fcf214dda6b8c"
+    },
+    {
+      "path": "glslc/src/file_test.cc",
+      "size": 3664,
+      "sha256": "6840c5537633e7f2243a0329c59a4c93c11f6afce4aa67bdb99f226ef8b6cd68"
+    },
+    {
+      "path": "glslc/src/main.cc",
+      "size": 31701,
+      "sha256": "2f1803259859884a46d57592c459c3b7aa50da57ef6e91aec525a0476cae1df5"
+    },
+    {
+      "path": "glslc/src/resource_parse.cc",
+      "size": 3040,
+      "sha256": "4fdd7777a1538a4ac45ac3efeeff341e12594a06ac98061030050e0a9a04a0b7"
+    },
+    {
+      "path": "glslc/src/resource_parse.h",
+      "size": 2054,
+      "sha256": "81fd90ccef47d0dbc9159f2fa8a547d5cf92581655775d736ffb78007a7fd878"
+    },
+    {
+      "path": "glslc/src/resource_parse_test.cc",
+      "size": 3114,
+      "sha256": "8b388b1ed3aee4d65620dec157446f2b4bb337e2e5ebeac5a49326c4931d468c"
+    },
+    {
+      "path": "glslc/src/shader_stage.cc",
+      "size": 3697,
+      "sha256": "bde321527031aa40f337cb2ce3fbe685a57747d865615bb38683cd1f0baaff05"
+    },
+    {
+      "path": "glslc/src/shader_stage.h",
+      "size": 1617,
+      "sha256": "e2746ca248454081badac999db24dd876e6737faf1b04f7786479dede142c15a"
+    },
+    {
+      "path": "glslc/src/stage_test.cc",
+      "size": 3350,
+      "sha256": "6a045cda4d9c41bfe21acb11ccef085b57b0c7f46100bfaeedf678f91c334fa4"
+    },
+    {
+      "path": "glslc/test/CMakeLists.txt",
+      "size": 1372,
+      "sha256": "e2212152a48a259e7f32697d4ca976787ad5e0e7c7f9f64f58e0246fd5b7debe"
+    },
+    {
+      "path": "glslc/test/assembly.py",
+      "size": 4673,
+      "sha256": "fccb45600332ba033a4ed3bc6cd6e5fa3e620a3511771028d8c2b0ab16c87d77"
+    },
+    {
+      "path": "glslc/test/environment.py",
+      "size": 2381,
+      "sha256": "ed1825084f624816d8eeffc1852cc331185f98ea00f6382f11297bb34625a2d0"
+    },
+    {
+      "path": "glslc/test/error_no_object.py",
+      "size": 2343,
+      "sha256": "5861e2c158636cf03d55cc6bef60017854234f1b4614d5efa174fb5815edaeba"
+    },
+    {
+      "path": "glslc/test/expect.py",
+      "size": 29672,
+      "sha256": "8d7327e70d7fea2fa9692efee532c1ca9c44974c2ece7d4e1b44a9279dd2658e"
+    },
+    {
+      "path": "glslc/test/expect_unittest.py",
+      "size": 3049,
+      "sha256": "c09a13ded38a4a1f3d79f4aad573729c00c6c82e6bdd6faa58fb30bb6b842659"
+    },
+    {
+      "path": "glslc/test/file_extensions.py",
+      "size": 2901,
+      "sha256": "c0bfd1bae38f80dacdb073edccd907e2b72e0b23fe28743c0cacc53f23ccad23"
+    },
+    {
+      "path": "glslc/test/glslc_test_framework.py",
+      "size": 14252,
+      "sha256": "234693cac954ec1fc4b74cfc518346692383670fe3f4d7e50ade4164a1b31f76"
+    },
+    {
+      "path": "glslc/test/glslc_test_framework_unittest.py",
+      "size": 3855,
+      "sha256": "a1026483df0ba3e3758f0e379bb838f2a19e7f27e7893543a944e895c6b5286b"
+    },
+    {
+      "path": "glslc/test/include.py",
+      "size": 14728,
+      "sha256": "81179f322de0bc57c3fd5df15601e66cf481b6d3dad77337c7d6258275b72621"
+    },
+    {
+      "path": "glslc/test/line.py",
+      "size": 9479,
+      "sha256": "fb65ea29a1d4df23580d3d6759a8329608dbe836b2904e2691ab017f082b5f64"
+    },
+    {
+      "path": "glslc/test/messages_tests.py",
+      "size": 9171,
+      "sha256": "448dba09052442a511f221ac665e27c6113dfb04f7255db2456e4ea50f692125"
+    },
+    {
+      "path": "glslc/test/option_dash_D.py",
+      "size": 10493,
+      "sha256": "853937a6fd8e447b929f065eda2777187312a7860174e8653ae5336c086dd834"
+    },
+    {
+      "path": "glslc/test/option_dash_E.py",
+      "size": 8373,
+      "sha256": "857895e772cf68a3fab856e295d22e4351b5415b4b66293d958f8a323519d10b"
+    },
+    {
+      "path": "glslc/test/option_dash_M.py",
+      "size": 33040,
+      "sha256": "a1426f76ecf748a3db6326daa4acd62be1a4a13f6ee6d4f5fdecc834a51672d0"
+    },
+    {
+      "path": "glslc/test/option_dash_S.py",
+      "size": 5685,
+      "sha256": "c43b7172fd1c20b6575f76e8b8ee8a0d817696353c534236dce96be3425985df"
+    },
+    {
+      "path": "glslc/test/option_dash_c.py",
+      "size": 1889,
+      "sha256": "8936edf0e541496e8ce45dc861342ef4c66b3989dcf4c424fa97b2c670027696"
+    },
+    {
+      "path": "glslc/test/option_dash_cap_O.py",
+      "size": 5778,
+      "sha256": "8efe3981b3e824e7a095e954fd36113f9bc8942237e326416d1f1f9023905a78"
+    },
+    {
+      "path": "glslc/test/option_dash_fhlsl_offsets.py",
+      "size": 1575,
+      "sha256": "6728f3988c85831b4597ff5420e52f134968c4935d83da155d015ec1f914ceca"
+    },
+    {
+      "path": "glslc/test/option_dash_fnan_clamp.py",
+      "size": 2657,
+      "sha256": "f687523b738e0fe70511da50426cf3bf63cb3ca739742cd4cd78c31b26d6e89f"
+    },
+    {
+      "path": "glslc/test/option_dash_g.py",
+      "size": 1938,
+      "sha256": "6761c4f46ef212a4359ad36923f703a6650f083b47e16b6ab2f8c6a47e9dbbd8"
+    },
+    {
+      "path": "glslc/test/option_dash_o.py",
+      "size": 3933,
+      "sha256": "814ce3fe1c7c911ac925af98ecc657e0ebdc568a00788643f51350a6a65852f4"
+    },
+    {
+      "path": "glslc/test/option_dash_x.py",
+      "size": 5337,
+      "sha256": "2dd328a4c40a952c04c6529892f0a3de84ef741a5af037e10f7c5052729c3072"
+    },
+    {
+      "path": "glslc/test/option_dashdash_version.py",
+      "size": 1750,
+      "sha256": "3c54a89801943ebff034c03cef3325f587d177a3316a1c18e178e6234dc5cd71"
+    },
+    {
+      "path": "glslc/test/option_fauto_bind_uniforms.py",
+      "size": 19148,
+      "sha256": "068e42ce7518440e31a65f4bbbdfcac40b393bbbe6a3c70898af9d7e0bc6089f"
+    },
+    {
+      "path": "glslc/test/option_fauto_combined_image_sampler.py",
+      "size": 2617,
+      "sha256": "43037c58c73ac410f1819c7a77e01db9aa7abc911aa5ec7a8a1ac5406398208a"
+    },
+    {
+      "path": "glslc/test/option_fauto_map_locations.py",
+      "size": 3458,
+      "sha256": "d6ae2bcaf5ce771d838e47ca0015057e763a8efafaa43c64cd5e96bab1c96161"
+    },
+    {
+      "path": "glslc/test/option_fentry_point.py",
+      "size": 5142,
+      "sha256": "50b5e672b14d7ff988b206f69b685f8b2782342ac9737371cfa412e884d27592"
+    },
+    {
+      "path": "glslc/test/option_fhlsl_16bit_types.py",
+      "size": 1780,
+      "sha256": "c8ee5995f184d5ea5610bbf97efa532620bf01cbdd8612672f9226ced3923413"
+    },
+    {
+      "path": "glslc/test/option_fhlsl_functionality1.py",
+      "size": 3104,
+      "sha256": "e511111fb42e9702a084d87d375f18149b156ebd7a68483bde5d106cc9e193d3"
+    },
+    {
+      "path": "glslc/test/option_flimit.py",
+      "size": 16198,
+      "sha256": "4e6e2ee294f049c29d0f04b0a50f137ca460aeb8289d6218c25cd86234642b07"
+    },
+    {
+      "path": "glslc/test/option_fmax_id_bound.py",
+      "size": 1634,
+      "sha256": "0dd10625195c7d41a1507f58b3f00fe9fbdcbfdad5af1a103d9cc6abdd23f3a8"
+    },
+    {
+      "path": "glslc/test/option_fpreserve_bindings.py",
+      "size": 2658,
+      "sha256": "da371252312c387e9f7ff3cafc972603c48467aa90ef459ace6ccf4dd96efdcb"
+    },
+    {
+      "path": "glslc/test/option_fresource_set_binding.py",
+      "size": 4710,
+      "sha256": "b0253bac9e4d0baf23f5e04943ea7ff460a0ecb73224429e8ab03c24d6d3c910"
+    },
+    {
+      "path": "glslc/test/option_mfmt.py",
+      "size": 8111,
+      "sha256": "9ff5fbd6b24f9423ab5df2069fa2238517a01e7534c0bd0a758dfb02702df9c4"
+    },
+    {
+      "path": "glslc/test/option_shader_stage.py",
+      "size": 7855,
+      "sha256": "816f2a4c360091147a96b6d8d50ab6b95428c76d327bc94646cc74fc9a48e88d"
+    },
+    {
+      "path": "glslc/test/option_std.py",
+      "size": 11707,
+      "sha256": "acda8578aecabf7bb83dcf7a5e39081331eff8768fe797b35c6c5b0658ee4879"
+    },
+    {
+      "path": "glslc/test/option_target_env.py",
+      "size": 8706,
+      "sha256": "37b32d49c03d23b1eb5c5de302f7a6080fc57b210de9e5b3a481ac0ad6a36a91"
+    },
+    {
+      "path": "glslc/test/option_target_spv.py",
+      "size": 4990,
+      "sha256": "356ed2c5c84daf260be81c857311778cfc39c260513690c161f7c90bde1da2e1"
+    },
+    {
+      "path": "glslc/test/parameter_tests.py",
+      "size": 15864,
+      "sha256": "606284ce1e0cbbf310577fd06c8673b3c79149753347d00ea5a2458bb20c2949"
+    },
+    {
+      "path": "glslc/test/placeholder.py",
+      "size": 4816,
+      "sha256": "4e72147248c518a5b5721915f9d5cb838d7189323036f05eba245d03edb6a606"
+    },
+    {
+      "path": "glslc/test/pragma_shader_stage.py",
+      "size": 14972,
+      "sha256": "10dd1cd05805333ec9fc1dfcb56d4a946e545510250c208fa5ca943916a3523c"
+    },
+    {
+      "path": "glslc/test/stdin_out.py",
+      "size": 1333,
+      "sha256": "0d364ac32f1a32ddd13b7637a55635d9c0343e3d151b8d89219d3e5055834c5a"
+    },
+    {
+      "path": "glslc/test/working_directory.py",
+      "size": 8225,
+      "sha256": "5a022e722888b62e06c87cda32db010ba713f1d15ed01058beb0e9f6412d4034"
+    },
+    {
+      "path": "kokoro/android-release/build-docker.sh",
+      "size": 1563,
+      "sha256": "465d1c1fbd081907e85ef444644815d1c7b00e7c540e05913f6d640bb302e707"
+    },
+    {
+      "path": "kokoro/android-release/build.sh",
+      "size": 1377,
+      "sha256": "9d296eb6261f97f95555edd14fd86063ca06999603b6d01e93aea67d69e18343"
+    },
+    {
+      "path": "kokoro/android-release/build_arm.sh",
+      "size": 773,
+      "sha256": "5ec7f39ba2d9dcf53604d47d9ce4240e766dfe734da2f28c7e044ead2774b760"
+    },
+    {
+      "path": "kokoro/android-release/build_x86.sh",
+      "size": 754,
+      "sha256": "60af7642a2514b746cd49b74e57be8cd0dca3e055c359417b31f87da36f0a96d"
+    },
+    {
+      "path": "kokoro/android-release/continuous_arm.cfg",
+      "size": 675,
+      "sha256": "5647d3e79c6ed8a127b5a5141530f538aad6fb06956c025f4727d1dc7f9f785a"
+    },
+    {
+      "path": "kokoro/android-release/continuous_x86.cfg",
+      "size": 675,
+      "sha256": "5373ffc97f5684706d550d08d8bd9aa1f5759e078065f28cfc0a843f4aac5997"
+    },
+    {
+      "path": "kokoro/android-release/presubmit_arm.cfg",
+      "size": 672,
+      "sha256": "391eb8dc8350bb637475cbbe55d6bc7853ee77773665562e9e593bb47af99e96"
+    },
+    {
+      "path": "kokoro/android-release/presubmit_x86.cfg",
+      "size": 672,
+      "sha256": "a899db87c90d53cfcce7ccd5d2d79a05eb92310712f88c33c0644c33d4b9b943"
+    },
+    {
+      "path": "kokoro/img/linux.png",
+      "size": 17369,
+      "sha256": "46a88aca88fb188dcb708f08eda0287cfe3649573f7b2e40c93b14cb22a4fdcb"
+    },
+    {
+      "path": "kokoro/img/macos.png",
+      "size": 15464,
+      "sha256": "6db140e912503b27db2ea586a6d79af33900a54acb69987c9865826c21fcee73"
+    },
+    {
+      "path": "kokoro/img/windows.png",
+      "size": 16653,
+      "sha256": "811da4e3a415e45f133827a442016c50d24073532480a676d3c400a63dc5b198"
+    },
+    {
+      "path": "kokoro/linux/build-docker.sh",
+      "size": 2689,
+      "sha256": "8fdd99150a61ab6b0ac0c045f3243bff871560894ef3d093f82be2af07ee426d"
+    },
+    {
+      "path": "kokoro/linux/build.sh",
+      "size": 1401,
+      "sha256": "559de310230088f8925223be58fb77ecb08035256d131b39be1add9970625e05"
+    },
+    {
+      "path": "kokoro/linux/build_clang_asan.sh",
+      "size": 767,
+      "sha256": "d101eac42cd0b9f0025060d0683c025a8e0c019fae04ad1e4d2b2957bf28f23a"
+    },
+    {
+      "path": "kokoro/linux/build_clang_debug.sh",
+      "size": 768,
+      "sha256": "c9b679f116af6f64951993379a45a601f705ce2c439c7f732c8276f3d5372e63"
+    },
+    {
+      "path": "kokoro/linux/build_clang_release.sh",
+      "size": 770,
+      "sha256": "d905b91f586e94903b5fddeeb5f8081ade018b2a29322979f56d96c40b79c922"
+    },
+    {
+      "path": "kokoro/linux/build_gcc_coverage.sh",
+      "size": 794,
+      "sha256": "e098de2beb0c26b5c1daad22a8faef21b42ecd95e8780e099689b73db51e0b7a"
+    },
+    {
+      "path": "kokoro/linux/build_gcc_debug.sh",
+      "size": 762,
+      "sha256": "11492c8fd7164e0567c438a3011df801cb07b96ce9fae4297f5ba1ba492c9ce1"
+    },
+    {
+      "path": "kokoro/linux/build_gcc_debug_exception.sh",
+      "size": 772,
+      "sha256": "6259a3b53277d78ab196cde271b59c988cd69069aab0ac854e1fc3aea3806d69"
+    },
+    {
+      "path": "kokoro/linux/build_gcc_release.sh",
+      "size": 764,
+      "sha256": "91b29ff28873144969f1b3a24973db706e9e1b587dc55724070540fa5452e2cc"
+    },
+    {
+      "path": "kokoro/linux/build_mingw_release.sh",
+      "size": 761,
+      "sha256": "caac1f0fe2a010f193ca03faec341b147d6ed1225bcf3add0bb3e9ecc678e324"
+    },
+    {
+      "path": "kokoro/linux/continuous_clang_asan.cfg",
+      "size": 670,
+      "sha256": "2b934518b7e7a56e5105e1cc912a914c7bce68dbe913cc14b5d8470128b47973"
+    },
+    {
+      "path": "kokoro/linux/continuous_clang_debug.cfg",
+      "size": 733,
+      "sha256": "66cf3f70736a4693175ffa72937d8d501fab665a991079311800787967a82cc3"
+    },
+    {
+      "path": "kokoro/linux/continuous_clang_release.cfg",
+      "size": 735,
+      "sha256": "1b6acded8fead5f7983cfe2ed466a67ec12bf696c0e3560eba599eca46ac28c9"
+    },
+    {
+      "path": "kokoro/linux/continuous_gcc_debug.cfg",
+      "size": 731,
+      "sha256": "34ee7b898cf7aaaaa95133ce697e9e3772e735b158ff5e08bacba83d3db5dfc2"
+    },
+    {
+      "path": "kokoro/linux/continuous_gcc_debug_exception.cfg",
+      "size": 679,
+      "sha256": "f3f3881493d19b843bffcac893855695b439e170c5d0ce409d61e2ab431265f9"
+    },
+    {
+      "path": "kokoro/linux/continuous_gcc_release.cfg",
+      "size": 733,
+      "sha256": "8220239c231c4838befab1ae3ac632c830f1939401f15aa48cdf8f384b9e0788"
+    },
+    {
+      "path": "kokoro/linux/continuous_license_check.cfg",
+      "size": 667,
+      "sha256": "9281998f92f5123a5286b2c7058d90a90f9f5153056e5efa9700b6caac07d530"
+    },
+    {
+      "path": "kokoro/linux/continuous_mingw_release.cfg",
+      "size": 673,
+      "sha256": "3392067fa9ff100051b657096d3543c8c8ababff711af10004d7450d32b9d187"
+    },
+    {
+      "path": "kokoro/linux/license_check.sh",
+      "size": 945,
+      "sha256": "8b88ba8d4d0c8f912ef139f06d2b091b58e633eb7bfbe7e28ad6f53b56489e7c"
+    },
+    {
+      "path": "kokoro/linux/presubmit_clang_asan.cfg",
+      "size": 669,
+      "sha256": "0bd29ef758e1798a350c83b86606f3d1d0dde0c0d5ba78657036594a573fda3a"
+    },
+    {
+      "path": "kokoro/linux/presubmit_clang_debug.cfg",
+      "size": 670,
+      "sha256": "87e6a0d141d019a67b5c9559606ecc9d69bf529082e0b0eee0b4d163f60690f4"
+    },
+    {
+      "path": "kokoro/linux/presubmit_clang_release.cfg",
+      "size": 672,
+      "sha256": "fdd302f56f373cf89d0f3e58b3d869b72457d7eefe5b4ce7ee1803b0fced110b"
+    },
+    {
+      "path": "kokoro/linux/presubmit_gcc_debug.cfg",
+      "size": 669,
+      "sha256": "5eb563837d51dfb00168297dec728d01e77c24320f195bf6cd2b48501a3b9d05"
+    },
+    {
+      "path": "kokoro/linux/presubmit_gcc_release.cfg",
+      "size": 670,
+      "sha256": "cb955150abf3a90a44ca9ddb8b0770617c0acb739b6d01cedbbfbd2b70429cb0"
+    },
+    {
+      "path": "kokoro/linux/presubmit_license_check.cfg",
+      "size": 666,
+      "sha256": "3bfaa4e317b7819362593b4fe5bfae59ff3b32539cccda7618e48111aa996066"
+    },
+    {
+      "path": "kokoro/linux/presubmit_mingw_release.cfg",
+      "size": 672,
+      "sha256": "a52d0ddd65c71640edd3012969d9ea45bcd35cd5a41e871f435e63cf7fc02ae0"
+    },
+    {
+      "path": "kokoro/macos/build.sh",
+      "size": 1647,
+      "sha256": "8511b6db28b370604c9743af4f6e606056a5ec7f3dcd1a55dd7fce23137bf013"
+    },
+    {
+      "path": "kokoro/macos/build_clang_debug.sh",
+      "size": 754,
+      "sha256": "84c6bbd9f96344854082cbb70716a216c141cd6a6163bb100a2df6ac797d82b3"
+    },
+    {
+      "path": "kokoro/macos/build_clang_release.sh",
+      "size": 763,
+      "sha256": "04867b822b7454ae18829b14d3e15b5912989b73f7c0cccb36ae500dd5b70230"
+    },
+    {
+      "path": "kokoro/macos/continuous_clang_debug.cfg",
+      "size": 733,
+      "sha256": "a25c997d1832c1f2e292a3de058ce8fa64a1c57b45ee2d3aedce7cb18cc76ac0"
+    },
+    {
+      "path": "kokoro/macos/continuous_clang_release.cfg",
+      "size": 735,
+      "sha256": "29f732e60c770031f0a647f0a90396657e78c606861c2651a808d4a06b828fed"
+    },
+    {
+      "path": "kokoro/macos/presubmit_clang_debug.cfg",
+      "size": 670,
+      "sha256": "62cd4fb1341dbfd7f451878447d4c54d4c415d6b899fcc08d565c5ea0a23282a"
+    },
+    {
+      "path": "kokoro/macos/presubmit_clang_release.cfg",
+      "size": 672,
+      "sha256": "5184df083356747c58627b537f7d4ab2f2579f3bb6a38fdabc2813da6bae81ee"
+    },
+    {
+      "path": "kokoro/ndk-build/build-docker.sh",
+      "size": 2043,
+      "sha256": "8dbb871330c9e7ec1397c661c12c6e05de3d649ef1f7f73af2b5ce416e56ed02"
+    },
+    {
+      "path": "kokoro/ndk-build/build.sh",
+      "size": 1894,
+      "sha256": "306ca80d4d17ec109ab552939f44c31d4effa074e61bcea49cf8df36a02665fd"
+    },
+    {
+      "path": "kokoro/ndk-build/build_khronos.sh",
+      "size": 747,
+      "sha256": "c2482ad02e7941a5832ce6b591c55d11fdcc54c15a2320e328515da7ca5200ce"
+    },
+    {
+      "path": "kokoro/ndk-build/continuous_khronos.cfg",
+      "size": 673,
+      "sha256": "658397790897c466604600aa6b7a43c5dec64e583b09df340b5ca9d96956a9fa"
+    },
+    {
+      "path": "kokoro/ndk-build/presubmit_khronos.cfg",
+      "size": 672,
+      "sha256": "72626a91f438ae3bad312d43d12f245583cc08c96f1bbb71fb60397b42ba4b74"
+    },
+    {
+      "path": "kokoro/windows/build.bat",
+      "size": 2815,
+      "sha256": "bfa556453b94431b72d971db16a6631b954fa5f12931fcfcaf8dc3a8b9cb6d0a"
+    },
+    {
+      "path": "kokoro/windows/build_2022_amd64_debug.bat",
+      "size": 783,
+      "sha256": "dff2e25102570e7659007232cf085d4cc79de87668a9c52518316a86ba8f9735"
+    },
+    {
+      "path": "kokoro/windows/build_2022_amd64_release.bat",
+      "size": 792,
+      "sha256": "ed6cf0cdf034382605d17855623e2cf8e66839007949200d459374abea148573"
+    },
+    {
+      "path": "kokoro/windows/vs2022_amd64_debug_continuous.cfg",
+      "size": 741,
+      "sha256": "34c741870a9ea49daac824cb5e22abbb44bf024edf1b2278e68becb9938e001e"
+    },
+    {
+      "path": "kokoro/windows/vs2022_amd64_debug_presubmit.cfg",
+      "size": 740,
+      "sha256": "9354b36e03a73a243b8a42738dbce5460f5727b87e7e9508acd6f481683fbae9"
+    },
+    {
+      "path": "kokoro/windows/vs2022_amd64_release_continuous.cfg",
+      "size": 743,
+      "sha256": "7afb975586e3e2d116f604a35edf2e8bd898b77ee6097fb56afe4a0e8d8ff274"
+    },
+    {
+      "path": "kokoro/windows/vs2022_amd64_release_presubmit.cfg",
+      "size": 742,
+      "sha256": "ffb029dc719d1b0963671f618179a4bfabd420b548307204fae2ff84b86119a5"
+    },
+    {
+      "path": "libshaderc/Android.mk",
+      "size": 1219,
+      "sha256": "56fb18cc21da477109898b9f14c7238f6fe39d94581c5a6f0311a7634dd6b900"
+    },
+    {
+      "path": "libshaderc/CMakeLists.txt",
+      "size": 3889,
+      "sha256": "3de01a6851451924f66921d5bc09f525696d3fa4f02ae8de6286f91eda3260f1"
+    },
+    {
+      "path": "libshaderc/README.md",
+      "size": 2117,
+      "sha256": "48d7c43fe97c9cbf0a998d7e3908c31fe862b9ca1c1f12589b7a0a4c30fe3fb4"
+    },
+    {
+      "path": "libshaderc/include/shaderc/env.h",
+      "size": 2775,
+      "sha256": "645d5d8c0bbc874e42be727d8bb3cb887408b39a7335e99f33bf1f923142dac8"
+    },
+    {
+      "path": "libshaderc/include/shaderc/shaderc.h",
+      "size": 29624,
+      "sha256": "78a8195db6fa67b94e95014fe08f63063c36d2b581d182bae0f7cd4e86d59588"
+    },
+    {
+      "path": "libshaderc/include/shaderc/shaderc.hpp",
+      "size": 28463,
+      "sha256": "1230c3d7e07bf431555b820ff957b46f7f3e3609ba0839d8c85ed09f809a6405"
+    },
+    {
+      "path": "libshaderc/include/shaderc/status.h",
+      "size": 1377,
+      "sha256": "c379f95263f2a319de6805a68749b5bdf78ec885075bc504d6d2c1173c032941"
+    },
+    {
+      "path": "libshaderc/include/shaderc/visibility.h",
+      "size": 1163,
+      "sha256": "9bb1c9db00ab812ced4b22bb813a8950ecb7c9cdf7a92135db0c71f0804b3d62"
+    },
+    {
+      "path": "libshaderc/src/common_shaders_for_test.h",
+      "size": 12658,
+      "sha256": "dd2657054a53287d0259cf2bbd44b7810d2abeb634eb8d808a23f29548fb9a61"
+    },
+    {
+      "path": "libshaderc/src/shaderc.cc",
+      "size": 31598,
+      "sha256": "c152ac0a209f96155502cc8ec46ad0d66c8b038001e4b11c36712b7cf3452589"
+    },
+    {
+      "path": "libshaderc/src/shaderc_c_smoke_test.c",
+      "size": 1779,
+      "sha256": "2a0d92feece6cf04f33e0e599069e0ec904ea7d76eb789809fa002656f598c8b"
+    },
+    {
+      "path": "libshaderc/src/shaderc_cpp_test.cc",
+      "size": 67710,
+      "sha256": "4615d6ffca2f4490614579e4ae3928f416a0a42d02514e2c65ba51dbf4a9d626"
+    },
+    {
+      "path": "libshaderc/src/shaderc_private.h",
+      "size": 4730,
+      "sha256": "c21eb4666a5d65c1900a1f34a9640548df57336ea7d9be8f2e74c0631a46ea0f"
+    },
+    {
+      "path": "libshaderc/src/shaderc_private_test.cc",
+      "size": 2479,
+      "sha256": "12646ef13d972438231bc9e62f22ffd3336282c660ac825d32d3f7d4bb094328"
+    },
+    {
+      "path": "libshaderc/src/shaderc_test.cc",
+      "size": 90411,
+      "sha256": "451d384d6a179507d215a049365a05bc65d48700ad92b8226a381fa50971670a"
+    },
+    {
+      "path": "libshaderc_util/Android.mk",
+      "size": 1157,
+      "sha256": "891500facaea4677fea2d2ebf0dfdfd3c034fe74263178e98275483c6a815aaa"
+    },
+    {
+      "path": "libshaderc_util/CMakeLists.txt",
+      "size": 2703,
+      "sha256": "c677a5f8cc0d23b7bfdec7d4e5e19af02dbc30b1010589d5029d125da9bc656d"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/args.h",
+      "size": 1653,
+      "sha256": "27130f66566757ef72a7bacd1cbd651cad8f6fc97f6e9235094553fb1d284699"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/compiler.h",
+      "size": 25682,
+      "sha256": "da9a01eae2614241dec655b23e4c03b08b9ba67c322e01e9235a11d6d5a5b78a"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/counting_includer.h",
+      "size": 3736,
+      "sha256": "a3ff0f3d87c87eafc7150749459493cf78fac4b7a4b51f8d4130f2d31f0a8428"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/exceptions.h",
+      "size": 992,
+      "sha256": "d8d3bccb8990c298dd87929e3cc048fc565694d4e1f071ca25dcf14065492bce"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/file_finder.h",
+      "size": 2426,
+      "sha256": "70668d51e5f1b595155004f1d89e4ffc8a84130f52dea370bf424984121ef5c2"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/format.h",
+      "size": 1214,
+      "sha256": "177e0b6e71a6530ff3d1be9c2710ff3b4dbf67d89271bf0fc9a32b70e8aab9eb"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/io_shaderc.h",
+      "size": 3012,
+      "sha256": "2e4d3424bcf5869734003514e728155ccfde785ddc131e65634cd0f36bba130a"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/message.h",
+      "size": 3553,
+      "sha256": "65b38f2e289b11ee557448482e444a38de1e32323e93782ad099237e79068373"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/mutex.h",
+      "size": 3319,
+      "sha256": "3b18e3461b07288137271980f78048ac152f027d6c735717b7ae8ae9e2835765"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/resources.h",
+      "size": 997,
+      "sha256": "6c8d16fc40122a426804ff9ddd9880e2b5964c5c2f56005f33969006ca7140b3"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/resources.inc",
+      "size": 10723,
+      "sha256": "c63341b51d088a57e2d7a0cc11cc4bc635f3e64118d7ee51b0ba3363f62baded"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/shader_stage.h",
+      "size": 1189,
+      "sha256": "b0143ad93af382e8e596fd389404c516d1b70abb2495a333647b0ab89ea3bbd6"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/spirv_tools_wrapper.h",
+      "size": 2675,
+      "sha256": "1c49cf9785341729c6e537eba53a05767eb67806cca3633c26e7b99c9e724661"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/string_piece.h",
+      "size": 11788,
+      "sha256": "14db3693c5a713c23f4aa56e231b11a21f13b3586e74a7b725ca8f1145ef0b85"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/universal_unistd.h",
+      "size": 1030,
+      "sha256": "8f881bb66f6766b091825293ce9e2a91f91acf039d06896dd3da8c66ab583be2"
+    },
+    {
+      "path": "libshaderc_util/include/libshaderc_util/version_profile.h",
+      "size": 1824,
+      "sha256": "7274a7c6373a2868249116f81694232189948c649c7c68dae51af6c84e0f6041"
+    },
+    {
+      "path": "libshaderc_util/src/args.cc",
+      "size": 1772,
+      "sha256": "4c1986127c5f292ebd123a0f6a1ef33eb3467d007663d15854c9e8cd0e7b30ab"
+    },
+    {
+      "path": "libshaderc_util/src/compiler.cc",
+      "size": 33004,
+      "sha256": "446148d5a3ea805c6ae7e63e5c5751548dc6a67df008f3817ca72b27ed60b316"
+    },
+    {
+      "path": "libshaderc_util/src/compiler_test.cc",
+      "size": 39610,
+      "sha256": "3e7c94bb83d3b6fd8f911b899463ea19cce73799f75ad8c16709422e4be2d93c"
+    },
+    {
+      "path": "libshaderc_util/src/counting_includer_test.cc",
+      "size": 2985,
+      "sha256": "008851f2dec85465589a86700d9be8d2daccb49a471b870504c618996bb905d2"
+    },
+    {
+      "path": "libshaderc_util/src/death_test.h",
+      "size": 941,
+      "sha256": "840efeb0054fe6a58ac0df91851fbeb96293b33462bff1daeef2bc0ec363fc98"
+    },
+    {
+      "path": "libshaderc_util/src/file_finder.cc",
+      "size": 2276,
+      "sha256": "eab4599a3148e966f31ad2ab5277e37f543fd1ceda3e590decabb4df13f517cf"
+    },
+    {
+      "path": "libshaderc_util/src/file_finder_test.cc",
+      "size": 4701,
+      "sha256": "a9d7fa5e8aad51ae13df64209657e1d53087376f03086d724676f2065492669d"
+    },
+    {
+      "path": "libshaderc_util/src/format_test.cc",
+      "size": 3602,
+      "sha256": "cd43d83ce6f1f27fca7e8618d4f6dbe615be73c120d0ab2e63afb83d679a6b41"
+    },
+    {
+      "path": "libshaderc_util/src/io_shaderc.cc",
+      "size": 4111,
+      "sha256": "f3d4cfb609b7da1b455d1b0e1763bffe375eab638bcf6a0a491d70aabd2ea4d2"
+    },
+    {
+      "path": "libshaderc_util/src/io_shaderc_test.cc",
+      "size": 4814,
+      "sha256": "851b718b8698283979321a6e346916e85c641163cac376e92f2d89fe4781cec2"
+    },
+    {
+      "path": "libshaderc_util/src/message.cc",
+      "size": 12041,
+      "sha256": "5c4ea6d061c318995b2bb2c161f172c320daf7e876ad79c73dda9b3d12ee96db"
+    },
+    {
+      "path": "libshaderc_util/src/message_test.cc",
+      "size": 10278,
+      "sha256": "b0e06e665236b5315e286fb22b9a71cf7d3f7ae059b9124e8ffb8c92672ef6d4"
+    },
+    {
+      "path": "libshaderc_util/src/mutex_test.cc",
+      "size": 1408,
+      "sha256": "d49e7c443fbb201453070733182b035fc7c56d0d96110761292c7799f70c0f56"
+    },
+    {
+      "path": "libshaderc_util/src/resources.cc",
+      "size": 6683,
+      "sha256": "cecd8c24d893f44b73ac1f9283b51ceedf985608955823caaa2a56f33b6a9687"
+    },
+    {
+      "path": "libshaderc_util/src/shader_stage.cc",
+      "size": 1628,
+      "sha256": "2a82d19434205b2df36313838cd7317fdb52b536c28260de80829def29b3df61"
+    },
+    {
+      "path": "libshaderc_util/src/spirv_tools_wrapper.cc",
+      "size": 6276,
+      "sha256": "8aaed0c0ceb13862552d0a80ac45317d00efd9ad5c9a7092078c0cc1f8d3eed2"
+    },
+    {
+      "path": "libshaderc_util/src/string_piece_test.cc",
+      "size": 16298,
+      "sha256": "7e05f185e51628980b30cf0225c61c44e936040f2af1dabdef6bea61aaed8ceb"
+    },
+    {
+      "path": "libshaderc_util/src/version_profile.cc",
+      "size": 1826,
+      "sha256": "9727925f4b7d99a57ea640cab5fed9cabff31d03da658462a64671f20dc4c864"
+    },
+    {
+      "path": "libshaderc_util/src/version_profile_test.cc",
+      "size": 5440,
+      "sha256": "40b868613dc11aa9b48d7ea3f5945f29e8b967070c5c9201ec56b6053cfb6c21"
+    },
+    {
+      "path": "libshaderc_util/testdata/copy-to-build.cmake",
+      "size": 692,
+      "sha256": "ba4dce4725c245cdeb2c3fc101e557f6a5cb041909b11c2dd31614662bc18a1a"
+    },
+    {
+      "path": "libshaderc_util/testdata/dir/subdir/include_file.2",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "libshaderc_util/testdata/include_file.1",
+      "size": 42,
+      "sha256": "aa94aae294ab894eeaf5751ad0a46b1b4e90b5e4f1e7c0f3759b504d3e809944"
+    },
+    {
+      "path": "license-checker.cfg",
+      "size": 872,
+      "sha256": "ff39f110e4b17c6a2e24eacc14a32674c2c1f2385828bdc23a0399d3475fffc8"
+    },
+    {
+      "path": "third_party/Android.mk",
+      "size": 1151,
+      "sha256": "5b82725cb57d8ff0bfd30e57232b99bd621ea346f7df8aeff3b4c9086488741a"
+    },
+    {
+      "path": "third_party/CMakeLists.txt",
+      "size": 4995,
+      "sha256": "328a0645f9dcb56e95132d41a6617a6a07567ebd087120b5a71218d35afb8fde"
+    },
+    {
+      "path": "third_party/LICENSE.glslang",
+      "size": 8280,
+      "sha256": "b5a00e94f058edc87e05978329b55730d8689abe61205d9018443d03de4f07da"
+    },
+    {
+      "path": "third_party/LICENSE.spirv-tools",
+      "size": 11650,
+      "sha256": "47e20ce182bc68fab1a0cfb129b03c326aaf4f2b6b7905aa9d376d31018bd29f"
+    },
+    {
+      "path": "utils/add_copyright.py",
+      "size": 5101,
+      "sha256": "1e8e10e83cf8c1b9ab7dd9df9c77bbec01dc627b993486798a69b964fcc726aa"
+    },
+    {
+      "path": "utils/git-sync-deps",
+      "size": 9347,
+      "sha256": "195c5e0696a697561e651fa96681b2dc6d586d8a460d25bcf2039fb580d291c3"
+    },
+    {
+      "path": "utils/remove-file-by-suffix.py",
+      "size": 1029,
+      "sha256": "bdac53a7b5e1d00015495fa8d741be996915f461fb2499f07a1590d848e95115"
+    },
+    {
+      "path": "utils/roll-deps",
+      "size": 1662,
+      "sha256": "e12b4009599a6a0953529cbf6052552b29d6b2272bed058cee2464c1fb3327f6"
+    },
+    {
+      "path": "utils/update_build_version.py",
+      "size": 5528,
+      "sha256": "7bb3dd90444e5110d82a9ad834cab1f35e87f6711c7b83eee4c65474ed5e0db0"
+    }
+  ]
+}

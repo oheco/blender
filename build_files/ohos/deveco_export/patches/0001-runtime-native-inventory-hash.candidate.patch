@@ -1,0 +1,46 @@
+--- a/entry/src/main/ets/runtime/Runtime.ets
++++ b/entry/src/main/ets/runtime/Runtime.ets
+@@ -6,9 +6,10 @@
+ 
+ interface RuntimeFile { path: string; blob: string; sha256: string; size: number; }
+ interface NativeBinding { path: string; library: string; }
++interface NativeLibrary { library: string; sha256_before_hap_sign: string; size_before_hap_sign: number; }
+ interface Manifest {
+   schema: number; blenderVersion: string; pythonVersion: string; id: string;
+-  files: RuntimeFile[]; native: NativeBinding[];
++  files: RuntimeFile[]; native: NativeBinding[]; libraries: NativeLibrary[];
+ }
+ interface Marker { id: string; nativeRoot: string; }
+ export interface HostPaths { runtime: string; config: string; cache: string; temp: string; }
+@@ -82,8 +83,31 @@
+     if (names.has(row.path) || !/^lib[A-Za-z0-9_.-]+\.so$/.test(row.library)) { throw new Error('Invalid native module mapping'); }
+     names.add(row.path);
+   });
++  if (!Array.isArray(manifest.libraries) || manifest.libraries.length === 0 || manifest.libraries.length > 65536) {
++    throw new Error('Missing final native library inventory');
++  }
++  const libraryNames = new Set<string>();
++  manifest.libraries.forEach((row: NativeLibrary) => {
++    if (!/^lib[A-Za-z0-9_.-]+\.so$/.test(row.library) || libraryNames.has(row.library) ||
++        !/^[a-f0-9]{64}$/.test(row.sha256_before_hap_sign) || !Number.isSafeInteger(row.size_before_hap_sign) ||
++        row.size_before_hap_sign <= 0) { throw new Error('Invalid final native library inventory'); }
++    libraryNames.add(row.library);
++  });
++  if (!libraryNames.has('libblender_core.so') || !libraryNames.has('libpython3.13.so') ||
++      manifest.native.some((row: NativeBinding) => !libraryNames.has(row.library))) {
++    throw new Error('Incomplete core/Python native library mapping');
++  }
+   const nativeRoot = context.applicationInfo.nativeLibraryPath;
+   if (nativeRoot.length === 0 || !nativeRoot.startsWith('/')) { throw new Error('HAP native library directory is unavailable'); }
++  // Final HAP packaging must preserve inventoried signed ELF bytes. This checks
++  // installed files after Ark imported the host; it is not loader trust proof.
++  for (const row of manifest.libraries) {
++    const file = `${nativeRoot}/${row.library}`;
++    if (fs.statSync(file).size !== row.size_before_hap_sign ||
++        (await hash.hash(file, 'sha256')).toLowerCase() !== row.sha256_before_hap_sign) {
++      throw new Error(`Installed signed native library differs: ${row.library}`);
++    }
++  }
+   const base = `${context.filesDir}/blender/runtimes`;
+   mkdir(base);
+   const destination = `${base}/${manifest.id}-${await rootToken(context, nativeRoot)}`;

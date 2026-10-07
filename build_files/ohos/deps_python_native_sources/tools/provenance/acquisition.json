@@ -1,0 +1,70 @@
+{
+  "status": "UPSTREAM_ORIGINALS_ACQUIRED_ADAPTATION_REF_IDENTIFIED",
+  "archives": [
+    {
+      "archive": "ninja-v1.13.2.tar.gz",
+      "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz",
+      "command": [
+        "curl",
+        "--proxy",
+        "socks5h://127.0.0.1:10808",
+        "--fail",
+        "--location",
+        "--connect-timeout",
+        "30",
+        "--max-time",
+        "600",
+        "--output",
+        "/data/storage/el2/base/haps/entry/temp/blender-python-tool-source-0h03sn22/ninja-v1.13.2.tar.gz",
+        "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n\n  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\n100  285k  100  285k    0     0    99k      0  0:00:02  0:00:02 --:--:--  369k\n",
+      "size": 292385,
+      "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17"
+    },
+    {
+      "archive": "perl-5.44.0.tar.gz",
+      "url": "https://www.cpan.org/src/5.0/perl-5.44.0.tar.gz",
+      "command": [
+        "curl",
+        "--proxy",
+        "socks5h://127.0.0.1:10808",
+        "--fail",
+        "--location",
+        "--connect-timeout",
+        "30",
+        "--max-time",
+        "600",
+        "--output",
+        "/data/storage/el2/base/haps/entry/temp/blender-python-tool-source-0h03sn22/perl-5.44.0.tar.gz",
+        "https://www.cpan.org/src/5.0/perl-5.44.0.tar.gz"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0 20.2M    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n  2 20.2M    2  456k    0     0   218k      0  0:01:35  0:00:02  0:01:33  218k\n 59 20.2M   59 11.9M    0     0  3972k      0  0:00:05  0:00:03  0:00:02 3971k\n 99 20.2M   99 20.1M    0     0  4984k      0  0:00:04  0:00:04 --:--:-- 4984k\n100 20.2M  100 20.2M    0     0  5008k      0  0:00:04  0:00:04 --:--:-- 6573k\n",
+      "size": 21265451,
+      "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3"
+    }
+  ],
+  "adaptation": {
+    "repository": "https://github.com/Harmonybrew/ohos-perl.git",
+    "command": [
+      "git",
+      "-c",
+      "http.proxy=socks5h://127.0.0.1:10808",
+      "ls-remote",
+      "https://github.com/Harmonybrew/ohos-perl.git",
+      "refs/tags/5.44.0",
+      "refs/heads/main",
+      "refs/heads/master"
+    ],
+    "exit_code": 0,
+    "stdout": "bb0517e7437015b24025438084aed0661fb80553\trefs/heads/main\nbb0517e7437015b24025438084aed0661fb80553\trefs/tags/5.44.0\n",
+    "stderr": "",
+    "source_content_acquired": false
+  },
+  "temporary_tree_cleaned": true,
+  "scope": "Source acquisition only; no build, source registration or native tool acceptance"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "kind": "explicit-accepted-input-fingerprints",
+  "native_assembly": "NOT_RUN",
+  "fingerprints": {
+    "host151_inventory": "d4ddc10649d98a8af6727dc31975b0aacefeea4493da189455fc93a087184c57",
+    "development2_receipt": "ef64ce436552c6f596275bf8e530c7c7f37f0fbff709a120013dd52970c4719f",
+    "python74_audit": "68ebce38fcf64d70cf2fb1dedf8d62f3796c4b55adfaca6f1267e7005f4f70cd",
+    "numpy19_audit": "180f5ac5a977a050df7b614f86a97eb8a3a4cd939c2ff925c5587a860065c2cb"
+  },
+  "native_runtime_count": 93,
+  "packaged_python_DSOs": 92,
+  "dynamic_imports": 90,
+  "pure193_manifest_sha256": "375ff9f5534a7ea1ba9b058aaf3603f815c6ecca70606312eb3fbaa5f4a0f8ac",
+  "pure8_lock_sha256": "27aeac5e6fd312c672d09d31c6d937d3fa0bb9b77080017617ff75d4e444536d",
+  "pure193_site_sha256": "346536f46c7171bfd7d689cbf8742f9fc157b1ffa459a859bdc04439171618dd"
+}

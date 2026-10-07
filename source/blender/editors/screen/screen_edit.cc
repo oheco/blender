@@ -1880,6 +1880,13 @@ ScrArea *ED_screen_state_toggle(bContext *C,
 ScrArea *ED_screen_temp_space_open(
     bContext *C, const char *title, eSpace_Type space_type, int display_type, bool dialog)
 {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  /* The embedding host currently supplies one native surface. Use Blender's
+   * normal temporary editor and restoration path, including saved WINDOW prefs. */
+  if (display_type == USER_TEMP_SPACE_DISPLAY_WINDOW) {
+    display_type = USER_TEMP_SPACE_DISPLAY_FULLSCREEN;
+  }
+#endif
   switch (display_type) {
     case USER_TEMP_SPACE_DISPLAY_WINDOW:
       if (WM_window_open_temp(C, title, space_type, dialog)) {

@@ -1,0 +1,671 @@
+{
+  "schema_version": 1,
+  "kind": "complete-source-built-base-library-candidate",
+  "sources": [
+    {
+      "name": "zstd",
+      "version": "1.5.7",
+      "git_commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+      "archive_filename": "zstd-1.5.7.tar.gz",
+      "archive_root": "zstd-1.5.7",
+      "registry_manifest": "tpr/sources/zstd-1.5.7/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/zstd.json",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "size": 2434947,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+      },
+      "license_declaration": "SPDX:BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/zstd/COPYING",
+          "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+          "size": 18091
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/zstd/LICENSE",
+          "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+          "size": 1549
+        },
+        {
+          "source_path": "build/LICENSE",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/zstd/build/LICENSE",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      ],
+      "inventory_records": 639,
+      "links": [
+        {
+          "path": "tests/cli-tests/bin/unzstd",
+          "type": "symlink",
+          "target": "zstd"
+        },
+        {
+          "path": "tests/cli-tests/bin/zstdcat",
+          "type": "symlink",
+          "target": "zstd"
+        }
+      ]
+    },
+    {
+      "name": "jpeg",
+      "version": "2.1.3",
+      "git_commit": "c5f269eb9665435271c05fbcaf8721fa58e9eafa",
+      "archive_filename": "libjpeg-turbo-2.1.3.tar.gz",
+      "archive_root": "libjpeg-turbo-2.1.3",
+      "registry_manifest": "tpr/sources/jpeg-2.1.3/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/jpeg.json",
+      "sha256": "dbda0c685942aa3ea908496592491e5ec8160d2cf1ec9d5fd5470e50768e7859",
+      "size": 2260756,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "627b980fad0573e08e4c3b80b290fc91"
+      },
+      "license_declaration": "SPDX:BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/jpeg/LICENSE.md",
+          "sha256": "ee1eaf194d5924b6360af8a6ba6a4e1554037091f7505943300cdeec65f1aebb",
+          "size": 5213
+        },
+        {
+          "source_path": "README.ijg",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/jpeg/README.ijg",
+          "sha256": "4b7b9f8c03bb8d60270dfd12684e70ab21e4abfd27e73905cd1a7c4cae6f5cdb",
+          "size": 12732
+        }
+      ],
+      "inventory_records": 514,
+      "links": []
+    },
+    {
+      "name": "png",
+      "version": "1.6.58",
+      "git_commit": null,
+      "archive_filename": "libpng-1.6.58.tar.xz",
+      "archive_root": "libpng-1.6.58",
+      "registry_manifest": "tpr/sources/png-1.6.58/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/png.json",
+      "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+      "size": 1070096,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775"
+      },
+      "license_declaration": "SPDX:libpng-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/png/LICENSE",
+          "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+          "size": 5345
+        },
+        {
+          "source_path": "contrib/gregbook/COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/png/contrib/gregbook/COPYING",
+          "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572",
+          "size": 18097
+        },
+        {
+          "source_path": "contrib/gregbook/LICENSE",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/png/contrib/gregbook/LICENSE",
+          "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438",
+          "size": 2373
+        },
+        {
+          "source_path": "contrib/pngminus/LICENSE.txt",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/png/contrib/pngminus/LICENSE.txt",
+          "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330",
+          "size": 1164
+        }
+      ],
+      "inventory_records": 610,
+      "links": []
+    },
+    {
+      "name": "brotli",
+      "version": "1.0.9",
+      "git_commit": "e61745a6b7add50d380cfd7d3883dd6c62fc2c71",
+      "archive_filename": "brotli-v1.0.9.tar.gz",
+      "archive_root": "brotli-1.0.9",
+      "registry_manifest": "tpr/sources/brotli-1.0.9/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/brotli.json",
+      "sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+      "size": 486984,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46"
+      },
+      "license_declaration": "SPDX:MIT",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/brotli/LICENSE",
+          "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94",
+          "size": 1084
+        }
+      ],
+      "inventory_records": 135,
+      "links": []
+    },
+    {
+      "name": "freetype",
+      "version": "2.13.3",
+      "git_commit": null,
+      "archive_filename": "freetype-2.13.3.tar.gz",
+      "archive_root": "freetype-2.13.3",
+      "registry_manifest": "tpr/sources/freetype-2.13.3/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/freetype.json",
+      "sha256": "5c3a8e78f7b24c20b25b54ee575d6daa40007a5f4eea2845861c3409b3021747",
+      "size": 4063324,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "ac1f0b517f62bd40d50bc995faa5741d"
+      },
+      "license_declaration": "SPDX:FTL",
+      "notices": [
+        {
+          "source_path": "docs/GPLv2.TXT",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/freetype/docs/GPLv2.TXT",
+          "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18",
+          "size": 17994
+        },
+        {
+          "source_path": "docs/FTL.TXT",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/freetype/docs/FTL.TXT",
+          "sha256": "08c135755dd589039470f1fdbb400daaabaaa50d0b366d19cebff4d22986baa1",
+          "size": 6743
+        },
+        {
+          "source_path": "LICENSE.TXT",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/freetype/LICENSE.TXT",
+          "sha256": "2e3bbb7d7c5c396368dd0853a790ec29ce5b8647163dde42a0493fb0d6556b2b",
+          "size": 2074
+        }
+      ],
+      "inventory_records": 845,
+      "links": []
+    },
+    {
+      "name": "harfbuzz",
+      "version": "10.0.1",
+      "git_commit": "a1d9bfe62818ef0fa9cf63b6e6d51436b1c93cbc",
+      "archive_filename": "harfbuzz-10.0.1.tar.gz",
+      "archive_root": "harfbuzz-10.0.1",
+      "registry_manifest": "tpr/sources/harfbuzz-10.0.1/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/harfbuzz.json",
+      "sha256": "e7358ea86fe10fb9261931af6f010d4358dac64f7074420ca9bc94aae2bdd542",
+      "size": 36785875,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "e7358ea86fe10fb9261931af6f010d4358dac64f7074420ca9bc94aae2bdd542"
+      },
+      "license_declaration": "see upstream COPYING",
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/harfbuzz/COPYING",
+          "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64",
+          "size": 1971
+        },
+        {
+          "source_path": "src/ms-use/COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/harfbuzz/src/ms-use/COPYING",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "size": 1141
+        },
+        {
+          "source_path": "test/COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/harfbuzz/test/COPYING",
+          "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7",
+          "size": 4370
+        },
+        {
+          "source_path": "test/shape/data/aots/COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/harfbuzz/test/shape/data/aots/COPYING",
+          "sha256": "f55f74bf740db07bb032a90aa74af4307adea3d489c1ccba12453cf0c0a764cb",
+          "size": 593
+        },
+        {
+          "source_path": "test/shape/data/text-rendering-tests/COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/harfbuzz/test/shape/data/text-rendering-tests/COPYING",
+          "sha256": "d24039e4d22c9bc72096f6174374539d92a3d6e1163938546ec59179fe095e6f",
+          "size": 584
+        }
+      ],
+      "inventory_records": 3565,
+      "links": []
+    },
+    {
+      "name": "fribidi",
+      "version": "v1.0.12",
+      "git_commit": "6428d8469e536bcbb6e12c7b79ba6659371c435a",
+      "archive_filename": "fribidi-v1.0.12.tar.gz",
+      "archive_root": "fribidi-1.0.12",
+      "registry_manifest": "tpr/sources/fribidi-v1.0.12/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/fribidi.json",
+      "sha256": "2e9e859876571f03567ac91e5ed3b5308791f31cda083408c2b60fa1fe00a39d",
+      "size": 2110289,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "2e9e859876571f03567ac91e5ed3b5308791f31cda083408c2b60fa1fe00a39d"
+      },
+      "license_declaration": "SPDX:LGPL-2.1-or-later",
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/fribidi/COPYING",
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b",
+          "size": 26440
+        }
+      ],
+      "inventory_records": 135,
+      "links": []
+    },
+    {
+      "name": "fmt",
+      "version": "12.1.0",
+      "git_commit": "407c905e45ad75fc29bf0f9bb7c5c2fd3475976f",
+      "archive_filename": "fmt-12.1.0.tar.gz",
+      "archive_root": "fmt-12.1.0",
+      "registry_manifest": "tpr/sources/fmt-12.1.0/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/fmt.json",
+      "sha256": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea",
+      "size": 711419,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea"
+      },
+      "license_declaration": "SPDX:MIT",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/fmt/LICENSE",
+          "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+          "size": 1431
+        }
+      ],
+      "inventory_records": 128,
+      "links": []
+    },
+    {
+      "name": "imath",
+      "version": "3.2.2",
+      "git_commit": "1e480d11cb98b032a2dece9b9a8730512effc7f6",
+      "archive_filename": "imath-3.2.2.tar.gz",
+      "archive_root": "Imath-3.2.2",
+      "registry_manifest": "tpr/sources/imath-3.2.2/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/imath.json",
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
+      "size": 689217,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "e29f25ce926ac53d8e0a52197299f61b"
+      },
+      "license_declaration": "SPDX:BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/imath/LICENSE.md",
+          "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601",
+          "size": 1497
+        }
+      ],
+      "inventory_records": 397,
+      "links": []
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1",
+      "git_commit": null,
+      "archive_filename": "zlib-1.3.1.tar.gz",
+      "archive_root": "zlib-1.3.1",
+      "registry_manifest": "tpr/sources/zlib-1.3.1/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/zlib.json",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "9855b6d802d7fe5b7bd5b196a2271655"
+      },
+      "license_declaration": "SPDX:Zlib",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/zlib/LICENSE",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+          "size": 1002
+        }
+      ],
+      "inventory_records": 253,
+      "links": []
+    },
+    {
+      "name": "meson",
+      "version": "1.9.0",
+      "git_commit": null,
+      "archive_filename": "meson-1.9.0.tar.gz",
+      "archive_root": "meson-1.9.0",
+      "registry_manifest": "tpr/sources/meson-1.9.0/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/meson.json",
+      "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+      "size": 2366082,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d"
+      },
+      "license_declaration": "SPDX:Apache-2.0",
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/meson/COPYING",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        }
+      ],
+      "inventory_records": 4720,
+      "links": []
+    },
+    {
+      "name": "pkgconf",
+      "version": "2.5.1",
+      "git_commit": null,
+      "archive_filename": "pkgconf-2.5.1.tar.xz",
+      "archive_root": "pkgconf-2.5.1",
+      "registry_manifest": "tpr/sources/pkgconf-2.5.1/manifest.json",
+      "inventory": "build_files/ohos/deps_base_sources/inventories/pkgconf.json",
+      "sha256": "cd05c9589b9f86ecf044c10a2269822bc9eb001eced2582cfffd658b0a50c243",
+      "size": 328064,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "cd05c9589b9f86ecf044c10a2269822bc9eb001eced2582cfffd658b0a50c243"
+      },
+      "license_declaration": "SPDX:ISC",
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "build_files/ohos/deps_base_sources/licenses/pkgconf/COPYING",
+          "sha256": "07ee94b50a41ee3fc4e13a9b9c60b26fc28488494c465639f7e5f07a3952ec04",
+          "size": 509
+        }
+      ],
+      "inventory_records": 189,
+      "links": []
+    }
+  ],
+  "patches": [
+    {
+      "name": "zstd",
+      "path": "build_files/ohos/deps_base_sources/builder/patches/zstd-1.5.7-ohos-cover-tls.patch",
+      "sha256": "d71212e7500c7dd528ce07315dbe8062a4a6eb097e8dfe7eb51c42c1848d36ac",
+      "files": [
+        {
+          "path": "lib/dictBuilder/cover.c",
+          "before_sha256": "2419631b20b0f4867d0f3c178fc4a3006d05f58e8ce3ce6657133f85ed40d683",
+          "after_sha256": "5d7162cdf1a398016f2fcd315b20cfd2da9a58aea807db1ca16c0d0de5a6f330"
+        }
+      ],
+      "reason": "OHOS qsort and thread-local COVER context/diagnostics; prior sort context and optimizer worker level restored; ordinary platforms unchanged"
+    },
+    {
+      "name": "harfbuzz",
+      "path": "build_files/ohos/deps_base_sources/builder/patches/harfbuzz-10.0.1-ohos-static-subset.patch",
+      "sha256": "5ac8ccf899a4032c38859d9b6a0f02220b4b6392bf7d964baa6d46d38b3ac16d",
+      "files": [
+        {
+          "path": "CMakeLists.txt",
+          "before_sha256": "a0ce4c0575f3dad0dce9a8bb453514c60e4c7d1ff60b53bbedd86d9cb4cb4564",
+          "after_sha256": "5c45296608488156029264848febdb7ead6352dbca40426292efbb2afda8f6b7"
+        }
+      ],
+      "reason": "Real HarmonyOS static subset resolves four common implementation units from the original core amalgam once; public core dependency, subset/graph APIs and whole-archive14 retained; other platforms/shared builds unchanged"
+    },
+    {
+      "name": "jpeg",
+      "path": "build_files/ohos/deps_base_sources/builder/patches/jpeg-2.1.3-ohos-static-owner.patch",
+      "sha256": "223fbd55cf59b5cb8c739c3fc1920db4077e6eaed1158ef3826e4df73c743ad3",
+      "files": [
+        {
+          "path": "CMakeLists.txt",
+          "before_sha256": "d0d54163b83fdc36360fae497dc8c9d2fce085b6bcfdcf12edc200506f4622c8",
+          "after_sha256": "b87451230af7cbb2ad7ef7e1c3bc5bb2d3bf3298f57b0293a18b2b9f41a80694"
+        }
+      ],
+      "reason": "HarmonyOS static-only TurboJPEG retains its eight API/transform/memory/BMP/PPM units and resolves all common JPEG core and SIMD implementation units once through PUBLIC jpeg-static; other/shared targets unchanged"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Roboto-Regular.abc.ttf",
+      "source": "harfbuzz",
+      "source_path": "test/api/fonts/Roboto-Regular.abc.ttf",
+      "fixture": "build_files/ohos/deps_base_sources/builder/fixtures/fonts/Roboto-Regular.abc.ttf",
+      "sha256": "60dc8176190f31721fed3095551ee7cf84659a67af6f15f1c99e4666c11f1154",
+      "size": 2132
+    },
+    {
+      "name": "Roboto-Regular.gsub.fi.ttf",
+      "source": "harfbuzz",
+      "source_path": "test/api/fonts/Roboto-Regular.gsub.fi.ttf",
+      "fixture": "build_files/ohos/deps_base_sources/builder/fixtures/fonts/Roboto-Regular.gsub.fi.ttf",
+      "sha256": "d650c07580759a9389190c8cd39b2d1acaa489ab9e951d094f4358bd6081fb2b",
+      "size": 2652
+    },
+    {
+      "name": "Qahiri-Regular.ttf",
+      "source": "harfbuzz",
+      "source_path": "test/api/fonts/Qahiri-Regular.ttf",
+      "fixture": "build_files/ohos/deps_base_sources/builder/fixtures/fonts/Qahiri-Regular.ttf",
+      "sha256": "549cb573a7947d06eede06c049fb1fe3af162550e351eaecee17c278e73d269e",
+      "size": 35984
+    }
+  ],
+  "font_license_provenance": {
+    "Roboto-subsets": "Source original HarfBuzz subsets; original complete same-archive Roboto fonts have embedded Google2011+Apache-2.0 notices retained byte-for-byte",
+    "Qahiri": "Embedded copyright2021Qahiri Project Authors/OFL1.1; complete original HB test/COPYING preserved",
+    "Roboto-original-font-byte-evidence": [
+      {
+        "original_source_path": "perf/fonts/Roboto-Regular.ttf",
+        "file": "build_files/ohos/deps_base_sources/builder/fixtures/font-provenance/perf/fonts/Roboto-Regular.ttf",
+        "sha256": "797e35f7f5d6020a5c6ea13b42ecd668bcfb3bbc4baa0e74773527e5b6cb3174",
+        "size": 305608,
+        "embedded_copyright": "Google2011",
+        "embedded_font_license": "Apache-2.0"
+      },
+      {
+        "original_source_path": "test/subset/data/fonts/Roboto-Regular.ttf",
+        "file": "build_files/ohos/deps_base_sources/builder/fixtures/font-provenance/test/subset/data/fonts/Roboto-Regular.ttf",
+        "sha256": "79e851404657dac2106b3d22ad256d47824a9a5765458edb72c9102a45816d95",
+        "size": 171676,
+        "embedded_copyright": "Google2011",
+        "embedded_font_license": "Apache-2.0"
+      }
+    ],
+    "Apache-text-source": "Original Meson1.9.0 COPYING, separately preserved; not a claim fonts are HarfBuzz Old-MIT or generic OFL"
+  },
+  "existing_inputs_read_only": [
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/sources.lock.json",
+      "sha256": "58fa70d5855adc072c9fa6ffa05d955d17c112ecb7cdd58429b127e927ec4e9d",
+      "size": 10341
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/native.py",
+      "sha256": "624afd16014fecc36652cff3ad23354ed6a7cbd676c4894a28f373bd71d83796",
+      "size": 16607
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/tests/run.py",
+      "sha256": "9fd4d06f3a7042036510e30f3af59256b7a93d3563469044f61c1a7cda8d61b9",
+      "size": 9357
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/tests/native-acceptance.cpp",
+      "sha256": "87423d28603f84d7406d06b000397b7010b04297830feecb6859fc79a9fb4920",
+      "size": 13367
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/tests/CMakeLists.txt",
+      "sha256": "b8f1d4d98a479d69c575efc6929e90c10bad8e3110a7884d8d4d5dc51a37b9e1",
+      "size": 2088
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/native-validation.json",
+      "sha256": "873a1d052679a7cd2d4856d994aad39d07da70b3528f90ad9b46e65bbfa5a593",
+      "size": 11731
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/artifacts.json",
+      "sha256": "c254df5519966e022623c2f6acc96a48e3d25bcc96cf8f81558ade623136a7e1",
+      "size": 58827
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/environment.json",
+      "sha256": "9939ef6b2d4f0eb9fa2918e95ba32233d7a167ea51ae5b4be5a79f58f52f03bf",
+      "size": 929
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/deps-base/sign_compiler.py",
+      "sha256": "b2f69b7565eabeab7776d17652527a731c2b1437f8383a443285a4349515d7f1",
+      "size": 4090
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/zstd-1.5.7/manifest.json",
+      "sha256": "f0dd8f50451b5760e23e6c4d0c00e3e55d3b8e4a1bb8c53ec5490f59a055f259",
+      "size": 623
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/zstd-1.5.7/source.part0000",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "size": 2434947
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/jpeg-2.1.3/manifest.json",
+      "sha256": "7f40562f04c1095bda946e43e8a3a5d8cc7ff4b82f8bda3db8e6be7728132ce4",
+      "size": 615
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/jpeg-2.1.3/source.part0000",
+      "sha256": "dbda0c685942aa3ea908496592491e5ec8160d2cf1ec9d5fd5470e50768e7859",
+      "size": 2260756
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/png-1.6.58/manifest.json",
+      "sha256": "2796f6fca6c5a6e151ee644e04cb2cf76f1e342dcc2a08be6792dcfff7aba795",
+      "size": 581
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/png-1.6.58/source.part0000",
+      "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+      "size": 1070096
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/brotli-1.0.9/manifest.json",
+      "sha256": "ef254960f7a380e0b9a42c76d1d9c98fc00df97189b2402b638ea9f31e37f5c5",
+      "size": 576
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/brotli-1.0.9/source.part0000",
+      "sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+      "size": 486984
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/freetype-2.13.3/manifest.json",
+      "sha256": "f19d3eff8926da14ba0cd598fa2ccee9878a6c122657f4431030ce22555afbdb",
+      "size": 631
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/freetype-2.13.3/source.part0000",
+      "sha256": "5c3a8e78f7b24c20b25b54ee575d6daa40007a5f4eea2845861c3409b3021747",
+      "size": 4063324
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/harfbuzz-10.0.1/manifest.json",
+      "sha256": "daa831d63ac5f73827cf276c2a2c48488fe55c1780f246419599dec50026a6ee",
+      "size": 757
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/harfbuzz-10.0.1/source.part0000",
+      "sha256": "9b4c527d8c5b300424d1b068b0f571b872cf147235641a5ab167dcac16bb0315",
+      "size": 33554432
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/harfbuzz-10.0.1/source.part0001",
+      "sha256": "09ff33b7202770a8b5ceaf00decd7ab2a07dd227855e589c3c8dfc30a2610634",
+      "size": 3231443
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/fribidi-v1.0.12/manifest.json",
+      "sha256": "47d1eb46c98306409530a0b2cbef1313ba3c7154a9985dd6080ad9a6141c8c83",
+      "size": 600
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/fribidi-v1.0.12/source.part0000",
+      "sha256": "2e9e859876571f03567ac91e5ed3b5308791f31cda083408c2b60fa1fe00a39d",
+      "size": 2110289
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/fmt-12.1.0/manifest.json",
+      "sha256": "a02c824082442095e35ea523d86094b53a843efde23b0f75014fcdcd87a27c84",
+      "size": 568
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/fmt-12.1.0/source.part0000",
+      "sha256": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea",
+      "size": 711419
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/imath-3.2.2/manifest.json",
+      "sha256": "5d9eeb215f41ef21ff1bf5e9b99cd987d9d4a574a9a39ac1fc6c102e25ee54e2",
+      "size": 593
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/imath-3.2.2/source.part0000",
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
+      "size": 689217
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/zlib-1.3.1/manifest.json",
+      "sha256": "57d2b1dac5b12798d3d6d1aedcd36584efc77e933b1a40c41e08669e5467f26c",
+      "size": 560
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/zlib-1.3.1/source.part0000",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/meson-1.9.0/manifest.json",
+      "sha256": "f2d7140bde4c5b074c50abb163f1de9dcdd96977891a7a2615bd3adf50e10e77",
+      "size": 667
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/meson-1.9.0/source.part0000",
+      "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+      "size": 2366082
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/pkgconf-2.5.1/manifest.json",
+      "sha256": "dc135c29f0114b15e38452f1c29e15659745468447b4c8c8e2fb40369bcffdbc",
+      "size": 573
+    },
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/tpr/sources/pkgconf-2.5.1/source.part0000",
+      "sha256": "cd05c9589b9f86ecf044c10a2269822bc9eb001eced2582cfffd658b0a50c243",
+      "size": 328064
+    }
+  ],
+  "selected_graph": "Ten source-built runtime dependencies including zlib, Meson Python source orchestrator and source-built pkgconf; no reused accepted libraries",
+  "new_full_native_acceptance": false,
+  "gates": {
+    "source": "Pending short proof",
+    "native": "NOT_RUN",
+    "BlenderTextImage": "NOT_TESTED",
+    "HAP": "NOT_TESTED"
+  }
+}

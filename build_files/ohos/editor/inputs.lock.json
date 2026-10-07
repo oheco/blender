@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "kind": "offline-editor-orchestration-inputs",
+  "scope": "NEW source orchestration; native editor/CMake/bpy/HAP NOT_RUN",
+  "sealed_files": [
+    {
+      "path": "CMakeLists.txt",
+      "size": 94963,
+      "sha256": "11ff923a40c60b14522ac8a53c69ea4b6dad273fac213f3aed83b2a641766893"
+    },
+    {
+      "path": "build_files/cmake/Modules/FindGflags.cmake",
+      "size": 25701,
+      "sha256": "05cfae618df836a6170c53688f2876ccb6fed040d1731b89269c6bc6febefbf0"
+    },
+    {
+      "path": "build_files/cmake/Modules/FindGlog.cmake",
+      "size": 7705,
+      "sha256": "0f583d9a8d99fa251b86a37453928a01a1575460f40b6d4de9d2e6f7e759b7c7"
+    },
+    {
+      "path": "build_files/cmake/platform/dependency_targets.cmake",
+      "size": 21537,
+      "sha256": "d24db91deebd825b01fd35a6b5a946b7e33412ef571e2d6ef7b202141a6031b3"
+    },
+    {
+      "path": "build_files/cmake/platform/platform_ohos_volume.cmake",
+      "size": 6429,
+      "sha256": "41499704255cfaddbd23300ca8d312b2b10a9ee2cfc15146ac6dcf1dd8b4351c"
+    },
+    {
+      "path": "build_files/cmake/platform/platform_unix.cmake",
+      "size": 37842,
+      "sha256": "86277adfc121b36cbddd6535f597200c51dc05d6c01788cd69de756ae7f9c03e"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bpy_acceptance_common.py",
+      "size": 24524,
+      "sha256": "012445db6242198b22a0c660e21a571395bce71d2834ffb50bdde22bca356ba3"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bpy_export_acceptance.py",
+      "size": 2305,
+      "sha256": "c63e9208d8e3b44abd8701c3eeb61e1ab88b4098a9a0e01f8ec3b97e79b79e79"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bpy_import_acceptance.py",
+      "size": 896,
+      "sha256": "40a4e2e44375a97f6a07c0f5d54e200276c8ce1a57580f006d3ab3d6548baefa"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bridge_abi_acceptance.py",
+      "size": 31956,
+      "sha256": "146e19aa51e458586e5b87a6bdce828393b4678884622bc124044c0b79d4f006"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/gltf_acceptance_common.py",
+      "size": 11024,
+      "sha256": "9c776c530cf38fc1a1c0a8f9b2ccbe27b2d4cddb73255f254348b2c174e75515"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/source_guard.py",
+      "size": 4759,
+      "sha256": "d47698afafea933e052a8f8993151fc9d39e360c732208cf3b7ff48f1aa8567a"
+    },
+    {
+      "path": "build_files/ohos/editor/README.md",
+      "size": 9144,
+      "sha256": "d6070fe83d0640aa3ad286607b9008fd468d83157def77735775deeeca6c148c"
+    },
+    {
+      "path": "build_files/ohos/editor/abi_probe.py",
+      "size": 4063,
+      "sha256": "375e71b1db14677bff32ca99c02d3fcda6fada7cac8db2a3eda92cd07bb43e75"
+    },
+    {
+      "path": "build_files/ohos/editor/acceptance/README.md",
+      "size": 1164,
+      "sha256": "07e34dd59b540be6f06ac66cc3ae164a7272862e68a9c20326cb9b9226a780a4"
+    },
+    {
+      "path": "build_files/ohos/editor/acceptance/api_sources.json",
+      "size": 7358,
+      "sha256": "4997771e5a1acb770e0776f1f36d4c19a815af8ea5994599b41ae532e69e7b95"
+    },
+    {
+      "path": "build_files/ohos/editor/acceptance/bpy_acceptance.py",
+      "size": 34852,
+      "sha256": "23334be6e12c427681c2167a43d4bbd3b1a9b10d37d8c1b44b5ca3334c529136"
+    },
+    {
+      "path": "build_files/ohos/editor/acceptance/diagnostic_driver.py",
+      "size": 30290,
+      "sha256": "0a4eaeaeaae09d364dec3f72d5bd4ca8d8369b8f7957226ce43b131b4d55a3bb"
+    },
+    {
+      "path": "build_files/ohos/editor/acceptance_runner.py",
+      "size": 8788,
+      "sha256": "eb79ce935696325b75bb7a34df058b55fdf0e6c8b194de2ad3b6c229a5f4983c"
+    },
+    {
+      "path": "build_files/ohos/editor/builder.py",
+      "size": 20095,
+      "sha256": "61e6e187282c7e5889c76ef24a471813888701a47a79e24203430d8854382375"
+    },
+    {
+      "path": "build_files/ohos/editor/cmake/graph.cmake",
+      "size": 3876,
+      "sha256": "e34373f0d47c009fd15aae42a62f7601124674bb87ed2a1fcade57fc5fa2d878"
+    },
+    {
+      "path": "build_files/ohos/editor/commands.py",
+      "size": 6250,
+      "sha256": "3258f8763a32008ef028246d6a0cebe13b460a264e898d78a22b22823c8ecb0c"
+    },
+    {
+      "path": "build_files/ohos/editor/common.py",
+      "size": 5521,
+      "sha256": "ce9e36d5d8b718c6875a91e8c2ad80fdd0769ecb654af188522e0f2d6c86f8db"
+    },
+    {
+      "path": "build_files/ohos/editor/contracts.py",
+      "size": 2513,
+      "sha256": "04e5103fb4dd5b850b5d172c7880afc8fc88b7ec165731f64768f4b26e6bd84d"
+    },
+    {
+      "path": "build_files/ohos/editor/dependencies.py",
+      "size": 59474,
+      "sha256": "a59b40e68b6ee44c6348a3252f21ef72651c3a2ad03d7fcb2e9fec966971d8dd"
+    },
+    {
+      "path": "build_files/ohos/editor/elf.py",
+      "size": 8161,
+      "sha256": "729aa0ecee3d6e366a56840fe6822ab826f3182048089b6e8a2fc4664887cdfb"
+    },
+    {
+      "path": "build_files/ohos/editor/graph.py",
+      "size": 35907,
+      "sha256": "6d704c814ea92520f4c9b9121deea334cbcc31b303aedac94b7c3b7fee53b105"
+    },
+    {
+      "path": "build_files/ohos/editor/guardtests.py",
+      "size": 8322,
+      "sha256": "112aa6ee6c0179d8dac38a63e30c493e94d4f9b3420858586eb345c46fdb89e8"
+    },
+    {
+      "path": "build_files/ohos/editor/profiles.py",
+      "size": 6953,
+      "sha256": "c5bca4e624cedfa62e12f320c1dc20ab9122fc9229c319cfeee849224a8484e1"
+    },
+    {
+      "path": "build_files/ohos/editor/runtime.py",
+      "size": 4095,
+      "sha256": "6fccddfc4bbc4a0018b57ae0f28cbb6e7721c6552ad51ab510702c656f78f44d"
+    },
+    {
+      "path": "build_files/ohos/editor/source_inputs.py",
+      "size": 3413,
+      "sha256": "c87d033fdb28289a1e23d1ad013b5fcd27a22662e86406ecf4ecbed1d070e15b"
+    },
+    {
+      "path": "build_files/ohos/editor/sse2neon/LICENSE",
+      "size": 1083,
+      "sha256": "5c347d431a555ec6e5bc9720ceba2119570357dab5203372d469be9bcce374cc"
+    },
+    {
+      "path": "build_files/ohos/editor/sse2neon/inventory.json",
+      "size": 4401,
+      "sha256": "fddaf682cdfaaa0ec87cd2ed23e26d4f7525e2c82eecbab80f418dae9b52612b"
+    },
+    {
+      "path": "build_files/ohos/editor/sse2neon/provenance.json",
+      "size": 907,
+      "sha256": "fcf33907dd5532323de3cf12ae4fcf79ff68b3fcb900ca28015996731ebde2dd"
+    },
+    {
+      "path": "build_files/ohos/editor/toolkit.py",
+      "size": 9756,
+      "sha256": "50ba80b02122855b6d90f5b90fd8dc57cc0f6d73170ca659debfa60e2bec80ef"
+    },
+    {
+      "path": "build_files/ohos/vendor_archive.py",
+      "size": 8263,
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+    },
+    {
+      "path": "intern/draco_bridge/CMakeLists.txt",
+      "size": 1406,
+      "sha256": "09d43783706abf758a60d3aaffd6d2991e4b1935bd334ab29c64177666c5838d"
+    },
+    {
+      "path": "intern/ghost/GHOST_OHOSEngine.h",
+      "size": 1652,
+      "sha256": "a12c7a5c07bed1079992f581b79075940b560d3a719cb6daab848454cfe0e43b"
+    },
+    {
+      "path": "intern/ghost/GHOST_OHOSHost.h",
+      "size": 7614,
+      "sha256": "0b1561f23d25b67c4ef4cc8e9d38c0794384e2c2498ebdec3797e7cda8eed87f"
+    },
+    {
+      "path": "intern/ghost/GHOST_OHOSNative.h",
+      "size": 3287,
+      "sha256": "7444e6a47eec312b2e8221bfb6772c741bdb83595e6cf647231e8eaf2d86a15f"
+    },
+    {
+      "path": "intern/ghost/intern/GHOST_OHOSEngine.cc",
+      "size": 3542,
+      "sha256": "36d7b33ed5b193ab4fb9b1c9b05a4b83e296dae46f64b9e0cbde644d4254c3ad"
+    },
+    {
+      "path": "intern/ghost/intern/GHOST_OHOSHost.cc",
+      "size": 17356,
+      "sha256": "afa9c15fb20a8e393140b3ad2e66ced74bf14b5850947532034397a2b1a41bc9"
+    },
+    {
+      "path": "intern/ghost/intern/GHOST_OHOSNative.cc",
+      "size": 10870,
+      "sha256": "3b9e16ccc8fe51ad0c67f454d9a20d321cc440580a56c57d1cf0b0875ff8797e"
+    },
+    {
+      "path": "intern/libmv/CMakeLists.txt",
+      "size": 11262,
+      "sha256": "3ed85dba82c823894fff7a018af69842ee29280921a8be259830c824df59442d"
+    },
+    {
+      "path": "intern/libmv/intern/logging.cc",
+      "size": 1279,
+      "sha256": "e3c2ab14bcf121faea7a48846736297533553e64a1b63f3f490473392e2052ee"
+    },
+    {
+      "path": "intern/libmv/libmv/simple_pipeline/bundle.cc",
+      "size": 33230,
+      "sha256": "af7777fe75d2988fd323ce48ae366ba4442a62c0b5e8fa1bcb11b2db1e3f5791"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/CMakeLists.txt",
+      "size": 1426,
+      "sha256": "21be17b7313a5b3638721e52164b2d84ceb94cbff3afc1051cff473c0deff724"
+    },
+    {
+      "path": "source/creator/CMakeLists.txt",
+      "size": 72063,
+      "sha256": "48a11269037dbbaa459a5738173ff8fe78f6c8c6e126ae6d829232d001be852a"
+    },
+    {
+      "path": "source/creator/creator.cc",
+      "size": 27838,
+      "sha256": "d54779b29d6fda95c968887dc474b6df424f1726c93b65e723b5f831ba0ca78d"
+    },
+    {
+      "path": "source/creator/creator_ohos.h",
+      "size": 1940,
+      "sha256": "f9f8316c450055de7c3d77f959e9819d61009a263b68e668f2f6cb0e913a60f4"
+    },
+    {
+      "path": "source/creator/creator_ohos_files.h",
+      "size": 1731,
+      "sha256": "19141cd2ef219c91d7d46c20e99c7d15a78b524049fe790847d6be3bb33e9af1"
+    },
+    {
+      "path": "source/creator/creator_ohos_files_impl.hh",
+      "size": 8358,
+      "sha256": "3411969d20256fe32c3f5e1b50cac7f8bb40bfefceebece6f163a1b4f69f412b"
+    },
+    {
+      "path": "source/creator/creator_ohos_files_path.hh",
+      "size": 3736,
+      "sha256": "1b0beaae2ec2560eb3edcb0a571cc195646a65e789311aede21b880537d06f57"
+    },
+    {
+      "path": "source/creator/ohos/blender_ohos_diagnostic.cc",
+      "size": 4276,
+      "sha256": "0d30c2b30ac45ed3a3b148bd3a580754f79d6c916ca6bb7285cc346783cd09b7"
+    },
+    {
+      "path": "source/creator/ohos/core.exports.map",
+      "size": 511,
+      "sha256": "785975477507f3d7447ba9186ef4a68242dd2216a93394bb904df4b64584cc81"
+    },
+    {
+      "path": "tpr/sources/sse2neon-227cc413fb2d50b2a10073087be96b59d5364aea/manifest.json",
+      "size": 673,
+      "sha256": "4e8168e5d0a8d3c9090493ee841169e4a44ede4d86a7509a9e0db7cf8340fb2b"
+    },
+    {
+      "path": "tpr/sources/sse2neon-227cc413fb2d50b2a10073087be96b59d5364aea/source.part0000",
+      "size": 136342,
+      "sha256": "3427a495743bb6fd1b5f9f806b80f57d67b1ac7ccf39a5f44aedd487fd7e6da1"
+    }
+  ]
+}

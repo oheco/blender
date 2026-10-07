@@ -1,0 +1,946 @@
+{
+  "schema_version": 1,
+  "scope": "New independent offline glTF native/Blender-bridge portable source/build candidate; no main configure/build/HAP run",
+  "sealed_files": [
+    {
+      "path": "build_files/build_environment/cmake/draco.cmake",
+      "size": 1307,
+      "sha256": "5413a00e1db934f81dd83d1e64d4798165f465d25076e4b80943882d13f62a55"
+    },
+    {
+      "path": "build_files/build_environment/cmake/meshoptimizer.cmake",
+      "size": 1299,
+      "sha256": "4d3598619932a71481dbbe9e184db0ad05d5086adc2b1071a9321313c5124a75"
+    },
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "size": 72783,
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/ATTRIBUTION.md",
+      "size": 2040,
+      "sha256": "1a2306875dae54ba9ba9fb2f26d89043c900f6c7a9d8df7072b5a065242c7269"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/README.md",
+      "size": 8724,
+      "sha256": "b69ddbed619c343a50443f78475622e69725b4a8912b0ab926dc17146cfcbb1d"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/README.md",
+      "size": 12250,
+      "sha256": "7e4e58b377bc8f1502526f29f0bf2d9ceea2e72f86c9f88305441f1417323827"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bpy_acceptance_common.py",
+      "size": 24524,
+      "sha256": "012445db6242198b22a0c660e21a571395bce71d2834ffb50bdde22bca356ba3"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bpy_export_acceptance.py",
+      "size": 2305,
+      "sha256": "c63e9208d8e3b44abd8701c3eeb61e1ab88b4098a9a0e01f8ec3b97e79b79e79"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bpy_import_acceptance.py",
+      "size": 896,
+      "sha256": "40a4e2e44375a97f6a07c0f5d54e200276c8ce1a57580f006d3ab3d6548baefa"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/bridge_abi_acceptance.py",
+      "size": 31956,
+      "sha256": "146e19aa51e458586e5b87a6bdce828393b4678884622bc124044c0b79d4f006"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/gltf_acceptance_common.py",
+      "size": 11024,
+      "sha256": "9c776c530cf38fc1a1c0a8f9b2ccbe27b2d4cddb73255f254348b2c174e75515"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/patches/0001-draco-decoder-errorcleanup.patch",
+      "size": 7857,
+      "sha256": "67cd3c32cf0537ced52e18ce8327b46fb765616aa939f58fdcdce2ec7e489843"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/patches/check_draco_errorcleanup.py",
+      "size": 9956,
+      "sha256": "1549cecf8a65423e8fa918c649780f84e455309ed837f4161cb65f7db11cedd4"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/patches/draco-errorcleanup-record.json",
+      "size": 2687,
+      "sha256": "44ae304e293e0fa881b8f597e96b0e4af6ba1c5c7f0d2c9521c0c7f19eaffe67"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/acceptance/validation-record.json",
+      "size": 2106,
+      "sha256": "547912f8235a65b1b25ded574df49f06f2a7ece6d8cb61d4cfefbfadeb9d52b1"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/audit.py",
+      "size": 6336,
+      "sha256": "aac050e29a634801f34dbff19a3e1dda222a812f788aaf0fa1f4f5851991436d"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/builder.py",
+      "size": 14817,
+      "sha256": "11ea312dc2b7ee3d084f7a61ea0160348fb640a32271086a1fc09ccaafa582c0"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/cmake/Platform/HarmonyOS.cmake",
+      "size": 808,
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/cmake/bridges/CMakeLists.txt",
+      "size": 1920,
+      "sha256": "5e592e7d51d719c4244a57b51a12c090f35b08e1369b6a2bd36e686e973122df"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/cmake/native-host.cmake",
+      "size": 812,
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/consumers/CMakeLists.txt",
+      "size": 2042,
+      "sha256": "6174f445104f161f203acc8113ba9c225ca276d7d6db4772ed01d583194fa355"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/consumers/native_acceptance.cc",
+      "size": 6364,
+      "sha256": "224ea16886dc2b0e75911ce280e2193f0e095ef16bcdc63e131bcb134cdc6a53"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/feature-matrix.json",
+      "size": 3167,
+      "sha256": "35a202d8fa86780d3742b371925925b0d771ad00755e0327407b81c9a96ee4cf"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/inventories/draco.json",
+      "size": 176782,
+      "sha256": "b7311d1ecaee18c1b9fcd23b53bc8141a168618c2fa2c65b85c8957df5c0d509"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/inventories/meshoptimizer.json",
+      "size": 16626,
+      "sha256": "6d3150a7a6843700a8e534aa46011fa97ba430a8c40e1cb4ae5aa802a88c2923"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/io_utils.py",
+      "size": 5809,
+      "sha256": "ba981d48207a13abc8a20e7f9712a7eeac7b8da019136f8f0bfcd2bbf93815a2"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/launcher.py",
+      "size": 3118,
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/metadata.py",
+      "size": 5300,
+      "sha256": "7e705414c389a8abb671de7dea620c6491072fbe33849e13f112edd03a6bba55"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/patches/decoder-explicit-standard-headers.patch",
+      "size": 249,
+      "sha256": "3a0429ecc5e0dc043f30704c9592c2dd0826abc39a03d5f47f1df00460e4f18a"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/patches/encoder-explicit-standard-headers.patch",
+      "size": 233,
+      "sha256": "c9297fe29fee73cd971173eae8b259a61e287ce5c0fdefc8c2857dcb8d2f0a0d"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/patches.lock.json",
+      "size": 1083,
+      "sha256": "1f2031d23042a351994fd63b0fbe5c39f850ae60ccd61ec98bb7b3c7cd9d4e71"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/short_checks.py",
+      "size": 8290,
+      "sha256": "9b5acb3adad952837eba61ee0a3d12ff4355a3a51be003667e6425f2ebcdf1f1"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/source_guard.py",
+      "size": 7936,
+      "sha256": "b03037da0d1e19993847ab7e89f0bd8c7ac9a0b5ab6c0cf535c8a7c752f79259"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/source_tree.py",
+      "size": 3632,
+      "sha256": "565aae06196d46629efa7d0dca2668808ec28702f08b6bf69d2059b254447400"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/sources.lock.json",
+      "size": 2053,
+      "sha256": "aefc992ecee21395ef1ead6d35dd01b3f0e18da455aafbbe2e96a4ff53428e83"
+    },
+    {
+      "path": "build_files/ohos/deps_gltf_sources/toolchain.py",
+      "size": 5331,
+      "sha256": "823d30d86fa6c6fa5893d1540c3d822a46a8af01aa387750ce96559fbd8e0669"
+    },
+    {
+      "path": "intern/draco_bridge/CMakeLists.txt",
+      "size": 1406,
+      "sha256": "09d43783706abf758a60d3aaffd6d2991e4b1935bd334ab29c64177666c5838d"
+    },
+    {
+      "path": "intern/draco_bridge/intern/common.cpp",
+      "size": 1096,
+      "sha256": "5573b6ed18cee1ec562ab3d3323091c7e675f2328edfc0c7f4db605f8542706b"
+    },
+    {
+      "path": "intern/draco_bridge/intern/common.h",
+      "size": 943,
+      "sha256": "08611565bde50b45180c3177c2e1d7858fcb71a436c6e3868353fadf98af00ab"
+    },
+    {
+      "path": "intern/draco_bridge/intern/decoder.cpp",
+      "size": 5697,
+      "sha256": "dc2fd2c603e9d51032471a0b63c2dfd6b2e8397edb82d7b79ab28475282436cc"
+    },
+    {
+      "path": "intern/draco_bridge/intern/decoder.h",
+      "size": 1249,
+      "sha256": "603d950d29a8bb32153f1ade0f73d04e7c93e9021d910129375b337d9df3de5e"
+    },
+    {
+      "path": "intern/draco_bridge/intern/encoder.cpp",
+      "size": 7953,
+      "sha256": "7b6af1c154aedfdad60820f0af547f4622132e482b2ba7507cfa65f8f220d5b5"
+    },
+    {
+      "path": "intern/draco_bridge/intern/encoder.h",
+      "size": 1585,
+      "sha256": "76523f90169dd9de18eb147eaea272be0dd1fa5219d8517a948cc90484ce10e6"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/CMakeLists.txt",
+      "size": 1426,
+      "sha256": "21be17b7313a5b3638721e52164b2d84ceb94cbff3afc1051cff473c0deff724"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/intern/common.cpp",
+      "size": 148,
+      "sha256": "577f3b94060657ebd9490723318628a379819bde511f8f587ae4905445b22d58"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/intern/common.h",
+      "size": 275,
+      "sha256": "c7ec9546ceca08257d3444d2e2858f07d4e59e67c461c980b2d5d45e637f9202"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/intern/decoder.cpp",
+      "size": 1481,
+      "sha256": "55d069056abf1c72a4d470e43d5dd2f6cfb03d216f03378ddb1e8b58c1e09d71"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/intern/decoder.h",
+      "size": 1010,
+      "sha256": "c51be01bef12b46f716e6f7eaf4261d87b75d317870018bb2415e1dad91dcfb2"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/intern/encoder.cpp",
+      "size": 2332,
+      "sha256": "4028d5a707f1ce1f987acab4dc824d2697b0c749de8cf820d8d3274acc181fb0"
+    },
+    {
+      "path": "intern/meshoptimizer_bridge/intern/encoder.h",
+      "size": 2086,
+      "sha256": "1bf9802dcd9b062c40932da981ebd99c524f72743eae22a9d666ba10bd82b6b8"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/__init__.py",
+      "size": 86974,
+      "sha256": "73d98cf870d69f2aedb0a13798e389688a225efb4c155c5980bbb7ca0436421b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/__init__.py",
+      "size": 104,
+      "sha256": "59a7c3a3465a99ffb07cbdc268695b087151579cd6484567e0d60b0abbd12a50"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/blender_default.py",
+      "size": 311,
+      "sha256": "84633c83caf11477c1473db1579107b8542d87d3cadea66a1d620e56289722d0"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/conversion.py",
+      "size": 7934,
+      "sha256": "fce2af82a0edcb135ea7ce4198d6819c8873fe42105122ef944cdd7b0a3bd11e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/data_path.py",
+      "size": 3274,
+      "sha256": "13af69efa34e6b85ad02feb4bca4cfa2f999600ce542ce01775d00d0989bad4c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/extras.py",
+      "size": 2935,
+      "sha256": "e4c186f64780fc9342bf81f91fda9642062d13767dea0f1f79f1aaa9d6ba1eef"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/gltf2_blender_math.py",
+      "size": 6767,
+      "sha256": "9f1d3f3e4a7e407a4915e6bf006dc93294208c09a5bee433abf9291e53b444d7"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/gltf2_blender_ui.py",
+      "size": 34889,
+      "sha256": "241cf5451478bf9574fe346facce34f805d1030f4090b61920ba2b3349adc17e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/gltf2_blender_utils.py",
+      "size": 4152,
+      "sha256": "035b8314ab4891d1dbafaabef953db98e89d2b3e570a6d8c7ba0edd2dcc3d78c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/json_util.py",
+      "size": 667,
+      "sha256": "abf2cd0d5dbc75aeff73ce2578ee4f6081c89dd4521cde7a04456b821a97d603"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/com/material_helpers.py",
+      "size": 1586,
+      "sha256": "8fd3d555ca9ffa1d47cbc993f87d9f2cdcde4711ff06dd630baccaa7e3ae963b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/accessors.py",
+      "size": 8729,
+      "sha256": "d1c7f1ec316188504f53811d7248bb1a94f9bd2a95aa00fddcc659280d0cd71f"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/action.py",
+      "size": 57655,
+      "sha256": "884724eac08d27fbfb9355c8fe1e8c7a504e847e678fb1ab45628e6ad204e0fe"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/anim_utils.py",
+      "size": 14249,
+      "sha256": "b470f252b675c8e7c31aede89dba7e2fede44daa152c637e3a52f2cf3316460f"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/animations.py",
+      "size": 777,
+      "sha256": "39ec425948079cd3c14ba1acb32e3c93cf215fa350ca1776d27b766ec6b23f25"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/drivers.py",
+      "size": 3301,
+      "sha256": "1627197f2c0c9b8bfcf8b19c72524081698ab2513ab7cb495e876953771a1256"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/fcurves/animation.py",
+      "size": 1096,
+      "sha256": "ca128eb92990550243023698ed79ddf017fb06184aca6e81710b84e92a22c31c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/fcurves/channel_target.py",
+      "size": 1715,
+      "sha256": "cd3775990723da77cecc9e70cb0c78c821e2bad0d85c97cb71ce7c114b49a812"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/fcurves/channels.py",
+      "size": 17387,
+      "sha256": "ad434ffa3079206052585313dfaad5c4c3d233ebb2a17c68d775bee1ef5ecd4a"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/fcurves/keyframes.py",
+      "size": 9038,
+      "sha256": "9c05d8fb843aa62f4efba05064626322cc6eb2efdd9ad088c91af836a8eff72c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/fcurves/sampler.py",
+      "size": 12816,
+      "sha256": "4106a02100358012711eb73aa4558b35fe423f7ca28c17f3cee65893c12560ab"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/keyframes.py",
+      "size": 4691,
+      "sha256": "738f0afd438814a880198edd22eb6836aed56b438ffeb94f64300b2e9fecd6b8"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/armature/action_sampled.py",
+      "size": 2653,
+      "sha256": "c152321b579be72ed51ca166babfd5e1b24890442036a2b87b93b63de2427172"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/armature/channel_target.py",
+      "size": 1695,
+      "sha256": "d6f2ce1be8b3f09e91265076cf13b5c5a217e1c20fae6857f37bc6e1d91c806c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/armature/channels.py",
+      "size": 9706,
+      "sha256": "3a4103de1f09310c03a19e929bf76600efc689593f27764a61321ffa3a447acc"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/armature/keyframes.py",
+      "size": 3343,
+      "sha256": "83f01a8c4c08c30926720d7347a2bdf1c694b0e397596c4af8766f741b767458"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/armature/sampler.py",
+      "size": 11243,
+      "sha256": "888059c3ef8ad75c8d31860ddc8aaf6fe024d7bf4afb2327620f3b0eeeeadf78"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/data/channel_target.py",
+      "size": 1809,
+      "sha256": "d46981d6b29b30c7aa7f805303d723994f38b514a2cdf6569de5862619e0b40e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/data/channels.py",
+      "size": 5303,
+      "sha256": "f64d0090e0a64aaea1c3e02d50a1e8eff0af4665c0d352b1a864e445ebb37346"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/data/keyframes.py",
+      "size": 7513,
+      "sha256": "e7499a5849100e2d533e0cca2844338cbf0ab63321c633918be3833b788b73f7"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/data/sampler.py",
+      "size": 5081,
+      "sha256": "d86505fba01d42df8180fe59f1d4e93de28c9ab901cbdef17417ad5674ed5774"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/object/action_sampled.py",
+      "size": 2271,
+      "sha256": "b49103f0dd2b7583c855fa0b4c2440500511674e53ce93ad89f268c9fe94d259"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/object/channel_target.py",
+      "size": 1491,
+      "sha256": "4be657337c88c894b6d25ca72fcdb6bcd42f8b2812626ca0459e0ffdc3b8cb29"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/object/channels.py",
+      "size": 5236,
+      "sha256": "b80238a36d97d061068290f2380025f3c1f058691a696a8b5f16300a20b50c3b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/object/keyframes.py",
+      "size": 2939,
+      "sha256": "cbb1ba28b5cab679c0ab4bb6341d1523555c1c921ebe75b507bebf82eba4f557"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/object/sampler.py",
+      "size": 8120,
+      "sha256": "224dbfa714be50c0d8a8b19bd575a45f16620dfda5770af2c01afcde478d19ae"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/sampling_cache.py",
+      "size": 42525,
+      "sha256": "163051a6bdb8aa669860f391a3a69646f4f2b90b76a4ec1ddd64e2d59a672e0d"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/shapekeys/action_sampled.py",
+      "size": 1474,
+      "sha256": "a3022dd7fc51130bfecc15e3ea97905d364dc3296478176025b8505e43f5a14c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/shapekeys/channel_target.py",
+      "size": 1109,
+      "sha256": "4d025621bab6036654eb5ee9a4a44c900411f9ecb51dd826d961034dc000ce10"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/shapekeys/channels.py",
+      "size": 2270,
+      "sha256": "aef515aad37b9315c8e6618ce05ffceaabdbe92d9098c36e50c3316b6782b754"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/shapekeys/keyframes.py",
+      "size": 5621,
+      "sha256": "020aa54427193e67b9b3c7724d14d4e0dcb76781af2f70ff9a3c989f2b3708a9"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/sampled/shapekeys/sampler.py",
+      "size": 5062,
+      "sha256": "2de75354d4d234bbc61030445b8947014984c6ad17fee257eeb4d83250cd9105"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/scene_animation.py",
+      "size": 11468,
+      "sha256": "d739b9bee2d7dc17bd84a027aa4279610e99ecfc4101efd522c725c2e7318e31"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/animation/tracks.py",
+      "size": 36943,
+      "sha256": "cc927b664be9a2219da3611f9bb0cfe3cbd65973b6cb18a765eba900d33e45d4"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/attribute_utils.py",
+      "size": 2081,
+      "sha256": "e337a3fdfc6bc67735d141d9726906fa21af362c4f7c059471db06dab1e7817c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/cache.py",
+      "size": 7333,
+      "sha256": "cdeddfdfc2813a2289a0719cd4f9cb95489220e95b64d7900e45822b405bba91"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/cameras.py",
+      "size": 5036,
+      "sha256": "e3420d756326c57176cda6930d0da418a642bb827cd1a6b98761541b1ff427ed"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/export.py",
+      "size": 25976,
+      "sha256": "3559c044a5e3b31abf853bf4481e0d0f58891158e39034216d6f698afeee09d1"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/exporter.py",
+      "size": 27879,
+      "sha256": "84e137d99f1c808eb972b840f1ebdb4669611e663324025b60156b88826aba94"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/gather.py",
+      "size": 6829,
+      "sha256": "49193f3c545e48ca80b571a7f412d4e53b26193d9408dad9846c120779c23b64"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/joints.py",
+      "size": 4044,
+      "sha256": "d47c355ec378925a75b910f843855f6fbf41ae048292d1d1a24b3861b67dbfc6"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/light_spots.py",
+      "size": 1458,
+      "sha256": "e9cb6bcec2de836756dce73033f43846a2349376c757d0c8318f5f82b6f25a4c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/lights.py",
+      "size": 9813,
+      "sha256": "e80f18f2d43a4ce62139f873f03953cfca1af53c3220cd1397f7d8cf3817aafd"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/encode_image.py",
+      "size": 19162,
+      "sha256": "724a9e64e80f10d8458b7df8046e900789384534cf6c63289f7a214701424ddd"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/anisotropy.py",
+      "size": 12386,
+      "sha256": "bc81e6407d0615aa868287e36996838cc92b45b2d1bfb921873320bdc8d2b3cb"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/clearcoat.py",
+      "size": 10462,
+      "sha256": "c5be8bd94d5fbad04e6e8672789cc4dc5a18a3f5b373519ba9c05e08fe065d99"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/dispersion.py",
+      "size": 1458,
+      "sha256": "acf92095f0a4f91ec1085e837a05a129b81f3fce595684e0f09b2d35732cc63b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/emission.py",
+      "size": 5436,
+      "sha256": "6747bb98f3c217ed10fe43d84e276f41d917a28fd14245d0eee6a64252a8552f"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/ior.py",
+      "size": 1544,
+      "sha256": "a7aaa5e342f31d7a39aaaa840724a252119f0cfc2bee966bac02bedef324cecd"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/iridescence.py",
+      "size": 11857,
+      "sha256": "5d3e0e2ae6671b249242f0c17771195227fdf5e557f094e5573f23c238f04f35"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/sheen.py",
+      "size": 7297,
+      "sha256": "3762547690c943206f4a5aa7bc4f3fda8b3e760b64c381cec9c3b9c337ee8317"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/specular.py",
+      "size": 7443,
+      "sha256": "96c05088193709f3e113426acc6f29c63e04ab31d549adb79575f5c3b516c52b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/transmission.py",
+      "size": 3732,
+      "sha256": "3e0383d0b83e0a134613decff997d51fd38e0b27d689afe74562208f7d7ee01b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/variants.py",
+      "size": 516,
+      "sha256": "2f499e5a6338d02663ccba0820decb843424b3280bb4d8c2cdd9513885c52670"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/extensions/volume.py",
+      "size": 5712,
+      "sha256": "70a60eaf642c01b2731d57e0d06dd19a1c23fb94cf20e40651937becb2c2d8c8"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/image.py",
+      "size": 21376,
+      "sha256": "8992ede92c75254e47568af6cc0bd7a0fe24884531c2c45161d745922aa9ca07"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/material_utils.py",
+      "size": 394,
+      "sha256": "dab9aabfef489ff356cfa8acae1adc888167f2309f6b0923323af0cb15a7f251"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/material_viewport.py",
+      "size": 1064,
+      "sha256": "ce8cd3aeb34097b799f01eeab70e2d0aad99a6d148ecc182b4a76ebd6895d129"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/materials.py",
+      "size": 36566,
+      "sha256": "484e77e10a60d9fed663e3c5e0381bb4acb7a3f47deaa5200c54680080179fc0"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/pbr_metallic_roughness.py",
+      "size": 11592,
+      "sha256": "779006011a28495b9d03d90adce675f79824bb5bfd8336de51c829bc0db032fc"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/search_node_tree.py",
+      "size": 47985,
+      "sha256": "58c0307f2416d01870a75606f9f39a1981b094456ad1541c075faa6c185cfcc8"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/texture.py",
+      "size": 9536,
+      "sha256": "f5a4d449c2aa958d68c569de2b6994b942926261a7317764978e5f885f0ca499"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/texture_info.py",
+      "size": 11187,
+      "sha256": "a1494dee92e421d4a56af2fc2bb118ae3e0ef0c690f3124af026464f7e2745c1"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/material/unlit.py",
+      "size": 7491,
+      "sha256": "60a1cafc6ff9ef5455ea4f826335aae11a73d43f0ddcb97bdfaf2bfe45899aa9"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/nodes.py",
+      "size": 25265,
+      "sha256": "4ee23688b86f3250057b305fe9397755e6be1dcb4dd99c7ecc39e879a3f9cbcb"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/obj_data.py",
+      "size": 6545,
+      "sha256": "eadd96a3b5ee96586ca4c400089b943e52dfe2af5073a77f2af6b8688a00abc8"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/pointcloud.py",
+      "size": 3405,
+      "sha256": "7aa5932dd75ef721ebf974189b9e67ae247eaf1253b90984bd72414285fb97e1"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/primitive_attributes.py",
+      "size": 10150,
+      "sha256": "815331d39cdf06e73ae110e9921ebfc8cb37825290843cbcbf4d1a7559899e5d"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/primitive_extract.py",
+      "size": 87382,
+      "sha256": "55e14cbe849b0c4ec5545c85a1aae3d8c2c7d65eade67de43eb1a43b05738684"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/primitives.py",
+      "size": 16405,
+      "sha256": "879448bcc8fc040c2319bf4014fc5e290929e3daf7e323999c04490855983913"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/sampler.py",
+      "size": 6924,
+      "sha256": "9fdef80cac4601cb590d949014f3b584b9a03c92224dc7832d8169a9e7d6dd08"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/skins.py",
+      "size": 5412,
+      "sha256": "c37f5a3f3e6338c1e4787d5199cdd41a2527cec62bb72a140847480b92c8388e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/exp/tree.py",
+      "size": 50060,
+      "sha256": "0abdc591b3542fe91eb33f8b0efa872b2b70a1a7b07f7ebd7fede1683f100fc6"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/KHR_materials_anisotropy.py",
+      "size": 4866,
+      "sha256": "916783b079d32f261a66b6bd5ad4f42901559bae0bcb5031a72ab642c8145e56"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/KHR_materials_iridescence.py",
+      "size": 6416,
+      "sha256": "ad46cb56910d35cb4222c17b8d898d61b6efc03e87cdba1e96391b389325f18b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/KHR_materials_pbrSpecularGlossiness.py",
+      "size": 6344,
+      "sha256": "ef110c3c941ada0d378d9c688358d1952ad2d591d17effa6122b2a724c4318df"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/KHR_materials_unlit.py",
+      "size": 2033,
+      "sha256": "fbb9da47410c34384e80f9198155d7c7f9a2724981ae296e3e1d2f97cbc8ca42"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/animation.py",
+      "size": 10454,
+      "sha256": "392cadb9bfe48a4d13b6ef33cf69957ab10b69235575fc3aa3310a4f870ab5d5"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/animation_node.py",
+      "size": 6700,
+      "sha256": "059a286dc51dcb349b2e91f3af7328c1c6a2e92bf458cadfe66538999d369c71"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/animation_pointer.py",
+      "size": 46917,
+      "sha256": "d1e94ed22b9871b1acf2b81b534454f52e0fe9c917132ea7c48ebd3a98c5fe4e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/animation_utils.py",
+      "size": 6799,
+      "sha256": "90000288230a9ff38d884910a151d7e0c01053b2c9a97088b2eaba5211253437"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/animation_weight.py",
+      "size": 3617,
+      "sha256": "768b137805043cd55b9ca35d1a5011fb9299321c699ae980e58a9c222e7bc0d7"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/blender_gltf.py",
+      "size": 35890,
+      "sha256": "7a174ca21a31bc42221ced8a29f1e8a0918a4d52bb4a37ec1f56ca7908f22c1a"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/camera.py",
+      "size": 3135,
+      "sha256": "5b00f3f6cc0b48d9cc62afa6ae4a3d1fd57d484de98f22c00c85034a97e50c60"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/draco_compression_extension.py",
+      "size": 5598,
+      "sha256": "b53abdc450e09c6e12cb39d4d7d2edafea9d8dc7f78a791d8b95aca5fdbfd877"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/image.py",
+      "size": 3065,
+      "sha256": "9d5d39da816d83e27df369b787f4b35edc33cc6ccc7adbc5fa2847ea486722c0"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/light.py",
+      "size": 5954,
+      "sha256": "f64b81d19326f83b413fdf2b98f39fe841704f5a7cc1bef50b000b68f29af8b5"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/material.py",
+      "size": 4678,
+      "sha256": "5f6d4349171a3e149882d0546c5865fbb20f76dade2e05aa54fa321238d013ca"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/material_utils.py",
+      "size": 5367,
+      "sha256": "509e70e1f587dd6aae1c7a3fedb78a7be9d6e614081f5a63db3f753da095130f"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/mesh.py",
+      "size": 43226,
+      "sha256": "522a7d1e0156c96bc86e82774ccb201003e732627dbbac025c03c3c775faf756"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/node.py",
+      "size": 15230,
+      "sha256": "95c53bbe042f644cd3cb7471a4afe3be4b294b937e1913f4069b44f14e943097"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/pbrMetallicRoughness.py",
+      "size": 44744,
+      "sha256": "d9cf3b09f9db4eaf2afda7869983d5adcf6ca761292107dd3aa1359256cdcc4e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/scene.py",
+      "size": 5447,
+      "sha256": "27fa05e298a07c2c56824e5b63ba4f5ebb852338c3a7461730be18edd6c9f0fc"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/texture.py",
+      "size": 9598,
+      "sha256": "793910607f00db6ff939dc018133c16426276e104bf92727383ad219c3ad413b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/blender/imp/vnode.py",
+      "size": 24074,
+      "sha256": "ff777aecfb4f6c86cb945c226f6fb5ab1dcb89b3dabf7be8455c73d231d5b22e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/__init__.py",
+      "size": 124,
+      "sha256": "d1cd66e78241a927a36cd7b73c01f04adab808e8576775687f7b901f3dd5a2de"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/constants.py",
+      "size": 4212,
+      "sha256": "199e6ef99c863b8bc0027c71a85a0e114cb798b2b006a8e1f0ade3edb24e7e13"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/debug.py",
+      "size": 3783,
+      "sha256": "a0112a1488ce1520f6554f1c337494845ab0aea9b683a73b0b747505d6a2fa94"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/gltf2_io.py",
+      "size": 55151,
+      "sha256": "d4cfd9bdcbe6ab154cf5e23347c3d2e79a46bb8700e398b2b0296d9e66842eb3"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/gltf2_io_extensions.py",
+      "size": 1268,
+      "sha256": "3639475f9392fc1072bb8df66d5f0602a1494ebe229f69dfb723b569eead4c1a"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/library.py",
+      "size": 2125,
+      "sha256": "6da99d2f527f0963cced94a535590e73eefaf4f8ae54a38fa9d320b02147c907"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/lights_punctual.py",
+      "size": 2961,
+      "sha256": "f8e00dbfaf5907baa44deb44c32bad7372b89784edc383c024d696652cfd2358"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/path.py",
+      "size": 450,
+      "sha256": "bafcb71499fc534463880b80e9ddf8c5863f504fd341b9ec20d718a316d681ab"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/com/variants.py",
+      "size": 1128,
+      "sha256": "1957a4c33e753ddec4dc4105e81747335ad21ed24cf1366b668834a5035b6a6b"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/exp/binary_data.py",
+      "size": 1284,
+      "sha256": "be2f4b544895a167c5e7eead69985175c8dd6a8bfd6fcbb83b3bd30b3778dd87"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/exp/buffer.py",
+      "size": 5325,
+      "sha256": "d5cfede0d19d126352031d6019f994fa2d69a90cfd430bfe2623869b09db0fdb"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/exp/draco.py",
+      "size": 6404,
+      "sha256": "090aad134d2bb65970e99664f1ea6419b7e3c3d6d146119562373cfda7f2c3cd"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/exp/export.py",
+      "size": 3285,
+      "sha256": "5245a27046ec1d2184366b8e8f138a3e827a883967ca4998f389a1378f7d4c52"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/exp/image_data.py",
+      "size": 2011,
+      "sha256": "5a2feab50efe519d1072e9a67bcf4eed4640c09819396d97052795a49a66bf7c"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/exp/meshopt.py",
+      "size": 8719,
+      "sha256": "126786cb441b29e0b5ab47dae064d2c8d7e610828e92ad3e3116f2d7ab545a28"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/exp/user_extensions.py",
+      "size": 1211,
+      "sha256": "27fe524a83fd7be749547b6c408a4617cdf981c8bee1b2c036de83e1c5c41185"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/imp/__init__.py",
+      "size": 127,
+      "sha256": "4e11da33e79af22df107cf85683d73bbd69f0e0e0cb23fc8fabe82af71a75c7e"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/imp/gltf2_io_binary.py",
+      "size": 8981,
+      "sha256": "4987eed5a562875b5d9c59d0bf29e19bfa5c71e62cab233ab217e9906c56a261"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/imp/gltf2_io_binary_meshopt.py",
+      "size": 4672,
+      "sha256": "017fd28a0d99683e48328e9e1e7b39296e852a1457e70725f858c83df85a3a39"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/imp/gltf2_io_gltf.py",
+      "size": 7757,
+      "sha256": "58d28508850a32abd12cd004bbe545a5677fe029105b41c74271471780a83d46"
+    },
+    {
+      "path": "scripts/addons_core/io_scene_gltf2/io/imp/user_extensions.py",
+      "size": 1115,
+      "sha256": "7efb0ecb5999395e223fcb226318a232b82797e1345e0ad5e5a15e88ba1fe5e5"
+    },
+    {
+      "path": "tpr/.gitattributes",
+      "size": 197,
+      "sha256": "98e70a05f80737872d28b6049db0e9da1eb72fa01a83a6f3d48bcddd374faba1"
+    },
+    {
+      "path": "tpr/sources/draco-1.5.7/licenses/AUTHORS",
+      "size": 317,
+      "sha256": "7399754545fa82fbf402e3e91d50de0b63772870fd807c48dd9af25c042efb10"
+    },
+    {
+      "path": "tpr/sources/draco-1.5.7/licenses/LICENSE",
+      "size": 13898,
+      "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+    },
+    {
+      "path": "tpr/sources/draco-1.5.7/licenses/docs/assets/css/pygments/UNLICENSE.txt",
+      "size": 1210,
+      "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+    },
+    {
+      "path": "tpr/sources/draco-1.5.7/licenses/docs/spec/00.00.02.authors.md",
+      "size": 26,
+      "sha256": "53c26600f7dbcde2153d8ba2f29e61605784ecfbc4b6d08d5bdfdfe249ac425b"
+    },
+    {
+      "path": "tpr/sources/draco-1.5.7/manifest.json",
+      "size": 827,
+      "sha256": "8c03411a23f50aa06a61b22867ae0f6df43728e42445008c390bf8dc733aa4f7"
+    },
+    {
+      "path": "tpr/sources/draco-1.5.7/source.part0000",
+      "size": 33554432,
+      "sha256": "34694488442475f5f78febce2d2fe18b928d159fe9830a1154c82c30e89df798"
+    },
+    {
+      "path": "tpr/sources/draco-1.5.7/source.part0001",
+      "size": 27450275,
+      "sha256": "9472f0e123cbbb38349f26883a0cb76aeb4c396535d4b0d9f1bb8e9d208ede4c"
+    },
+    {
+      "path": "tpr/sources/meshoptimizer-1.1/licenses/LICENSE.md",
+      "size": 1079,
+      "sha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26"
+    },
+    {
+      "path": "tpr/sources/meshoptimizer-1.1/manifest.json",
+      "size": 581,
+      "sha256": "5d5c20ae17b8bd535ec2c322b2d14adf061a70bb5fb09cc146761c33224b3e7a"
+    },
+    {
+      "path": "tpr/sources/meshoptimizer-1.1/source.part0000",
+      "size": 579571,
+      "sha256": "6aecc2d3b4328f1f5f4127fb16a144de80cc9eb35c32387807c8c04b0b6dbbf3"
+    }
+  ],
+  "source_graph_baseline_git_head": "1633734451d661aac20d0ad7f9de7a80a6b16418",
+  "archives": "Exact original ZIP bytes, complete inventory and <=32MiB ordinary Git parts",
+  "native_full": "NOTRUN",
+  "bpy": "NOTRUN",
+  "HAP": "NOTRUN"
+}

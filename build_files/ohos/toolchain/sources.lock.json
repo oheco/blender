@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "kind": "provided-native-compiler-profile-with-complete-source-replay-recipe",
+  "LLVM": {
+    "version": "20.1.8",
+    "registry_manifest": "tpr/sources/llvm-20.1.8/manifest.json",
+    "original_sha256": "6898f963c8e938981e6c4a302e83ec5beb4630147c7311183cf61069af16333d",
+    "original_md5": "915e251a657450a2ba8e4c106e4f9555",
+    "original_size": 147242952,
+    "parts": [
+      {
+        "path": "tpr/sources/llvm-20.1.8/source.part0000",
+        "sha256": "06cacc1f26bacd4922cd23fec7427e44fd8db08d8c9836a7bab4dcae60a995c3",
+        "size": 33554432
+      },
+      {
+        "path": "tpr/sources/llvm-20.1.8/source.part0001",
+        "sha256": "1b856c90bb260434ad78e25f3039b2e6bde9c68a52e336a10e833c28a37ddf54",
+        "size": 33554432
+      },
+      {
+        "path": "tpr/sources/llvm-20.1.8/source.part0002",
+        "sha256": "b1ab7836bf5ec1a625cb1b3960dea831b9e7712642b689e74b3a3658c44c85e7",
+        "size": 33554432
+      },
+      {
+        "path": "tpr/sources/llvm-20.1.8/source.part0003",
+        "sha256": "6da90b2fb7baff11b58326ce88e4e5a37a81670472c471cba94a1dd520876c6e",
+        "size": 33554432
+      },
+      {
+        "path": "tpr/sources/llvm-20.1.8/source.part0004",
+        "sha256": "1a539e731a2245d52318f78524dadac90b07ddadbd6ec1ed0279e9f5c68131e8",
+        "size": 13025224
+      }
+    ],
+    "source_rebuild_state": "COMPLETE_SOURCE_REBUILD_NOT_RUN",
+    "archive_root": "llvm-project-20.1.8.src",
+    "patch": {
+      "version": "20.1.8",
+      "target": "llvm/cmake/modules/GetHostTriple.cmake",
+      "upstream_sha256": "412a66c5fc33d13ae28734ff3856f9f12e473ce2aaee3d4018ca31d6bc346952",
+      "patched_sha256": "e20e6d900cdc32236f19b42d3fc82cb04ce532a5240fd5e591c3b49ebea02641",
+      "patch_file": "0001-native-ohos-host-triple.diff",
+      "patch_sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d",
+      "fragment_sha256": "d1b8a8aa762421d415c17fe60a0090c8d5660ef751f49dbfed5cc6165d71d252",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "reason": "Upstream config.guess does not recognize HarmonyOS; on verified native ARM64 OHOS only, query actual compiler -dumpmachine",
+      "scope": "Only private cache LLVM source; original locked upstream archive is unchanged; no compiler version/probe/platform-name forgery"
+    },
+    "license_paths": [
+      "llvm/LICENSE.TXT",
+      "clang/LICENSE.TXT",
+      "lld/LICENSE.TXT",
+      "libcxx/LICENSE.TXT",
+      "libcxxabi/LICENSE.TXT",
+      "libunwind/LICENSE.TXT"
+    ]
+  },
+  "provided_prerequisites": "Caller-selected SDK26.0.0.35-Beta/Clang20 native binaries/Clang resource headers/SDK15 runtime+libc++15004 __n1; binaries not compiler-rt20 or source rebuilt in this candidate",
+  "new_native_probes": "NOT_RUN",
+  "historical_receipts": "Actual old device/toolchain record preserved only as historical evidence, never promoted to this candidate PASS",
+  "copied_input_lineage": [
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/patches/0001-native-ohos-host-triple.diff",
+      "snapshot": "build_files/ohos/toolchain/patches/0001-native-ohos-host-triple.diff",
+      "sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/patches/manifest.json",
+      "snapshot": "build_files/ohos/toolchain/patches/manifest.json",
+      "sha256": "383af52a75cac48de49eb1f25bca4000f748cb7ba004f6fa15fa919b5b2f5000",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/llvm-source.lock.json",
+      "snapshot": "build_files/ohos/toolchain/historical/llvm-source.lock.json",
+      "sha256": "c209fc335fb3ad9579ad2b06562094331ce93e5c03753c22629ee1ca208bcdee",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/native_llvm.py",
+      "snapshot": "build_files/ohos/toolchain/historical/native_llvm.py",
+      "sha256": "818c9220f89f9c224a8270abdee62e8b1713e24506b78187aeca6755dd626db6",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/sign_compiler.py",
+      "snapshot": "build_files/ohos/toolchain/historical/sign_compiler.py",
+      "sha256": "b2f69b7565eabeab7776d17652527a731c2b1437f8383a443285a4349515d7f1",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/results/llvm20-verification-final/report.json",
+      "snapshot": "build_files/ohos/toolchain/historical/accepted-native-report.json",
+      "sha256": "b11f6b9831998bb50443633882f105e5bac7bcefb444cf4fb4fd98a0900e02d3",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/results/native-build-plan.json",
+      "snapshot": "build_files/ohos/toolchain/historical/native-build-plan.json",
+      "sha256": "da964f213fdf157ff8920d40974a0dae3a3d8a03fce07406544fd6eebaaf8dc4",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/results/bootstrap-inputs.json",
+      "snapshot": "build_files/ohos/toolchain/historical/bootstrap-inputs.json",
+      "sha256": "1356d4d005a644fe60f8b3218af62a41c713ebbb367d0cf89a9eaf0be90bf584",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_base_sources/builder/launcher.py",
+      "snapshot": "build_files/ohos/toolchain/launcher.py",
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_base_sources/builder/cmake/native-host.cmake",
+      "snapshot": "build_files/ohos/toolchain/cmake/native-host.cmake",
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_base_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "snapshot": "build_files/ohos/toolchain/cmake/Platform/HarmonyOS.cmake",
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_base_sources/builder/consumers/native_probe.cc",
+      "snapshot": "build_files/ohos/toolchain/probes/native_probe.cc",
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_base_sources/builder/consumers/affinity_probe.cc",
+      "snapshot": "build_files/ohos/toolchain/probes/affinity_probe.cc",
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6",
+      "original_unchanged": true
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/results/clang20-sdk15/exceptions_rtti_format_error.cc",
+      "snapshot": "build_files/ohos/toolchain/probes/exceptions_rtti_format_error.cc",
+      "sha256": "e5e35a3a82543e5d8ec8176ad57f1f701be514e2a7935d2b4fdecf88fb3d59f6",
+      "original_unchanged": true
+    }
+  ]
+}

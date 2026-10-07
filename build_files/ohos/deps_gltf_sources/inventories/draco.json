@@ -1,0 +1,4950 @@
+{
+  "source_archive_sha256": "27b72ba2d5ff3d0a9814ad40d4cb88f8dc89a35491c0866d952473f8f9416b77",
+  "files": [
+    {
+      "path": ".clang-format",
+      "size": 74,
+      "sha256": "3532c8c2977705de6c66c1a469ef386d338a24cf49d81a101ee362f3c5f423b1"
+    },
+    {
+      "path": ".cmake-format.py",
+      "size": 3746,
+      "sha256": "86ff5e91780b152d87271c99e64dedf0b675aa14ccb47c48fdbb8efd59e3029f"
+    },
+    {
+      "path": ".gitattributes",
+      "size": 12,
+      "sha256": "87f80a47239847387a5946f63b5029488b924beaf0896b4108a292ec163fe552"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "size": 12340,
+      "sha256": "a1dad1a3b6d249fa198001ac7b30f85d01e1eaf69ad485d26b4aed4f31b3277e"
+    },
+    {
+      "path": ".gitignore",
+      "size": 11,
+      "sha256": "7bfeb2ffe39ef30b07499f0224b9bb28ea1e1de9c9fc06091db74c86a0edaae8"
+    },
+    {
+      "path": ".gitmodules",
+      "size": 448,
+      "sha256": "f6205fcfee8de36b7c7a6ee4f4868b66a9fddd9d3d7121465e004e3d390942f2"
+    },
+    {
+      "path": "AUTHORS",
+      "size": 317,
+      "sha256": "7399754545fa82fbf402e3e91d50de0b63772870fd807c48dd9af25c042efb10"
+    },
+    {
+      "path": "BUILDING.md",
+      "size": 11507,
+      "sha256": "ca7dead1e6a949388fa290e20ff372ac58f57ca3a836ed8c6dbd0f9054114982"
+    },
+    {
+      "path": "CMAKE.md",
+      "size": 4547,
+      "sha256": "4c03a3ae87ffff18e85f9e5700e036f048bdfce0d154dce2af8565855c58b39d"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "size": 49853,
+      "sha256": "85b1affaf949f2b5c3ca2a90851bbc6bf9164235d666caf33311e062c9589147"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 1578,
+      "sha256": "d50f9bcd26c52ba4a9a57ea60d1669b26a0822db266539c7fc194b069863be3e"
+    },
+    {
+      "path": "LICENSE",
+      "size": 13898,
+      "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+    },
+    {
+      "path": "README.md",
+      "size": 24924,
+      "sha256": "463ebd77ee43b1d8796431ee9373f0bd13c47f9b8926803762f6e4bbe5e3e99c"
+    },
+    {
+      "path": "cmake/draco-config.cmake.template",
+      "size": 73,
+      "sha256": "0ef019284a652200b3ce5f96e43744a5eccc0408156eab5083751d92ed9ef61f"
+    },
+    {
+      "path": "cmake/draco.pc.template",
+      "size": 192,
+      "sha256": "6e8388bb86fabdd43d96c41c1465b63556c272d22d59db903097d5af2d742e06"
+    },
+    {
+      "path": "cmake/draco_build_definitions.cmake",
+      "size": 5019,
+      "sha256": "b35e9ad5727c9c3ea72e46e9a63d7a9ef40744b8195266831f740fd2e0b68827"
+    },
+    {
+      "path": "cmake/draco_cpu_detection.cmake",
+      "size": 1449,
+      "sha256": "33042b7edc01bd0c416c39f4482c3a4c94f2a22599a7520497af91f729af6d30"
+    },
+    {
+      "path": "cmake/draco_dependencies.cmake",
+      "size": 4603,
+      "sha256": "5d3c15ae0f6fcadbec587bcba3fe00be86676e784c021002e725e8603d5ca0b7"
+    },
+    {
+      "path": "cmake/draco_emscripten.cmake",
+      "size": 8154,
+      "sha256": "1f1e67c9c7bfa9fa56f4a9ac9b208683568c6c8c31dae2607ad0b1e87b8f9065"
+    },
+    {
+      "path": "cmake/draco_flags.cmake",
+      "size": 10268,
+      "sha256": "c79a8195a717f348a8e1a1fa37cb273c25b7d20340b96d9c0c3768c3e59834da"
+    },
+    {
+      "path": "cmake/draco_helpers.cmake",
+      "size": 4705,
+      "sha256": "b46feac4d6742d894eb38c3058c2d23f2071651130e52c71bcaed313a11e150d"
+    },
+    {
+      "path": "cmake/draco_install.cmake",
+      "size": 4038,
+      "sha256": "193a1da048f42638c152292503c4d2fa35d12691d3382047dbf3de46f60160dd"
+    },
+    {
+      "path": "cmake/draco_intrinsics.cmake",
+      "size": 3886,
+      "sha256": "e8c91c488609698aeedefa0e794c346010f77a662e010912e687c5b04b69282f"
+    },
+    {
+      "path": "cmake/draco_options.cmake",
+      "size": 12923,
+      "sha256": "05fa02e13d1a60f3898eaf859b669f127b5dbb62f952cbe9f3c4a077ed47a852"
+    },
+    {
+      "path": "cmake/draco_sanitizer.cmake",
+      "size": 1813,
+      "sha256": "2ca6b18192e13e0863fb2552cad8ed5684a9086f0ec7b9689a3be8d0b2ec976a"
+    },
+    {
+      "path": "cmake/draco_targets.cmake",
+      "size": 14113,
+      "sha256": "b4b5ae6f7f4901fcfb328433745d3df560b0b6e589851666e96bf489c4da5515"
+    },
+    {
+      "path": "cmake/draco_test_config.h.cmake",
+      "size": 1088,
+      "sha256": "2d0e42a94841a6327035a688578413192736d88a7d96d9c0f4c3cf3907a1c2b7"
+    },
+    {
+      "path": "cmake/draco_tests.cmake",
+      "size": 7289,
+      "sha256": "13d0422638f429d705da825b3a68bc3d52326eeb4006be1aec00e664112dce27"
+    },
+    {
+      "path": "cmake/draco_variables.cmake",
+      "size": 2804,
+      "sha256": "e9c3b467eb9f5e5579c83eaf7e998dcd9e1c45031ef0746beba7a9ff856e68e4"
+    },
+    {
+      "path": "cmake/toolchains/aarch64-linux-gnu.cmake",
+      "size": 972,
+      "sha256": "22074d66ddf7cb5046789e8611aed95e91ead3e1465b2baa64b0bef7d1a1019f"
+    },
+    {
+      "path": "cmake/toolchains/android-ndk-common.cmake",
+      "size": 1272,
+      "sha256": "077d2f44a2c07e23dad8f2be91b4030705cab49ffa2df3ed0da227fb4dfa08a7"
+    },
+    {
+      "path": "cmake/toolchains/android.cmake",
+      "size": 1755,
+      "sha256": "39eec79b9e2f42a8ce5c3cce451a6ba51e4dc303a0677d2de26235279d0ef291"
+    },
+    {
+      "path": "cmake/toolchains/arm-ios-common.cmake",
+      "size": 1013,
+      "sha256": "f0e014f24fe46e2394d84d2189c515d94d0d4feb3474860de305b4c1b4afd12c"
+    },
+    {
+      "path": "cmake/toolchains/arm-linux-gnueabihf.cmake",
+      "size": 1029,
+      "sha256": "b3421967090744316e522f880dc7cfbeb89a691f898f18bbfe34e725f809faf5"
+    },
+    {
+      "path": "cmake/toolchains/arm64-android-ndk-libcpp.cmake",
+      "size": 981,
+      "sha256": "5887ea027c2c6ec3bd7af8eec936ff390861d5fad92b556756d9c81cffcc8978"
+    },
+    {
+      "path": "cmake/toolchains/arm64-ios.cmake",
+      "size": 904,
+      "sha256": "811ef88dd4453caaa4559182e4e1a5867fa6ec681dfec6d559c164ab3eb8487e"
+    },
+    {
+      "path": "cmake/toolchains/arm64-linux-gcc.cmake",
+      "size": 1093,
+      "sha256": "9a71b080837e1a8abeab4d0ae5ac55503ea7731f3275e6812219335a71eb32e8"
+    },
+    {
+      "path": "cmake/toolchains/armv7-android-ndk-libcpp.cmake",
+      "size": 984,
+      "sha256": "6fba0c96bfdb8c475b90ae79a46802a19774dd06a37ea147fecb6606c03f0d97"
+    },
+    {
+      "path": "cmake/toolchains/armv7-ios.cmake",
+      "size": 904,
+      "sha256": "bb821baa4d59e150b158efcbf802fdb321871e43921f41c1bd0df50e6cec1601"
+    },
+    {
+      "path": "cmake/toolchains/armv7-linux-gcc.cmake",
+      "size": 1282,
+      "sha256": "90c559c99995e03dcd13cefd3a4cb7939b1cf4129e007e07628676d9ff4d57b0"
+    },
+    {
+      "path": "cmake/toolchains/armv7s-ios.cmake",
+      "size": 908,
+      "sha256": "704585cec3b880c979dd8cf05760988210fa96100a067d8205ee2778d66c3191"
+    },
+    {
+      "path": "cmake/toolchains/i386-ios.cmake",
+      "size": 937,
+      "sha256": "f8b5851bca5342f9717906bf3e9b261c73d2241806599a0fd147ab882121b064"
+    },
+    {
+      "path": "cmake/toolchains/x86-android-ndk-libcpp.cmake",
+      "size": 972,
+      "sha256": "b942ab96a376585d4d9b0674669b904eaa1c38d5d6321fda6dfdf744bb1a6664"
+    },
+    {
+      "path": "cmake/toolchains/x86_64-android-ndk-libcpp.cmake",
+      "size": 981,
+      "sha256": "920b24df766c355e5d6c9cc45a3361efdbe86f2d5c4cd845a89a09363e1666a1"
+    },
+    {
+      "path": "cmake/toolchains/x86_64-ios.cmake",
+      "size": 945,
+      "sha256": "55701618892fce83d08427116f836a5966bc34d8fe15cc7cd720ca66ca41a027"
+    },
+    {
+      "path": "docs/.ruby-version",
+      "size": 6,
+      "sha256": "6d850e3ac42d0dd06bfdcce9151c1e6b40f4cf5272778f63eececea27c78f0b6"
+    },
+    {
+      "path": "docs/DracoLogo.jpeg",
+      "size": 20683,
+      "sha256": "f08bdb4b74ae3d5966a0c64894f8423fe6f2352335c1ffc07408c103cf3e2d74"
+    },
+    {
+      "path": "docs/Gemfile",
+      "size": 72,
+      "sha256": "476f1468c03bfd454253e4b8173ee6ee7c767e46748ba0898b7e2f46b6f7081c"
+    },
+    {
+      "path": "docs/Gemfile.lock",
+      "size": 7431,
+      "sha256": "9d465f059366db3201052d67d4d61024c0720af06bb35ae64cdf6856f09d9e75"
+    },
+    {
+      "path": "docs/_config.yml",
+      "size": 1197,
+      "sha256": "5c7a0872f6cbe504760c91b522059cdd7b64b8f3df70dd23659bebc42b071495"
+    },
+    {
+      "path": "docs/_includes/analytics.html",
+      "size": 416,
+      "sha256": "eac7f5adf7a32e78177e2acd13ff362fd9187c0671ff8f82dfa00cfd6f62f26b"
+    },
+    {
+      "path": "docs/_includes/footer.html",
+      "size": 187,
+      "sha256": "d8225c28dfaaf0e63f3f9570d6ba7e735c1019ccbc0bbd49a29b2a65cf549da7"
+    },
+    {
+      "path": "docs/_layouts/home.html",
+      "size": 8188,
+      "sha256": "0b36ce55ef4ab818799e3909f3f8ef729af11324280ef42bdfd1645b93964015"
+    },
+    {
+      "path": "docs/_layouts/spec-page.html",
+      "size": 6143,
+      "sha256": "e6b7fba1ac84a73c189d64eee838941d69bde4b23831d4741bc66ef09352095b"
+    },
+    {
+      "path": "docs/_layouts/spec.html",
+      "size": 1245,
+      "sha256": "5fea2c052ea98baada84f244a1cce1386f060e38b674fb8b453df8f027d6d0fe"
+    },
+    {
+      "path": "docs/artwork/draco-favicon-src.png",
+      "size": 11528,
+      "sha256": "da94d72481ce5c7e3f90680642ea511d965d7c2b4f9c7951de903748263aea7d"
+    },
+    {
+      "path": "docs/artwork/draco-favicon-src.svg",
+      "size": 35609,
+      "sha256": "4892392724190fdf925ca40c5b198e8ef83a87011b4c85cb08fe6e821b3d5fd8"
+    },
+    {
+      "path": "docs/artwork/draco3d-horiz-320x79.png",
+      "size": 8622,
+      "sha256": "2b8124052e0acd405e41001f5b66a3f165aec3af139b8395657bb43155c1a8bf"
+    },
+    {
+      "path": "docs/artwork/draco3d-horiz-640x158.png",
+      "size": 19412,
+      "sha256": "35feaf54eecec44a967a2f63d21265afc5e15b2f033f27866294e2dce778bfa6"
+    },
+    {
+      "path": "docs/artwork/draco3d-horiz.ai",
+      "size": 89308,
+      "sha256": "864a0d1aa16815be1966aaf83cc098d2a820c718537df46eb4b10706b8892c3e"
+    },
+    {
+      "path": "docs/artwork/draco3d-horiz.svg",
+      "size": 33621,
+      "sha256": "dff9ddc05684b3a63369974feb1756e03b1fe44a937fe6e2169888ac4abc1e29"
+    },
+    {
+      "path": "docs/artwork/draco3d-mark-180x180.png",
+      "size": 13055,
+      "sha256": "792819a94f0fbee57387e79d4fa8f01eac168cbaa67a35cafa45b770b96ef141"
+    },
+    {
+      "path": "docs/artwork/draco3d-mark-360x360.png",
+      "size": 29971,
+      "sha256": "569cf5be7876a9f3420940f759c42b0fab7403625cc95b8bf7874bebb0795208"
+    },
+    {
+      "path": "docs/artwork/draco3d-mark.ai",
+      "size": 108509,
+      "sha256": "d46f5a95bf53c47adb31d6d6f37c96afd6e132106b0a7f0ae746e98ba4446d89"
+    },
+    {
+      "path": "docs/artwork/draco3d-mark.svg",
+      "size": 32286,
+      "sha256": "f535a1bd3861a6e7a335bb1b655656578ba7a183799dbf8a0e00ac622c5befb9"
+    },
+    {
+      "path": "docs/artwork/draco3d-vert-180x137.png",
+      "size": 9189,
+      "sha256": "5a3cd4863ad953899433072c96c9c875fd5fab092f26cdd3b1ffe54689a43782"
+    },
+    {
+      "path": "docs/artwork/draco3d-vert-360x274.png",
+      "size": 19836,
+      "sha256": "e6f101723397061d971bd6fa4111d24cabfc8e58b668e591a94ee6e0b6dd206e"
+    },
+    {
+      "path": "docs/artwork/draco3d-vert-452x344.png",
+      "size": 25782,
+      "sha256": "978c0fc25dc9908dc5f389eedfd2df0ebd69a62f4fc4d1bad96d30a980c09d78"
+    },
+    {
+      "path": "docs/artwork/draco3d-vert.ai",
+      "size": 108929,
+      "sha256": "81832f3998d5a8d0db8e66fc98b5edda112b990e474a3ee4ebfd20495bdb6fca"
+    },
+    {
+      "path": "docs/artwork/draco3d-vert.svg",
+      "size": 38133,
+      "sha256": "87d847201169bf28d9361a13d3ae5db6ce1dbde813205f2d93da846a74433cb3"
+    },
+    {
+      "path": "docs/artwork/favicon/android-icon-144x144.png",
+      "size": 20840,
+      "sha256": "b89a03f68e11949c73aec87f03fedbe25b24b0c1d5773313708ba7622bedae48"
+    },
+    {
+      "path": "docs/artwork/favicon/android-icon-192x192.png",
+      "size": 28420,
+      "sha256": "7c147176a52c9d4e78e2a1859e375a3cb2599a612d5d150568569a59f2e37d3c"
+    },
+    {
+      "path": "docs/artwork/favicon/android-icon-36x36.png",
+      "size": 3282,
+      "sha256": "91d716a7cc14b0fb5e02af781683e495cbff81eb94dce7416bb05f17810b15be"
+    },
+    {
+      "path": "docs/artwork/favicon/android-icon-48x48.png",
+      "size": 4679,
+      "sha256": "e29aae448757707c3e1dddbf74ee58b7d0f00e1552403be4acff955fdfb0d97c"
+    },
+    {
+      "path": "docs/artwork/favicon/android-icon-72x72.png",
+      "size": 7582,
+      "sha256": "c84fd55287ad66559a16393d4fd749b35a907846a494acb01a81a0d508fc2dee"
+    },
+    {
+      "path": "docs/artwork/favicon/android-icon-96x96.png",
+      "size": 11109,
+      "sha256": "8c1bc18b55d44c405905bb754d1999b8a487d00ba2a55f2a0cf93e469ef3c2be"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-114x114.png",
+      "size": 14397,
+      "sha256": "5437c75ceb746c8aa49b13dc2a20207114dc0192b9cb9ff5e4d0298d4a3c0507"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-120x120.png",
+      "size": 15693,
+      "sha256": "f5c4387c8b7910f84230053a7a8566e9d8458e8a96007a15a1281561300d3234"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-144x144.png",
+      "size": 20840,
+      "sha256": "b89a03f68e11949c73aec87f03fedbe25b24b0c1d5773313708ba7622bedae48"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-152x152.png",
+      "size": 22689,
+      "sha256": "628f94ba4b0bda0449475b6650e40dc86c9ad46bc2a735c03c3e2cf25e277679"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-180x180.png",
+      "size": 29361,
+      "sha256": "491c1fde177ee909a1a7e69360138e719f8a2a779e11cd78e77bfdde65a1c3a0"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-57x57.png",
+      "size": 5736,
+      "sha256": "8141bc4c72ee84e5b209a5b2b7a1a7d1b0234654b4d9287db9d26b80c1aeb4e0"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-60x60.png",
+      "size": 5961,
+      "sha256": "c07e60c455047cce32b6c29129141895543fb2983a1c2f77f130d8fa46230254"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-72x72.png",
+      "size": 7582,
+      "sha256": "c84fd55287ad66559a16393d4fd749b35a907846a494acb01a81a0d508fc2dee"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-76x76.png",
+      "size": 8082,
+      "sha256": "26535537ddcf9edf3f2a909bf9c3ad9b6447559a1b24f0f6b130bd5177726134"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon-precomposed.png",
+      "size": 28994,
+      "sha256": "f8a7aaa6d9a435adce45ad0af69d2d11b4acac9bcd00f66604a5cc3479e9ddcb"
+    },
+    {
+      "path": "docs/artwork/favicon/apple-icon.png",
+      "size": 28994,
+      "sha256": "f8a7aaa6d9a435adce45ad0af69d2d11b4acac9bcd00f66604a5cc3479e9ddcb"
+    },
+    {
+      "path": "docs/artwork/favicon/browserconfig.xml",
+      "size": 281,
+      "sha256": "13bc647273455808acd0f6605124ab3a78bbae67b532f8b993dc0f8ce2a03d0d"
+    },
+    {
+      "path": "docs/artwork/favicon/favicon-16x16.png",
+      "size": 1490,
+      "sha256": "da4d1842e3f9064aa6880c0c47b900bc2c5f6bbfa895b4429d5aaef4609f5b00"
+    },
+    {
+      "path": "docs/artwork/favicon/favicon-32x32.png",
+      "size": 2855,
+      "sha256": "cc45352835d1f94c07a72b7a31c4e0f7eec2ae101c66cd7da85e863e2e4f7a16"
+    },
+    {
+      "path": "docs/artwork/favicon/favicon-96x96.png",
+      "size": 11109,
+      "sha256": "8c1bc18b55d44c405905bb754d1999b8a487d00ba2a55f2a0cf93e469ef3c2be"
+    },
+    {
+      "path": "docs/artwork/favicon/favicon.ico",
+      "size": 1150,
+      "sha256": "9444afeb4190cf79dfef52b409463138bec56568815d718e5a05dbeb6442d0e3"
+    },
+    {
+      "path": "docs/artwork/favicon/manifest.json",
+      "size": 720,
+      "sha256": "27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518"
+    },
+    {
+      "path": "docs/artwork/favicon/ms-icon-144x144.png",
+      "size": 20840,
+      "sha256": "b89a03f68e11949c73aec87f03fedbe25b24b0c1d5773313708ba7622bedae48"
+    },
+    {
+      "path": "docs/artwork/favicon/ms-icon-150x150.png",
+      "size": 22336,
+      "sha256": "ec5f78b3f4da0bde9aefd114976762f568d600930e7472d59e70efc24acdd9fd"
+    },
+    {
+      "path": "docs/artwork/favicon/ms-icon-310x310.png",
+      "size": 64769,
+      "sha256": "b567c06b5ce2c44fcdb69e4f8105d2432ceca82ff3767b29fb2bb41ef5d81c87"
+    },
+    {
+      "path": "docs/artwork/favicon/ms-icon-70x70.png",
+      "size": 7122,
+      "sha256": "60485fc9419a4648f2d17bf9bd39247ca1e7f3ac10d8283bf3720fac2a58a884"
+    },
+    {
+      "path": "docs/assets/css/bootstrap.min.css",
+      "size": 121200,
+      "sha256": "f75e846cc83bd11432f4b1e21a45f31bc85283d11d372f7b19accd1bf6a2635c"
+    },
+    {
+      "path": "docs/assets/css/bootstrap.min.css.map",
+      "size": 542194,
+      "sha256": "b4a35d19793de445f4622f4d28db279c0242b60228ef304340aad833d012a77d"
+    },
+    {
+      "path": "docs/assets/css/ie10-viewport-bug-workaround.css",
+      "size": 433,
+      "sha256": "17ec74c69eb8c08a5c82d7126fa307525806b2b9f06cda918c5f750428c40d40"
+    },
+    {
+      "path": "docs/assets/css/navbar-fixed-top.css",
+      "size": 52,
+      "sha256": "ef456286330c272f0a14c88c35b307787eebcb9445d551954edd80be71241c1f"
+    },
+    {
+      "path": "docs/assets/css/pygments/README.md",
+      "size": 883,
+      "sha256": "1a5e2c0042ee2b88bfcd32370d9a917639f9a8377b915269d06b100f218d4dd1"
+    },
+    {
+      "path": "docs/assets/css/pygments/UNLICENSE.txt",
+      "size": 1210,
+      "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+    },
+    {
+      "path": "docs/assets/css/pygments/autumn.css",
+      "size": 3539,
+      "sha256": "a795fcded659b696fdbb221025a8eefe6420c6099ead22a5353cf1f7ed0dd31b"
+    },
+    {
+      "path": "docs/assets/css/pygments/borland.css",
+      "size": 2943,
+      "sha256": "0d4e44645620c1d029d4ee8f3c71a94426b9cd9cf21193ef107d67d03918dd68"
+    },
+    {
+      "path": "docs/assets/css/pygments/bw.css",
+      "size": 2078,
+      "sha256": "3a79795fc9aab6dc795ffbfdb56c39280925df3d831628282e453faa4007a06b"
+    },
+    {
+      "path": "docs/assets/css/pygments/colorful.css",
+      "size": 4160,
+      "sha256": "18c5a4da8386b1a99eeabd1f8f58cf2f1df54cf5c7ce1820720259bd673eb0b5"
+    },
+    {
+      "path": "docs/assets/css/pygments/default.css",
+      "size": 3869,
+      "sha256": "8e3eb5658dca2353153a37fe925e73992868abb6563b055ce962d5050a1ab1e5"
+    },
+    {
+      "path": "docs/assets/css/pygments/emacs.css",
+      "size": 3868,
+      "sha256": "ce59857a9001f03b15655a67bb9b62c507da2f62327ce04bf7853209f8de615e"
+    },
+    {
+      "path": "docs/assets/css/pygments/friendly.css",
+      "size": 3896,
+      "sha256": "1e6bd1b4c59aa31251eda53e38162fda05e7597cfd7e4e46d0b86078978d0fd5"
+    },
+    {
+      "path": "docs/assets/css/pygments/fruity.css",
+      "size": 4486,
+      "sha256": "28302702474845695e33fbd58d31b2428ecee59995c981752a35c54b1ed27039"
+    },
+    {
+      "path": "docs/assets/css/pygments/github.css",
+      "size": 3955,
+      "sha256": "f983f9fb6fd4fd6fc5b5fe2afbfaf4765097bd9790698f383ea802c87b2fc8b8"
+    },
+    {
+      "path": "docs/assets/css/pygments/manni.css",
+      "size": 3980,
+      "sha256": "ff6961c89e345ac2da3aab5792c9fd4ffb4bb80bc0a57373032775cea217c400"
+    },
+    {
+      "path": "docs/assets/css/pygments/monokai.css",
+      "size": 3712,
+      "sha256": "ac3c11a4ef753d64fed3e813b9791e856a1ddc5e2788a3fe78dca02befcfaa2a"
+    },
+    {
+      "path": "docs/assets/css/pygments/murphy.css",
+      "size": 4202,
+      "sha256": "de7ab4b16e210c37221a7eec61a88f4c60b7612147c46bba8230e232b60c7cc2"
+    },
+    {
+      "path": "docs/assets/css/pygments/native.css",
+      "size": 4330,
+      "sha256": "1c2450aef6a9fb58a2ba8673d61d7a419320e17955f19a3b51b6dd89d52b8811"
+    },
+    {
+      "path": "docs/assets/css/pygments/pastie.css",
+      "size": 4259,
+      "sha256": "9cee695fb610fb85d45c8a21040828273fed263368897f968026647010d3481f"
+    },
+    {
+      "path": "docs/assets/css/pygments/perldoc.css",
+      "size": 3625,
+      "sha256": "f9fb118e5dffdc9b5739f9491f6d3cdb7471ad276fa0d88fc3403e7014610aac"
+    },
+    {
+      "path": "docs/assets/css/pygments/tango.css",
+      "size": 4491,
+      "sha256": "f3651f05840fabc4d731794a1be818a09225835b926d056252a9529b52181e84"
+    },
+    {
+      "path": "docs/assets/css/pygments/trac.css",
+      "size": 3647,
+      "sha256": "2fa2d394e55c1f2e3df093b8b8b8e98083f300a74380e246f8c79d54410e02cb"
+    },
+    {
+      "path": "docs/assets/css/pygments/vim.css",
+      "size": 4045,
+      "sha256": "516d56b2fe3a5082a5983a385847a6698770dafaa516e5a624d9c4bef1a38ff9"
+    },
+    {
+      "path": "docs/assets/css/pygments/vs.css",
+      "size": 1896,
+      "sha256": "240f73c360ea64d75237aa2201faa18094a8eef529807792cfc9512421429ef4"
+    },
+    {
+      "path": "docs/assets/css/pygments/zenburn.css",
+      "size": 2507,
+      "sha256": "a46faa6e80c5b2f901a4473863d66fa7377a0c827018a6156cfee58c5c09fd0c"
+    },
+    {
+      "path": "docs/assets/css/spec-style.sass",
+      "size": 2175,
+      "sha256": "626648b7818fbeb02edda883218998cd36ee613ca75f183bf55cc1d5a76bef94"
+    },
+    {
+      "path": "docs/assets/css/sticky-footer.css",
+      "size": 602,
+      "sha256": "719e334b5366d89b8f3902f7d0ccb0da7e769a0c8cbf4641134839668f5c72a5"
+    },
+    {
+      "path": "docs/assets/js/ASCIIMathML.js",
+      "size": 59760,
+      "sha256": "2816bdd86d3b0aeca7bb9e673ab1d1430b817e41a368ba96e393407286e9aa2a"
+    },
+    {
+      "path": "docs/assets/js/bootstrap.min.js",
+      "size": 37045,
+      "sha256": "53964478a7c634e8dad34ecc303dd8048d00dce4993906de1bacf67f663486ef"
+    },
+    {
+      "path": "docs/assets/js/ie10-viewport-bug-workaround.js",
+      "size": 641,
+      "sha256": "f663fd5d5698e04a8e56de60c13c54abcb6943adcb21c3d5e80866d0eda0604d"
+    },
+    {
+      "path": "docs/index.md",
+      "size": 58,
+      "sha256": "e994e55dbd8c9196041d1ddc2ca2ac9673ddfd546c6fb0a7df0ada29e21f2ab5"
+    },
+    {
+      "path": "docs/package-lock.json",
+      "size": 27,
+      "sha256": "c1f8b18730737be44ea82b2a9ffd887729bd9ded1960e4b38bf49492fb0d1fa3"
+    },
+    {
+      "path": "docs/spec/00.00.00.title.md",
+      "size": 31,
+      "sha256": "08584528cd4a794bbdc9e91bb7463ae942dfe8dff253531762493f8350a6fd91"
+    },
+    {
+      "path": "docs/spec/00.00.01.version.md",
+      "size": 48,
+      "sha256": "3781fe296d6b733f5be4b7658ace2de4eb2a378d20da35740cef00f628c02964"
+    },
+    {
+      "path": "docs/spec/00.00.02.authors.md",
+      "size": 26,
+      "sha256": "53c26600f7dbcde2153d8ba2f29e61605784ecfbc4b6d08d5bdfdfe249ac425b"
+    },
+    {
+      "path": "docs/spec/00.00.03.last.modified.md",
+      "size": 34,
+      "sha256": "fcf1cc05ea97d1cdf1f28b30a5e9a73bf49dbd76815cb1eb5d952aa8dd5b072f"
+    },
+    {
+      "path": "docs/spec/00.00.04.abstract.md",
+      "size": 227,
+      "sha256": "802891242676de2e5c149676f4eea04f289c4a43230d48d6eb229956e1954054"
+    },
+    {
+      "path": "docs/spec/00.00.05.toc.md",
+      "size": 227,
+      "sha256": "20a5160ee32d9379ceb3b3aca11bd3ec6fc3438ac14ca0c10c98143885916891"
+    },
+    {
+      "path": "docs/spec/01.00.00.scope.md",
+      "size": 116,
+      "sha256": "67c7e4eb74559748542c183c34bb94e678a397cf34d6f5c0928fbce5ea0601a3"
+    },
+    {
+      "path": "docs/spec/03.00.00.symbols.md",
+      "size": 453,
+      "sha256": "ccc9ea7c324099f85bbd98e9839a657c705afb0bebf6ea73113a8da135c44978"
+    },
+    {
+      "path": "docs/spec/04.00.00.conventions.md",
+      "size": 10073,
+      "sha256": "0a6b70d03efbf76abcddfe3239958b5410620f54d7d4974176c88b924182a6c3"
+    },
+    {
+      "path": "docs/spec/README.md",
+      "size": 7508,
+      "sha256": "46cfacb38790ccfd04cc1072929ded44f4098badd872fbf83a0b47e20d3022b4"
+    },
+    {
+      "path": "docs/spec/attributes.decoder.md",
+      "size": 8762,
+      "sha256": "1847481a140b6ffaa5f536163de8c20d11ce3846669b2393100c4dda928b0fa2"
+    },
+    {
+      "path": "docs/spec/boundary.decoder.md",
+      "size": 3639,
+      "sha256": "fc871b50e1c1dbd2721175544dd09c9cfa2f408b99488305bc159d4c68dc7bcd"
+    },
+    {
+      "path": "docs/spec/connectivity.decoder.md",
+      "size": 308,
+      "sha256": "5b72722ed36513b7c31bd671f3c19616dec73cb5023db8f14a40dcc67ff062f4"
+    },
+    {
+      "path": "docs/spec/core.functions.md",
+      "size": 819,
+      "sha256": "c61dd4fe57151c61beb150aa769d70b3237da90f49ba8114f3bd8ae75fef0b82"
+    },
+    {
+      "path": "docs/spec/corner.md",
+      "size": 3354,
+      "sha256": "a07d90ba2e13e8d2b1556858ed5163eec2b6afec57f497e77deda17f60fad2f8"
+    },
+    {
+      "path": "docs/spec/draco.decoder.md",
+      "size": 818,
+      "sha256": "1ef9ae9e612bf066af7c08267652fc8ebb2637be913f38bc3c6a2533463a71a4"
+    },
+    {
+      "path": "docs/spec/edgebreaker.decoder.md",
+      "size": 12301,
+      "sha256": "4db1affd52ceb6fe62032a2ba2521e924d094e1dd94621c091cc03ec8f8d40f6"
+    },
+    {
+      "path": "docs/spec/edgebreaker.traversal.md",
+      "size": 6967,
+      "sha256": "6d09098153041ab00da1e38f470c4d2d248157f47a53b7d1f25ce3e7297119b5"
+    },
+    {
+      "path": "docs/spec/edgebreaker.traversal.prediction.degree.md",
+      "size": 3132,
+      "sha256": "fa3bf50ee6ef63ce7552bd15dacf085934e603f1f063d4972cdf905f21c02ba4"
+    },
+    {
+      "path": "docs/spec/edgebreaker.traversal.valence.md",
+      "size": 1137,
+      "sha256": "14b7254ca6a1bfd59ba3836ebc1359d6d16f76588a4c97b0afe9b20b953e524e"
+    },
+    {
+      "path": "docs/spec/images/attributes.png",
+      "size": 7739,
+      "sha256": "a142495f7a183c48d4db29c52ab1f89f3549f2f2ecba6ce41ab00281fda1b168"
+    },
+    {
+      "path": "docs/spec/images/draco_file.png",
+      "size": 4732,
+      "sha256": "b159e73e2ef322847181b82790458abe03ab2aab7567842024ac04e23997fb7c"
+    },
+    {
+      "path": "docs/spec/images/edgebreaker_connectivity.png",
+      "size": 7818,
+      "sha256": "980fd11af8dfa49a3d1b88132ab4f93b13a0e4a4da819400ba87479f90b40319"
+    },
+    {
+      "path": "docs/spec/images/edgebreaker_valence_connectivity.png",
+      "size": 8304,
+      "sha256": "2b5993369960724171d86dad18ae8460ef686bb4448857a9aa55b72ba92b7f7d"
+    },
+    {
+      "path": "docs/spec/images/sequential_connectivity.png",
+      "size": 3381,
+      "sha256": "1e7aba13173b8197e8bc720ecbbfd5aa2aafcb3d4fc8c3485695cc3cc5c5ae48"
+    },
+    {
+      "path": "docs/spec/index.md",
+      "size": 1947,
+      "sha256": "8b21e371646287d6106317f08d19346372cc28e2820fccad78ae1b36e49fa34f"
+    },
+    {
+      "path": "docs/spec/metadata.decoder.md",
+      "size": 1938,
+      "sha256": "e6eb2e377e1052fc6ba82f5475229b9e5b82b74585271bfbed525729cfc31305"
+    },
+    {
+      "path": "docs/spec/prediction.decoder.md",
+      "size": 7835,
+      "sha256": "4258078cc5a7f8088c3984d04703b0516578c40647c502e07c494093afd0838b"
+    },
+    {
+      "path": "docs/spec/prediction.multi.parallelogram.decoder.md",
+      "size": 2762,
+      "sha256": "8d4f036ae83df33ba236e7404c80424b8e1e47797ff18eeda884f646127933af"
+    },
+    {
+      "path": "docs/spec/prediction.normal.decoder.md",
+      "size": 5748,
+      "sha256": "df83aad9b455de9ab858e93460f1eb3f7d30a48bdccf3182af2048056e69a6bd"
+    },
+    {
+      "path": "docs/spec/prediction.normal.transform.md",
+      "size": 4315,
+      "sha256": "c7e74a09c8d62a95ea2660ac82b7900f3e8676b9c7d2fc02555215ab037a8cda"
+    },
+    {
+      "path": "docs/spec/prediction.parallelogram.decoder.md",
+      "size": 2511,
+      "sha256": "6221d0e1a2e8e1a26a22a7c50627f17b62cf343e00db3ee6b6ee93dc8ec7fe16"
+    },
+    {
+      "path": "docs/spec/prediction.texcoords.decoder.md",
+      "size": 4656,
+      "sha256": "8c624340b84d5d3df5598f564357e18905735ba4aeba15a12e650ce53127a7be"
+    },
+    {
+      "path": "docs/spec/prediction.wrap.transform.md",
+      "size": 1498,
+      "sha256": "1a74be01168c099dbfe7ca1c9ff162c005222805033438ac3c91d0f489356d75"
+    },
+    {
+      "path": "docs/spec/rans.decoding.md",
+      "size": 5614,
+      "sha256": "fae7894b1ce63bf8f501fae9ac8a4745cb414e99e10ccc957d2585cb504efafa"
+    },
+    {
+      "path": "docs/spec/sequential.decoder.md",
+      "size": 2760,
+      "sha256": "d7027b637729d584e788164fa88fca6b4aec1675af52cf791169659e3c1c28b3"
+    },
+    {
+      "path": "docs/spec/sequential.integer.attribute.decoder.md",
+      "size": 1899,
+      "sha256": "357c2bcc3f290f51c3464e19f802d4e0596cb4e5bd0013afc0375e86d92e2174"
+    },
+    {
+      "path": "docs/spec/sequential.normal.attribute.decoder.md",
+      "size": 2448,
+      "sha256": "a3d78f25fbe54c6faa8af327fdc3a97cc383a8aa4f92e8ec103acb3d885d2a73"
+    },
+    {
+      "path": "docs/spec/sequential.quantization.attribute.decoder.md",
+      "size": 2012,
+      "sha256": "9a5a10a377daf57478a9033b7e124de76b9f898c59c217a4b83bdcfff22f6998"
+    },
+    {
+      "path": "docs/spec/variable.descriptions.md",
+      "size": 8553,
+      "sha256": "ab6e51e54b4e653e0abc76405a919642f4d25ef546009e98c5b52c959ed6c99f"
+    },
+    {
+      "path": "docs/spec/vector.md",
+      "size": 1189,
+      "sha256": "74865c35450489207c7a04252f06364877721de9b86607e4fd1746a259f90d27"
+    },
+    {
+      "path": "docs/unity/UNITY.md",
+      "size": 7384,
+      "sha256": "a228850ea42a3d6662cdef6b40d51a6bfb168ba67a179dd023536de0ef8e14e6"
+    },
+    {
+      "path": "docs/unity/images/add_component.png",
+      "size": 20304,
+      "sha256": "5560adadab46771c7ebeb0bd75baae9d11064f3cb1bf214e9451f462c367c0fa"
+    },
+    {
+      "path": "docs/unity/images/add_light.png",
+      "size": 29810,
+      "sha256": "7c06391c0490d405899ae0d9f7dc260f7db88c4a09be42f9968dbf5f7999056d"
+    },
+    {
+      "path": "docs/unity/images/add_material.png",
+      "size": 23659,
+      "sha256": "6544b3d57e73f88a3558ad465a0f0be036723a13a97b9bb2b133f6d07911a6f1"
+    },
+    {
+      "path": "docs/unity/images/add_mesh_filter_component.png",
+      "size": 17065,
+      "sha256": "600f97ea4556ee9f1a53742df3c2352c3c15bf60e87e19e955ce89db41f3a316"
+    },
+    {
+      "path": "docs/unity/images/add_mesh_renderer_component.png",
+      "size": 11112,
+      "sha256": "e07580e4b42fd91b6da1e4639774850aca3334b40c2b13db77829e48fdb7e1f3"
+    },
+    {
+      "path": "docs/unity/images/allow_unsafe_windows_1.png",
+      "size": 93261,
+      "sha256": "43d74ac67daec737edbff5c1bfbaf864c31bf7f5f6f04b0a4cd6a741dd5e3dd6"
+    },
+    {
+      "path": "docs/unity/images/allow_unsafe_windows_2.png",
+      "size": 57681,
+      "sha256": "a0c6b791cf989dc25b78e5ce76cc61da1608de23a346b96da2b60a34b5b70343"
+    },
+    {
+      "path": "docs/unity/images/attach_draco_decode_object.png",
+      "size": 19449,
+      "sha256": "caaa39b87f724b463a0b58a798d6c6fcb4d95a864d71e4a5c29e241c7e739a86"
+    },
+    {
+      "path": "docs/unity/images/black_bunny.png",
+      "size": 71780,
+      "sha256": "6638543e113b41c4912de9844f3786177a4800e995b80f0217864f096f8db2db"
+    },
+    {
+      "path": "docs/unity/images/create_empty_game_object_windows.png",
+      "size": 60324,
+      "sha256": "8c6252fc3c4096caca4ecb4148f2fa115e194e3b48aa78f0d047da7f83d9b7c4"
+    },
+    {
+      "path": "docs/unity/images/default_material.png",
+      "size": 11177,
+      "sha256": "0446a894dd4012747916ea40c3596960c25a581a510930b221d5e60b112f27a8"
+    },
+    {
+      "path": "docs/unity/images/light_position.png",
+      "size": 142287,
+      "sha256": "ddf1e0b75a1b3fc5df24cc2037e22ce07093a0a7a7774847e6be51d99c5a8c34"
+    },
+    {
+      "path": "docs/unity/images/lit_bunny.png",
+      "size": 127503,
+      "sha256": "c80b1adfafae48c548b9d5f132109e9251c824f6a2b47592fd879a30b266c40b"
+    },
+    {
+      "path": "docs/unity/images/mesh_filter_added.png",
+      "size": 11430,
+      "sha256": "83eef99c71e6bc0a853d01014969116d9e922a8d28dfbb079b0f032c093cef8a"
+    },
+    {
+      "path": "docs/unity/images/mesh_renderer_added.png",
+      "size": 32391,
+      "sha256": "c9d411fbab0e808cb1b150819c673916a2e19110934d2bd999184a1a33a8e590"
+    },
+    {
+      "path": "docs/unity/images/new_project_windows_1.png",
+      "size": 57976,
+      "sha256": "49e5eeb827ff5bfd50cac089a33348d7fd8bec48acc9ede1d7d0efdeb8c05ee0"
+    },
+    {
+      "path": "docs/unity/images/new_project_windows_2.png",
+      "size": 27051,
+      "sha256": "501ddb4e034b93a18ae8a48eff1ae2bbe64233fb938b0183b7d310649ef76842"
+    },
+    {
+      "path": "docs/unity/images/pink_bunny.png",
+      "size": 69921,
+      "sha256": "15dedb96ed3640255ffe26ff6f2b92066d5f0ceb054d5a2910e6529a3bb67e6d"
+    },
+    {
+      "path": "docs/unity/images/select_material.png",
+      "size": 21395,
+      "sha256": "dbd683b3aeccf6ee65627c0a7bc52277317a4d3d54fa9cf3803347d8ba69a895"
+    },
+    {
+      "path": "docs/unity/images/set_camera_position.png",
+      "size": 10076,
+      "sha256": "c44a67961e4bf4e85b33bf00da20a5607e1c39d4a157d15c5c44dc9a47fa2817"
+    },
+    {
+      "path": "docs/unity/images/unity_empty.png",
+      "size": 25743,
+      "sha256": "dc252bdfa26a86f45931d80d93b85a0b5bc9406fc5161a1910576e7904a1e98f"
+    },
+    {
+      "path": "javascript/draco_decoder.js",
+      "size": 720148,
+      "sha256": "5656ccaf1f50300e3c318e15c3313430483f3866cd9c25f22fbf9d6f229e6728"
+    },
+    {
+      "path": "javascript/draco_decoder.wasm",
+      "size": 285948,
+      "sha256": "2516a4e43526d71787bf2f678f951329f7f858f8f15f42d4bc9e370b31a0da3a"
+    },
+    {
+      "path": "javascript/draco_decoder_gltf.js",
+      "size": 513057,
+      "sha256": "ea66fdedab5c974050c67aaa86d795cecf9c70aa53b0ddb318b1979f1e1c5be1"
+    },
+    {
+      "path": "javascript/draco_decoder_gltf.wasm",
+      "size": 192593,
+      "sha256": "712db3449ae2041d6e8a224c395bda6cedb49e51322fae38b7db9beb8b381889"
+    },
+    {
+      "path": "javascript/draco_encoder.js",
+      "size": 880075,
+      "sha256": "ce9e4e70adfdcfbff8a46d557efe96ea38ec085274a97eedd869da8ee07b47d8"
+    },
+    {
+      "path": "javascript/draco_encoder.wasm",
+      "size": 370188,
+      "sha256": "d2a3ac80c91980d5d321c116454834ff36264825c6d1794cc84e42288f158958"
+    },
+    {
+      "path": "javascript/draco_encoder_wrapper.js",
+      "size": 49007,
+      "sha256": "8434adecd1446459601763e499be3697546056bca90b286a538ae0483a00845a"
+    },
+    {
+      "path": "javascript/draco_wasm_wrapper.js",
+      "size": 58763,
+      "sha256": "e8049906ef3f8f75d3456c22a3f31bfdfe5b5b5bd09ccdec613b9e9a49d554d8"
+    },
+    {
+      "path": "javascript/draco_wasm_wrapper_gltf.js",
+      "size": 58456,
+      "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6"
+    },
+    {
+      "path": "javascript/example/DRACOLoader.js",
+      "size": 15794,
+      "sha256": "1fee80852e4aa817577fddf1a35be6fddb2c3a8b9939b846bdf79c4a677a6680"
+    },
+    {
+      "path": "javascript/example/README.md",
+      "size": 2422,
+      "sha256": "8545ac9c078423a5f2147900628bf8e2af83a917f8a56b793204db4db726711d"
+    },
+    {
+      "path": "javascript/example/geometry_helper.js",
+      "size": 3718,
+      "sha256": "5ed389520253fab94ac3b7cad3f293d77c715696d1a6b8d0ed884f79e6daad20"
+    },
+    {
+      "path": "javascript/example/models/bunny.drc",
+      "size": 96018,
+      "sha256": "0cfb7a000e75024d6a02d81549d0609eb8cc45d5ef9a85152f6cdda56b4a48cc"
+    },
+    {
+      "path": "javascript/example/webgl_loader_draco.html",
+      "size": 3499,
+      "sha256": "cfe23158f5735cbd0236f741800f9176a395c8204de15acf188f04ed6d0e1ee6"
+    },
+    {
+      "path": "javascript/example/webgl_loader_draco_advanced.html",
+      "size": 6307,
+      "sha256": "aac737e334f959216e3b7957dcad787cb37c58c49eb772720cffbf49d19b144b"
+    },
+    {
+      "path": "javascript/npm/draco3d/README.md",
+      "size": 2579,
+      "sha256": "9cbb26d7e9fda3e172d61ac939c4ff3b8e70bb29638b7421ca938358e57f9cbc"
+    },
+    {
+      "path": "javascript/npm/draco3d/bunny.drc",
+      "size": 96018,
+      "sha256": "0cfb7a000e75024d6a02d81549d0609eb8cc45d5ef9a85152f6cdda56b4a48cc"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco3d.js",
+      "size": 246,
+      "sha256": "7bb70f3edb3c32a21fbd3ea90d85f6f816a3394061c445ac4e867d23fa2f9dca"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_decoder.wasm",
+      "size": 285948,
+      "sha256": "2516a4e43526d71787bf2f678f951329f7f858f8f15f42d4bc9e370b31a0da3a"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_decoder_nodejs.js",
+      "size": 58763,
+      "sha256": "e8049906ef3f8f75d3456c22a3f31bfdfe5b5b5bd09ccdec613b9e9a49d554d8"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_encoder.wasm",
+      "size": 370188,
+      "sha256": "d2a3ac80c91980d5d321c116454834ff36264825c6d1794cc84e42288f158958"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_encoder_nodejs.js",
+      "size": 49007,
+      "sha256": "8434adecd1446459601763e499be3697546056bca90b286a538ae0483a00845a"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_minimal_decoder_example.js",
+      "size": 1070,
+      "sha256": "8c3c96706bc91c12443b997c620b7552d92b77ee7d2135e95589d4ca5e61323a"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_minimal_encoder_decoder_example.js",
+      "size": 1648,
+      "sha256": "a53dc84b67159c41737d5a6679ab4d43fc75941edee1b8b06e5cecddb1b712b1"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_minimal_encoder_example.js",
+      "size": 1019,
+      "sha256": "84937f6170cde8ac746c44bc87de47f8e0fb7b80d527955e3e17e96eadb90945"
+    },
+    {
+      "path": "javascript/npm/draco3d/draco_nodejs_example.js",
+      "size": 6131,
+      "sha256": "cc8c26a913a8513ad5cbd4b3dfd073908d627bb0dec714cbd3c5bb8b3aa49e4a"
+    },
+    {
+      "path": "javascript/npm/draco3d/package.json",
+      "size": 558,
+      "sha256": "6ef40efeb553eb7c2794228b52b22af1110b3d1ff4945ac8d5c29955df3a3c55"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/README.md",
+      "size": 2489,
+      "sha256": "82ecb02de2a749e6e38c90571532b8efe0db73464e2542a055f2f03fa8ec0ce7"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/bunny.drc",
+      "size": 120867,
+      "sha256": "c1bf564f279849f311c4b4205dd16d729557c208fd9502ab124b784d146add80"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/draco3dgltf.js",
+      "size": 256,
+      "sha256": "e791b63d865c41b4b11ad0e37dc3114bde216188a58c394c36c9c79d397d7df8"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/draco_decoder_gltf.wasm",
+      "size": 192593,
+      "sha256": "712db3449ae2041d6e8a224c395bda6cedb49e51322fae38b7db9beb8b381889"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/draco_decoder_gltf_nodejs.js",
+      "size": 58456,
+      "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/draco_encoder.wasm",
+      "size": 370188,
+      "sha256": "d2a3ac80c91980d5d321c116454834ff36264825c6d1794cc84e42288f158958"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/draco_encoder_gltf_nodejs.js",
+      "size": 49007,
+      "sha256": "8434adecd1446459601763e499be3697546056bca90b286a538ae0483a00845a"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/draco_nodejs_example.js",
+      "size": 5963,
+      "sha256": "ae89118d6c087d26974377a8e045e71b3f9ef063e3fe98ef0abfb0fa80f59e17"
+    },
+    {
+      "path": "javascript/npm/draco3dgltf/package.json",
+      "size": 543,
+      "sha256": "a0d54ff620c6a018aeecc6cc5b60afb99e1e5bdb34f279870035c3568fec48a6"
+    },
+    {
+      "path": "javascript/time_draco_decode.html",
+      "size": 6599,
+      "sha256": "bd057685c301fb866e9c5bdceaf1ed81506b532703d576451bd9fc1cf40baaa1"
+    },
+    {
+      "path": "javascript/with_asserts/draco_decoder.js",
+      "size": 748520,
+      "sha256": "e1d9cc1e8ac30428012dbcf8b4dbd067f7d5b371375c7b07d88d4544628cdfe9"
+    },
+    {
+      "path": "javascript/with_asserts/draco_decoder.wasm",
+      "size": 299681,
+      "sha256": "28a32ca2f2bb656b9b61012d39b02a505f8090565034e5a3498896cc7ddcbee0"
+    },
+    {
+      "path": "javascript/with_asserts/draco_encoder.js",
+      "size": 903348,
+      "sha256": "2c7487f051962739fe4be5d1d259f3ceb0c1e807f882728f487fde9068617d87"
+    },
+    {
+      "path": "javascript/with_asserts/draco_encoder.wasm",
+      "size": 379094,
+      "sha256": "91f8cdf5fe8cb3986c6ba2f7f56e1aa669425fe0fe46d2e2fd3b2be9d156188e"
+    },
+    {
+      "path": "javascript/with_asserts/draco_encoder_wrapper.js",
+      "size": 65609,
+      "sha256": "735cd703cd02bd52894b28fddef6b06f92ce43a8730bc9e062d143efda22b23a"
+    },
+    {
+      "path": "javascript/with_asserts/draco_wasm_wrapper.js",
+      "size": 74337,
+      "sha256": "2f82718dbfd4f5e477bd7b7478a01c9ed91d699f2ef745e25c84c227070eabd6"
+    },
+    {
+      "path": "maya/.gitignore",
+      "size": 18,
+      "sha256": "d958025fe3928d9ec40a2cd0b56e873c5f3ad4ca45be3d104583964cbcff26cb"
+    },
+    {
+      "path": "maya/draco_maya_wrapper_macos.tar.bz",
+      "size": 657228,
+      "sha256": "4f2f7f9482389dd4879ff36828cd216a42a894bee867c3fa41da1bb5d21406c7"
+    },
+    {
+      "path": "maya/draco_maya_wrapper_windows.tar.bz",
+      "size": 199115,
+      "sha256": "77bc44e0ddc08f86bf388dacdad5f58df9dc5ef68fb7eb0cf55b66e88452239b"
+    },
+    {
+      "path": "src/draco/animation/animation.cc",
+      "size": 1579,
+      "sha256": "43aa87b6ad453d22a6cf63234fe8a3ed03c1c9ce4420d74c36e9feb8b9bb6caf"
+    },
+    {
+      "path": "src/draco/animation/animation.h",
+      "size": 4654,
+      "sha256": "df0c2f38e8d1a9bb0ec68710fe3c5e46f1fe2eb20d4abbc203111a5c882fff81"
+    },
+    {
+      "path": "src/draco/animation/animation_test.cc",
+      "size": 2518,
+      "sha256": "87cd0af64e9094ab2234ea16fefa00dbf2629dc17ca236fed3894e1985e2dcb2"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation.cc",
+      "size": 1818,
+      "sha256": "e4161bbfcbfaa4be6c4b328eeea112d206e22dedec75c1dbc6f7c6f8b112b786"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation.h",
+      "size": 3998,
+      "sha256": "2b40ada0f1c4ffebe4bd133b113ddb4206d3959c61e063d2924f26798550c1ad"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation_decoder.cc",
+      "size": 1099,
+      "sha256": "b259fb97ef6a0db8fb6a109b050e8dfbe6d75638249d12cc31bbf580e0ac9b04"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation_decoder.h",
+      "size": 1209,
+      "sha256": "13d16b610b2f8bba6f547d55011b0bdede581566d8d22612fe6e893e6fb85ffc"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation_encoder.cc",
+      "size": 985,
+      "sha256": "eb8815965615d9369d51aedcc5a36fa3d1996b51a055ca01a4f06d9030974c0a"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation_encoder.h",
+      "size": 1537,
+      "sha256": "9dd8345ab310cc2bd581b226dfede2b723cb7e3d273e46fee2d650c640535549"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation_encoding_test.cc",
+      "size": 6486,
+      "sha256": "fb0e535683ce4c5809e55e257e171d852280f90108a5d1e6137a0c3cb4206318"
+    },
+    {
+      "path": "src/draco/animation/keyframe_animation_test.cc",
+      "size": 3830,
+      "sha256": "ca5816a2a66af83b95fd374a00ce590dbf6f35ea5e5b7f77f83ad937924f66ab"
+    },
+    {
+      "path": "src/draco/animation/node_animation_data.h",
+      "size": 4446,
+      "sha256": "8ff73361220425a72b6a19b8f5cef8ea32a9d2a07c74515683e6f7fc55a6f81f"
+    },
+    {
+      "path": "src/draco/animation/skin.cc",
+      "size": 911,
+      "sha256": "73fd5de0772c31cd86bf3946347c7a7829e83803e1be70d2666ecdaeb425dfc0"
+    },
+    {
+      "path": "src/draco/animation/skin.h",
+      "size": 1991,
+      "sha256": "019b4c9d46287517dfd85ac0534e6b77886d8e4929f5a122aa1100ab2875499b"
+    },
+    {
+      "path": "src/draco/attributes/attribute_octahedron_transform.cc",
+      "size": 5203,
+      "sha256": "20bd70b60ee49050011da613028487950eb653a0da14deadf8d8a06f2619fe43"
+    },
+    {
+      "path": "src/draco/attributes/attribute_octahedron_transform.h",
+      "size": 2978,
+      "sha256": "6e697964a3e6f5b4c112387ec8412cb92270373cc33550cf16848a3409b31bb8"
+    },
+    {
+      "path": "src/draco/attributes/attribute_quantization_transform.cc",
+      "size": 9666,
+      "sha256": "6aa1883c9845752f347af21799f48d45fbad6895f86836d02b683882656a5c32"
+    },
+    {
+      "path": "src/draco/attributes/attribute_quantization_transform.h",
+      "size": 3959,
+      "sha256": "fe03ccd8b7e1e9ecd1bfac96841d806289e4496ecc4563d86a5ec095a4f9b7eb"
+    },
+    {
+      "path": "src/draco/attributes/attribute_transform.cc",
+      "size": 1711,
+      "sha256": "51e5bfd7000d7e226d7bd066bdb9105e2b3ca9aee5af9743e18bd74078c1c18d"
+    },
+    {
+      "path": "src/draco/attributes/attribute_transform.h",
+      "size": 3246,
+      "sha256": "8cdb6ca6e9fc982b2b57cb33c7d12ad2aa3da92a3901b2cd8047b374d6733837"
+    },
+    {
+      "path": "src/draco/attributes/attribute_transform_data.h",
+      "size": 2635,
+      "sha256": "e71332bb8871c896148e954855a1467fe967012d2cb72e1e5d7ea9f153a026ad"
+    },
+    {
+      "path": "src/draco/attributes/attribute_transform_type.h",
+      "size": 1039,
+      "sha256": "ffbef8ae510637d4f625ab95726cddaa722255cfb79018c703f5f9c7fe232a3b"
+    },
+    {
+      "path": "src/draco/attributes/geometry_attribute.cc",
+      "size": 3402,
+      "sha256": "60859e62fe5204cc1f64f432d813d76a7703b9507a1168b0534b72484efd4acf"
+    },
+    {
+      "path": "src/draco/attributes/geometry_attribute.h",
+      "size": 22203,
+      "sha256": "daba94d80e0099f7f6902d9127f213d58de1bbd610361fc5df5a07a954a014ce"
+    },
+    {
+      "path": "src/draco/attributes/geometry_indices.h",
+      "size": 1984,
+      "sha256": "60f9116a818bb9b077db65048ee8b2117b86e23012dff837890a9a118f940ed3"
+    },
+    {
+      "path": "src/draco/attributes/point_attribute.cc",
+      "size": 10153,
+      "sha256": "e8bb0f2169da619b9a02da6b3a5f443d1aec6e1056bf87108e6e8fa0f3411788"
+    },
+    {
+      "path": "src/draco/attributes/point_attribute.h",
+      "size": 7838,
+      "sha256": "0808e82a69c40c2c9a099a9993dc4c7d9b8d03c0b4743bcdd8dc7cc8c35ea488"
+    },
+    {
+      "path": "src/draco/attributes/point_attribute_test.cc",
+      "size": 4071,
+      "sha256": "f08f92c3d65b6300cbefbb6bb016ea885bac3a446e36da33dbe86cb209008498"
+    },
+    {
+      "path": "src/draco/compression/attributes/attributes_decoder.cc",
+      "size": 3967,
+      "sha256": "b55d3f2768928f64a63838e3779c340c539ed83d10085ce7b49f652472d5dfe4"
+    },
+    {
+      "path": "src/draco/compression/attributes/attributes_decoder.h",
+      "size": 3386,
+      "sha256": "defe17875a5c2984daa8b6fa1425607eec5a97a7ca48e06eff4652c35f0d09d4"
+    },
+    {
+      "path": "src/draco/compression/attributes/attributes_decoder_interface.h",
+      "size": 2405,
+      "sha256": "691c9303e35ec8a6d78060b9361e77cb0c2a66853fedf38b7a9875c2f189e799"
+    },
+    {
+      "path": "src/draco/compression/attributes/attributes_encoder.cc",
+      "size": 2150,
+      "sha256": "e828894b45892436a0e6d6d29f70962de74d9fd7ba4a1afec50dc801b0fd956d"
+    },
+    {
+      "path": "src/draco/compression/attributes/attributes_encoder.h",
+      "size": 5876,
+      "sha256": "6a11ce596af367c3f972e17dcc83a0acab4337ab8cdbfad94e0c131ae6f9d5e7"
+    },
+    {
+      "path": "src/draco/compression/attributes/kd_tree_attributes_decoder.cc",
+      "size": 21736,
+      "sha256": "0b4e7b0bf20e309bd6598a6afa7e12d92e7448ccfb43290a8e435562beff235a"
+    },
+    {
+      "path": "src/draco/compression/attributes/kd_tree_attributes_decoder.h",
+      "size": 1950,
+      "sha256": "479d36a80aa65444dcf5e9f890a78c4d5892f8639a57bc2810e0ace3fa01a841"
+    },
+    {
+      "path": "src/draco/compression/attributes/kd_tree_attributes_encoder.cc",
+      "size": 12752,
+      "sha256": "e86efcef854acd9f78c56aa1b316c2d434afb5cd9f4bf36637f01c64176841ab"
+    },
+    {
+      "path": "src/draco/compression/attributes/kd_tree_attributes_encoder.h",
+      "size": 2046,
+      "sha256": "74254d8d5b11eaebca4e4a0a461e85b725205df97b46df4d32fe8a66ad1d23e4"
+    },
+    {
+      "path": "src/draco/compression/attributes/kd_tree_attributes_shared.h",
+      "size": 985,
+      "sha256": "705a163680e0d55e6e8894f2835acde7f6d98e17cb82c224cadd1326579ecafb"
+    },
+    {
+      "path": "src/draco/compression/attributes/linear_sequencer.h",
+      "size": 1599,
+      "sha256": "35dffef539304e1a603be3eddacf858cab445da3dbce20d9647fd51224a23f7c"
+    },
+    {
+      "path": "src/draco/compression/attributes/mesh_attribute_indices_encoding_data.h",
+      "size": 2343,
+      "sha256": "e6cb63aa5f2ace73871d0da59c10bed972a20e3b87dc714831571c49fb68f40f"
+    },
+    {
+      "path": "src/draco/compression/attributes/normal_compression_utils.h",
+      "size": 13484,
+      "sha256": "9012ebf0279183433de174ab44edcc20851edba2ec746cfee702e0082a4a2fc7"
+    },
+    {
+      "path": "src/draco/compression/attributes/point_d_vector.h",
+      "size": 10153,
+      "sha256": "2e341b895de6430aef61cbabb2e579990b45ad2c312d9140321635031bd11c6f"
+    },
+    {
+      "path": "src/draco/compression/attributes/point_d_vector_test.cc",
+      "size": 13159,
+      "sha256": "0a13ab0646c1cc001127b3ce086f6ba7921f4e3c6086ff6af4837f07c9b74f28"
+    },
+    {
+      "path": "src/draco/compression/attributes/points_sequencer.h",
+      "size": 2381,
+      "sha256": "5b3ed80f7766788c93776885fa929a5687f676514e0eb10d3c07740a3b2682eb"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_constrained_multi_parallelogram_decoder.h",
+      "size": 9422,
+      "sha256": "0e733768dea58d5f85d5d74ce27ea019261d9a2cc3e1ae0f36a4240730f0bb55"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_constrained_multi_parallelogram_encoder.h",
+      "size": 18142,
+      "sha256": "12d7443502aead8f890551b8d34430f38d482e2358a83a76a214583f7e68e09f"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_constrained_multi_parallelogram_shared.h",
+      "size": 1366,
+      "sha256": "0814c6f2354169b89a3365584425e92be4cf33faf9e0cb64795b266b1da1eb4a"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_data.h",
+      "size": 2581,
+      "sha256": "607371d5d5a018bafadc10654329e5f8b3424373e9ce180606a03ce1de640eae"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_decoder.h",
+      "size": 1891,
+      "sha256": "a8229a49de20dec2b07a75db3ecc7586c5db1476fdd99ccc6225a03c7cbc8dcc"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_encoder.h",
+      "size": 1891,
+      "sha256": "0fa8c8454a65de2f7fae45eaae44349bf44f6c46ed1127a10e00663d27976c1c"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_geometric_normal_decoder.h",
+      "size": 6473,
+      "sha256": "a348f29d76834e1e3b5729f86c162341ea9bca595dd0dd1a0efcd598552fa153"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_geometric_normal_encoder.h",
+      "size": 7531,
+      "sha256": "1ae7cd20a0f79705e25835ef15c190c88bf45335cf260cc25d3a30ea3c5c0f06"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_geometric_normal_predictor_area.h",
+      "size": 4928,
+      "sha256": "a39fa013e197854686d54c123e5a6a3e208495a85936f790b9c554cfb1a3e4c5"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_geometric_normal_predictor_base.h",
+      "size": 3709,
+      "sha256": "4688062d8f66c1dd98cc87c45601409d543097d7dbb23e716cc12a6c43e8aec3"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_multi_parallelogram_decoder.h",
+      "size": 5416,
+      "sha256": "356a395d19dc7ed9d5cd2142b36389f5ff82efba8201e5560ce16d645ad30441"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_multi_parallelogram_encoder.h",
+      "size": 6042,
+      "sha256": "552c7d7743171d6f94e0ce25b72c80c56dbb8cefe19799fb076b22934f7e7d39"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_parallelogram_decoder.h",
+      "size": 4542,
+      "sha256": "c0d87475304d2248a8bbd652625925bd7d7fac48e78f91eeb210071c64ed7150"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_parallelogram_encoder.h",
+      "size": 5037,
+      "sha256": "d3134a70ecd904ffc4b6a17a0824ea3f25e85aef1246f0435757390decba20e4"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_parallelogram_shared.h",
+      "size": 3478,
+      "sha256": "246870e4295215ef279bb1c4d54de9c2bdf0f0b0c9f2a1188fa7d7ba51129cd2"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_tex_coords_decoder.h",
+      "size": 14596,
+      "sha256": "a8f8820ca67e25e6d433e10c4893983062c80afaf9ba11532817fc0241c866b1"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_tex_coords_encoder.h",
+      "size": 13173,
+      "sha256": "d79e49dc1f53fa66580e8a66df438aa76187a4e1127b88439011b5f6f0f6571e"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_tex_coords_portable_decoder.h",
+      "size": 5751,
+      "sha256": "7358af6b63f7dad9aaa02e2b26e4287d9aa7c478679831753c5e8d19d7320860"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_tex_coords_portable_encoder.h",
+      "size": 5841,
+      "sha256": "66807eb8eb4193d4aa12d15eed595f407d8d612b8ab8da9b60560028174a48d5"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/mesh_prediction_scheme_tex_coords_portable_predictor.h",
+      "size": 11730,
+      "sha256": "614ee7d6d1e452bfe33c8414162a105a54263bcfcc3e4a3f1ecc1821b38c78a1"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_decoder.h",
+      "size": 3578,
+      "sha256": "374b3bb350f33085c166343b18110c30fe6311220b7d4671e96919a5ab7cecc7"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_decoder_factory.h",
+      "size": 9826,
+      "sha256": "b39186d8d625db0205866546901df0f8bd7f2f0088fae88122efb3e766576492"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_decoder_interface.h",
+      "size": 2420,
+      "sha256": "0b70ee29e82e8a2088b088d5d1eafbe35d3f2742a2bf450b3f13546b5b438b11"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_decoding_transform.h",
+      "size": 2721,
+      "sha256": "692700aa1e639710b769fe9fbcf59f499dcf0df6bec819e2cbeb6f67bec67c42"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_delta_decoder.h",
+      "size": 2892,
+      "sha256": "2f122a14e5281c70acf38ed9c8dd974da8a6377e48ca9f00ac8b017f2ae04185"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_delta_encoder.h",
+      "size": 3186,
+      "sha256": "8b145e94af1f44898077bca45b432395647f9d2fb0fa35b426233d697ea4402a"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_encoder.h",
+      "size": 3578,
+      "sha256": "5d741a9ff8da9b6702666d7c6c9d0992333f2a81b21432915be7451d009835ed"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_encoder_factory.cc",
+      "size": 4969,
+      "sha256": "f61913a5e47abaff4af5fa78d46170a956024ee09bc06632a370db295233de79"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_encoder_factory.h",
+      "size": 6854,
+      "sha256": "00e1c1b71651856f89ec79b794403091daa83fbde31c9b562642596d14cacdd1"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_encoder_interface.h",
+      "size": 2549,
+      "sha256": "121ce0c715ca34019d814c901478fe58ddb8d3445aaa50272a82ad093ac99e33"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_encoding_transform.h",
+      "size": 3094,
+      "sha256": "8d82190c11d091eeab289188f2540df710b1fbddb775c3ba5a0c34187e94834f"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_factory.h",
+      "size": 3745,
+      "sha256": "a594be27f1afa45a87066a64d78791cd51df1260b8bd8b462417ceba734fd705"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_interface.h",
+      "size": 2475,
+      "sha256": "aa449a511a52a37a6b232ddcd147172c32248c80e5864354fc0ab92fb43d8662"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_canonicalized_decoding_transform.h",
+      "size": 4398,
+      "sha256": "d5d384fe8d3db3c5df601af9337ece09329731ff9d4f7ebd49f2aa1f2389f830"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_canonicalized_encoding_transform.h",
+      "size": 5079,
+      "sha256": "545b6fcb1a2b6d13d1f186e47b4e4b71fe4196fac1c058f154d71fdc4850ccaf"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_canonicalized_transform_base.h",
+      "size": 3353,
+      "sha256": "167ae227bbec19953f9007bea152b02a255a929fa8fde93fe87977c50bc4b09e"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_canonicalized_transform_test.cc",
+      "size": 9899,
+      "sha256": "640120a91abce4ad07e074229abb18c65496d99e3dcdde85e25a79ee0964705d"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_decoding_transform.h",
+      "size": 4427,
+      "sha256": "fb7e8e013b07acafa660518f4ccb1dabf57d970da06845ea7cedb29e264b01ef"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_encoding_transform.h",
+      "size": 4299,
+      "sha256": "c8290e5c9ec740fc8a6951e0f5a7a341971b730e79dcb726819053830b2bf495"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_transform_base.h",
+      "size": 3130,
+      "sha256": "adaf1c1444fb220e4e37ffb4f4b9c3f50d0e44eaf90095362ed5c1c6570d8884"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_transform_test.cc",
+      "size": 2824,
+      "sha256": "6e3473ac0e93536a59b3f735f9c5d1d9e5a678a02501feaba0f79a6301e8a253"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_wrap_decoding_transform.h",
+      "size": 3538,
+      "sha256": "52b4bd5b4d04e5fdf3351243cbb8cd219d0e979c719a342cc7f7517b7a68225a"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_wrap_encoding_transform.h",
+      "size": 3170,
+      "sha256": "a5a7d7b42cc89f6849fcfbab3d3256ba29c4a61bd21c8c02dfd8abf0d162e9aa"
+    },
+    {
+      "path": "src/draco/compression/attributes/prediction_schemes/prediction_scheme_wrap_transform_base.h",
+      "size": 4227,
+      "sha256": "3e2c4f3f0d83c590d7ac325f429abc9b6921f9e1a38f9b892556c65cdcd9cc6c"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_decoder.cc",
+      "size": 4119,
+      "sha256": "93fd709116d56e6e9a1a515b95f980c691aebc33a75f10c0c2a7a229f1f90e47"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_decoder.h",
+      "size": 3373,
+      "sha256": "4dd933ada542aa50afa9c574b240ea307fcdb3297ba7d4149ab53fd6ffd603cd"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_decoders_controller.cc",
+      "size": 5526,
+      "sha256": "6107c4b771dd6e023ce17bea2290395cb79c8ec85e01671e6b3598e48d5fe689"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_decoders_controller.h",
+      "size": 2556,
+      "sha256": "5280d249f1aca14b9c8754a2de329b287f791725535c4d511e04cdc4b8c47e2c"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_encoder.cc",
+      "size": 3606,
+      "sha256": "2a3e2488002fb9a9e38e26ddb60dcbb67d5f9a86b5aba199a0e4249aef8a3a29"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_encoder.h",
+      "size": 5504,
+      "sha256": "0cde305e511a891ced9b1f15d9e79c3aff1fa12ba99b0741241dbad200f0ade9"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_encoders_controller.cc",
+      "size": 5408,
+      "sha256": "24d5768bf4463143fd2ed425d3577af74a32d31278f1fcd6b3f6fe987771fb44"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_attribute_encoders_controller.h",
+      "size": 4619,
+      "sha256": "0744df8fabfdd8549e3abfaf166d083c97a9b0e4203512f46bd62d5e9ce7268a"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_integer_attribute_decoder.cc",
+      "size": 8578,
+      "sha256": "06586d27b50d1aa4fbcdee2c8b01be1a4dd7502535c2d59148b0e317c2cfc465"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_integer_attribute_decoder.h",
+      "size": 3016,
+      "sha256": "66d4bbd3de086268ea0815075adf2c8d8d2f2c74d782c137ceb20000ed697f9f"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_integer_attribute_encoder.cc",
+      "size": 8876,
+      "sha256": "8c4cc063532653b4eedf5fc62242a2bbcb25fe043806230dbb8674a5046636d8"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_integer_attribute_encoder.h",
+      "size": 2657,
+      "sha256": "a794ad3b17395869b271da3623b738b7943f1d24936e5ee8cac17bec0e550825"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_integer_attribute_encoding_test.cc",
+      "size": 2539,
+      "sha256": "b8b943cb278c260aa125c915bcc11e49b420b0d6f53d0410382a67bc88616613"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_normal_attribute_decoder.cc",
+      "size": 2985,
+      "sha256": "2c599013eeba0db1eaa31f87aa84bc6fdbce9e5d0a9d941083f265192bc78602"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_normal_attribute_decoder.h",
+      "size": 3629,
+      "sha256": "743e57eead776c89e3751f65e491ea8c4de4d75e3c1d2b610c5b3ad2c6448016"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_normal_attribute_encoder.cc",
+      "size": 2086,
+      "sha256": "17ad8cb7a373f0bd75f3585e6fbf4e62ae43e33a6f3ec5a480282a01c0564da8"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_normal_attribute_encoder.h",
+      "size": 3748,
+      "sha256": "32da353f6826772d18c13c3f8d073e80c641b7abe9a416c205686b2c1e738a1c"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_quantization_attribute_decoder.cc",
+      "size": 3284,
+      "sha256": "7cc90a960cc91dd89faa3931ad15f572a06deafda47bf70b3bdbeba2234f7398"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_quantization_attribute_decoder.h",
+      "size": 2011,
+      "sha256": "1c6a4cffc95c75676201303cd40f7553c023b361b5aff1bff9fadc16272f24f0"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_quantization_attribute_encoder.cc",
+      "size": 3406,
+      "sha256": "aa539328f6e304898e5c1cb2cca280ae4a90245199f73ce983faa9a464bd579a"
+    },
+    {
+      "path": "src/draco/compression/attributes/sequential_quantization_attribute_encoder.h",
+      "size": 1964,
+      "sha256": "f10f55f54a0845e1cc6cc77557ea00310a06e9b1a74d6f8231ef10f8ea07bcf0"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/adaptive_rans_bit_coding_shared.h",
+      "size": 1547,
+      "sha256": "57bdb5236c9b175cee5ca589307ea4aecea95262bb6b1d8dba196515fca92bb0"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/adaptive_rans_bit_decoder.cc",
+      "size": 2113,
+      "sha256": "ee2a0c5ab80f0df59a12bddb8900313d81f6ebd1211c789cea3e0228ff2397db"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/adaptive_rans_bit_decoder.h",
+      "size": 1677,
+      "sha256": "fab062166c6a0a5e59f3206779a72d76b9829ba57e9eb69d812392fc352f00d3"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/adaptive_rans_bit_encoder.cc",
+      "size": 1904,
+      "sha256": "3641e7c109233fc9be84effca85ebe502400e67fbc9cde249525d1dba470f6ff"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/adaptive_rans_bit_encoder.h",
+      "size": 1962,
+      "sha256": "4214b19290d4fe79883a9d10e6502871bae52f2acdb90e471523c36202331080"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/direct_bit_decoder.cc",
+      "size": 1609,
+      "sha256": "152c77f1a1df27a8baabc4ff31f41be480fb3820711c2c63d691bcd4af501390"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/direct_bit_decoder.h",
+      "size": 2603,
+      "sha256": "87de4bfe5422791b4ed058bb795eca635272a32ca0420f39f09f00a2cb569482"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/direct_bit_encoder.cc",
+      "size": 1258,
+      "sha256": "bfe01ce12d119ee3e6614dd47bddc01b866ccd024ca124ec4ad265b5a4361253"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/direct_bit_encoder.h",
+      "size": 2690,
+      "sha256": "d2aa93d77584e6bd3d9f98dda88706b599d759a91a6ac5911aacff22965a98f4"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/folded_integer_bit_decoder.h",
+      "size": 2335,
+      "sha256": "f299c402eb9e2009069da26733c156b2366355426229249cff5846e0a30dd2b8"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/folded_integer_bit_encoder.h",
+      "size": 2851,
+      "sha256": "4aee72127873c187b5a8bd89443acd84c0e5bebadb23423cddd48a88dae8f47c"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/rans_bit_decoder.cc",
+      "size": 2238,
+      "sha256": "8ab352fd50ae6a11f6453fafcd10b651a1f89de612da214a8ae817094e25d7fd"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/rans_bit_decoder.h",
+      "size": 1694,
+      "sha256": "319824d1f3886e37a19edf0bea5288484de289e721458da5e5c38e05b52f9349"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/rans_bit_encoder.cc",
+      "size": 3799,
+      "sha256": "6fd7154aa61973f080eda134ae2456ece7e8937967d860c062dbc9d15acb81ab"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/rans_bit_encoder.h",
+      "size": 1864,
+      "sha256": "5196008fa50a07d2ed3de4478f96557ef65859625e3111f5d933ed0e0b44b398"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/rans_coding_test.cc",
+      "size": 472,
+      "sha256": "f5a2b67c715445084ffa85d58374b9a062f3efbfd686d91af7bb508d9e07eb35"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/symbol_bit_decoder.cc",
+      "size": 1235,
+      "sha256": "cfd2eeb174884980f6bc11a75a1adf875f5b500daf04f7faafb8aa4f129207db"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/symbol_bit_decoder.h",
+      "size": 974,
+      "sha256": "cd52af1586ac0f9a26a8ca372ce95b8d870b8586e5fa5dd8d6b910c9b5355acb"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/symbol_bit_encoder.cc",
+      "size": 772,
+      "sha256": "89023a78a606f13cb56c9dd4c46faf69285607d059658529e4e4db9ee991424f"
+    },
+    {
+      "path": "src/draco/compression/bit_coders/symbol_bit_encoder.h",
+      "size": 1078,
+      "sha256": "a6fc72652cc55393c216977364a757e7e0e7c4999b6810af40c93d999ef3a08a"
+    },
+    {
+      "path": "src/draco/compression/config/compression_shared.h",
+      "size": 5329,
+      "sha256": "153faae60abc392da82fd2ffb2fcd7c74c75cfb16ad80ecd3e9f7743c1ea1015"
+    },
+    {
+      "path": "src/draco/compression/config/decoder_options.h",
+      "size": 1282,
+      "sha256": "217e9f7167e7631d4ef41375ababb91220500233a5bc7ec7c56c034fdcf42cb9"
+    },
+    {
+      "path": "src/draco/compression/config/decoder_options_test.cc",
+      "size": 2330,
+      "sha256": "01641fe41559e43a4aa23046768e475a63df2245016d028a9b50bf0842debf1c"
+    },
+    {
+      "path": "src/draco/compression/config/draco_options.h",
+      "size": 9781,
+      "sha256": "1b3968b7c05fad267d58660b54072b960f67703ac36e9875d08268becf2e245a"
+    },
+    {
+      "path": "src/draco/compression/config/encoder_options.h",
+      "size": 3670,
+      "sha256": "51fc82a8721f37a114bd43aa4da1a39a79ffc13add1eaeb02e1b4e33821ae6f7"
+    },
+    {
+      "path": "src/draco/compression/config/encoding_features.h",
+      "size": 1486,
+      "sha256": "a264b052f7f6459863bfa4bc5d38ee815546df3a222b9054e1dd3cb16027e454"
+    },
+    {
+      "path": "src/draco/compression/decode.cc",
+      "size": 5197,
+      "sha256": "e9a8bfd3484e1d718974a03c3977f04f81e63c9e90038db9627f8ed92e06ec4c"
+    },
+    {
+      "path": "src/draco/compression/decode.h",
+      "size": 3520,
+      "sha256": "ea23e1dfabf34d11260f51f4f4e160f89480b2ac53d919e354a12266a05c00c1"
+    },
+    {
+      "path": "src/draco/compression/decode_test.cc",
+      "size": 9599,
+      "sha256": "1bb29b88139420e238f867ce603bb215c3b6aae751faceb4090329bdebe91027"
+    },
+    {
+      "path": "src/draco/compression/draco_compression_options.cc",
+      "size": 1715,
+      "sha256": "aab86aca7379b14117df0bedc989aff49e08ca295512c285834dec4a53652939"
+    },
+    {
+      "path": "src/draco/compression/draco_compression_options.h",
+      "size": 5963,
+      "sha256": "e850a26fd2847d598295fbe39e23153dc8635c032c1040597d0af699871a2da9"
+    },
+    {
+      "path": "src/draco/compression/draco_compression_options_test.cc",
+      "size": 1346,
+      "sha256": "2349a92966e4633727569d04fe1b9d527c8a8b547e041ed4a30d9402b42fa876"
+    },
+    {
+      "path": "src/draco/compression/encode.cc",
+      "size": 3567,
+      "sha256": "a3214eb94df87dc87b8f656629fc61bdfff42465b673c456460f944e51393f7b"
+    },
+    {
+      "path": "src/draco/compression/encode.h",
+      "size": 6586,
+      "sha256": "fe505fe7953ec09cf5f182bd68ba5f96c9b7e6fce13f46380c439e3813c7b3ee"
+    },
+    {
+      "path": "src/draco/compression/encode_base.h",
+      "size": 4860,
+      "sha256": "7af55c939bb9d4ee98f4bb38b87943638e87accd173034fc74bb6516d8e1733f"
+    },
+    {
+      "path": "src/draco/compression/encode_test.cc",
+      "size": 25570,
+      "sha256": "86c980bb823ed8a7671db0d691be99ec1d3dd0ada2f56741cb224ede1b140826"
+    },
+    {
+      "path": "src/draco/compression/entropy/ans.h",
+      "size": 15790,
+      "sha256": "d7b536053628fb2921ac6396967c9009757ec0bb860fe54056a587969ea1f8c1"
+    },
+    {
+      "path": "src/draco/compression/entropy/rans_symbol_coding.h",
+      "size": 2202,
+      "sha256": "b39aac0f01738e37ab1e0e6dee2db38a7947cb1978445a90f71927a80587e979"
+    },
+    {
+      "path": "src/draco/compression/entropy/rans_symbol_decoder.h",
+      "size": 5740,
+      "sha256": "172a6052d743d6081155b9ee5de139c523d7a587285a010299a97884625f6c70"
+    },
+    {
+      "path": "src/draco/compression/entropy/rans_symbol_encoder.h",
+      "size": 10982,
+      "sha256": "eb61994f073794ad27663320e1ce523605d87adf6a356a415735a310e353073e"
+    },
+    {
+      "path": "src/draco/compression/entropy/shannon_entropy.cc",
+      "size": 4981,
+      "sha256": "824bb2dd1068d2bc5b433e51104a8c213ef8a2082f26acb598e208b20d0278ed"
+    },
+    {
+      "path": "src/draco/compression/entropy/shannon_entropy.h",
+      "size": 4345,
+      "sha256": "a93c54f80e7ab15eac51f8fa67ca1a507a2d250e8174359ea198f30e22baa061"
+    },
+    {
+      "path": "src/draco/compression/entropy/shannon_entropy_test.cc",
+      "size": 2190,
+      "sha256": "d53709f12005a85fcb68d37f6bc10a3e7cb00e8e36eb0727d730da633e921716"
+    },
+    {
+      "path": "src/draco/compression/entropy/symbol_coding_test.cc",
+      "size": 5965,
+      "sha256": "e566708688f20caca484a03f98dde57ef0a10e67a91d29f6ff89e376f6e59cc1"
+    },
+    {
+      "path": "src/draco/compression/entropy/symbol_decoding.cc",
+      "size": 6462,
+      "sha256": "c97201622dec72e42351e6c9a06969b841c073be4a78480020707063098c9b20"
+    },
+    {
+      "path": "src/draco/compression/entropy/symbol_decoding.h",
+      "size": 1082,
+      "sha256": "4226e7211691997f6a8a8424610b475822236d5b74fe9c367ba4fa96db07a274"
+    },
+    {
+      "path": "src/draco/compression/entropy/symbol_encoding.cc",
+      "size": 15033,
+      "sha256": "6ee57edca809ecf6a417e2c757943451ffd26b83a251bcdb0388c4e306a3e7bf"
+    },
+    {
+      "path": "src/draco/compression/entropy/symbol_encoding.h",
+      "size": 2153,
+      "sha256": "67b4d3e965aeebefb93b619a4b46461558ae21c493c2d690389ce0e7ad1107fd"
+    },
+    {
+      "path": "src/draco/compression/expert_encode.cc",
+      "size": 12343,
+      "sha256": "5f516017cc38d40a8217cb91e014b6dbd275df57342a1e2ae947c8ca24033eaa"
+    },
+    {
+      "path": "src/draco/compression/expert_encode.h",
+      "size": 7406,
+      "sha256": "6e3e1728578db99aa7ee981db2c31c15f28f52561192551c4fd18ee1f96bca33"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_decoder.cc",
+      "size": 1151,
+      "sha256": "e35a28f09f07c5754b1052e00f7ffdf53a3eb63daf4b251922a28776ee8f67f2"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_decoder.h",
+      "size": 2182,
+      "sha256": "d819c789408a8854d1cdf29c116e156ebb84cf23565b68f358ec76fd7b7b44fa"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_decoder.cc",
+      "size": 2450,
+      "sha256": "a01164163045e10d9e71bf7d02e4749e4010cd4ffe13dea78c3e8926c9fd830e"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_decoder.h",
+      "size": 1798,
+      "sha256": "7a63146246ab3ca41e903d36afefb265c0f74b9725412827f6faa3cb3cbce283"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_decoder_impl.cc",
+      "size": 49281,
+      "sha256": "23b11b3bbaa573d674479817bc34ccac3c53252dcbc0c207fb000f5670c41853"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_decoder_impl.h",
+      "size": 9585,
+      "sha256": "287cb6a1ca2e23f651e1821c7219922d38cf33e1c6dea34896dd2061952b7832"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_decoder_impl_interface.h",
+      "size": 1882,
+      "sha256": "4666ed6a85449ca6fc4634f0cd890041391e520a4ead26258490b521a0c3e339"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_encoder.cc",
+      "size": 7227,
+      "sha256": "21f57abb0e53b56826e737154de45e767764803342e24d4b0a648b33374f7838"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_encoder.h",
+      "size": 2783,
+      "sha256": "a945e5976be81872d62d6f30e0604013c0a67e51920a2d601af87768d43f811b"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_encoder_impl.cc",
+      "size": 36192,
+      "sha256": "08fad963089490c1f92e5e60b7ff49861724d4412a769c957399fb35841690b3"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_encoder_impl.h",
+      "size": 8995,
+      "sha256": "8543d07e3172cf883860881740ad72c34b7b95458980ccd5125ec1ccc4089023"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_encoder_impl_interface.h",
+      "size": 2435,
+      "sha256": "f922f4e51add377c7af11a4e60f59c48875831b11793cb80a29f9dc1d7ad1d31"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_encoding_test.cc",
+      "size": 9599,
+      "sha256": "23dd60c227031ddc88c934a8716162f4e9938f325979573a0e9fea57a819a117"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_shared.h",
+      "size": 5357,
+      "sha256": "39d1e781bcbce3feb010e8cba092abe8ee711827ef7eb2ca390a74b95d2f078d"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_traversal_decoder.h",
+      "size": 6652,
+      "sha256": "ba90f60f36e56e28256408907e1ada40924e43467520150f32c60a584c6391a5"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_traversal_encoder.h",
+      "size": 5098,
+      "sha256": "997ddb6aa74f777f8f8ff325626c4e6bb59cce0db03d36796f9c256984b9949a"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_traversal_predictive_decoder.h",
+      "size": 4845,
+      "sha256": "7005fdd58f72548d28602e32ec5c33e24e8ed4f4895747bfda81c2f7e91d0bff"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_traversal_predictive_encoder.h",
+      "size": 7028,
+      "sha256": "deea0d99a49f6ddbdbdcd68094291ee3ab61a7ca4456cbde6aee63f6a538330d"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_traversal_valence_decoder.h",
+      "size": 7238,
+      "sha256": "363cc38096af81d58454d26fb0919295fec0659c72137146d0c6ff7cc0df5974"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_edgebreaker_traversal_valence_encoder.h",
+      "size": 9043,
+      "sha256": "fa6ae3be99f9ae4e214b254692f9f7d22771d7c0f66b9570f8f61f1f13fda263"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_encoder.cc",
+      "size": 1068,
+      "sha256": "8c8bd90ea92d058b67832d126b5441f74ba246aed3a678bf4d3dd60d66de283a"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_encoder.h",
+      "size": 2809,
+      "sha256": "ec2e151574d2fd6a6827cfa682f3b91f5999bdac80d6b1a41e75318ab012d389"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_encoder_test.cc",
+      "size": 4745,
+      "sha256": "539a32be4b797e3d23c703b836ef810de37f310c22e5d25d2ce7907a59fe18a3"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_sequential_decoder.cc",
+      "size": 5549,
+      "sha256": "c5622fff144977524664fd5c4ccba084fe3480287ae79e37d63ed24c21a798a0"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_sequential_decoder.h",
+      "size": 1301,
+      "sha256": "a0a2c4d4eec861a8d80da53d3a7c8b4e29c70a330d9c6bd7412887bd487a992c"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_sequential_encoder.cc",
+      "size": 4971,
+      "sha256": "19a11358d2380e6f78bda75cf0fe59eae51a848f9cc33570e70e22e0eb9df39a"
+    },
+    {
+      "path": "src/draco/compression/mesh/mesh_sequential_encoder.h",
+      "size": 2082,
+      "sha256": "690acc6b729e2814e8ff3ba72b24e52c0bb58d458adf61d5f76cd827f6904802"
+    },
+    {
+      "path": "src/draco/compression/mesh/traverser/depth_first_traverser.h",
+      "size": 6655,
+      "sha256": "ab13be3892dd72756f40f271c3985ea46ba7ceee8f62a1f7ae7b373da7543e6b"
+    },
+    {
+      "path": "src/draco/compression/mesh/traverser/max_prediction_degree_traverser.h",
+      "size": 8965,
+      "sha256": "d106cbb73c08c55758f37364829fd6ec3333cd39dcc3760c22af23c773b7a96d"
+    },
+    {
+      "path": "src/draco/compression/mesh/traverser/mesh_attribute_indices_encoding_observer.h",
+      "size": 2814,
+      "sha256": "207edff5fbd064ac0bcaca081e20009159a777f8514ea297914ef3719c757ed1"
+    },
+    {
+      "path": "src/draco/compression/mesh/traverser/mesh_traversal_sequencer.h",
+      "size": 4494,
+      "sha256": "c5d2d83c683e04894a3bad681ddf201b8c1a63a46253d05601cb3d4551ec1eef"
+    },
+    {
+      "path": "src/draco/compression/mesh/traverser/traverser_base.h",
+      "size": 3111,
+      "sha256": "34651c3720da74e698288372f9fbb51840ddbf71e367a53164d958b2c4e940f1"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/dynamic_integer_points_kd_tree_decoder.cc",
+      "size": 1020,
+      "sha256": "df6ecca16be675c3cc9fa829158b456dbc28c738a38bf6550ad8f91e4e074ccf"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/dynamic_integer_points_kd_tree_decoder.h",
+      "size": 12210,
+      "sha256": "48e7f422da297a7ea0408c175f9c6213711669f327b48f033dc420c76982c3ea"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/dynamic_integer_points_kd_tree_encoder.cc",
+      "size": 1020,
+      "sha256": "f29468c06beda333474f5026ee9bb9f8044a9ca13dde38a7aaf293e88ffed99f"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/dynamic_integer_points_kd_tree_encoder.h",
+      "size": 13566,
+      "sha256": "a12cd8f729654ead2dc3b2f09c8d9d3d970129c38798c117a9a70b284b30e29b"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/float_points_tree_decoder.cc",
+      "size": 4454,
+      "sha256": "b1911227939d56079f4e5f72fe35f9f87d066f1732e78bb62faaca2bc35db3bc"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/float_points_tree_decoder.h",
+      "size": 4799,
+      "sha256": "88864ad5f52cbffd3f2f96a509c7587991f1c986ac754966c711c32574e67a0a"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/float_points_tree_encoder.cc",
+      "size": 3374,
+      "sha256": "3927ae74161351158397f21228f5e3f55c77352e7fd8b87cc2c065aafb20ea5c"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/float_points_tree_encoder.h",
+      "size": 4800,
+      "sha256": "f8b9a2e7be20aa782413acb5f5e2f58e41bb4a5f99a6206ba2a4588a433d2408"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/integer_points_kd_tree_decoder.cc",
+      "size": 2035,
+      "sha256": "e720bd4315d4d0baf4d8da693c9f214b9fcd6360b4f696de56a4e911c03cb236"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/integer_points_kd_tree_decoder.h",
+      "size": 10646,
+      "sha256": "b23ec073c113aad21681437dc7faed50033949f1867a8c8523797af761df4d3a"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/integer_points_kd_tree_encoder.cc",
+      "size": 2035,
+      "sha256": "c32ab349925faf6566c6996aa312060c074c7028bec345ab7e87af6652715c82"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/integer_points_kd_tree_encoder.h",
+      "size": 14454,
+      "sha256": "cebd68fad4d7db47bc291e0ee3a2c97655abe13033829f8a96077c81b59c7afa"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/point_cloud_compression_method.h",
+      "size": 1449,
+      "sha256": "05df1bb65d36a0f5f377d905a77198e36c2be492e01254c6e0b927e1c636f490"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/point_cloud_types.h",
+      "size": 2185,
+      "sha256": "24432b99444764b4412ac96f231557687949607fd816e63abf82eb9e8f9080fc"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/quantize_points_3.h",
+      "size": 2962,
+      "sha256": "ee5845edc33f92efeeb1ea54d13d5ed6443fb3616995d2345d29bff34f47f4c9"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/algorithms/queuing_policy.h",
+      "size": 2364,
+      "sha256": "dd0b54913ab2fa78a8055682eec491fe55b09de06cabefc3e069ff3b855b7f7f"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_decoder.cc",
+      "size": 7032,
+      "sha256": "00113f770bee219ade1098148990c01ded6729f723391ff10abddcac4df0c2c5"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_decoder.h",
+      "size": 4389,
+      "sha256": "932a7cfcf65a300bd639fee495e16a4094edf6eebdb22b61dff3c630544bda00"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_encoder.cc",
+      "size": 11377,
+      "sha256": "e1a164a80db828f6458f41bfa3719c2434f2c7afaea32c830bca1405807747ec"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_encoder.h",
+      "size": 6257,
+      "sha256": "ee8f171a2e4723c54ca26538f397db6a0ecdd3d95548260908a941ca94ef2b64"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_kd_tree_decoder.cc",
+      "size": 1286,
+      "sha256": "c7471fb488b5d5dd7148deb58f5791b56764f821f25214ee554cbf1d70b4ef9c"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_kd_tree_decoder.h",
+      "size": 1158,
+      "sha256": "a8eef5841f5700660e240177d01f959a34b9edf2959e49ecf43a47809d133533"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_kd_tree_encoder.cc",
+      "size": 1501,
+      "sha256": "5a456f7df4d4ed7c043fc5dbc3a65ad46d3adc37a8e02aebc7b347742c0c1977"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_kd_tree_encoder.h",
+      "size": 1842,
+      "sha256": "4b368a625372baa98d9aaed9f71a1bea59c9e12418e1151a2ee654b1ce2d9481"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_kd_tree_encoding_test.cc",
+      "size": 16593,
+      "sha256": "94d4493eb33c282f5a09a37a44acce3392de8953798bebe1b5bbe6e11045e72e"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_sequential_decoder.cc",
+      "size": 1470,
+      "sha256": "fe9a0cbe0ddfd6640806d67e1b948d02ee2969992be8159dbb0d56ccf153a033"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_sequential_decoder.h",
+      "size": 1291,
+      "sha256": "c7d9a335f2ca6c5c5b41e49e9f0b94df23efd2b77408149c3634a8c3f1177860"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_sequential_encoder.cc",
+      "size": 1822,
+      "sha256": "1859de3614b617e08b549d90ab200169f82c72edb718221fef098cdf7d757b51"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_sequential_encoder.h",
+      "size": 1701,
+      "sha256": "d3971ddc44e4a5b2f47333c924021244c4d6c321b7577ea30e9f4342258df132"
+    },
+    {
+      "path": "src/draco/compression/point_cloud/point_cloud_sequential_encoding_test.cc",
+      "size": 3545,
+      "sha256": "462fd6d199fec6414e3f3a6e5058863f22561f19723c2c2f703706357d5d4c5b"
+    },
+    {
+      "path": "src/draco/core/bit_utils.cc",
+      "size": 1248,
+      "sha256": "d6b49c7fa798e9f9d5260402c82c5dbfb9490a92a76e9b5613ba6d8d4738cb96"
+    },
+    {
+      "path": "src/draco/core/bit_utils.h",
+      "size": 4168,
+      "sha256": "9f14f61953ac2ce44266b6c9dab696fb326a84d6c1554e261c2a6ae03cad40af"
+    },
+    {
+      "path": "src/draco/core/bounding_box.cc",
+      "size": 1672,
+      "sha256": "ca80fb5d6ccd6876ab851d771a02d939a3e5bd2ebac9eeea55f8fb621b63b2c3"
+    },
+    {
+      "path": "src/draco/core/bounding_box.h",
+      "size": 2718,
+      "sha256": "63e52cf991dc0fe09d557b935b51d80d4cd591b8c8d5f2903e2d4334528b391f"
+    },
+    {
+      "path": "src/draco/core/buffer_bit_coding_test.cc",
+      "size": 3631,
+      "sha256": "7cedeeff21eada8cd945b088c2d5d35884aceb792072b2c8ec5186ce1961a391"
+    },
+    {
+      "path": "src/draco/core/constants.h",
+      "size": 141,
+      "sha256": "415ba0b5f9d743f3d12b0c5e56e1c37adfdcd34f67de2f8db3e9c0301c516fe9"
+    },
+    {
+      "path": "src/draco/core/cycle_timer.cc",
+      "size": 1400,
+      "sha256": "7ebaa798f4815b918012587831ac223907c3fc12c8de2066669af41f38230019"
+    },
+    {
+      "path": "src/draco/core/cycle_timer.h",
+      "size": 1202,
+      "sha256": "8c86f9004f7f8e1ce175d880de3c7a42e2d20fef2ac94be54ba3c38fe43ace4a"
+    },
+    {
+      "path": "src/draco/core/data_buffer.cc",
+      "size": 1734,
+      "sha256": "ac12ea53bdf57ba2f9fe80a1b051436b90fe1647f3ff66901e04d8acea3361aa"
+    },
+    {
+      "path": "src/draco/core/data_buffer.h",
+      "size": 2862,
+      "sha256": "c2eb761e49836f2e4ecaf1bab31f1f67dd77ae759668c1f4f513ca304b761bf6"
+    },
+    {
+      "path": "src/draco/core/decoder_buffer.cc",
+      "size": 2007,
+      "sha256": "6893cd817235889c5965a27e47d21c406f3a77d472c5cd582f9ba93e546870e4"
+    },
+    {
+      "path": "src/draco/core/decoder_buffer.h",
+      "size": 6738,
+      "sha256": "03880728b6bdc9679f07ec77fd4bcccdf121f9eb7beb2b9ecdcc9937f0311c5a"
+    },
+    {
+      "path": "src/draco/core/divide.cc",
+      "size": 5353,
+      "sha256": "3e18697d7d836957969c6947fdf5676480a8352920a9e36777922df1d4914c19"
+    },
+    {
+      "path": "src/draco/core/divide.h",
+      "size": 1231,
+      "sha256": "8500f0bb2c7d3c174e93b5ed14aec0dd374558f70acf51a5bcacce0c48c639ee"
+    },
+    {
+      "path": "src/draco/core/draco_index_type.h",
+      "size": 5594,
+      "sha256": "9481cb80912a1e4f560cc7eeb1b887fd9398138a17d60e55b0a3ca9eb40be4e7"
+    },
+    {
+      "path": "src/draco/core/draco_index_type_vector.h",
+      "size": 3210,
+      "sha256": "7927bce2c1dbaf019b7d9f083f44e1e17d6c2eeaef466cb578a2294266c938ef"
+    },
+    {
+      "path": "src/draco/core/draco_test_base.h",
+      "size": 402,
+      "sha256": "cce71a084e685bcb3ee661ad3a4e8f0a3785147b6f23828a28112cc066f8d066"
+    },
+    {
+      "path": "src/draco/core/draco_test_utils.cc",
+      "size": 3229,
+      "sha256": "fe1350700fa554eb22f69a27c38add0f5d9b54147601e31f427019582364f222"
+    },
+    {
+      "path": "src/draco/core/draco_test_utils.h",
+      "size": 5333,
+      "sha256": "50ddee8dacaf4a8d6c927922dcdba91afbdabccc6d6641e5c2ebbead0c081c42"
+    },
+    {
+      "path": "src/draco/core/draco_types.cc",
+      "size": 1380,
+      "sha256": "ee1f271f1dafa95c1a6cc860e5bff8364ba32e7e9e822972855b45b5582a8a7e"
+    },
+    {
+      "path": "src/draco/core/draco_types.h",
+      "size": 1333,
+      "sha256": "113124c53b029625644fb535dc68252181e2fbf546c61fbe9c685df637f21d20"
+    },
+    {
+      "path": "src/draco/core/draco_version.h",
+      "size": 860,
+      "sha256": "8c12f35b331161612000c8e2aaa7ac223f3c4ac5f477762fbd06c2dad376cd63"
+    },
+    {
+      "path": "src/draco/core/encoder_buffer.cc",
+      "size": 3483,
+      "sha256": "5fffe7dcfb630f90043a82485593bcb292d2ca05afb17ced5eee467e1ca00a4a"
+    },
+    {
+      "path": "src/draco/core/encoder_buffer.h",
+      "size": 5268,
+      "sha256": "1e2e0bb02095010bd11f494586f3e8c722bdda73add16880b5ac598e46a733ac"
+    },
+    {
+      "path": "src/draco/core/hash_utils.cc",
+      "size": 1922,
+      "sha256": "b6d5605715d1207f6d6ffb3491163358f6bc4fd631c5daee2139acd362852495"
+    },
+    {
+      "path": "src/draco/core/hash_utils.h",
+      "size": 1716,
+      "sha256": "0fa4ff67982f5369ecea2868eb2a7b4d9e1557d3d1a848041c2eb145e43e4151"
+    },
+    {
+      "path": "src/draco/core/macros.h",
+      "size": 4012,
+      "sha256": "09d6d44ce5e865087da6cca434195248e5ca85e1affba308aac853c4e207f6d5"
+    },
+    {
+      "path": "src/draco/core/math_utils.h",
+      "size": 3086,
+      "sha256": "f3c7242fa0ba0df1108f6cabaeb8b2f78b5880bec35fda6c7242b8fd83847941"
+    },
+    {
+      "path": "src/draco/core/math_utils_test.cc",
+      "size": 640,
+      "sha256": "93907977eaae751489e1487a4f4fe752a07e4c3e1e4878bba22da18c7a845f0a"
+    },
+    {
+      "path": "src/draco/core/options.cc",
+      "size": 2564,
+      "sha256": "9eed97ec88aec2b1dd0180b48277ac0074f0fbe9b85d03deee9a69fecdd07456"
+    },
+    {
+      "path": "src/draco/core/options.h",
+      "size": 5091,
+      "sha256": "bad4d9d4113dd771e0b3601be93b8f1da75ca371c7bb9b94b6d6666939119f84"
+    },
+    {
+      "path": "src/draco/core/quantization_utils.cc",
+      "size": 1258,
+      "sha256": "4b25e7ebe116267417203e1edf9b65d86d039314275de4711ea2caa0708d3064"
+    },
+    {
+      "path": "src/draco/core/quantization_utils.h",
+      "size": 2891,
+      "sha256": "32e3384fcd77091a75fbe332dfd75193b6210446708e3271b48ef3d527967fca"
+    },
+    {
+      "path": "src/draco/core/quantization_utils_test.cc",
+      "size": 3440,
+      "sha256": "2782c8c53286d945b4ea95e31294070256957b2e0dbc776882015452e796f728"
+    },
+    {
+      "path": "src/draco/core/status.cc",
+      "size": 1316,
+      "sha256": "c0d69220b00a2a5375dff2e855ac6b353ff86c435f395a7027bb56a688a34516"
+    },
+    {
+      "path": "src/draco/core/status.h",
+      "size": 2927,
+      "sha256": "85d75d39b454238bac70e676ba9653fa6f568a45e8e4fd58bdacdce575573cc0"
+    },
+    {
+      "path": "src/draco/core/status_or.h",
+      "size": 3352,
+      "sha256": "ec9831613b81720be5138ecc8070309cf0be07a6d6ead266a27ac00af12617a9"
+    },
+    {
+      "path": "src/draco/core/status_test.cc",
+      "size": 1475,
+      "sha256": "bcbe2e5773cb38c9a59695e757127b62d1f12e56925127096e3c3558889546e2"
+    },
+    {
+      "path": "src/draco/core/varint_decoding.h",
+      "size": 2461,
+      "sha256": "a81238c4b4269f027dacd5e2b509ebc8ebf23a8b3acd918b058a54cdff21dcbd"
+    },
+    {
+      "path": "src/draco/core/varint_encoding.h",
+      "size": 1820,
+      "sha256": "4908a5cf8e132297dad2b378455f4b38e27c5f67c6cccbde21e6d11b52ab8c71"
+    },
+    {
+      "path": "src/draco/core/vector_d.h",
+      "size": 9511,
+      "sha256": "e4329f98bab50782ca8830b7b8015a8fdc41efb462f4e3644ee566cea15cfdde"
+    },
+    {
+      "path": "src/draco/core/vector_d_test.cc",
+      "size": 6729,
+      "sha256": "46e915c0485d915d6321af900882b9c8697b89c4136547d63d385cd7c338311c"
+    },
+    {
+      "path": "src/draco/io/file_reader_factory.cc",
+      "size": 1305,
+      "sha256": "2e5e0260be2a95156b6c6577c245d23edc60afbcdbfa85621017859c24383170"
+    },
+    {
+      "path": "src/draco/io/file_reader_factory.h",
+      "size": 1020,
+      "sha256": "14cc7238a4a4ddaf90057e669bde111be5c0b29b302a6fd63118386d698c361a"
+    },
+    {
+      "path": "src/draco/io/file_reader_factory_test.cc",
+      "size": 2325,
+      "sha256": "f7db0de0e07725ff7d60161ca6b8f805fa03eae085fdf4ac361ddcc95bf1ac91"
+    },
+    {
+      "path": "src/draco/io/file_reader_interface.h",
+      "size": 916,
+      "sha256": "c4bd52ff24788d18013d27f2eb6e5464dbe5fa1e5446b43cae9ac2f62616cae1"
+    },
+    {
+      "path": "src/draco/io/file_reader_test_common.h",
+      "size": 276,
+      "sha256": "be063d9f612dc0e00efd049c1883d1e851fae03efb852c638bc58bce75dd9f1e"
+    },
+    {
+      "path": "src/draco/io/file_utils.cc",
+      "size": 4805,
+      "sha256": "cc5d4ac5278df3e0e750d5428449beb1a860c9e071ef65ef2012845a4a6b1bd4"
+    },
+    {
+      "path": "src/draco/io/file_utils.h",
+      "size": 3993,
+      "sha256": "c07b67a834b84c14ca0c4303d5424c9af862e1f59a1e20ec1a9835532bf0b451"
+    },
+    {
+      "path": "src/draco/io/file_utils_test.cc",
+      "size": 2824,
+      "sha256": "2bcb5d94e0a8d0b01533f6ecbc09eef86c9f6f93355781e9b5404900b4926578"
+    },
+    {
+      "path": "src/draco/io/file_writer_factory.cc",
+      "size": 1367,
+      "sha256": "7c9c54789319ab71e5af14d1b734194c93fded70b3f8626ca62b7eb9014e6a38"
+    },
+    {
+      "path": "src/draco/io/file_writer_factory.h",
+      "size": 1020,
+      "sha256": "baed4150ca8e364ee981d6ad0579880d04b22bf02d42842db72b72bd9ea12b88"
+    },
+    {
+      "path": "src/draco/io/file_writer_factory_test.cc",
+      "size": 1994,
+      "sha256": "7bf81b542492cdd3e6b99203da08229395382a571e1c31b0463410dbe63f432e"
+    },
+    {
+      "path": "src/draco/io/file_writer_interface.h",
+      "size": 702,
+      "sha256": "e761adf4ece78d58a0630ab2d7b488cd0d91a9f8c0f910979ad4a3c28740f82f"
+    },
+    {
+      "path": "src/draco/io/file_writer_utils.cc",
+      "size": 1840,
+      "sha256": "44052b84a42fba5e216632dd08f77e821a79e77ff4c64bdbecf9203db9603676"
+    },
+    {
+      "path": "src/draco/io/file_writer_utils.h",
+      "size": 1449,
+      "sha256": "63e0b3b97f07bc80d64f9c3f982a45e5e23e9f9ccfa17cce2d516de7ea8eea20"
+    },
+    {
+      "path": "src/draco/io/file_writer_utils_test.cc",
+      "size": 1495,
+      "sha256": "1660b09757604e58e39de53f27b3fe289bb1fce4bca287f9615752d8ffd2980c"
+    },
+    {
+      "path": "src/draco/io/gltf_decoder.cc",
+      "size": 122045,
+      "sha256": "7dd03beb5aea02d3b9185a797be3b26e8172b763f96cc96301e936109b868dcc"
+    },
+    {
+      "path": "src/draco/io/gltf_decoder.h",
+      "size": 28278,
+      "sha256": "2e903382e50118f3d736a8e3a12271e593a98c4a592ef2d72986a4d7436199fe"
+    },
+    {
+      "path": "src/draco/io/gltf_decoder_test.cc",
+      "size": 64168,
+      "sha256": "739952b6bad21f38ba091c1f60a3b1294ad58bcfd01d9e1a0d236d60935bf70f"
+    },
+    {
+      "path": "src/draco/io/gltf_encoder.cc",
+      "size": 144518,
+      "sha256": "0b4cce126d17fe3a4e295043e3966ec5a8233cdaf09e25bb5ccf5ce19224a7f3"
+    },
+    {
+      "path": "src/draco/io/gltf_encoder.h",
+      "size": 5800,
+      "sha256": "31d0144642fc0d5f9cf6c87296720babd7c08e50e53e1f163a8bab946cc37e93"
+    },
+    {
+      "path": "src/draco/io/gltf_encoder_test.cc",
+      "size": 77712,
+      "sha256": "b6d0167b915a1de0a4bc191cf317fbe1c2fc27e6f7cf7b7075f5e8089becb866"
+    },
+    {
+      "path": "src/draco/io/gltf_test_helper.cc",
+      "size": 46193,
+      "sha256": "b4db6f253457c0e086c2d083e51edbf1d385b1c6208d470ef143a35a2415f5ed"
+    },
+    {
+      "path": "src/draco/io/gltf_test_helper.h",
+      "size": 3053,
+      "sha256": "e87fc4a462d2e805d9f7f3a1a1fe2370f65154f54559b491b9d1f0eed971a9f9"
+    },
+    {
+      "path": "src/draco/io/gltf_utils.cc",
+      "size": 4251,
+      "sha256": "0f6b93575e0c86959a5c5830389420c4c7d88aef3afebbb0f7983784efa74f5d"
+    },
+    {
+      "path": "src/draco/io/gltf_utils.h",
+      "size": 5971,
+      "sha256": "f1ba0762f3c1045f0ebee4826ab231bf72a5bb7782e104710519fc6ac65dca3e"
+    },
+    {
+      "path": "src/draco/io/gltf_utils_test.cc",
+      "size": 12412,
+      "sha256": "f3bca044960ba673773d9af77b548a71a0f1e16fead92c5e6948340e57dee912"
+    },
+    {
+      "path": "src/draco/io/image_compression_options.h",
+      "size": 1022,
+      "sha256": "94491df50c46509de68e933c51994c4b0c4148d10a721e0c932fc6ea498e31fe"
+    },
+    {
+      "path": "src/draco/io/mesh_io.cc",
+      "size": 3883,
+      "sha256": "822a723dc896ed839baaf28d469bc73688de32c52f9fb9920bea75c95d5dbbdd"
+    },
+    {
+      "path": "src/draco/io/mesh_io.h",
+      "size": 4057,
+      "sha256": "26e1ef94ad2eaf2132286dc85d758b721126e5604610473bcf0813d8cfb2309e"
+    },
+    {
+      "path": "src/draco/io/obj_decoder.cc",
+      "size": 25519,
+      "sha256": "12a19f4674c469327dc4cbcb135b8db08fe090dc64b8accb77341c335af9a4e5"
+    },
+    {
+      "path": "src/draco/io/obj_decoder.h",
+      "size": 5220,
+      "sha256": "682a38648af8cf38135dae559a45a76f8010f3be0fedc4407265d438ce511fff"
+    },
+    {
+      "path": "src/draco/io/obj_decoder_test.cc",
+      "size": 12241,
+      "sha256": "e48752603ad11673934b97a8867f638753945833c9ce9215966984acb9b1bae4"
+    },
+    {
+      "path": "src/draco/io/obj_encoder.cc",
+      "size": 15961,
+      "sha256": "e36133f1276b68e7512a632521cb0630d7bd646e37bc6ffbb60735f5f16df7f2"
+    },
+    {
+      "path": "src/draco/io/obj_encoder.h",
+      "size": 3607,
+      "sha256": "b3adad2ef53fe9d3c2ca4229e9ed74a0fbfd41205a0b89dbe4fcce4006af34db"
+    },
+    {
+      "path": "src/draco/io/obj_encoder_test.cc",
+      "size": 5536,
+      "sha256": "5a337e7e4a84ccba7006e7710de8429e7684f567b7c903451e4fe3fbbe69a16c"
+    },
+    {
+      "path": "src/draco/io/parser_utils.cc",
+      "size": 6617,
+      "sha256": "804938f863b8c53734e92b77abcc15d882ef3bd173588b4bffedb5cf541a1996"
+    },
+    {
+      "path": "src/draco/io/parser_utils.h",
+      "size": 2349,
+      "sha256": "1f2734dc2b5f412cde42d56aed8f13cf28effe294d1dd91005f28913296d7ede"
+    },
+    {
+      "path": "src/draco/io/ply_decoder.cc",
+      "size": 12329,
+      "sha256": "171a375d9d0174ddeafb04f55762075c620b9ede1c587c81543ccc59db2a5e4f"
+    },
+    {
+      "path": "src/draco/io/ply_decoder.h",
+      "size": 2336,
+      "sha256": "530a336adaec53a933f66236374b58d75531afde154f746372c742b8e29c3a42"
+    },
+    {
+      "path": "src/draco/io/ply_decoder_test.cc",
+      "size": 3383,
+      "sha256": "769d2fa0b8afaec72af48e1996890cd87582787c2df307525caeb7ef627eaa2e"
+    },
+    {
+      "path": "src/draco/io/ply_encoder.cc",
+      "size": 7350,
+      "sha256": "281f9d6ce72ebd880cea4fbe3816b68be6d9bbc830ef75d420af4474c5f26ff9"
+    },
+    {
+      "path": "src/draco/io/ply_encoder.h",
+      "size": 1729,
+      "sha256": "d72ef41310079be4236d6ac84abc620ea3aa362507b4e3e18a0ca53d3c89d004"
+    },
+    {
+      "path": "src/draco/io/ply_property_reader.h",
+      "size": 2876,
+      "sha256": "34174fa8fbbf81cd78a107d4cd118b9fdba191bc32f065b528e602646fdafcf6"
+    },
+    {
+      "path": "src/draco/io/ply_property_writer.h",
+      "size": 2776,
+      "sha256": "cabba5e39a5c70257257bbd56f7f4a46442eb313c46a5962ccd4d025a33b3740"
+    },
+    {
+      "path": "src/draco/io/ply_reader.cc",
+      "size": 9951,
+      "sha256": "4af40f8369c66c706167036f5a5465a6add9609f69c88d5a9623fa506afaa601"
+    },
+    {
+      "path": "src/draco/io/ply_reader.h",
+      "size": 5382,
+      "sha256": "417caf0f4380368339a5a3c54ac8bf6b269b27fb5a052b2c96fdb04f4619dbe3"
+    },
+    {
+      "path": "src/draco/io/ply_reader_test.cc",
+      "size": 5486,
+      "sha256": "e7e479e087ad81693a9a104356df09098c051022040aa1e64146ba15904c8e73"
+    },
+    {
+      "path": "src/draco/io/point_cloud_io.cc",
+      "size": 1978,
+      "sha256": "9b104e420c419372c4ee5b6a33604318d7773823cf2af97ba851911f02414d41"
+    },
+    {
+      "path": "src/draco/io/point_cloud_io.h",
+      "size": 3197,
+      "sha256": "b771ebda249e77ef21e792cfd2e5b736201d3aa3504ed78383b939c2a8b387e1"
+    },
+    {
+      "path": "src/draco/io/point_cloud_io_test.cc",
+      "size": 4449,
+      "sha256": "57e1eab49152720a072d5333016e75efb4a2e6afac882e43d08d83ccaa43f24a"
+    },
+    {
+      "path": "src/draco/io/scene_io.cc",
+      "size": 4046,
+      "sha256": "fc35dc6a96e90562f5414c25a76238da9d62ea2c728783f74f25004fa8395458"
+    },
+    {
+      "path": "src/draco/io/scene_io.h",
+      "size": 1874,
+      "sha256": "4ec68bed13aa64c2edcf0e483a80a0aa9d59261dcab462b6d03d2b10d4f9bebd"
+    },
+    {
+      "path": "src/draco/io/scene_io_test.cc",
+      "size": 3187,
+      "sha256": "27ad977cd5b6fb9288ce5dd70afe93241f078fa6e667ff77b986936c9633c159"
+    },
+    {
+      "path": "src/draco/io/stdio_file_reader.cc",
+      "size": 2546,
+      "sha256": "1738f860de59e286468f22a84a5b696a3e4ab0fc97991b7b93ad5189ac451668"
+    },
+    {
+      "path": "src/draco/io/stdio_file_reader.h",
+      "size": 1321,
+      "sha256": "8a26b8ba2b50942f55e480015485edcdac3e0d7dbf514a78395cd1950ed415c9"
+    },
+    {
+      "path": "src/draco/io/stdio_file_reader_test.cc",
+      "size": 1584,
+      "sha256": "8a285211d4514badf3a032583b221805d1e52286f5799b80acb6682186bfe7b4"
+    },
+    {
+      "path": "src/draco/io/stdio_file_writer.cc",
+      "size": 1551,
+      "sha256": "d9782d59b3da5819210ec2a2670c32cdb211787f008bca4312a4909db95e1848"
+    },
+    {
+      "path": "src/draco/io/stdio_file_writer.h",
+      "size": 1140,
+      "sha256": "3b9321109cb483fa19625301391d1fbe1e45a73fc0f61babba06abdcef94e4f3"
+    },
+    {
+      "path": "src/draco/io/stdio_file_writer_test.cc",
+      "size": 1132,
+      "sha256": "ffd7bf8540309609de12993d1e49057e38106fbc13b87d88c52193be3d2f2fed"
+    },
+    {
+      "path": "src/draco/io/stl_decoder.cc",
+      "size": 2449,
+      "sha256": "5df1cdd3fb4ac97a5f111531eec1c23342c5d543311d5295de51636828d924f4"
+    },
+    {
+      "path": "src/draco/io/stl_decoder.h",
+      "size": 1221,
+      "sha256": "c05e23bb511ce7210c3ff62e8a9531c28e838e8a0adf6165a27b390a34f4e341"
+    },
+    {
+      "path": "src/draco/io/stl_decoder_test.cc",
+      "size": 1593,
+      "sha256": "d5ef765bfe500a1a8b5a9714fa61a6d7d169231bdfd6d9b16dfa323a08eb245e"
+    },
+    {
+      "path": "src/draco/io/stl_encoder.cc",
+      "size": 3499,
+      "sha256": "ec1c1763cd4a2a8ec40264dde10a47b257d07918c23d2f5986ac73c5f29e3b20"
+    },
+    {
+      "path": "src/draco/io/stl_encoder.h",
+      "size": 1491,
+      "sha256": "080a32bcdf1341f963929e2da95bb0b685773995e358d00cea6184f9d44c5036"
+    },
+    {
+      "path": "src/draco/io/stl_encoder_test.cc",
+      "size": 2983,
+      "sha256": "fafdf3bee4e97f20245bdccb27d40206c548158fc896ed03b5d649b86f42a738"
+    },
+    {
+      "path": "src/draco/io/texture_io.cc",
+      "size": 6099,
+      "sha256": "7c2d21b73d85be90a7966ea3b4de994ee1d725661a3b62cc63c47499928a588b"
+    },
+    {
+      "path": "src/draco/io/texture_io.h",
+      "size": 2551,
+      "sha256": "31f2fb5d255e50ef3d2ab3c22492f68e36e71d389d461539fb008d1443df6dc9"
+    },
+    {
+      "path": "src/draco/io/texture_io_test.cc",
+      "size": 2750,
+      "sha256": "64cc17c03889908076cb20aa9f86a3ef9bb78e01ec9ae13fc3e582e742213ce7"
+    },
+    {
+      "path": "src/draco/io/tiny_gltf_utils.cc",
+      "size": 8433,
+      "sha256": "1ed8c02d850c83b6acd24a5cbb6b331f6c59ffe5323e3f932e219df7c0b65673"
+    },
+    {
+      "path": "src/draco/io/tiny_gltf_utils.h",
+      "size": 5028,
+      "sha256": "93712a4c9fde2baeff286c21e2507365ce2382ad6752724e1830a275a638d2dd"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/decoder_functions.js",
+      "size": 1368,
+      "sha256": "a55edc9a6b4ad9a0bebbed39487776b3fd1c70729585b71e8b55d06164729180"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/decoder_webidl_wrapper.cc",
+      "size": 14039,
+      "sha256": "fea0f720db7bc1733be21817c75fe184bb72eca4862f06d6b1d3b2bdcabdf926"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/decoder_webidl_wrapper.h",
+      "size": 14779,
+      "sha256": "626c2f6ea304b34f07017f6660d94b42747f11e46cc7e59235237dd2e563bd18"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/draco_decoder_glue_wrapper.cc",
+      "size": 1279,
+      "sha256": "dcb6c0e1c76639917eae25422dc7328a91470748b45a64daae1c8d9bdcb5838a"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/draco_encoder_glue_wrapper.cc",
+      "size": 1116,
+      "sha256": "d54608fb5f4da9286595c47e33a7b46b13c5932cfdd7cfa40d2a4df6cc769b55"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/draco_web_decoder.idl",
+      "size": 9273,
+      "sha256": "ff804dba03bc43ddd9e625ff2065660c3dd990c2bc111c7c875cf3d3390960b7"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/draco_web_encoder.idl",
+      "size": 8418,
+      "sha256": "cbc4a9fe1a4756a8c54b0e7385a540296d35b64008e86f23aba021ff7d86aef1"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/encoder_webidl_wrapper.cc",
+      "size": 12970,
+      "sha256": "dca4d8054b89473a4bb668bd7f4fbd4b533c66d16117c025976c8bd898f5d410"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/encoder_webidl_wrapper.h",
+      "size": 7571,
+      "sha256": "199281f7734c177fd8cf7e2636e07b106c73c7febf621976c2953988bf859e22"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/finalize.js",
+      "size": 1040,
+      "sha256": "a610996803075eb2b19da0192a641ed4bee5ed68e34f7322d13ff26990b01405"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/prepareCallbacks.js",
+      "size": 1333,
+      "sha256": "516787104c40ef9d16c4f58a5f24b26fffa7cc1064a14c3fa109570c9f73e875"
+    },
+    {
+      "path": "src/draco/javascript/emscripten/version.js",
+      "size": 1126,
+      "sha256": "024dc54dd8872f3e6e09afd51eaa9e33f4e9db5475154bff6118907b0249aca3"
+    },
+    {
+      "path": "src/draco/material/material.cc",
+      "size": 9790,
+      "sha256": "4cd4c4b8478c5d72b1197de9243c7f534e46ff9730954bc0eed908f851711c54"
+    },
+    {
+      "path": "src/draco/material/material.h",
+      "size": 11481,
+      "sha256": "0bf9c7be707e6533f8b77bb12b1d8b8ae91f1fc242ca09360dfff7e3596b20c5"
+    },
+    {
+      "path": "src/draco/material/material_library.cc",
+      "size": 4224,
+      "sha256": "47622dbdb5715e9083e75c7ca1d829a03d9fc6574adff1a3ba7a4ae0778a70ce"
+    },
+    {
+      "path": "src/draco/material/material_library.h",
+      "size": 3618,
+      "sha256": "4b15311af03562e4432f1323c11f1a283e16f63e182bfa4bd32454f60a0a933c"
+    },
+    {
+      "path": "src/draco/material/material_library_test.cc",
+      "size": 6206,
+      "sha256": "fea9156de86b461f9c037a5b4f9d393c95e5da7cb06c0e453c918a85612532c5"
+    },
+    {
+      "path": "src/draco/material/material_test.cc",
+      "size": 13381,
+      "sha256": "17cd34837feafcaa7ac0152c91979eda8101dd4aaef9458659ab7b34c77abb53"
+    },
+    {
+      "path": "src/draco/material/material_utils.cc",
+      "size": 599,
+      "sha256": "295d7d6c4928b20e6c51159dd5b1ea0edd1b86fe41d6acd526eef8d749fc8799"
+    },
+    {
+      "path": "src/draco/material/material_utils.h",
+      "size": 599,
+      "sha256": "295d7d6c4928b20e6c51159dd5b1ea0edd1b86fe41d6acd526eef8d749fc8799"
+    },
+    {
+      "path": "src/draco/material/material_utils_test.cc",
+      "size": 799,
+      "sha256": "a4e5556875dd83dba544bd885b382f8c5e673f14ed10c13074da38191f427080"
+    },
+    {
+      "path": "src/draco/maya/draco_maya_plugin.cc",
+      "size": 8779,
+      "sha256": "15cc9fd593668f97a1f6cd82dd5c6e9f93e73fe459c0ac6229c3b9ab4886d488"
+    },
+    {
+      "path": "src/draco/maya/draco_maya_plugin.h",
+      "size": 2067,
+      "sha256": "1a6565cf086bd27b91f01b5c84dc521d5d097d6e7630cfba9fd7b292effeaf8e"
+    },
+    {
+      "path": "src/draco/mesh/corner_table.cc",
+      "size": 17126,
+      "sha256": "d00521b232313de56dc223437715b2cd1213432a2166790e7c509b139eaf3e18"
+    },
+    {
+      "path": "src/draco/mesh/corner_table.h",
+      "size": 14397,
+      "sha256": "f4e461e7f4debe7cc100e713cd8a64a26fe17d09e9cd2d00bcc79d5299b45708"
+    },
+    {
+      "path": "src/draco/mesh/corner_table_iterators.h",
+      "size": 10064,
+      "sha256": "c1652d1e608250e8892d275c18c616592f9073f60aa40a331aa873d0509d2951"
+    },
+    {
+      "path": "src/draco/mesh/corner_table_test.cc",
+      "size": 4498,
+      "sha256": "717242661248f90f2a90455917709ebff251ad453f7bcb33a719c4eae6fdce84"
+    },
+    {
+      "path": "src/draco/mesh/mesh.cc",
+      "size": 20325,
+      "sha256": "892c0d99a5ea79d285980ae2bdc7e6a1469987e516d61873dfe4db842066ac2f"
+    },
+    {
+      "path": "src/draco/mesh/mesh.h",
+      "size": 15337,
+      "sha256": "301686db6b1d2dbff1ee621124d810eb52196cd1c085fee91322418673981913"
+    },
+    {
+      "path": "src/draco/mesh/mesh_are_equivalent.cc",
+      "size": 9398,
+      "sha256": "6a0b25581a7e9d171531735f76aba77faf2239b3f3f32ee529f8238661d6f8ca"
+    },
+    {
+      "path": "src/draco/mesh/mesh_are_equivalent.h",
+      "size": 2537,
+      "sha256": "2c0468b5b468ae7ec20b25e665b726d4b930c2c86b7d19a5af3842496c2bbc89"
+    },
+    {
+      "path": "src/draco/mesh/mesh_are_equivalent_test.cc",
+      "size": 5491,
+      "sha256": "ccb4d8c0e2b21890ec0edce0b5f174be5b2664ff7acddc97e831199daf166651"
+    },
+    {
+      "path": "src/draco/mesh/mesh_attribute_corner_table.cc",
+      "size": 8442,
+      "sha256": "73a3132c96056acca5e9490dbf00c9ad43a2c83c89078c32bb2565fc0756aa84"
+    },
+    {
+      "path": "src/draco/mesh/mesh_attribute_corner_table.h",
+      "size": 7680,
+      "sha256": "30402dce709d89703a05f3c0ed0fdb7b18eb183781b21b89cd86b4e45226fbee"
+    },
+    {
+      "path": "src/draco/mesh/mesh_cleanup.cc",
+      "size": 9174,
+      "sha256": "b551edd44450a98fa8ab710454689c1da2b5373152014022ec39e930efbe0b00"
+    },
+    {
+      "path": "src/draco/mesh/mesh_cleanup.h",
+      "size": 2261,
+      "sha256": "d29eb7ec4f1c270423e38736cdd054c3274f1ba09eebfcdd3adc2009d0762c2e"
+    },
+    {
+      "path": "src/draco/mesh/mesh_cleanup_test.cc",
+      "size": 9787,
+      "sha256": "6bcc49592fe60264924a8baddda79b466be60bb1d0b34eae6211470e47a27539"
+    },
+    {
+      "path": "src/draco/mesh/mesh_connected_components.h",
+      "size": 6156,
+      "sha256": "955ab82febc65eb7b68f5f503351c96b6b56da92b19f6d648262e9165f7852b1"
+    },
+    {
+      "path": "src/draco/mesh/mesh_features.cc",
+      "size": 2882,
+      "sha256": "32cb413267840fb8077bee9a1c0039ca40d5363949da0d9988e0abe5e460cb5a"
+    },
+    {
+      "path": "src/draco/mesh/mesh_features.h",
+      "size": 3552,
+      "sha256": "c907e4a852a3bddcf8ee5efb8bb1996f67adef54ec0687752beb4d08c2f2cd67"
+    },
+    {
+      "path": "src/draco/mesh/mesh_features_test.cc",
+      "size": 3690,
+      "sha256": "a96e3744a2e4c6cc24ea56d3162e0607296caaaa00a519b86b6ea5e477be3571"
+    },
+    {
+      "path": "src/draco/mesh/mesh_indices.h",
+      "size": 1144,
+      "sha256": "c51577125d3f540b02e90f31541e186509546369a0af909a1514e63c4e113a1f"
+    },
+    {
+      "path": "src/draco/mesh/mesh_misc_functions.cc",
+      "size": 2176,
+      "sha256": "20a4d7b50b5cfb5b1e1e1411e70ff1a19f2c25fa1f0e01869ef8d7639ac3567b"
+    },
+    {
+      "path": "src/draco/mesh/mesh_misc_functions.h",
+      "size": 3982,
+      "sha256": "116b8ccaf3a3a1f85cb7d016717cb28c18f0eb110e69412643b92c3ade302201"
+    },
+    {
+      "path": "src/draco/mesh/mesh_splitter.cc",
+      "size": 24245,
+      "sha256": "25ff716aaa3ba9c4a4d5c9eef8b437f0df1d4f67045bea2b49d72e2c5a566570"
+    },
+    {
+      "path": "src/draco/mesh/mesh_splitter.h",
+      "size": 5875,
+      "sha256": "51dd89c463322ec13481f9c6a18515d810172760e6a084dd52016b7f44f0f91c"
+    },
+    {
+      "path": "src/draco/mesh/mesh_splitter_test.cc",
+      "size": 1205,
+      "sha256": "7c3d92a6ef51e3720eb1bb87d80ec21b769f153b9e3c0e2d3960068cea09c5f3"
+    },
+    {
+      "path": "src/draco/mesh/mesh_stripifier.cc",
+      "size": 3933,
+      "sha256": "a774e8267d70e129b43542fa1db8d979fcb0174758c55226d5465992d9573c09"
+    },
+    {
+      "path": "src/draco/mesh/mesh_stripifier.h",
+      "size": 9815,
+      "sha256": "d43416ed96ba7c9be83587cfd6ff351b4ce60dd61adf899e64d4668f59e89c0d"
+    },
+    {
+      "path": "src/draco/mesh/mesh_test.cc",
+      "size": 29026,
+      "sha256": "6484a30cfea50a8113b4a4e363c30f6a8cbc62888b29cb057470b9e455867287"
+    },
+    {
+      "path": "src/draco/mesh/mesh_utils.cc",
+      "size": 20023,
+      "sha256": "25bef06f6fcfb0402ca611bae1ddbcf8d352c17cf9a4bc0e0f4aa03f0258b4e1"
+    },
+    {
+      "path": "src/draco/mesh/mesh_utils.h",
+      "size": 4801,
+      "sha256": "d800af16e3b9d2eb5e4dd1d9359bfbaf7bc8e4384cce03229f5cf1b56877813f"
+    },
+    {
+      "path": "src/draco/mesh/mesh_utils_test.cc",
+      "size": 17569,
+      "sha256": "2e6fad0add7ea8e57f814e37fb4e2c919eff80ae1149fd5b6b8cb95f5185ecc3"
+    },
+    {
+      "path": "src/draco/mesh/triangle_soup_mesh_builder.cc",
+      "size": 4265,
+      "sha256": "908561f97dcfae4cf551227eb524e91068551125ab9d8ce71360848cc7ba1a78"
+    },
+    {
+      "path": "src/draco/mesh/triangle_soup_mesh_builder.h",
+      "size": 5374,
+      "sha256": "712bdbadbfda76ae4f974bd0b6b18a7f12912312386c954fca7731455024c065"
+    },
+    {
+      "path": "src/draco/mesh/triangle_soup_mesh_builder_test.cc",
+      "size": 12561,
+      "sha256": "79563993532fc19d45b181e64cc12a85312abb7d880f1bb02344fed261ccea55"
+    },
+    {
+      "path": "src/draco/mesh/valence_cache.h",
+      "size": 5627,
+      "sha256": "487feef114a11e0d432ed897ba872085ef21ae26ab4363305597c5062395710a"
+    },
+    {
+      "path": "src/draco/metadata/geometry_metadata.cc",
+      "size": 1807,
+      "sha256": "38c24c7e0c876ac98e40fd6fec36e0b11470615eff99d22c099079c649a86760"
+    },
+    {
+      "path": "src/draco/metadata/geometry_metadata.h",
+      "size": 4623,
+      "sha256": "0466d7dff8f356be564e4e1d0b09949a64d0852acc54b4dd8a9cdf7e1803673c"
+    },
+    {
+      "path": "src/draco/metadata/metadata.cc",
+      "size": 4256,
+      "sha256": "2ec3a0147b2c1fbb6f01172774cf998ed14bc429bc382fe4375c83e1985ff3c5"
+    },
+    {
+      "path": "src/draco/metadata/metadata.h",
+      "size": 7415,
+      "sha256": "67fc000531a89ab4486250c32bcd5d99e5f0edee655e14ce492e5a1a06f397e9"
+    },
+    {
+      "path": "src/draco/metadata/metadata_decoder.cc",
+      "size": 4586,
+      "sha256": "7410020028e756a3983ab101bcf7914269a63dcf82a1bae43738a7cc33240b08"
+    },
+    {
+      "path": "src/draco/metadata/metadata_decoder.h",
+      "size": 1375,
+      "sha256": "2c673938848597ba7bde77b91a1b4d0ae6e593dffc8e52ea9085ec3a7025894e"
+    },
+    {
+      "path": "src/draco/metadata/metadata_encoder.cc",
+      "size": 3444,
+      "sha256": "74d508ed49c396ba3e660417afc4b235c5506fad87e13b5c5f9b313d5c5214ac"
+    },
+    {
+      "path": "src/draco/metadata/metadata_encoder.h",
+      "size": 1490,
+      "sha256": "20d09cb7c5aa70b00b1dc78880b32ea9c8076ebd83b9eeb338f234544146b1f8"
+    },
+    {
+      "path": "src/draco/metadata/metadata_encoder_test.cc",
+      "size": 6286,
+      "sha256": "b9a40b61d01f5622b1d2c328734b624de50d0e79638acd2e1120d816a818b81a"
+    },
+    {
+      "path": "src/draco/metadata/metadata_test.cc",
+      "size": 5572,
+      "sha256": "d818488915779cfe73d6f9678e24c3da7d1551f1faef95f3f7cd9d94b82e405c"
+    },
+    {
+      "path": "src/draco/metadata/property_attribute.cc",
+      "size": 3110,
+      "sha256": "ad0d1cbe1b402d637116e271b7df2459acbadcf3d6111b6b08f2358ff8395e04"
+    },
+    {
+      "path": "src/draco/metadata/property_attribute.h",
+      "size": 3340,
+      "sha256": "33a9ed1a2aefc1bb48e5659616a148e6608284336400f3bd079910855cc4d496"
+    },
+    {
+      "path": "src/draco/metadata/property_attribute_test.cc",
+      "size": 8075,
+      "sha256": "d9513cbd3dcefdcb7d8ef412b220f1ff52a2b98ce58d8ce19ce8c5450853d48e"
+    },
+    {
+      "path": "src/draco/metadata/property_table.cc",
+      "size": 4072,
+      "sha256": "6cfad8cde1d2cf64cd1e79252c1dcb5a66fc05a48d3b774c181a9cae02d5e121"
+    },
+    {
+      "path": "src/draco/metadata/property_table.h",
+      "size": 7532,
+      "sha256": "914c58db5bf5ab132885553c632f867f25925c5e5eda2c192ee9e3017b7e6a3b"
+    },
+    {
+      "path": "src/draco/metadata/property_table_test.cc",
+      "size": 13329,
+      "sha256": "92fc4a1d9b200c3ffbf2202303fb17a1845b35b6c45c3a4fde4c87e3615c793c"
+    },
+    {
+      "path": "src/draco/metadata/structural_metadata.cc",
+      "size": 3746,
+      "sha256": "c53e3dfff440c35698f396734e5493ea949bd913ab27454d0fb5c9f667bd3d1a"
+    },
+    {
+      "path": "src/draco/metadata/structural_metadata.h",
+      "size": 2543,
+      "sha256": "8c4dde8212312ae31d33a00ff6d1810eb2e2f9ac4c7bf68bf6789563142deac1"
+    },
+    {
+      "path": "src/draco/metadata/structural_metadata_schema.cc",
+      "size": 4143,
+      "sha256": "95b40b88a4be43d985c93482e8452675ad3c660f92bc057922026475e6d9ff05"
+    },
+    {
+      "path": "src/draco/metadata/structural_metadata_schema.h",
+      "size": 4055,
+      "sha256": "5d27f5bdddefa139a766f021e988b91075f3de1fe11c9c438d8ee0644dad04d0"
+    },
+    {
+      "path": "src/draco/metadata/structural_metadata_schema_test.cc",
+      "size": 9507,
+      "sha256": "4f871cf014fc5249d7c30cbcbdc8f104e7eac718b257ac03b1aa37fb9e434174"
+    },
+    {
+      "path": "src/draco/metadata/structural_metadata_test.cc",
+      "size": 7500,
+      "sha256": "5e82bee050fd2aef46deecced7f8045bf5c7522922c7c91834633dbf671604eb"
+    },
+    {
+      "path": "src/draco/point_cloud/point_cloud.cc",
+      "size": 10994,
+      "sha256": "4fa838ae3fd92f50b5f44e00764a951f3ef6cb713ae4cfdf09241ede62909db2"
+    },
+    {
+      "path": "src/draco/point_cloud/point_cloud.h",
+      "size": 11399,
+      "sha256": "9e63712c4fef0ec258ea74ac2c157c1dec843d9012e6429a10dda3bd643a07ce"
+    },
+    {
+      "path": "src/draco/point_cloud/point_cloud_builder.cc",
+      "size": 3464,
+      "sha256": "532b27d17da093e7fcd6557a25908fd20ae76a330c636a85550dda5b7137d213"
+    },
+    {
+      "path": "src/draco/point_cloud/point_cloud_builder.h",
+      "size": 4068,
+      "sha256": "c5e3a461c0a269b8cf5fce6f45131ae08c62fdc9a7940d8207719eaecb63a56c"
+    },
+    {
+      "path": "src/draco/point_cloud/point_cloud_builder_test.cc",
+      "size": 8075,
+      "sha256": "995bc9f1f80257c3489e53dc33d1f65de0ee9623618d8cf7529023e1fb2ad40a"
+    },
+    {
+      "path": "src/draco/point_cloud/point_cloud_test.cc",
+      "size": 10047,
+      "sha256": "3c82d8f2515f44c8cf14a7e152bb504327cb7c9e28190f06d1354d1ffc086864"
+    },
+    {
+      "path": "src/draco/scene/instance_array.cc",
+      "size": 1464,
+      "sha256": "7783119af7490607d7b01bd1fe42d0c657af6c219c2a8c3eedbf8212230ded60"
+    },
+    {
+      "path": "src/draco/scene/instance_array.h",
+      "size": 2001,
+      "sha256": "1415b8e2739cd8d65dfbb4e147a56548bc0f7155237acd06348237f7ac70c9c4"
+    },
+    {
+      "path": "src/draco/scene/instance_array_test.cc",
+      "size": 6369,
+      "sha256": "28da88c837e6112e7725eb874ec207aec6ef701014a099aff1405723bc0da194"
+    },
+    {
+      "path": "src/draco/scene/light.cc",
+      "size": 1292,
+      "sha256": "3394adce91c249e26137e9908dfb6307d1b49f149b8c7318223d41c3a955ee83"
+    },
+    {
+      "path": "src/draco/scene/light.h",
+      "size": 2302,
+      "sha256": "d9a95b8ce798ee8e9fc9333c0998da5fc4c5e16cd1d5acb7f1a97034fd3f86c5"
+    },
+    {
+      "path": "src/draco/scene/light_test.cc",
+      "size": 2189,
+      "sha256": "3268686b4276536123ab9266b2344f85712b616d8cdb1e99f3a3906e9c07dcfe"
+    },
+    {
+      "path": "src/draco/scene/mesh_group.h",
+      "size": 4370,
+      "sha256": "b2948cb4c1cf9954cd5aefb2ebc746a412dd86f9cf6628aff2d68186d90c508b"
+    },
+    {
+      "path": "src/draco/scene/mesh_group_test.cc",
+      "size": 7676,
+      "sha256": "32c75cc5a83c893cd68be4a935682cf802598d7bf755279610c953826c8c3268"
+    },
+    {
+      "path": "src/draco/scene/scene.cc",
+      "size": 6424,
+      "sha256": "e73269ff7643838573cc5529ce398a8358bac8d102ff74001ddfdcfcc186d69c"
+    },
+    {
+      "path": "src/draco/scene/scene.h",
+      "size": 9966,
+      "sha256": "b93a03af52603ec35978fda84a04f4c62ca915dc593a272b98f7c25957d9376f"
+    },
+    {
+      "path": "src/draco/scene/scene_are_equivalent.cc",
+      "size": 3109,
+      "sha256": "5dcc010eeecbcaaaa22b6fbd67c3c6147eff173c6b118981d1ce4354993268c6"
+    },
+    {
+      "path": "src/draco/scene/scene_are_equivalent.h",
+      "size": 1404,
+      "sha256": "f82527f14964ae601385e24bcdaf88c84ad7a92f85e80f0067e185700d571624"
+    },
+    {
+      "path": "src/draco/scene/scene_are_equivalent_test.cc",
+      "size": 3401,
+      "sha256": "fb8f1dffc50285a86fe7bc45c4f031370f758d5216f5eb6bdda8e7fa51a22878"
+    },
+    {
+      "path": "src/draco/scene/scene_indices.h",
+      "size": 2454,
+      "sha256": "ba4974e3a838c431e720abbcb42c5a70be4c72775f19761577f7115b2ee79ca2"
+    },
+    {
+      "path": "src/draco/scene/scene_node.h",
+      "size": 3878,
+      "sha256": "da6e7ab4156d82eb55b501c26326ca53afc1d4a964e1f732c887fe7418430f13"
+    },
+    {
+      "path": "src/draco/scene/scene_test.cc",
+      "size": 12997,
+      "sha256": "7e130abcae26b26152811a6eff11dfb71cebfccb3129135eedcd61d8ad1ec798"
+    },
+    {
+      "path": "src/draco/scene/scene_utils.cc",
+      "size": 39158,
+      "sha256": "b7b69ba2607e4cd2347fc1f7f667b87cef2e19162edb34d9009439a873f71045"
+    },
+    {
+      "path": "src/draco/scene/scene_utils.h",
+      "size": 7234,
+      "sha256": "ddc8de279741d8de90b0358c1b11c838add1f38b3d442e4942cde5c790821ab6"
+    },
+    {
+      "path": "src/draco/scene/scene_utils_test.cc",
+      "size": 37574,
+      "sha256": "87ca1c9b9dcbec1d920241fdc3660c7bc443c219e63b01a16256d7e885c770bb"
+    },
+    {
+      "path": "src/draco/scene/trs_matrix.cc",
+      "size": 3169,
+      "sha256": "e5afb22e3ca774451d68415c687bb19ac2c0be3fee14fcc2ce6bf30fbceafae2"
+    },
+    {
+      "path": "src/draco/scene/trs_matrix.h",
+      "size": 3877,
+      "sha256": "4cde1bf00eeefb302decdc48aa30271df595ce5e41459f3f8c923e84aa150419"
+    },
+    {
+      "path": "src/draco/scene/trs_matrix_test.cc",
+      "size": 2277,
+      "sha256": "3495d9dd45ac2fad0ad91ac76b6bd3943b84612196d058ce3bbb975f749891a2"
+    },
+    {
+      "path": "src/draco/texture/source_image.cc",
+      "size": 904,
+      "sha256": "161086eb52ade2db54f459f25c598c2e7253fc6ddf762098373b34f1de8ca87c"
+    },
+    {
+      "path": "src/draco/texture/source_image.h",
+      "size": 2413,
+      "sha256": "d35f98ad9deffe72205c5d158df68e6f67c6e47e85efe33d148d66670f6f7230"
+    },
+    {
+      "path": "src/draco/texture/texture.h",
+      "size": 1442,
+      "sha256": "0d2f9c5ff1ad7d0c9076896e993271be0c65a22aa664a9af77ec1aaecd617c3e"
+    },
+    {
+      "path": "src/draco/texture/texture_library.cc",
+      "size": 1869,
+      "sha256": "d1c623acd22cdef46a72ae08f9f2b75eddcb697837b65d6247ea321a783e6877"
+    },
+    {
+      "path": "src/draco/texture/texture_library.h",
+      "size": 2244,
+      "sha256": "4a1c7a39bb7c7d490c314f414a48367ab220364b2dd68370c3167fbf21155745"
+    },
+    {
+      "path": "src/draco/texture/texture_library_test.cc",
+      "size": 771,
+      "sha256": "6bbce68a6a2c5a7723fc4bb2d584d11589d1301aad4d5e6c4465f398d3a89401"
+    },
+    {
+      "path": "src/draco/texture/texture_map.cc",
+      "size": 2693,
+      "sha256": "43bc6da4195e1c6a33ef2b94b8f4cbf7a52bbfe2b51bfc5e2c73033abe4f53b8"
+    },
+    {
+      "path": "src/draco/texture/texture_map.h",
+      "size": 6522,
+      "sha256": "e9c9482a46078b376fbe06eec44ffb90f850460499bf697eded2ba24d7bbc201"
+    },
+    {
+      "path": "src/draco/texture/texture_map_test.cc",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/draco/texture/texture_transform.cc",
+      "size": 2128,
+      "sha256": "c2c5e972812433752a998888be6882ca49a43c7866e2cbcaae44676230e8b409"
+    },
+    {
+      "path": "src/draco/texture/texture_transform.h",
+      "size": 2534,
+      "sha256": "f7ccb9c6e9aa92cd0373fe09ed8f03f4312c07dedb1dddf73bbe73b7bbc3247e"
+    },
+    {
+      "path": "src/draco/texture/texture_transform_test.cc",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/draco/texture/texture_utils.cc",
+      "size": 6062,
+      "sha256": "7c75e6d34b9fe1dadd8cab3c78b1e85e8b42ded4647a240304c0ee6a63ecc6ec"
+    },
+    {
+      "path": "src/draco/texture/texture_utils.h",
+      "size": 3608,
+      "sha256": "462c7b20fdb4e6c271db4a14a73a491409b76a848a13a86e87699a42c1c856d6"
+    },
+    {
+      "path": "src/draco/texture/texture_utils_test.cc",
+      "size": 8507,
+      "sha256": "a343f4309016c3a76051e14de28b1ba1bada9cfe4e5112b80cde14fe6650aa60"
+    },
+    {
+      "path": "src/draco/tools/draco_decoder.cc",
+      "size": 5247,
+      "sha256": "1dac409111e5d59de7ba7bdc2e96ed1f513f27cd485f2ccf5ff027206fc5501b"
+    },
+    {
+      "path": "src/draco/tools/draco_encoder.cc",
+      "size": 14090,
+      "sha256": "81a3ec51dea640a44a3bfcfa157d95199bb8a7b01a3e2a08ccf2c209771b66d1"
+    },
+    {
+      "path": "src/draco/tools/draco_transcoder.cc",
+      "size": 4950,
+      "sha256": "def1e79fccfd6d824fa91eca62226fc5322e2effb2141cc98f21330d877453ee"
+    },
+    {
+      "path": "src/draco/tools/draco_transcoder_lib.cc",
+      "size": 3163,
+      "sha256": "bf60aeffad18d3c6b6478368d6497b249b68155bdb8d03a4fbb8758482134659"
+    },
+    {
+      "path": "src/draco/tools/draco_transcoder_lib.h",
+      "size": 3410,
+      "sha256": "ecd570f2500138eed5fc811980ebcd545d451d5873a4b3f3623376095e76a2f0"
+    },
+    {
+      "path": "src/draco/tools/draco_transcoder_lib_test.cc",
+      "size": 7357,
+      "sha256": "d8d2cdede6db0907f07f759c7e77fe076966646d3c37f6cb2dd6f82752e1dfed"
+    },
+    {
+      "path": "src/draco/tools/fuzz/build.sh",
+      "size": 1162,
+      "sha256": "83fcdc760b2dcac5abd85f2124e39fd2bc2110b1b7e379fd841418bd84843d50"
+    },
+    {
+      "path": "src/draco/tools/fuzz/draco_mesh_decoder_fuzzer.cc",
+      "size": 1013,
+      "sha256": "84f89d7c9eb5b052775d53df3ee7e43dd16874239cb74cc2adc749fd56106f05"
+    },
+    {
+      "path": "src/draco/tools/fuzz/draco_mesh_decoder_without_dequantization_fuzzer.cc",
+      "size": 1086,
+      "sha256": "4dfa7ef3a13a8afbb819f4e8151b4b25a077bb7dec4911e7c5e034add3e427bb"
+    },
+    {
+      "path": "src/draco/tools/fuzz/draco_pc_decoder_fuzzer.cc",
+      "size": 1033,
+      "sha256": "092a31e8079b34744871bc0c9366f6f1929f0829eac7ff90377515f19d36d921"
+    },
+    {
+      "path": "src/draco/tools/fuzz/draco_pc_decoder_without_dequantization_fuzzer.cc",
+      "size": 1106,
+      "sha256": "0fcd563f405bdd6f6aa1d4202a9415b271d58f5a524ffae9f14a86a8d6551b34"
+    },
+    {
+      "path": "src/draco/tools/install_test/CMakeLists.txt",
+      "size": 870,
+      "sha256": "757fefb4d2c7337359d45fc79851c8177f6265cbb3992356cdbb1cde43ec6ae1"
+    },
+    {
+      "path": "src/draco/tools/install_test/main.cc",
+      "size": 1418,
+      "sha256": "446223303ad1ec439af884cbe852e7e34dfdfb7d047035936eb054f52ddd7d31"
+    },
+    {
+      "path": "src/draco/tools/install_test/test.py",
+      "size": 16063,
+      "sha256": "5e4456702fc8835943bf230884321b3c45b48a60af4a73a3cac8587685761d37"
+    },
+    {
+      "path": "src/draco/unity/draco_unity_plugin.cc",
+      "size": 13641,
+      "sha256": "a6f3b85af80492787f4d5499ee0bb4ff76fbb607592f8c7677bbb03d4680aa3c"
+    },
+    {
+      "path": "src/draco/unity/draco_unity_plugin.h",
+      "size": 5352,
+      "sha256": "d141da3d1a899e572a2a191080f15a326eb6b230ec5c94e0cb5110fb029aaf3e"
+    },
+    {
+      "path": "src/draco/unity/draco_unity_plugin_test.cc",
+      "size": 9906,
+      "sha256": "01e8df5e53cf57434c7ce36d0b3689f89d78edf841a4ee430cfc3b2727641e22"
+    },
+    {
+      "path": "testdata/Box/glTF/Box.gltf",
+      "size": 2897,
+      "sha256": "536c15ea763ea0eebcadc312339a73972d9ba5b984c2dcb10bfa606e3cdea702"
+    },
+    {
+      "path": "testdata/Box/glTF/Box0.bin",
+      "size": 648,
+      "sha256": "3266a8e39b9f425b3341cbe5eec7849f44310256bfa651e6b8b40c85ce0ccafb"
+    },
+    {
+      "path": "testdata/Box/glTF_Binary/Box.glb",
+      "size": 1664,
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e"
+    },
+    {
+      "path": "testdata/Box/glTF_Binary/Box_Draco.glb",
+      "size": 2388,
+      "sha256": "bd1922813391261d26ee4180a5317f9fb56b20c8cc3671b7a86c791a9d28d815"
+    },
+    {
+      "path": "testdata/Box.ply",
+      "size": 1661,
+      "sha256": "d54c9bb3fe075cf955caa1464674a2efa595a7c2e56ccf91a0a70c8e6684f736"
+    },
+    {
+      "path": "testdata/BoxMeta/glTF/BoxMeta.gltf",
+      "size": 8568,
+      "sha256": "7815b894d4c3a6f908301c95d164ba0deb3e5ac920f0273f1316fb018919787e"
+    },
+    {
+      "path": "testdata/BoxMeta/glTF/Texture0_MeshFeatures.png",
+      "size": 86,
+      "sha256": "64aa4403d8f426acbaf8d303e1338b317c7143d534861d55022cd9db77a7a1d1"
+    },
+    {
+      "path": "testdata/BoxMeta/glTF/Texture1_MeshFeatures.png",
+      "size": 75,
+      "sha256": "5d6f5de5cb7669c1f6e74517b2c808d92e79208d2ea3be189e53070340f00ed7"
+    },
+    {
+      "path": "testdata/BoxMeta/glTF/buffer0.bin",
+      "size": 2900,
+      "sha256": "dbdd598b295ebf12f14c3fcff55202c65acd17f6081a96fd2a7377385f8eadb3"
+    },
+    {
+      "path": "testdata/BoxMetaDraco/glTF/BoxMetaDraco.gltf",
+      "size": 4248,
+      "sha256": "cdf3e7634fe38c81a1d5488c51eaf787cc7ba161348a3ffe528aa208e4765db4"
+    },
+    {
+      "path": "testdata/BoxMetaDraco/glTF/Texture0_MeshFeatures.png",
+      "size": 81,
+      "sha256": "ad4d1912673179c6e72ab685b73f09cec0f68e3be1a29a1e118a50baad1529ab"
+    },
+    {
+      "path": "testdata/BoxMetaDraco/glTF/Texture1_MeshFeatures.png",
+      "size": 74,
+      "sha256": "9c6adbb59a5c9284472733768dddc664a49d6ffb3746c05023907b426d809522"
+    },
+    {
+      "path": "testdata/BoxMetaDraco/glTF/buffer0.bin",
+      "size": 520,
+      "sha256": "9cc2aafdf1819fdc3c8ea1f4e99aac1ba1666d457e14d39933db816609b7d509"
+    },
+    {
+      "path": "testdata/BoxesMeta/glTF/BoxesMeta.gltf",
+      "size": 9826,
+      "sha256": "9cde599647cee3aa768ecc1099e5b5b54071e25b2d8d2fc8d2b51b0d153bdde9"
+    },
+    {
+      "path": "testdata/BoxesMeta/glTF/Texture0_MeshFeatures.png",
+      "size": 81,
+      "sha256": "ad4d1912673179c6e72ab685b73f09cec0f68e3be1a29a1e118a50baad1529ab"
+    },
+    {
+      "path": "testdata/BoxesMeta/glTF/Texture1_MeshFeatures.png",
+      "size": 74,
+      "sha256": "9c6adbb59a5c9284472733768dddc664a49d6ffb3746c05023907b426d809522"
+    },
+    {
+      "path": "testdata/BoxesMeta/glTF/buffer0.bin",
+      "size": 2900,
+      "sha256": "dbdd598b295ebf12f14c3fcff55202c65acd17f6081a96fd2a7377385f8eadb3"
+    },
+    {
+      "path": "testdata/CesiumMan/glTF/CesiumMan.gltf",
+      "size": 70018,
+      "sha256": "2bdd339476753220b15ce6e80a1014d2e192be5f5f471e415645832a8417ad5c"
+    },
+    {
+      "path": "testdata/CesiumMan/glTF/CesiumMan.jpg",
+      "size": 209908,
+      "sha256": "30eb36a39f78303a4675348e9507c58d2cb4f29d28ef5688359bb62938feca3e"
+    },
+    {
+      "path": "testdata/CesiumMan/glTF/CesiumMan0.bin",
+      "size": 253500,
+      "sha256": "6d03c83a78e471c01c4df8be0c0092da72562a178cfffe624d1e49a1c4cfc7d2"
+    },
+    {
+      "path": "testdata/CesiumMan/glTF_Binary/CesiumMan.glb",
+      "size": 491144,
+      "sha256": "d3868164b6d5df6f097b2ee3e056c572ebcf064d064016429a4f1ce66e4a58c8"
+    },
+    {
+      "path": "testdata/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf",
+      "size": 13133,
+      "sha256": "da587897bb49a99eddebe08e434e71f14124c6eb4f53995f1197ab2a7de3767b"
+    },
+    {
+      "path": "testdata/CesiumMilkTruck/glTF/CesiumMilkTruck.png",
+      "size": 427633,
+      "sha256": "8fe3f547ad32f7036963e50e49428ac8c9bb3c742ccd04da30b10e1e3e63be69"
+    },
+    {
+      "path": "testdata/CesiumMilkTruck/glTF/CesiumMilkTruck0.bin",
+      "size": 109384,
+      "sha256": "f229ba724c88b94fe580e138fd0a1ae01bd5b2debe5170bf785db87baf5cb4e2"
+    },
+    {
+      "path": "testdata/CubeScaledInstances/glTF/buffer0.bin",
+      "size": 804,
+      "sha256": "dcb834de588ba3e15a467d019709bd3a2174491c5f52ef5f3fcc8db0a70511f3"
+    },
+    {
+      "path": "testdata/CubeScaledInstances/glTF/cube_att.gltf",
+      "size": 2506,
+      "sha256": "1536182ace3e62d3d30ebe7ff03f0f8a9a94d66f8f00e5fd7fe3b07efecd9e3d"
+    },
+    {
+      "path": "testdata/DuplicateMeshes/Texture0_BaseColor.png",
+      "size": 37382,
+      "sha256": "8c630e65d878419fcf364596a94b2bf8f298a6b5f1e4cc6e760b0764ab980aa5"
+    },
+    {
+      "path": "testdata/DuplicateMeshes/Texture0_Normal.png",
+      "size": 18456,
+      "sha256": "c417949f6e6164bd77d5b0ba5fb2c72814a2846a2a7e3cfbe63ef1901ebf2da7"
+    },
+    {
+      "path": "testdata/DuplicateMeshes/buffer0.bin",
+      "size": 23520,
+      "sha256": "b853674483735bbb50d23bafa9fea816196bd810d96e65ade02c1523447dfcf7"
+    },
+    {
+      "path": "testdata/DuplicateMeshes/duplicate_meshes.gltf",
+      "size": 7041,
+      "sha256": "66166c6c6faa0e3940356a0b8ffd70f70d4944bedb5414ce567e6cd1a0f1823c"
+    },
+    {
+      "path": "testdata/Fox/glTF/Fox.bin",
+      "size": 119904,
+      "sha256": "4050fc1de05e0df21e4a8b1c2ae50a358efb82efeb32067ea8c01cd5c0d3c56f"
+    },
+    {
+      "path": "testdata/Fox/glTF/Fox.gltf",
+      "size": 45096,
+      "sha256": "d87f22830588010d04289c7ab791fb69bdeed6094547cc2cad50fb0eb7785112"
+    },
+    {
+      "path": "testdata/Fox/glTF/Texture.png",
+      "size": 26764,
+      "sha256": "61c8b109ee7f8bf262791933380fafb1465f7b51cbe6472c2d21eff0b31f83a1"
+    },
+    {
+      "path": "testdata/InterpolationTest/glTF/InterpolationTest.gltf",
+      "size": 34490,
+      "sha256": "bc9dc9a647df98b914301d19739662a58033a1106d6353b4a9ceeada8051232b"
+    },
+    {
+      "path": "testdata/InterpolationTest/glTF/interpolation.bin",
+      "size": 8672,
+      "sha256": "4ddf40a38d80cf8b5700b8c0de941387f1b9d5f36ba90228c10c960edaf788d6"
+    },
+    {
+      "path": "testdata/InterpolationTest/glTF/l.jpg",
+      "size": 11376,
+      "sha256": "8fe5edebe98b4879af7985d7499af45e5cba8305786078e74b6184c2ba33b422"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/AnimatedMorphCube/glTF/AnimatedMorphCube.bin",
+      "size": 4284,
+      "sha256": "4aba93918adba56c1cc688a38c527bc647e26f2c386802e119b4d01b7250dd23"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/AnimatedMorphCube/glTF/AnimatedMorphCube.gltf",
+      "size": 4621,
+      "sha256": "0b910ed4b52fd9fbb565911fc7f9f285edb0f30fa4913a93143466d439d1092e"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/DragonAttenuation/glTF/DragonAttenuation.bin",
+      "size": 5817396,
+      "sha256": "f23edc2737ece1f00bbdda75a3b47214f4cd00dc899d90901914e37cb61557b1"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/DragonAttenuation/glTF/DragonAttenuation.gltf",
+      "size": 8403,
+      "sha256": "1f9ba6fb45deb7e946337b04cf92c773471a322fcd065d59410f617277efd2e7"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/DragonAttenuation/glTF/Dragon_ThicknessMap.jpg",
+      "size": 578150,
+      "sha256": "d43e2467430bbbf5601faa062c71b968f62580fe63b197a7677460758475e118"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/DragonAttenuation/glTF/checkerboard.jpg",
+      "size": 167652,
+      "sha256": "7e45b73f07c301b76d50e37c86b864341cf9aeaf4672363960712a3cfb5a9b99"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/DragonAttenuation/glTF_Binary/DragonAttenuation.glb",
+      "size": 6566656,
+      "sha256": "dbac78de3fefb33ba744cfa703936892b6e2fc47b58d88acc52f4be39e5464be"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/Duck/glTF/Duck.gltf",
+      "size": 4964,
+      "sha256": "98009069c87b165df92dbc8213d7c2b4f296074097ad2ec4efddf3dbc50cdcb0"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/Duck/glTF/Duck0.bin",
+      "size": 102040,
+      "sha256": "4c851f5909095ecf77e66e0968c31d5354f17a49b62e1fad0c341e1635145ee9"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/Duck/glTF/DuckCM.png",
+      "size": 16302,
+      "sha256": "8aedb428cbb815dffea650fe75bff032ea240f00ccad2f64dc8f62a0c5e30313"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/Duck/glTF_Binary/Duck.glb",
+      "size": 120484,
+      "sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SheenCloth/glTF/SheenCloth.bin",
+      "size": 3479088,
+      "sha256": "4ed1f49797ce52b9f653b8650a31fa249fac99524303b0e153804365fb7e45b1"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SheenCloth/glTF/SheenCloth.gltf",
+      "size": 6680,
+      "sha256": "f8220a912f94b61eec7662ddad10329a55245711a06adbf083d20a63c2834c83"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SheenCloth/glTF/technicalFabricSmall_basecolor_256.png",
+      "size": 125026,
+      "sha256": "e945c0b2aa6e3987d8bb8af23aca58a3f75cce2992bb4803bec8cac6cde8474e"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SheenCloth/glTF/technicalFabricSmall_normal_256.png",
+      "size": 150880,
+      "sha256": "37b4404a4191c73fddfb378a2bcd496d7264a7435c0047a10ad00db45565192a"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SheenCloth/glTF/technicalFabricSmall_orm_256.png",
+      "size": 131303,
+      "sha256": "41c04abdb9531d00a4ac832d41f02cd549c7be74886c4d492475cfb95d239a20"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SheenCloth/glTF/technicalFabricSmall_sheen_256.png",
+      "size": 170368,
+      "sha256": "479c3c65b1b9161701c5587cdfccf42a2de38d4d5365b6b904daf9ba8b7b9aab"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SheenCloth/glTF_Binary/SheenCloth.glb",
+      "size": 4025292,
+      "sha256": "15a30e0eb16115ba650e2cba3eef48d6b72d16256f6bb03ea95428a7c1eba260"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SimpleSparseAccessor/glTF/SimpleSparseAccessor.bin",
+      "size": 284,
+      "sha256": "8b01fde2d485b480626115ff804f972edb4ef87f23d2600054bcc859cee38f92"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SimpleSparseAccessor/glTF/SimpleSparseAccessor.gltf",
+      "size": 1740,
+      "sha256": "4ba1537c7f080f1b8402db50c0d3b561d9c1edbf4b6387f517fb153880503cef"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRough.gltf",
+      "size": 11923,
+      "sha256": "d73f4d3be50316b82ac618ccca51ee7e6b69a0376799e7e65542eca0c3be9b76"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRough.png",
+      "size": 8668,
+      "sha256": "6e598b269c371873e7891e1473a14ea6b01ee53023904309b2b535d1de58edb6"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRoughLabel.bin",
+      "size": 536,
+      "sha256": "efb8bcf3bd1e27b036c7fcecf37eba930324425efdecd73f4bd4d2f108afc082"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle.bin",
+      "size": 149412,
+      "sha256": "e4921f2d0c0a03cf65286bd195f3688d4f99d7b6a58f25935e70d516d744156e"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle_baseColor.png",
+      "size": 2165850,
+      "sha256": "62d0ad9b4e2c75e9bc7d67644a50d697563000ffa586d2e185ea38f5000e0a63"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle_diffuse.png",
+      "size": 2426300,
+      "sha256": "8224b88b2b10eb1b29ba1a030f08e19d12b84280856f1b9e6c135e8d0c8524d4"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle_emissive.png",
+      "size": 59102,
+      "sha256": "e9b03ea395b0182917f876befda2d31639ce46058c832dd64e5ad02cde5bddb9"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle_normal.png",
+      "size": 3007372,
+      "sha256": "f22c68da660cee50002ba9a3519e63f2024b21e3ae1bda6c0b5c3059b18212d8"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle_occlusion.png",
+      "size": 336010,
+      "sha256": "4df29dd8d8d7dc20460bdce87f7db6247bb91631361427469fc66bde343ebaa0"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle_roughnessMetallic.png",
+      "size": 3331960,
+      "sha256": "83868c18696724cf1a5e6537c1f9a42e1d02a2e9ca916be78eeac20aae1691d3"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/SpecGlossVsMetalRough/glTF/WaterBottle_specularGlossiness.png",
+      "size": 3974780,
+      "sha256": "6f039db760e08982c587f798cb5dd44bb81453ab367726d598b17987d212e75a"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureSettingsTest/glTF/CheckAndX.png",
+      "size": 9775,
+      "sha256": "19da9a7f987b9a64684500c1de49293c0922f1840f13ce5d38505b8b5fe1c001"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureSettingsTest/glTF/CheckAndX_V.png",
+      "size": 9878,
+      "sha256": "4f8ea98d173360c29275e04cac8d1d05004b1605d818e6f143aca8f31e4f302d"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf",
+      "size": 26715,
+      "sha256": "dd1f85b4638ffc72f1e09e19b101b7a05d94a0353facced8f59c16a2d9c09447"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureSettingsTest/glTF/TextureSettingsTest0.bin",
+      "size": 4976,
+      "sha256": "1aa2e5e31ae08179eea355945b6fd5d84bd5ffd62a50b93a68c2368d9f345cbe"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureSettingsTest/glTF/TextureTestLabels.png",
+      "size": 7376,
+      "sha256": "14b29323950f10cacfbc4160ea8982aaac6bdea21cf4ec5e8c1589917266415a"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureTransformTest/glTF/Arrow.png",
+      "size": 867,
+      "sha256": "5df5b251fed0ac306cf859a30b59a4953d152483a4bed2b84e5bba1c667a1e64"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureTransformTest/glTF/Correct.png",
+      "size": 2457,
+      "sha256": "3a14b12635ebbcee3ea427fbdb4d20da73e4740ec7a51683d700a2d6b4b7861a"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureTransformTest/glTF/Error.png",
+      "size": 2273,
+      "sha256": "8d1032ef535a5c379bf78f9f565d3180ee3fc2d1cfef6892dee6e567728b619c"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureTransformTest/glTF/NotSupported.png",
+      "size": 3291,
+      "sha256": "1fbdeca7e5c105d677a39578e4bab82b89c8aa9f406ee681ede05635ea0f8c74"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureTransformTest/glTF/TextureTransformTest.bin",
+      "size": 136,
+      "sha256": "d0cdd23f2fa0996a0db99d4932fb9912a51a34e27c8bf832d072dc856ee9a7af"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureTransformTest/glTF/TextureTransformTest.gltf",
+      "size": 9180,
+      "sha256": "e0fa805f0feb544f2d857250c1b119fd5293c4f65eddbfd7c37e35a788fa58b8"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/TextureTransformTest/glTF/UV.png",
+      "size": 12345,
+      "sha256": "ac37ff52fe06a4c8c35ad4e1e7e8da039dfa8afc9b629d40a44ca8b8cfe9d03d"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/UnlitTest/glTF/UnlitTest.bin",
+      "size": 2568,
+      "sha256": "a6a81ec57560242f29ee2c2a94f452a923b5548bf256b6529b0c07dea3f5c907"
+    },
+    {
+      "path": "testdata/KhronosSampleModels/UnlitTest/glTF/UnlitTest.gltf",
+      "size": 3496,
+      "sha256": "b611ca0892cb1a0118e92b72ff52b3afed3e4903c15378daa72c4c252a0334e1"
+    },
+    {
+      "path": "testdata/Lantern/glTF/Lantern.bin",
+      "size": 231324,
+      "sha256": "ef0e2e89e4b14ff9035b43867a16dc3218569b29363ccb16b283b86f1dc50eb0"
+    },
+    {
+      "path": "testdata/Lantern/glTF/Lantern.gltf",
+      "size": 6066,
+      "sha256": "d60d1c408345ef7871f425220a14686e81e7bba1de5fd652a15deaf7e83a6b79"
+    },
+    {
+      "path": "testdata/Lantern/glTF/Lantern_baseColor.png",
+      "size": 4461532,
+      "sha256": "a2d6aa660f0b9ce46b3863e955248454e73be96063218b799af9f750e0f7be71"
+    },
+    {
+      "path": "testdata/Lantern/glTF/Lantern_emissive.png",
+      "size": 169335,
+      "sha256": "eafa6390501d537f5bbcf92c64ad1c39d2493aef4508e9cc9d537771efe8bad7"
+    },
+    {
+      "path": "testdata/Lantern/glTF/Lantern_normal.png",
+      "size": 2928441,
+      "sha256": "6a55a010e0d5b183b818c50a5cbb24fa61167228a530ab53d20cf0c2106a638c"
+    },
+    {
+      "path": "testdata/Lantern/glTF/Lantern_roughnessMetallic.png",
+      "size": 2078597,
+      "sha256": "01b8105756fd86f13e66602f85ee03e7e5daf22a8531f32bef8bbe678cf38cf6"
+    },
+    {
+      "path": "testdata/MultiUVTest/glTF/MultiUVTest.bin",
+      "size": 1380,
+      "sha256": "952adeb8026481be255ccfb4fa8c410b7f847c0fcfc71fac5ca6bb1905ca69fc"
+    },
+    {
+      "path": "testdata/MultiUVTest/glTF/MultiUVTest.gltf",
+      "size": 5773,
+      "sha256": "29b45b4ab812f019a3cc59f6f626e3cd84aa183cc3f7785dc7ab9a050114852b"
+    },
+    {
+      "path": "testdata/MultiUVTest/glTF/uv0.png",
+      "size": 32939,
+      "sha256": "c6a1c9390a73f59b4cd67d24c1a02f21020b4d033ffe311e29b9c29579e63c7c"
+    },
+    {
+      "path": "testdata/MultiUVTest/glTF/uv1.png",
+      "size": 56185,
+      "sha256": "be9bbbfecd86e6ea366dbfc0430e10b6ab1e8e5ad46b95a6c28d25f9f8b1740e"
+    },
+    {
+      "path": "testdata/STL/bunny.stl",
+      "size": 3472634,
+      "sha256": "c10238dc2d938585652822f9cf3edb576d45269e50113888a67305076bf61c66"
+    },
+    {
+      "path": "testdata/STL/test_sphere.stl",
+      "size": 11284,
+      "sha256": "606cda9b0c35d78c8a6e7ae1d1d1e985e7c19b68912b4c5ae51d92406c4e2cca"
+    },
+    {
+      "path": "testdata/STL/test_sphere_ascii.stl",
+      "size": 39479,
+      "sha256": "02e5a19be0bcc799a3de7b2571e97a26b775537b99b973cd3c6cc59d310b4cc8"
+    },
+    {
+      "path": "testdata/SphereAllSame/256x256_all_blue.png",
+      "size": 775,
+      "sha256": "25b29a92d0deab14d71ec4d3e44d709cf686f83994ee2045ae56b5ada08ae35a"
+    },
+    {
+      "path": "testdata/SphereAllSame/256x256_all_green.png",
+      "size": 811,
+      "sha256": "b9ecdaa45e579b6980ced5ab99a79e74f98595cf89dfbcf0348e37684685f8a8"
+    },
+    {
+      "path": "testdata/SphereAllSame/256x256_all_orange.png",
+      "size": 810,
+      "sha256": "0025ed3923d62f4af0cb26d786cbb3b5e8fac423c5065eb92d8e260684d3d167"
+    },
+    {
+      "path": "testdata/SphereAllSame/256x256_all_red.png",
+      "size": 812,
+      "sha256": "218ab56aab9737efda31c8c06204872b2973a3f0b306473f49b0dc8923be319a"
+    },
+    {
+      "path": "testdata/SphereAllSame/buffer0.bin",
+      "size": 8064,
+      "sha256": "90acb0cd196d0299e1f5129d8f2ac722e77dddca97f32b7aceb66d50a1f9e0b1"
+    },
+    {
+      "path": "testdata/SphereAllSame/sphere_texture_all.gltf",
+      "size": 2775,
+      "sha256": "1166add24216c51362393984fbf7cb3b8f226e91189f6129d4a1c9393318e7d9"
+    },
+    {
+      "path": "testdata/SphereTwoMaterials/Texture0_BaseColor.png",
+      "size": 37382,
+      "sha256": "8c630e65d878419fcf364596a94b2bf8f298a6b5f1e4cc6e760b0764ab980aa5"
+    },
+    {
+      "path": "testdata/SphereTwoMaterials/Texture0_Normal.png",
+      "size": 18456,
+      "sha256": "c417949f6e6164bd77d5b0ba5fb2c72814a2846a2a7e3cfbe63ef1901ebf2da7"
+    },
+    {
+      "path": "testdata/SphereTwoMaterials/buffer0.bin",
+      "size": 23520,
+      "sha256": "b853674483735bbb50d23bafa9fea816196bd810d96e65ade02c1523447dfcf7"
+    },
+    {
+      "path": "testdata/SphereTwoMaterials/sphere_two_materials_mesh_and_point_cloud.gltf",
+      "size": 5585,
+      "sha256": "75da03fbc92ebd47c79b1eb670e0c539cdff9905a0bfb9b531797be715a50448"
+    },
+    {
+      "path": "testdata/SphereTwoMaterials/sphere_two_materials_point_cloud.gltf",
+      "size": 5561,
+      "sha256": "284610e2e22f058eab03b2b0ddade7521daf65e08b59caeef753bb16035a4b2d"
+    },
+    {
+      "path": "testdata/SphereWithCircleTexture/sphere_with_circle_texture.bin",
+      "size": 130560,
+      "sha256": "e72ffd0db75ff3a5af856fd4311a5fde4a48c02b569dc57ced92f636709a98b9"
+    },
+    {
+      "path": "testdata/SphereWithCircleTexture/sphere_with_circle_texture.gltf",
+      "size": 3591,
+      "sha256": "fbd16f5244937a44deceed99797c66517a848ab58d13e2fdddd87ba764f98fb5"
+    },
+    {
+      "path": "testdata/SphereWithCircleTexture/test_color.png",
+      "size": 4143,
+      "sha256": "491801771987badbe37feec6023d400cdbc8d8ba641eb12027f6323cca4e2d33"
+    },
+    {
+      "path": "testdata/SpheresScaledInstances/glTF/buffer0.bin",
+      "size": 23520,
+      "sha256": "b853674483735bbb50d23bafa9fea816196bd810d96e65ade02c1523447dfcf7"
+    },
+    {
+      "path": "testdata/SpheresScaledInstances/glTF/spheres_scaled_instances.gltf",
+      "size": 5134,
+      "sha256": "d3758b3b654ab94f03765de523c4aa26428759f9c8b1d7b9c0e55ede81b885c3"
+    },
+    {
+      "path": "testdata/Triangle/glTF/Triangle.gltf",
+      "size": 1022,
+      "sha256": "2119b87b81bdc2371691a3f1d63301c30ff5ab1be9e188d55eaef8a5177afb4c"
+    },
+    {
+      "path": "testdata/Triangle/glTF/Triangle_identity_matrix.gltf",
+      "size": 1124,
+      "sha256": "306014cadb401b8fcc5eda0286d8a1c506ff9f7ba93e22bfd2640ea66fceeb3b"
+    },
+    {
+      "path": "testdata/Triangle/glTF/Triangle_translation_only_matrix.gltf",
+      "size": 1124,
+      "sha256": "4dbe045fb78c49b62f30ca3dcab5b38f2ebf9df5e56bffd155496f42f61a267b"
+    },
+    {
+      "path": "testdata/Triangle/glTF/simpleTriangle.bin",
+      "size": 44,
+      "sha256": "898ed7f560dca9907a80c98be57fbbc0f3a092d2e3683b964ffcfa75c549ac62"
+    },
+    {
+      "path": "testdata/TwoSidedPlane/glTF/TwoSidedPlane.bin",
+      "size": 300,
+      "sha256": "b5773c232084d848db9087978e97ca1ea4ffc1e955bd39c5bfc523c3fa577bc9"
+    },
+    {
+      "path": "testdata/TwoSidedPlane/glTF/TwoSidedPlane.gltf",
+      "size": 3927,
+      "sha256": "0aafbfd9713131f7e477739a98e643f16a61248aa06ed7212db34516c7309d12"
+    },
+    {
+      "path": "testdata/TwoSidedPlane/glTF/TwoSidedPlane_BaseColor.png",
+      "size": 82997,
+      "sha256": "dc04f61099e34bf6f3819bc1b3ab909ea40436b272a203f7b0b9996ae324ccc3"
+    },
+    {
+      "path": "testdata/TwoSidedPlane/glTF/TwoSidedPlane_MetallicRoughness.png",
+      "size": 21654,
+      "sha256": "e5defbdc05832e3271488c23678de9d50fae007090faa06cb2ac87003ddbbc5c"
+    },
+    {
+      "path": "testdata/TwoSidedPlane/glTF/TwoSidedPlane_Normal.png",
+      "size": 51450,
+      "sha256": "ce8c72ccd6d3e1c22f54b3c13696a288e3c08777b95cb33f518e2dfcfe6e45fa"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/one_material_all_fallback/BoxTextured0.bin",
+      "size": 840,
+      "sha256": "2e8c0483fa6665c686ec345f89dcbb2a694a587442584d09f8a83a59633327bc"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/one_material_all_fallback/CesiumLogoFlat.png",
+      "size": 23516,
+      "sha256": "c3ca97c2c34aaf646aa7872b6bef24a4ba096f402cca9fd4dc780c122e3c3780"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/one_material_all_fallback/one_material_all_fallback.gltf",
+      "size": 3917,
+      "sha256": "6f59f0c975a35925a459586268e41332045bab662bc8dd61b018c7febe64a24a"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_all_fallback/Texture0_BaseColor.png",
+      "size": 959,
+      "sha256": "d3b0b1c0d2b92a55dadc2b905e50da55664daac9967fc0f1fa83bfbb5f418f1d"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_all_fallback/semicube.bin",
+      "size": 2412,
+      "sha256": "3b234d6da3451ccddb7a3534cc000017abe40ca323f758076d58010b4e5d2266"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_all_fallback/sphere_text.png",
+      "size": 8621,
+      "sha256": "6d0ff628ef546ee98faa2a80e69f67575e007a933361e23209ae47ea3b6963fc"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_all_fallback/three_materials_all_fallback.gltf",
+      "size": 7474,
+      "sha256": "234d500f7702384ce18a8c50e78817328b802da9ade30ab9528ded46a007a480"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_one_fallback/Texture0_BaseColor.png",
+      "size": 959,
+      "sha256": "d3b0b1c0d2b92a55dadc2b905e50da55664daac9967fc0f1fa83bfbb5f418f1d"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_one_fallback/semicube.bin",
+      "size": 2412,
+      "sha256": "3b234d6da3451ccddb7a3534cc000017abe40ca323f758076d58010b4e5d2266"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_one_fallback/sphere_text.png",
+      "size": 8621,
+      "sha256": "6d0ff628ef546ee98faa2a80e69f67575e007a933361e23209ae47ea3b6963fc"
+    },
+    {
+      "path": "testdata/UnlitWithFallback/three_materials_one_fallback/three_materials_one_fallback.gltf",
+      "size": 7124,
+      "sha256": "8277a28077492b996d385c34c09af1dba4acef46ccd997e17b018add50901ed1"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/MultiUVTest.bin",
+      "size": 1380,
+      "sha256": "952adeb8026481be255ccfb4fa8c410b7f847c0fcfc71fac5ca6bb1905ca69fc"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/MultiUVTest.gltf",
+      "size": 5773,
+      "sha256": "29b45b4ab812f019a3cc59f6f626e3cd84aa183cc3f7785dc7ab9a050114852b"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/NoTextures.gltf",
+      "size": 5521,
+      "sha256": "9fc4610fef72825e7ccedbf11c74f98fdf0cad59608493b855a692c1eb042650"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/TexCoord0InvalidTexCoord1Valid.gltf",
+      "size": 5630,
+      "sha256": "fa79e05d201fbee83f703d0088a484b4de8e55d239e2e4d28f9564e7cbbed216"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/TexCoord0ValidTexCoord1Invalid.gltf",
+      "size": 5664,
+      "sha256": "e3aba0210905805c650b7b9173cac72603cfc1d2de84ed28574d56050613c83a"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/TexCoord2.gltf",
+      "size": 6025,
+      "sha256": "efe1e7b0e94a5f8c4740121e0637d669a2025c76fbf0a1fd41f5d42acc16b41a"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/uv0.png",
+      "size": 32939,
+      "sha256": "c6a1c9390a73f59b4cd67d24c1a02f21020b4d033ffe311e29b9c29579e63c7c"
+    },
+    {
+      "path": "testdata/UnusedTexCoords/uv1.png",
+      "size": 56185,
+      "sha256": "be9bbbfecd86e6ea366dbfc0430e10b6ab1e8e5ad46b95a6c28d25f9f8b1740e"
+    },
+    {
+      "path": "testdata/VertexColorTest/glTF/VertexColorChecks.png",
+      "size": 8658,
+      "sha256": "51911f1787fa12bf373828804df0cf8f4279a8c1b5e0f6046f5f4b425ad5337a"
+    },
+    {
+      "path": "testdata/VertexColorTest/glTF/VertexColorTest.bin",
+      "size": 4332,
+      "sha256": "6db785f1fb513441354b543619bc6fc72798b6f4295034a45a41480662f625a9"
+    },
+    {
+      "path": "testdata/VertexColorTest/glTF/VertexColorTest.gltf",
+      "size": 8660,
+      "sha256": "cfa41dcbf220eee5cde1a83e5cedf6e5e962f8947e80f7d95ada589a829f78c4"
+    },
+    {
+      "path": "testdata/VertexColorTest/glTF/VertexColorTestLabels.png",
+      "size": 9674,
+      "sha256": "f2446c642ff49c1a1377ca6a955dbe3e0f4d1bb01035739e7f122e8a9ff74852"
+    },
+    {
+      "path": "testdata/ZeroLengthBufferView/ZeroLengthBufferView.bin",
+      "size": 60,
+      "sha256": "13f0b5c629daf64cfca5cc6159eb811156e847390a2188e514b1b7d7a23a6e3a"
+    },
+    {
+      "path": "testdata/ZeroLengthBufferView/ZeroLengthBufferView.gltf",
+      "size": 2025,
+      "sha256": "cda22981101bc03703fae9496c45341834b307ca502a1e3200b6b876c819d9a2"
+    },
+    {
+      "path": "testdata/bun_zipper.ply",
+      "size": 3033195,
+      "sha256": "b1acc63bece78444aa2e15bdcc72371a201279b98c6f5d4b74c993d02f0566fe"
+    },
+    {
+      "path": "testdata/bunny_gltf.drc",
+      "size": 120867,
+      "sha256": "c1bf564f279849f311c4b4205dd16d729557c208fd9502ab124b784d146add80"
+    },
+    {
+      "path": "testdata/bunny_norm.obj",
+      "size": 4930097,
+      "sha256": "f25a319da30d27ffa51b4c990fb828235f79c455c3589ea86799427728725d0d"
+    },
+    {
+      "path": "testdata/car.drc",
+      "size": 69892,
+      "sha256": "8c712644d842606223329ae3c8ce69d9d4ec9338a8e179b08486507bfa0f4101"
+    },
+    {
+      "path": "testdata/cube_att.drc",
+      "size": 301,
+      "sha256": "327d95888f62a45f9579a9020701afc29d0d6c74e69406ed8b5154ba4a307f70"
+    },
+    {
+      "path": "testdata/cube_att.obj",
+      "size": 567,
+      "sha256": "72194f6d1e948c898dfa9056d473af012a3705c15015ac8282e33405aab9a738"
+    },
+    {
+      "path": "testdata/cube_att.obj.edgebreaker.cl10.2.2.drc",
+      "size": 224,
+      "sha256": "6509b7600bfe3bb395881ac536a787f32d079eca652c7ac05e61938c86641088"
+    },
+    {
+      "path": "testdata/cube_att.obj.edgebreaker.cl4.2.2.drc",
+      "size": 199,
+      "sha256": "f90c73777a7d0b2d74c4128364428014527f2fce54998d220be360a466ff7caa"
+    },
+    {
+      "path": "testdata/cube_att.obj.sequential.cl3.2.2.drc",
+      "size": 220,
+      "sha256": "a97cf55c8d41e3401564d47ffc636dbeb37d6859c59b16e55e71e6111657a433"
+    },
+    {
+      "path": "testdata/cube_att.ply",
+      "size": 853,
+      "sha256": "b80adba5aab46e13d3d43e8b52783dfe99ad8ad2e0f86986da1fc44e868f4396"
+    },
+    {
+      "path": "testdata/cube_att_partial.obj",
+      "size": 582,
+      "sha256": "5b6431215145de84542a65f16b7d6d07b0db9cfae94f66776c1b9d23078649cd"
+    },
+    {
+      "path": "testdata/cube_att_sub_o.obj",
+      "size": 588,
+      "sha256": "deb0ab61df7d59ebbe16c2a2bd1f612e32cb02353ff54a1b18ac6c5e993dbc10"
+    },
+    {
+      "path": "testdata/cube_att_sub_o_2.drc",
+      "size": 277,
+      "sha256": "756a4973691d4b4debfd1b2c2d6f702b96a252de07e8308261305541f1a3ea76"
+    },
+    {
+      "path": "testdata/cube_att_sub_o_2.obj",
+      "size": 589,
+      "sha256": "a33966dbd6fdf017b56a74cd1736eda63ef332d4eedff4b933a60051ce652c6f"
+    },
+    {
+      "path": "testdata/cube_att_sub_o_no_metadata.drc",
+      "size": 227,
+      "sha256": "965441b245fcbe8c777635e8d0ebb142381cee50815b3b201d393ad5fa26e8a8"
+    },
+    {
+      "path": "testdata/cube_pc.drc",
+      "size": 224,
+      "sha256": "9c9f4810bf12d3bbc35f72d8d351b2d2b1393bcc5bf102423fe85cb14d1c95cb"
+    },
+    {
+      "path": "testdata/cube_quads.obj",
+      "size": 465,
+      "sha256": "0f694b987dddffd6c3d0bbd76765f220aee65cb0a00f3cae063306460cc80a88"
+    },
+    {
+      "path": "testdata/cube_quads.ply",
+      "size": 267,
+      "sha256": "f984d7f586ee248547dc4aa35c03c82e77c1f3fb3d341dda446bf77c70f82769"
+    },
+    {
+      "path": "testdata/cube_subd.obj",
+      "size": 90411,
+      "sha256": "e1926f726851af429d7edbfd8f6042bcd1e1d62031ed2a6d7807f56c22212b8e"
+    },
+    {
+      "path": "testdata/deg_faces.obj",
+      "size": 255,
+      "sha256": "a0412fa275326381b393d4a1cbe23a56ac64f4b72237ea435c982dd48745a1d3"
+    },
+    {
+      "path": "testdata/degenerate_mesh.obj",
+      "size": 32,
+      "sha256": "d001df9b20d5577da21d65b6c02387054741e78478613ee8e5c9dd3fdc677e0b"
+    },
+    {
+      "path": "testdata/delim_test.ply",
+      "size": 1661,
+      "sha256": "242802e09ec36f0028b34daf92dc316f35faeb78a6fa53eb534037805fae7c46"
+    },
+    {
+      "path": "testdata/empty_name.obj",
+      "size": 198,
+      "sha256": "af48642132ec487c238bda0b5f500fd93d798753e561680f3be3fd62a986b2f4"
+    },
+    {
+      "path": "testdata/eof_test.obj",
+      "size": 58,
+      "sha256": "edae16711a84bb1c3323ba803c7f6118a3462e74560f26df71974610e40a90a7"
+    },
+    {
+      "path": "testdata/extra_vertex.obj",
+      "size": 828,
+      "sha256": "9b0c6314d6dfde9fb68cc6b1849ef28f7dca862a2e6345de9f6e50e608ef8b16"
+    },
+    {
+      "path": "testdata/float_inf_point_cloud.ply",
+      "size": 286,
+      "sha256": "f85e732870127a29182958b96007ec8e1a3a2bc040199f1546fe98b85b196fea"
+    },
+    {
+      "path": "testdata/float_two_att_point_cloud.ply",
+      "size": 208,
+      "sha256": "5e81974e1492ee49f1247492dad13a75ca7870fafb7ea62c10bc12431eb8a779"
+    },
+    {
+      "path": "testdata/glTF/KhrTextureTransformWithFallback/KhrTextureTransformWithFallback.gltf",
+      "size": 6058,
+      "sha256": "6242e236698736e867a7287a91ad9db226b683a642141fa4c15472a5cffbce74"
+    },
+    {
+      "path": "testdata/glTF/KhrTextureTransformWithFallback/MultiUVTest.bin",
+      "size": 1380,
+      "sha256": "952adeb8026481be255ccfb4fa8c410b7f847c0fcfc71fac5ca6bb1905ca69fc"
+    },
+    {
+      "path": "testdata/glTF/KhrTextureTransformWithFallback/uv0.png",
+      "size": 32939,
+      "sha256": "c6a1c9390a73f59b4cd67d24c1a02f21020b4d033ffe311e29b9c29579e63c7c"
+    },
+    {
+      "path": "testdata/glTF/KhrTextureTransformWithFallback/uv1.png",
+      "size": 56185,
+      "sha256": "be9bbbfecd86e6ea366dbfc0430e10b6ab1e8e5ad46b95a6c28d25f9f8b1740e"
+    },
+    {
+      "path": "testdata/glTF/TextureTransformTestWithRequired/Arrow.png",
+      "size": 867,
+      "sha256": "5df5b251fed0ac306cf859a30b59a4953d152483a4bed2b84e5bba1c667a1e64"
+    },
+    {
+      "path": "testdata/glTF/TextureTransformTestWithRequired/Correct.png",
+      "size": 2457,
+      "sha256": "3a14b12635ebbcee3ea427fbdb4d20da73e4740ec7a51683d700a2d6b4b7861a"
+    },
+    {
+      "path": "testdata/glTF/TextureTransformTestWithRequired/Error.png",
+      "size": 2273,
+      "sha256": "8d1032ef535a5c379bf78f9f565d3180ee3fc2d1cfef6892dee6e567728b619c"
+    },
+    {
+      "path": "testdata/glTF/TextureTransformTestWithRequired/NotSupported.png",
+      "size": 3291,
+      "sha256": "1fbdeca7e5c105d677a39578e4bab82b89c8aa9f406ee681ede05635ea0f8c74"
+    },
+    {
+      "path": "testdata/glTF/TextureTransformTestWithRequired/TextureTransformTest.bin",
+      "size": 136,
+      "sha256": "d0cdd23f2fa0996a0db99d4932fb9912a51a34e27c8bf832d072dc856ee9a7af"
+    },
+    {
+      "path": "testdata/glTF/TextureTransformTestWithRequired/TextureTransformTestWithRequired.gltf",
+      "size": 9239,
+      "sha256": "625e9ac66ef1338ba5de1fdaa07725ee825c5d87a9d27c086ace9496c2f9ae11"
+    },
+    {
+      "path": "testdata/glTF/TextureTransformTestWithRequired/UV.png",
+      "size": 12345,
+      "sha256": "ac37ff52fe06a4c8c35ad4e1e7e8da039dfa8afc9b629d40a44ca8b8cfe9d03d"
+    },
+    {
+      "path": "testdata/inf_nan.obj",
+      "size": 133,
+      "sha256": "c94f6475885f5808a30e1cd4af17df3bb1e0cef2971e995cb1ef0f04265e4b4a"
+    },
+    {
+      "path": "testdata/int_point_cloud.ply",
+      "size": 271,
+      "sha256": "f752023dffd02d371ee95a07da01e8466eaf7feb1a509d8ea5c4808ac3624579"
+    },
+    {
+      "path": "testdata/mat_test.mtl",
+      "size": 1657,
+      "sha256": "4b2dc61eed5ba04b35d14cf8d787bdafe0898ae95ba396874687908ecb81eaa4"
+    },
+    {
+      "path": "testdata/mat_test.obj",
+      "size": 138393,
+      "sha256": "a298328bc6550bebcfcd5001537115b75b4a9e902893a4569f4911ee161d23a9"
+    },
+    {
+      "path": "testdata/multiple_isolated_triangles.obj",
+      "size": 311,
+      "sha256": "9eafa6af04a8b54ba545ff004798bd342dffffa2c8b5bf3c95414c426f88e993"
+    },
+    {
+      "path": "testdata/multiple_tetrahedrons.obj",
+      "size": 534,
+      "sha256": "c02ddf9ef4ba8ca1e06d1b9df34c12a7fda82075201815a757b1c74b8ee0872a"
+    },
+    {
+      "path": "testdata/non_manifold_wrap.obj",
+      "size": 212,
+      "sha256": "2f1fb1cf906165eff855a8aafaa5bbc57bfc2bb6c25df373674a326213548b1b"
+    },
+    {
+      "path": "testdata/octagon.obj",
+      "size": 156,
+      "sha256": "24f8bc2040f32203cc14ba24b87acb4b8b5f693d6da93713f6a0eb0c661b2cb3"
+    },
+    {
+      "path": "testdata/octagon_preserved.drc",
+      "size": 166,
+      "sha256": "76d947305618e28dfeb120c249a9b0e7f476e89b445f2ff05d3ad425e420e4bb"
+    },
+    {
+      "path": "testdata/octagon_preserved.obj",
+      "size": 250,
+      "sha256": "564a2ebe8d7edb8dcd787073d67a7c338b8478c5b170caa597330148ae884d66"
+    },
+    {
+      "path": "testdata/one_face_123.gltf",
+      "size": 1414,
+      "sha256": "47fd224c4e665b9dacbefa181f1028cbf50b9183d1fb622d2b247c851fbc4cb9"
+    },
+    {
+      "path": "testdata/one_face_123.obj",
+      "size": 138,
+      "sha256": "b579a6cfb0bd728fd17b9bc3b7fef825c9c3fea0b2be71d2f45ee7c68015e3f2"
+    },
+    {
+      "path": "testdata/one_face_123_buffer0.bin",
+      "size": 40,
+      "sha256": "4f5a9872dcc694fc32281e2b79af81ca93df4422046313ee8aac526a526a0e49"
+    },
+    {
+      "path": "testdata/one_face_123_mirror.gltf",
+      "size": 1443,
+      "sha256": "04a4af65fdffc1c4fa6f21cfbe22e43d6237fe595cd116b5ab1d697a77250cd4"
+    },
+    {
+      "path": "testdata/one_face_123_translated.gltf",
+      "size": 1649,
+      "sha256": "0b561542e3ee61c8121273d26a8835a2e2ee56dfdedd898fcc9175c1689e7168"
+    },
+    {
+      "path": "testdata/one_face_312.obj",
+      "size": 139,
+      "sha256": "159146d3cab70754c914188f20d0d271f73c4655aa9e7d66f382c61075e5439e"
+    },
+    {
+      "path": "testdata/one_face_321.obj",
+      "size": 139,
+      "sha256": "51ce53dbf99eeae9255a68655b40ec7ca0971dce541c86882c63bb6b57e4ce32"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/sphere.gltf",
+      "size": 5784,
+      "sha256": "964556aa31744c6eebb226225d1dcb5e68b00bf28ac84dcdd87b7991db993b12"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/sphere_buffer0.bin",
+      "size": 11760,
+      "sha256": "21bc7373ec29f94e00831180a74f3e5eeba6cdc8a44456025ff86f9afb88f8bf"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_BaseColor.png",
+      "size": 125026,
+      "sha256": "e945c0b2aa6e3987d8bb8af23aca58a3f75cce2992bb4803bec8cac6cde8474e"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_Clearcoat.png",
+      "size": 5077,
+      "sha256": "c0af343c4d9c1e10498acd5d36ab1ca8ed20fe66628af3a69ec42a645555d405"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_ClearcoatNormal.jpg",
+      "size": 14288,
+      "sha256": "071d53a7fb2cca965cb5d1266564808a44be85494ba8cc313115cd061648f0b7"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_ClearcoatRoughness.png",
+      "size": 465,
+      "sha256": "c9ed4c76e7c9e5a5780f61d172e878f62e2f16d9961132a56a8b9fb2431bf19c"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_Normal.png",
+      "size": 150880,
+      "sha256": "37b4404a4191c73fddfb378a2bcd496d7264a7435c0047a10ad00db45565192a"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_SheenColor.png",
+      "size": 116290,
+      "sha256": "05e2474238a6f5886a6f92025f3e235b1ae612d709a5064fda372b7bfc077c8f"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_SheenRoughness.png",
+      "size": 53971,
+      "sha256": "748de1178f8735dfc8432fe6a19f38e6a1eeec36858acf201b68abaac2e1f0f1"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_Specular.png",
+      "size": 242,
+      "sha256": "3232a9a310f6057359bd03a863ea33576406b26df0f951d614e7fee424cf0ae9"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_SpecularColor.png",
+      "size": 204,
+      "sha256": "b0b2c99b097f4a55ed587a58c32a254cc5ff76c0aa028825af0018c65ccdff85"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_Thickness.jpg",
+      "size": 18364,
+      "sha256": "3b7e3ec3c8549baa99c5c3ec159aaa9e8648a9fd450471eef766d410fc4750cd"
+    },
+    {
+      "path": "testdata/pbr_next/sphere/glTF/texture_Transmission.jpg",
+      "size": 21119,
+      "sha256": "62e785d0d21b14ff1004b0ad86d36d874540c19ac45d1aaacee7b7a2698d72a6"
+    },
+    {
+      "path": "testdata/pc_color.drc",
+      "size": 54766,
+      "sha256": "69154c00d5c81796cf919fe89bd7427bf9467d088f21c09bb3b78c7f7593a65a"
+    },
+    {
+      "path": "testdata/pc_kd_color.drc",
+      "size": 37353,
+      "sha256": "4510aea1076b43498907cb11210938dc984238adced93c6e91ca406081202bad"
+    },
+    {
+      "path": "testdata/point_cloud_no_qp.drc",
+      "size": 345,
+      "sha256": "047d271ed8f3f6f02723e9bd8d4901e021519564ef0d52fb9ecf491723aacc5d"
+    },
+    {
+      "path": "testdata/point_cloud_test_pos.obj",
+      "size": 328,
+      "sha256": "0c19e0684d783552b60cfb991abe1e60651e84a5890f26018d5920690e56a2b9"
+    },
+    {
+      "path": "testdata/point_cloud_test_pos.ply",
+      "size": 242,
+      "sha256": "2c49267875d6d0fd86fa30f9a1698020c1c78f1ac5821c9b2114b2d6db4c1522"
+    },
+    {
+      "path": "testdata/point_cloud_test_pos_norm.obj",
+      "size": 477,
+      "sha256": "306289ef9c38dd2794b72396c1939a3410ad64e2d620287c2dfda29fa66528b7"
+    },
+    {
+      "path": "testdata/point_cloud_test_pos_norm.ply",
+      "size": 344,
+      "sha256": "678fba079b2954282b0632b61582a3b115e76e8291fc5137b349a27000a6f6b3"
+    },
+    {
+      "path": "testdata/simple_skin.gltf",
+      "size": 4120,
+      "sha256": "09bd56f372f30045dfca592bf0efaa7d635ff076f17e2215eeadbfbb4a2b5d40"
+    },
+    {
+      "path": "testdata/sphere.gltf",
+      "size": 2855,
+      "sha256": "f8fe76c7ea95894743cf9677864bdd560e3e5ecbca25a83093156c6075946110"
+    },
+    {
+      "path": "testdata/sphere.obj",
+      "size": 14058,
+      "sha256": "64b0f48d512a9a95abe59eca12ccc1d81ff854a215e940780187fe4fc2529b74"
+    },
+    {
+      "path": "testdata/sphere_Texture0_Normal.png",
+      "size": 21452,
+      "sha256": "de8f420bd7b17cc11cdbcdcc283dc7de683211a21e9b6c7d37067e743cf5cdf4"
+    },
+    {
+      "path": "testdata/sphere_Texture1_BaseColor.png",
+      "size": 27647,
+      "sha256": "84cd038900d2f05d3eb1392ed3963e36cb983b4c903214ddd542f525667a77a9"
+    },
+    {
+      "path": "testdata/sphere_buffer0.bin",
+      "size": 11760,
+      "sha256": "21bc7373ec29f94e00831180a74f3e5eeba6cdc8a44456025ff86f9afb88f8bf"
+    },
+    {
+      "path": "testdata/sphere_lights.gltf",
+      "size": 4618,
+      "sha256": "d65bdc77c45876dea4266c1d464c7f061e1bb6232ba142d446cc3b4966523909"
+    },
+    {
+      "path": "testdata/sphere_no_tangents.gltf",
+      "size": 2852,
+      "sha256": "7db17d91c28d39ba26b8f497760541596ddab90055bed99ddb0d837e3b89bcb7"
+    },
+    {
+      "path": "testdata/sphere_two_tex_coords.gltf",
+      "size": 2884,
+      "sha256": "b48621c473f2cb2c3baacfc0b0a51468be51e7c52a15800ed5ab72472c0de8a4"
+    },
+    {
+      "path": "testdata/test.png",
+      "size": 24217,
+      "sha256": "fa2e294e50860dff98f26902da0578ee739f4ea6460a4b01f6c1abe2535bf159"
+    },
+    {
+      "path": "testdata/test_extra_whitespace.ply",
+      "size": 375,
+      "sha256": "e61e0fad896b264da11e09e68e110679a01d3117580ef37ead325c5f295ee94e"
+    },
+    {
+      "path": "testdata/test_generic.ply",
+      "size": 5015,
+      "sha256": "48be6564ec71783a37397db35ba213ab85d0ef7889a6939c9146b5bd721e912d"
+    },
+    {
+      "path": "testdata/test_generic_golden.bin",
+      "size": 2952,
+      "sha256": "0d13ecde11b70033c5b4df93e02f5f6d3cc31c0faea8806691520ef85557eb0f"
+    },
+    {
+      "path": "testdata/test_lines.obj",
+      "size": 31953,
+      "sha256": "e2e34e877a68b9731b67bac1fff30dab58f7f30e67387b38e5d9ea45bb494e72"
+    },
+    {
+      "path": "testdata/test_more_datatypes.ply",
+      "size": 345,
+      "sha256": "863149bdfd1973404f1a8ab75154fe992ecb34ef81f5567f95d3c554dd080c89"
+    },
+    {
+      "path": "testdata/test_nm.obj",
+      "size": 11285,
+      "sha256": "942a01aff8b56c72577885f4bed1a3034698b8c7fa8efc70125237d9d2003b3c"
+    },
+    {
+      "path": "testdata/test_nm.obj.edgebreaker.0.10.0.drc",
+      "size": 2529,
+      "sha256": "fa5056e8ed522f1909c14131a7d752d6663bed3d9c7e7e1c558d228647d134ad"
+    },
+    {
+      "path": "testdata/test_nm.obj.edgebreaker.0.9.1.drc",
+      "size": 2546,
+      "sha256": "32886e31ea3b0c759a4ba1b4f401ad23707dcdf7f419d6aebcff9d49b3f90b90"
+    },
+    {
+      "path": "testdata/test_nm.obj.edgebreaker.1.0.0.drc",
+      "size": 2499,
+      "sha256": "43a7a9eba2d1ef2471ceb30e65c707f93f6dd7754f8d434b6cd32f0eda8c45b1"
+    },
+    {
+      "path": "testdata/test_nm.obj.edgebreaker.1.1.0.drc",
+      "size": 2035,
+      "sha256": "51f894188e5aac3a640dad7f6f9dfaf7830fb9e5a427daafe8363054780d472d"
+    },
+    {
+      "path": "testdata/test_nm.obj.edgebreaker.cl10.2.2.drc",
+      "size": 1124,
+      "sha256": "e0e0fb2a80227a93748fffdde4b8dc1c99455304b7fe0f16ef323b28810aa172"
+    },
+    {
+      "path": "testdata/test_nm.obj.edgebreaker.cl4.2.2.drc",
+      "size": 1143,
+      "sha256": "1ba8fc4eeacc513d89b430e39996cb5b863f8c04ed7cc7ecc10be898b482ae05"
+    },
+    {
+      "path": "testdata/test_nm.obj.sequential.0.10.0.drc",
+      "size": 2877,
+      "sha256": "46793cb043dced6a8d2f37443caf8a3f09fc0937eb253156b66c5f2d552a20e7"
+    },
+    {
+      "path": "testdata/test_nm.obj.sequential.0.9.1.drc",
+      "size": 2877,
+      "sha256": "ccb65381f31520396df4a14dc9a831fb1c07666ee73bd6dc6c69fbcded436576"
+    },
+    {
+      "path": "testdata/test_nm.obj.sequential.1.0.0.drc",
+      "size": 2872,
+      "sha256": "edca54a0796f579900566da4b03ec57f0dd9f68f323103e77d041877e2ad9538"
+    },
+    {
+      "path": "testdata/test_nm.obj.sequential.1.1.0.drc",
+      "size": 2464,
+      "sha256": "987b1e6a9bc2f01562344aa57bf5ca90c7a4d4b3489b20fa9c894df4678c36b5"
+    },
+    {
+      "path": "testdata/test_nm.obj.sequential.cl3.2.2.drc",
+      "size": 1613,
+      "sha256": "1919b8e5710b7a496693de040db01a0dc0e6bcffcd14548eaeeb88ecde2b3e75"
+    },
+    {
+      "path": "testdata/test_nm_quant.0.9.0.drc",
+      "size": 950,
+      "sha256": "6297fc409236ce3654f93ba6dc27dc2ebbd09f439161309e513b6bdc3f3bbfc3"
+    },
+    {
+      "path": "testdata/test_nm_trans.obj",
+      "size": 11235,
+      "sha256": "8ee7b1e49aea890e5ea27e3b55ad4a4aab7d8ccb243df70460714220cf1baa88"
+    },
+    {
+      "path": "testdata/test_pos_color.gltf",
+      "size": 1830,
+      "sha256": "9cb275818506027525fd0eb6a95a69b19ac6e88d00828e4bff282f2bbdb4b4be"
+    },
+    {
+      "path": "testdata/test_pos_color.ply",
+      "size": 5015,
+      "sha256": "48be6564ec71783a37397db35ba213ab85d0ef7889a6939c9146b5bd721e912d"
+    },
+    {
+      "path": "testdata/test_pos_color_ascii.ply",
+      "size": 7416,
+      "sha256": "810f36097e64c3b21893a6901ca9413b2b5ac59a8ba69bf815232d6b79582486"
+    },
+    {
+      "path": "testdata/test_pos_color_buffer0.bin",
+      "size": 2496,
+      "sha256": "533d86fb4cae043215deac1d91ddc5f1b7e2d16e3a77bc7c71e7ecb0693ca35c"
+    },
+    {
+      "path": "testdata/test_sphere.obj",
+      "size": 14058,
+      "sha256": "64b0f48d512a9a95abe59eca12ccc1d81ff854a215e940780187fe4fc2529b74"
+    },
+    {
+      "path": "testdata/test_wrong_attribute_mapping.obj",
+      "size": 197,
+      "sha256": "2409ecd3c4603a8589cbba26b727fd77b760f0124647231be48fc80c0fc9e072"
+    },
+    {
+      "path": "testdata/this_is_png.jpg",
+      "size": 24217,
+      "sha256": "fa2e294e50860dff98f26902da0578ee739f4ea6460a4b01f6c1abe2535bf159"
+    },
+    {
+      "path": "testdata/three_faces_123.obj",
+      "size": 250,
+      "sha256": "9f80a65972ee33a480f0b2d7813d4a6d889abcb6cadbbd3f263635e433e70a35"
+    },
+    {
+      "path": "testdata/three_faces_312.obj",
+      "size": 250,
+      "sha256": "66ddcc2affde612636c0852612fcd2c56935f0a8d16a0cac7bc0771d61ebeb2c"
+    },
+    {
+      "path": "testdata/three_meshes_two_materials_one_no_material/Texture0_BaseColor.png",
+      "size": 959,
+      "sha256": "d3b0b1c0d2b92a55dadc2b905e50da55664daac9967fc0f1fa83bfbb5f418f1d"
+    },
+    {
+      "path": "testdata/three_meshes_two_materials_one_no_material/semicube.bin",
+      "size": 2412,
+      "sha256": "3b234d6da3451ccddb7a3534cc000017abe40ca323f758076d58010b4e5d2266"
+    },
+    {
+      "path": "testdata/three_meshes_two_materials_one_no_material/sphere_text.png",
+      "size": 8621,
+      "sha256": "6d0ff628ef546ee98faa2a80e69f67575e007a933361e23209ae47ea3b6963fc"
+    },
+    {
+      "path": "testdata/three_meshes_two_materials_one_no_material/three_meshes_two_materials_one_no_material.gltf",
+      "size": 7136,
+      "sha256": "be3bb201f0e5df288360d62b8010f76d892e0f990161ddb2c08ebc4c3b815947"
+    },
+    {
+      "path": "testdata/trailing_zero.jpg",
+      "size": 5824,
+      "sha256": "cc1c6f2693b852b9b155d39936d1a7d112b7e78a35c5309dce6c0f182f167a9f"
+    },
+    {
+      "path": "testdata/triangle.obj",
+      "size": 81,
+      "sha256": "4c553589f733bff7902784d9f3c3e755f2ac77cb0359d069f594e67e76046ba1"
+    },
+    {
+      "path": "testdata/triangle_with_degenerate_tex_coords.obj",
+      "size": 102,
+      "sha256": "3bb2422099da724182537e3b343482df9f7bd1b8084fd5b2f38651144c58b37f"
+    },
+    {
+      "path": "testdata/two_faces_123.obj",
+      "size": 240,
+      "sha256": "6f626de288d5daccb5ac3e2de3d17602ca03159353e0a3b1dfddf9d56326946f"
+    },
+    {
+      "path": "testdata/two_faces_312.obj",
+      "size": 241,
+      "sha256": "86b31a79477b8ef31d9bfe64c395ca3f0e4bc225eac7b3683f3623a41a32cf0d"
+    },
+    {
+      "path": "testdata/two_objects_inverse_materials.bin",
+      "size": 9000,
+      "sha256": "dc51b201b464ecfd29f0f6a6ebd53b6e38f5611f8fbbbe375c228c2f636d16ea"
+    },
+    {
+      "path": "testdata/two_objects_inverse_materials.gltf",
+      "size": 5009,
+      "sha256": "66375aa1f639611d9a70b20d0ae1afd26cbeef87826dcc24e4e8ffca6e156aa6"
+    },
+    {
+      "path": "unity/BUILDING.md",
+      "size": 2371,
+      "sha256": "ff14dafd62b10b466fd529ccbdbfbb41e1f0e7f5660ab1adeeac0d9ed34f019f"
+    },
+    {
+      "path": "unity/DracoDecodingObject.cs",
+      "size": 1472,
+      "sha256": "15891f1f43177b221e95cdff156a633fefbaf62ce55e08b5b699fd5d79ac9dbe"
+    },
+    {
+      "path": "unity/DracoMeshLoader.cs",
+      "size": 13396,
+      "sha256": "573ef3b2e0942aba47aa448319e033f9d171facd807ca01c0f2417330ff2c739"
+    },
+    {
+      "path": "unity/Editor/DracoFileImporter.cs",
+      "size": 2967,
+      "sha256": "8438c5c8b259b8335d25643b2b424a05982798ec54e55cf5540bb383a1eeebb5"
+    },
+    {
+      "path": "unity/Plugin/libdracodec_unity_android.tar.bz",
+      "size": 6554963,
+      "sha256": "b094d7a3cd9df956d2fa2c4b4e46c0dab203f50b183d6a44955b24e9744a770e"
+    },
+    {
+      "path": "unity/Plugin/libdracodec_unity_ios.tar.bz",
+      "size": 525641,
+      "sha256": "b9234cc5b7ce6e941168314ee297f5dc09fdd21986298559c8ec51143a2d636a"
+    },
+    {
+      "path": "unity/Plugin/libdracodec_unity_macos.tar.bz",
+      "size": 396111,
+      "sha256": "428d4e835bd1813d4ca3780368dade12bf5be7d0831cc8173303db077fb732fd"
+    },
+    {
+      "path": "unity/Plugin/libdracodec_unity_windows.tar.bz",
+      "size": 113951,
+      "sha256": "57f3f60e30fdfabe4477b1a3d016a17d26617ef8e26b6bf30a46b84c8f56cff3"
+    },
+    {
+      "path": "unity/README.md",
+      "size": 4126,
+      "sha256": "5ccbb2c048277e00c534107bcc108bc1a3f11df76e1a732ac360094fb3b38c55"
+    },
+    {
+      "path": "unity/Resources/bunny.drc.bytes",
+      "size": 96018,
+      "sha256": "0cfb7a000e75024d6a02d81549d0609eb8cc45d5ef9a85152f6cdda56b4a48cc"
+    }
+  ]
+}

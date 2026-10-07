@@ -63,6 +63,18 @@ set(SRC
   intern/GHOST_utildefines_variadic.hh
 )
 
+# The top-level OHOS platform config owns WITH_GHOST_OHOS and toolchain choices.
+if(WITH_GHOST_OHOS)
+  add_definitions(-DWITH_GHOST_OHOS)
+  list(APPEND SRC
+    GHOST_OHOSHost.h GHOST_OHOSNative.h GHOST_OHOSEngine.h
+    intern/GHOST_OHOSHost.cc intern/GHOST_OHOSNative.cc intern/GHOST_OHOSEngine.cc
+    intern/GHOST_SystemPathsOHOS.hh intern/GHOST_SystemPathsOHOS.cc
+    intern/GHOST_SystemOHOS.hh intern/GHOST_SystemOHOS.cc
+    intern/GHOST_WindowOHOS.hh intern/GHOST_WindowOHOS.cc
+  )
+endif()
+
 set(LIB
   PRIVATE bf::blenlib
   PRIVATE bf::dna
@@ -70,6 +82,10 @@ set(LIB
   PRIVATE bf::imbuf
   PRIVATE bf::intern::clog
 )
+
+if(WITH_GHOST_OHOS)
+  list(APPEND LIB native_window pasteboard udmf ohinput)
+endif()
 
 if(WITH_INPUT_IME)
   add_definitions(-DWITH_INPUT_IME)
@@ -135,6 +151,8 @@ list(APPEND SRC
 
 if(WITH_HEADLESS)
   add_definitions(-DWITH_HEADLESS)
+elseif(WITH_GHOST_OHOS)
+  # Platform sources are shared above with the private-path backend.
 elseif(WITH_GHOST_SDL)
   list(APPEND SRC
     intern/GHOST_ContextSDL.cc
@@ -490,7 +508,9 @@ if(APPLE)
   endif()
 endif()
 
-if(APPLE)
+if(WITH_GHOST_OHOS)
+  # Explicit host private paths; never select the Unix HOME/executable backend.
+elseif(APPLE)
   list(APPEND SRC
     intern/GHOST_SystemPathsCocoa.hh
     intern/GHOST_SystemPathsCocoa.mm

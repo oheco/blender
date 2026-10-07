@@ -1,0 +1,1452 @@
+{
+  "HAP_PyConfig_startup": "NOTRUN",
+  "closure": {
+    "native_source_original_archives": 24,
+    "selected_pure_original_archives": 8,
+    "whole_perl_build_tool_binary_archives": 1
+  },
+  "existing_inputs_modified": false,
+  "formal_status": "UNAPPLIED independent source proposal",
+  "fresh_native_full93": "NOTRUN",
+  "installed_HAP": "NOTRUN",
+  "kind": "python-native-complete-offline-source-replay-inputs",
+  "namespace": "build_files/ohos/deps_python_native_sources",
+  "native_full93": "NOTRUN",
+  "new_combined_native93_pure8": "NOTRUN",
+  "numpy_module_lock_sha256": "799b6a7b580b5b4009b61a8502cc139c3f6d6485ed188768ea3164b486f15501",
+  "revision_source_checks": "actual source/IO/loader/mock only; no target/compiler/configure/signers/nativehelpers",
+  "schema": 1,
+  "sealed_files": [
+    {
+      "path": "build_files/ohos/deps_python_native_sources/README.md",
+      "sha256": "a08e4d7300d701f5433fc1f43e5b8910690a5ae9f44bb8269fd9f81125e3d10a",
+      "size": 12247
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/audit.py",
+      "sha256": "f0b524a6a2a7cb941d72e6c6871c12f9f5ec88ec38724f1f1f156f261505156f",
+      "size": 4150
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/builder.py",
+      "sha256": "61f0e10f0fe1714d3ce71e4a470a2708bc38f7f57a4963682bd107fc783e5ac6",
+      "size": 12120
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/configure_contract.py",
+      "sha256": "2326ce7ae5da1219e9e0da6382d329866e666a2db4e922f6bfa5f8b21313859a",
+      "size": 5745
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/filesystem.py",
+      "sha256": "1d888fc77a016db510dfcbd1ff8c8852b29ba01446cc3e674ce37dc91bd51701",
+      "size": 1524
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/flat_entry.py",
+      "sha256": "28d579be3253b01ea981e2fca5e5b5831d2e7e2bcb7436006dce8f7381b2b1d7",
+      "size": 1783
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/build-1.3.0.patched.json",
+      "sha256": "23ec03b78de3fcf173418ed9bde1831bf8b9aeeb27936ea61671a2947acd14a0",
+      "size": 12814
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/build-1.3.0.pristine.json",
+      "sha256": "23ec03b78de3fcf173418ed9bde1831bf8b9aeeb27936ea61671a2947acd14a0",
+      "size": 12814
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/bzip2-1.0.8.patched.json",
+      "sha256": "76228b44a370b79d1301197fc14962b58b51870b74d49a4b03a191f65d9c87ee",
+      "size": 8919
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/bzip2-1.0.8.pristine.json",
+      "sha256": "76228b44a370b79d1301197fc14962b58b51870b74d49a4b03a191f65d9c87ee",
+      "size": 8919
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/cpython-3.13.13.patched.json",
+      "sha256": "66cfcfdb18dd5608a2a5663885b3b177311ca0bba61ad105de24524ee6212ab1",
+      "size": 871132
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/cpython-3.13.13.pristine.json",
+      "sha256": "7fde2058846ee794bd7a92337c43e0d2b376400ae02f08e6c2471fc024078ad9",
+      "size": 870963
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/cython-3.0.11.patched.json",
+      "sha256": "75d3da51a66f727b53bcea850742d4cb1367d88a4cc5217217a38de122add795",
+      "size": 439717
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/cython-3.0.11.pristine.json",
+      "sha256": "75d3da51a66f727b53bcea850742d4cb1367d88a4cc5217217a38de122add795",
+      "size": 439717
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/libffi-3.5.2.patched.json",
+      "sha256": "f19f955f9312f5559e35bdc108a6a62e6de743078d7434785e42546db7f24ab5",
+      "size": 80906
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/libffi-3.5.2.pristine.json",
+      "sha256": "66697b7b1b418e81c24a101eeb307564e15c9c61b4a33d5948ffe2ba09bc4b36",
+      "size": 80906
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/make-source-4.4.1.patched.json",
+      "sha256": "86c36cbc61daa3bbaf3f6755659c33a502ad440c5dd6e20a2b777e0353c1fc49",
+      "size": 66583
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/make-source-4.4.1.pristine.json",
+      "sha256": "b30e800273d8791d078e50ea9e4544343eb89503baa71a0f44b6f99ba153ca3f",
+      "size": 66583
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/meson-1.9.0.patched.json",
+      "sha256": "a29c5b1ad4e2899a4481857befab2a2b2313b6141c0ba97bac2f7c116b813f8d",
+      "size": 935078
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/meson-1.9.0.pristine.json",
+      "sha256": "a29c5b1ad4e2899a4481857befab2a2b2313b6141c0ba97bac2f7c116b813f8d",
+      "size": 935078
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/meson-python-0.18.0.patched.json",
+      "sha256": "9c3723c959f1aa1da0d48d68354cf2d1b13944f5deeb2aa4db05dacbad900f5f",
+      "size": 44875
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/meson-python-0.18.0.pristine.json",
+      "sha256": "9c3723c959f1aa1da0d48d68354cf2d1b13944f5deeb2aa4db05dacbad900f5f",
+      "size": 44875
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/ninja-1.13.2.patched.json",
+      "sha256": "ff7378ffedcf123a374690d7f7968a6380151a78d7e082b633d54aeea8f6ba3a",
+      "size": 31207
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/ninja-1.13.2.pristine.json",
+      "sha256": "ff7378ffedcf123a374690d7f7968a6380151a78d7e082b633d54aeea8f6ba3a",
+      "size": 31207
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/numpy-2.3.4.patched.json",
+      "sha256": "0a962f0eb71b67da77d6e45f922da856024eb6459c4f7b337437c3f9411169e4",
+      "size": 1688565
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/numpy-2.3.4.pristine.json",
+      "sha256": "daf33667e2f6410b33d4c7723bb0c068b22f8f2ce674a043d3108f97cfc3e453",
+      "size": 1688565
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/ohos-perl-bb0517e7437015b24025438084aed0661fb80553.patched.json",
+      "sha256": "255ff3632ea17ba056896680fde6c880a1b446ab08ec7c4735b2a4169ddf5990",
+      "size": 822
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/ohos-perl-bb0517e7437015b24025438084aed0661fb80553.pristine.json",
+      "sha256": "255ff3632ea17ba056896680fde6c880a1b446ab08ec7c4735b2a4169ddf5990",
+      "size": 822
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/openssl-3.5.8.patched.json",
+      "sha256": "045c7e07f26b10a9b352e41bfd6b0cc594e7c85937a8ae97830ee363d1de70e8",
+      "size": 1039516
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/openssl-3.5.8.pristine.json",
+      "sha256": "18b8b70689741b1a335b938bfc1e55b238284e225900eb19e3d57e6aa7db2217",
+      "size": 1039341
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/packaging-25.0.patched.json",
+      "sha256": "b82a1b06eea22a8c45ce7af00a294986ed044817c1f193bdd8ac66b9b21d597f",
+      "size": 13724
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/packaging-25.0.pristine.json",
+      "sha256": "b82a1b06eea22a8c45ce7af00a294986ed044817c1f193bdd8ac66b9b21d597f",
+      "size": 13724
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/perl-5.44.0.patched.json",
+      "sha256": "45bc93bc6bdfdcae52fc5969f4f5d227bd1983fc3f8d04c7bc8f4740024e2d0f",
+      "size": 1226394
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/perl-5.44.0.pristine.json",
+      "sha256": "45bc93bc6bdfdcae52fc5969f4f5d227bd1983fc3f8d04c7bc8f4740024e2d0f",
+      "size": 1226394
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/perl-native-build-tool-5.44.0.original.json",
+      "sha256": "ed1a38528598aed25e7e3c4548d0d5d55ceb40054132c9b6d87a5a32b53da7f1",
+      "size": 347886
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/perl5-v5.44.0.patched.json",
+      "sha256": "72b505face7bdf281f50d56b17c4d537608b65976cd9044fbecc0b8dca4ca4cc",
+      "size": 1241840
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/perl5-v5.44.0.pristine.json",
+      "sha256": "b33704b07dec4f203a25f511d5240dde1569fec4ab0b75fde4224b0912639ec1",
+      "size": 1241840
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/pyproject-hooks-1.2.0.patched.json",
+      "sha256": "d4c8c4f4dc3a50f98b0868d2d419717740a6a5a290c741b2afceb87899cc57ec",
+      "size": 10642
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/pyproject-hooks-1.2.0.pristine.json",
+      "sha256": "d4c8c4f4dc3a50f98b0868d2d419717740a6a5a290c741b2afceb87899cc57ec",
+      "size": 10642
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/pyproject-metadata-0.9.1.patched.json",
+      "sha256": "2c215cc8437a753acd29dc079a91d9bc473aa91449d348f6c72917310f13448c",
+      "size": 6832
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/pyproject-metadata-0.9.1.pristine.json",
+      "sha256": "2c215cc8437a753acd29dc079a91d9bc473aa91449d348f6c72917310f13448c",
+      "size": 6832
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/setuptools-80.9.0.patched.json",
+      "sha256": "613861390e31b0b1fdcc141d047e6e20d5ed077efa21a8da1fbe610015254a00",
+      "size": 110207
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/setuptools-80.9.0.pristine.json",
+      "sha256": "613861390e31b0b1fdcc141d047e6e20d5ed077efa21a8da1fbe610015254a00",
+      "size": 110207
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/setuptools-scm-9.2.2.patched.json",
+      "sha256": "a434328a0f46e922d625c43757b7329e72d51073bec5b5b9df54d89194ef37c3",
+      "size": 18361
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/setuptools-scm-9.2.2.pristine.json",
+      "sha256": "a434328a0f46e922d625c43757b7329e72d51073bec5b5b9df54d89194ef37c3",
+      "size": 18361
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/sqlite-3.51.2.patched.json",
+      "sha256": "9c41a5b2c234309c8f58884eb51c99ad98acacfd10860d72e61d672213f270c5",
+      "size": 8016
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/sqlite-3.51.2.pristine.json",
+      "sha256": "9c41a5b2c234309c8f58884eb51c99ad98acacfd10860d72e61d672213f270c5",
+      "size": 8016
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/tomli-w-1.2.0.patched.json",
+      "sha256": "7995fc264581cd07c7ea81d13413a867fc9a0ed46e10f0f3e947556a08417d85",
+      "size": 1146
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/tomli-w-1.2.0.pristine.json",
+      "sha256": "7995fc264581cd07c7ea81d13413a867fc9a0ed46e10f0f3e947556a08417d85",
+      "size": 1146
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/wheel-0.45.1.patched.json",
+      "sha256": "9f93e10781adf1245e99663e2a104b5a8376f09e1f5ef8e6845dea2ff52ea7ea",
+      "size": 18828
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/wheel-0.45.1.pristine.json",
+      "sha256": "9f93e10781adf1245e99663e2a104b5a8376f09e1f5ef8e6845dea2ff52ea7ea",
+      "size": 18828
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/xz-5.8.4.patched.json",
+      "sha256": "74b725be8a5edf8f7df820585f57fd3824ff60a431dc078c3e99206044e28d9a",
+      "size": 113417
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/xz-5.8.4.pristine.json",
+      "sha256": "661cd1951fd3858930055a8e1a77e5f9908d698c90f80e75d0e6b1e82bb8aef3",
+      "size": 113417
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/zlib-1.3.1.patched.json",
+      "sha256": "73e2b80c03d7b4893496c9e9f34416dfe1014c857d5e5cf64a107552b525335c",
+      "size": 43666
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/inventories/zlib-1.3.1.pristine.json",
+      "sha256": "73e2b80c03d7b4893496c9e9f34416dfe1014c857d5e5cf64a107552b525335c",
+      "size": 43666
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/io_utils.py",
+      "sha256": "3d2e894de2297e5ce3455fbf47a9c337a0337078916639eb1f15e6e679614764",
+      "size": 18736
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/native_acceptance.py",
+      "sha256": "3b833c798c2e7233dd1cca80a979e616b53c0aaf2fc9b65d6a2b098f14764a25",
+      "size": 7506
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/native_embedding.py",
+      "sha256": "8ef675b33badd973c75652bedb2414d1e2ae0e8369324c8b995cfdb326e84b9b",
+      "size": 15466
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/build-1.3.0/LICENSE",
+      "sha256": "aaf9a29ca5907971ccf07de025375db34539a8d5eeebce20b46099805722106f",
+      "size": 1113
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/bzip2-1.0.8/LICENSE",
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+      "size": 1896
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/cpython-3.13.13/LICENSE",
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+      "size": 13809
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/cpython-3.13.13/Modules/_decimal/libmpdec/mpdecimal.h",
+      "sha256": "ea0b9c6b296c13aed6ecaa50b463e39a9c1bdc059b84f50507fd8247b2e660f9",
+      "size": 41684
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/cpython-3.13.13/Modules/_hacl/Hacl_Hash_MD5.c",
+      "sha256": "f71cf6a0e8f09354c2af2c785a1d36e0cba7613a589be01ca8a3d8478f4c8874",
+      "size": 38499
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/cpython-3.13.13/Modules/expat/COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "size": 1144
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/cython-3.0.11/COPYING.txt",
+      "sha256": "e1eb1c49a8508e8173dac30157e4a6439a44ad8846194746c424fbc3fc2b95d7",
+      "size": 756
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/cython-3.0.11/LICENSE.txt",
+      "sha256": "9568a2b155e66ac3e0ba1fd80b52b827b9460e6cf6f233125e7cbca8e206ddc3",
+      "size": 10174
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/libffi-3.5.2/LICENSE",
+      "sha256": "d5699fa516968e3a1550e6c902b7441c78856f2603d61bedd0b0662a26655366",
+      "size": 1132
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/libffi-3.5.2/LICENSE-BUILDTOOLS",
+      "sha256": "e67978cd18816c0cb7d29aaaacde7b7447402c2fb321a051698890a8eaedda94",
+      "size": 18698
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/make-source-4.4.1/COPYING",
+      "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b",
+      "size": 35151
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/meson-1.9.0/COPYING",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/meson-1.9.0/packaging/License.rtf",
+      "sha256": "e3e8d7b15b2021c994047314ad0ac5e367561f64771a60a85a9c0952d8cd4c3a",
+      "size": 11098
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/meson-python-0.18.0/LICENSE",
+      "sha256": "8f82ea9ef9a55b47f4170536d02e48b5bc33fc5135e5b4a1b5f8d6404833ec9b",
+      "size": 1155
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/ninja-1.13.2/COPYING",
+      "sha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea",
+      "size": 11358
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/numpy-2.3.4/.spin/LICENSE",
+      "sha256": "990e6a6dbaee82e655163c3d2a51d1002471e5c0964da4881bc193eaa6a8ee3b",
+      "size": 1539
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/numpy-2.3.4/LICENSE.txt",
+      "sha256": "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491",
+      "size": 1543
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/numpy-2.3.4/LICENSES_bundled.txt",
+      "sha256": "7fe52683ce840a3103e9cc82fe92252b2c533061ca4f9b8d6f3d4d835f7c32f9",
+      "size": 974
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/ohos-perl-bb0517e7437015b24025438084aed0661fb80553/LICENSE",
+      "sha256": "016ea2f8177dc2fd77a088b92328a392ae5b6c7345224875401bcb95b28a44f7",
+      "size": 1300
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/openssl-3.5.8/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "size": 10175
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/packaging-25.0/LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "size": 197
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/packaging-25.0/LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "size": 10174
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/packaging-25.0/LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "size": 1344
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/packaging-25.0/docs/licenses.rst",
+      "sha256": "efe1f34e7f19037ce654f9f8e76cc6f7149d6fadd0cc8ee87691c4122b83b94a",
+      "size": 1743
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/perl-5.44.0/Artistic",
+      "sha256": "dd90d4f42e4dcadf5a7c09eea0189d93c7b37ae560c91f0f6d5233ed3b9292a2",
+      "size": 6321
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/perl-5.44.0/Copying",
+      "sha256": "8979e6dd61852041643c5c5c40ea63b2bd1b438a67d114e62cbaef808c514315",
+      "size": 12522
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/perl-native-build-tool-5.44.0/AUTHORS",
+      "sha256": "898fbe43bb2f78e5d7c710035a6651ef7bec84e91af76a556869362858709f7a",
+      "size": 76025
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/perl-native-build-tool-5.44.0/Copying",
+      "sha256": "8979e6dd61852041643c5c5c40ea63b2bd1b438a67d114e62cbaef808c514315",
+      "size": 12522
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/perl5-v5.44.0/Artistic",
+      "sha256": "dd90d4f42e4dcadf5a7c09eea0189d93c7b37ae560c91f0f6d5233ed3b9292a2",
+      "size": 6321
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/perl5-v5.44.0/Copying",
+      "sha256": "8979e6dd61852041643c5c5c40ea63b2bd1b438a67d114e62cbaef808c514315",
+      "size": 12522
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/pyproject-hooks-1.2.0/LICENSE",
+      "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+      "size": 1081
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/pyproject-metadata-0.9.1/LICENSE",
+      "sha256": "aaf9a29ca5907971ccf07de025375db34539a8d5eeebce20b46099805722106f",
+      "size": 1113
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/setuptools-80.9.0/LICENSE",
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+      "size": 1023
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/setuptools-scm-9.2.2/LICENSE",
+      "sha256": "89807acf2309bd285f033404ee78581602f3cd9b819a16ac2f0e5f60ff4a473e",
+      "size": 1023
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/sqlite-3.51.2/autosetup/LICENSE",
+      "sha256": "679b9208e67df09977456d1d2ae4d885b9badf02c47b45a28cf95ee27c14cb18",
+      "size": 1737
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/sqlite-3.51.2/sqlite3.h",
+      "sha256": "6c8b9f648f36c84b0eeb3239b1e6f32b459d2c859d905ba5d59153c3569e6562",
+      "size": 671786
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/tomli-w-1.2.0/LICENSE",
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+      "size": 1072
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/wheel-0.45.1/LICENSE.txt",
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654",
+      "size": 1107
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/xz-5.8.4/COPYING",
+      "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8",
+      "size": 3119
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/xz-5.8.4/COPYING.0BSD",
+      "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1",
+      "size": 607
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/xz-5.8.4/COPYING.GPLv2",
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+      "size": 17984
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/xz-5.8.4/COPYING.GPLv3",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "size": 35149
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/xz-5.8.4/COPYING.LGPLv2.1",
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+      "size": 26419
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/zlib-1.3.1/README",
+      "sha256": "d106dcdb2a0b3087cb3a2380b9f00a0bbadc7eb835cd80408f94a2d78d69727d",
+      "size": 5317
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/notices/zlib-1.3.1/zlib.h",
+      "sha256": "8a5579af72ea4f427ff00a4150f0ccb3fc5c1e4379f726e101133b1ab9fc600c",
+      "size": 96829
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/ATTRIBUTION.md",
+      "sha256": "d3c747b50b3b2e357279c1a20ad5168f3f2fefb94d5e0b89338495e9bf7a419f",
+      "size": 2726
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/README.md",
+      "sha256": "2d4eb58453ef77e67d3e13fa54c623d00f203b1f714050703e1634f3c244b4f8",
+      "size": 8161
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/SHA256SUMS",
+      "sha256": "76d5a0915851ecc7d816b7fbf1e2ca6b9d498f730a948e66626773b968313f94",
+      "size": 2438
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/acceptance.py",
+      "sha256": "2dd20bdb01c3fde3e769cf000bc4b8a5d49e9a0c3333dc5a7900714b7debb607",
+      "size": 16124
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/elf.py",
+      "sha256": "cfbed7e25c5662c33089378cff80904ca191b322b30d5482e7358bd855918a55",
+      "size": 3450
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-configured.json",
+      "sha256": "243782d3d8942db7ab88ad390ec68d7e88a25cfba55e357bdbf997754165274a",
+      "size": 358
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-driver.py.txt",
+      "sha256": "0941b36103a2373294d16a230231119e138d64db81cea813b058732fb876dad1",
+      "size": 11971
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-numpy-validation.json",
+      "sha256": "180f5ac5a977a050df7b614f86a97eb8a3a4cd939c2ff925c5587a860065c2cb",
+      "size": 8123
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-python-validation.json",
+      "sha256": "ead6ba9ef64c260c02171ba1d69e01c68fed90a052354ed8b059624a74cfe934",
+      "size": 5094
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-runtime-immutability.json",
+      "sha256": "76294701a9a3eebf989bc8f29afea512607a3830402c1debed1a3ca5e371f0dc",
+      "size": 141
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-sign-compiler.py.txt",
+      "sha256": "b8fd03097d6472c69a006c84ce36c582b499cce9e7322ef08d8f8fbb5f9a6c61",
+      "size": 5107
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-sources.lock.json",
+      "sha256": "9b513c9cafc2b91de64c755f09cdb25cc18ca1ed6b46b02b9275e4d42608b79d",
+      "size": 9405
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-toolchain-inputs.json",
+      "sha256": "eb8f1d4c589bcfef678f353b72a861e97c3dc76b3d9772b9a54b9b9f5013d926",
+      "size": 1805
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/evidence/accepted-verify.py.txt",
+      "sha256": "0559970e730cbe6ca634521c93a0a55174f15822125caa277d74a4584170933e",
+      "size": 4584
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/files.lock.json",
+      "sha256": "799b6a7b580b5b4009b61a8502cc139c3f6d6485ed188768ea3164b486f15501",
+      "size": 4108
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/frozen-candidate.json",
+      "sha256": "64abf7637c1a3d2ff8d9e1118de63f03a1d9fcdcccc5bd74dd2e96be1a5e73d8",
+      "size": 4956
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/module.py",
+      "sha256": "b87092c398a1469d89883acd45dd4a6b5f45724140ab5f6fe9bf848dee449985",
+      "size": 15230
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/original-plan.json",
+      "sha256": "682d9638663bd444d815e09d0b6a84c390a25dd8225be44f7f0c917f925a512d",
+      "size": 31762
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/patches/numpy-vendored-meson-ohos.patch",
+      "sha256": "22d6830e3151fa567e5a9cea88e914592b20c810abb88a8c3c39704800cb94ca",
+      "size": 1035
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/patches/patch-record.json",
+      "sha256": "a9b9c6b115d2d6e314faf304c8f7189df0fe4ec6fc370ecb70833c8142c66ce3",
+      "size": 1096
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/profile.json",
+      "sha256": "643c45dc20997aa56561ece72caf99c4b799b3b483da2d20f9e8be136914bd44",
+      "size": 3649
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/provenance.json",
+      "sha256": "95c56b8a4c4060f405785007e3a7df07cfb6ace8492be5025aa8c065f3eec4a8",
+      "size": 3956
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/sdk15.lock.json",
+      "sha256": "e252620229b1968dbf447f2df13893d990c6497537cccbcfb03a8e7d03389996",
+      "size": 3947
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/short-checks.json",
+      "sha256": "b646c0d4faff977deafeddf511960be268db6430813784ddb247e2fa17f5efb6",
+      "size": 5432
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/sign_compiler.py",
+      "sha256": "821f1f9e8d617cd247c0216a16c2771a080db35d05b1523f4a164215a66480ae",
+      "size": 3402
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/source_checks.py",
+      "sha256": "84cfdafd1a13ada20c38305c5ca04bb40679b34158acdb671da006ea97b7cdc6",
+      "size": 13604
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/sources.lock.json",
+      "sha256": "d7e396628e2233228384d2d74045a8ae164f62a42f93d5ac26511f97e2edd9bc",
+      "size": 9485
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/numpy/unicode-space-plan.json",
+      "sha256": "0f48fce7d417a4897eeaea8afc00c1249e8aacaeaa41088be857f2d2513b3a6a",
+      "size": 36184
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/patch-records/cpython-reversible-new-file-header.json",
+      "sha256": "1c53e7a22a9762eb7aa9517b178bd4a481195ab60f3ad764aae579452f565ecb",
+      "size": 683
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/patch-records/numpy.json",
+      "sha256": "36c9fa1c0b5fdc18c3be3bc71c1330ab2b619ea4b8b4f8cdc62b73921cfd2c58",
+      "size": 1335
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/patch-records/perl-actual-used.json",
+      "sha256": "37e165b2965fc8b169b5b7b2975949d1633ed13954ae41145058a20c1185d81e",
+      "size": 1089
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/patch-records/python.json",
+      "sha256": "45c9094ca5f2a68792e675cbdf145fc780955c9e4058a062fe3fd95e68701748",
+      "size": 7593
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/patch-records/tools.json",
+      "sha256": "04f42cc2bdd4465462bd5c344c3ce9b72e8b487fd2613abe83505b3d2eaf5a42",
+      "size": 152
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/accepted/combined-elf-audit.json",
+      "sha256": "91fcd5d3d51eea61b61f054b8fa573a278c2183262934bae1dbd890f38c96b1d",
+      "size": 77584
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/accepted/elf-audit.json",
+      "sha256": "68ebce38fcf64d70cf2fb1dedf8d62f3796c4b55adfaca6f1267e7005f4f70cd",
+      "size": 31690
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/accepted/hap-layout/python-modules.json",
+      "sha256": "0172ca577786667f665e9c036e4c56015b8288ea154c0780ce291981010f3ea2",
+      "size": 6426
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/accepted/native-smoke.json",
+      "sha256": "9490c2cdfd225eff0af0af370ff5c886298098daa9d2aa34129a19d1ab4e83c9",
+      "size": 2448
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/accepted/numpy/validation.json",
+      "sha256": "180f5ac5a977a050df7b614f86a97eb8a3a4cd939c2ff925c5587a860065c2cb",
+      "size": 8123
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/accepted/toolchain.json",
+      "sha256": "8c83c51335cba6d9d6491041603f5396cd01f318d67e58881e45b4240e475f0e",
+      "size": 1450
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/accepted/validation.json",
+      "sha256": "ead6ba9ef64c260c02171ba1d69e01c68fed90a052354ed8b059624a74cfe934",
+      "size": 5094
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/provenance/original-patches/cpython-ohos.patch",
+      "sha256": "85cb5b80774082b715d127666333316812c170dda40bed9ab638c0c9cae8d2de",
+      "size": 14125
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/dlopen-consumer.c",
+      "sha256": "9c441b7459d1530a7ef9580f0d13e92873baf5d139eacb115f0106c04b358b33",
+      "size": 3166
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/dlopen-smoke.c",
+      "sha256": "8f5eb62a4919aad59c5fcd819838d8d726c436b648ef2e3a8a66b3dd343dc942",
+      "size": 3176
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/embed-hap-smoke.c",
+      "sha256": "f8718ea787fb50026f5714672baab86c6df1838381593c27bc35dc92b29220a0",
+      "size": 1820
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/float-probe.c",
+      "sha256": "c41e54043b5d17dbf4eef4e98a1c0e69e24c4f4059c401612c547c1948763be0",
+      "size": 527
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/install.py",
+      "sha256": "a93259b26bf326c4f195649d395d850f5faeeaddb24def277dbf57c9c6efad0c",
+      "size": 3198
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/python-config.py",
+      "sha256": "713b6f7924bc6dbe24d5ed698680eecfba944f1cdf3da18f074c2f20120327bb",
+      "size": 1531
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/sign_compiler.py",
+      "sha256": "5789f478c9deca30ef9d0d287d1a279212fae9448970622baaed1ed2f6108398",
+      "size": 5443
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/helpers/trusted_native_importer.py",
+      "sha256": "570c2f7fd519fcce3532d527acdbdc5d68ae82a25b493c4611338ea202f7b455",
+      "size": 1464
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/module.py",
+      "sha256": "b5b687d9dec95bf7360add2339ccb8ba5ffbca7044a4d5434b8850b4285ea599",
+      "size": 9798
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/patches/cpython-ohos.patch",
+      "sha256": "e34636a8b490c6d37aee966a01956fc703a3405ffd22cd7f833fdb7de06feb91",
+      "size": 14112
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/patches/cpython-unversioned-soname.patch",
+      "sha256": "65ce32a1613fa355b53313f549fae78a17148b7932b74bf331b4d4f9f056309e",
+      "size": 927
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/patches/libffi-tramp-ohos.patch",
+      "sha256": "59cccd94fb5bea9f7741029c917941acba36d605bb1770620ebbb6ce23343fff",
+      "size": 1513
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/patches/make-config-sub-ohos.patch",
+      "sha256": "fddb455152330c7f526926d4e3449852d3a7e51b3110670c205e27ee1b2ecfb2",
+      "size": 969
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/provenance/accepted-pic-closure.json",
+      "sha256": "e80ce1f2e0c33e02f973b9efdc3522f4c46ba5550cc66532dc09897179730808",
+      "size": 33832
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/provenance/integration-recipe.py",
+      "sha256": "e7b41ec3dfc2f1a8e9ceb0c95c545f437d71bc6f82e24f53c91253411764df07",
+      "size": 20421
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python/provenance/original-sources.lock.json",
+      "sha256": "bcf426cb24c0778d4023c992b83015fcaea9a9b0777d8c5868ef1cff7f47acaf",
+      "size": 5651
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/python_finalize.py",
+      "sha256": "1dcce1203cb77142aac904d0f69d20a5a46e67ae2b643ac4c23df9b1521676da",
+      "size": 4822
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/resource_origins.py",
+      "sha256": "07bb4c50a54716b50382da7fb2102b316287b9c8b39fa41fb08dc0f055298ee7",
+      "size": 8383
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/resources/selected-pure8.lock.json",
+      "sha256": "27aeac5e6fd312c672d09d31c6d937d3fa0bb9b77080017617ff75d4e444536d",
+      "size": 23725
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/resourcesstage.py",
+      "sha256": "b34cf38698cde49dccd77766ce39b2bb43a50498dcc13c208392c67de63fbb58",
+      "size": 5673
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/source_guard.py",
+      "sha256": "e210dfd00313e60894c282137e88fbf27f646d27dda8ae6a48e1a0251b79b3dd",
+      "size": 11579
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/source_tree.py",
+      "sha256": "fc0007e6101b5d7ac0fb2151accef256b2769199a5643d69db56e8f454752962",
+      "size": 6670
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/sources.lock.json",
+      "sha256": "09ac2f1d1c901bbdd1a9927103c5fbd2bdd206a0180ac41b8230fc8841e799d8",
+      "size": 34779
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tool-inventories/native313-generator-prefix.json",
+      "sha256": "08d54e61f473e7f498a365872853a7ecbe9aff3536a67d4fc51bb2e339088e90",
+      "size": 573864
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tool-inventories/sdk-c-headers.json",
+      "sha256": "fc244625e31bad97f3feee1609b1f73826e87d08a148ee7db691e6a98c512302",
+      "size": 350620
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tool-inventories/sdk-cpp-headers.json",
+      "sha256": "7603f8ba00f65881366aef40a862fe3e2c850f80cc014e27091ed3d5053721d7",
+      "size": 136421
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tool-inventories/sdk15-resources.json",
+      "sha256": "0385dd956aa5d35768a9cc3a81a63e18c050092fc8963383665127afb1345ec5",
+      "size": 90174
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/toolchain.py",
+      "sha256": "71d9640415550d219772b8260f5f5099adc1cfb8e0a2d8e46171159fb78953f9",
+      "size": 6829
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools.lock.json",
+      "sha256": "717c2fca2e7f46a4c74b1e5080362f82722156d720014f4aa3f7e3e9c824ae69",
+      "size": 7155
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools.py",
+      "sha256": "ea4b4ce3cf110923b10df42346cad53ccbb1d3d13971aa1bd8925eba7e7abf92",
+      "size": 3799
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools/perl-binary-input.lock.json",
+      "sha256": "9987da43e685b6b6403cdcb69a9c9a3b1cc090e86a0a6fb0ebdb94e938442724",
+      "size": 1462
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools/perl-original-case-exception.json",
+      "sha256": "d6fdd2910b019ed640dbcd73cecc68e09c5f9dcac1af5f81c6c038cfa2ea5b9e",
+      "size": 66744
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools/provenance/acquisition.json",
+      "sha256": "7261a27a73083c431d56f95a72c65e25171373cd1ed3615b9111ab76b1ee7a77",
+      "size": 3555
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools/provenance/adaptation-source.json",
+      "sha256": "968c7d2d43c6790ef35a33d2f57b6b6e35733a87339d910b8fe615ef532980b1",
+      "size": 1550
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools/provenance/perl-original-package.json",
+      "sha256": "eb4c24cf28a17c0d989a81f9444f6233e70801da3bc5ee41958f9af95bb4516c",
+      "size": 701
+    },
+    {
+      "path": "build_files/ohos/deps_python_native_sources/tools/provenance/used-perl-upstream-source.json",
+      "sha256": "9d15b6ff942fe82e2c091e667a99ee532d39ab73cb2dfd2c54729c0fb0b58342",
+      "size": 1644
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/attrs-25.3.0.json",
+      "sha256": "9d8498c67b19aec579c15b6e51103f9a546cfe1ec241679963a68d2ba3871aed",
+      "size": 18039
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/cattrs-25.1.1.json",
+      "sha256": "74d55e76c55a80b77f98885f9bb62dc398166c1dbc376bc674590a29d41ffc91",
+      "size": 23788
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/certifi-2026.7.22.json",
+      "sha256": "c5e3d605c57ada7bb6130095c68c4cfdcb684aedc95f9134ae72bc004c084849",
+      "size": 2692
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/charset-normalizer-3.4.1.json",
+      "sha256": "1877d60bda938bc55a776809c4b282c9ce99a61a632b7d650ae184276f85acc9",
+      "size": 14322
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/idna-3.15.json",
+      "sha256": "75efd25ed4c5a70d146d286247021fa687552d04a8bf5efc4c4c58ea8ec11e75",
+      "size": 2941
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/requests-2.33.0.json",
+      "sha256": "de46fa3da5e0bf7d17789d95cb799b14d37494a4ddb389e934f8dd8ca73057e6",
+      "size": 12384
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/typing-extensions-4.14.1.json",
+      "sha256": "03601dd9aba50aec8597783cf17dc2c5c34c342937f1f4bc5a1a2cbdd659e43d",
+      "size": 1263
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/urllib3-2.8.0.json",
+      "sha256": "ac32ef7349ef06191eaf0b98501133a9b204d749f239565728c1558f69cb3648",
+      "size": 19487
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/attrs-25.3.0.json",
+      "sha256": "ad151c5dee1509ad54cb49911a801ef06629556beaf3a18c49c8077b2af5c5bb",
+      "size": 12774
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/cattrs-25.1.1.json",
+      "sha256": "d559167d624d59df856ca42e366393fef8e8af1c6a7cedbfe55dd24de583c92c",
+      "size": 10311
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/certifi-2026.7.22.json",
+      "sha256": "c6fe912677e373608eab51e324946005998faeb0fa999e6ddada24676e3556d3",
+      "size": 4584
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/charset-normalizer-3.4.1.json",
+      "sha256": "4586ad4bd57a3f1ab3f7ba6a30d0e0ecfe1a20912bdfbaa69e5b661dc53293ef",
+      "size": 118196
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/idna-3.15.json",
+      "sha256": "e939f2f3e7e1b302d6b8ade5553b713bf6ff3409ecb3fe0b98ab2eaf54965a60",
+      "size": 9756
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/requests-2.33.0.json",
+      "sha256": "f3b8c020d62a23207f4d001d74d86592f58ab40fabb71e0773d36c06e311d18d",
+      "size": 7074
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/typing-extensions-4.14.1.json",
+      "sha256": "a2e299574cfe80ea00b556c17d7c7de4ebad275a40d6acbbc7c5b01dddad892f",
+      "size": 5322
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/urllib3-2.8.0.json",
+      "sha256": "5315e7401db3cacccd0c2ce5daf81f752a9cc3614b18c37f2b79930b7159ce2f",
+      "size": 9510
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/attrs-25.3.0/LICENSE",
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "size": 1109
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/attrs-25.3.0/docs/license.md",
+      "sha256": "2da25a89fa0fe1957e42b32fb438290e2796009788c161da4fb9792d53f0146e",
+      "size": 1289
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/cattrs-25.1.1/LICENSE",
+      "sha256": "f5fb9d1ede37a88ca47f420c499dca0f4a05bc993e12c77d23520aad291c01bf",
+      "size": 1074
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/certifi-2026.7.22/LICENSE",
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+      "size": 989
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/charset-normalizer-3.4.1/LICENSE",
+      "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887",
+      "size": 1071
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/charset-normalizer-3.4.1/data/NOTICE.md",
+      "sha256": "0cb3efcfd8f7a02a337e98dc3de4b0b57424d7208a332b26e7deb8cb94c13922",
+      "size": 490
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/idna-3.15/LICENSE.md",
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04",
+      "size": 1541
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/requests-2.33.0/LICENSE",
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "size": 10142
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/requests-2.33.0/NOTICE",
+      "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc",
+      "size": 38
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/typing-extensions-4.14.1/LICENSE",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "size": 13936
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/urllib3-2.8.0/LICENSE.txt",
+      "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686",
+      "size": 1093
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/resources.py",
+      "sha256": "fe80d6b507b842caf44214b23d9994962ad74970fd58fb4f4440706abe75388d",
+      "size": 20461
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/sources.lock.json",
+      "sha256": "27aeac5e6fd312c672d09d31c6d937d3fa0bb9b77080017617ff75d4e444536d",
+      "size": 23725
+    },
+    {
+      "path": "build_files/ohos/vendor_archive.py",
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09",
+      "size": 8263
+    },
+    {
+      "path": "tpr/build-inputs/perl-native-build-tool-5.44.0/licenses/AUTHORS",
+      "sha256": "898fbe43bb2f78e5d7c710035a6651ef7bec84e91af76a556869362858709f7a",
+      "size": 76025
+    },
+    {
+      "path": "tpr/build-inputs/perl-native-build-tool-5.44.0/licenses/Copying",
+      "sha256": "8979e6dd61852041643c5c5c40ea63b2bd1b438a67d114e62cbaef808c514315",
+      "size": 12522
+    },
+    {
+      "path": "tpr/build-inputs/perl-native-build-tool-5.44.0/manifest.json",
+      "sha256": "314711f4c6e17bdcd81b913b5c7a98aa9add2767e5e149b1fec073baee05eef7",
+      "size": 669
+    },
+    {
+      "path": "tpr/build-inputs/perl-native-build-tool-5.44.0/source.part0000",
+      "sha256": "053e5252d736fa55a98a09e5124ead6391103717eb3bd465c1da882705a9cfef",
+      "size": 17551204
+    },
+    {
+      "path": "tpr/sources/attrs-25.3.0/manifest.json",
+      "sha256": "b8c61753bd338b4540e9b0614aba6960f6ae27293b9d3a7f234aa2cfe40bb346",
+      "size": 655
+    },
+    {
+      "path": "tpr/sources/attrs-25.3.0/source.part0000",
+      "sha256": "75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b",
+      "size": 812032
+    },
+    {
+      "path": "tpr/sources/build-1.3.0/manifest.json",
+      "sha256": "4e081c8c6cf3f602e619d969b30fbfa833633d95bc092fd174f5c0f6dc01e0b2",
+      "size": 627
+    },
+    {
+      "path": "tpr/sources/build-1.3.0/source.part0000",
+      "sha256": "698edd0ea270bde950f53aed21f3a0135672206f3911e0176261a31e0e07b397",
+      "size": 48544
+    },
+    {
+      "path": "tpr/sources/bzip2-1.0.8/manifest.json",
+      "sha256": "5bc1ba2a29b3c533a85c649b1c1343f8fba5281e5794bdb6db9c6f5e0023fbe5",
+      "size": 563
+    },
+    {
+      "path": "tpr/sources/bzip2-1.0.8/source.part0000",
+      "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+      "size": 810029
+    },
+    {
+      "path": "tpr/sources/cattrs-25.1.1/manifest.json",
+      "sha256": "b15c807929a512bfa526d1bdaa2671d557aa4e6d64f6478160742e2b718cce44",
+      "size": 635
+    },
+    {
+      "path": "tpr/sources/cattrs-25.1.1/source.part0000",
+      "sha256": "c914b734e0f2d59e5b720d145ee010f1fd9a13ee93900922a2f3f9d593b8382c",
+      "size": 435016
+    },
+    {
+      "path": "tpr/sources/certifi-2026.7.22/manifest.json",
+      "sha256": "2d30030d096af46c93d050350fd9490aa4394521d26f5ab04927293502ec27d9",
+      "size": 651
+    },
+    {
+      "path": "tpr/sources/certifi-2026.7.22/source.part0000",
+      "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55",
+      "size": 138112
+    },
+    {
+      "path": "tpr/sources/charset-normalizer-3.4.1/manifest.json",
+      "sha256": "f21560e9e470f3ad7c584a5e82f58dee18553f01fbca35ad7c35044ed788ab86",
+      "size": 668
+    },
+    {
+      "path": "tpr/sources/charset-normalizer-3.4.1/source.part0000",
+      "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3",
+      "size": 123188
+    },
+    {
+      "path": "tpr/sources/cpython-3.13.13/manifest.json",
+      "sha256": "dd549ad67fff60d8fec4b79192690da92f1afdcd9ac604d27f2bd8f719534744",
+      "size": 915
+    },
+    {
+      "path": "tpr/sources/cpython-3.13.13/source.part0000",
+      "sha256": "2ab91ff401783ccca64f75d10c882e957bdfd60e2bf5a72f8421793729b78a71",
+      "size": 22957612
+    },
+    {
+      "path": "tpr/sources/cython-3.0.11/manifest.json",
+      "sha256": "441428c8f58e23312765d9f760ff8ad260d610cbebd0d211996535165ec5b5ac",
+      "size": 620
+    },
+    {
+      "path": "tpr/sources/cython-3.0.11/source.part0000",
+      "sha256": "7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff",
+      "size": 2755544
+    },
+    {
+      "path": "tpr/sources/idna-3.15/manifest.json",
+      "sha256": "a78044fd22c01907e48156e095a74a4001b86fb67fcec4d41e8b76c88bd83382",
+      "size": 635
+    },
+    {
+      "path": "tpr/sources/idna-3.15/source.part0000",
+      "sha256": "ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc",
+      "size": 199245
+    },
+    {
+      "path": "tpr/sources/libffi-3.5.2/manifest.json",
+      "sha256": "0fedd724df22295e086e0aa790b637073d341a3bd531a89f9c5f0b7aba2340f1",
+      "size": 644
+    },
+    {
+      "path": "tpr/sources/libffi-3.5.2/source.part0000",
+      "sha256": "f3a3082a23b37c293a4fcd1053147b371f2ff91fa7ea1b2a52e335676bac82dc",
+      "size": 1423124
+    },
+    {
+      "path": "tpr/sources/make-source-4.4.1/manifest.json",
+      "sha256": "4af98a7326ab96cae13e53ea8f4bb3e5772a597aa6ad3ff901437529b7c39dd3",
+      "size": 570
+    },
+    {
+      "path": "tpr/sources/make-source-4.4.1/source.part0000",
+      "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3",
+      "size": 2348200
+    },
+    {
+      "path": "tpr/sources/meson-1.9.0/manifest.json",
+      "sha256": "f2d7140bde4c5b074c50abb163f1de9dcdd96977891a7a2615bd3adf50e10e77",
+      "size": 667
+    },
+    {
+      "path": "tpr/sources/meson-1.9.0/source.part0000",
+      "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+      "size": 2366082
+    },
+    {
+      "path": "tpr/sources/meson-python-0.18.0/manifest.json",
+      "sha256": "92d1c8afd3bd065a9d46fda3c88cc68138a0000aeb59bb0c1eeb8a54f41e9db8",
+      "size": 651
+    },
+    {
+      "path": "tpr/sources/meson-python-0.18.0/source.part0000",
+      "sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d",
+      "size": 95630
+    },
+    {
+      "path": "tpr/sources/ninja-1.13.2/licenses/COPYING",
+      "sha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea",
+      "size": 11358
+    },
+    {
+      "path": "tpr/sources/ninja-1.13.2/manifest.json",
+      "sha256": "0c63225774e1ce3d185c9cc40dba4a93ef8c1d066500fe322418609083f24606",
+      "size": 583
+    },
+    {
+      "path": "tpr/sources/ninja-1.13.2/source.part0000",
+      "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+      "size": 292385
+    },
+    {
+      "path": "tpr/sources/numpy-2.3.4/manifest.json",
+      "sha256": "a1c8fbb94a6217aeec378306e33a563f743a4ea2c705916d6b0be864a8b77b5e",
+      "size": 644
+    },
+    {
+      "path": "tpr/sources/numpy-2.3.4/source.part0000",
+      "sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+      "size": 20582187
+    },
+    {
+      "path": "tpr/sources/ohos-perl-bb0517e7437015b24025438084aed0661fb80553/licenses/LICENSE",
+      "sha256": "016ea2f8177dc2fd77a088b92328a392ae5b6c7345224875401bcb95b28a44f7",
+      "size": 1300
+    },
+    {
+      "path": "tpr/sources/ohos-perl-bb0517e7437015b24025438084aed0661fb80553/manifest.json",
+      "sha256": "c374e15e4a658ea94fedd158a996f405405f352dde2ab72a52d0eea094e57785",
+      "size": 678
+    },
+    {
+      "path": "tpr/sources/ohos-perl-bb0517e7437015b24025438084aed0661fb80553/source.part0000",
+      "sha256": "e86252557c71ba633d6f0d9898790efa863d45c7375d5b2429a4484a5c95ec96",
+      "size": 5280
+    },
+    {
+      "path": "tpr/sources/openssl-3.5.8/manifest.json",
+      "sha256": "9e49d3fe029a59a50722a7fdfc5ebb027bc22f1b00fde979c65f25dc67cc9fb2",
+      "size": 767
+    },
+    {
+      "path": "tpr/sources/openssl-3.5.8/source.part0000",
+      "sha256": "74c6bfd848c355bae0292151617839fbc9ce87405b0b9c540113652bc924f4c8",
+      "size": 33554432
+    },
+    {
+      "path": "tpr/sources/openssl-3.5.8/source.part0001",
+      "sha256": "ca862f2fe5320068a11c59e90af910c663168c8f8ccabbcc644e472d636cfb90",
+      "size": 19659386
+    },
+    {
+      "path": "tpr/sources/packaging-25.0/manifest.json",
+      "sha256": "43eb202250217babd1e98c1e63af508d6e5b68d844d31630b5d6fc5f06bb8144",
+      "size": 727
+    },
+    {
+      "path": "tpr/sources/packaging-25.0/source.part0000",
+      "sha256": "d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f",
+      "size": 165727
+    },
+    {
+      "path": "tpr/sources/perl-5.44.0/licenses/Artistic",
+      "sha256": "dd90d4f42e4dcadf5a7c09eea0189d93c7b37ae560c91f0f6d5233ed3b9292a2",
+      "size": 6321
+    },
+    {
+      "path": "tpr/sources/perl-5.44.0/licenses/Copying",
+      "sha256": "8979e6dd61852041643c5c5c40ea63b2bd1b438a67d114e62cbaef808c514315",
+      "size": 12522
+    },
+    {
+      "path": "tpr/sources/perl-5.44.0/manifest.json",
+      "sha256": "22b3a31a2d140380329021c8205fd22ee77dff9c5588a02680c693db8f7e6883",
+      "size": 626
+    },
+    {
+      "path": "tpr/sources/perl-5.44.0/source.part0000",
+      "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3",
+      "size": 21265451
+    },
+    {
+      "path": "tpr/sources/perl5-v5.44.0/licenses/Artistic",
+      "sha256": "dd90d4f42e4dcadf5a7c09eea0189d93c7b37ae560c91f0f6d5233ed3b9292a2",
+      "size": 6321
+    },
+    {
+      "path": "tpr/sources/perl5-v5.44.0/licenses/Copying",
+      "sha256": "8979e6dd61852041643c5c5c40ea63b2bd1b438a67d114e62cbaef808c514315",
+      "size": 12522
+    },
+    {
+      "path": "tpr/sources/perl5-v5.44.0/manifest.json",
+      "sha256": "ce56674306cddcc24ac9935f331cabc8e5ec173a35fc74e3c31dd64753775160",
+      "size": 617
+    },
+    {
+      "path": "tpr/sources/perl5-v5.44.0/source.part0000",
+      "sha256": "b9a53d539af95412ecce2bdd548eac9beaf559ea48ace5dd8427504c25b01b46",
+      "size": 23036248
+    },
+    {
+      "path": "tpr/sources/pyproject-hooks-1.2.0/manifest.json",
+      "sha256": "f67896dd1276d60fa02e5da507d90e13fc397d4f04142a5d50d70b08bb513063",
+      "size": 657
+    },
+    {
+      "path": "tpr/sources/pyproject-hooks-1.2.0/source.part0000",
+      "sha256": "1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8",
+      "size": 19228
+    },
+    {
+      "path": "tpr/sources/pyproject-metadata-0.9.1/manifest.json",
+      "sha256": "0f945f64f8c7385522248899575cc65d734ce9db62dbe549be1c2192edef2011",
+      "size": 666
+    },
+    {
+      "path": "tpr/sources/pyproject-metadata-0.9.1/source.part0000",
+      "sha256": "b8b2253dd1b7062b78cf949a115f02ba7fa4114aabe63fa10528e9e1a954a816",
+      "size": 38415
+    },
+    {
+      "path": "tpr/sources/requests-2.33.0/manifest.json",
+      "sha256": "4f0a975513d6e9b2bb51c5d1af91f220612347d2be196063a3dc3ad0654b4c9a",
+      "size": 662
+    },
+    {
+      "path": "tpr/sources/requests-2.33.0/source.part0000",
+      "sha256": "c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652",
+      "size": 134232
+    },
+    {
+      "path": "tpr/sources/setuptools-80.9.0/manifest.json",
+      "sha256": "23f4d20ea01793ba9c436b956300c11ac24e7b355d5feda15e239ac7d45df1ad",
+      "size": 649
+    },
+    {
+      "path": "tpr/sources/setuptools-80.9.0/source.part0000",
+      "sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c",
+      "size": 1319958
+    },
+    {
+      "path": "tpr/sources/setuptools-scm-9.2.2/manifest.json",
+      "sha256": "3ad4aaa1f891954fb1c7fd4b45d20a72f79e6d20375e3fac1ce9eabd63b090cc",
+      "size": 656
+    },
+    {
+      "path": "tpr/sources/setuptools-scm-9.2.2/source.part0000",
+      "sha256": "1c674ab4665686a0887d7e24c03ab25f24201c213e82ea689d2f3e169ef7ef57",
+      "size": 203385
+    },
+    {
+      "path": "tpr/sources/sqlite-3.51.2/manifest.json",
+      "sha256": "7fe7372859e3378edeeab4f97d18d3729ece575b7d58bee4501cce47a0cdcf3f",
+      "size": 668
+    },
+    {
+      "path": "tpr/sources/sqlite-3.51.2/source.part0000",
+      "sha256": "fbd89f866b1403bb66a143065440089dd76100f2238314d92274a082d4f2b7bb",
+      "size": 3208444
+    },
+    {
+      "path": "tpr/sources/tomli-w-1.2.0/manifest.json",
+      "sha256": "be504579bfb83f7e44903539bf20724c4af9096018c1355d23d9d7eeaf42f54c",
+      "size": 631
+    },
+    {
+      "path": "tpr/sources/tomli-w-1.2.0/source.part0000",
+      "sha256": "2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021",
+      "size": 7184
+    },
+    {
+      "path": "tpr/sources/typing-extensions-4.14.1/manifest.json",
+      "sha256": "ac437ce6bada6c841b7afc82b38bab44e42523e1de60c97748ff1343e7b47d30",
+      "size": 672
+    },
+    {
+      "path": "tpr/sources/typing-extensions-4.14.1/source.part0000",
+      "sha256": "38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36",
+      "size": 107673
+    },
+    {
+      "path": "tpr/sources/urllib3-2.8.0/manifest.json",
+      "sha256": "33544beb6d1fcc7039bdd94dacf0460182e1befcf1aaf06f21ac4e5bc034c399",
+      "size": 639
+    },
+    {
+      "path": "tpr/sources/urllib3-2.8.0/source.part0000",
+      "sha256": "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63",
+      "size": 458972
+    },
+    {
+      "path": "tpr/sources/wheel-0.45.1/manifest.json",
+      "sha256": "2ac5e8a4200367801661b255a63a9732f2018b331a4761797b2f7e32a10230db",
+      "size": 636
+    },
+    {
+      "path": "tpr/sources/wheel-0.45.1/source.part0000",
+      "sha256": "661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729",
+      "size": 107545
+    },
+    {
+      "path": "tpr/sources/xz-5.8.4/manifest.json",
+      "sha256": "06d151bd4a438db1921bc5ee787fbfb8a81bef44204a48d7438cbfe8b3f8921f",
+      "size": 737
+    },
+    {
+      "path": "tpr/sources/xz-5.8.4/source.part0000",
+      "sha256": "0014c7886930454fe8bd4228665b51af55eeae560ea135c9c4cd33f55b2591d9",
+      "size": 2799797
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/manifest.json",
+      "sha256": "57d2b1dac5b12798d3d6d1aedcd36584efc77e933b1a40c41e08669e5467f26c",
+      "size": 560
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/source.part0000",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791
+    }
+  ],
+  "selected_pure8_lock_sha256": "27aeac5e6fd312c672d09d31c6d937d3fa0bb9b77080017617ff75d4e444536d",
+  "signature_policy_proven": false,
+  "source_revision": 5,
+  "sources_lock_sha256": "09ac2f1d1c901bbdd1a9927103c5fbd2bdd206a0180ac41b8230fc8841e799d8",
+  "supersedes_formal_inputs_sha256": "4bb0d1dcfda2746c0227acc6a77845ba04f5000ed996d5d9aa99f10daeb0b4ba",
+  "tools_lock_sha256": "717c2fca2e7f46a4c74b1e5080362f82722156d720014f4aa3f7e3e9c824ae69"
+}

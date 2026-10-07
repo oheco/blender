@@ -1,0 +1,2049 @@
+{
+  "case_distinction": "required original two directory subtrees only, actual case-sensitive private FS or fail",
+  "case_pairs": [
+    [
+      "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod",
+      "perl-5.44.0-ohos-arm64/lib/5.44.0/pod"
+    ]
+  ],
+  "member_counts": {
+    "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod": 61,
+    "perl-5.44.0-ohos-arm64/lib/5.44.0/pod": 230
+  },
+  "original_archive_sha256": "053e5252d736fa55a98a09e5124ead6391103717eb3bd465c1da882705a9cfef",
+  "original_archive_size": 17551204,
+  "original_members": [
+    {
+      "mode": "0o755",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod",
+      "size": 0,
+      "type": "5"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/ParseLink.pm",
+      "sha256": "ff5987f14384095ff0d0c6362fe60c378ab2761c651ae3037318d4e204290bf0",
+      "size": 6341,
+      "type": "0"
+    },
+    {
+      "mode": "0o755",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc",
+      "size": 0,
+      "type": "5"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToTk.pm",
+      "sha256": "d5053e53eaa2d85fb431d9191fc198babee2948d0ccebb8001f6d716fb76faec",
+      "size": 4000,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToXml.pm",
+      "sha256": "d967f81e1e0fa4d9da7c09a173e4303f1c168daf9a597ece604c3bd9f140eed4",
+      "size": 1407,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToTerm.pm",
+      "sha256": "56b52eadd81c46f74d1ba6d2a513cc31fa215df8abd862534f0a20989b9b0860",
+      "size": 3816,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToMan.pm",
+      "sha256": "627eb1d2579ee13f276970d8ec525d9857de61c149de5fe35d4e7811b5326196",
+      "size": 14248,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/GetOptsOO.pm",
+      "sha256": "4d15884ea29149509d38c48bd3ec65ee589758e5a6bcbda6589de6b5f203e27a",
+      "size": 3888,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToChecker.pm",
+      "sha256": "8f45beff261b7956d1478c68c03da8279202c4f6b879467be2b6830ee247e28e",
+      "size": 1691,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToText.pm",
+      "sha256": "0f354b5a92e851a34c3777b505ea04445b8c543c77c90acbf4ac9b91b8243134",
+      "size": 2266,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToNroff.pm",
+      "sha256": "c83b5a909c9d5fed26c67914a27c11fc786d2a94b40991eb920386917fa79440",
+      "size": 2782,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToRtf.pm",
+      "sha256": "de33f7106b98a16dc06cd6f08cc14f93f17c6d01a2d67795c60f11f041515cc9",
+      "size": 2149,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToPod.pm",
+      "sha256": "e44873efe36518534250c0d1e5cf45dc298cfdffc9faff4a5381c0fa0a889b38",
+      "size": 1959,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/BaseTo.pm",
+      "sha256": "2d9070ee6f476b4c01313a2c4bd0e321840ae30c78688d7c3b2e261b94e8c2d5",
+      "size": 3637,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc/ToANSI.pm",
+      "sha256": "262ad0f43a3527b0421189f063b17cc7a385045bb4d2bc98ddb0b71ffa9b6af7",
+      "size": 2303,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Escapes.pm",
+      "sha256": "30906651e42081fe5f4490c45a3c4647e4c1fdbd3d1a8c8672fee271f6e94df0",
+      "size": 17888,
+      "type": "0"
+    },
+    {
+      "mode": "0o755",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Html",
+      "size": 0,
+      "type": "5"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Html/Util.pm",
+      "sha256": "437f45b8d3ac5a0e9447d097c6e940564d49b7fd4764b149a5501286008d52a5",
+      "size": 8724,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Man.pm",
+      "sha256": "666c7b24e36ad646d8c7a3e7e2cfee33ba59ba8576cb6eca0b38adc0a123b3b3",
+      "size": 95837,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Perldoc.pm",
+      "sha256": "b4fb5f7d7479c01e2c789a6b500281f261aab6e8888398c75a837affa70ecd2f",
+      "size": 64594,
+      "type": "0"
+    },
+    {
+      "mode": "0o755",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple",
+      "size": 0,
+      "type": "5"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/TiedOutFH.pm",
+      "sha256": "e3ca51ac36894c66d4e469b18e4b5737e3631423de7016be55d11ee171570af0",
+      "size": 2735,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/TextContent.pm",
+      "sha256": "591dc638322109e9b0c26959e286e31548323f051bdf4fb53e6d1224058473ac",
+      "size": 2499,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/SimpleTree.pm",
+      "sha256": "c665bca830d277595c38b277f486877db8b3bedff7abc0bc4412645dd6ec7016",
+      "size": 4592,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/XMLOutStream.pm",
+      "sha256": "1eadd6f51840bcb2eb2b918600474938232f4c0c300ae05f9c124509ea251b1c",
+      "size": 4661,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/LinkSection.pm",
+      "sha256": "8d2ef3163e250b2b98ca09bff646e5a5af2569d6ca944c83ac136fa86e6e9d1a",
+      "size": 4282,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/XHTML.pm",
+      "sha256": "f596f381e2cc7f4b7952f0e74b7947309790e8d80f6d57e2a442f8a89692652f",
+      "size": 28117,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Progress.pm",
+      "sha256": "ccda9eb3fda309743b155d269c39471021b90c189d22cb67bfa776beea4c5848",
+      "size": 2419,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/PullParser.pm",
+      "sha256": "999feb0e4092eca2ea84f817d409e5d40a5795308cf6e62409548a17671eeb2a",
+      "size": 25663,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Transcode.pm",
+      "sha256": "af5cbbdffbd97238b7725031c486df3f5dab637715426009c91d6298cb431795",
+      "size": 710,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/BlackBox.pm",
+      "sha256": "f8d76de28b145f5bfb83ffd274224b02ee65edccf9f320ba8a24a0e39d9bee9d",
+      "size": 89840,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/HTMLLegacy.pm",
+      "sha256": "da2a162fad52fde05d042fa23dce642102992617c2a7b31795a3c1b1bd7de5ba",
+      "size": 2731,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/JustPod.pm",
+      "sha256": "b4e494d77829ccb098023fb5c6381a3079387bb913601d4fbd283e4047e51b8c",
+      "size": 9695,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/PullParserTextToken.pm",
+      "sha256": "7a623c7f46f22841cfd5de941ccb4c934121bebe394848d4e6255391030188f1",
+      "size": 3347,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Search.pm",
+      "sha256": "cfeca9c5d93e997a1d80fa70fbe15da283bf4fc0e08270c78230e038b92c6829",
+      "size": 35731,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/HTMLBatch.pm",
+      "sha256": "c903c3dd437f5e6efb299efb4ca0ec0638e2847f98220c2d70e77d2849feeb5f",
+      "size": 40543,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/PullParserEndToken.pm",
+      "sha256": "d3460c5684eb7ccc8115a75ae17f68af8ae7b4eccd209798a1a9ba6328365989",
+      "size": 2868,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/DumpAsXML.pm",
+      "sha256": "573710fda702ef38920debdce29d23aeb8e6f390b1160e7159948b7a383c6ed8",
+      "size": 4571,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/RTF.pm",
+      "sha256": "c85353753bb8b2a55a3d20c0eacc535851c372a9aa69afe140aaee22209a11e5",
+      "size": 23541,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/DumpAsText.pm",
+      "sha256": "ac81e5d043d351c3cf4727c4646611d93ed05d07eefdc67e2792861f2edbb570",
+      "size": 4039,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Subclassing.pod",
+      "sha256": "74ca92d6ed9467cdbb74f74f8c38eb682e0f078d1714a2074cf97549920466e4",
+      "size": 34087,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/TranscodeSmart.pm",
+      "sha256": "016539d451b0f640e2a8c07613b305104eba3e69b13cd2983d8d44881b7bfcc4",
+      "size": 693,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Checker.pm",
+      "sha256": "3848a57fba006a559bedd4ce9ed09920585e3cc6f60d4fbad8b4031890b3c3bc",
+      "size": 5416,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/HTML.pm",
+      "sha256": "c5270f4a99d269764a226bdee218962fe2619d93c574db9cbb9679c386e65a64",
+      "size": 34498,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Debug.pm",
+      "sha256": "e0f8f149736b94657378cc9d94e73bfc501bedd6a6c7339df8064774ecd8eb42",
+      "size": 4596,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/PullParserToken.pm",
+      "sha256": "17c551f7bbbfae1d57df23ba94d4d8753e8714a0725bb97fa9c877a07ece951d",
+      "size": 4016,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/TranscodeDumb.pm",
+      "sha256": "a8027a6f73a303295e17e27654cb89249f06ae7286023737d3fa023ec6af04ca",
+      "size": 2605,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/PullParserStartToken.pm",
+      "sha256": "245dad0b02302b2acc55cbc340fae0ef899434b02a5101d39dc662d2cd597e95",
+      "size": 4130,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Methody.pm",
+      "sha256": "778ab8bcde561c9de8e21d7e05e749b73a31991e189033120e3104da49bbd564",
+      "size": 3555,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple/Text.pm",
+      "sha256": "87da681b98776d552324bf1ed2691af355e95c3f0ec4f9fed43b3db64addbcd4",
+      "size": 5093,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple.pm",
+      "sha256": "6df697f5da28463797477c18b403431a8c6c1264ce24c9abe41aa754889b19d4",
+      "size": 54456,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Usage.pm",
+      "sha256": "0d26f644cd2f5166156ff641b26bbd128ea8ae555088784723f794667db2849b",
+      "size": 31005,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Simple.pod",
+      "sha256": "563655007c223d2cabf5e300c2186a23c01d962d91a0d943b45d9aae8ff31a53",
+      "size": 15743,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Checker.pm",
+      "sha256": "f8a8867078e498f68b4d68c1894d36d7227dcdbc0553fde3167ac6ff38e0f46e",
+      "size": 34052,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Html.pm",
+      "sha256": "dd489f3771711ee4cc5c115994fdd0865a82549d9b4dc38a6589c672666aaa6f",
+      "size": 22052,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Functions.pm",
+      "sha256": "47a37a120d30d5976f90d42b277f0e2634deb166289b26e567e69b504fab462f",
+      "size": 14783,
+      "type": "0"
+    },
+    {
+      "mode": "0o755",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Text",
+      "size": 0,
+      "type": "5"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Text/Color.pm",
+      "sha256": "aa7b6e89b912611f29a1293fe803021b4abe9041d8d0b0c2bee4339956c80233",
+      "size": 6635,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Text/Overstrike.pm",
+      "sha256": "d1149203b11f8cf831d977b9b48eba4365c6618799b5fd0b151af4cfdf0f1fe6",
+      "size": 6985,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Text/Termcap.pm",
+      "sha256": "0a424d64c3ae44d14a00c5fab12b9e1f2e8e7b0c1c16ee346e179af253d66851",
+      "size": 9535,
+      "type": "0"
+    },
+    {
+      "mode": "0o444",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/Pod/Text.pm",
+      "sha256": "75c5b30e0d072d168e50bb4122fc1815b5ed9f25459a3671c49839a17659a9eb",
+      "size": 44603,
+      "type": "0"
+    },
+    {
+      "mode": "0o755",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod",
+      "size": 0,
+      "type": "5"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perluniprops.pod",
+      "sha256": "163c33596fd07fee5fd8204c6a77df2cd2a12ed19a52ace58cf16ade621b378e",
+      "size": 479415,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlxs.pod",
+      "sha256": "433aa6e6a8c5423f46bd860a7fa44477a84e515df4405d67e8dda4e47f904e46",
+      "size": 191626,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl588delta.pod",
+      "sha256": "fdeedc584aaff3d199cef46e648314ac558bcb01b1634956d96f7de66a0d7621",
+      "size": 25277,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlobj.pod",
+      "sha256": "7c9c684e6c43214306afdd1e8fca5f615a5c5af9a1c044fb542ba457425bb639",
+      "size": 36147,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlxstut.pod",
+      "sha256": "e8779fd7c64a1b7eba6e9dfb1acfc6a03dea375723a45753d97983c72d03ac88",
+      "size": 49209,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlhaiku.pod",
+      "sha256": "15de84befd8cc28cf98bbd91eca7e3f358dc76c578a2331bc40e0045845697b2",
+      "size": 1538,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5182delta.pod",
+      "sha256": "9b1c2577476b9a6d5b72e111600cf933e1d90188bad2c9561932a066f2ca94e5",
+      "size": 5335,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlcheat.pod",
+      "sha256": "60c7b52a4c9c5cfc3f61ff852dc65966bec8c4fd53a10b6bec279a5e47129e7e",
+      "size": 4480,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5124delta.pod",
+      "sha256": "4aef601912c2a6faf3c850c72f01ff3c89f7f0e4b1d65836bce679a2e5c8b362",
+      "size": 3672,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlport.pod",
+      "sha256": "01b554aa48127ff56fdec60ef44ce6bfdf68bfd8654f622491ee9c4e32ae9a5e",
+      "size": 89767,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl585delta.pod",
+      "sha256": "712cfc716dadd3e30931ffb616e471b9e37e011ce6b3a2827e355d88d920a6c9",
+      "size": 5888,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5280delta.pod",
+      "sha256": "ca34e3c1b69625f30695e96333ed3231f62394ac7108fa4914b809b218f9fc47",
+      "size": 71127,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlhacktips.pod",
+      "sha256": "bb3f0df730e581bb490e2759ca223568dfda2ccca59fece8cce6b6f6b53bde99",
+      "size": 76547,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlcn.pod",
+      "sha256": "f53e6416739a11de80ff8ef0f96215e1aeda299cc32e4e0f8b751a46d69aaea6",
+      "size": 4837,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5144delta.pod",
+      "sha256": "ee1bfe2033b75954bebf2d00033a2fbbb2d25a9919d40127edb267212948cba2",
+      "size": 6327,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltrap.pod",
+      "sha256": "77d92756afbc3865c845c63ac74a4bbf5ee126c21f379c50a8f60d75fb389cfc",
+      "size": 10623,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlamiga.pod",
+      "sha256": "8cce6a72698ecf6907f9e9f16452f836b430351a42db24c7c655260a362e4350",
+      "size": 5768,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlgov.pod",
+      "sha256": "c4e434b38558f6d2a99f89e7d25fbcd246a6d4892f7856c269f5fd3d6b77579b",
+      "size": 16915,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq.pod",
+      "sha256": "306d303a278afdb8363049c99815294087b38dc7435c069fabcba4ea310dfb65",
+      "size": 22743,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlutil.pod",
+      "sha256": "b875cb751202e353de7dc85421f7c7b529878b3625cc2d62ba0d8dd824494e9e",
+      "size": 7397,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlguts.pod",
+      "sha256": "17b12381a7f484d5421a5d3a8e21ec909123b87b38f79e0bf8d3df2b993d3448",
+      "size": 212504,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlqnx.pod",
+      "sha256": "22a9744e048bc7e00c228eaa95b91466ef84aa6c59678042c14e9da02d551b33",
+      "size": 6693,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfilter.pod",
+      "sha256": "dabef435d14acdc64527081648e3336c00322ffc999408dd12806249ff2dc23f",
+      "size": 22218,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5203delta.pod",
+      "sha256": "ac858efa39c387165a96ed2ac5c4d922603e130d3529a9df602874f6138078a7",
+      "size": 9232,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlhacktut.pod",
+      "sha256": "722bae3e739da8977d7e249f84587791b8b854a1b641ae5bad6ca38b6ad24300",
+      "size": 6153,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5142delta.pod",
+      "sha256": "3005f64d25afee643315486c7c05ff47a52b71ddea5183727a5f2c5c108d7b63",
+      "size": 6891,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5401delta.pod",
+      "sha256": "d1f3ca5891176622262594756abc0b3e7a088a478c183d6751ee092ddd34db22",
+      "size": 5600,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlrequick.pod",
+      "sha256": "ecd39404b18771d5a5e03f55d4b08026705a6ae151dcd1da905ef119632c4afd",
+      "size": 19207,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltoc.pod",
+      "sha256": "c05673250e637b280858a54219258021cbcf6f433635279665d3b415f4ad75c4",
+      "size": 868351,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlpacktut.pod",
+      "sha256": "a6309a2adb64a78dbf4e40682e291bcd3b64c9ed96c17fbdf94ac29c641cc516",
+      "size": 51222,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5241delta.pod",
+      "sha256": "23ccda31b9e50831983ed362af59977ef3d4626149878f7142e332412a8d1c75",
+      "size": 8201,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5141delta.pod",
+      "sha256": "fe01a15a619bf6192cbe11e5872b7204545c11c3e0abd231546c0239f1ab5885",
+      "size": 7958,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlthrtut.pod",
+      "sha256": "ca84b71407804d9c9293fca6c38a77b23a22d88887bd106d81e4b13046f2061c",
+      "size": 46085,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5340delta.pod",
+      "sha256": "a5ed057f51e11b8dc6f6827cf51b2b050b2b4162a605d71dd85023bcb62d6321",
+      "size": 37377,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl561delta.pod",
+      "sha256": "84ebf0e9b5ffd65d7fde3bbcd096dbd41295606f7ccb8c0cb7e5169bed9449a0",
+      "size": 124683,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq4.pod",
+      "sha256": "2ed96410ce13ac3c7abaf1535bc9e91e10938f686c87359643265b43bcc30253",
+      "size": 93398,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5125delta.pod",
+      "sha256": "e4ffde0d235d294ac5a0b6fbe0ce6805e8d2b1b237723b5ee0649a8b75a8e098",
+      "size": 7679,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlnewmod.pod",
+      "sha256": "7742c7eb791a792cabcab356c281fadc1388645f1b4aaff361c39d7234a8f846",
+      "size": 10961,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlsub.pod",
+      "sha256": "98982daba451ad7fbfab360f600e3e06c99719c3a5e6a138fc966ca8119b53d5",
+      "size": 82376,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlko.pod",
+      "sha256": "7ab67294bf7b466f0c5d31103858c4910bf8122dd290b51eb2fc005e97ff9e28",
+      "size": 12224,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlop.pod",
+      "sha256": "286feeafb6161fdde3d6497eafa356c81b04c1a0b17ece71179088d1b8d982bd",
+      "size": 184187,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl58delta.pod",
+      "sha256": "58964afe643300d8d6531ab19e55a8d41a31f66401cf7b2c73033baa069fc8c1",
+      "size": 115152,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlirix.pod",
+      "sha256": "6ee8fdbb71a3cb532b3010d431f9efccb56bdc6374e05ffbce9e509f1dbfb623",
+      "size": 4432,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq2.pod",
+      "sha256": "832d953b67a06fc3b22d37dfdd93a8e91e323741fb10471999c1d21da92eb3e9",
+      "size": 10566,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlstyle.pod",
+      "sha256": "de4531107b210ffd561f80f71f5f31a5a7d8af724e25f478ad460202a3308f66",
+      "size": 9019,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlintro.pod",
+      "sha256": "b71b96193767bb96f6816215554ddd65c27c75dfc4e5da2ab3bae151d462627e",
+      "size": 25906,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlperf.pod",
+      "sha256": "9c505090ccb95a9e972ed98e0bf4de13a6ca12c2a4ab29bc9d183dcc4035ea3a",
+      "size": 49851,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlwin32.pod",
+      "sha256": "a63c0103842e0eb907c837dea01c796e1c4df92f15fdf669b38a5bafa90f4a56",
+      "size": 31934,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5440delta.pod",
+      "sha256": "8bf5111d799a516c1cb975885f124492257d144eb8cc5e4532f5367c69ecfe14",
+      "size": 42754,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlebcdic.pod",
+      "sha256": "9a25d5c168c3eb9fc5ab949180dba96305414743a2e000d7a1e40c3caea11ec1",
+      "size": 88383,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlunitut.pod",
+      "sha256": "43f2849fe32ca3d867061af3d23412f5305149cad8ab7d6a416cd0f355e0c348",
+      "size": 7950,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlapio.pod",
+      "sha256": "44266308a745d6325e9f5a8b2f14d67cbc76ead990e5397e358e52abb99f22f6",
+      "size": 22574,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5380delta.pod",
+      "sha256": "542de4798961faa9792f351856152754d9358a0e999c537ef5541df6d4858305",
+      "size": 68934,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5184delta.pod",
+      "sha256": "009b4c91b0eabde255dc5cb0472abeab957fb8c89951067fcea29ee93f705d96",
+      "size": 4616,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlmodinstall.pod",
+      "sha256": "7923eebfc644fb7138c62c2900b23aebb9c7630efdff788bd534977711c215e5",
+      "size": 9589,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5403delta.pod",
+      "sha256": "702fe2f190cb282aab072f1fd95c5d4f2a4c8abaabb5863b909ef825dddd2d70",
+      "size": 4097,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlplan9.pod",
+      "sha256": "f71f4527ae83873fa887abc2da175d7f2f8b64185f6f00552fe23c49a9c5c9c8",
+      "size": 5144,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldtrace.pod",
+      "sha256": "8462b3c5b24c4ac171226ba5052591987c1349d5a3e383bbd18d65e9a56ff94c",
+      "size": 7968,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlref.pod",
+      "sha256": "ce00db96115e18f681e006ad61c367732dd2ee2b3e9303937fca302b5bef2343",
+      "size": 36251,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldeprecation.pod",
+      "sha256": "ad634f81fda3aa634ed8ce383625d593cd39971021d7f2886f9a893a6ae68c77",
+      "size": 23353,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5422delta.pod",
+      "sha256": "3032a57a2f336d6913fbd5f18a54f1c77637238fcef11dafc1101a100c33a97f",
+      "size": 3966,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldsc.pod",
+      "sha256": "42a82df7b518c7f3399894cc33f5a94ff96e63d52472bcaeb5ad755f5f10f882",
+      "size": 26950,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5341delta.pod",
+      "sha256": "56d00ba888e838ab9ae05de316397ef67494874f2a2a5395b0e27bf167bfd529",
+      "size": 4213,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfreebsd.pod",
+      "sha256": "f0a02f23d2f08a408e63365ba6ed1583bceaacc7fbc18a5fc7a8763ef527326a",
+      "size": 1649,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltw.pod",
+      "sha256": "7bdff23ffc56ec56d7f1ad13ecd99177ec96921096fd6b35271621dfcc4dc854",
+      "size": 4483,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl586delta.pod",
+      "sha256": "2b58a6b775f6ef158a4904a83dc43f5a653a12a8e58326da20ccd456e2e9b039",
+      "size": 4651,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldebtut.pod",
+      "sha256": "d9b0d385de8ce715fefca0e950b095d413a1c89cf632104d8d330b1c8565dcfb",
+      "size": 21954,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlhpux.pod",
+      "sha256": "8d6c5ebb4c45c563fe5f15b402b9e6b759554264aa6582038adc7d20e1e92865",
+      "size": 30628,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5383delta.pod",
+      "sha256": "8ab1a2abe178f02c7cc94e3231da344b37c789554af18f67a3cb41d767e35f14",
+      "size": 6201,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5385delta.pod",
+      "sha256": "8abbb5678f249160f0bd091616152ca554f102d876bd2d86ce72d919934a4862",
+      "size": 4112,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5101delta.pod",
+      "sha256": "0346742b4e728ec0d9992b3e6da7ac6c006f832315611922440e3977a24b379e",
+      "size": 43884,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5360delta.pod",
+      "sha256": "05b573ed5c124de8e435dacbeb35373809061cb6e23abf45c63f16da764e3128",
+      "size": 44429,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlexperiment.pod",
+      "sha256": "e222763779b5c99efc4d7455e3167f3a172b09a175f929f9c115ae7accac9a09",
+      "size": 12782,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlmodlib.pod",
+      "sha256": "9223101bd00d99530d18ac568a0982a9f63340feaf49050922119d368772285c",
+      "size": 68554,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldoc.pod",
+      "sha256": "8ce282c109995897bf9a6ac4cfdab590819f65ef5a488fcc6aea9d33359feba0",
+      "size": 9376,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlpod.pod",
+      "sha256": "d70238e75f4d43ed40527e698463e28127713b876e5d85686c9faf6ae1205993",
+      "size": 23715,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlinterp.pod",
+      "sha256": "777657cba8f960ba176ba1c79720ccd52efffd738dd7e984dd725a358351a5ac",
+      "size": 37408,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlsynology.pod",
+      "sha256": "f3d5c2244413d9df8967b357a49512ae07684ba1739286decb365e056a933e8a",
+      "size": 10328,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlcall.pod",
+      "sha256": "83bdc8af2e4172d020b53b9191a2ebe02a0051eea1b4c97c034b6205d2ba1e6b",
+      "size": 57003,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltoot.pod",
+      "sha256": "545f119deb5a7c4be81921891f2a936c210ec05482aed17772483cd3fee2f992",
+      "size": 294,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5261delta.pod",
+      "sha256": "dd6113e7c37ba8ff192a35a8bbabd14f198bd4a8c59c18c02302311801cdca5b",
+      "size": 7717,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5200delta.pod",
+      "sha256": "a87b35357bde483b6896a9eb0870e4fa696a34fd6c40dcb489a703c0bfeca431",
+      "size": 115533,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5221delta.pod",
+      "sha256": "5d9c41607d9b85d2daafacb655b9d75d931022b4c22fb468371cf2ab4dec7aaa",
+      "size": 10557,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlbs2000.pod",
+      "sha256": "54d6bb428a847cdcf7268ef0f878c68ea47b3304e2d2facbc9d975f59af330a9",
+      "size": 8016,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlartistic.pod",
+      "sha256": "137c097d0615aea42eda7a5087baa3f81aab1a431b9046d5e858e8c8c31987c0",
+      "size": 7010,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlboot.pod",
+      "sha256": "9a31c8c70b8a529dca9b5e5c590e51c30f8bef663cc27f0293dd7050a9b8d6f9",
+      "size": 294,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldocstyle.pod",
+      "sha256": "a3bb1879aca4c44fbb8d832e0b959ec1b02a8aee4950cb92fda417cac330bfa6",
+      "size": 46312,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlcommunity.pod",
+      "sha256": "6030490d4fd728ddacdf84d0738ecb41ee94b9184174911a64af4f8ce0ace8a4",
+      "size": 6414,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlintern.pod",
+      "sha256": "4163d77c55f81ba59b277b99b14e0d572f490c04eab539c825323eb1ecfacade",
+      "size": 178672,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5005delta.pod",
+      "sha256": "9f8469bd7e2be74ff62e0c5ee2ed7c5000eab61777d53d0cf23ebccf52738706",
+      "size": 34275,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlmroapi.pod",
+      "sha256": "d183845cb1bf3a8c7133ce9b5ce7b9b51b47260487e2dde7fd34e12399bae9b2",
+      "size": 3428,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5282delta.pod",
+      "sha256": "8d5d089431ac75f8223e3521dd0ca7636b8a3c8105a0a85d017b3ba22ffe77f3",
+      "size": 6150,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlrun.pod",
+      "sha256": "e8bad8d247b9b8a033f03d3efbb528b4c5293d8c07c633a9ed0a16538db1a50f",
+      "size": 59884,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5160delta.pod",
+      "sha256": "675779fd5de0187e9cca9c54a38fe9c4a433998fb95ccf124b409e3b1a9f1907",
+      "size": 133540,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlunicook.pod",
+      "sha256": "9864c56b7ac9cad3b6a1e5986176e3a77b861432d0d52ace48c52c9820c73f88",
+      "size": 25450,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlipc.pod",
+      "sha256": "5789371ee6f0a215c200fa82762f0ce391cf6e07c226ec0bd60c3f1f1e91a269",
+      "size": 71938,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlhack.pod",
+      "sha256": "1da187fb484989bfc77a626d49f00b7303803b925386805a6aa53ab6ab12d0f4",
+      "size": 50805,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5224delta.pod",
+      "sha256": "863b2932a1e0b216e36cee9ef7b2e90fb4c05b9334ede518baa623162399357f",
+      "size": 4450,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlgit.pod",
+      "sha256": "794d6776c40716bb27dcbb1c8b981c57d1ee0ee342cbc074fe7dc580aabea5ec",
+      "size": 31790,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlmod.pod",
+      "sha256": "81f81616afccae997f4f59d735c1779d8a0358c70dee78bebd35fb9c976b381a",
+      "size": 26608,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlform.pod",
+      "sha256": "c552bcbab286b89ddf39635a9777958462af5fd2928fb7c54d4b1d9329fabf95",
+      "size": 16656,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5140delta.pod",
+      "sha256": "d0c1d1140542b74ead0a18fa0a2e9e94b9d93708ed93b3a99c997da6668a80df",
+      "size": 144258,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlapi.pod",
+      "sha256": "775cd2c4c8b3e3b4836b2d709035ceb6e2f92bce7ef57175e780b63d2a2f59d1",
+      "size": 1064915,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5243delta.pod",
+      "sha256": "ae4013991cd96e5ef5d3b658cba76dee0794e019235fb7b76820b566aee63ae7",
+      "size": 10924,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlreftut.pod",
+      "sha256": "0a55f57513ad7429737b3d7315f7271309093eab49d140514eecc105f4d15f58",
+      "size": 18756,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5381delta.pod",
+      "sha256": "a31734e6b9d4a3bd27801aaae82286bd6149c5ad6542eabaa4a25221a6d1e1a9",
+      "size": 3945,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlandroid.pod",
+      "sha256": "78b29f75200e65f585ed2184101d9aa471132ab49a81691b748c20d8eda906ba",
+      "size": 8241,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldelta.pod",
+      "sha256": "8bf5111d799a516c1cb975885f124492257d144eb8cc5e4532f5367c69ecfe14",
+      "size": 42754,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perluniintro.pod",
+      "sha256": "f405b3a5753a6a4c05e1cd12a1a5bdada514b381d385cd7b0b7eba569a449f07",
+      "size": 38625,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlootut.pod",
+      "sha256": "916f015b7a9a8498cdab24b14029aa6c6333a5174746fee5fa3a41e9123a5386",
+      "size": 26756,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlmodstyle.pod",
+      "sha256": "3b5fc94ba9ed8454aa55c159cef1f178c7d385d8532a092eecc7050e442610cd",
+      "size": 22275,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldebguts.pod",
+      "sha256": "100c8ab19494d76020ebfe0df8667267ba66c53b091c01157e4f810c7186935c",
+      "size": 43246,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlgpl.pod",
+      "sha256": "0c6123f393466be66306dbc6a2464aae96579c8bcc7ae56185061246bfac65f8",
+      "size": 13710,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl587delta.pod",
+      "sha256": "6009128a11b71bdf4e36094b5542dd9a012b5858b83f39dd3219982c05d448ea",
+      "size": 8355,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlunicode.pod",
+      "sha256": "f5248e0790e6885e1fbb84dc90af162c312aa873be134c6fb2f9dc21b09e4800",
+      "size": 96827,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5362delta.pod",
+      "sha256": "c32c74627b164447daef369a3f5afed558d1e00a496fabc291378dde5428cae1",
+      "size": 3944,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlos400.pod",
+      "sha256": "f3fb5dc1a8a16578c269cf9397460a441a0a22c0b309b2d9c8828828b8a6d479",
+      "size": 4784,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5220delta.pod",
+      "sha256": "a15dc91f6a5c70d7409566cdb3d6429d132be4d1671b934c1b24905ceb23b340",
+      "size": 129679,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltodo.pod",
+      "sha256": "494092cd6f7ad242ac9050bbf1bad8e480969bf24b8827cf4217482bc2533c5d",
+      "size": 372,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5342delta.pod",
+      "sha256": "17b4c4f4292bc311bf154cddb1e42903417473756ea437b1db348d5a63203db2",
+      "size": 3944,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlrepository.pod",
+      "sha256": "f2882c887d738cd52397ffd0559d8d847e8a6993b26ff24de0e606e7137056f4",
+      "size": 509,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5382delta.pod",
+      "sha256": "a5ebec6254f1535b3bce76d38162de47b265ca88c9a31d92d60900814fb32844",
+      "size": 4055,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfunc.pod",
+      "sha256": "c01db73df807c9f133a25926ec6a47aa2d9ea077b3b9df1622a5ae017069d0a0",
+      "size": 427268,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlvar.pod",
+      "sha256": "41569d57a6910093467f7621f357f779e7e8fed7f01e57378e8e13575554a0fa",
+      "size": 93632,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5240delta.pod",
+      "sha256": "936e7e5aa30d557efc14750d3f46d9d0f2ee5e016b9b9aed2c96549b3a7f710a",
+      "size": 64520,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5303delta.pod",
+      "sha256": "3f391d78bd4e1c2e165e300503e4a9a0b068e2c1f0a3927e9cce266cc685e305",
+      "size": 4980,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlre.pod",
+      "sha256": "aa7812cfa8ddee51a8342d72c836d857539bd920686143f8bb9e0541d05ad718",
+      "size": 139399,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldiag.pod",
+      "sha256": "6627f732bc4bc9d175583ead66bac74d50b1c68d0d12770a632bab549aa44bff",
+      "size": 330044,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5321delta.pod",
+      "sha256": "ec67a813030730b09d635592f67095dd20eeb425cc19d86c064a7d84cc56fb9f",
+      "size": 7007,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl583delta.pod",
+      "sha256": "e737a797fc663034929aa717c92f7d641c5e96623a9044f29e5b4ad63ed2ed48",
+      "size": 6334,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5223delta.pod",
+      "sha256": "8c283e491d44e33737c0155be64eb28cc207d0a9c6a329588cf4e5aab3d9a272",
+      "size": 8442,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5004delta.pod",
+      "sha256": "eecc565a67c0dbb2e440eac59ec50bf3a0883aa25668dbd4ba4835e1af0866be",
+      "size": 56238,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlnumber.pod",
+      "sha256": "0844717337c4fbb278b012fa255e95546496b05c1bedc640ad0f5212ff145d30",
+      "size": 8486,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5244delta.pod",
+      "sha256": "7202272fc436bbe15f44f8e84842b11d52f9f48b72e2a83cb422ac1e7f01797c",
+      "size": 4456,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl589delta.pod",
+      "sha256": "6a883c3d83184a46e8ca990d987bc7b30a796a378088841be871704e21519914",
+      "size": 53884,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldebug.pod",
+      "sha256": "3b9dc800d53924afaa47d6a53f21d2970ce5caf8a8b623666b4be47db3ef5470",
+      "size": 39881,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltooc.pod",
+      "sha256": "17c1bfafbae4b02a81955695175061469e19ea564a8a9000ae8920bdcd194eb5",
+      "size": 294,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl582delta.pod",
+      "sha256": "c434300daaf75f0750e6810e59124ded6f19166a0869ccaae882d7a1dda12f09",
+      "size": 4448,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlriscos.pod",
+      "sha256": "a777822a8808f9a566af7b3f1094754ea10c2f9451a6ee0b2b98dfc2b831b5dd",
+      "size": 1617,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq9.pod",
+      "sha256": "71d3e683d50a54d462942ea09b420c206d3af4c8adc5bfb5ad7def284f9c2723",
+      "size": 15257,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlclass.pod",
+      "sha256": "4630872cc8fd1f8c10e987952e92a74cac710b85b093c03da89461fd3bc8bdf8",
+      "size": 13831,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5122delta.pod",
+      "sha256": "a47280cad0bbde02a720989c80ddf2edc8d62637ab441f8a585a8a7b0ab14c84",
+      "size": 9577,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perllinux.pod",
+      "sha256": "43be6f82dc8f9a10d8024fdde50331faae9c0f48e219202e1740f01c2cec9617",
+      "size": 2029,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5163delta.pod",
+      "sha256": "8fe849fc47d3e8ff7239c6516dc1417250a204c5b806cdf49c933161ba1b2b18",
+      "size": 4085,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5262delta.pod",
+      "sha256": "1dc4616b62c4b0a8423aa6c32c3fd19a0cc51a54148acd0dca8d054630830871",
+      "size": 7702,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5100delta.pod",
+      "sha256": "151360463f96697e1f58d7a49d433f9c052b5e36cc763d9f4697d4eb783822d4",
+      "size": 55869,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5400delta.pod",
+      "sha256": "7cb045049589116259d539c305ebb3cd63c543dcf3239423fbc092717038bf3b",
+      "size": 51096,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5283delta.pod",
+      "sha256": "480540d2f8d9bc3ffbb2965c17bd002db54dd44b97f89c3dbde544c3dc346e3f",
+      "size": 5111,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5420delta.pod",
+      "sha256": "96f534394bbdad22d51ff2e1e3747095cdfd6e6934cd89a1b0233cb977e4664c",
+      "size": 51548,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlpodstyle.pod",
+      "sha256": "8572faf79e7d2fd71b9639dc7602e82ca172c2e88530479151b8f7efc410a66e",
+      "size": 12097,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlglossary.pod",
+      "sha256": "f1acae38fd41ccb6fb165b31787827a6b5d720ed8044cbf841903721d5d4771f",
+      "size": 137844,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlclib.pod",
+      "sha256": "365d43483297425903b154051e10485a5c2639e5ab26ec93356bd08ad21339ab",
+      "size": 54115,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltru64.pod",
+      "sha256": "2818b0b0e4f6e88c02847d1dfa6836fd3ca5e5e7ada6950372e296b44e8d91f3",
+      "size": 8511,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5201delta.pod",
+      "sha256": "40fed295fe0e605d04ed0e65dce07090a1b5f1aee50ed3e8b5162cb5436bbafc",
+      "size": 10758,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlreref.pod",
+      "sha256": "be56d62c6c475fbf4757ed9e8cbb3a6da396821fc4c77baa9dc85c1e7b7c58ee",
+      "size": 15560,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq8.pod",
+      "sha256": "3c0151db8ccf317da6a876d46dd1629abaeb8f06f6c896d0fb809a836c6d8cd0",
+      "size": 49899,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlclassguts.pod",
+      "sha256": "5faf26b7ba5d6e71e7224521a68b981dcea2dcc6e7d431685aaf68e3cecc1269",
+      "size": 15459,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlrecharclass.pod",
+      "sha256": "6445c53264b9ec957f60bdc5f29abbe46778f7aad887a1541e4cba9ea78264bc",
+      "size": 48890,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perltie.pod",
+      "sha256": "065978abdb51289939384ab1376594f354d46a05fda0adda1c043dc9467e00a0",
+      "size": 39549,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5361delta.pod",
+      "sha256": "a85cfc3ea89e3926760b87f882821aee914766d96eca91a05f8d37150586f16a",
+      "size": 4743,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlsec.pod",
+      "sha256": "a966b75821cd32a999f276df6e722bc4b32fc5fa88244be1f6a5a6c7b3aec5ff",
+      "size": 28059,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5301delta.pod",
+      "sha256": "377946617ba8cbe188ad71e264bd272b0382b176df3b4d3bb33926ea5ceba4d0",
+      "size": 5730,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlxstypemap.pod",
+      "sha256": "d68b3bbf5411af4d321206027c669ad3ca1c398e50ebb6e50f64e8f033ca4102",
+      "size": 24010,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5121delta.pod",
+      "sha256": "30735c48d390531839bb46f5414da8fa312b0e2297ad45545fddbbd3036314be",
+      "size": 9975,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5404delta.pod",
+      "sha256": "f246e61a75b5f74cb116620cdaf62ca774e45ea5e2e30e584e6416d4beff538c",
+      "size": 4048,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlpodspec.pod",
+      "sha256": "b5b61844aedfd723b912b73380844fbedd0e0ef15f1ff6b6ee4493b528d7b75b",
+      "size": 69045,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlreapi.pod",
+      "sha256": "15dd5fc6f8c3b8ae17b291757e8bf60af93edd7e55f4e04f19a52e2d0f92043e",
+      "size": 35484,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perllocale.pod",
+      "sha256": "383bb2b85f77d07a785dc6ed064ec22dd2b74e79a79fd4ef89f88e617156b999",
+      "size": 75822,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlretut.pod",
+      "sha256": "6144d01b402fcdd4b93e2f92f29e0cffc9869a06c85c57757e8682c145801e39",
+      "size": 123417,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlcygwin.pod",
+      "sha256": "04bdd7270d30617e2b132684ca7ddd2c7387bdbb606cbe36e75cec3c711f4c85",
+      "size": 26154,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl.pod",
+      "sha256": "47a6949e0b63f320998c9b09d78a0c4e7455601a8e0c80b317fd642967d0f6d9",
+      "size": 19824,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perllol.pod",
+      "sha256": "35aab25024621b96d78ec0e6af51e80c97c4c3b662b8209471027072ef0a5439",
+      "size": 9351,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlhist.pod",
+      "sha256": "51889c6f3bc7afc55dca93cd97eb214eabccc8f8f1add2a70a7903bff87f9e9b",
+      "size": 64182,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlsecpolicy.pod",
+      "sha256": "4413e904e099f235e0d33af81e54d8258a30722d884d445e96222d801ea8ec4a",
+      "size": 24563,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5162delta.pod",
+      "sha256": "e6ad67d5ee83a0a57928894de504e14d3a4c9b082c385adaff144017cf4dea80",
+      "size": 3594,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlpolicy.pod",
+      "sha256": "fa8d28e58b7bcf99f6923313277443cec3d5f43e31b4226d76b8876478576aab",
+      "size": 27290,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5181delta.pod",
+      "sha256": "03352273f95000c79ae1d0350e896ae59dbd6c484f5338a477f98ff2fd5e5476",
+      "size": 6597,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5242delta.pod",
+      "sha256": "55d3f3d5eae7ed74d26494a033aa27583446130322ff6715d4bd5954a848f482",
+      "size": 4103,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl56delta.pod",
+      "sha256": "26af4b45108460dc1a780ac967bf1d1b8fa4fcba57112bcf42fcef1a61d0f83c",
+      "size": 107174,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5384delta.pod",
+      "sha256": "13fb629174fb51f328990ea56f3a505fa2b77870c9f5dc7961c2d215aa533ab4",
+      "size": 3574,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5343delta.pod",
+      "sha256": "aca521a1968324cefad56fb067cbd30c64041b624d386e2391d0a1869775ace3",
+      "size": 4054,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlos2.pod",
+      "sha256": "882f849b184b07557fdda617d39d2c7af1f4fd609227e3e4a8519364153a1aad",
+      "size": 93367,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlvos.pod",
+      "sha256": "f12213aca8fd67e54394d4f6b360fa3eb79a4395f5fb7a152efb44bb895c24a4",
+      "size": 3863,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlunifaq.pod",
+      "sha256": "b8cee3b409624763ba333ee5f54afd5a62dcdb909c07f846378ae58692e68f98",
+      "size": 14125,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq1.pod",
+      "sha256": "88c1d26a7309385361bdf866d04587adee40eac3441df588ef12bd80517ddd39",
+      "size": 13501,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlhurd.pod",
+      "sha256": "8b5e791d6690bc195c4d9799a58f3d497ea599e096e3b35e8cf80006aa3eaf7f",
+      "size": 2013,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5281delta.pod",
+      "sha256": "5a513c380da73b41a0f1c1932b3a631e0786f2bb4bf0d326f00e3b22a583b387",
+      "size": 4599,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5421delta.pod",
+      "sha256": "1f0d88918017bacc28132268c0be86fec4bb145b45b972bbcb0d87e7cad608b4",
+      "size": 6322,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlopentut.pod",
+      "sha256": "39f9cfe294b8b16848f765937383490b2c3cffc3f97ae9ce4766f8ea5525648c",
+      "size": 15224,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlreguts.pod",
+      "sha256": "2a5b7e6d4bc510423a550e46a4d7cf5095b1c7c238cb7ef8241539a30cf6b7a6",
+      "size": 43401,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5180delta.pod",
+      "sha256": "8f234e95d19131619618b78597800920f721f11b6c408b3528aa2cf5ed04db26",
+      "size": 119416,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldata.pod",
+      "sha256": "364e0abda23ca504fb69c285168e7da837cdf87e80ee6afbee31904aa2579390",
+      "size": 55221,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5123delta.pod",
+      "sha256": "65fc276d8c0e49376d71272663cd0f0d09a1977d93efd0c193c622a978b52398",
+      "size": 4100,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlrebackslash.pod",
+      "sha256": "2d9a9c830c0d10b0b20302c71938432d3ca631251991eac6013799e5d656fa21",
+      "size": 34733,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlos390.pod",
+      "sha256": "166664617d186747b8e7e0b67a2ea76d29729492829cc85b246145dbe25bc849",
+      "size": 12669,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5260delta.pod",
+      "sha256": "8d2ec15e14301e8750e8ca41cd2fdc8f650a43bf2136b9171210d3b533ff068a",
+      "size": 100185,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5263delta.pod",
+      "sha256": "37a4791bf3e1c9b9f4ce1afbba006808cd6b99f4a8bd52843355db80c89e776a",
+      "size": 7017,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perliol.pod",
+      "sha256": "db3dfebed9ead81a0a0dc848b8f90c761e2e58285dac70063f0fe81215d42de0",
+      "size": 35537,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5302delta.pod",
+      "sha256": "c36a2a268629ee621b79419560525cd624998051a69056acb11f69c21e99a7ea",
+      "size": 4682,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5320delta.pod",
+      "sha256": "a9fc67d39df641285f9bfcf9b71552258a2b674da5e819f136bcb01e2bda218c",
+      "size": 54029,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlembed.pod",
+      "sha256": "f57d5fdaf42ac07dcfa7ec22d2d7ba69138ec065bbaf1b7cd7679a083839021a",
+      "size": 38481,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlopenbsd.pod",
+      "sha256": "421d8272d3fd41ad1a1118f94730100df8394823b1743d531ad3a8c8985c22e7",
+      "size": 1243,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq7.pod",
+      "sha256": "fadd170df4a4243658f1d63941c76e256986b6a767791476dbfc92cdf78e2804",
+      "size": 37832,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlpragma.pod",
+      "sha256": "c9f7d14fa1a691eec28f34fda0aa5c26746249aa383d0211a5061c63dcfc94c3",
+      "size": 5138,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perljp.pod",
+      "sha256": "3c09809d1653531ea741441dd504a8d508d22bd16c2fd16e070384447fb8a49d",
+      "size": 8360,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5300delta.pod",
+      "sha256": "8f3116a36890e5bd02b2a82c74636d6f01d093fd9b15d58003a61d1da4605dc1",
+      "size": 41010,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5202delta.pod",
+      "sha256": "81d3016cbb82efb2b83bdf5301cd3c2a64b34c7d58f731d3e209bbfff25d3611",
+      "size": 12271,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq6.pod",
+      "sha256": "f0b75b13af7a67afae58237950eb5b1af4d32709e26c6df24d3e7f10c7dd73ec",
+      "size": 39567,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlsyn.pod",
+      "sha256": "1c414249a6c83e10900c5c3eea131a9b08d4268fe6a72f44298ffe299e448335",
+      "size": 54550,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5161delta.pod",
+      "sha256": "d120f13dc53c6d1863a5371686dd71fa3d91a12426a062c05da80eddd401c5ec",
+      "size": 6142,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5222delta.pod",
+      "sha256": "c960ceb00e72cc56cdd25969b3d2d6a1fa4b8e41c44be90b00da04a5f2db4c18",
+      "size": 12319,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfork.pod",
+      "sha256": "041db2285aed20c33415d9d40eeb35397a4a5cefc53082f53c23c3936a7e51d6",
+      "size": 13355,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlaix.pod",
+      "sha256": "c860057db3e8951ba83dbc0ed20055a4aacc8345f653945217fb874dd3550c20",
+      "size": 22709,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlbook.pod",
+      "sha256": "11f97ae3ee11dbeca74c501703b1255c0ed68069f22b8885ab04a8c8798588f1",
+      "size": 8462,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5143delta.pod",
+      "sha256": "606e7ccda71d0fa24bf7f8570db025b43639c218446dcac3d7c515a5bb3408d4",
+      "size": 7760,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perldbmfilter.pod",
+      "sha256": "7dadf83a21329fd8d1024f8e9629514902327cc4b8e57d7ced532633285a8bf2",
+      "size": 4940,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perllexwarn.pod",
+      "sha256": "5e2546f07c05621682df82159ec789e1e348fcb8bc748cde66aa0bad58600070",
+      "size": 355,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlmacosx.pod",
+      "sha256": "ba3aaf02a605dd64aa59d0a948667ce5b49209644c5a7631e6064248056293fe",
+      "size": 12143,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlvms.pod",
+      "sha256": "2bcf4d32dc943be82bfd8ee8c059a6ef6b4891e5387c142a5dd1b45a70b939b7",
+      "size": 50750,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq3.pod",
+      "sha256": "31ad05303b5c3463d9eff5d0f2452cd2116b607d196ba12b884440e7ce86a5fc",
+      "size": 37679,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5363delta.pod",
+      "sha256": "ac446926f8707afccc19162c47be46e2be1c1c3e9fc9ef2deeb9d01b3a7fe44a",
+      "size": 4054,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlsource.pod",
+      "sha256": "69deeeb6d8423be6aaa99dbd475f7e4110087da87d28c1555dba0310e9429434",
+      "size": 7132,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlbot.pod",
+      "sha256": "8a8a9c11b0c6c3efda27f6d13b5c5adb70c14dc306de507145d800a2226aaa89",
+      "size": 304,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlsolaris.pod",
+      "sha256": "46b89c63743f1940b5ba49c7abd48c77d262391a7a4fa28ba506d96f904a2835",
+      "size": 29844,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perlfaq5.pod",
+      "sha256": "3536e727eeff10ac4726654c9251de7635350626deb4e08416b664ae85034879",
+      "size": 56284,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl584delta.pod",
+      "sha256": "a0a5fe1db7a344e6a034668f4ae942c25c349f4d99ce8d304e7f6b07c824f546",
+      "size": 7363,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5402delta.pod",
+      "sha256": "556a0c9275b2a6682c740db8749996fab27d555869ad591214e17648848aec2d",
+      "size": 3574,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl581delta.pod",
+      "sha256": "4b182827124f1331cf45b0fbc199cede950b9d6bfadad272f06942617e40759d",
+      "size": 38060,
+      "type": "0"
+    },
+    {
+      "mode": "0o644",
+      "path": "perl-5.44.0-ohos-arm64/lib/5.44.0/pod/perl5120delta.pod",
+      "sha256": "e6e650d8faea67246befda3ba12a4f4c5badb96ab6be197f42123d9b7142769d",
+      "size": 89271,
+      "type": "0"
+    }
+  ],
+  "schema": 1
+}

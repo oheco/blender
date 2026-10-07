@@ -1,0 +1,18 @@
+[
+  {
+    "source": "blender/build_files/ohos/deps_core_sources/builder/consumers/whole_archive_marker.cc",
+    "destination": "blender/build_files/ohos/toolchain/probes/whole_archive_marker.cc",
+    "source_sha256": "3590790f762e5c62e40150e47dd12a2905f3f7bd98b07839913f495e2fbe317c"
+  },
+  {
+    "source": "blender/build_files/ohos/deps_core_sources/builder/consumers/whole_archive_probe.cc",
+    "destination": "blender/build_files/ohos/toolchain/probes/whole_archive_probe.cc",
+    "source_sha256": "338f761309213202d1efd01f519343ccf92820063019dc1db80b1a88e9286d99"
+  },
+  {
+    "source": "blender/build_files/ohos/deps_core_sources/builder/cmake/native-link-features.cmake",
+    "destination": "blender/build_files/ohos/toolchain/cmake/native-link-features.cmake",
+    "source_sha256": "e98f504a6eb0611d582d5ed87d1beb23c8079a16976c5cd434c723eb371d4d92",
+    "adaptations": "Independent snapshot, probes path and toolkit-only variable namespace"
+  }
+]

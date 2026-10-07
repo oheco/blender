@@ -1,0 +1,28 @@
+{
+  "name": "tiff",
+  "version": "4.7.1",
+  "kind": "source",
+  "filename": "tiff-4.7.1.tar.gz",
+  "url": "http://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz",
+  "license": "SPDX:libtiff",
+  "license_files": [
+    "LICENSE.md",
+    "doc/html-prebuilt/_sources/project/acknowledgements.rst.txt",
+    "doc/html-prebuilt/_sources/project/license.rst.txt",
+    "doc/html-prebuilt/project/acknowledgements.html",
+    "doc/html-prebuilt/project/license.html",
+    "doc/project/acknowledgements.rst",
+    "doc/project/license.rst"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 4000609,
+  "sha256": "f698d94f3103da8ca7438d84e0344e453fe0ba3b7486e04c5bf7a9a3fabe9b69",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 4000609,
+      "sha256": "f698d94f3103da8ca7438d84e0344e453fe0ba3b7486e04c5bf7a9a3fabe9b69"
+    }
+  ]
+}

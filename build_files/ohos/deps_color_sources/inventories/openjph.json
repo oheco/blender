@@ -1,0 +1,992 @@
+{
+  "archive_root": "OpenJPH-0.25.2",
+  "source_archive_sha256": "ae5f09562cb811cb2fb881c5eb74583e18db941848cfa3c35787e2580f3defc6",
+  "members": 172,
+  "files": [
+    {
+      "path": ".devcontainer/Dockerfile",
+      "sha256": "a01dda3191a04245e0a62c27566ab1b1a0cf1588da177c9ce9f663bcc688b05a",
+      "size": 1822,
+      "mode": 436
+    },
+    {
+      "path": ".devcontainer/devcontainer.json",
+      "sha256": "e70f4c2f79047d0c5badb970f96020823aaf4e974a9302e8218e2ff63cbf55eb",
+      "size": 1001,
+      "mode": 436
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "sha256": "bab8886a437d83bda52e56c270dd1b17c173cd0bcb3fd817b61566af802b2608",
+      "size": 830,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/ccp-workflow.yml",
+      "sha256": "485067ee7f5f70ce73b9dbc4439eb4b2894ac037c4c9b62d1bf3d668d12d0897",
+      "size": 5598,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "sha256": "dcbc96a8f0e4e96214cb46e92c7b691eee2d8abeefce9602aa09709de0fb7d12",
+      "size": 3437,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/emcc.yml",
+      "sha256": "7d90aa2d7fb2461d68f69dcc39835cea2fa2f6b990a7ef7cc30715c8acb2eb0d",
+      "size": 1254,
+      "mode": 436
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9a6a432c51e6a496af2f3d59cde17c666e62137f60cf4f9a8e2958570761cbee",
+      "size": 51,
+      "mode": 436
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "8eaca6df96c3570d0e7a8ac9ae73ef724263e92296a9e54a9bb493ea93e2cda3",
+      "size": 8837,
+      "mode": 436
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "1bc8b417c9f143e84efe7d8fd8f63a8bf74a6292fa31f9a2cabb3b9bb9b564fb",
+      "size": 779,
+      "mode": 436
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "5ddf5177863dfc9ab65fa129d587db651241f00e21ed2427b218bea997591f98",
+      "size": 1448,
+      "mode": 436
+    },
+    {
+      "path": "README.md",
+      "sha256": "873f2c88f448e3f6f3cd8ef088d126b103ffa52853778af0acce9cd52f7effc3",
+      "size": 1708,
+      "mode": 436
+    },
+    {
+      "path": "_config.yml",
+      "sha256": "89500f4d9d2bb727f973ace596b9ea2e58553acd80c41d95c3c2658f45095560",
+      "size": 25,
+      "mode": 436
+    },
+    {
+      "path": "build/.gitignore",
+      "sha256": "a20e4b7120218b8a91ba6a24b72327b26e0c81ed29a8b36331a5dac4adfe9fbc",
+      "size": 12,
+      "mode": 436
+    },
+    {
+      "path": "docs/.gitignore",
+      "sha256": "8a62a505fe796e2f3d40a4ecf5be72a991a8bbe6b474038dd7bae5002f091cd0",
+      "size": 17,
+      "mode": 436
+    },
+    {
+      "path": "docs/Doxyfile",
+      "sha256": "734e0f0e4f3aefbdf4a2ad3ac4e9c017c60a12b2b1569d767732fcb840763949",
+      "size": 109229,
+      "mode": 436
+    },
+    {
+      "path": "docs/OpenJPH_docs.css",
+      "sha256": "70c52f7630f0d7f8214f98920c2af7a380bf31b7c8f045b6f9ebd4593b2721d0",
+      "size": 74,
+      "mode": 436
+    },
+    {
+      "path": "docs/compiling.md",
+      "sha256": "a4ad398ba01fa580e3cf4ff70f9203db5ec74a6153e2e445be084240fe9ed8af",
+      "size": 5457,
+      "mode": 436
+    },
+    {
+      "path": "docs/docker.md",
+      "sha256": "49097ac05d6b9ec15bc82b865219134acd05ddcd671323f79848d69ea4a7423d",
+      "size": 470,
+      "mode": 436
+    },
+    {
+      "path": "docs/doxygen_style.md",
+      "sha256": "bf004b73a429b7e4f00b974711e008f99e2891037158d7c9e35cfba3d905be78",
+      "size": 1390,
+      "mode": 436
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "29df299f78f7eb0270bf3d2bd0be911e07f126a9a23e26ef84691e50bf5dd55d",
+      "size": 1305,
+      "mode": 436
+    },
+    {
+      "path": "docs/usage_examples.md",
+      "sha256": "1efde93bfb4a8f4ae016bc8ebe7916d08b7f531d3b2ab6aaa7d58e541e096789",
+      "size": 2004,
+      "mode": 436
+    },
+    {
+      "path": "docs/web_demos.md",
+      "sha256": "16668a7abb9f2536d8d0ee7bf4683f5de124c46a8b91f3471f4bab9301964188",
+      "size": 806,
+      "mode": 436
+    },
+    {
+      "path": "ojph_version.cmake",
+      "sha256": "226db2fea6a3ebdef7557972945530e2fa579e0d2427a5b352ca0a54715b1148",
+      "size": 1173,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/CMakeLists.txt",
+      "sha256": "4d8d149ad10bf470655a3cffb6e9ad54d40751abf6abd48f26f32b974928d0a5",
+      "size": 972,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/common/ojph_img_io.h",
+      "sha256": "379e518ca3c72a00d3c10dcf7ee5da523db5202a2fdbf4d93f8c2c867325353a",
+      "size": 24032,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/common/ojph_sockets.h",
+      "sha256": "05f0080fa2d8a9e0705309a148e5e75ad357d8c6f77c8cbae5693853cdfb6b8d",
+      "size": 7192,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/common/ojph_threads.h",
+      "sha256": "ad04a92f814228e092e135f687b78bc59e411373de1de821a152b2896a178aaf",
+      "size": 4527,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_compress/CMakeLists.txt",
+      "sha256": "02dd19613284157e53b8666318d6c9a73ebc4fab899a890ccd19bdd3643d5b7a",
+      "size": 1994,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_compress/ojph_compress.cpp",
+      "sha256": "646d7a046dfb17e61b2e8339a6ea2bacbb914a8d3fc293617f4305119c83d503",
+      "size": 45774,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_expand/CMakeLists.txt",
+      "sha256": "0c9b81230795379662d8af2c91ef4a7f561b76cbdcf4e5beaa5d8e740305d2ef",
+      "size": 1976,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_expand/ojph_expand.cpp",
+      "sha256": "0b227125f55ff2fe248e40a552457f37e1b5843ce1205939f59dd195cf0c44c4",
+      "size": 15382,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_stream_expand/CMakeLists.txt",
+      "sha256": "22186119d2525fa1709557e33573f879939ce2da1deb989aa3e00bac12a50729",
+      "size": 977,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_stream_expand/ojph_stream_expand.cpp",
+      "sha256": "f52c284823d5f37ad605615c51011bf51d2e7244fd19dda307c310cc334facd9",
+      "size": 14047,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_stream_expand/stream_expand_support.cpp",
+      "sha256": "aaacd60b2d7ad0a3436fe39b518f4a3a7ba415642f17a97af82a3ed321ed8a6e",
+      "size": 15182,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_stream_expand/stream_expand_support.h",
+      "sha256": "1567fd6e7d3a0c9a05f4df130122481b053e0c131e89b02769060e6a1de7f8d6",
+      "size": 17812,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_stream_expand/threaded_frame_processors.cpp",
+      "sha256": "fb22ae01152c4bbfcec27d6408cee1fa5bba09fff8b562364fd7ad8ee995b3d4",
+      "size": 2574,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/ojph_stream_expand/threaded_frame_processors.h",
+      "sha256": "a1b14598374f0107477f7bd1ad0db4be8db1d53e6415fdb12bd21d601f0673f9",
+      "size": 3581,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/others/ojph_img_io.cpp",
+      "sha256": "f369a9d37a4d1e238c16484a549122001579e652cd9b87a7018544b8f3297742",
+      "size": 66914,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/others/ojph_img_io_avx2.cpp",
+      "sha256": "44ab8f9f8943700b69439532d71a9d765b1df97dd09b6ef3aded0aa1762fdace",
+      "size": 12530,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/others/ojph_img_io_sse41.cpp",
+      "sha256": "251793a10476936a41929e65ea0ef85ccdfbb02a22d672371b6c296758bb72f9",
+      "size": 17048,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/others/ojph_sockets.cpp",
+      "sha256": "0bb7cadba01c6f6fa76b8b2b549baed096b1b5958e7a31c42019800c13fee739",
+      "size": 6570,
+      "mode": 436
+    },
+    {
+      "path": "src/apps/others/ojph_threads.cpp",
+      "sha256": "50e81e0aaa173ef2e91e27c34adb7967c1402d9153962cf82390bc6f09520f2b",
+      "size": 3705,
+      "mode": 436
+    },
+    {
+      "path": "src/core/CMakeLists.txt",
+      "sha256": "74630f2c54380dd3a8747a6f93b3162874bf714e124929b8164eff056d97a7d7",
+      "size": 7991,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_bitbuffer_read.h",
+      "sha256": "29fb8909d7a5bf5ce2582e6600f807aac6ee96dd0eb497a98e599efa18cb1993",
+      "size": 7333,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_bitbuffer_write.h",
+      "sha256": "b6c847d57b01f88ec2386cb6435d65a15a8482d2ec89cf6079847ff85eb2bae9",
+      "size": 5408,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codeblock.cpp",
+      "sha256": "44f296d0f14f7ce2d495d4a69cf8d631288eeb55c0f6dd95ceb8bdaa8c62fda7",
+      "size": 9589,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codeblock.h",
+      "sha256": "d07d0a78c9b4be27217800d9cad85c0e259704b86c2d49d0512464fc6c835818",
+      "size": 4319,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codeblock_fun.cpp",
+      "sha256": "7695b045da1791d796be4f041a47c36d0e8fd040a1b5f4c0eedfc1629d4d5090",
+      "size": 11284,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codeblock_fun.h",
+      "sha256": "db88d7839bb7217702c668870c5297cb4ab418619f592cd54d83335dd39e19b8",
+      "size": 5052,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream.cpp",
+      "sha256": "ef93eb2171d42fc2042ab7e2d2e44590f768f56487a7f90538c2ab80b4df9ea9",
+      "size": 6870,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_avx.cpp",
+      "sha256": "b4ebc79edf0fee8f3039eb4084b53e8599351b679d74a92339265b62a18a17cf",
+      "size": 2408,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_avx2.cpp",
+      "sha256": "8ab0a5ae998258e09353cee72c74b756e368840c83c3391b8007e5137e593d69",
+      "size": 10879,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_gen.cpp",
+      "sha256": "7262774287ceb310e02ef32db2833741d511fd6cf48b4a3a194d060600166b99",
+      "size": 6287,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_local.cpp",
+      "sha256": "1e399a93ce9fc5b618c43b99b2f709f010702db9f5b98ca419017bcb6bbee9b1",
+      "size": 46266,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_local.h",
+      "sha256": "50633efc0be6947028606291c472fd7dc13beaf54b0eb49d10e005aa5f1d190d",
+      "size": 6397,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_sse.cpp",
+      "sha256": "30c34148be51260fee77a31c66591afc25f07f944b39c51103af57682e722caa",
+      "size": 2399,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_sse2.cpp",
+      "sha256": "fc6dd9170b7beabb3374eedd68ca98044268f40473cdc642712e6a0c4428f386",
+      "size": 12041,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_codestream_wasm.cpp",
+      "sha256": "e7c892e87ded278990809397890fd2f74245c1b670a88ec3781349920bf99a27",
+      "size": 11350,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_params.cpp",
+      "sha256": "de2d44ff8a38dafef095e81b7a03efe32de860cd739f79413232d843dd263a36",
+      "size": 91761,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_params_local.h",
+      "sha256": "9ceb7e2ef570d52504eb0f3c94b3d2d39738fb7f40ecdb6e307d29b12939bc71",
+      "size": 37228,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_precinct.cpp",
+      "sha256": "619c7f5ce2ef702285979c55547208dbc9386588432a6d51f2dfba6e0935ffed",
+      "size": 21376,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_precinct.h",
+      "sha256": "f797a2fa8d0cfda29f728e8ea12c23beb3ea1c8ef85e7058e97481ab172c5a67",
+      "size": 3137,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_resolution.cpp",
+      "sha256": "0674ed12e7d2cb0f390d4ed63b56ae318e1345ffc48984f0e7380389de82f7fa",
+      "size": 37091,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_resolution.h",
+      "sha256": "9a39f3e196837287342389b85beba1866df43b11c7bc4cdde2a5108f58e9900b",
+      "size": 5100,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_subband.cpp",
+      "sha256": "35bf3e1ff06014b20bca314ac9d38d88d3bb625d8743776c0fa7cc2839e57ce3",
+      "size": 13762,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_subband.h",
+      "sha256": "d7e29e8f6f35af959a6f876344b7130f61769fb519e2b5927d2e87347e7e10ce",
+      "size": 4266,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_tile.cpp",
+      "sha256": "e744c4cfd369f01c09ca4febff496618b3648288b26aec1166ae1b0b32dd9d5f",
+      "size": 33596,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_tile.h",
+      "sha256": "2cc9d133ae0b285cd3207cfaa03d6e7e8d5df28ef7b21b83fa5627344a7fcf14",
+      "size": 3925,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_tile_comp.cpp",
+      "sha256": "6fb64aa2ea34626de3b1f13d54efd6284e99c8894aa698867d906b523db0d2b3",
+      "size": 7150,
+      "mode": 436
+    },
+    {
+      "path": "src/core/codestream/ojph_tile_comp.h",
+      "sha256": "da51af52fede3fa73ae8555d9bc273d798d1e0446534b1a2ae45607079da520d",
+      "size": 3930,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_common.cpp",
+      "sha256": "6cc4e835b7663262246c282a9004ffad4ceabcfebd3fc02a21f95bd257c0c4b8",
+      "size": 14914,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_common.h",
+      "sha256": "001849b1b4bfb1a1c5f1f10835d1f46e53a20004182b40b07c2da3785c7b9630",
+      "size": 2195,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_decoder.h",
+      "sha256": "adc60cb61d52b2cf9221b2a8674b568e6da576bca6ff7f86027210a7de7edd0f",
+      "size": 3491,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_decoder32.cpp",
+      "sha256": "9564e85a98551f882843e8161298ac73d12a1f36067c22e1a48aef572a9af5e2",
+      "size": 65692,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_decoder64.cpp",
+      "sha256": "44335e04d86c4f2cc335dc99bd9eaa53c7ccdbd356655e360031204be90d6be7",
+      "size": 67756,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_decoder_avx2.cpp",
+      "sha256": "6946fafafdf29622501d295f4c6711121d8f821f46dfb45ce6f5a4ba3631dea2",
+      "size": 87916,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_decoder_ssse3.cpp",
+      "sha256": "a563f867d127072d98881b62566fd238f3eff21494c5e67231e8c6f698795934",
+      "size": 85942,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_decoder_wasm.cpp",
+      "sha256": "c481853c2b9faaf495c54749283bd2c41b20af11506c5b022b2d23693ac922c7",
+      "size": 88386,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_encoder.cpp",
+      "sha256": "915aa928ffe6559a193ef62af6ae52f94960aaf73958e2e1fdd490a49f37ed29",
+      "size": 54417,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_encoder.h",
+      "sha256": "5b1116f7311aa2efbac1cefe8b1d97b4fda1a09d7afc0c26969e96c5cf9fb231",
+      "size": 3815,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_encoder_avx2.cpp",
+      "sha256": "ba8776020e8f8fcf0f8c20e875762d8076cf5ac9b8fc6d6c64e115eae96ff142",
+      "size": 44395,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/ojph_block_encoder_avx512.cpp",
+      "sha256": "7360b021b6d3c26ed7fd38c50175d9be8b9312bd62b6d1cff7e042d6c9e97afa",
+      "size": 43663,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/table0.h",
+      "sha256": "72d1ebd3ec1822c3d11aabe9e48c4101593ba7a255e3399a986c8dd6117ce26b",
+      "size": 15094,
+      "mode": 436
+    },
+    {
+      "path": "src/core/coding/table1.h",
+      "sha256": "7cfc9a69ac11f37fe6c58f6f474333b3e0c4fd74e24b7bef3418b32141793717",
+      "size": 12170,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_arch.h",
+      "sha256": "68d0b558a4d20aef7bfa64272a6a83e3ff512044b1b726f043f1d91f78e7e832",
+      "size": 10573,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_arg.h",
+      "sha256": "cdb40fba261b621d3b582c646e020b0d60c26391bf86ba9fa20c30dd1719377d",
+      "size": 8808,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_base.h",
+      "sha256": "7bd255f3259ede7cd694ae50c9e0102f4f6cee2f87fbe4789eaf7d5a8400c87a",
+      "size": 2596,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_codestream.h",
+      "sha256": "b4793dc3aa15c45ccc4fc46334aea1057f1c16ccd0ce7fa4d5182c66d6c82682",
+      "size": 15640,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_defs.h",
+      "sha256": "3c93de27665c314635be569d527d1fd5e9653ad91585e637bdc4409c1d7e3adc",
+      "size": 3256,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_file.h",
+      "sha256": "4805385db6fb435298a497659b2445ea61324ed08c3c25ac67e90dc460274a5a",
+      "size": 9723,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_mem.h",
+      "sha256": "b467b835784695d971a38b0fb2219e764a050721ee09ab01d4b838a6a278c0d6",
+      "size": 8377,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_message.h",
+      "sha256": "f692cb2bcc312e91dcab4b257531719c63f76c32bf0f3b6a2a4c942c9079e822",
+      "size": 11293,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_params.h",
+      "sha256": "5bcb66a0e42f2f592397d3e0d5b8368fea8a3c0998c7975d72e10a0ed00226fd",
+      "size": 11481,
+      "mode": 436
+    },
+    {
+      "path": "src/core/common/ojph_version.h",
+      "sha256": "39e961fd252a0224d03b360a9f991f51e8f572efa4e5f77db8316e8abd4ce7a5",
+      "size": 1962,
+      "mode": 436
+    },
+    {
+      "path": "src/core/others/ojph_arch.cpp",
+      "sha256": "36ebf7a9e13e2891f57e5149d335f79c2c3898b5de3f5cd4e58686ae5a67a35c",
+      "size": 8518,
+      "mode": 436
+    },
+    {
+      "path": "src/core/others/ojph_file.cpp",
+      "sha256": "762ac42f2bcd96df2be895825ae6c6b1ab475bc8d00a9684cfab0359ef7b118f",
+      "size": 9730,
+      "mode": 436
+    },
+    {
+      "path": "src/core/others/ojph_mem.c",
+      "sha256": "0228be71f56de61e63d7c701d3735bdc25708b769dd6ad21dd545f633d75695f",
+      "size": 3209,
+      "mode": 436
+    },
+    {
+      "path": "src/core/others/ojph_mem.cpp",
+      "sha256": "9088be25ff8d4ea7f32ce95c89dd152c4e10e4bdd5f7b099644810babe696d6d",
+      "size": 4817,
+      "mode": 436
+    },
+    {
+      "path": "src/core/others/ojph_message.cpp",
+      "sha256": "d970bfc73e5e376cff2fccb3b7b546d0c7b6a51bba525749a463a6b265cfd15c",
+      "size": 6046,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour.cpp",
+      "sha256": "a11afb16c408cac67cb0faa741abb933eb432c6b65cd304fab0c18381c19e4e4",
+      "size": 21382,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour.h",
+      "sha256": "fd818bbe05d9204dfe8196f11c80250cb886221c09dd9b8f36cd105909304b8a",
+      "size": 4592,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour_avx.cpp",
+      "sha256": "e6b85b98939ede6986215c78f1dc679c8f737aec11bccb253af8c4427d6c3dae",
+      "size": 4344,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour_avx2.cpp",
+      "sha256": "282b23aeab93bd7cf17d93374d517e81043d23bce10e9e3b82727db28600f457",
+      "size": 26303,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour_local.h",
+      "sha256": "19321255eff739350f9fc09a3caeca18662a0f117f7e0f3e493fe7e02830fc1e",
+      "size": 13800,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour_sse.cpp",
+      "sha256": "d96c61b3af82cf91190c56fcb030de5ce43ececcfae2b59b48f9990ad046b2bc",
+      "size": 4239,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour_sse2.cpp",
+      "sha256": "27ca0ecfb3a8a4f28caacbb92cc547638c4b6e24d7eaa9525d56461935c21300",
+      "size": 26784,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_colour_wasm.cpp",
+      "sha256": "b140ec6c85c27df00f20a9ca94aed11a149ae55898e4428b2f6dbeb0b122b971",
+      "size": 27577,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform.cpp",
+      "sha256": "a719ed5af6f6a7db1f32f9b5ab8d9af07016a8e7faf0aa60bff44971a5818beb",
+      "size": 29138,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform.h",
+      "sha256": "0b7323fcf49c72b4ef44972e40e31d1f69db6179764baa7bed81c3399e556c61",
+      "size": 4263,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform_avx.cpp",
+      "sha256": "39932bf0dd0c0a0af1fc3d9f9da45b451e9f9cbc78f0d89664b8def64816b088",
+      "size": 10138,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform_avx2.cpp",
+      "sha256": "9e1a30afd7aed1ffefbf9383590936dfd8a59029f90cbbcfd6e09de2f292a37c",
+      "size": 43192,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform_avx512.cpp",
+      "sha256": "69b012590e445ba134d2403e4c8351b8383716ad884b68b6a8d2feee3cfd2f68",
+      "size": 56411,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform_local.h",
+      "sha256": "487ba9e7c1ba4915f8ab1d4eb401b78838d54a8dba440e3f8025c0cf70daf0b4",
+      "size": 14761,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform_sse.cpp",
+      "sha256": "fddb1d640077c28439d6d2816a043de72bb1a9c9ee6fc58db461c37c34c3ab75",
+      "size": 9737,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform_sse2.cpp",
+      "sha256": "5aecf94f9dd5637806e8a472823e37b8f7bd5ea7b5fe6914ee8bfac816bbe1d4",
+      "size": 38961,
+      "mode": 436
+    },
+    {
+      "path": "src/core/transform/ojph_transform_wasm.cpp",
+      "sha256": "7c30f36e2a6c894e46546534061cfef6dcb70a1b324988632e4f3b89c1a3d986",
+      "size": 49802,
+      "mode": 436
+    },
+    {
+      "path": "src/openjph-config.cmake.in",
+      "sha256": "4916d08026ed738bbbee5f8380a5aa510a829942a05abe3fe6048152736bf84c",
+      "size": 111,
+      "mode": 436
+    },
+    {
+      "path": "src/openjph.pc.in",
+      "sha256": "322eb1c3ad75fe46fe2604a352156a8def2598366956cca43cd32753611397df",
+      "size": 283,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/.gitignore",
+      "sha256": "caafcb75ca9f0a55b67ad98232bb8ea46418875f1bf1deeff341587a9d28933d",
+      "size": 11,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/.gitignore",
+      "sha256": "148cdaa7d6baf740bb921293ab28c4f77a3222cf606f4cc573ebce2f4e0e8f36",
+      "size": 20,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/CMakeLists.txt",
+      "sha256": "60e3597f3854eaea17dc4664f1cc487d7ddda8af439c81a3d7e7b441c0218586",
+      "size": 784,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/build.sh",
+      "sha256": "876036df5bf0e86aec359c4d677d9d266eed242f5bac7d8a4a370b2bfee1ec9d",
+      "size": 411,
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/build/.gitignore",
+      "sha256": "a20e4b7120218b8a91ba6a24b72327b26e0c81ed29a8b36331a5dac4adfe9fbc",
+      "size": 12,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/emscripten-docker.sh",
+      "sha256": "d7f6f5daeeae8f742a462e0d317c1ea009f4dcb88127558fe0c5207bf7d46add",
+      "size": 108,
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/html/.gitignore",
+      "sha256": "caafcb75ca9f0a55b67ad98232bb8ea46418875f1bf1deeff341587a9d28933d",
+      "size": 11,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/html/index.html",
+      "sha256": "ee4d620ec7b2815fe0654ebcf5f44174b0dd1e3e04b51d736b63525c37b47b18",
+      "size": 10608,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/html/libopenjph.js",
+      "sha256": "c26179b7a3170752ab79e8b4afaabe23f54359c1f63cc5c8b809890bb2fc63b7",
+      "size": 21592,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/html/libopenjph.wasm",
+      "sha256": "f5495e2f774d617bc1b8874c71f9c78a4d10e71f9d175dee81240e490f740c4f",
+      "size": 107948,
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/html/libopenjph_simd.js",
+      "sha256": "f128a9298054a5d5649c978696ff975153d4b423ae1a22998826d71ea6b8218a",
+      "size": 21602,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/html/libopenjph_simd.wasm",
+      "sha256": "997a7dea5fdfd8e6f6b334a70f4a16d902f68b24211f98df7218b2538e52d2b4",
+      "size": 121249,
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/html/test.j2c",
+      "sha256": "fb06942e1512efebe1e3be55683267c4ebed75221f4411fa6af29ae7e95d0b4e",
+      "size": 32681,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/src/ojph_wrapper.cpp",
+      "sha256": "85d06ba216544bad8176ec3ad7ff6ee55aa498f5460dc106176e45e49d3fb843",
+      "size": 7979,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/standalone/README.md",
+      "sha256": "c14e5e019419eb822636c8bcdc26f4c5881e9ef09ddfdb938fd189fe0040de10",
+      "size": 3825,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/standalone/build.sh",
+      "sha256": "56b74b684c4e4404738cae676ebd0dd09d319d17566ecddcfdeedea999ecf041",
+      "size": 3993,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/standalone/com_decom.sh",
+      "sha256": "f666c61630c0f5437813ac2f97f25c88a48ab1063b1c5ebf3d23df86e606629b",
+      "size": 1770,
+      "mode": 436
+    },
+    {
+      "path": "subprojects/js/standalone/com_decom_yuv.sh",
+      "sha256": "81fe6ac1b95662dd4b2b9d18b37d3feb9ee83d74182eb5d77553b6fb8db8e4c0",
+      "size": 1922,
+      "mode": 436
+    },
+    {
+      "path": "target_arch.cmake",
+      "sha256": "34c3e2027608f333683de5cf183d6110bb3ebd048620208def4cab0b1aaaaf97",
+      "size": 2762,
+      "mode": 436
+    },
+    {
+      "path": "tests/CMakeLists.txt",
+      "sha256": "8a8d67a319eb02af205644ed1135815b2fd2e5b0c2be5d1bb472bc31b0fd9ade",
+      "size": 3002,
+      "mode": 436
+    },
+    {
+      "path": "tests/compare_files.cpp",
+      "sha256": "64472eb34ca95e45e65716667009e8246ff8a92c273ef9211c05475fb1db46d4",
+      "size": 2200,
+      "mode": 436
+    },
+    {
+      "path": "tests/mse_pae.cmake",
+      "sha256": "6958626833d2f29cb86d94e16536ad870d658f19c8e0d49895f866958c054b67",
+      "size": 1791,
+      "mode": 436
+    },
+    {
+      "path": "tests/mse_pae.cpp",
+      "sha256": "9194aa3b8703bb190b215bbbfc20ec1bb267f0e3000d544057984a4daa3672bf",
+      "size": 20583,
+      "mode": 436
+    },
+    {
+      "path": "tests/test_executables.cpp",
+      "sha256": "01e1af1c68585a4f69042897fe657725e81da3ccc1ab51a889ef3272713ab7f6",
+      "size": 67671,
+      "mode": 436
+    },
+    {
+      "path": "tests/test_helpers/Readme.md",
+      "sha256": "f227c6e2a5394cace4d569df6e02b30bc372e1b0833c827ffc90e8be214f1516",
+      "size": 737,
+      "mode": 436
+    },
+    {
+      "path": "tests/test_helpers/convert_mse_pae_to_tests.cpp",
+      "sha256": "97a95029314156f1fc3c933769018273aaeed1cca8be8351808d4ad6fb174a0d",
+      "size": 19662,
+      "mode": 436
+    },
+    {
+      "path": "tests/test_helpers/ht_cmdlines.txt",
+      "sha256": "c198d820eda49861c2eac301b26a24251f4dafc4c45046f28ae02a44d1775bd2",
+      "size": 34813,
+      "mode": 436
+    }
+  ],
+  "directories": [
+    {
+      "path": ".devcontainer",
+      "mode": 509
+    },
+    {
+      "path": ".github",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows",
+      "mode": 509
+    },
+    {
+      "path": "build",
+      "mode": 509
+    },
+    {
+      "path": "docs",
+      "mode": 509
+    },
+    {
+      "path": "src",
+      "mode": 509
+    },
+    {
+      "path": "src/apps",
+      "mode": 509
+    },
+    {
+      "path": "src/apps/common",
+      "mode": 509
+    },
+    {
+      "path": "src/apps/ojph_compress",
+      "mode": 509
+    },
+    {
+      "path": "src/apps/ojph_expand",
+      "mode": 509
+    },
+    {
+      "path": "src/apps/ojph_stream_expand",
+      "mode": 509
+    },
+    {
+      "path": "src/apps/others",
+      "mode": 509
+    },
+    {
+      "path": "src/core",
+      "mode": 509
+    },
+    {
+      "path": "src/core/codestream",
+      "mode": 509
+    },
+    {
+      "path": "src/core/coding",
+      "mode": 509
+    },
+    {
+      "path": "src/core/common",
+      "mode": 509
+    },
+    {
+      "path": "src/core/others",
+      "mode": 509
+    },
+    {
+      "path": "src/core/transform",
+      "mode": 509
+    },
+    {
+      "path": "subprojects",
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js",
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/build",
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/html",
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/src",
+      "mode": 509
+    },
+    {
+      "path": "subprojects/js/standalone",
+      "mode": 509
+    },
+    {
+      "path": "tests",
+      "mode": 509
+    },
+    {
+      "path": "tests/test_helpers",
+      "mode": 509
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "LICENSE",
+      "sha256": "5ddf5177863dfc9ab65fa129d587db651241f00e21ed2427b218bea997591f98",
+      "size": 1448
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "Blender_versions": "build_files/build_environment/cmake/versions.cmake:1492-1508",
+    "Blender_draco_recipe": "build_files/build_environment/cmake/draco.cmake:5-7 only BUILD_SHARED_LIBS=ON; other features retain upstream defaults",
+    "Blender_meshoptimizer_recipe": "build_files/build_environment/cmake/meshoptimizer.cmake:5-7 only MESHOPT_BUILD_SHARED_LIBS=ON",
+    "Draco_original": "draco-1.5.7/cmake/draco_options.cmake:65-137,191-241; cmake/draco_build_definitions.cmake:71-77",
+    "meshoptimizer_original": "meshoptimizer-1.1/CMakeLists.txt:17-26,125-175"
+  },
+  "selected": {
+    "Draco": {
+      "mesh_encoder_decoder": "ON preserved",
+      "pointcloud_encoder_decoder": "ON preserved",
+      "normal_encoding": "ON preserved",
+      "standard_edgebreaker": "ON preserved",
+      "predictive_edgebreaker": "ON preserved",
+      "backwards_compatibility": "ON preserved",
+      "attribute_indices_and_values_deduplication": "ON upstream native default preserved",
+      "GLTF_BITSTREAM_restricted_profile": "OFF upstream and Blender baseline default preserved",
+      "TRANSCODER_SUPPORTED": "OFF upstream and Blender baseline default preserved",
+      "tests_with_Googletest": "OFF upstream and Blender baseline default preserved",
+      "WASM_Unity_Maya_animation": "OFF upstream native default preserved",
+      "static_PIC": "ON deliberate portable linking selection; actual Blender bridge DLL embeds real codecs",
+      "standalone_encoder_decoder_tools": "Built and installed by upstream default; signed, ELF audited; geometry acceptance exercises libraries and real bridges"
+    },
+    "meshoptimizer": {
+      "complete_native_library": "ON all upstream SOURCES including index/vertex encoder and decoder, filters, optimizer APIs",
+      "static_PIC": "ON deliberate portable linking selection",
+      "GLTFPACK_DEMO": "OFF upstream and Blender baseline default preserved",
+      "EXT_fixture_index_version": 1,
+      "EXT_fixture_vertex_version": 0
+    }
+  },
+  "source_only_optional_dependencies": [
+    {"name": "Eigen", "required_when": "Draco TRANSCODER_SUPPORTED=ON", "status": "Not needed in selected baseline; original third_party submodule placeholder retained; this archive does not promise submodule closure"},
+    {"name": "gulrak/filesystem", "required_when": "Draco TRANSCODER_SUPPORTED=ON", "status": "Not needed in selected baseline; no fetch"},
+    {"name": "TinyGLTF", "required_when": "Draco TRANSCODER_SUPPORTED=ON", "status": "Not needed in selected baseline; no fetch"},
+    {"name": "Googletest", "required_when": "Draco TESTS=ON", "status": "Not needed in selected baseline; own actual native geometry/bridge gates prepared"},
+    {"name": "Basis Universal/libwebp", "required_when": "Optional meshoptimizer gltfpack texture encoding", "status": "Not enabled in Blender baseline; no fetch"}
+  ],
+  "network": "No download/ExternalProject/fetch step in candidate. Any future optional profile requires new pinned complete source entries and new lock; this lock rejects profile substitution.",
+  "status": "Source/build candidate only; native full, bpy postlink and HAP NOTRUN"
+}

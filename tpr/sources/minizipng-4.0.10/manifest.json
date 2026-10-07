@@ -1,0 +1,22 @@
+{
+  "name": "minizipng",
+  "version": "4.0.10",
+  "kind": "source",
+  "filename": "minizip-ng-4.0.10.tar.gz",
+  "url": "https://github.com/zlib-ng/minizip-ng/archive/4.0.10.tar.gz",
+  "license": "SPDX:Zlib",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 773269,
+  "sha256": "c362e35ee973fa7be58cc5e38a4a6c23cc8f7e652555daf4f115a9eb2d3a6be7",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 773269,
+      "sha256": "c362e35ee973fa7be58cc5e38a4a6c23cc8f7e652555daf4f115a9eb2d3a6be7"
+    }
+  ]
+}

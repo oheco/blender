@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "execution": "NOTRUN, pure source/argv plan",
+  "root": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1",
+  "numpy_root": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+  "runtime_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+  "source_paths": {
+    "numpy-2.3.4": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/numpy-2.3.4",
+    "cython-3.0.11": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11",
+    "meson-1.9.0": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson-1.9.0",
+    "meson-python-0.18.0": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0",
+    "setuptools-80.9.0": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0",
+    "setuptools-scm-9.2.2": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2",
+    "packaging-25.0": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0",
+    "pyproject-metadata-0.9.1": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1",
+    "tomli-w-1.2.0": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0",
+    "wheel-0.45.1": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1",
+    "build-1.3.0": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0",
+    "pyproject-hooks-1.2.0": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0"
+  },
+  "source_copy": {
+    "from": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/numpy-2.3.4",
+    "to": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/work/numpy-2.3.4"
+  },
+  "compiler_config": {
+    "compilers": {
+      "c": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang",
+      "cpp": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang++"
+    },
+    "flags": {
+      "c": [
+        "--target=aarch64-unknown-linux-ohos",
+        "--sysroot=/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/sysroot",
+        "--ld-path=/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/ld.lld",
+        "-Wl,--threads=1"
+      ],
+      "cpp": [
+        "--target=aarch64-unknown-linux-ohos",
+        "--sysroot=/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/sysroot",
+        "--ld-path=/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/ld.lld",
+        "-Wl,--threads=1",
+        "-static-libstdc++"
+      ]
+    },
+    "runtime_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+    "signer": "/storage/Users/currentUser/.oheco/bin/binary-sign-tool",
+    "readelf": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-readelf",
+    "tmp_dir": "/data/storage/el2/base/haps/entry/temp"
+  },
+  "native_ini": "[binaries]\nc = '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers/cc'\ncpp = '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers/cxx'\ncython = '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers/cython'\npython = '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13'\nar = '/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-ar'\nstrip = '/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-strip'\n",
+  "launchers": {
+    "cc": "#!/usr/bin/sh\nexec '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13' /storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_python_native_sources/numpy/sign_compiler.py '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/compiler.json' c -- \"$@\"\n",
+    "cxx": "#!/usr/bin/sh\nexec '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13' /storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_python_native_sources/numpy/sign_compiler.py '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/compiler.json' cpp -- \"$@\"\n",
+    "cython": "#!/usr/bin/sh\nexec '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13' '/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/cython.py' \"$@\"\n",
+    "ninja": "#!/usr/bin/sh\nexec /storage/Users/currentUser/.oheco/bin/ninja \"$@\"\n"
+  },
+  "steps": [
+    {
+      "label": "numpy-runtime-identity",
+      "argv": [
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13",
+        "-I",
+        "-c",
+        "import sys,sysconfig,json; v=[list(sys.version_info[:3]),sys.platform,sysconfig.get_config_var(\"SOABI\"),sysconfig.get_config_var(\"INSTSONAME\"),bool(sys._is_gil_enabled())]; assert v==[[3,13,13],\"ohos\",\"cpython-313-aarch64-linux-ohos\",\"libpython3.13.so\",True],v; print(json.dumps(v))"
+      ],
+      "cwd": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+      "extra_env": {
+        "PYTHONPATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "NUMPY_PYTHON_PREFIX": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "PIP_NO_INDEX": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "TMPDIR": "/data/storage/el2/base/haps/entry/temp",
+        "MESON_NUM_PROCESSES": "1",
+        "CMAKE_BUILD_PARALLEL_LEVEL": "1",
+        "LC_ALL": "C",
+        "PATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers:/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin:/usr/bin"
+      }
+    },
+    {
+      "label": "numpy-cython-version",
+      "argv": [
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/cython.py",
+        "--version"
+      ],
+      "cwd": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+      "extra_env": {
+        "PYTHONPATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "NUMPY_PYTHON_PREFIX": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "PIP_NO_INDEX": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "TMPDIR": "/data/storage/el2/base/haps/entry/temp",
+        "MESON_NUM_PROCESSES": "1",
+        "CMAKE_BUILD_PARALLEL_LEVEL": "1",
+        "LC_ALL": "C",
+        "PATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers:/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin:/usr/bin"
+      }
+    },
+    {
+      "label": "numpy-vendored-meson-version",
+      "argv": [
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/work/numpy-2.3.4/vendored-meson/meson/meson.py",
+        "--version"
+      ],
+      "cwd": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+      "extra_env": {
+        "PYTHONPATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "NUMPY_PYTHON_PREFIX": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "PIP_NO_INDEX": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "TMPDIR": "/data/storage/el2/base/haps/entry/temp",
+        "MESON_NUM_PROCESSES": "1",
+        "CMAKE_BUILD_PARALLEL_LEVEL": "1",
+        "LC_ALL": "C",
+        "PATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers:/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin:/usr/bin"
+      }
+    },
+    {
+      "label": "numpy-configure",
+      "argv": [
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/work/numpy-2.3.4/vendored-meson/meson/meson.py",
+        "setup",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/build",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/work/numpy-2.3.4",
+        "--native-file",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/native.ini",
+        "--prefix",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/install",
+        "--libdir",
+        "lib",
+        "--buildtype",
+        "release",
+        "--wrap-mode",
+        "nodownload",
+        "-Dstrip=false",
+        "-Ddebug=false",
+        "-Dblas=none",
+        "-Dlapack=none",
+        "-Dallow-noblas=true",
+        "-Dpython.bytecompile=0",
+        "-Dpython.platlibdir=lib/python3.13/site-packages",
+        "-Dpython.purelibdir=lib/python3.13/site-packages"
+      ],
+      "cwd": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+      "extra_env": {
+        "PYTHONPATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "NUMPY_PYTHON_PREFIX": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "PIP_NO_INDEX": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "TMPDIR": "/data/storage/el2/base/haps/entry/temp",
+        "MESON_NUM_PROCESSES": "1",
+        "CMAKE_BUILD_PARALLEL_LEVEL": "1",
+        "LC_ALL": "C",
+        "PATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers:/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin:/usr/bin"
+      }
+    },
+    {
+      "label": "numpy-build",
+      "argv": [
+        "/storage/Users/currentUser/.oheco/bin/ninja",
+        "-C",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/build",
+        "-j1"
+      ],
+      "cwd": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+      "extra_env": {
+        "PYTHONPATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "NUMPY_PYTHON_PREFIX": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "PIP_NO_INDEX": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "TMPDIR": "/data/storage/el2/base/haps/entry/temp",
+        "MESON_NUM_PROCESSES": "1",
+        "CMAKE_BUILD_PARALLEL_LEVEL": "1",
+        "LC_ALL": "C",
+        "PATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers:/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin:/usr/bin"
+      }
+    },
+    {
+      "label": "numpy-install-staged",
+      "argv": [
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/work/numpy-2.3.4/vendored-meson/meson/meson.py",
+        "install",
+        "-C",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/build",
+        "--no-rebuild",
+        "--destdir",
+        "<unique private TMPDIR stage>"
+      ],
+      "cwd": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+      "extra_env": {
+        "PYTHONPATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "NUMPY_PYTHON_PREFIX": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "PIP_NO_INDEX": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "TMPDIR": "/data/storage/el2/base/haps/entry/temp",
+        "MESON_NUM_PROCESSES": "1",
+        "CMAKE_BUILD_PARALLEL_LEVEL": "1",
+        "LC_ALL": "C",
+        "PATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers:/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin:/usr/bin"
+      }
+    },
+    {
+      "label": "numpy-acceptance",
+      "argv": [
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13",
+        "-I",
+        "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/deps_python_native_sources/numpy/acceptance.py",
+        "--runtime-prefix",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "--numpy-prefix",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/install",
+        "--libpython",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/lib/libpython3.13.so",
+        "--expected-executable",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime/bin/python3.13",
+        "--report",
+        "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/validation.json"
+      ],
+      "cwd": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy",
+      "extra_env": {
+        "PYTHONPATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/cython-3.0.11:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/meson_python-0.18.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools-80.9.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/setuptools_scm-9.2.2:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/packaging-25.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_metadata-0.9.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/tomli_w-1.2.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/wheel-0.45.1:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/build-1.3.0:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0/src:/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/sources/pyproject_hooks-1.2.0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "NUMPY_PYTHON_PREFIX": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/runtime",
+        "PIP_NO_INDEX": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "TMPDIR": "/data/storage/el2/base/haps/entry/temp",
+        "MESON_NUM_PROCESSES": "1",
+        "CMAKE_BUILD_PARALLEL_LEVEL": "1",
+        "LC_ALL": "C",
+        "PATH": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-native-迁移 NumPy source plan with spaces-1/numpy/launchers:/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin:/usr/bin"
+      }
+    }
+  ],
+  "extension_count": 19,
+  "source_lock_sha256": "d7e396628e2233228384d2d74045a8ae164f62a42f93d5ac26511f97e2edd9bc",
+  "patch_record_sha256": "a9b9c6b115d2d6e314faf304c8f7189df0fe4ec6fc370ecb70833c8142c66ce3",
+  "profile_sha256": "643c45dc20997aa56561ece72caf99c4b799b3b483da2d20f9e8be136914bd44",
+  "offline": "All 12 complete formal sdists guarded by common sourceprep; pure source imports, no wheels/fetch",
+  "publication": "Meson depfixer only new never-executed TMPDIR copies, final signatures then same-filesystem atomic install publish"
+}

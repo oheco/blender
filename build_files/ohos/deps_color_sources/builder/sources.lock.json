@@ -1,0 +1,1075 @@
+{
+  "schema_version": 1,
+  "kind": "color-dependency-source-provenance",
+  "status": "source-only prepared",
+  "offline_builder_completed": false,
+  "sources": [
+    {
+      "name": "openexr",
+      "version": "3.4.10",
+      "registry_manifest": "tpr/sources/openexr-3.4.10/manifest.json",
+      "archive_filename": "openexr-3.4.10.tar.gz",
+      "archive_root": "openexr-3.4.10",
+      "sha256": "b61ae2d0fa4872c5f5fc45618f107945df37c0eba4853263091b949c513d3319",
+      "size": 25747896,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/openexr.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "8926ba09c4e4cd21c7a0fa2d2b39fa82"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "registry_declared_license": "SPDX:BSD-3-Clause",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "Contrib/DtexToExr/AUTHORS",
+          "mirror": "tpr/sources/openexr-3.4.10/licenses/Contrib/DtexToExr/AUTHORS",
+          "sha256": "001ea4855801e70deef7213ca2f3c5fa8b709b31b36873d19a69e2f4a334a89b",
+          "size": 67
+        },
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "tpr/sources/openexr-3.4.10/licenses/LICENSE.md",
+          "sha256": "84853c91d4c2e0310741d4773469d98bb93e61029608e0ba0882a3fffdf330bd",
+          "size": 1501
+        },
+        {
+          "source_path": "PATENTS",
+          "mirror": "tpr/sources/openexr-3.4.10/licenses/PATENTS",
+          "sha256": "7f5dee333a82cab38b3567b85ec52a74487a5b2a8f4097eb8b4071c892c47b12",
+          "size": 13721
+        },
+        {
+          "source_path": "external/OpenJPH/LICENSE",
+          "mirror": "tpr/sources/openexr-3.4.10/licenses/external/OpenJPH/LICENSE",
+          "sha256": "5ddf5177863dfc9ab65fa129d587db651241f00e21ed2427b218bea997591f98",
+          "size": 1448
+        },
+        {
+          "source_path": "external/deflate/COPYING",
+          "mirror": "tpr/sources/openexr-3.4.10/licenses/external/deflate/COPYING",
+          "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a",
+          "size": 1078
+        },
+        {
+          "source_path": "website/license.rst",
+          "mirror": "tpr/sources/openexr-3.4.10/licenses/website/license.rst",
+          "sha256": "07f2605f2d4406af7b91ce23ad11529ad8fb8e0140ea9a2d05c940d8d4309b22",
+          "size": 1955
+        }
+      ]
+    },
+    {
+      "name": "openjph",
+      "version": "0.25.2",
+      "registry_manifest": "tpr/sources/openjph-0.25.2/manifest.json",
+      "archive_filename": "openjph-v0.25.2.tar.gz",
+      "archive_root": "OpenJPH-0.25.2",
+      "sha256": "ae5f09562cb811cb2fb881c5eb74583e18db941848cfa3c35787e2580f3defc6",
+      "size": 477255,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/openjph.json",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "ae5f09562cb811cb2fb881c5eb74583e18db941848cfa3c35787e2580f3defc6"
+      },
+      "formal_declared_license": "SPDX:BSD-2-Clause",
+      "registry_declared_license": "SPDX:BSD-2-Clause",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/openjph-0.25.2/licenses/LICENSE",
+          "sha256": "5ddf5177863dfc9ab65fa129d587db651241f00e21ed2427b218bea997591f98",
+          "size": 1448
+        }
+      ]
+    },
+    {
+      "name": "deflate",
+      "version": "1.18",
+      "registry_manifest": "tpr/sources/deflate-1.18/manifest.json",
+      "archive_filename": "libdeflate-v1.18.tar.gz",
+      "archive_root": "libdeflate-1.18",
+      "sha256": "225d982bcaf553221c76726358d2ea139bb34913180b20823c782cede060affd",
+      "size": 184924,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/deflate.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "a29d9dd653cbe03f2d5cd83972063f9e"
+      },
+      "formal_declared_license": "SPDX:MIT",
+      "registry_declared_license": "SPDX:MIT",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "tpr/sources/deflate-1.18/licenses/COPYING",
+          "sha256": "5d246dd2537307b80fed9ba5fdddf5d0fe7a8f023393a071182b9daed56b40fe",
+          "size": 1052
+        }
+      ]
+    },
+    {
+      "name": "opencolorio",
+      "version": "2.5.0",
+      "registry_manifest": "tpr/sources/opencolorio-2.5.0/manifest.json",
+      "archive_filename": "OpenColorIO-2.5.0.tar.gz",
+      "archive_root": "OpenColorIO-2.5.0",
+      "sha256": "124e2bfa8a9071959d6ddbb64ffbf78d3f6fe3c923ae23e96a6bbadde1af55b6",
+      "size": 14122936,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/opencolorio.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "41d6b62ac672ed333ebfdcc1108407e0"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "registry_declared_license": "SPDX:BSD-3-Clause",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/opencolorio-2.5.0/licenses/LICENSE",
+          "sha256": "82a40c52065ee968aa62015735e84378ac11425db7a233e6a2dcd2c83fc24276",
+          "size": 1485
+        },
+        {
+          "source_path": "THIRD-PARTY.md",
+          "mirror": "tpr/sources/opencolorio-2.5.0/licenses/THIRD-PARTY.md",
+          "sha256": "2e0df1b675fcd133b78360b4d40539518ea1c2081be68e91a456fb9db51c5009",
+          "size": 10893
+        },
+        {
+          "source_path": "docs/aswf/license.rst",
+          "mirror": "tpr/sources/opencolorio-2.5.0/licenses/docs/aswf/license.rst",
+          "sha256": "a5b30db79a9f518916fd74e0faeda39fbaa93e2829c066786ebaa351b2bdae66",
+          "size": 448
+        },
+        {
+          "source_path": "docs/site/LICENSE",
+          "mirror": "tpr/sources/opencolorio-2.5.0/licenses/docs/site/LICENSE",
+          "sha256": "bfdfe12481e744f740b08d2df89d9229963c3f1b9d6d96b3cea87dcb27c5199d",
+          "size": 594
+        },
+        {
+          "source_path": "tests/data/LICENSE.md",
+          "mirror": "tpr/sources/opencolorio-2.5.0/licenses/tests/data/LICENSE.md",
+          "sha256": "2d9b807f962facff42bc33f108ccbea6bedf0b56cd67345cf4fbc97d838c709c",
+          "size": 124
+        },
+        {
+          "source_path": "vendor/openfx/Support/LICENSE",
+          "mirror": "tpr/sources/opencolorio-2.5.0/licenses/vendor/openfx/Support/LICENSE",
+          "sha256": "1e52150d77eb6c335db92ea82cbd7dc8a837a1fd2f08f192b108d89251a8f147",
+          "size": 1646
+        }
+      ]
+    },
+    {
+      "name": "yamlcpp",
+      "version": "0.8.0",
+      "registry_manifest": "tpr/sources/yamlcpp-0.8.0/manifest.json",
+      "archive_filename": "yaml-cpp-0.8.0.tar.gz",
+      "archive_root": "yaml-cpp-0.8.0",
+      "sha256": "fbe74bbdcee21d656715688706da3c8becfd946d92cd44705cc6098bb23b3a16",
+      "size": 1017151,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/yamlcpp.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "1d2c7975edba60e995abe3c4af6480e5"
+      },
+      "formal_declared_license": "SPDX:MIT",
+      "registry_declared_license": "SPDX:MIT",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/yamlcpp-0.8.0/licenses/LICENSE",
+          "sha256": "aa6fcc27be034e41e21dd832f9175bfe694a48491d9e14ff0fa278e19ad14f1b",
+          "size": 1061
+        },
+        {
+          "source_path": "test/gtest-1.11.0/LICENSE",
+          "mirror": "tpr/sources/yamlcpp-0.8.0/licenses/test/gtest-1.11.0/LICENSE",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+          "size": 1475
+        },
+        {
+          "source_path": "test/gtest-1.11.0/googlemock/scripts/generator/LICENSE",
+          "mirror": "tpr/sources/yamlcpp-0.8.0/licenses/test/gtest-1.11.0/googlemock/scripts/generator/LICENSE",
+          "sha256": "5e0df8c845c742e76f2f64d2d9ce1b7e74a2422fddbc577ae6a56319083de0bf",
+          "size": 11386
+        }
+      ]
+    },
+    {
+      "name": "pystring",
+      "version": "v1.1.3",
+      "registry_manifest": "tpr/sources/pystring-v1.1.3/manifest.json",
+      "archive_filename": "pystring-v1.1.3.tar.gz",
+      "archive_root": "pystring-1.1.3",
+      "sha256": "358a56e756e701836b69a31c75d3d9d41c34d447cf7b3775bbd5620dcd3203d9",
+      "size": 18364,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/pystring.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "f2c68786b359f5e4e62bed53bc4fb86d"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "registry_declared_license": "SPDX:BSD-3-Clause",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/pystring-v1.1.3/licenses/LICENSE",
+          "sha256": "7b565d49be50a0490b38ae69d22f1e93ce9449546a99a8a1efcaf0ae922b7442",
+          "size": 1512
+        }
+      ]
+    },
+    {
+      "name": "expat",
+      "version": "2_7_5",
+      "registry_manifest": "tpr/sources/expat-2_7_5/manifest.json",
+      "archive_filename": "libexpat-2_7_5.tar.gz",
+      "archive_root": "libexpat-R_2_7_5",
+      "sha256": "7e23daf05f0ab028570d709ce48d724802baa6e4fbfa4db9b7cee3b72ee2062b",
+      "size": 8449555,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/expat.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "aecc4366ab1a5189d8f027c369305c9a"
+      },
+      "formal_declared_license": "SPDX:MIT",
+      "registry_declared_license": "SPDX:MIT",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "tpr/sources/expat-2_7_5/licenses/COPYING",
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+          "size": 1144
+        },
+        {
+          "source_path": "expat/AUTHORS",
+          "mirror": "tpr/sources/expat-2_7_5/licenses/expat/AUTHORS",
+          "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877",
+          "size": 142
+        },
+        {
+          "source_path": "expat/COPYING",
+          "mirror": "tpr/sources/expat-2_7_5/licenses/expat/COPYING",
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+          "size": 1144
+        }
+      ]
+    },
+    {
+      "name": "minizipng",
+      "version": "4.0.10",
+      "registry_manifest": "tpr/sources/minizipng-4.0.10/manifest.json",
+      "archive_filename": "minizip-ng-4.0.10.tar.gz",
+      "archive_root": "minizip-ng-4.0.10",
+      "sha256": "c362e35ee973fa7be58cc5e38a4a6c23cc8f7e652555daf4f115a9eb2d3a6be7",
+      "size": 773269,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/minizipng.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "9b4de14db78016419598d0f292fde244"
+      },
+      "formal_declared_license": "SPDX:Zlib",
+      "registry_declared_license": "SPDX:Zlib",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/minizipng-4.0.10/licenses/LICENSE",
+          "sha256": "675181c03fc1302a1c8554c00f7be9bb420c5dbc9dcc2013433cec144413de03",
+          "size": 877
+        }
+      ]
+    },
+    {
+      "name": "openimageio",
+      "version": "v3.1.13.1",
+      "registry_manifest": "tpr/sources/openimageio-v3.1.13.1/manifest.json",
+      "archive_filename": "OpenImageIO-v3.1.13.1.tar.gz",
+      "archive_root": "OpenImageIO-3.1.13.1",
+      "sha256": "0fc59b8e2708ded02d3793b8f3331f037ed49bfcde38158f05ac0e876ebb85b7",
+      "size": 55338242,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/openimageio.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "9f6f083900680b79ca4a136270103844"
+      },
+      "formal_declared_license": "SPDX:Apache-2.0",
+      "registry_declared_license": "SPDX:Apache-2.0",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "tpr/sources/openimageio-v3.1.13.1/licenses/LICENSE.md",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        },
+        {
+          "source_path": "RELICENSING.md",
+          "mirror": "tpr/sources/openimageio-v3.1.13.1/licenses/RELICENSING.md",
+          "sha256": "2fa2802162c4885a1cce1fcac70640dfab1980dbbcf9753d686346f414e4ed79",
+          "size": 5778
+        },
+        {
+          "source_path": "THIRD-PARTY.md",
+          "mirror": "tpr/sources/openimageio-v3.1.13.1/licenses/THIRD-PARTY.md",
+          "sha256": "1e86c485c25256a807b11c6f56014acac43bdc297944c2d6b4af16fd65188c2b",
+          "size": 13418
+        },
+        {
+          "source_path": "src/doc/copyr.rst",
+          "mirror": "tpr/sources/openimageio-v3.1.13.1/licenses/src/doc/copyr.rst",
+          "sha256": "85bd3ae56e07cd049537ad54d0694351611d04fd1f7d756e1e712d79a543dc64",
+          "size": 1137
+        }
+      ]
+    },
+    {
+      "name": "tiff",
+      "version": "4.7.1",
+      "registry_manifest": "tpr/sources/tiff-4.7.1/manifest.json",
+      "archive_filename": "tiff-4.7.1.tar.gz",
+      "archive_root": "tiff-4.7.1",
+      "sha256": "f698d94f3103da8ca7438d84e0344e453fe0ba3b7486e04c5bf7a9a3fabe9b69",
+      "size": 4000609,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/tiff.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "f1044dd3b4466cc53464210148e08146"
+      },
+      "formal_declared_license": "SPDX:libtiff",
+      "registry_declared_license": "SPDX:libtiff",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "tpr/sources/tiff-4.7.1/licenses/LICENSE.md",
+          "sha256": "0e27c2382d7b8147972bbb746e04059a1152c8d0fda9d03ef1399d1a433c4ade",
+          "size": 2416
+        },
+        {
+          "source_path": "doc/html-prebuilt/_sources/project/acknowledgements.rst.txt",
+          "mirror": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/_sources/project/acknowledgements.rst.txt",
+          "sha256": "f25936c5b1c1707ab216c0169734cdb66ce656c66a25d434fae8f390d71a7ace",
+          "size": 2916
+        },
+        {
+          "source_path": "doc/html-prebuilt/_sources/project/license.rst.txt",
+          "mirror": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/_sources/project/license.rst.txt",
+          "sha256": "02e86af3b805e0f2075ebb5ac512831f6ab2a97ddeb186de076c418956418ba1",
+          "size": 1181
+        },
+        {
+          "source_path": "doc/html-prebuilt/project/acknowledgements.html",
+          "mirror": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/project/acknowledgements.html",
+          "sha256": "178f274f39f59f347bbcc39d6a7f76ad4a37dbc5a95b283551debef2fb295b8c",
+          "size": 10090
+        },
+        {
+          "source_path": "doc/html-prebuilt/project/license.html",
+          "mirror": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/project/license.html",
+          "sha256": "c5bc827b485b77932fd610bbedf8ec7fe9fbbc6fa6e9cf944e9c5a7446e885a6",
+          "size": 5718
+        },
+        {
+          "source_path": "doc/project/acknowledgements.rst",
+          "mirror": "tpr/sources/tiff-4.7.1/licenses/doc/project/acknowledgements.rst",
+          "sha256": "f25936c5b1c1707ab216c0169734cdb66ce656c66a25d434fae8f390d71a7ace",
+          "size": 2916
+        },
+        {
+          "source_path": "doc/project/license.rst",
+          "mirror": "tpr/sources/tiff-4.7.1/licenses/doc/project/license.rst",
+          "sha256": "02e86af3b805e0f2075ebb5ac512831f6ab2a97ddeb186de076c418956418ba1",
+          "size": 1181
+        }
+      ]
+    },
+    {
+      "name": "robinmap",
+      "version": "v1.3.0",
+      "registry_manifest": "tpr/sources/robinmap-v1.3.0/manifest.json",
+      "archive_filename": "robinmap-v1.3.0.tar.gz",
+      "archive_root": "robin-map-1.3.0",
+      "sha256": "a8424ad3b0affd4c57ed26f0f3d8a29604f0e1f2ef2089f497f614b1c94c7236",
+      "size": 70562,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/robinmap.json",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "a8424ad3b0affd4c57ed26f0f3d8a29604f0e1f2ef2089f497f614b1c94c7236"
+      },
+      "formal_declared_license": "SPDX:MIT",
+      "registry_declared_license": "SPDX:MIT",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/robinmap-v1.3.0/licenses/LICENSE",
+          "sha256": "11f2c685ba565a31aef1219f63a7a8845602c97bff70016b9e3278dfe51a2ec5",
+          "size": 1102
+        }
+      ]
+    },
+    {
+      "name": "pugixml",
+      "version": "1.10",
+      "registry_manifest": "tpr/sources/pugixml-1.10/manifest.json",
+      "archive_filename": "pugixml-1.10.tar.gz",
+      "archive_root": "pugixml-1.10",
+      "sha256": "10f1f0a32b559ca8435d95855928d990cfbb9796e339efb638080c897728174c",
+      "size": 562718,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/pugixml.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "0c208b0664c7fb822bf1b49ad035e8fd"
+      },
+      "formal_declared_license": "SPDX:MIT",
+      "registry_declared_license": "SPDX:MIT",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "tpr/sources/pugixml-1.10/licenses/LICENSE.md",
+          "sha256": "9ddc2f8e3003601aff5a4d37f3caf3b6b60a729ebbc466bafd965cdf0883b12c",
+          "size": 1079
+        }
+      ]
+    },
+    {
+      "name": "openjpeg",
+      "version": "2.5.3",
+      "registry_manifest": "tpr/sources/openjpeg-2.5.3/manifest.json",
+      "archive_filename": "openjpeg-v2.5.3.tar.gz",
+      "archive_root": "openjpeg-2.5.3",
+      "sha256": "368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707",
+      "size": 2155188,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/openjpeg.json",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707"
+      },
+      "formal_declared_license": "SPDX:BSD-2-Clause",
+      "registry_declared_license": "SPDX:BSD-2-Clause",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "AUTHORS.md",
+          "mirror": "tpr/sources/openjpeg-2.5.3/licenses/AUTHORS.md",
+          "sha256": "cf22e984f9fbb9be7550e9a94120595ba8c4a7de0d63f47d3725f4b2e28a4387",
+          "size": 712
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/openjpeg-2.5.3/licenses/LICENSE",
+          "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6",
+          "size": 2112
+        },
+        {
+          "source_path": "src/bin/wx/OPJViewer/source/license.txt",
+          "mirror": "tpr/sources/openjpeg-2.5.3/licenses/src/bin/wx/OPJViewer/source/license.txt",
+          "sha256": "8081c33f6953950dcf424aa844714658b73ada0fcaea16e4487f5fa07ef0960d",
+          "size": 1683
+        },
+        {
+          "source_path": "thirdparty/astyle/LICENSE.md",
+          "mirror": "tpr/sources/openjpeg-2.5.3/licenses/thirdparty/astyle/LICENSE.md",
+          "sha256": "2e8480e753b7a1d100c80920f4250b1bc9f93a18c6a5953c42b11445218cd0fb",
+          "size": 1094
+        },
+        {
+          "source_path": "thirdparty/liblcms2/COPYING",
+          "mirror": "tpr/sources/openjpeg-2.5.3/licenses/thirdparty/liblcms2/COPYING",
+          "sha256": "c725daac91a9259ce5e195683c0eeb797d345035c36ac5ba114c9fa80e11639a",
+          "size": 1078
+        },
+        {
+          "source_path": "thirdparty/libpng/LICENSE",
+          "mirror": "tpr/sources/openjpeg-2.5.3/licenses/thirdparty/libpng/LICENSE",
+          "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e",
+          "size": 5345
+        }
+      ]
+    },
+    {
+      "name": "webp",
+      "version": "1.6.0",
+      "registry_manifest": "tpr/sources/webp-1.6.0/manifest.json",
+      "archive_filename": "libwebp-1.6.0.tar.gz",
+      "archive_root": "libwebp-1.6.0",
+      "sha256": "e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564",
+      "size": 4296070,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/webp.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "cceb6447180f961473b181c9ef38b630"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "registry_declared_license": "SPDX:BSD-3-Clause",
+      "registry_reused": false,
+      "notices": [
+        {
+          "source_path": "AUTHORS",
+          "mirror": "tpr/sources/webp-1.6.0/licenses/AUTHORS",
+          "sha256": "f251be89fd442bd9d701360730aea163cc8e2076ff03528f59267dc2c4f8b60a",
+          "size": 3279
+        },
+        {
+          "source_path": "COPYING",
+          "mirror": "tpr/sources/webp-1.6.0/licenses/COPYING",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+          "size": 1496
+        },
+        {
+          "source_path": "PATENTS",
+          "mirror": "tpr/sources/webp-1.6.0/licenses/PATENTS",
+          "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c",
+          "size": 1436
+        }
+      ]
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1",
+      "registry_manifest": "tpr/sources/zlib-1.3.1/manifest.json",
+      "archive_filename": "zlib-1.3.1.tar.gz",
+      "archive_root": "zlib-1.3.1",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/zlib.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "9855b6d802d7fe5b7bd5b196a2271655"
+      },
+      "formal_declared_license": "SPDX:Zlib",
+      "registry_declared_license": "Zlib",
+      "registry_reused": true,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/LICENSE",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+          "size": 1002
+        },
+        {
+          "source_path": "contrib/dotzlib/LICENSE_1_0.txt",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/contrib/dotzlib/LICENSE_1_0.txt",
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+          "size": 1359
+        }
+      ]
+    },
+    {
+      "name": "zstd",
+      "version": "1.5.7",
+      "registry_manifest": "tpr/sources/zstd-1.5.7/manifest.json",
+      "archive_filename": "zstd-1.5.7.tar.gz",
+      "archive_root": "zstd-1.5.7",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "size": 2434947,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/zstd.json",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "registry_declared_license": "BSD-3-Clause OR GPL-2.0-or-later",
+      "registry_reused": true,
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/COPYING",
+          "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+          "size": 18091
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/LICENSE",
+          "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+          "size": 1549
+        },
+        {
+          "source_path": "build/LICENSE",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/build/LICENSE",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      ]
+    },
+    {
+      "name": "png",
+      "version": "1.6.58",
+      "registry_manifest": "tpr/sources/png-1.6.58/manifest.json",
+      "archive_filename": "libpng-1.6.58.tar.xz",
+      "archive_root": "libpng-1.6.58",
+      "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+      "size": 1070096,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/png.json",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775"
+      },
+      "formal_declared_license": "SPDX:libpng-2.0",
+      "registry_declared_license": "SPDX:libpng-2.0",
+      "registry_reused": true,
+      "notices": [
+        {
+          "source_path": "AUTHORS",
+          "mirror": null,
+          "sha256": "0c777e9f2a67bd4058ab91050eb7a56106c92ed038ba8fe5f54c83344f2d93ca",
+          "size": 1773,
+          "archive_member": "libpng-1.6.58/AUTHORS",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": null,
+          "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+          "size": 5345,
+          "archive_member": "libpng-1.6.58/LICENSE",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "ci/LICENSE_MIT.txt",
+          "mirror": null,
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+          "size": 1036,
+          "archive_member": "libpng-1.6.58/ci/LICENSE_MIT.txt",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "contrib/gregbook/COPYING",
+          "mirror": null,
+          "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572",
+          "size": 18097,
+          "archive_member": "libpng-1.6.58/contrib/gregbook/COPYING",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "contrib/gregbook/LICENSE",
+          "mirror": null,
+          "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438",
+          "size": 2373,
+          "archive_member": "libpng-1.6.58/contrib/gregbook/LICENSE",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "contrib/pngexif/LICENSE_MIT.txt",
+          "mirror": null,
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+          "size": 1036,
+          "archive_member": "libpng-1.6.58/contrib/pngexif/LICENSE_MIT.txt",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "contrib/pngminus/LICENSE.txt",
+          "mirror": null,
+          "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330",
+          "size": 1164,
+          "archive_member": "libpng-1.6.58/contrib/pngminus/LICENSE.txt",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "scripts/cmake/AUTHORS.md",
+          "mirror": null,
+          "sha256": "50633b976f0133862c921aa67d56de2c0b42eb344c8ca3853686efb092a447db",
+          "size": 862,
+          "archive_member": "libpng-1.6.58/scripts/cmake/AUTHORS.md",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        }
+      ]
+    },
+    {
+      "name": "jpeg",
+      "version": "2.1.3",
+      "registry_manifest": "tpr/sources/jpeg-2.1.3/manifest.json",
+      "archive_filename": "libjpeg-turbo-2.1.3.tar.gz",
+      "archive_root": "libjpeg-turbo-2.1.3",
+      "sha256": "dbda0c685942aa3ea908496592491e5ec8160d2cf1ec9d5fd5470e50768e7859",
+      "size": 2260756,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/jpeg.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "627b980fad0573e08e4c3b80b290fc91"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "registry_declared_license": "SPDX:BSD-3-Clause",
+      "registry_reused": true,
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": null,
+          "sha256": "ee1eaf194d5924b6360af8a6ba6a4e1554037091f7505943300cdeec65f1aebb",
+          "size": 5213,
+          "archive_member": "libjpeg-turbo-2.1.3/LICENSE.md",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "README.ijg",
+          "mirror": null,
+          "sha256": "4b7b9f8c03bb8d60270dfd12684e70ab21e4abfd27e73905cd1a7c4cae6f5cdb",
+          "size": 12732,
+          "archive_member": "libjpeg-turbo-2.1.3/README.ijg",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "release/License.rtf",
+          "mirror": null,
+          "sha256": "d26120ab237f87dea10aa4fa7fd4243cadffd26e54eb2f3903d5fb0f8ed336b2",
+          "size": 2178,
+          "archive_member": "libjpeg-turbo-2.1.3/release/License.rtf",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        }
+      ]
+    },
+    {
+      "name": "fmt",
+      "version": "12.1.0",
+      "registry_manifest": "tpr/sources/fmt-12.1.0/manifest.json",
+      "archive_filename": "fmt-12.1.0.tar.gz",
+      "archive_root": "fmt-12.1.0",
+      "sha256": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea",
+      "size": 711419,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/fmt.json",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea"
+      },
+      "formal_declared_license": "SPDX:MIT",
+      "registry_declared_license": "SPDX:MIT",
+      "registry_reused": true,
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": null,
+          "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+          "size": 1431,
+          "archive_member": "fmt-12.1.0/LICENSE",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        },
+        {
+          "source_path": "doc/python-license.txt",
+          "mirror": null,
+          "sha256": "dcc4d9738d3e8d3b9f51286f1dc90d0c49ea8325982008ced021932a0b0b0cda",
+          "size": 14903,
+          "archive_member": "fmt-12.1.0/doc/python-license.txt",
+          "preservation": "Exact original member retained in reused immutable registry archive; use the verified pristine source member."
+        }
+      ]
+    },
+    {
+      "name": "imath",
+      "version": "3.2.2",
+      "registry_manifest": "tpr/sources/imath-3.2.2/manifest.json",
+      "archive_filename": "imath-3.2.2.tar.gz",
+      "archive_root": "Imath-3.2.2",
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
+      "size": 689217,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/imath.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "e29f25ce926ac53d8e0a52197299f61b"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "registry_declared_license": "SPDX:BSD-3-Clause",
+      "registry_reused": true,
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/LICENSE.md",
+          "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601",
+          "size": 1497
+        },
+        {
+          "source_path": "website/license.rst",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/website/license.rst",
+          "sha256": "21bd6d29519338c582dfd570a3ce9120277f24c1eff2ffb97d903b7ea93294d8",
+          "size": 1953
+        }
+      ]
+    },
+    {
+      "name": "tbb",
+      "version": "v2022.3.0",
+      "registry_manifest": "tpr/sources/tbb-v2022.3.0/manifest.json",
+      "archive_filename": "oneTBB-v2022.3.0.tar.gz",
+      "archive_root": "oneTBB-2022.3.0",
+      "sha256": "01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a",
+      "size": 6836514,
+      "inventory": "build_files/ohos/deps_color_sources/inventories/tbb.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "2b242c465b194ac8e1451ea1354873ae"
+      },
+      "formal_declared_license": "SPDX:Apache-2.0",
+      "registry_declared_license": "Apache-2.0",
+      "registry_reused": true,
+      "notices": [
+        {
+          "source_path": "LICENSE.txt",
+          "mirror": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        },
+        {
+          "source_path": "third-party-programs.txt",
+          "mirror": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+          "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c",
+          "size": 11631
+        }
+      ]
+    }
+  ],
+  "patches": [
+    {
+      "name": "openjph",
+      "sha256": "a19b4fa881d3aba84fd1cd091b76167c30801489cedbd9f740012085324848f2",
+      "files": [
+        {
+          "path": "src/core/coding/ojph_block_encoder.cpp",
+          "before_sha256": "915aa928ffe6559a193ef62af6ae52f94960aaf73958e2e1fdd490a49f37ed29",
+          "after_sha256": "de2eabe213073eff7fd49dbde4f282e3db0f5c0315092a07258d13bdceedc3d2"
+        },
+        {
+          "path": "src/core/coding/ojph_block_encoder_avx2.cpp",
+          "before_sha256": "ba8776020e8f8fcf0f8c20e875762d8076cf5ac9b8fc6d6c64e115eae96ff142",
+          "after_sha256": "a528ec28229eb1ffade38d0cd11bdc78c40ba37bd57302674dcf6d001b0185d4"
+        },
+        {
+          "path": "src/core/coding/ojph_block_encoder_avx512.cpp",
+          "before_sha256": "7360b021b6d3c26ed7fd38c50175d9be8b9312bd62b6d1cff7e042d6c9e97afa",
+          "after_sha256": "1c507e659712711dcc11cb61dd8fb323796ba4fa33627cdedda667982420ca73"
+        },
+        {
+          "path": "src/core/transform/ojph_colour.cpp",
+          "before_sha256": "a11afb16c408cac67cb0faa741abb933eb432c6b65cd304fab0c18381c19e4e4",
+          "after_sha256": "771fdffe27361f6e943ae4d7d944f00e9be9728bb1e5f4b6559dcee334c745fe"
+        },
+        {
+          "path": "src/core/transform/ojph_transform.cpp",
+          "before_sha256": "a719ed5af6f6a7db1f32f9b5ab8d9af07016a8e7faf0aa60bff44971a5818beb",
+          "after_sha256": "020740b31c167e540b789e0b856cd72e4921b368c50a50c1f2ca0a0dd429f3c3"
+        }
+      ],
+      "path": "build_files/ohos/deps_color_sources/builder/patches/openjph-applied-source.patch",
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    },
+    {
+      "name": "openimageio",
+      "sha256": "9d0182dc545945912588ab56ba573ad2a721955566aa4881a03a1d4a465c98f1",
+      "files": [
+        {
+          "path": "src/dds.imageio/ddsinput.cpp",
+          "before_sha256": "b5af86bf2645474bfdca855540b414030fd11485ff52953da185ff23a8dadfe3",
+          "after_sha256": "648d3c3c584aa1411b0a8edc2416713c5c0a86858c16472524dd49af93b6d9b4"
+        },
+        {
+          "path": "src/libOpenImageIO/imageinput.cpp",
+          "before_sha256": "3625fa9c25353ac76f3aca5fa3365c997ee2026eab7067890315e2e8b65e0f2c",
+          "after_sha256": "764f7b48c1c9c37f40a8820be71e4c739f51b3be485d4f26cd59b26091fb7081"
+        },
+        {
+          "path": "src/build-scripts/OpenImageIO.pc.in",
+          "before_sha256": "17f600323b2fcd850ebdfe86e5e0894636e1193dda447ca4ccb27d766c40833e",
+          "after_sha256": "dd6194e32892934be84c4d81545d3b9fb327031844f3a9b96a18b79ad2cb9a59"
+        },
+        {
+          "path": "src/cmake/Config.cmake.in",
+          "before_sha256": "e05b03852e4235e07886068a529abc9535148b2450103c47c2a15a82f71f41d6",
+          "after_sha256": "d59f501553e2ce441a350eab0ec0c03064b472197f0c6e778066ece7fc8c721a"
+        },
+        {
+          "path": "src/png.imageio/CMakeLists.txt",
+          "before_sha256": "127d499766b898999bdd40940102a020fcdd3a1b94b01dcf9dbc45324e00f0c1",
+          "after_sha256": "8dea4107a53a10cd306b9a4fc2da039d18e325cbcb5db8a6bb0109520ec27c9e"
+        },
+        {
+          "path": "src/ico.imageio/CMakeLists.txt",
+          "before_sha256": "af1b4fc24cb1116d6aa8c25c13ee5c197aec8cc77c17dcfcb4de7a0d81a383c0",
+          "after_sha256": "445cdb86e56bab7b73f96cd278ec1a67973e82e3db16f91b599f9b30de47479a"
+        }
+      ],
+      "path": "build_files/ohos/deps_color_sources/builder/patches/openimageio-applied-source.patch",
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    },
+    {
+      "name": "deflate",
+      "sha256": "adf68afded0f433590c4e751e716b8932c4728f6247e8f018ce948ff85603826",
+      "files": [
+        {
+          "path": "CMakeLists.txt",
+          "before_sha256": "eed317c301a43712d2348448bb5cdf2f8f806186c0e6a5cd838759f78af7077f",
+          "after_sha256": "226b742e14ba4570ae249f480fec3c61f8d7eb04e51e2b64348e0368a461988a"
+        }
+      ],
+      "path": "build_files/ohos/deps_color_sources/builder/patches/deflate-applied-source.patch",
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    },
+    {
+      "name": "minizipng",
+      "sha256": "d418481b309d418f8683b69cb9a289bed304459b2959db54c0d429043fe6ce76",
+      "files": [
+        {
+          "path": "CMakeLists.txt",
+          "before_sha256": "092003ee433916fec15923ed42cb5e444062dbf15bf94ffb65bb944829fd87eb",
+          "after_sha256": "c38977e2ecb47bb1470a089785b577fe48cfe77737469a126a3f69a543a3cc05"
+        }
+      ],
+      "path": "build_files/ohos/deps_color_sources/builder/patches/minizipng-applied-source.patch",
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    },
+    {
+      "name": "opencolorio",
+      "sha256": "61bd8818156e501bc4449db74467dc3b21f3df85b2043d3cd1d4742227063e91",
+      "files": [
+        {
+          "path": "src/OpenColorIO/res/OpenColorIO.pc.in",
+          "before_sha256": "89f2a9b00f445558cc1f4ba78dd7c324aa31b9a574a9d5dd8a600bec12257f1e",
+          "after_sha256": "da49ad247850a294f48729f1b6c28d4bd838953284a995fa53b7ea1bd48495f8"
+        },
+        {
+          "path": "share/cmake/modules/Findminizip-ng.cmake",
+          "before_sha256": "6a93af6c9d0f9eea68ed1ac4f3201e8aebf6cf90f90ba219d9f33b2a5628e20f",
+          "after_sha256": "8e19b773c7c01ce44b52f0cad2d8667014d2458836eb873a2677d06370cb60cd"
+        }
+      ],
+      "path": "build_files/ohos/deps_color_sources/builder/patches/opencolorio-applied-source.patch",
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    },
+    {
+      "name": "pystring",
+      "sha256": "e20582674bff731b8d09d326c49c0b32a47fc21646b5255cf05b8f86bb7a7a07",
+      "files": [
+        {
+          "path": "CMakeLists.txt",
+          "before_sha256": null,
+          "after_sha256": "23e2fff0826b8363a543f7a75708634ff2cafe57c8056229a44c3f6aace4cc70"
+        }
+      ],
+      "path": "build_files/ohos/deps_color_sources/builder/patches/pystring-applied-source.patch",
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    }
+  ],
+  "baseline_recipe_inputs": [
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1"
+    },
+    {
+      "path": "build_files/build_environment/cmake/openexr.cmake",
+      "sha256": "f05360d27acc8bbb8f1fd28814a8327dfa2cbc8692913a9906976434408314bf"
+    },
+    {
+      "path": "build_files/build_environment/cmake/openjph.cmake",
+      "sha256": "09cc952ffe2f8f1e86a0d97cfa34ba9b501ea61e4c49958413a562f99a1c94b6"
+    },
+    {
+      "path": "build_files/build_environment/cmake/deflate.cmake",
+      "sha256": "639380e6e3bf38e3e01485168a45868dc713c9da88a822fb1c7a3325ffb77075"
+    },
+    {
+      "path": "build_files/build_environment/cmake/opencolorio.cmake",
+      "sha256": "64f5503f9355bc8a94d51aab320bb4071f4ba2e52c2432c0f02a8d80169c8103"
+    },
+    {
+      "path": "build_files/build_environment/cmake/yamlcpp.cmake",
+      "sha256": "a53a04862577bf60488c24ea41382b622e86a9f01208671d4a0a173d8da26711"
+    },
+    {
+      "path": "build_files/build_environment/cmake/pystring.cmake",
+      "sha256": "18ff4072d2da1850003030d0eb72a69403e75a2f3446b1c9ce4788ac94d4797e"
+    },
+    {
+      "path": "build_files/build_environment/cmake/expat.cmake",
+      "sha256": "b56ca1853ed14fa5aadbd9c3bd7be9f633187e43ce524b3be06517606f1e040b"
+    },
+    {
+      "path": "build_files/build_environment/cmake/minizipng.cmake",
+      "sha256": "b9b297dd3bd2b759f966ff6684594a6e9d41b84b3ce51e45acb1770932948b83"
+    },
+    {
+      "path": "build_files/build_environment/cmake/openimageio.cmake",
+      "sha256": "5db8463c5d3e9e1d277d7dfd090b4fe0106a186e458c383b8bfba873007acda3"
+    },
+    {
+      "path": "build_files/build_environment/cmake/tiff.cmake",
+      "sha256": "1ff422fbd2080fc3cfd1306544c2fdd128993ad038daa29ee7eca833f7d84332"
+    },
+    {
+      "path": "build_files/build_environment/cmake/robinmap.cmake",
+      "sha256": "e10bdb6b694a2e750eaa0c41684cc91d0f3c80cc91514dd3d9e72c6558bc0855"
+    },
+    {
+      "path": "build_files/build_environment/cmake/pugixml.cmake",
+      "sha256": "2f8c4a38f685de887e25d02ffdbd3be59247e37378426661b08d7230023d6ec1"
+    },
+    {
+      "path": "build_files/build_environment/cmake/openjpeg.cmake",
+      "sha256": "28060ba438ca86ad604e3c39b135de8b41b7bd1eeefdd5656e4c70ee062d3df1"
+    },
+    {
+      "path": "build_files/build_environment/cmake/webp.cmake",
+      "sha256": "8c586da54537bfec89c35455158c0c80b15f29e64b56e720f999ad13e5a9a317"
+    },
+    {
+      "path": "build_files/build_environment/cmake/zlib.cmake",
+      "sha256": "b4d55dfc95da3f9fafd8a46d45a07813cebba591d86db1d007bfce8a1aa01f9c"
+    },
+    {
+      "path": "build_files/build_environment/cmake/zstd.cmake",
+      "sha256": "1232dc8cfabade1d322b4ee89b616233493628111f20bb2615e3f268395ba077"
+    },
+    {
+      "path": "build_files/build_environment/cmake/png.cmake",
+      "sha256": "215585eb22b1819890a00dc8a0b908c76510fec2d3a5c65b4512e926e7c9203d"
+    },
+    {
+      "path": "build_files/build_environment/cmake/jpeg.cmake",
+      "sha256": "b0957c260a20f07d306f6e8e0bb9728108ffbe201504740e7018a641fa426ac9"
+    },
+    {
+      "path": "build_files/build_environment/cmake/fmt.cmake",
+      "sha256": "696e7bb5fa1a1676ff5d4a835a7d5ab1cde7f034a4536c430dbc59d0e6508023"
+    },
+    {
+      "path": "build_files/build_environment/cmake/imath.cmake",
+      "sha256": "fe7659035b7c1370a0815dbd4fb4fa6c67ea276cc54b1c9c5d29ef41418c20e3"
+    },
+    {
+      "path": "build_files/build_environment/cmake/tbb.cmake",
+      "sha256": "db99cef90879ff5f5f9778480175bd94f91b46353cd0459e89c1228da8762e85"
+    }
+  ],
+  "license_declaration_policy": "formal_declared_license reproduces versions.cmake verbatim. registry_declared_license reproduces the new formal label or unchanged reused registry declaration. Exact original named license, copyright, notice, third-party, relicensing, authors, patent and acknowledgement files retain their original paths and bytes. Archive-contained source headers and all other declarations remain pristine. No aggregate license expression is inferred or substituted.",
+  "scope": "Complete pristine original registry archives and notice declarations; source patches separate; portable selected20 candidate has no fresh full native PASS"
+}

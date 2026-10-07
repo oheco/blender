@@ -1,0 +1,572 @@
+{
+  "source_archive_sha256": "cab0a654c4917e16367483296b44cdb1d614e3120c721beafcd37e3a8580486c",
+  "archive_root": "SPIRV-Headers-vulkan-sdk-1.4.341.0",
+  "git_commit": "04f10f650d514df88b76d25e83db360142c7b174",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 72,
+      "sha256": "0bfa620beefedeab026b247a8282e483c225b491f5d7c5bbee741fbbb9e62b81"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "size": 187,
+      "sha256": "bc0b0608a6c4d65ed3a51cfa3d680e5280a47cf9550c02d065c602e8f9678a09"
+    },
+    {
+      "path": ".github/workflows/presubmit.yml",
+      "size": 5174,
+      "sha256": "641f7d0e1496f9e185f51bc9494a1d409ce8bb95c1e9c2570e8892b3633e96c8"
+    },
+    {
+      "path": ".gitignore",
+      "size": 46,
+      "sha256": "07069ba20cfd4c3210efab37597a638fef535ef94d34050fa0612924e8534015"
+    },
+    {
+      "path": "BUILD.bazel",
+      "size": 5363,
+      "sha256": "2f047f0ea12d469de89248b4ee5c48c8686f483016b9350161468e463310edc4"
+    },
+    {
+      "path": "BUILD.gn",
+      "size": 970,
+      "sha256": "a9dd5d0c59a1939ad95869cce9467ae3b74cf38f0c74632ecabb33447c77d901"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "size": 2353,
+      "sha256": "18202317ea71c2e01a7eafb325354cc45adbea9f7f65492128e2b38160550858"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "size": 280,
+      "sha256": "a25e58cd66a9543e1500db9a5c3c027e874893ad1a264530bf26eb10918b5d80"
+    },
+    {
+      "path": "LICENSE",
+      "size": 23503,
+      "sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "size": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "size": 1087,
+      "sha256": "6d7c9e9d7d12c8d3753bdb24417b84819ba4d6c2f025c37948113d86dc81eef9"
+    },
+    {
+      "path": "MODULE.bazel",
+      "size": 212,
+      "sha256": "c2fba5cb72aa9cf6cf928a5818cc02065b8ace13307ce09cf986205ddc6c143e"
+    },
+    {
+      "path": "README.md",
+      "size": 7735,
+      "sha256": "f34d6b93a29876e7e44a66df34ca03a3d5f29c09a9a9efb3953f1cf43224bd74"
+    },
+    {
+      "path": "REUSE.toml",
+      "size": 1539,
+      "sha256": "5b0b0635e3040415933bb36f4b981d54c76d4896522c69dc52778f2012f91ce1"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 699,
+      "sha256": "be1c5c1e7227173e3c6171ea2541c22a422931a92c13a304b5b8df873b188433"
+    },
+    {
+      "path": "WORKSPACE",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cmake/SPIRV-Headers.pc.in",
+      "size": 194,
+      "sha256": "4b4feafea8ed648cd513ca2bf70a28e907324b317b4095092262981ab4e9a3a7"
+    },
+    {
+      "path": "include/spirv/1.0/GLSL.std.450.h",
+      "size": 3087,
+      "sha256": "dbbeafbec24d7d44e3b14969328f85c9fb94bf578f008b5aad1b347c34aa3471"
+    },
+    {
+      "path": "include/spirv/1.0/OpenCL.std.h",
+      "size": 3748,
+      "sha256": "ac8a686d215962253915ec76e34709d6bcf96f7136c75cd10dfcc90c7b3904a3"
+    },
+    {
+      "path": "include/spirv/1.0/extinst.glsl.std.450.grammar.json",
+      "size": 13607,
+      "sha256": "b0a122c0af7face3bd2adaa50277ea97647b8ff9e6659d9d5077d109b72f3e66"
+    },
+    {
+      "path": "include/spirv/1.0/extinst.opencl.std.100.grammar.json",
+      "size": 28235,
+      "sha256": "313808d270e099397d70fb93699c3dea05f6eab8191cb1d06627788996e96403"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.core.grammar.json",
+      "size": 163213,
+      "sha256": "7d928866be499a40f6f84f4b6275d6c69e71834994fd0ab82f8f663cb13dcea9"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.cs",
+      "size": 29296,
+      "sha256": "9d8145d722ee34d7017b09e1fa47fc463b4f2ca14c80122a0b509e0186b8bd27"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.h",
+      "size": 32384,
+      "sha256": "0c25f6eb16d544164fa48bafa0eac569c05f1400ea3daa903d50b6153fe08a43"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.hpp",
+      "size": 29895,
+      "sha256": "4d74405b6f07fba049a576b007ddbf769afd5d9637c61daa20906ba217f6602c"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.hpp11",
+      "size": 24361,
+      "sha256": "7a896d4af952a978e69ffe3e1def37f1ac610047063dc2d8be649d2b9ac718b7"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.json",
+      "size": 37738,
+      "sha256": "37511983938c9ab0b4c78ea635e298812d55867dc51cd257849dbe2b7d4cdd5a"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.lua",
+      "size": 24889,
+      "sha256": "d93d4f84a09796532b90c39270f04d602c20f16a646d558d4df7112fa3d92455"
+    },
+    {
+      "path": "include/spirv/1.0/spirv.py",
+      "size": 26519,
+      "sha256": "5bdd478afd224ad31b496a14edd8208dd5a0e31c4c745f7d3205eb360705c542"
+    },
+    {
+      "path": "include/spirv/1.1/GLSL.std.450.h",
+      "size": 3087,
+      "sha256": "dbbeafbec24d7d44e3b14969328f85c9fb94bf578f008b5aad1b347c34aa3471"
+    },
+    {
+      "path": "include/spirv/1.1/OpenCL.std.h",
+      "size": 3748,
+      "sha256": "ac8a686d215962253915ec76e34709d6bcf96f7136c75cd10dfcc90c7b3904a3"
+    },
+    {
+      "path": "include/spirv/1.1/extinst.glsl.std.450.grammar.json",
+      "size": 13606,
+      "sha256": "e23de69b26e1a1529ecb2c78f559b2168623f35f423fb28ea2baf2ed1a905e9e"
+    },
+    {
+      "path": "include/spirv/1.1/extinst.opencl.std.100.grammar.json",
+      "size": 28234,
+      "sha256": "2a12bd815cd988639a716c96d2fa5a43dc4cc14fa0d91121c8ef9d53ff62ed98"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.core.grammar.json",
+      "size": 167995,
+      "sha256": "5433e9a301f190d6b473364a1cb3152523f5653a99fecde67a8a08f9664abca5"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.cs",
+      "size": 30125,
+      "sha256": "a2f967b0a5b8955ecda384ac98d6824d803063450e8de93d4f269b7a24041ee3"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.h",
+      "size": 33255,
+      "sha256": "2b88e5b757bad01ccfb796cd45ae46615a88a76acebed6f3aa33ab033115d03f"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.hpp",
+      "size": 30700,
+      "sha256": "f531520cbf97005793a8af7e168b66197cf17c25aabedd8330816b2d271f8db4"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.hpp11",
+      "size": 25012,
+      "sha256": "fee95d2849b5bf55cabe938c91a86056f3e273a6c596d4e3eb044af0c55124b4"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.json",
+      "size": 38658,
+      "sha256": "b61f458257db6c51d6f5d21972e15f8c8eb93024d6366b28554ba9ae5c3c7d2f"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.lua",
+      "size": 25629,
+      "sha256": "2846adc9c2d1b1da8094db40512a264a1473fc07d293761ea385dd93b77f9bf4"
+    },
+    {
+      "path": "include/spirv/1.1/spirv.py",
+      "size": 27302,
+      "sha256": "6536e543679feeb146c503e58b80f07e64e886775c98c986e82da677280f45dd"
+    },
+    {
+      "path": "include/spirv/1.2/GLSL.std.450.h",
+      "size": 3087,
+      "sha256": "dbbeafbec24d7d44e3b14969328f85c9fb94bf578f008b5aad1b347c34aa3471"
+    },
+    {
+      "path": "include/spirv/1.2/OpenCL.std.h",
+      "size": 3748,
+      "sha256": "ac8a686d215962253915ec76e34709d6bcf96f7136c75cd10dfcc90c7b3904a3"
+    },
+    {
+      "path": "include/spirv/1.2/extinst.glsl.std.450.grammar.json",
+      "size": 13606,
+      "sha256": "e23de69b26e1a1529ecb2c78f559b2168623f35f423fb28ea2baf2ed1a905e9e"
+    },
+    {
+      "path": "include/spirv/1.2/extinst.opencl.std.100.grammar.json",
+      "size": 28235,
+      "sha256": "313808d270e099397d70fb93699c3dea05f6eab8191cb1d06627788996e96403"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.core.grammar.json",
+      "size": 169397,
+      "sha256": "f25068d6d372c8fd61e529f53db8cfd6ec9182a0f9321748c5b132a9c9b548bf"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.cs",
+      "size": 30332,
+      "sha256": "d1193d3c947c9a891e77d5dc547ba631302a5b235516a16698ea242572eacc6c"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.h",
+      "size": 33491,
+      "sha256": "d0580351b4164bfa938e8e374fb0205811966e0f4cf4fb80f72e8655a45e0343"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.hpp",
+      "size": 30918,
+      "sha256": "25c328ad50132ba22437fe7ed2898de79509285c3402762c6ffea17ac9f748a9"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.hpp11",
+      "size": 25171,
+      "sha256": "33f9b5a3ea90429e38e479970b51f125fa24aec48101239b163e2b80b1591ee8"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.json",
+      "size": 38919,
+      "sha256": "dd6c543d7eea72f81b1cfe7dbec06530aa9c7f89a27a68f6c18827cb7992e5ea"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.lua",
+      "size": 25812,
+      "sha256": "98d386749f7b255290af81d4b25c488c1af9f44a64cb5715dfd6fa7a8118dc32"
+    },
+    {
+      "path": "include/spirv/1.2/spirv.py",
+      "size": 27497,
+      "sha256": "6e9023b8266e418272b593704e5cc9c2b0f300941981b2b3843e67090641988b"
+    },
+    {
+      "path": "include/spirv/spir-v.xml",
+      "size": 22311,
+      "sha256": "fadea309ff28ef64eacafd2ba37cb1fcb1d84acbb71916a626ff9e2b695fffa3"
+    },
+    {
+      "path": "include/spirv/unified1/AMD_gcn_shader.h",
+      "size": 832,
+      "sha256": "fedf1db1c6b0910a624d849c2b92d29576105887b9b216ad2b1a60e053ffa6e6"
+    },
+    {
+      "path": "include/spirv/unified1/AMD_shader_ballot.h",
+      "size": 924,
+      "sha256": "15aa9f9c36086713985c832238061f64be4cd4eb4f8bf7bd08e7c61ef5161355"
+    },
+    {
+      "path": "include/spirv/unified1/AMD_shader_explicit_vertex_parameter.h",
+      "size": 943,
+      "sha256": "b716d0a212c2897ca4cbf23d642f490cd8e82e6f557ea4cf60c500a69aaeddaa"
+    },
+    {
+      "path": "include/spirv/unified1/AMD_shader_trinary_minmax.h",
+      "size": 1185,
+      "sha256": "c82e0dfec563a319c73951ca0a12709286bd75ef4fd567543a526420761bc557"
+    },
+    {
+      "path": "include/spirv/unified1/ArmMotionEngine.100.h",
+      "size": 679,
+      "sha256": "788c1811b9b06542c57b9e74670455c964440b6a12c7afab0934a70b48417b3c"
+    },
+    {
+      "path": "include/spirv/unified1/DebugInfo.h",
+      "size": 3641,
+      "sha256": "38ce5d069c4d81adc919def9503999944685af322a430a0696445f7adeb31780"
+    },
+    {
+      "path": "include/spirv/unified1/GLSL.std.450.h",
+      "size": 3087,
+      "sha256": "d18a932ee97c268a57e33134651d554dbe71a5654b975e89e9e9487fa59ac9df"
+    },
+    {
+      "path": "include/spirv/unified1/NonSemanticClspvReflection.h",
+      "size": 3614,
+      "sha256": "10dfd6329e8ca50f49ea85961c757fb8ee03cba9fa01031e165b8964a1473059"
+    },
+    {
+      "path": "include/spirv/unified1/NonSemanticDebugBreak.h",
+      "size": 811,
+      "sha256": "51a75260843872e4f1bcf0558407c2de839663b67ae694354c68689f608363a4"
+    },
+    {
+      "path": "include/spirv/unified1/NonSemanticDebugPrintf.h",
+      "size": 820,
+      "sha256": "79b5ee5d02940ef73db51d4a4fbdc3c2bd7c318d1258f0ec39dc0a6fb3d620cb"
+    },
+    {
+      "path": "include/spirv/unified1/NonSemanticShaderDebugInfo100.h",
+      "size": 6875,
+      "sha256": "324d769f18e568b70b6a4b4359c4838c929b337759c43691f1cec49ea03bcad1"
+    },
+    {
+      "path": "include/spirv/unified1/NonSemanticVkspReflection.h",
+      "size": 1206,
+      "sha256": "1447e0f039b8baeb4ccd0e1b00ea1d51d9d03019f5cb5037999d107a000642ef"
+    },
+    {
+      "path": "include/spirv/unified1/OpenCL.std.h",
+      "size": 8843,
+      "sha256": "7cf7a4aa83fef2e12580783c8b5f2b1be0babf1cc4cce8199540ec2c3c3182d3"
+    },
+    {
+      "path": "include/spirv/unified1/OpenCLDebugInfo100.h",
+      "size": 5029,
+      "sha256": "80f14fe4347d597c274e334f434fe5819f16dc10805fef0f0bedfe159091d11f"
+    },
+    {
+      "path": "include/spirv/unified1/TOSA.001000.1.h",
+      "size": 1980,
+      "sha256": "f500c3d501aba42b3ae921d1d0c8f94e8d5037329050f73fd7e85e22597b7f25"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.arm.motion-engine.100.grammar.json",
+      "size": 2550,
+      "sha256": "86fb7c418bc660338068ebe43409371e10cb78ecca83f9347c601b0b68ab8695"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.debuginfo.grammar.json",
+      "size": 15853,
+      "sha256": "3f6b26f7e930ebf27524991c15366a278d7f0a73a8eb70b9e9503375c4a341b6"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.glsl.std.450.grammar.json",
+      "size": 13369,
+      "sha256": "5d72e48247569f9b77a17a849db624350abc9d26f7f72b153bbcf15c37238239"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.nonsemantic.clspvreflection.grammar.json",
+      "size": 13258,
+      "sha256": "425414766ed0b387f05e30a57b74cfcc6288d07b23d61b86befa118c1d73d4d8"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.nonsemantic.debugbreak.grammar.json",
+      "size": 109,
+      "sha256": "1d30fb3a054592f8d749dff42ad4aa4f695bd5f0d4a9cadc70694a1d0cafe23b"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.nonsemantic.debugprintf.grammar.json",
+      "size": 252,
+      "sha256": "e23844cf66431dcd1d50d23b84cd45a07b16c4cdb0262ed9b32f7b9331131a89"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.nonsemantic.shader.debuginfo.100.grammar.json",
+      "size": 19145,
+      "sha256": "a057349c3902dce992c6f70a685812e84b019a823efbbaf8d81c276e86a12de7"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.nonsemantic.vkspreflection.grammar.json",
+      "size": 5235,
+      "sha256": "5479df05d87a80d84031fe8837908fb66b02b8f07f5cdb43b06005534d749200"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.opencl.debuginfo.100.grammar.json",
+      "size": 18252,
+      "sha256": "a0e0d510c7206ae98fc76b42756009991d56d2caa84f151165002806cdc9b222"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.opencl.std.100.grammar.json",
+      "size": 27684,
+      "sha256": "44b752999f78f8161ee52a9d305b14576ad7ed0a81a10d28870b7cd0ba5788a4"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.spv-amd-gcn-shader.grammar.json",
+      "size": 531,
+      "sha256": "ffb7b0f755f774c1fefd92ffc46a4790ac5bce3b1bc366676637186fd1ddfeb6"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.spv-amd-shader-ballot.grammar.json",
+      "size": 1049,
+      "sha256": "823b90a85ba6a516def3db45c6b37ecdaba56263f9f7867c8c5432a0d2597395"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.spv-amd-shader-explicit-vertex-parameter.grammar.json",
+      "size": 325,
+      "sha256": "c022b2c0b337d20951b9076ac0b6ec1ea512b2964051fc3ade04cbb70146ac8b"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.spv-amd-shader-trinary-minmax.grammar.json",
+      "size": 2566,
+      "sha256": "7702f8d593e435f4f294d7a98cd9672b13efaa433a34a037698a285adfd84158"
+    },
+    {
+      "path": "include/spirv/unified1/extinst.tosa.001000.1.grammar.json",
+      "size": 19867,
+      "sha256": "fb028a301e201afb61387b331a664b30790ffb2d2d2ecf81e09f2b63301e607c"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.bf",
+      "size": 102408,
+      "sha256": "102f6f133a2704e34a2c2b6e6482bb001f06964f5c5442f105448dd36177e91f"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.core.grammar.json",
+      "size": 597741,
+      "sha256": "508e6677e27b0b58eac8395aa49a90ac1766a8d392c247a0aba7b03f4fdd85b9"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.cs",
+      "size": 100530,
+      "sha256": "37da35a127a7c1b9b0864933ff69611332045476c1998532e5f29ebdad3572eb"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.h",
+      "size": 318237,
+      "sha256": "a3e041124815be3e6411dc9cfe04153a499b37ff83e630af8f7f98766db183a7"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.hpp",
+      "size": 309571,
+      "sha256": "f1c7707b4fa073bb61706eecf3583163651504a3abac17f3e3f2420313082aac"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.hpp11",
+      "size": 300608,
+      "sha256": "83cb8f2f9ba84b3013a6f9a4a9e40807c01c4db4244d36048b9c266f64711504"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.json",
+      "size": 117387,
+      "sha256": "d34a5f20e84e27abeee26ca45f165f0ee777e773ed32d8c4bb5ac3980de999b2"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.lua",
+      "size": 89068,
+      "sha256": "4d384df6465eba7a15e8ea6319d88850385a5f5c3b2cd51b3d8bf757d5486ea8"
+    },
+    {
+      "path": "include/spirv/unified1/spirv.py",
+      "size": 92297,
+      "sha256": "5c2936c0a68408d4f7450b48c8ddd85ef89b86ee2ee4c150a9faba555b0a4032"
+    },
+    {
+      "path": "include/spirv/unified1/spv.d",
+      "size": 79702,
+      "sha256": "329831d86b33dc0cdbbffd4653f46d54e63eba7db88ba66e0b87be20876a43ab"
+    },
+    {
+      "path": "tests/CMakeLists.txt",
+      "size": 1841,
+      "sha256": "fe490948797b5f4ef54533ca1f0dc265d632797f6cc1c8dd57f4f1c378a9e580"
+    },
+    {
+      "path": "tests/example.c",
+      "size": 607,
+      "sha256": "a2b9ad1d11437bdf3f5d21c439d486820776b095d21d7177b2d40942e76a1c15"
+    },
+    {
+      "path": "tests/example.cpp",
+      "size": 645,
+      "sha256": "f8da7b9e8409f847176ce5cb504db696587dc2428d0171685690d9585e6753dd"
+    },
+    {
+      "path": "tests/example11.cpp",
+      "size": 651,
+      "sha256": "860cc8d312de928bcd78f8aeb7125e5b6186d9d438bc31119a30266b71e553e8"
+    },
+    {
+      "path": "tests/find_package/CMakeLists.txt",
+      "size": 690,
+      "sha256": "4b0b22fa48976fe787841332fe6533a0c5c1d78cf0636ac60eed1176153a4e1c"
+    },
+    {
+      "path": "tests/pkg_config/CMakeLists.txt",
+      "size": 663,
+      "sha256": "cd99c02e5f7cf063514f5cc53ba60c5c340ba59975d40f0ab2720454af0f654f"
+    },
+    {
+      "path": "tools/buildHeaders/CMakeLists.txt",
+      "size": 554,
+      "sha256": "386411a1421ee77380a9a8a0e30824ea4f3f2a0112e2cb585ea5b82c15bdfda7"
+    },
+    {
+      "path": "tools/buildHeaders/bin/generate_language_headers.py",
+      "size": 6955,
+      "sha256": "3581c7806abed37ee64ea208d40380e56aeaeab18692b0a07524f3eba5537225"
+    },
+    {
+      "path": "tools/buildHeaders/bin/makeExtinstHeaders.py",
+      "size": 1799,
+      "sha256": "bf30352f171d9448ccbc43b83e9d401fa1aea39b547a5df70cee5cca1ae7f44f"
+    },
+    {
+      "path": "tools/buildHeaders/bin/makeHeaders",
+      "size": 209,
+      "sha256": "f3ee5da75f6a5c7cebcc85598ceacc454344e2d744fcf59f264c4db1fb868c81"
+    },
+    {
+      "path": "tools/buildHeaders/header.cpp",
+      "size": 36751,
+      "sha256": "b4bab7433fe3183cf73131134c405da4e52ca58354a5d7cba7e5dc3d45a4971f"
+    },
+    {
+      "path": "tools/buildHeaders/header.h",
+      "size": 1003,
+      "sha256": "d51ef97321d4cb61db30de2b961f7178cf87030f8c364434689c6c0b495b7ec8"
+    },
+    {
+      "path": "tools/buildHeaders/jsonToSpirv.cpp",
+      "size": 39939,
+      "sha256": "508db15c8cabc315cc31e887c8a6883919e4aa4de5d87b63f0fe2c13e4e0b919"
+    },
+    {
+      "path": "tools/buildHeaders/jsonToSpirv.h",
+      "size": 10354,
+      "sha256": "dc6cf10a233c26f467f574a54f1a2087b94e9182b6cddab8cf20ce63f475dd3a"
+    },
+    {
+      "path": "tools/buildHeaders/jsoncpp/dist/json/json-forwards.h",
+      "size": 8954,
+      "sha256": "757c5fb189b56c574b0d91e306f56052667914ee666699d5d311675795c9da88"
+    },
+    {
+      "path": "tools/buildHeaders/jsoncpp/dist/json/json.h",
+      "size": 65863,
+      "sha256": "01ada08bea4a25a3cc095050f1ce633d0b9ed9cb3a4a127eee8dc7534b662901"
+    },
+    {
+      "path": "tools/buildHeaders/jsoncpp/dist/jsoncpp.cpp",
+      "size": 147987,
+      "sha256": "7e3744005f1ee198e119fcfc7ba74c12465300a8fe626169f1180f551a4fc64a"
+    },
+    {
+      "path": "tools/buildHeaders/main.cpp",
+      "size": 3473,
+      "sha256": "ab5b5d6e7ea27201e3d6ef418afc1c5141565787ec223e19315fea0f1caa14a8"
+    },
+    {
+      "path": "tools/check_grammar/check_grammar.py",
+      "size": 6848,
+      "sha256": "fd4eb69e0ca975c5593c657950c57a5f2051191f55defb0309ee86dd38fb8847"
+    }
+  ]
+}

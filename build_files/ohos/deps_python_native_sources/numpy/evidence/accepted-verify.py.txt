@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+"""Actual target NumPy smoke: core/linalg/FFT/random/math/FFI + ELF closure."""
+import ctypes
+import hashlib
+import importlib
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import sysconfig
+
+sys.dont_write_bytecode=True
+HERE=Path(__file__).resolve().parent
+PREFIX=Path(sys.argv[1]).resolve()
+SITE=PREFIX/'lib/python3.13/site-packages'
+sys.path.insert(0,str(SITE))
+import numpy as np
+
+assert sys.version_info[:3]==(3,13,13) and sys.platform=='ohos'
+assert sysconfig.get_config_var('SOABI')=='cpython-313-aarch64-linux-ohos'
+assert sysconfig.get_config_var('INSTSONAME')=='libpython3.13.so'
+assert np.__version__=='2.3.4' and SITE in Path(np.__file__).parents,np.__file__
+checks=[]
+array=np.arange(24,dtype=np.float64).reshape(4,6)
+assert array.shape==(4,6) and array[3,5]==23
+assert np.array_equal(array[:,::2].copy(),np.array([[0,2,4],[6,8,10],[12,14,16],[18,20,22]]))
+assert np.array_equal(np.frombuffer(np.array([1,2,3],dtype='<i8').tobytes(),dtype='<i8'),[1,2,3])
+checks.append('dtype/shape/strided-copy/array buffer core')
+matrix=np.array([[4.,1.,0.],[1.,3.,1.],[0.,1.,2.]])
+vector=np.array([1.,2.,3.])
+solution=np.linalg.solve(matrix,vector)
+assert np.allclose(matrix@solution,vector)
+assert np.allclose(matrix@np.linalg.inv(matrix),np.eye(3))
+u,s,v=np.linalg.svd(matrix)
+assert np.allclose((u*s)@v,matrix)
+w,e=np.linalg.eigh(matrix)
+assert np.allclose(matrix@e,e*w)
+assert np.allclose(np.linalg.det(matrix),18.)
+checks.append('portable LAPACK solve/inv/SVD/eigh/determinant')
+signal=np.sin(np.arange(32)*.37)+1j*np.cos(np.arange(32)*.23)
+assert np.allclose(np.fft.ifft(np.fft.fft(signal)),signal)
+assert np.allclose(np.fft.irfft(np.fft.rfft(signal.real)),signal.real)
+checks.append('C++17 pocketfft complex/real roundtrips')
+rng=np.random.default_rng(123456);a=rng.normal(size=128)
+rng2=np.random.default_rng(123456);b=rng2.normal(size=128)
+assert np.array_equal(a,b) and np.isfinite(a).all() and len(np.unique(a))==128
+assert np.all((rng.integers(1,6,size=100)>=1))
+checks.append('native RNG reproducibility/distributions')
+values=np.array([0.,.5,1.,2.])
+assert np.allclose(np.sin(values),[0.,.479425538604203,.8414709848078965,.9092974268256817])
+assert np.allclose(np.log(np.exp(values)),values)
+assert np.isclose(np.dot(vector,vector),14.)
+checks.append('ufunc trigonometric/exp/log + portable BLAS dot')
+pointer=array.ctypes.data_as(ctypes.POINTER(ctypes.c_double))
+assert pointer[0]==0.;pointer[0]=42.;assert array[0,0]==42.
+callback=ctypes.CFUNCTYPE(ctypes.c_double,ctypes.c_double)(lambda x:x+1.)
+assert callback(float(array[0,0]))==43.
+checks.append('actual NumPy buffer ctypes pointer + signed ffi callback')
+modules=[]
+for file in sorted((SITE/'numpy').rglob('*.so')):
+    relative=file.relative_to(SITE)
+    name='.'.join(relative.parts[:-1]+(relative.name.split('.')[0],))
+    importlib.import_module(name);modules.append(name)
+checks.append('all installed NumPy extension modules import')
+audit=[]
+assert len(modules)==19,modules
+allowed={'libc.so','libpython3.13.so'}
+for file in sorted((SITE/'numpy').rglob('*.so')):
+    dynamic=subprocess.check_output(['llvm-readelf','--dynamic',str(file)],text=True)
+    needed=re.findall(r'\(NEEDED\).*?\[([^]]+)\]',dynamic)
+    paths=re.findall(r'\((?:RPATH|RUNPATH)\).*?\[([^]]+)\]',dynamic)
+    assert not (set(needed)-allowed),(file,needed)
+    assert 'libpython3.13.so' in needed,(file,needed)
+    assert not any('libc++' in name or 'libstdc++' in name for name in needed),(file,needed)
+    assert not any('/data/' in path or '/storage/' in path for path in paths),(file,paths)
+    sections=subprocess.check_output(['llvm-readelf','--sections',str(file)],text=True)
+    assert '.codesign' in sections,file
+    with file.open('rb') as stream:sha=hashlib.file_digest(stream,'sha256').hexdigest()
+    audit.append({'path':str(file.relative_to(PREFIX)),'sha256':sha,'size':file.stat().st_size,'needed':needed,'runpaths':paths,'codesign':True})
+result={'python':sys.version,'platform':sys.platform,'SOABI':sysconfig.get_config_var('SOABI'),'numpy':np.__version__,
+        'module_path':np.__file__,'checks':checks,'extensions':modules,'elf_audit':audit,
+        'performance':'NumPy existing portable BLAS/LAPACK fallback, no external Fortran/BLAS; can be much slower than optimized OpenBLAS',
+        'not_claimed':['complete NumPy suite','Blender','HAP','optimized BLAS performance']}
+report=Path(sys.argv[2]).resolve() if len(sys.argv)>2 else HERE/'native-validation.json'
+report.write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))

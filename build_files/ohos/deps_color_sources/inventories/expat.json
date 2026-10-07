@@ -1,0 +1,1415 @@
+{
+  "archive_root": "libexpat-R_2_7_5",
+  "source_archive_sha256": "7e23daf05f0ab028570d709ce48d724802baa6e4fbfa4db9b7cee3b72ee2062b",
+  "members": 239,
+  "files": [
+    {
+      "path": ".ci.sh",
+      "sha256": "45c1991273cd303748d9e3d44a5eed609e1687b33926dd6a241ed1e6a380bf9e",
+      "size": 2724,
+      "mode": 509
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "e0c8113c29dade6a9f5358032c608d5d3d99aceef3dd51576b62254c123b14b2",
+      "size": 101,
+      "mode": 436
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "51715200bebc6c624a67cf7595b754814c0b4697fe49cf164c4238c78f8cbef3",
+      "size": 1728,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/autotools-cmake.yml",
+      "sha256": "934bdaee2c4cd777c1e7cd6d76b79e64dc496c38332fba46fb60f69f3ca29f06",
+      "size": 8334,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/clang-format.yml",
+      "sha256": "730d0e4dfb8c600387d313305710acb5a3fee73ba4113e4e254c0f1534694e73",
+      "size": 2683,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/clang-static-analyzer.yml",
+      "sha256": "82796838d3926e16311dd7a83612fc3facea79ae1ade1fd76f916fd7ba0cc88a",
+      "size": 3692,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/clang-tidy.yml",
+      "sha256": "18785763ba8fd7503a0d66f20aa4c66c5d3f8825d6a9188c026a84e793131f50",
+      "size": 2525,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/cmake-required-version.yml",
+      "sha256": "673b71371f3ebef4dd25019cfe6fd4b1a48185057a1bf37e1b6ae6570b24c182",
+      "size": 3096,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/codespell.yml",
+      "sha256": "77439a9633344e4c95b1897f432ee214efb9422420d36c93f841b43554ed3159",
+      "size": 2229,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/coverage.yml",
+      "sha256": "2397247cb1a0d7288ae1b166c0c064d055d17a133b54257fee6420885084ea52",
+      "size": 3247,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/coverity-scan.yml",
+      "sha256": "411b2f7ec82dfa7a7f3bef6a6fbfc0175caea793f0ad3fdc8eaab1bcdaae5fbc",
+      "size": 4999,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/cppcheck.yml",
+      "sha256": "555bfc212a3df4ad42461c79790a3b087f0a6cc727f0608347e0e8e8ef730740",
+      "size": 2186,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/data/expat_config_h_cmake__expected.txt",
+      "sha256": "2d25fa2523df8ea9e5aa9807b0505a6a915feafbe845968f839b28c7544d2a20",
+      "size": 498,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/data/expat_config_h_in__expected.txt",
+      "sha256": "9d7b37e93b94c99908a658d222e82f7bc8e0a4db2bff4bcbe99ad5d1a9c54a98",
+      "size": 565,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/data/exported-symbols-unversioned.txt",
+      "sha256": "3edc5a1a24952b3a0ff1a273f70d160b4ed7bad0b1f6bae967f2e3baa523f64a",
+      "size": 1733,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/data/exported-symbols-versioned-default.txt",
+      "sha256": "c87f384af0cf9e31f79339e05f6fd8ba3256fbb8af58f2830735bab42af4fe1a",
+      "size": 2900,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/data/exported-symbols-versioned-maximum.txt",
+      "sha256": "75e8d9e4370df0fe809aa32549f34160c23e1f12fffe23198b52f12c80eb1cd3",
+      "size": 2937,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/emscripten.yml",
+      "sha256": "4db99790b366389a2bebaf5cd42b017f4fe26df8a09530d9ff08245d32a9729c",
+      "size": 2526,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/expat_config_h.yml",
+      "sha256": "8c3e01f65349f4750e0b3fbd3a46fdeb7981ef21932ada0ae9c030d8496e0d95",
+      "size": 2900,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/freebsd.yml",
+      "sha256": "1d356a2f62925ec955bb183ce8963d3d0e52a07e08187315f041d57511094811",
+      "size": 3310,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/fuzzing.yml",
+      "sha256": "0f00a838b4eb21bb11a5858346c5a3bd99586a17e6cefdec9379a1686c18917f",
+      "size": 6698,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/linux.yml",
+      "sha256": "60f0104bc257849817a43f4a7ae5ed39df0417bcff1d787ae2743fb645adad1f",
+      "size": 5874,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/macos.yml",
+      "sha256": "dec8d4eb14076c508beb0c453199334c81a997b820e9eaf74a5239b66f830f49",
+      "size": 2527,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/musl.yml",
+      "sha256": "dc85e2cf297fdf1e861d5de3eacc0692bdeb21e0913f70161acf51b33dd887aa",
+      "size": 2534,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/perl-integration.yml",
+      "sha256": "fe3889c66e835cfbc6787ac13b2fea7a88a5212d479ae2da9508394e46e33923",
+      "size": 2708,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/scripts/list-shared-library-symbols.sh",
+      "sha256": "48fd620afcba2e1acf602039082cb8e59746442304ee9a3d5762e1965c476056",
+      "size": 1710,
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows/scripts/list_exported_macros.sh",
+      "sha256": "53e7178c4fee1d5ea58feaab6a410e75a4800010067d56f382f55b06efa9d4e8",
+      "size": 1624,
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows/scripts/mass-cppcheck.sh",
+      "sha256": "c6259e2159fbd8c6415d12c54f347bf18dd9f9390f67095aa6404555ba2bcb2f",
+      "size": 2519,
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows/solaris.yml",
+      "sha256": "ca227679ee92e5ca99282715ba4fa3a5aae578c68496b38adc42b42cbbd21562",
+      "size": 3640,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/valid-xml.yml",
+      "sha256": "2248df7bf0689405a0aee0cb412df5fd6424919dae4483faf87c046b795b8446",
+      "size": 3974,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/wasi_sdk.yml",
+      "sha256": "d8f710f9d3159cc67fa52a74e4ebc9fc700df319db36e90788c720fecc44f8d0",
+      "size": 2764,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/windows-binaries.yml",
+      "sha256": "5ad59e244f07cd580c3974f34c973c75b84961313867711abcc00dd83e3996dc",
+      "size": 7370,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/windows-build.yml",
+      "sha256": "9b7949344b602da9fb448ae8182ec020af6aadcf53a9b437a4e8b04e31d5d01b",
+      "size": 3950,
+      "mode": 436
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "8b7e8d7ba5bde98574fa3ca561faddc31324df976c883721b762f64f5c02e481",
+      "size": 368,
+      "mode": 436
+    },
+    {
+      "path": ".mailmap",
+      "sha256": "f5ccd51c3a0febf15f03ba43189268f9d7c9467fffb28eaa5df5fbcdc479df5e",
+      "size": 1251,
+      "mode": 436
+    },
+    {
+      "path": "Brewfile",
+      "sha256": "26fe385127eb1a300cf0df9a8685635f1a751ead1a360bab14a2dacd2ecddf6b",
+      "size": 158,
+      "mode": 436
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "748c6f2394a3e68388da237c19dd538a2bc819e41dac6f264289e2d3f163fdea",
+      "size": 3396,
+      "mode": 436
+    },
+    {
+      "path": "COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "size": 1144,
+      "mode": 436
+    },
+    {
+      "path": "README.md",
+      "symlink": "expat/README.md",
+      "mode": 511
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "649c6714f38c7f71c8a8e8003c3a1d30125a6924ae6bb9206a8c7f8283c31d14",
+      "size": 716,
+      "mode": 436
+    },
+    {
+      "path": "expat/.clang-format",
+      "sha256": "c6e017277a89b696405de6dd509a518dbe55f6cdd91a736f79f31dec7bea01e9",
+      "size": 5217,
+      "mode": 436
+    },
+    {
+      "path": "expat/.gitignore",
+      "sha256": "9c87992b8ae4f9d8a775a4e571ac6b840a866a60da6533b529d75e22a0584c4e",
+      "size": 519,
+      "mode": 436
+    },
+    {
+      "path": "expat/AUTHORS",
+      "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877",
+      "size": 142,
+      "mode": 436
+    },
+    {
+      "path": "expat/CMake.README",
+      "sha256": "c2d68f4be939c9cf67c560182c773667e4dab4fb220ccd51b1d298d773e008c5",
+      "size": 1723,
+      "mode": 436
+    },
+    {
+      "path": "expat/CMakeLists.txt",
+      "sha256": "b6bb2ab428a7ae72d2642153bb830b6f60f5b750c78eb82961c3f5df8470412a",
+      "size": 40056,
+      "mode": 436
+    },
+    {
+      "path": "expat/COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "size": 1144,
+      "mode": 436
+    },
+    {
+      "path": "expat/Changes",
+      "sha256": "2ef35667dc49ca97af6a2dea7c4a97af812d98a2f5e43dfe82dcfd9c1d80257d",
+      "size": 97407,
+      "mode": 436
+    },
+    {
+      "path": "expat/ConfigureChecks.cmake",
+      "sha256": "193161a5babe26d86febd85af33a14aea64daec625de7912427d6e2ca8e64631",
+      "size": 2895,
+      "mode": 436
+    },
+    {
+      "path": "expat/Makefile.am",
+      "sha256": "485bc2a9a93ede69cb75617b75c434e97216fa57c2073d7676a1e8a0cadbf9ce",
+      "size": 6352,
+      "mode": 436
+    },
+    {
+      "path": "expat/README.md",
+      "sha256": "15a704d42f54d8996e9bc43e1ba99afd2ea3a3566f8ab2146a5d3574bbd0365c",
+      "size": 9976,
+      "mode": 436
+    },
+    {
+      "path": "expat/acinclude.m4",
+      "sha256": "c9aa6ff720af47f4c0aa165ab02003c9ca8e8bbdb808e37142b97b096e01677d",
+      "size": 468,
+      "mode": 436
+    },
+    {
+      "path": "expat/apply-clang-format.sh",
+      "sha256": "fdacd54b39272cc9440b4c25008c52ca5d9c17b73b23973148ddf68039121932",
+      "size": 2103,
+      "mode": 509
+    },
+    {
+      "path": "expat/apply-clang-tidy.sh",
+      "sha256": "88af05fbc4dde5c355bffb25d05b256e169b2e9d1a4124d9a1002337dffdf78b",
+      "size": 3462,
+      "mode": 509
+    },
+    {
+      "path": "expat/buildconf.sh",
+      "sha256": "09a8d4d920e5439ee9adbcaa565091a9744ae1788c33ecfae4ae1ea25775e8f8",
+      "size": 1725,
+      "mode": 509
+    },
+    {
+      "path": "expat/clean_coverage.sh",
+      "sha256": "3662caf7ed16b54b11db3ae799f700b3b63edd3789e6e5b45eb55a55ca0b2def",
+      "size": 1776,
+      "mode": 509
+    },
+    {
+      "path": "expat/cmake/.gitignore",
+      "sha256": "b59f62ed0a2a9e7ad14abfd3aa41cf4b2d1d63918a31bba80b58e1752ba9e1ea",
+      "size": 69,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/.gitignore",
+      "sha256": "9d98eaea3e2dfc91e46b81793bc752d4070a2956f2945a6d94d1ea2a8ee255af",
+      "size": 50,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat-config-version.cmake.in",
+      "sha256": "6bd4f5068d9e13765ad1981f7030680f51409abb62993cbd14f72d3a100b9dc7",
+      "size": 2840,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat-noconfig__linux.cmake.in",
+      "sha256": "31ac473b566478408f09821b2469da941c8350ca9ae4fba1535bbe334ae61193",
+      "size": 933,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat-noconfig__macos.cmake.in",
+      "sha256": "99e82bb80d769adbaf91000fff87c53c1415cc4670250830d0c3cff50f4eec7a",
+      "size": 905,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat-noconfig__windows.cmake.in",
+      "sha256": "83e673741a7ed297866fb39b54f91aae1ae95a1f58661f7db60c7a76d38371d0",
+      "size": 996,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat-package-init.cmake",
+      "sha256": "2b4ffc7c625b15268bb3961b2752950120c713b5d811a40845bf9f2a87b8eaa0",
+      "size": 879,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat__linux.cmake.in",
+      "sha256": "861fd3e8d6ab95b5a4cfad1779367553b1275339d475b9089bc1e1e4a03a737d",
+      "size": 4135,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat__macos.cmake.in",
+      "sha256": "96af7c619c4ef1c617e3189a86b950f45d26bb9b232c507cf6db99202bfedac7",
+      "size": 4134,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/autotools/expat__windows.cmake.in",
+      "sha256": "861fd3e8d6ab95b5a4cfad1779367553b1275339d475b9089bc1e1e4a03a737d",
+      "size": 4135,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/expat-config.cmake.in",
+      "sha256": "737c28c075eab9fd576ad22a68c8d880281d83240d6e08372afda2cf3acac733",
+      "size": 2888,
+      "mode": 436
+    },
+    {
+      "path": "expat/cmake/mingw-toolchain.cmake",
+      "sha256": "0ebef88ce46dbbf571dc71987c9db908cb3a64dae184e09c12470511f0c6a1d0",
+      "size": 1686,
+      "mode": 436
+    },
+    {
+      "path": "expat/configure-ac-style.md",
+      "sha256": "ddc33ba384570215427ed52664d3f38a0823dd799ab8066ebea18d88220a73fc",
+      "size": 1571,
+      "mode": 436
+    },
+    {
+      "path": "expat/configure.ac",
+      "sha256": "e04e41459d5f46538d13330b2eb430974437e7516639d26a0a665accf072fea2",
+      "size": 19676,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/.gitignore",
+      "sha256": "36aa1949c2b223e6c1a2bb594a72279ec0fcba7e886c0b755408efb9b708fc31",
+      "size": 108,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-append-compile-flags.m4",
+      "sha256": "ecbcac20f9872c57e7615d57874b3798b809288a48602b790b2977446e272323",
+      "size": 1765,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-append-flag.m4",
+      "sha256": "392cb0e965351b1d6a9847cf165dc4092fb1853fd63dbe010ac8b21c286f5e16",
+      "size": 1552,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-append-link-flags.m4",
+      "sha256": "087c9c6fc74fa72c3cb77a21de75b6488cd3f360ae4771056dacdf7b66cc0eca",
+      "size": 1711,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-check-compile-flag.m4",
+      "sha256": "35905eea68500c1cb91e089e017868ef63720ba3fa522aa32e9266749952f89c",
+      "size": 3499,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-check-link-flag.m4",
+      "sha256": "c335b90e218fdc064e67003706c9192ca779c83720c4b369254caad6c5a78be3",
+      "size": 1956,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-cxx-compile-stdcxx-11.m4",
+      "sha256": "d75fc9fe4502eea02e8c5bfb61b88a04cd08aa6d5bd757fe66e9a9a1e4781b46",
+      "size": 1677,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-cxx-compile-stdcxx.m4",
+      "sha256": "be43ad785f2ef13bc929e45684faf5bbc5c2f4bf778155a27c216e5dbb03e5b3",
+      "size": 21563,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/ax-require-defined.m4",
+      "sha256": "d870b21e817747c6a61a9dd72e06ea45f87e012c7a1a9aa5ff90cd3af89b3774",
+      "size": 1218,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/expatcfg-compiler-supports-visibility.m4",
+      "sha256": "3b2120f3a155c544347dad20af9167558ce3fc3639a16966163e5f3aeb76b791",
+      "size": 1456,
+      "mode": 436
+    },
+    {
+      "path": "expat/conftools/get-version.sh",
+      "sha256": "78aa7ce4329e456db6a4ad4f2a9992afb8abfdb947d756cdd9b97bc57a4d6171",
+      "size": 2381,
+      "mode": 509
+    },
+    {
+      "path": "expat/coverage.sh",
+      "sha256": "1f13593648f556443fe0b605e0f76aeea31fe6a328769e5ff6116c4a1a79e27c",
+      "size": 9582,
+      "mode": 509
+    },
+    {
+      "path": "expat/distribute.sh",
+      "sha256": "838190961bdcfdc65f98bdcbc06859c959087965306da81ee4c18ece788742a1",
+      "size": 1955,
+      "mode": 509
+    },
+    {
+      "path": "expat/doc/.gitignore",
+      "sha256": "8272913e96b4c4e61b329664f9717176efa0255731fae32ab7dd670cf2d048fe",
+      "size": 18,
+      "mode": 436
+    },
+    {
+      "path": "expat/doc/Makefile.am",
+      "sha256": "ae8272b63c3f7ef08daf3c11e712ccd8ecd9f3d590492fc799b590bf8bfd79de",
+      "size": 2186,
+      "mode": 436
+    },
+    {
+      "path": "expat/doc/ok.min.css",
+      "sha256": "1d0bc5cc99af72f19ba64f17279bf53e4c0cde17fbdc4fc0db6f604270c064ef",
+      "size": 16001,
+      "mode": 436
+    },
+    {
+      "path": "expat/doc/reference.html",
+      "sha256": "cc1eaf2579e1ea916572b54d49240478a31f586123dee2ae0babacb7170f0d87",
+      "size": 137987,
+      "mode": 436
+    },
+    {
+      "path": "expat/doc/style.css",
+      "sha256": "f406460bc73980118d8d15186daa51918d52752562641e27d19eb453c0c0817e",
+      "size": 1952,
+      "mode": 436
+    },
+    {
+      "path": "expat/doc/xmlwf.xml",
+      "sha256": "40a888cf3bcee7f5f0f5a96e21f7239d168bebe539d64d140d326a44a0cebe60",
+      "size": 21326,
+      "mode": 436
+    },
+    {
+      "path": "expat/examples/.gitignore",
+      "sha256": "3c47bc4c91e01a56b60bf0aa584ed9bb90f19dc1d26365a9c93313950b3a9446",
+      "size": 117,
+      "mode": 436
+    },
+    {
+      "path": "expat/examples/Makefile.am",
+      "sha256": "8f3b150a81319ea733065d02f45506beace6103ff3d91c96e05e342a1f9d1619",
+      "size": 1915,
+      "mode": 436
+    },
+    {
+      "path": "expat/examples/element_declarations.c",
+      "sha256": "0178874945cc6b2b2de8e9ef4883ddc418f6691517e0e2aee668af7b686a6fa2",
+      "size": 6860,
+      "mode": 436
+    },
+    {
+      "path": "expat/examples/elements.c",
+      "sha256": "5b805d5116fd7971cc62243e4870c1e164e15c82d54ce4e71123e50f9526bf09",
+      "size": 3966,
+      "mode": 436
+    },
+    {
+      "path": "expat/examples/outline.c",
+      "sha256": "9d47b0e9c6486368625541f79cff810fd1f69a0de6008d20bdaf68871d3cb861",
+      "size": 3852,
+      "mode": 436
+    },
+    {
+      "path": "expat/expat.pc.cmake",
+      "sha256": "a1d7b0dae35611d125c978e6cffa3aff6f00041949ad1def8edc6586c81cf821",
+      "size": 598,
+      "mode": 436
+    },
+    {
+      "path": "expat/expat.pc.in",
+      "sha256": "687b715de9614f45fe0f4593fbc8cb4a9e71332784099b925514a86bbc37bb23",
+      "size": 303,
+      "mode": 436
+    },
+    {
+      "path": "expat/expat_config.h.cmake",
+      "sha256": "0e63b2ebf1361bcc3cb9a82dcb1ded23d5c419c478f1e003a337bc984cc0999d",
+      "size": 3457,
+      "mode": 436
+    },
+    {
+      "path": "expat/fix-xmltest-log.sh",
+      "sha256": "f55e3d3644e5b4b3c088279dd9abe9a212c9b40fbe2d2e01ba48a0e35c60b96e",
+      "size": 2433,
+      "mode": 509
+    },
+    {
+      "path": "expat/fuzz/.gitignore",
+      "sha256": "cc23babb79dd649b224911f821a3995e6bec908b95e3660b80b9223f0358ddcd",
+      "size": 27,
+      "mode": 436
+    },
+    {
+      "path": "expat/fuzz/xml_lpm_fuzzer.cpp",
+      "sha256": "13e1fff6b2b48ba2cd22ca74b5722bd06d787ccc806dafc83e4145147d24626a",
+      "size": 13851,
+      "mode": 436
+    },
+    {
+      "path": "expat/fuzz/xml_lpm_fuzzer.proto",
+      "sha256": "72d3833dd409e05e02ce26bb34753ed075dd530a1ac90ba2beea8b478cfc7867",
+      "size": 2001,
+      "mode": 436
+    },
+    {
+      "path": "expat/fuzz/xml_parse_fuzzer.c",
+      "sha256": "8d142202df7f157c821aeb131658b2d94c2236aff025fe028252bafee966d268",
+      "size": 3445,
+      "mode": 436
+    },
+    {
+      "path": "expat/fuzz/xml_parsebuffer_fuzzer.c",
+      "sha256": "9d5c69ff2280451592e22fd5c99d9ee403c15e43718ed26b24203f1489989c37",
+      "size": 3647,
+      "mode": 436
+    },
+    {
+      "path": "expat/gennmtab/.gitignore",
+      "sha256": "61548ae4af97cbbeb338325d3bd1c223fc28db78dae3fb9c1c3fdb59755c2f39",
+      "size": 27,
+      "mode": 436
+    },
+    {
+      "path": "expat/gennmtab/gennmtab.c",
+      "sha256": "30406f534564c22dd668fa48812f5c3385e8a3b3e2f77c22ecfc62a7a4252210",
+      "size": 10402,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/.gitignore",
+      "sha256": "b907f24d7726d2b5228ff00807cd8545a32e17f3378b3e98feacc227acf667c4",
+      "size": 188,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/Makefile.am",
+      "sha256": "7489bd93c66cbb40a2f4360e93ff9b0748a4ccc45af8ee73e53401599f67fa7e",
+      "size": 2777,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/ascii.h",
+      "sha256": "42f8b392c70366743eacbc60ce021389ccaa333598dd49eef6ee5c93698ca205",
+      "size": 3682,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/asciitab.h",
+      "sha256": "1cc0ae749019fc0e488cd1cf245f6beaa6d4f7c55a1fc797e5aa40a408bc266b",
+      "size": 3520,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/expat.h",
+      "sha256": "26805a0d1a7a6a5cd8ead9cf7f4da29f63f0547a9ad41e80dba4ed9fe1943140",
+      "size": 44733,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/expat_external.h",
+      "sha256": "c234a3cf21f8cf4bdc49bce409908d6d69d835f1c75fd502f4ea6f8399acd0c2",
+      "size": 6138,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/iasciitab.h",
+      "sha256": "ad8b01e9f323cc4208bcd22241df383d7e8641fe3c8b3415aa513de82531f89f",
+      "size": 3590,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/internal.h",
+      "sha256": "c803935722f0dbdeeede7f040028fb119135e96dfad949479f8a5304b885bdd6",
+      "size": 7224,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/latin1tab.h",
+      "sha256": "eab66226da100372e01e42e1cbcd8ac2bbbb5c1b5f95d735289cc85c7a8fc2ba",
+      "size": 3573,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/libexpat.def.cmake",
+      "sha256": "4957f66ebf6481a1bbd23978b47867d669b871cab84bffda2fade267918ef97e",
+      "size": 2636,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/libexpat.map.in",
+      "sha256": "42d16a3823daa68600a1d3592fc314ab56c861f7b02640b936feaa1ad0c54a99",
+      "size": 2631,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/nametab.h",
+      "sha256": "67dcf415d37a4b692a6a8bb46f990c02d83f2ef3d01a65cd61c8594a084246f2",
+      "size": 9044,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/siphash.h",
+      "sha256": "f537add526ecda8389503b7ef45fb52b6217e4dc171dcc3a8dc6903ff6134726",
+      "size": 13014,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/utf8tab.h",
+      "sha256": "8cd26bd461d334d5e1caedb3af4518d401749f2fc66d56208542b29085159c18",
+      "size": 3522,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/winconfig.h",
+      "sha256": "e70948500d34dfcba4e9f0b305319dfe2a937c7cbfb687905128b56e1a6f8b33",
+      "size": 2038,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmlparse.c",
+      "sha256": "861e7a50ce81f9f16b42d32a9caa4f817d962b274b2929b579511c6f76d348d4",
+      "size": 310861,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmlrole.c",
+      "sha256": "eaa6c327f9db4a5cec768d0c01927fea212d3ef4d4f970ebc0a98b9f3602784c",
+      "size": 35512,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmlrole.h",
+      "sha256": "92e41f373b67f6e0dcd7735faef3c3f1e2c17fe59e007e6b74beef6a2e70fa88",
+      "size": 4457,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmltok.c",
+      "sha256": "75da65603e99837fd3116f1453372efd556f9f97d8de73364594dd78b3c8ec54",
+      "size": 54395,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmltok.h",
+      "sha256": "91bf003a725a675761ea8d92cebc299a76fd28c3a950572f41bc7ce5327ee7b5",
+      "size": 13088,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmltok_impl.c",
+      "sha256": "a3fe18ff32b21fbcb7c190895c68158404e1b9fb449db6431bc08b261dc03938",
+      "size": 53720,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmltok_impl.h",
+      "sha256": "f05ad4fe5e98429a7349ff04f57192cac58c324601f2a2e5e697ab0bc05d36d5",
+      "size": 3430,
+      "mode": 436
+    },
+    {
+      "path": "expat/lib/xmltok_ns.c",
+      "sha256": "f95a2b4b7efda40f5faf366537cb20a57dddbad9655859d2e304f5e75f6907cc",
+      "size": 4711,
+      "mode": 436
+    },
+    {
+      "path": "expat/m4/.gitignore",
+      "sha256": "4e3e3bffda9ac317893463cc815f848d8f75c903e34442e1b8490be0d7e274a3",
+      "size": 6,
+      "mode": 436
+    },
+    {
+      "path": "expat/memory-sanitizer-blacklist.txt",
+      "sha256": "7a92d097fa822a1b95051c346756f961b49dfcadbf0af6dbc5c2e11e474a49c8",
+      "size": 310,
+      "mode": 436
+    },
+    {
+      "path": "expat/qa.sh",
+      "sha256": "7197b3b7f7ea22e5cc9f94243018c4b97eafcfb5fcd70ae976a24224b8e4756b",
+      "size": 8691,
+      "mode": 509
+    },
+    {
+      "path": "expat/run.sh.in",
+      "sha256": "c8ccc736ced4f348b8bbb09752977038bf00893f94d52c96c873638ac1f8cefc",
+      "size": 1805,
+      "mode": 436
+    },
+    {
+      "path": "expat/test-driver-wrapper.sh",
+      "sha256": "12920081aa7372a0c8e1e23e69daa570239e8412b318a971ec70fb63a3c478f8",
+      "size": 1937,
+      "mode": 509
+    },
+    {
+      "path": "expat/tests/.gitignore",
+      "sha256": "57914c89b287586451edac5f3995fd668dadcd28d7aca9b61ca9af3a85b4ed31",
+      "size": 113,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/Makefile.am",
+      "sha256": "311ce6ed7a046f2efe7309917c75b4b1ead742e9dfee277c326812de3ba10871",
+      "size": 3075,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/README.md",
+      "sha256": "e1dec9fffdf82377985c649d70d5d938863403d4f60e2eacd502f83d1f104f84",
+      "size": 453,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/acc_tests.c",
+      "sha256": "56d65f18d403ce797b05116d56546b5d6b611483351bfe485afbd7074de7c35c",
+      "size": 17551,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/acc_tests.h",
+      "sha256": "ab502af1b16f3abc64dc6c7d22d85db902b38dfa759bff9e70699408d4bc39e0",
+      "size": 2517,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/acc_tests_cxx.cpp",
+      "sha256": "c32dc0105ba8c541221810bcf5e58d29bcb48c293329afc786676044f2df2d14",
+      "size": 1601,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/alloc_tests.c",
+      "sha256": "b52eb9723e0ff75f66befc402a1fed04e1c5767fbffa833b917b10b43a7de26e",
+      "size": 99187,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/alloc_tests.h",
+      "sha256": "4d4678fea4e336f85e8fafb8fb5ebc9920b2253221289f64afa712239d2fcd19",
+      "size": 2518,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/alloc_tests_cxx.cpp",
+      "sha256": "4424457911fe0b97a5d761387141e629588b8c0c97a3cae39cb4295bac39c472",
+      "size": 1603,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/basic_tests.c",
+      "sha256": "53dc80af7abdff2ba99f5e69609764ca6ce39ea40c7714de984245801d9eeefa",
+      "size": 252927,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/basic_tests.h",
+      "sha256": "973c5cd64ba4c034e4c759d6ab85a9e665880e957f0c2d07d27cb7a3daea4dcd",
+      "size": 2513,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/basic_tests_cxx.cpp",
+      "sha256": "5edea93579f67987f8020dd899fa297f4108c07e3470c7f1db1640047baa55a1",
+      "size": 1603,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/benchmark/.gitignore",
+      "sha256": "8741ed039254170eea89f755874eba5c1444e473ee370834a47dcede9fa4963d",
+      "size": 11,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/benchmark/Makefile.am",
+      "sha256": "6fb985f9fec190a56d174c7bc6c771204329986505b3a4c76753d56db49c69ba",
+      "size": 1751,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/benchmark/README.txt",
+      "sha256": "2880002b547c1af1d51c8bb86dc80ed0dc4c61b3e05e6a37266f54c1a48380bf",
+      "size": 548,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/benchmark/benchmark.c",
+      "sha256": "7ac0df1f70fd3561de7f449d3a1edfaef32fbda9d073134b8a082e098dee86b3",
+      "size": 5138,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/chardata.c",
+      "sha256": "50a0d4e563b6715f108e088af8b961c6b33110768c70bd4a6dd9cd88aba15992",
+      "size": 3503,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/chardata.h",
+      "sha256": "20c193c884f40c6f8c7214b26607256285f24378bc3559418d84ee7abf238b29",
+      "size": 2284,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/chardata_cxx.cpp",
+      "sha256": "189a8090c15c27b9e143ca86c10b95fe7ec6619afa6387ead311be934c7d0682",
+      "size": 1600,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/common.c",
+      "sha256": "df9218d786ae3c138d2cf62e4e404d6ee6aab5fedcaf33e1bc925b91bb6cead9",
+      "size": 13390,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/common.h",
+      "sha256": "70685f228a02c8d21f98567cdcac46e67670747814805032e2d1033830af6f75",
+      "size": 5836,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/common_cxx.cpp",
+      "sha256": "379e09ab773c7b32ff9378982d57c38926381a0dacef2bce35e93e1fcfcd4c8f",
+      "size": 1598,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/dummy.c",
+      "sha256": "421d649e1d69dc7067005636757ad93b46a0edbea9a1f17ff22195d18c8e236c",
+      "size": 8570,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/dummy.h",
+      "sha256": "61b5347556a9906cc77769c2b4f6612d75e2465043e7abbe87a8abcc508161d7",
+      "size": 6995,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/dummy_cxx.cpp",
+      "sha256": "a9497107022239de870c96754714291d0c23bbe1c2029c17f05840662ac3f85f",
+      "size": 1597,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/handlers.c",
+      "sha256": "32d20868438b75c226d46cb867a230f49a4fbd678022249d28e0b2ba5582d3ab",
+      "size": 66617,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/handlers.h",
+      "sha256": "89e90c796f43cf8b35d52123083e89f7e3741d2ea7e4cd757aa38f11b48ca2d8",
+      "size": 28297,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/handlers_cxx.cpp",
+      "sha256": "25a762b6bdd73152fcbf8444508e3cc5df74418bd26be63ed83122b8dfe247d1",
+      "size": 1600,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/memcheck.c",
+      "sha256": "a784ded0cad303b30a8f7794c01644ed5b830e87534a942c47da17882e4edc9e",
+      "size": 5472,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/memcheck.h",
+      "sha256": "5171b2636033997305bc6950be6f5a83178062537c8546879ed154818270b9b0",
+      "size": 2189,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/memcheck_cxx.cpp",
+      "sha256": "d1601aa0335f90a12d6dd9184c231ee4b138727cd8846939c5ae7831e2814794",
+      "size": 1600,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/minicheck.c",
+      "sha256": "6cf3349c2951241d0673cc675e6d3c3d494075b5e658597f8ecce1f8933fd287",
+      "size": 7600,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/minicheck.h",
+      "sha256": "dfe38c913f200bee8ee8511cde2ed04d39a3d6d34f47fe65c816118ab3282716",
+      "size": 5658,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/minicheck_cxx.cpp",
+      "sha256": "367957561b21387c07a6c96137601b6b89ac9969fb0077ba3367e417fc478bbc",
+      "size": 1601,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/misc_tests.c",
+      "sha256": "b16babfeb08f173e6a9eb43f73203934439c84f471132445fb3851686bdfdab0",
+      "size": 28739,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/misc_tests.h",
+      "sha256": "1abf29bfbc66bde75fc086c207286fa14716b1c9df8eb31702f6087db24371cb",
+      "size": 2526,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/misc_tests_cxx.cpp",
+      "sha256": "2b64c21452d65cb06c49b562a6fb7b8c21f9492350e391c94972a86c3c30b05e",
+      "size": 1602,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/ns_tests.c",
+      "sha256": "8fc35de0290e12f06f8a1197e4ce14b5e44caab1b592a7f65b2eceda8c20ad01",
+      "size": 31549,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/ns_tests.h",
+      "sha256": "245588295198356faa0678411573fb10f38c763e26c2f9d626dca61056006b01",
+      "size": 2512,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/ns_tests_cxx.cpp",
+      "sha256": "53dc6ebdebfccbfa5a6262bb33c45050ce9c45ee887d1b5287f2d6965384bcac",
+      "size": 1600,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/nsalloc_tests.c",
+      "sha256": "d64ab0a3a89db469c6aea5debfd30a5555590ff9985c08065721014333faa56a",
+      "size": 78140,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/nsalloc_tests.h",
+      "sha256": "046e4c83198a92b58bb587cffb3da8bcc0a3e89c9b298cb1309701cb0214f137",
+      "size": 2536,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/nsalloc_tests_cxx.cpp",
+      "sha256": "5f336ac1a0495262b1cd37548f62f6cb6fa16e1548cab025eb8e4d18d3878b0a",
+      "size": 1605,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/runtests.c",
+      "sha256": "341f9040b8f94aa092600ca4c7cc3b2784257daaf0097b219ed9c3ef373c5e2f",
+      "size": 4167,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/runtests_cxx.cpp",
+      "sha256": "fbeaf4de435abee177b7cc661dbd87b436fdb849a107dd9b87318cfca88c8662",
+      "size": 1793,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/structdata.c",
+      "sha256": "d445a7d9b6bceb6742f50375dc84990629ecbdf67e8429ac8c99c3d76e14bfe6",
+      "size": 4902,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/structdata.h",
+      "sha256": "a4a8bca984139e456153ea1755050d9d38b0e79c23a45d0387161d2dfe401216",
+      "size": 2402,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/structdata_cxx.cpp",
+      "sha256": "7be0672b9446a18f7fa33c566d8c7df210578da9bcf589c35e94f05b97b13923",
+      "size": 1602,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/udiffer.py",
+      "sha256": "4f6b61e2e5042652358797d7682f9bfbbf4727698d6d7c3b5bbdfd8aa45d5f43",
+      "size": 2370,
+      "mode": 509
+    },
+    {
+      "path": "expat/tests/xmltest.log.expected",
+      "sha256": "89393e902b1df423c067691b6bea1e06483a68bb5926be83bcf075eca61e2b1e",
+      "size": 398,
+      "mode": 436
+    },
+    {
+      "path": "expat/tests/xmltest.sh",
+      "sha256": "b33dfe083abcb63dba9efd3c7403e4341695a15d52a21219115d0445f140e029",
+      "size": 5337,
+      "mode": 509
+    },
+    {
+      "path": "expat/win32/.gitignore",
+      "sha256": "1b0077f6de192ce6fb64b275703ef8f5df38583fe80b5af3594e1dbf6bc4e1fb",
+      "size": 108,
+      "mode": 436
+    },
+    {
+      "path": "expat/win32/MANIFEST.txt",
+      "sha256": "cfb4be675979c27dc2fd68f20b17c3c91ef07a86ef2ab03d0e2259ce74518947",
+      "size": 1120,
+      "mode": 436
+    },
+    {
+      "path": "expat/win32/README.txt",
+      "sha256": "e154a6a0e100b3aed1815d818e1b64c4b0d09927f91b6f6a4e94e0b3c1dc37e1",
+      "size": 1884,
+      "mode": 436
+    },
+    {
+      "path": "expat/win32/build_expat_iss.bat",
+      "sha256": "5a2470d337b0538983efaf4a759ffa661f3b5254905bd1738d6820b6330fc780",
+      "size": 4225,
+      "mode": 436
+    },
+    {
+      "path": "expat/win32/expat.iss",
+      "sha256": "51fd954df57b0ca463b6365be1e3d555a6e8e34f0af688d5a2a2f8f236acaa9c",
+      "size": 6438,
+      "mode": 436
+    },
+    {
+      "path": "expat/win32/version.rc.cmake",
+      "sha256": "ebf04c3f9803e2bf62206f31e884bcbd20ddb18cb87188ca272b328f2f4b8dd6",
+      "size": 338,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/.gitignore",
+      "sha256": "153804bf0c21f853bbe5a2e280c821030b1c5308bb9826bf63723881a5bfed39",
+      "size": 55,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/Makefile.am",
+      "sha256": "9bad46ca7af79cb640275871baefecdb0b94b2136b6b2d9c678652646bb4e102",
+      "size": 2010,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/codepage.c",
+      "sha256": "48496fb3a226701a1b7c1295a3394ae580a1f254f57f0973278fb401fc73d84e",
+      "size": 3180,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/codepage.h",
+      "sha256": "fa862dd29ae33acd54a71edb4f1c7ee2836d7fcddde11f5949630533bb0ad8d3",
+      "size": 1832,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/ct.c",
+      "sha256": "fb223fd0493c481879fcf855fd6fdf1edf2956cb520cd534bd5b2f95450e7860",
+      "size": 4583,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/filemap.h",
+      "sha256": "46c4905001f8257851ffb03b8731a1e71882b0d081f04605d9c751f39615e55a",
+      "size": 2378,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/readfilemap.c",
+      "sha256": "9aee63b13915330d4de417194b7db14ae60f2147c8269087463933249afbcba8",
+      "size": 4395,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/unixfilemap.c",
+      "sha256": "5b8374a71b61ee9361f15fc1fcd0fc88d143b44c19cebcba27c2de7a6e15f04d",
+      "size": 3284,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/win32filemap.c",
+      "sha256": "42d122a49d5bb3ddc4d9d489f0de833f97d55dbf00ce11d21fdb0177128621b0",
+      "size": 3833,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/xmlfile.c",
+      "sha256": "393a1c926f0853dd4063c0598dc3df0c829acb0fa729e54aa73a3a6b3d696897",
+      "size": 8794,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/xmlfile.h",
+      "sha256": "8436efe970300139650e1889a972175c2257775cefdc66c3b47353b47807ca37",
+      "size": 2116,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/xmlmime.c",
+      "sha256": "a369d434714863e4cab18b1b5696bd381e144f0fc204fba01ff23100b9c24232",
+      "size": 5019,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/xmlmime.h",
+      "sha256": "1e786f9316329ca95d5330dd1716eab361ccd9a2c9726747db357c5e2f83efd8",
+      "size": 2173,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/xmltchar.h",
+      "sha256": "6b8c6deee065850997ba7b60fb8be76661e4d55e4bf723064f1c2066bd5ea288",
+      "size": 2836,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/xmlwf.c",
+      "sha256": "6d6d150e29f1241bceeef1461757a3a906e2992eff9168ac1d475cff6a5ac826",
+      "size": 40161,
+      "mode": 436
+    },
+    {
+      "path": "expat/xmlwf/xmlwf_helpgen.py",
+      "sha256": "1c6d9578a875969b8d9a67b827f79ea11e192097c4cf04bcbb224723ef65323f",
+      "size": 6318,
+      "mode": 509
+    },
+    {
+      "path": "expat/xmlwf/xmlwf_helpgen.sh",
+      "sha256": "480ebbb48a38d8f553882c0ac9b4000b44e9c836e3477ef2aff09aaa07bc04f2",
+      "size": 1717,
+      "mode": 509
+    },
+    {
+      "path": "pull_request_template.md",
+      "sha256": "5c31286c9cea8aeaad09719eb61619bfbfc8fd8c92cb6c83aa880b9463ef1702",
+      "size": 813,
+      "mode": 436
+    },
+    {
+      "path": "testdata/README.txt",
+      "sha256": "4c3dcce234da09a9acca32d041b24c2822d004a3b81ec1fa8f82fdf94aa49cb2",
+      "size": 254,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/README.txt",
+      "sha256": "5ad5744e4b10a62a90baad06dea1b93af1d5c61d210cbf334b28140c1a54ab4c",
+      "size": 2266,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/aaaaaa_attr.xml",
+      "sha256": "158d37ce5e7a0028f0ac9b51c553470c1336b69718a4c0cb06bf61234e0ca3d7",
+      "size": 10000043,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/aaaaaa_cdata.xml",
+      "sha256": "8c2231676e4525615174084a1b1aee4e874fbca92ab10fc9b51be7608284d0f4",
+      "size": 10000055,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/aaaaaa_comment.xml",
+      "sha256": "eed75a9a76da60522b568221215869f0a96cdb97c15b557e5c8f4c734ea4a2ae",
+      "size": 10000050,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/aaaaaa_tag.xml",
+      "sha256": "67980319ce6d295d5cf5511fc0a13910e9f6282496e65051ade57adf67c2f9c1",
+      "size": 10000038,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/aaaaaa_text.xml",
+      "sha256": "9046826e292cf2e48d8caa7ef8685d860e0c190de48ff80ad633cfefd34c3555",
+      "size": 10000034,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/nes96.xml",
+      "sha256": "ad5d5a8569d4dbd43b733e2195b5f79d9f4321fc83f3768e98183a572278ed27",
+      "size": 2961535,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/ns_att_test.xml",
+      "sha256": "faf73117317879c60b1cb7dbe4552aeb4139eef2fe9fd9dfafa3a00f16ce1862",
+      "size": 35651895,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/recset.xml",
+      "sha256": "54375b15ec21cf5402cc1fa0d8a8813807fba6ef1f5dad2c7b9da6794a1edae5",
+      "size": 30326041,
+      "mode": 436
+    },
+    {
+      "path": "testdata/largefiles/wordnet_glossary-20010201.rdf",
+      "sha256": "7298a749b13a21e2045d575f4a5625de47850ff1c13e9a6670de9680052daae2",
+      "size": 15161489,
+      "mode": 436
+    }
+  ],
+  "directories": [
+    {
+      "path": ".github",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows/data",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows/scripts",
+      "mode": 509
+    },
+    {
+      "path": "expat",
+      "mode": 509
+    },
+    {
+      "path": "expat/cmake",
+      "mode": 509
+    },
+    {
+      "path": "expat/cmake/autotools",
+      "mode": 509
+    },
+    {
+      "path": "expat/conftools",
+      "mode": 509
+    },
+    {
+      "path": "expat/doc",
+      "mode": 509
+    },
+    {
+      "path": "expat/examples",
+      "mode": 509
+    },
+    {
+      "path": "expat/fuzz",
+      "mode": 509
+    },
+    {
+      "path": "expat/gennmtab",
+      "mode": 509
+    },
+    {
+      "path": "expat/lib",
+      "mode": 509
+    },
+    {
+      "path": "expat/m4",
+      "mode": 509
+    },
+    {
+      "path": "expat/tests",
+      "mode": 509
+    },
+    {
+      "path": "expat/tests/benchmark",
+      "mode": 509
+    },
+    {
+      "path": "expat/win32",
+      "mode": 509
+    },
+    {
+      "path": "expat/xmlwf",
+      "mode": 509
+    },
+    {
+      "path": "testdata",
+      "mode": 509
+    },
+    {
+      "path": "testdata/largefiles",
+      "mode": 509
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "size": 1144
+    },
+    {
+      "path": "expat/AUTHORS",
+      "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877",
+      "size": 142
+    },
+    {
+      "path": "expat/COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "size": 1144
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

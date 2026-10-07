@@ -1,0 +1,26 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -1573,6 +1573,10 @@
+       # with ".so".
+       if test "$ac_sys_system" != "Linux-android"; then
+           INSTSONAME="$LDLIBRARY".$SOVERSION
++      fi
++      # Optional OHOS HAP flavor: choose filename and SONAME before linking/signing.
++      if test "$ac_sys_system" = "OpenHarmony" && test "${OHOS_PYTHON_UNVERSIONED_SONAME:-0}" = 1; then
++          INSTSONAME="$LDLIBRARY"
+       fi
+ 
+       if test "$with_pydebug" != yes
+--- a/configure
++++ b/configure
+@@ -7604,6 +7604,10 @@
+       if test "$ac_sys_system" != "Linux-android"; then
+           INSTSONAME="$LDLIBRARY".$SOVERSION
+       fi
++      # Optional OHOS HAP flavor: choose filename and SONAME before linking/signing.
++      if test "$ac_sys_system" = "OpenHarmony" && test "${OHOS_PYTHON_UNVERSIONED_SONAME:-0}" = 1; then
++          INSTSONAME="$LDLIBRARY"
++      fi
+ 
+       if test "$with_pydebug" != yes
+       then

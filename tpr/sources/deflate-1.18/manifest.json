@@ -1,0 +1,22 @@
+{
+  "name": "deflate",
+  "version": "1.18",
+  "kind": "source",
+  "filename": "libdeflate-v1.18.tar.gz",
+  "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz",
+  "license": "SPDX:MIT",
+  "license_files": [
+    "COPYING"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 184924,
+  "sha256": "225d982bcaf553221c76726358d2ea139bb34913180b20823c782cede060affd",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 184924,
+      "sha256": "225d982bcaf553221c76726358d2ea139bb34913180b20823c782cede060affd"
+    }
+  ]
+}

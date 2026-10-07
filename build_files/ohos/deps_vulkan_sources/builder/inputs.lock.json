@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "kind": "complete-portable-vulkan-builder-sealed-inputs",
+  "sealed_files": [
+    {
+      "path": "build_files/build_environment/cmake/shaderc.cmake",
+      "sha256": "d5c5abe8c48a7698b0ad9e2a86baa6b64d0fd91f44654c452690e854dc6145c4",
+      "size": 1641
+    },
+    {
+      "path": "build_files/build_environment/cmake/shaderc_deps.cmake",
+      "sha256": "463e0739fa7f3323998a2a0872449addabf705a57c7271987e804f45660ed3c5",
+      "size": 507
+    },
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1",
+      "size": 72783
+    },
+    {
+      "path": "build_files/build_environment/cmake/vulkan.cmake",
+      "sha256": "9e64d930e51386d4206a4b477a02e828aa00c78d224625fc602891ea7ed51f2f",
+      "size": 3947
+    },
+    {
+      "path": "build_files/cmake/Modules/FindShaderC.cmake",
+      "sha256": "4e85eb89525dfbd6ebf450b47097f6e6c1ab40e916adcc4b902ec1774028c3c3",
+      "size": 1529
+    },
+    {
+      "path": "build_files/cmake/Modules/FindVulkan.cmake",
+      "sha256": "a2a825c14efb455b8dd2d09c72ffbca1a595ae4b83e2888af27134c3051c2b4e",
+      "size": 1481
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/README.md",
+      "sha256": "0a985827b1e945b0dbb57e45293c04f849de6eb294617a50fef8d6c8f6a13510",
+      "size": 1510
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/ATTRIBUTION.md",
+      "sha256": "11d58d91234ef01f218a20b98f49e7b8ad271b613dc3803f90d56c635561cfd4",
+      "size": 1489
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/README.md",
+      "sha256": "b7bcde5b67331abf34fac39238103220a241dadb1e91b3620ecb6c13654b1456",
+      "size": 7250
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/audit.py",
+      "sha256": "952824c0f3054c69fecf8cbfabd4e7016882603c2633249de420b775fb7f7c17",
+      "size": 7873
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/builder.py",
+      "sha256": "e03905d224e317883bc9a428f874de791bf1d4c023e8bba89282976e81368ce5",
+      "size": 15931
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538",
+      "size": 808
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/cmake/blender-modules/FindShaderC.cmake",
+      "sha256": "4e85eb89525dfbd6ebf450b47097f6e6c1ab40e916adcc4b902ec1774028c3c3",
+      "size": 1529
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/cmake/blender-modules/FindVulkan.cmake",
+      "sha256": "a2a825c14efb455b8dd2d09c72ffbca1a595ae4b83e2888af27134c3051c2b4e",
+      "size": 1481
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/cmake/native-host.cmake",
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302",
+      "size": 812
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/cmake/reflect/CMakeLists.txt",
+      "sha256": "4346527bb53401795664edbcc4975c1f162dee07a6e787cfb34b10b1bdeb83c5",
+      "size": 564
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/CMakeLists.txt",
+      "sha256": "0961863fbf79828af35795b61989a33c537ecebc2238a3f8f397cfa0590bb40f",
+      "size": 6214
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/affinity_probe.cc",
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6",
+      "size": 1421
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/borrowed_handles.cc",
+      "sha256": "15f8728b85ad33cbbdeb40031904289632cb0d293054ba19ad338cc4cf605da8",
+      "size": 7330
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/glslang_api.cc",
+      "sha256": "f77d731bb23053fdf2570ed44d1a5d5071b9231aad6838412c6209d405c4c099",
+      "size": 580
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/integration.cc",
+      "sha256": "8ab5d8fc3ab182a9d65d1fd36e80c709eba5de05b14082a6ef1eb8b06ddc1e30",
+      "size": 9998
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/loader_probe.cc",
+      "sha256": "c76019594890732d89367c55a25e890c5285eb4186eca836ae2ff18f28978fbc",
+      "size": 4562
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/native_probe.cc",
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1",
+      "size": 1161
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/package_apis.cc",
+      "sha256": "56e0ee9a8a3c46f95ad7a8279f27022bed45164e82f56f3785c6939ea2ffd07c",
+      "size": 1120
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/pic.cc",
+      "sha256": "99407079162eca3ee7840438dd7b3819f7b864135546d3187a1624d4f0e41d80",
+      "size": 222
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/public_dependency_link.cc",
+      "sha256": "c509ce0c152f8fa9174c1f90990bdd46977500aed065721d28bed29b99ddd680",
+      "size": 1594
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/tools_api.cc",
+      "sha256": "704204f2605bee877b05d53e47e5366fea2cc96aab8ed9c3df1a06a4fc83fa6d",
+      "size": 439
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/consumers/utility_smoke.cc",
+      "sha256": "ac88207d0a13072e784b47c0c4b202066ecd225b35c591e9ea88fcbc4fb35305",
+      "size": 2180
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/io_utils.py",
+      "sha256": "6bd3217c54ac3b3a62b39c39251706abdc091dae8c1003df977ea488b7bc2e8b",
+      "size": 6768
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/launcher.py",
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339",
+      "size": 3118
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/metadata.py",
+      "sha256": "5964cf923c1eb863707a28c9fba704552711f65fa5ab3ff58f3714c98c931c7d",
+      "size": 8221
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/preflight/CMakeLists.txt",
+      "sha256": "9bbc6bf133a9a7fa172fc6659eb96f8e0831e506499f181b6881d96b57a0c353",
+      "size": 717
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/recipe.json",
+      "sha256": "5731824be056b0ca77f9a8075a21eafa318b60c76db3db5aa26aaff253edcb90",
+      "size": 3256
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/source_tree.py",
+      "sha256": "3d61ad7b6db72ce2d5606dd237f44760a699f8f18577970901a59c2ed718bd2e",
+      "size": 7778
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/sources.lock.json",
+      "sha256": "6ee33835299a1cb8bbb7f48645609c646243390de21ff1e5817f22a2dd6d8283",
+      "size": 14079
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/toolchain.py",
+      "sha256": "366f24500b6606dc4636e84bd9395f22cc66ba880ba9363072a4fd9da65a8cdb",
+      "size": 7291
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/builder/vendor_archive.py",
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09",
+      "size": 8263
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/glslang.json",
+      "sha256": "a8439043c29a88e460a6f6dce12e0c2a2e62c27561331208cd9db056abd409c1",
+      "size": 681
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/shaderc.json",
+      "sha256": "1b9465b5fe0bf3bf1a525804dcb0e9597ad93bd9c65ef48af72889fc118d1488",
+      "size": 617
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/spirv-headers.json",
+      "sha256": "a322371ffdaad0d3ebbbc6f27d680cafef9d04ec9ff1b4a16597e37a41c4c3cb",
+      "size": 669
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/spirv-reflect.json",
+      "sha256": "7c1b597156abd951359dfb625a510791ae88851f7ab81ecd38421948105ceec2",
+      "size": 588
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/spirv-tools.json",
+      "sha256": "fe5f4e025376c86748deb6847ec7e41fe424e20c7bf6c131df462237750462f2",
+      "size": 564
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/vma.json",
+      "sha256": "097d0d1b65270727e014c28db7b0736a1f99dbf85029214edd3b82cb516a3823",
+      "size": 548
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/vulkan-headers.json",
+      "sha256": "e254070127f71c64bb4b0042834f4920f4be09cb9163e769202ca16a6bc9b4ed",
+      "size": 609
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/entries/vulkan-utility.json",
+      "sha256": "69ec656baa242d9ea5bda8553a7dd1515f4afdf4e3a9266deeb211a724c3f691",
+      "size": 598
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/glslang.json",
+      "sha256": "dd883db1f62d540e63d365688b2e0014449a35754b033ca98745e8117c104f57",
+      "size": 540827
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/shaderc.json",
+      "sha256": "8c977253c89308e34062497b9ad791c21ec6646a20cfbf1507c4598162d75b35",
+      "size": 35823
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/spirv-headers.json",
+      "sha256": "7aa7ca8b663d1eea03b1aa706837966acb6d2d5bdc824e3043353be12342530a",
+      "size": 19473
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/spirv-reflect.json",
+      "sha256": "3cbf93ed58ef95383dc8c02d13cd88833c29c9b581178b3ab98aa8640d305f46",
+      "size": 68709
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/spirv-tools.json",
+      "sha256": "0cc7949a7a58b0c257f6d0ee30814449b3aaa86b39abb4d183d1337fe52ddcf6",
+      "size": 303931
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/vma.json",
+      "sha256": "bdfd1b448a51bbeabe0e8b303eeda6183e041a4e2837bf27fb69f8170f07d935",
+      "size": 43083
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/vulkan-headers.json",
+      "sha256": "8f160faa900f2e1b428b34afaccd137d9ce1e19b01288a9242ed399bcd8c10f1",
+      "size": 14555
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/inventories/vulkan-utility.json",
+      "sha256": "4dbfd15fe84de1feeeb0a77f523e18e00c7e28204192e1bc2150bd93627e118c",
+      "size": 13869
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/patches/vul-ohos-borrowed-handles.patch",
+      "sha256": "bc6a99d576876db8fa2469530baa937bd0001a5a3c11206638d134338bc90865",
+      "size": 6105
+    },
+    {
+      "path": "build_files/ohos/deps_vulkan_sources/provenance.json",
+      "sha256": "6ee33835299a1cb8bbb7f48645609c646243390de21ff1e5817f22a2dd6d8283",
+      "size": 14079
+    },
+    {
+      "path": "tpr/sources/glslang-d213562e35573012b6348b2d584457c3704ac09b/licenses/LICENSE.txt",
+      "sha256": "adb783e734e906d1f46db5df29991dbde84bdb0ceab502ac2febb44fe3c2b5f4",
+      "size": 54705
+    },
+    {
+      "path": "tpr/sources/glslang-d213562e35573012b6348b2d584457c3704ac09b/licenses/license-checker.cfg",
+      "sha256": "9bc9f672f477b34b7d1023a416616c00432c1e42db07f4a7143210144a87ef83",
+      "size": 1686
+    },
+    {
+      "path": "tpr/sources/glslang-d213562e35573012b6348b2d584457c3704ac09b/manifest.json",
+      "sha256": "952f809aff5c96f891309d269638f0b74b56d8f88b1b54d72a5b8efe05af1ce2",
+      "size": 915
+    },
+    {
+      "path": "tpr/sources/glslang-d213562e35573012b6348b2d584457c3704ac09b/source.part0000",
+      "sha256": "9537e5896d10bc493775675153687e078d83aead3a5a3b90e9ac28af2bc966fc",
+      "size": 4233045
+    },
+    {
+      "path": "tpr/sources/shaderc-2025.4/licenses/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "tpr/sources/shaderc-2025.4/licenses/kokoro/linux/license_check.sh",
+      "sha256": "8b88ba8d4d0c8f912ef139f06d2b091b58e633eb7bfbe7e28ad6f53b56489e7c",
+      "size": 945
+    },
+    {
+      "path": "tpr/sources/shaderc-2025.4/licenses/license-checker.cfg",
+      "sha256": "ff39f110e4b17c6a2e24eacc14a32674c2c1f2385828bdc23a0399d3475fffc8",
+      "size": 872
+    },
+    {
+      "path": "tpr/sources/shaderc-2025.4/licenses/third_party/LICENSE.glslang",
+      "sha256": "b5a00e94f058edc87e05978329b55730d8689abe61205d9018443d03de4f07da",
+      "size": 8280
+    },
+    {
+      "path": "tpr/sources/shaderc-2025.4/licenses/third_party/LICENSE.spirv-tools",
+      "sha256": "47e20ce182bc68fab1a0cfb129b03c326aaf4f2b6b7905aa9d376d31018bd29f",
+      "size": 11650
+    },
+    {
+      "path": "tpr/sources/shaderc-2025.4/manifest.json",
+      "sha256": "46f30651fe3d31b9ad7fb15c51eccaca815cd95e0e1d92a5ed41a051572eaf3b",
+      "size": 850
+    },
+    {
+      "path": "tpr/sources/shaderc-2025.4/source.part0000",
+      "sha256": "8a89fb6612ace8954470aae004623374a8fc8b7a34a4277bee5527173b064faf",
+      "size": 228962
+    },
+    {
+      "path": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/licenses/LICENSE",
+      "sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+      "size": 23503
+    },
+    {
+      "path": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/licenses/LICENSES/CC-BY-4.0.txt",
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "size": 17023
+    },
+    {
+      "path": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/licenses/LICENSES/MIT.txt",
+      "sha256": "6d7c9e9d7d12c8d3753bdb24417b84819ba4d6c2f025c37948113d86dc81eef9",
+      "size": 1087
+    },
+    {
+      "path": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/manifest.json",
+      "sha256": "e7f218e5e8b51144a414c1015941badebead578f0ffcda3dec578e489d86abb8",
+      "size": 902
+    },
+    {
+      "path": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/source.part0000",
+      "sha256": "cab0a654c4917e16367483296b44cdb1d614e3120c721beafcd37e3a8580486c",
+      "size": 561287
+    },
+    {
+      "path": "tpr/sources/spirv-reflect-vulkan-sdk-1.4.341.0/licenses/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "tpr/sources/spirv-reflect-vulkan-sdk-1.4.341.0/manifest.json",
+      "sha256": "c39c1fccec6164e6abf2643382d2dc48bc19012b9164a86939f06de5fbbed55f",
+      "size": 821
+    },
+    {
+      "path": "tpr/sources/spirv-reflect-vulkan-sdk-1.4.341.0/source.part0000",
+      "sha256": "3f55d5ad7dc6f02214633c851d4ea3872abe3a1ecec6b5d80cfc3255012c4b6a",
+      "size": 348384
+    },
+    {
+      "path": "tpr/sources/spirv-tools-2026.1/licenses/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "tpr/sources/spirv-tools-2026.1/licenses/utils/vscode/src/lsp/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "tpr/sources/spirv-tools-2026.1/manifest.json",
+      "sha256": "80275b4aaac9c27865acc1bd9382c5ad87122d55043417341685819a4d451245",
+      "size": 798
+    },
+    {
+      "path": "tpr/sources/spirv-tools-2026.1/source.part0000",
+      "sha256": "35dc16cf2dc64be5b6bbbe86d210e6f4a82b070cffd751605a3365cd8bce2d7e",
+      "size": 3453737
+    },
+    {
+      "path": "tpr/sources/vma-3.2.1/licenses/LICENSE.txt",
+      "sha256": "8d70e4cf2a9941f6454da71cd60e38484dd3e34810c824760d550e982af6d97a",
+      "size": 1099
+    },
+    {
+      "path": "tpr/sources/vma-3.2.1/manifest.json",
+      "sha256": "778e74e2551f731e15a19129e1af5a455b6d515d8e62968fe1a7daf388f5d92b",
+      "size": 781
+    },
+    {
+      "path": "tpr/sources/vma-3.2.1/source.part0000",
+      "sha256": "5e7749504cb802427ffb7bec38a0b6a15db46ae253f00560acb3e624d9fe695c",
+      "size": 984837
+    },
+    {
+      "path": "tpr/sources/vulkan-headers-1.4.341/licenses/LICENSE.md",
+      "sha256": "ac24e5ea920e4318e4d02c4086ae51f53cfb03feed06c18df1019e7ada1ec7bc",
+      "size": 458
+    },
+    {
+      "path": "tpr/sources/vulkan-headers-1.4.341/licenses/LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "tpr/sources/vulkan-headers-1.4.341/licenses/LICENSES/MIT.txt",
+      "sha256": "1ca3502222d967f3be5751c55f6b7ee735b5383909c3b501495f54b216dbf227",
+      "size": 1084
+    },
+    {
+      "path": "tpr/sources/vulkan-headers-1.4.341/manifest.json",
+      "sha256": "812a6e540e8770550dfb798872685ffdbdb1cfb962af9136766aaf2019687885",
+      "size": 843
+    },
+    {
+      "path": "tpr/sources/vulkan-headers-1.4.341/source.part0000",
+      "sha256": "8876aad926b2e72bdefddc34885472d5332e2d20aa3ed57313466f0bc982cf3f",
+      "size": 3058464
+    },
+    {
+      "path": "tpr/sources/vulkan-utility-1.4.341/licenses/LICENSE.md",
+      "sha256": "69760673abf91cfd0280ae73739a29c078f493804d9016a122b3b189b48ad6e6",
+      "size": 304
+    },
+    {
+      "path": "tpr/sources/vulkan-utility-1.4.341/licenses/LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "tpr/sources/vulkan-utility-1.4.341/manifest.json",
+      "sha256": "34a6f0355525f90ea7c558da0ab69c9bbd0c843f20412a1e7c6704a0639324f8",
+      "size": 832
+    },
+    {
+      "path": "tpr/sources/vulkan-utility-1.4.341/source.part0000",
+      "sha256": "066e9d0eb098f6cb3aa80585ae57757ae2c56bc6dbdd5990f6b3bc1c778b9a42",
+      "size": 1517782
+    }
+  ],
+  "all_original_archives_complete": true,
+  "new_full_native_acceptance": false,
+  "gpu_device_wsi_pixels": "NOT_TESTED"
+}

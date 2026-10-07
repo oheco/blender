@@ -1,0 +1,25 @@
+{
+  "name": "gflags",
+  "version": "2.2.1",
+  "kind": "source",
+  "filename": "gflags-46f73f88b18aee341538c0dfc22b1710a6abedef.tar.gz",
+  "url": "https://github.com/gflags/gflags/archive/46f73f88b18aee341538c0dfc22b1710a6abedef.tar.gz",
+  "license": "BSD-3-Clause",
+  "license_files": [
+    "AUTHORS.txt",
+    "COPYING.txt"
+  ],
+  "upstream_repository": "https://github.com/gflags/gflags",
+  "commit": "46f73f88b18aee341538c0dfc22b1710a6abedef",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 97058,
+  "sha256": "a8263376b409900dd46830e4e34803a170484707327854cc252fc5865275a57d",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 97058,
+      "sha256": "a8263376b409900dd46830e4e34803a170484707327854cc252fc5865275a57d"
+    }
+  ]
+}

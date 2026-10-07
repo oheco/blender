@@ -1,0 +1,60 @@
+{
+  "Cxx_build_configure": "NOTRUN",
+  "HAP_execution": "NOTRUN",
+  "artifacts": {
+    "README.md": {
+      "bytes": 12250,
+      "sha256": "7e4e58b377bc8f1502526f29f0bf2d9ceea2e72f86c9f88305441f1417323827"
+    },
+    "bpy_acceptance_common.py": {
+      "bytes": 24524,
+      "sha256": "012445db6242198b22a0c660e21a571395bce71d2834ffb50bdde22bca356ba3",
+      "syntax": "PASS"
+    },
+    "bpy_export_acceptance.py": {
+      "bytes": 2305,
+      "sha256": "c63e9208d8e3b44abd8701c3eeb61e1ab88b4098a9a0e01f8ec3b97e79b79e79",
+      "syntax": "PASS"
+    },
+    "bpy_import_acceptance.py": {
+      "bytes": 896,
+      "sha256": "40a4e2e44375a97f6a07c0f5d54e200276c8ce1a57580f006d3ab3d6548baefa",
+      "syntax": "PASS"
+    },
+    "bridge_abi_acceptance.py": {
+      "bytes": 31956,
+      "sha256": "146e19aa51e458586e5b87a6bdce828393b4678884622bc124044c0b79d4f006",
+      "syntax": "PASS"
+    },
+    "gltf_acceptance_common.py": {
+      "bytes": 11024,
+      "sha256": "9c776c530cf38fc1a1c0a8f9b2ccbe27b2d4cddb73255f254348b2c174e75515",
+      "syntax": "PASS"
+    },
+    "patches/0001-draco-decoder-errorcleanup.patch": {
+      "bytes": 7857,
+      "sha256": "67cd3c32cf0537ced52e18ce8327b46fb765616aa939f58fdcdce2ec7e489843"
+    },
+    "patches/check_draco_errorcleanup.py": {
+      "bytes": 9956,
+      "sha256": "1549cecf8a65423e8fa918c649780f84e455309ed837f4161cb65f7db11cedd4",
+      "syntax": "PASS"
+    },
+    "patches/draco-errorcleanup-record.json": {
+      "bytes": 2687,
+      "sha256": "44ae304e293e0fa881b8f597e96b0e4af6ba1c5c7f0d2c9521c0c7f19eaffe67"
+    }
+  },
+  "bpy_import_export": "NOTRUN",
+  "cleanup_contract_result": "PASS",
+  "cleanup_contract_scenarios": 9,
+  "existing_draco_source_sha256": "b53abdc450e09c6e12cb39d4d7d2edafea9d8dc7f78a791d8b95aca5fdbfd877",
+  "existing_draco_source_unchanged": true,
+  "fixture_binary_generation": "NOTRUN",
+  "native_bridge_execution": "NOTRUN",
+  "network": "NOTRUN",
+  "python_syntax_files": 6,
+  "result": "PASS",
+  "schema": "ohos-gltf-acceptance-source-validation-v1",
+  "syntax_validation": "ast.parse and compile only; no acceptance imports"
+}

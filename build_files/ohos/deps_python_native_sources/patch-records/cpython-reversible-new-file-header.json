@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "original_patch_sha256": "85cb5b80774082b715d127666333316812c170dda40bed9ab638c0c9cae8d2de",
+  "original_patch_copied_unchanged": true,
+  "formal_adjustment": "Only new-file before-header from a/Lib/_ohos_support.py to /dev/null; exact hunk content unchanged",
+  "reason": "actual Git reverse of original header leaves empty file; canonical new-file metadata must restore original absent path",
+  "source_before": "absent",
+  "source_after_sha256": "a027062ccd80d1cbed19bd5bf1f337f58a20755317ff257e26c1f509eb790812",
+  "native_code_change": false,
+  "native": "NOTRUN",
+  "formal_patch_sha256": "e34636a8b490c6d37aee966a01956fc703a3405ffd22cd7f833fdb7de06feb91"
+}

@@ -1,0 +1,646 @@
+{
+  "archive_root": "libdeflate-1.18",
+  "source_archive_sha256": "225d982bcaf553221c76726358d2ea139bb34913180b20823c782cede060affd",
+  "members": 111,
+  "files": [
+    {
+      "path": ".cirrus.yml",
+      "sha256": "fbe2d4ad7129a9c293047c01399f6724c6b898c9bbf53874bc9b09abb8fc5849",
+      "size": 435,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "0d1687b38f1a2222bf39f18ad55b0dc37f722fd8c4e5af92d61fc9cf96616e58",
+      "size": 9938,
+      "mode": 436
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "61d26f08a90f19a5025171d12169201f2c121b8d00fce58c7b0498097e486b45",
+      "size": 21,
+      "mode": 436
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "eed317c301a43712d2348448bb5cdf2f8f806186c0e6a5cd838759f78af7077f",
+      "size": 10737,
+      "mode": 436
+    },
+    {
+      "path": "COPYING",
+      "sha256": "5d246dd2537307b80fed9ba5fdddf5d0fe7a8f023393a071182b9daed56b40fe",
+      "size": 1052,
+      "mode": 436
+    },
+    {
+      "path": "NEWS.md",
+      "sha256": "6ca7681f89e0ef8e92d936d9934b6ab3da9a56ebead83524b271127ddedf10ee",
+      "size": 15586,
+      "mode": 436
+    },
+    {
+      "path": "README.md",
+      "sha256": "a602d37632d10cf2af1f41ada8bcd4d6bd608e071db908056e7dced7d61c5425",
+      "size": 9712,
+      "mode": 436
+    },
+    {
+      "path": "common_defs.h",
+      "sha256": "354e64c01a4083c0d1e7dc111c7d42d2adc2b06ab2efa7681473d93dac9e3f76",
+      "size": 20821,
+      "mode": 436
+    },
+    {
+      "path": "lib/adler32.c",
+      "sha256": "3ff389e1f08f9cf096a2722aa49e1734ced26d9d9d06a5f0767fa33ee2e5c868",
+      "size": 3628,
+      "mode": 436
+    },
+    {
+      "path": "lib/adler32_vec_template.h",
+      "sha256": "d84c6f88473189dd6f2ffaf9a47a238bec212ddfe371ec0ff55dd8954b41a185",
+      "size": 3914,
+      "mode": 436
+    },
+    {
+      "path": "lib/arm/adler32_impl.h",
+      "sha256": "e7d99be2e7b2a40a5df2b03b381bb3bc72e148f15f53488e3812acbc151791e5",
+      "size": 10061,
+      "mode": 436
+    },
+    {
+      "path": "lib/arm/cpu_features.c",
+      "sha256": "24a6736c29121a7e6ad8211bd409d07109741dc1e8ce1a4f421b3d03e2ed6e05",
+      "size": 5832,
+      "mode": 436
+    },
+    {
+      "path": "lib/arm/cpu_features.h",
+      "sha256": "c53c5313794029b681b32cf8e31dd935852dc91bc81b8a4f2ab02fde77e56352",
+      "size": 9604,
+      "mode": 436
+    },
+    {
+      "path": "lib/arm/crc32_impl.h",
+      "sha256": "3104139c9057a6b131bb511abf4cffb825d9ed98611c19400e65f74d309e5e11",
+      "size": 23631,
+      "mode": 436
+    },
+    {
+      "path": "lib/arm/crc32_pmull_helpers.h",
+      "sha256": "c279418769b977824d238fb85fb2efe082b5202f2fb5636702f8e6b74c4c3e50",
+      "size": 5957,
+      "mode": 436
+    },
+    {
+      "path": "lib/arm/crc32_pmull_wide.h",
+      "sha256": "c2bce19ebf541ebf526ad6209c3a49e2e898c836538ac4fe9ef1309fe8eeea3a",
+      "size": 7241,
+      "mode": 436
+    },
+    {
+      "path": "lib/arm/matchfinder_impl.h",
+      "sha256": "e479785e936e3adf7b621b7314cb09365ea65bd350cfc7fc51480752178ba998",
+      "size": 2487,
+      "mode": 436
+    },
+    {
+      "path": "lib/bt_matchfinder.h",
+      "sha256": "6e3834eb2de5c759479bbdab9471f3569f8aa2bcbba81f4f917c84ebff0050ad",
+      "size": 11499,
+      "mode": 436
+    },
+    {
+      "path": "lib/cpu_features_common.h",
+      "sha256": "f4eb0800558e9116dd14446ccfb9b1896f970aec6de42c18366a29bde73fd0da",
+      "size": 2788,
+      "mode": 436
+    },
+    {
+      "path": "lib/crc32.c",
+      "sha256": "d10c21c5f0aaf03d1af566bba97d18decb06300e7aa57413762dc346b38c6ee2",
+      "size": 9226,
+      "mode": 436
+    },
+    {
+      "path": "lib/crc32_multipliers.h",
+      "sha256": "15cf05fe2c5e07edff062d1a611dc2bee12f66fee24e05718c46005d9a8d5d52",
+      "size": 20575,
+      "mode": 436
+    },
+    {
+      "path": "lib/crc32_tables.h",
+      "sha256": "43f0a8a29ad89e533f3cf1cfa801d894dbae458d37ce53b5798c4e98f067e6b5",
+      "size": 28471,
+      "mode": 436
+    },
+    {
+      "path": "lib/decompress_template.h",
+      "sha256": "bd8c8ba7884383a7dc6f5f162ada16213d242eab8ea55cb01092c403634683a3",
+      "size": 25048,
+      "mode": 436
+    },
+    {
+      "path": "lib/deflate_compress.c",
+      "sha256": "8d25bb7791602650939f4d502ca1fe2ac5326706e84cbbd4ce6e0a21c090412f",
+      "size": 135284,
+      "mode": 436
+    },
+    {
+      "path": "lib/deflate_compress.h",
+      "sha256": "cd3a74bb22e5358e9571184294b1f3600e2a72bde483485eda242a92bb7124b0",
+      "size": 398,
+      "mode": 436
+    },
+    {
+      "path": "lib/deflate_constants.h",
+      "sha256": "72ea6e5f0abe53e781203e3f383603a765a768b860a09b3356be36bfd87c8af3",
+      "size": 1747,
+      "mode": 436
+    },
+    {
+      "path": "lib/deflate_decompress.c",
+      "sha256": "547671dda82a26a9b5f3ee554d5b974e4e3fe5edd858e64f04d19f19cc5be6aa",
+      "size": 47754,
+      "mode": 436
+    },
+    {
+      "path": "lib/gzip_compress.c",
+      "sha256": "b92016cf6a5ce34b48e6950d7de68923d2e5e0475bbe4c71297360818deafb08",
+      "size": 2665,
+      "mode": 436
+    },
+    {
+      "path": "lib/gzip_constants.h",
+      "sha256": "135661faa24f45407517f9f73380cf89890613aeba27b3a4f5cfba0e74e85ae0",
+      "size": 1029,
+      "mode": 436
+    },
+    {
+      "path": "lib/gzip_decompress.c",
+      "sha256": "f853b8802a1b7e79f6626f0a2c104d005958288c2a37ea24df758ee54f714304",
+      "size": 3996,
+      "mode": 436
+    },
+    {
+      "path": "lib/hc_matchfinder.h",
+      "sha256": "b37e8c48957f8d7773a847a1d5a5fe5343b85e0f9c43ddce2e55eb24d58a1704",
+      "size": 13970,
+      "mode": 436
+    },
+    {
+      "path": "lib/ht_matchfinder.h",
+      "sha256": "a682872f0d05919e13d53b49df42039062c177c65d19095da958162425883c0c",
+      "size": 7135,
+      "mode": 436
+    },
+    {
+      "path": "lib/lib_common.h",
+      "sha256": "553919864f01c50587ee69a7d65cf2dc4491c696c775ac7bb1abd75e5a4632da",
+      "size": 3236,
+      "mode": 436
+    },
+    {
+      "path": "lib/matchfinder_common.h",
+      "sha256": "9a6fca6e558d19d6ff50111e03f6f56ee315058bd079dfafda20f95fb6f981a5",
+      "size": 5724,
+      "mode": 436
+    },
+    {
+      "path": "lib/utils.c",
+      "sha256": "87257a5c5a4044e1cdc6eb7e85ffe51598d32c41631844f512759e6f660d0ded",
+      "size": 3524,
+      "mode": 436
+    },
+    {
+      "path": "lib/x86/adler32_impl.h",
+      "sha256": "6d6da312a2e9cd52af93fea0cbe12212be3c8f7f2c38127b39aab204312b4d0f",
+      "size": 10329,
+      "mode": 436
+    },
+    {
+      "path": "lib/x86/cpu_features.c",
+      "sha256": "06ad5cf41ab2270d7001f736673c256d5e3fb1dc0f1f702769df67252b064e16",
+      "size": 4334,
+      "mode": 436
+    },
+    {
+      "path": "lib/x86/cpu_features.h",
+      "sha256": "09b84ac7e3daf52f8a70f7c03ca8ae78aa7cb842d5d893b836f753276b82c2a2",
+      "size": 4778,
+      "mode": 436
+    },
+    {
+      "path": "lib/x86/crc32_impl.h",
+      "sha256": "60bac529416a57181a60e139011089097fa3db28fcce98ce8002e3de53cb1076",
+      "size": 3416,
+      "mode": 436
+    },
+    {
+      "path": "lib/x86/crc32_pclmul_template.h",
+      "sha256": "780fbeb0c3c7172973f117c41144f73cfe05f4b53fe9e7139ed96cfaa8503069",
+      "size": 11859,
+      "mode": 436
+    },
+    {
+      "path": "lib/x86/decompress_impl.h",
+      "sha256": "582688894e9d218daddc7b175b4f02762494e5ee32f670bfba63af862b0b5598",
+      "size": 1831,
+      "mode": 436
+    },
+    {
+      "path": "lib/x86/matchfinder_impl.h",
+      "sha256": "815cae8221ef667123a62497896e6f032ae67be81b47b9d3cacf5b9cd95a760a",
+      "size": 3781,
+      "mode": 436
+    },
+    {
+      "path": "lib/zlib_compress.c",
+      "sha256": "b5ca0c9af0346fd656871441b08b73b3512601ceec8edc6cc81e8a93929081d4",
+      "size": 2618,
+      "mode": 436
+    },
+    {
+      "path": "lib/zlib_constants.h",
+      "sha256": "562e16b83ac33ac6d351cdfdf1962750576080d65c22ab66cad0aaa33695bebb",
+      "size": 488,
+      "mode": 436
+    },
+    {
+      "path": "lib/zlib_decompress.c",
+      "sha256": "704a57fb91c36c1c88b04a3482694de08c794ca0cb3904ac247a206802aa6ee0",
+      "size": 3138,
+      "mode": 436
+    },
+    {
+      "path": "libdeflate-config.cmake.in",
+      "sha256": "141301e112b10d565b06286b9cca2f1fa0e962899e2b9ae0749ac1287ce3ca4f",
+      "size": 78,
+      "mode": 436
+    },
+    {
+      "path": "libdeflate.h",
+      "sha256": "a4c17e99aef823e316541bf367a19a3baa33f2bd2a7d91e103d4a4e7415dd564",
+      "size": 15748,
+      "mode": 436
+    },
+    {
+      "path": "libdeflate.pc.in",
+      "sha256": "76861afb5bc1b0c33d511e9467402d7bb4f1ccd9e7064d8fa7c19bf852968c20",
+      "size": 808,
+      "mode": 436
+    },
+    {
+      "path": "programs/CMakeLists.txt",
+      "sha256": "aa0441fa065ba1e1a0ed9c7f63f77b309603136de77774716fa809d31f1047af",
+      "size": 4675,
+      "mode": 436
+    },
+    {
+      "path": "programs/benchmark.c",
+      "sha256": "595345116350deda1f8cd7513dc983149d8febab577a7fe4fe3443f2d937183e",
+      "size": 17356,
+      "mode": 436
+    },
+    {
+      "path": "programs/checksum.c",
+      "sha256": "b88efcc45a6780eab5077c8d895ff0404317ceb66e67b95ee5a55fa17e3202f2",
+      "size": 5033,
+      "mode": 436
+    },
+    {
+      "path": "programs/config.h.in",
+      "sha256": "7bcdf09c18b3b96ca58c03f25ace30d8b86cd81a6866b233b626733d991e34d3",
+      "size": 479,
+      "mode": 436
+    },
+    {
+      "path": "programs/gzip.c",
+      "sha256": "79a972f8c36364e1ae1da9b708c29fb5fc51261db9435f2eabfaf4adf7267a48",
+      "size": 17688,
+      "mode": 436
+    },
+    {
+      "path": "programs/prog_util.c",
+      "sha256": "4e6d1b1f3774e9b45b8819d70343aa3846eb7228fe333938ec0c9e9c83654081",
+      "size": 11900,
+      "mode": 436
+    },
+    {
+      "path": "programs/prog_util.h",
+      "sha256": "5dc30a416c1223c854a9b90cc1a6fdbf38ef31fc9cee956bfd22639d6d60f14e",
+      "size": 6662,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_checksums.c",
+      "sha256": "37dc796cdf0530fa452abf0a03b30bba3788502021283f151f439b7bc817f1ae",
+      "size": 5134,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_custom_malloc.c",
+      "sha256": "1f33f3ee71092d257af9efd32dce7ea25322e040d19296cc3c94ce30dc27d0ed",
+      "size": 1753,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_incomplete_codes.c",
+      "sha256": "e2c048cfe67b7ec54dc3c76327275734502853826fac66db5a3f81346afa32ca",
+      "size": 11890,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_invalid_streams.c",
+      "sha256": "5efdd78a010b7eeb747eccdf2425785f2091b20679022c5800270bf6efe1dd77",
+      "size": 3913,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_litrunlen_overflow.c",
+      "sha256": "5253a0031b57abc3ec20d26df900495a274169467703ef60b39ebde7645d1a9f",
+      "size": 2204,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_overread.c",
+      "sha256": "334ec984480acc11fc287f1a29521af03f4e96103c4b195b5f4879115a2025d8",
+      "size": 2686,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_slow_decompression.c",
+      "sha256": "cf4ed95d9e679814d104745599b630436cac26292debe79d84c8efa61f596013",
+      "size": 22742,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_trailing_bytes.c",
+      "sha256": "6e61e70ad214f9533a5e120ed4483e146b850e4ec9d1b913692d72304439b06e",
+      "size": 5181,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_util.c",
+      "sha256": "1e27aed05501dcb4705e6395a2ae11e2099404301045f816178d95c78052d396",
+      "size": 5576,
+      "mode": 436
+    },
+    {
+      "path": "programs/test_util.h",
+      "sha256": "578e75f18a4078367f2bbf6c647ea23c5e22d831bb8761efd38a7c28402b39e2",
+      "size": 2191,
+      "mode": 436
+    },
+    {
+      "path": "programs/tgetopt.c",
+      "sha256": "8580298e6f7d116d5dee93838511fa0982d277d2b820191ccd249d0931116cee",
+      "size": 3530,
+      "mode": 436
+    },
+    {
+      "path": "scripts/android_build.sh",
+      "sha256": "36563d96625919236ce2bcdc65c0fe5008a29bffa34502711bd00dd7e5efb5de",
+      "size": 2055,
+      "mode": 509
+    },
+    {
+      "path": "scripts/android_tests.sh",
+      "sha256": "d8495e0c66094f3c542e4dba76549e900ae50feda86a3eacf7aae040a750f396",
+      "size": 1994,
+      "mode": 509
+    },
+    {
+      "path": "scripts/benchmark.sh",
+      "sha256": "0d84aa84c9cbefc60f3ae63a96c9de9a860998c708cdb8ee298a7a5883a0ed2f",
+      "size": 247,
+      "mode": 509
+    },
+    {
+      "path": "scripts/checksum.sh",
+      "sha256": "f524e4b835248018c9348eebcfbac4a3d3ab17577f1416feb8c037dcc8a7f532",
+      "size": 245,
+      "mode": 509
+    },
+    {
+      "path": "scripts/checksum_benchmarks.sh",
+      "sha256": "5eb00c65b77a25403e98e8e7eed5243ee55de566bec7aa4fa9367ca28fd1e0cc",
+      "size": 3379,
+      "mode": 509
+    },
+    {
+      "path": "scripts/cmake-helper.sh",
+      "sha256": "a07ffaf93bb6baa3341a5d98a4b843f411bb1d51a1a2c89c38858d53f0bf6c6e",
+      "size": 471,
+      "mode": 509
+    },
+    {
+      "path": "scripts/deflate_benchmarks.sh",
+      "sha256": "827480fec0d37158a10d074d338da8b7f486e36ca3a791b4123f544642649309",
+      "size": 2425,
+      "mode": 509
+    },
+    {
+      "path": "scripts/exec_tests.sh",
+      "sha256": "eed8b2d759c0985e0a5acfc64f9cf8a1b0c112368852a0fad3d4eeec0c14986b",
+      "size": 686,
+      "mode": 436
+    },
+    {
+      "path": "scripts/gen_bitreverse_tab.py",
+      "sha256": "730058ac596053565c9d1a8d855c5ea191f9e39df72f2f1fc86d0a835e6dff3a",
+      "size": 523,
+      "mode": 509
+    },
+    {
+      "path": "scripts/gen_crc32_multipliers.c",
+      "sha256": "f749e233c1cbab77ad43bdbb6f71e8db1b0268b5108ca94f25e1084b5d9a0e4a",
+      "size": 7334,
+      "mode": 436
+    },
+    {
+      "path": "scripts/gen_crc32_tables.c",
+      "sha256": "3f594da7ecf7791f013709cca2dcd29f3ffeaebed27c283aa3fe58823292fae6",
+      "size": 3350,
+      "mode": 436
+    },
+    {
+      "path": "scripts/gen_default_litlen_costs.py",
+      "sha256": "663bc89f98bfc5dea209b5c91a89d76a041ba25e48bbe5bbaa5f8f0d90cb48cd",
+      "size": 1273,
+      "mode": 509
+    },
+    {
+      "path": "scripts/gen_offset_slot_map.py",
+      "sha256": "8c439cd469f3c863d095474557544f83ad40eff08c5eaada3c7a405c7386c2ba",
+      "size": 1459,
+      "mode": 509
+    },
+    {
+      "path": "scripts/gzip_tests.sh",
+      "sha256": "0bbbae7e8010cc75031d0d70370a93ecacda703bf22770a4c4d64b3c36a2d930",
+      "size": 11897,
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/.gitignore",
+      "sha256": "8165b18a5d4bb332a9c36851a2971719c58a5aac3991eab6584d1329fd690123",
+      "size": 7,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_compress/corpus/0",
+      "sha256": "be4cb2cd8e61eb0ff1d65fbd5adc8c5c237891413c3963dc9428a0de3eb4abe3",
+      "size": 500,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_compress/fuzz.c",
+      "sha256": "a844ea123c40b5bf9bedbe644426cddf012046ec0af54774295f0055b6c8e90f",
+      "size": 1208,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_decompress/corpus/0",
+      "sha256": "3ef7e53fc825722b2fca0d1f3a2ec22aba5ae4774ada0844ee35278348f0cf38",
+      "size": 169,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_decompress/fuzz.c",
+      "sha256": "d6082f3989f87b50e962a5dc952dc3554c463094887d31d82e2f6ef7418ac161",
+      "size": 451,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/fuzz.sh",
+      "sha256": "9c0e22859cc7b806959f6cf68dff3d2f3df2775e26ec4e6a4a5157e95c06644c",
+      "size": 1608,
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/gzip_decompress/corpus/0",
+      "sha256": "315b7272a3f309652d78849221afe00c2b67233e576ecdfa39ed6470380c003f",
+      "size": 187,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/gzip_decompress/fuzz.c",
+      "sha256": "ca864c4b3569a455df6cd878760fd918f4d2bd3b23531a3b655f7f149eaee4c9",
+      "size": 445,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/zlib_decompress/corpus/0",
+      "sha256": "5e9c0d008b82914b27d26a0eef65b94c1c8396ddb3e531dd35b0859ffcf529e9",
+      "size": 175,
+      "mode": 436
+    },
+    {
+      "path": "scripts/libFuzzer/zlib_decompress/fuzz.c",
+      "sha256": "30d6eae5044df480d3a2e33d2e526333b0677fb7b652ea2752fa71e70415560f",
+      "size": 445,
+      "mode": 436
+    },
+    {
+      "path": "scripts/make-windows-releases.sh",
+      "sha256": "6b4cfab06fd305a4ac4246371b8ab3063da3d3ee751d64c2ad1cf2616a93585a",
+      "size": 712,
+      "mode": 509
+    },
+    {
+      "path": "scripts/run_tests.sh",
+      "sha256": "6bcfa61cdecee7849e9dc19e73ee27afa9c17bfe73e07ea48ab2634164e98e7f",
+      "size": 9314,
+      "mode": 509
+    },
+    {
+      "path": "scripts/toolchain-i686-w64-mingw32.cmake",
+      "sha256": "13925cc86394de8890656980b977b4225e74026162fe0ed207192830461a68aa",
+      "size": 332,
+      "mode": 436
+    },
+    {
+      "path": "scripts/toolchain-x86_64-w64-mingw32.cmake",
+      "sha256": "6b79085ef16672715c1439f66a4cfd6e0fc970352775d00eff9878995d763c74",
+      "size": 338,
+      "mode": 436
+    }
+  ],
+  "directories": [
+    {
+      "path": ".github",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows",
+      "mode": 509
+    },
+    {
+      "path": "lib",
+      "mode": 509
+    },
+    {
+      "path": "lib/arm",
+      "mode": 509
+    },
+    {
+      "path": "lib/x86",
+      "mode": 509
+    },
+    {
+      "path": "programs",
+      "mode": 509
+    },
+    {
+      "path": "scripts",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_compress",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_compress/corpus",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_decompress",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/deflate_decompress/corpus",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/gzip_decompress",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/gzip_decompress/corpus",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/zlib_decompress",
+      "mode": 509
+    },
+    {
+      "path": "scripts/libFuzzer/zlib_decompress/corpus",
+      "mode": 509
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "COPYING",
+      "sha256": "5d246dd2537307b80fed9ba5fdddf5d0fe7a8f023393a071182b9daed56b40fe",
+      "size": 1052
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

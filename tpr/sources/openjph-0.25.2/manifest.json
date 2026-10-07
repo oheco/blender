@@ -1,0 +1,22 @@
+{
+  "name": "openjph",
+  "version": "0.25.2",
+  "kind": "source",
+  "filename": "openjph-v0.25.2.tar.gz",
+  "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.25.2.tar.gz",
+  "license": "SPDX:BSD-2-Clause",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 477255,
+  "sha256": "ae5f09562cb811cb2fb881c5eb74583e18db941848cfa3c35787e2580f3defc6",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 477255,
+      "sha256": "ae5f09562cb811cb2fb881c5eb74583e18db941848cfa3c35787e2580f3defc6"
+    }
+  ]
+}

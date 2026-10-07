@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "kind": "complete-vulkan-source-provenance",
+  "status": "complete original sources; new full pipeline NOT_RUN",
+  "sources": [
+    {
+      "name": "vulkan-headers",
+      "version": "1.4.341",
+      "git_commit": "b5c8f996196ba4aa6d8f97e52b5d3b6e70f7e4e2",
+      "archive_filename": "vulkan-headers-v1.4.341.tar.gz",
+      "archive_root": "Vulkan-Headers-1.4.341",
+      "registry_manifest": "tpr/sources/vulkan-headers-1.4.341/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/vulkan-headers.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/vulkan-headers.json",
+      "sha256": "8876aad926b2e72bdefddc34885472d5332e2d20aa3ed57313466f0bc982cf3f",
+      "size": 3058464,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "57f17871ef2c43fc9ac01708a4bd3c82"
+      },
+      "license_declaration": "Apache-2.0 OR MIT",
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "tpr/sources/vulkan-headers-1.4.341/licenses/LICENSE.md",
+          "sha256": "ac24e5ea920e4318e4d02c4086ae51f53cfb03feed06c18df1019e7ada1ec7bc",
+          "size": 458
+        },
+        {
+          "source_path": "LICENSES/Apache-2.0.txt",
+          "mirror": "tpr/sources/vulkan-headers-1.4.341/licenses/LICENSES/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        },
+        {
+          "source_path": "LICENSES/MIT.txt",
+          "mirror": "tpr/sources/vulkan-headers-1.4.341/licenses/LICENSES/MIT.txt",
+          "sha256": "1ca3502222d967f3be5751c55f6b7ee735b5383909c3b501495f54b216dbf227",
+          "size": 1084
+        }
+      ]
+    },
+    {
+      "name": "vulkan-utility",
+      "version": "1.4.341",
+      "git_commit": "a663eca87ba71294dd4b74ba9d3e64a72d725453",
+      "archive_filename": "vulkan-utility-v1.4.341.tar.gz",
+      "archive_root": "Vulkan-Utility-Libraries-1.4.341",
+      "registry_manifest": "tpr/sources/vulkan-utility-1.4.341/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/vulkan-utility.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/vulkan-utility.json",
+      "sha256": "066e9d0eb098f6cb3aa80585ae57757ae2c56bc6dbdd5990f6b3bc1c778b9a42",
+      "size": 1517782,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "7b0980463b271b6e78269b3828841bb6"
+      },
+      "license_declaration": "Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "tpr/sources/vulkan-utility-1.4.341/licenses/LICENSE.md",
+          "sha256": "69760673abf91cfd0280ae73739a29c078f493804d9016a122b3b189b48ad6e6",
+          "size": 304
+        },
+        {
+          "source_path": "LICENSES/Apache-2.0.txt",
+          "mirror": "tpr/sources/vulkan-utility-1.4.341/licenses/LICENSES/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        }
+      ]
+    },
+    {
+      "name": "shaderc",
+      "version": "2025.4",
+      "git_commit": "73743588fe9c39f2f1c780a087d94afac691a189",
+      "archive_filename": "shaderc-v2025.4.tar.gz",
+      "archive_root": "shaderc-2025.4",
+      "registry_manifest": "tpr/sources/shaderc-2025.4/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/shaderc.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/shaderc.json",
+      "sha256": "8a89fb6612ace8954470aae004623374a8fc8b7a34a4277bee5527173b064faf",
+      "size": 228962,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "02208e374e610808c4ca3b1e7627b82d"
+      },
+      "license_declaration": "Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/shaderc-2025.4/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        },
+        {
+          "source_path": "kokoro/linux/license_check.sh",
+          "mirror": "tpr/sources/shaderc-2025.4/licenses/kokoro/linux/license_check.sh",
+          "sha256": "8b88ba8d4d0c8f912ef139f06d2b091b58e633eb7bfbe7e28ad6f53b56489e7c",
+          "size": 945
+        },
+        {
+          "source_path": "license-checker.cfg",
+          "mirror": "tpr/sources/shaderc-2025.4/licenses/license-checker.cfg",
+          "sha256": "ff39f110e4b17c6a2e24eacc14a32674c2c1f2385828bdc23a0399d3475fffc8",
+          "size": 872
+        },
+        {
+          "source_path": "third_party/LICENSE.glslang",
+          "mirror": "tpr/sources/shaderc-2025.4/licenses/third_party/LICENSE.glslang",
+          "sha256": "b5a00e94f058edc87e05978329b55730d8689abe61205d9018443d03de4f07da",
+          "size": 8280
+        },
+        {
+          "source_path": "third_party/LICENSE.spirv-tools",
+          "mirror": "tpr/sources/shaderc-2025.4/licenses/third_party/LICENSE.spirv-tools",
+          "sha256": "47e20ce182bc68fab1a0cfb129b03c326aaf4f2b6b7905aa9d376d31018bd29f",
+          "size": 11650
+        }
+      ]
+    },
+    {
+      "name": "glslang",
+      "version": "d213562e35573012b6348b2d584457c3704ac09b",
+      "git_commit": "d213562e35573012b6348b2d584457c3704ac09b",
+      "archive_filename": "glslang-d213562e35573012b6348b2d584457c3704ac09b.tar.gz",
+      "archive_root": "glslang-d213562e35573012b6348b2d584457c3704ac09b",
+      "registry_manifest": "tpr/sources/glslang-d213562e35573012b6348b2d584457c3704ac09b/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/glslang.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/glslang.json",
+      "sha256": "9537e5896d10bc493775675153687e078d83aead3a5a3b90e9ac28af2bc966fc",
+      "size": 4233045,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "ac98b61f77ffade6bf819e342dc40c4c"
+      },
+      "license_declaration": "BSD-3-Clause AND MIT AND Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE.txt",
+          "mirror": "tpr/sources/glslang-d213562e35573012b6348b2d584457c3704ac09b/licenses/LICENSE.txt",
+          "sha256": "adb783e734e906d1f46db5df29991dbde84bdb0ceab502ac2febb44fe3c2b5f4",
+          "size": 54705
+        },
+        {
+          "source_path": "license-checker.cfg",
+          "mirror": "tpr/sources/glslang-d213562e35573012b6348b2d584457c3704ac09b/licenses/license-checker.cfg",
+          "sha256": "9bc9f672f477b34b7d1023a416616c00432c1e42db07f4a7143210144a87ef83",
+          "size": 1686
+        }
+      ]
+    },
+    {
+      "name": "spirv-headers",
+      "version": "vulkan-sdk-1.4.341.0",
+      "git_commit": "04f10f650d514df88b76d25e83db360142c7b174",
+      "archive_filename": "spirv-headers-vulkan-sdk-1.4.341.0.tar.gz",
+      "archive_root": "SPIRV-Headers-vulkan-sdk-1.4.341.0",
+      "registry_manifest": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/spirv-headers.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/spirv-headers.json",
+      "sha256": "cab0a654c4917e16367483296b44cdb1d614e3120c721beafcd37e3a8580486c",
+      "size": 561287,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "38bcd69036ec1443ac19b417bef8685e"
+      },
+      "license_declaration": "MIT-Khronos-old AND MIT AND CC-BY-4.0",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/licenses/LICENSE",
+          "sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+          "size": 23503
+        },
+        {
+          "source_path": "LICENSES/CC-BY-4.0.txt",
+          "mirror": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/licenses/LICENSES/CC-BY-4.0.txt",
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+          "size": 17023
+        },
+        {
+          "source_path": "LICENSES/MIT.txt",
+          "mirror": "tpr/sources/spirv-headers-vulkan-sdk-1.4.341.0/licenses/LICENSES/MIT.txt",
+          "sha256": "6d7c9e9d7d12c8d3753bdb24417b84819ba4d6c2f025c37948113d86dc81eef9",
+          "size": 1087
+        }
+      ]
+    },
+    {
+      "name": "spirv-tools",
+      "version": "2026.1",
+      "git_commit": "fbe4f3ad913c44fe8700545f8ffe35d1382b7093",
+      "archive_filename": "spirv-tools-v2026.1.tar.gz",
+      "archive_root": "SPIRV-Tools-2026.1",
+      "registry_manifest": "tpr/sources/spirv-tools-2026.1/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/spirv-tools.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/spirv-tools.json",
+      "sha256": "35dc16cf2dc64be5b6bbbe86d210e6f4a82b070cffd751605a3365cd8bce2d7e",
+      "size": 3453737,
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "35dc16cf2dc64be5b6bbbe86d210e6f4a82b070cffd751605a3365cd8bce2d7e"
+      },
+      "license_declaration": "Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/spirv-tools-2026.1/licenses/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        },
+        {
+          "source_path": "utils/vscode/src/lsp/LICENSE",
+          "mirror": "tpr/sources/spirv-tools-2026.1/licenses/utils/vscode/src/lsp/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        }
+      ]
+    },
+    {
+      "name": "spirv-reflect",
+      "version": "vulkan-sdk-1.4.341.0",
+      "git_commit": "62ca825c692334ed758027b908c5aafbbc76243f",
+      "archive_filename": "spirv-reflect-vulkan-sdk-1.4.341.0.tar.gz",
+      "archive_root": "SPIRV-Reflect-vulkan-sdk-1.4.341.0",
+      "registry_manifest": "tpr/sources/spirv-reflect-vulkan-sdk-1.4.341.0/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/spirv-reflect.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/spirv-reflect.json",
+      "sha256": "3f55d5ad7dc6f02214633c851d4ea3872abe3a1ecec6b5d80cfc3255012c4b6a",
+      "size": 348384,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "a604577ed56b6687a3bbfa88ab3a6712"
+      },
+      "license_declaration": "Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/spirv-reflect-vulkan-sdk-1.4.341.0/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        }
+      ]
+    },
+    {
+      "name": "vma",
+      "version": "3.2.1",
+      "git_commit": "c788c52156f3ef7bc7ab769cb03c110a53ac8fcb",
+      "archive_filename": "vma-v3.2.1.tar.gz",
+      "archive_root": "VulkanMemoryAllocator-3.2.1",
+      "registry_manifest": "tpr/sources/vma-3.2.1/manifest.json",
+      "entry": "build_files/ohos/deps_vulkan_sources/entries/vma.json",
+      "inventory": "build_files/ohos/deps_vulkan_sources/inventories/vma.json",
+      "sha256": "5e7749504cb802427ffb7bec38a0b6a15db46ae253f00560acb3e624d9fe695c",
+      "size": 984837,
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "f32b8374858566854e5f77564ea2e16d"
+      },
+      "license_declaration": "MIT",
+      "notices": [
+        {
+          "source_path": "LICENSE.txt",
+          "mirror": "tpr/sources/vma-3.2.1/licenses/LICENSE.txt",
+          "sha256": "8d70e4cf2a9941f6454da71cd60e38484dd3e34810c824760d550e982af6d97a",
+          "size": 1099
+        }
+      ]
+    }
+  ],
+  "patches": [
+    {
+      "name": "vulkan-utility",
+      "path": "build_files/ohos/deps_vulkan_sources/patches/vul-ohos-borrowed-handles.patch",
+      "sha256": "bc6a99d576876db8fa2469530baa937bd0001a5a3c11206638d134338bc90865",
+      "files": [
+        {
+          "path": "scripts/generators/safe_struct_generator.py",
+          "before_sha256": "679019769c5c76f23e6a33521ad7d5fa57aef0968806cbd46c26b85ca1f60782",
+          "after_sha256": "90231405f11d75a6f5bf878eb9d1b3fe0624633fab4917e0d1ab18e13ac20538"
+        },
+        {
+          "path": "src/vulkan/vk_safe_struct_vendor.cpp",
+          "before_sha256": "b9ac9ded1185a06337dde43406fb139cc831b33170dada7e0e14c5d741870b04",
+          "after_sha256": "de9acd1fabd568eb383896e16787de26fc022ba60bf9fb329d937469987216ee"
+        }
+      ],
+      "ownership": "OH_NativeBuffer/OHNativeWindow borrowed opaque references; no object new/delete, no acquire/ref/unref/release, caller retains lifetime; pNext safe copies remain owned normally",
+      "reference": "Same pinned generator abstract_types AHardwareBuffer and QNX _screen_context/_screen_window/_screen_buffer policies; matching generated Android/QNX constructors/assignment/initialize/dtor",
+      "source_abi": "No header, registry, type layout, stype, compiler version or target removal changes"
+    }
+  ],
+  "baseline_recipe_inputs": [
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1"
+    },
+    {
+      "path": "build_files/build_environment/cmake/shaderc.cmake",
+      "sha256": "d5c5abe8c48a7698b0ad9e2a86baa6b64d0fd91f44654c452690e854dc6145c4"
+    },
+    {
+      "path": "build_files/build_environment/cmake/shaderc_deps.cmake",
+      "sha256": "463e0739fa7f3323998a2a0872449addabf705a57c7271987e804f45660ed3c5"
+    },
+    {
+      "path": "build_files/build_environment/cmake/vulkan.cmake",
+      "sha256": "9e64d930e51386d4206a4b477a02e828aa00c78d224625fc602891ea7ed51f2f"
+    },
+    {
+      "path": "build_files/cmake/Modules/FindShaderC.cmake",
+      "sha256": "4e85eb89525dfbd6ebf450b47097f6e6c1ab40e916adcc4b902ec1774028c3c3"
+    },
+    {
+      "path": "build_files/cmake/Modules/FindVulkan.cmake",
+      "sha256": "a2a825c14efb455b8dd2d09c72ffbca1a595ae4b83e2888af27134c3051c2b4e"
+    }
+  ],
+  "runtime_loader": "Existing caller-explicit system Vulkan loader; no vendored loader/ICD/device/WSI acceptance"
+}

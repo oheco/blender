@@ -1,0 +1,189 @@
+--- a/scripts/generators/safe_struct_generator.py
++++ b/scripts/generators/safe_struct_generator.py
+@@ -51,6 +51,10 @@
+         # since we cannot make a copy.
+         self.abstract_types = [
+             'AHardwareBuffer',
++            # OHOS native handles are opaque, borrowed references like AHardwareBuffer.
++            # Safe structs do not acquire/release refs or own the pointed-to objects.
++            'OH_NativeBuffer',
++            'OHNativeWindow',
+             '_screen_context',
+             '_screen_window',
+             '_screen_buffer'
+--- a/src/vulkan/vk_safe_struct_vendor.cpp
++++ b/src/vulkan/vk_safe_struct_vendor.cpp
+@@ -12851,9 +12851,7 @@
+     if (copy_pnext) {
+         pNext = SafePnextCopy(in_struct->pNext, copy_state);
+     }
+-    if (in_struct->buffer) {
+-        buffer = new OH_NativeBuffer(*in_struct->buffer);
+-    }
++    buffer = in_struct->buffer;
+ }
+ 
+ safe_VkImportNativeBufferInfoOHOS::safe_VkImportNativeBufferInfoOHOS()
+@@ -12861,58 +12859,37 @@
+ 
+ safe_VkImportNativeBufferInfoOHOS::safe_VkImportNativeBufferInfoOHOS(const safe_VkImportNativeBufferInfoOHOS& copy_src) {
+     sType = copy_src.sType;
+-    buffer = nullptr;
+-    pNext = SafePnextCopy(copy_src.pNext);
+-
+-    if (copy_src.buffer) {
+-        buffer = new OH_NativeBuffer(*copy_src.buffer);
+-    }
++    pNext = SafePnextCopy(copy_src.pNext);
++    buffer = copy_src.buffer;
+ }
+ 
+ safe_VkImportNativeBufferInfoOHOS& safe_VkImportNativeBufferInfoOHOS::operator=(const safe_VkImportNativeBufferInfoOHOS& copy_src) {
+     if (&copy_src == this) return *this;
+ 
+-    if (buffer) delete buffer;
+-    FreePnextChain(pNext);
+-
+-    sType = copy_src.sType;
+-    buffer = nullptr;
+-    pNext = SafePnextCopy(copy_src.pNext);
+-
+-    if (copy_src.buffer) {
+-        buffer = new OH_NativeBuffer(*copy_src.buffer);
+-    }
+-
+-    return *this;
+-}
+-
+-safe_VkImportNativeBufferInfoOHOS::~safe_VkImportNativeBufferInfoOHOS() {
+-    if (buffer) delete buffer;
+-    FreePnextChain(pNext);
+-}
++    FreePnextChain(pNext);
++
++    sType = copy_src.sType;
++    pNext = SafePnextCopy(copy_src.pNext);
++    buffer = copy_src.buffer;
++
++    return *this;
++}
++
++safe_VkImportNativeBufferInfoOHOS::~safe_VkImportNativeBufferInfoOHOS() { FreePnextChain(pNext); }
+ 
+ void safe_VkImportNativeBufferInfoOHOS::initialize(const VkImportNativeBufferInfoOHOS* in_struct,
+                                                    [[maybe_unused]] PNextCopyState* copy_state) {
+-    if (buffer) delete buffer;
+-    FreePnextChain(pNext);
+-    sType = in_struct->sType;
+-    buffer = nullptr;
+-    pNext = SafePnextCopy(in_struct->pNext, copy_state);
+-
+-    if (in_struct->buffer) {
+-        buffer = new OH_NativeBuffer(*in_struct->buffer);
+-    }
++    FreePnextChain(pNext);
++    sType = in_struct->sType;
++    pNext = SafePnextCopy(in_struct->pNext, copy_state);
++    buffer = in_struct->buffer;
+ }
+ 
+ void safe_VkImportNativeBufferInfoOHOS::initialize(const safe_VkImportNativeBufferInfoOHOS* copy_src,
+                                                    [[maybe_unused]] PNextCopyState* copy_state) {
+     sType = copy_src->sType;
+-    buffer = nullptr;
+-    pNext = SafePnextCopy(copy_src->pNext);
+-
+-    if (copy_src->buffer) {
+-        buffer = new OH_NativeBuffer(*copy_src->buffer);
+-    }
++    pNext = SafePnextCopy(copy_src->pNext);
++    buffer = copy_src->buffer;
+ }
+ 
+ safe_VkMemoryGetNativeBufferInfoOHOS::safe_VkMemoryGetNativeBufferInfoOHOS(const VkMemoryGetNativeBufferInfoOHOS* in_struct,
+@@ -21957,9 +21934,7 @@
+     if (copy_pnext) {
+         pNext = SafePnextCopy(in_struct->pNext, copy_state);
+     }
+-    if (in_struct->window) {
+-        window = new OHNativeWindow(*in_struct->window);
+-    }
++    window = in_struct->window;
+ }
+ 
+ safe_VkSurfaceCreateInfoOHOS::safe_VkSurfaceCreateInfoOHOS()
+@@ -21968,61 +21943,40 @@
+ safe_VkSurfaceCreateInfoOHOS::safe_VkSurfaceCreateInfoOHOS(const safe_VkSurfaceCreateInfoOHOS& copy_src) {
+     sType = copy_src.sType;
+     flags = copy_src.flags;
+-    window = nullptr;
+-    pNext = SafePnextCopy(copy_src.pNext);
+-
+-    if (copy_src.window) {
+-        window = new OHNativeWindow(*copy_src.window);
+-    }
++    pNext = SafePnextCopy(copy_src.pNext);
++    window = copy_src.window;
+ }
+ 
+ safe_VkSurfaceCreateInfoOHOS& safe_VkSurfaceCreateInfoOHOS::operator=(const safe_VkSurfaceCreateInfoOHOS& copy_src) {
+     if (&copy_src == this) return *this;
+ 
+-    if (window) delete window;
+     FreePnextChain(pNext);
+ 
+     sType = copy_src.sType;
+     flags = copy_src.flags;
+-    window = nullptr;
+-    pNext = SafePnextCopy(copy_src.pNext);
+-
+-    if (copy_src.window) {
+-        window = new OHNativeWindow(*copy_src.window);
+-    }
+-
+-    return *this;
+-}
+-
+-safe_VkSurfaceCreateInfoOHOS::~safe_VkSurfaceCreateInfoOHOS() {
+-    if (window) delete window;
+-    FreePnextChain(pNext);
+-}
++    pNext = SafePnextCopy(copy_src.pNext);
++    window = copy_src.window;
++
++    return *this;
++}
++
++safe_VkSurfaceCreateInfoOHOS::~safe_VkSurfaceCreateInfoOHOS() { FreePnextChain(pNext); }
+ 
+ void safe_VkSurfaceCreateInfoOHOS::initialize(const VkSurfaceCreateInfoOHOS* in_struct,
+                                               [[maybe_unused]] PNextCopyState* copy_state) {
+-    if (window) delete window;
+     FreePnextChain(pNext);
+     sType = in_struct->sType;
+     flags = in_struct->flags;
+-    window = nullptr;
+-    pNext = SafePnextCopy(in_struct->pNext, copy_state);
+-
+-    if (in_struct->window) {
+-        window = new OHNativeWindow(*in_struct->window);
+-    }
++    pNext = SafePnextCopy(in_struct->pNext, copy_state);
++    window = in_struct->window;
+ }
+ 
+ void safe_VkSurfaceCreateInfoOHOS::initialize(const safe_VkSurfaceCreateInfoOHOS* copy_src,
+                                               [[maybe_unused]] PNextCopyState* copy_state) {
+     sType = copy_src->sType;
+     flags = copy_src->flags;
+-    window = nullptr;
+-    pNext = SafePnextCopy(copy_src->pNext);
+-
+-    if (copy_src->window) {
+-        window = new OHNativeWindow(*copy_src->window);
+-    }
++    pNext = SafePnextCopy(copy_src->pNext);
++    window = copy_src->window;
+ }
+ #endif  // VK_USE_PLATFORM_OHOS
+ 

@@ -1,0 +1,23 @@
+{
+  "name": "attrs",
+  "version": "25.3.0",
+  "kind": "source",
+  "filename": "attrs-25.3.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/5a/b0/1367933a8532ee6ff8d63537de4f1177af4bff9f3e829baf7331f595bb24/attrs-25.3.0.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE",
+    "docs/license.md"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 812032,
+  "sha256": "75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 812032,
+      "sha256": "75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b"
+    }
+  ]
+}

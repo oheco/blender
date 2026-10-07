@@ -1,0 +1,822 @@
+{
+  "archive_root": "minizip-ng-4.0.10",
+  "source_archive_sha256": "c362e35ee973fa7be58cc5e38a4a6c23cc8f7e652555daf4f115a9eb2d3a6be7",
+  "members": 138,
+  "files": [
+    {
+      "path": ".clang-format",
+      "sha256": "da7cfe2b8a5225584ba1c9d3fe9c1f739f565740a453eaa18f9ede5af88bf3a2",
+      "size": 578,
+      "mode": 436
+    },
+    {
+      "path": ".codecov.yaml",
+      "sha256": "5573926fd9af0d6ce5440385fab52ac0480d3a38323d4544e09253703991c40b",
+      "size": 217,
+      "mode": 436
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "sha256": "4d43b1552017a5d078144f1ccd3b65725357a5b82e7242a7d306956668f24a4c",
+      "size": 17,
+      "mode": 436
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "3fbf3e04aead1d954d4a432a4b98f05bc0c813f1dbfa3501f55f5ba4b0856636",
+      "size": 155,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "sha256": "ccf3d3983eb2119e521bd932b1ada3d1f4a434e4bda90d38c81dd1130cde1348",
+      "size": 11221,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "sha256": "b9cffedf07972dde48f4a93d344dd25d0b890b895d11c3a2dec2f5c942d8bb49",
+      "size": 1034,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/fuzz.yml",
+      "sha256": "8dfcab99b4122874654da12a5836086b7a6b7e5107e9ec9983ae8775a4795803",
+      "size": 731,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "sha256": "aa399548bcda11b7bed9ef5fb0fefe8994daad1173ed32e123d1cf8d807a02d7",
+      "size": 947,
+      "mode": 436
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "587e5e59062d0c11496d481818f4f1fa04e82b907db1bd6bc78a0dce6604dd46",
+      "size": 77,
+      "mode": 436
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "092003ee433916fec15923ed42cb5e444062dbf15bf94ffb65bb944829fd87eb",
+      "size": 36688,
+      "mode": 436
+    },
+    {
+      "path": "INDEX.md",
+      "sha256": "ef1d044a364b69af0d90c86b3f4c215e32e95cfd7893387556e953519c9e8066",
+      "size": 1547,
+      "mode": 436
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "675181c03fc1302a1c8554c00f7be9bb420c5dbc9dcc2013433cec144413de03",
+      "size": 877,
+      "mode": 436
+    },
+    {
+      "path": "README.md",
+      "sha256": "0aeb772bd27b73cb70d0e1000be7be236c57b471593a41ac96362c1614eee1f2",
+      "size": 8666,
+      "mode": 436
+    },
+    {
+      "path": "cmake/FindZLIBNG.cmake",
+      "sha256": "0c98e8be7dc5feb077ec6fd9ff385a737090a3554205738cfc507a8189b2f914",
+      "size": 986,
+      "mode": 436
+    },
+    {
+      "path": "cmake/clone-repo.cmake",
+      "sha256": "396a6f0414be8a42cfb59c25d0d593f91d432a61c77c42db9923cafcdd5932f4",
+      "size": 1146,
+      "mode": 436
+    },
+    {
+      "path": "cmake/detect-sanitizer.cmake",
+      "sha256": "d5adf1e8c00910dae73d67a918780af336ea157a845847ba5a89138108292e79",
+      "size": 5793,
+      "mode": 436
+    },
+    {
+      "path": "compat/crypt.h",
+      "sha256": "99b705003a3edd0d56edbf4eff1985e5fd7caf06b2de0abafe9725b12a1d9ee2",
+      "size": 3380,
+      "mode": 436
+    },
+    {
+      "path": "compat/ioapi.c",
+      "sha256": "d3238ad8f448cdfee186fc79003f6d9a9341d681856b26c91ee5596828b00ed4",
+      "size": 9194,
+      "mode": 436
+    },
+    {
+      "path": "compat/ioapi.h",
+      "sha256": "55baa2354beea52c5b6884236f20bd9a23b57cfffce744086101ab8bc40bf0bd",
+      "size": 3481,
+      "mode": 436
+    },
+    {
+      "path": "compat/unzip.c",
+      "sha256": "221132fa76ae3c5e22c14f962e5060cbb2afaaebc1d47fb3331d3934343d34b3",
+      "size": 22069,
+      "mode": 436
+    },
+    {
+      "path": "compat/unzip.h",
+      "sha256": "0fb403dbfee5ce31a7ac92a0d8baa1647fdc2f034f17b49d73e32bb09ff064c9",
+      "size": 10398,
+      "mode": 436
+    },
+    {
+      "path": "compat/zip.c",
+      "sha256": "de0f6ad978f84e34da6e34d70348032c6a368ed805b956ab8b47f49f41d3c5be",
+      "size": 16215,
+      "mode": 436
+    },
+    {
+      "path": "compat/zip.h",
+      "sha256": "9262faa46d4be7a99c56c7b104cc428385f015963ad4752e9a33e76d40b15ecd",
+      "size": 9367,
+      "mode": 436
+    },
+    {
+      "path": "doc/README.md",
+      "sha256": "ba65e007a70c2dc515a828267a0f4bfd777475dc025b9be203409c03875cbb92",
+      "size": 9819,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_compress_level.md",
+      "sha256": "e04ab7e9336f1b5f74a37ca90faa0a1d885a9a349116c190bb2306e3a24bf04e",
+      "size": 296,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_compress_method.md",
+      "sha256": "b3c2910725c799d11f05a6d970650d259afceebbb1f4692773dd747871df3536",
+      "size": 417,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_encoding.md",
+      "sha256": "a4579edf056e1c8e0a3e6195db091644cc174083c64facb40043ea9bb964968d",
+      "size": 601,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_error.md",
+      "sha256": "21bf53e050e89af8989cf91b72c6ea5f3cbcd588a86c9bc83c788248f297b6c1",
+      "size": 1147,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_extrafield.md",
+      "sha256": "4c2dcae3cbe438726d1091f053b41074f582b6e8792a6efefd50a77fdde0ee1d",
+      "size": 994,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_hash.md",
+      "sha256": "865554f67df25ba7d63f703905b748294e05d54a3516f5c26a12e573ca8ac2d8",
+      "size": 441,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_host_system.md",
+      "sha256": "e3c3366b4f6e3d141ae78c0dfbc2f2ac35ba5d8d644cad1491ef5f52ba8c48b7",
+      "size": 753,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_open_mode.md",
+      "sha256": "c6d13ab7087537c3997e960fffa8846cef3d3629d9fbc349742e149555acae57",
+      "size": 351,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_os.md",
+      "sha256": "7b30d3d3d5fc546307197719add4716bb5c68539a58bc52ab66ea84de3602656",
+      "size": 20020,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_seek.md",
+      "sha256": "b000b71c36138b76fd00c6c2d72306515f3aacac25fbaf38d4ea6326573c340b",
+      "size": 184,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_zip.md",
+      "sha256": "06a396820517fa7eea8e2b7ba90f503b19e2939f8e033ad896881846443f9e77",
+      "size": 44457,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_zip64.md",
+      "sha256": "54e7ededa0a133e2550f105509dc509cb02e9e9534cbeb9c45d344d97877db2f",
+      "size": 638,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_zip_file.md",
+      "sha256": "9ef10d0e5b88222d0de33123be12be4d2f1ad797ef7875b0fda41f6b51959363",
+      "size": 4013,
+      "mode": 436
+    },
+    {
+      "path": "doc/mz_zip_rw.md",
+      "sha256": "f08c16e261b1ba5cc980da9ebbb0293958ffca0725f8e19094a2009edd04e141",
+      "size": 50206,
+      "mode": 436
+    },
+    {
+      "path": "doc/zip/appnote.iz.txt",
+      "sha256": "935e0a15da905ab8adf3389d979c350a7fbeb7e13b49a70a4663e4ce5113db15",
+      "size": 162611,
+      "mode": 436
+    },
+    {
+      "path": "doc/zip/appnote.txt",
+      "sha256": "28503f693a619cea79bec63f9836014a71e449e32db0e4d1bf1cad44391ad40f",
+      "size": 156671,
+      "mode": 436
+    },
+    {
+      "path": "doc/zip/extra.fld.txt",
+      "sha256": "6ba9f24c8cf38661e462ad1d90b59c93afd6c0581e01892726c6de5f12d4f3ee",
+      "size": 56313,
+      "mode": 436
+    },
+    {
+      "path": "doc/zip/winzip_aes.md",
+      "sha256": "7a8640b31487bc5973b075722ff6fcff671b22bd75fcb137b66837a1dcb761be",
+      "size": 28134,
+      "mode": 436
+    },
+    {
+      "path": "doc/zip/winzip_aes_attack.pdf",
+      "sha256": "3c2e1ee9cdb0fa05ca5b2cd62b49093c5580bfc33430373bace3a110f06759aa",
+      "size": 137937,
+      "mode": 436
+    },
+    {
+      "path": "minigzip.c",
+      "sha256": "1d89d764f41bdce56bcdf53c1337139efbed8f0f9cef7393cb2e408900edc8fe",
+      "size": 5662,
+      "mode": 436
+    },
+    {
+      "path": "minizip.c",
+      "sha256": "3644fc6f2b422b8f301eeb1638acc1660adee812f552940c5f4692f3801bfe8d",
+      "size": 23291,
+      "mode": 436
+    },
+    {
+      "path": "minizip.pc.cmakein",
+      "sha256": "b5dddad762f226ac547e58b21c1fe6de099d06e03121cfb118a3597c38cf2357",
+      "size": 429,
+      "mode": 436
+    },
+    {
+      "path": "mz.h",
+      "sha256": "3df53ad66c6fcbd5fda7505775a582d7bd7863777a5062382e4ed7dcf59bb0df",
+      "size": 6849,
+      "mode": 436
+    },
+    {
+      "path": "mz_crypt.c",
+      "sha256": "db885baaf89538bff3ec2701f62bcc10e989b24321995618caf38ed425262b0c",
+      "size": 7602,
+      "mode": 436
+    },
+    {
+      "path": "mz_crypt.h",
+      "sha256": "39294339b7b1edac874077c745ab0da18ec4436f3e5966196cf208ea153fd264",
+      "size": 2777,
+      "mode": 436
+    },
+    {
+      "path": "mz_crypt_apple.c",
+      "sha256": "dfca3c1b82e60a916929e3270db1db6ec2b27e4e1ea1b29e18d131440ad13704",
+      "size": 14826,
+      "mode": 436
+    },
+    {
+      "path": "mz_crypt_openssl.c",
+      "sha256": "00d93b9cc89558ef5180c65c35b502386eaec62470f522b3cc6fe547a434f334",
+      "size": 18478,
+      "mode": 436
+    },
+    {
+      "path": "mz_crypt_winvista.c",
+      "sha256": "31c1623eb83059c3e703655eb5fa19430e894caaece650c5485c9c2db70bb27b",
+      "size": 19797,
+      "mode": 436
+    },
+    {
+      "path": "mz_crypt_winxp.c",
+      "sha256": "9f47101a1a591a1efd917423b2eae2de6a4c4d45b3a5704115620db8e83fa43e",
+      "size": 15854,
+      "mode": 436
+    },
+    {
+      "path": "mz_os.c",
+      "sha256": "eea6fb855e2b67785f43f2b03ceddb1e52f71ef6d0aa786d5f0a76263fdec42e",
+      "size": 8993,
+      "mode": 436
+    },
+    {
+      "path": "mz_os.h",
+      "sha256": "bf66ffd2e6eae1a901319e2d4448c70216ce6aed53a5d674a90c89b2cdda464f",
+      "size": 5539,
+      "mode": 436
+    },
+    {
+      "path": "mz_os_posix.c",
+      "sha256": "712a0789e20fd6fc193733bd8d053883583fb4c16cc37d19e0ef17b3d738e5b0",
+      "size": 8948,
+      "mode": 436
+    },
+    {
+      "path": "mz_os_win32.c",
+      "sha256": "5583e25b5460eab6becbb039d0b331817b5044a42bc835b9a273e038942205ed",
+      "size": 19551,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm.c",
+      "sha256": "776585fac3cd0aa7528ef2449c0fc50c2423f0dd35a01d9a1d0dc567efb00aca",
+      "size": 15857,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm.h",
+      "sha256": "71aae9f20cdf3f698ab74a2d58e152b73175423ec6567e0391fe3aa6cfa4ce76",
+      "size": 5668,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_buf.c",
+      "sha256": "dd350c3d391b5df24634b23c85061cee9c49ad47051a4cd6ee2360150e4f0b04",
+      "size": 13876,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_buf.h",
+      "sha256": "1635825f9fa96c2727ab056e2feb2d8f24dbc56f8240892b3d62ba299511a7fd",
+      "size": 1302,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_bzip.c",
+      "sha256": "1945cf817187374d88d705a5df9ce62d1861b86f380a4805161eeffafeb8d4fc",
+      "size": 9665,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_bzip.h",
+      "sha256": "dc6a46adce2648db7f23231fa893923cd5e17ba3f5bf3a02b12b8ecd4bc7897d",
+      "size": 1405,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_libcomp.c",
+      "sha256": "6c6e069c5f255b8bced212404f89aa6e0a620d4dfc9020d5a5e4ba4f2a863e23",
+      "size": 9615,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_libcomp.h",
+      "sha256": "ef892f07acd57a1a0526d96c4fa18438ac8ae386fca70f23a347627348634b5f",
+      "size": 1433,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_lzma.c",
+      "sha256": "271c0afc45d6fab0ee0bcb58f2758802d9fbd77747d73b004c9c4e9b4457627d",
+      "size": 13256,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_lzma.h",
+      "sha256": "891b215ddab389049cbfd8550177eebc7b98b1aaae159edb1c051a1c9d816518",
+      "size": 1367,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_mem.c",
+      "sha256": "d50ec76d17e5926d80e77fa113981730d875959a45eaf61b476f9cbdc00d982b",
+      "size": 7423,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_mem.h",
+      "sha256": "570b1bb7740035dd399e336f0eab556cd1a15c74cbec70ada54b6946ab04e297",
+      "size": 1683,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_os.h",
+      "sha256": "5e6bdc9de6b54353be95fc6ee5e0f9d363fbbe40cb94d7134d52e4ce4c60c9a5",
+      "size": 1166,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_os_posix.c",
+      "sha256": "39da09f147b1c42e25e0bb0d3ed178d5303d9ad8f70da3e6ecee2f3dcfb48d57",
+      "size": 5537,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_os_win32.c",
+      "sha256": "0f7c40374ba8ee57d04d077af284a0e64f9f25cf24e31c315d691ab3be61eeb0",
+      "size": 8226,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_pkcrypt.c",
+      "sha256": "628d06745def3734422d1586dba0affb02fd1d4cc3eb2e8b285200ea19f7fe26",
+      "size": 10924,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_pkcrypt.h",
+      "sha256": "d6c5d946dd0788951600cb54e8e40790e763cf646a0e704b9aee060a19726b72",
+      "size": 1699,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_split.c",
+      "sha256": "0d0ce91c6eb13e690b3ce68c93f9bf43fc7205573e48196c282b8e18372c770c",
+      "size": 12879,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_split.h",
+      "sha256": "180ca6074b172f652b96d30bfdeb96c10e69975b8e1b5d9e58aca41f10c2002a",
+      "size": 1374,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_wzaes.c",
+      "sha256": "e6014112c038774cab373eb31528e9fb44478ce3a864f82f89c4e0705ff3ff9f",
+      "size": 11514,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_wzaes.h",
+      "sha256": "755ab26a33884fd5ec70bfdce5d7a5fe37120d057120e289f380aee0abc15f6f",
+      "size": 1533,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_zlib.c",
+      "sha256": "09aba27912927281e36c38ee4afc7b77c1d7048b78570a805d894f8d71a12889",
+      "size": 10274,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_zlib.h",
+      "sha256": "ffd2c061512a2a54e07a6b9372fbac7d347499936fa67e42aa9068a88912d209",
+      "size": 1367,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_zstd.c",
+      "sha256": "ce05e43d2620b1f2001324907ca0589d6ac3fd2da8cfcdd78c65f8fcfc8a2909",
+      "size": 9353,
+      "mode": 436
+    },
+    {
+      "path": "mz_strm_zstd.h",
+      "sha256": "623d8ce8cfb5c2e1f5c47e4576b33b1c69a0ae75a07741c8025ee638f3ffb512",
+      "size": 1403,
+      "mode": 436
+    },
+    {
+      "path": "mz_zip.c",
+      "sha256": "18258290161aa4cd6c795a063b55ae23d746b3d2dbb67d4162d35369fa2ef30d",
+      "size": 104504,
+      "mode": 436
+    },
+    {
+      "path": "mz_zip.h",
+      "sha256": "6ddd2280ec0fa8272aed6d565075db10ae73b0d8209f9e5df7bebaba78e5cee0",
+      "size": 10867,
+      "mode": 436
+    },
+    {
+      "path": "mz_zip_rw.c",
+      "sha256": "c8a32fe2cb73a79c5e97ff964a8f1679b565351fbabde6acbd28740f69558558",
+      "size": 61408,
+      "mode": 436
+    },
+    {
+      "path": "mz_zip_rw.h",
+      "sha256": "61424d6ad133c7654ae2f2dd037e20d7aa1f263b071955f6dfbda0b6c3cd900e",
+      "size": 11531,
+      "mode": 436
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "sha256": "beaac193a98a118d8442ea2e16dac20777335057a1fe07c1f27e9c5e9ab726ac",
+      "size": 2410,
+      "mode": 436
+    },
+    {
+      "path": "test/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/standalone.c",
+      "sha256": "434c44c97589409955a33a5b44b57872d2040f402e230f0100063149ff1da3ca",
+      "size": 2471,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer.c",
+      "sha256": "b6c064745a167788fb6fbf5b53f541a830e665afc9c0014f05cda678571e22ca",
+      "size": 3417,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer.dict",
+      "sha256": "51d48927fd916b51633fc252bf333069ca56b8dcdc7fe6f635336fe2f96f2481",
+      "size": 286,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/as.zip",
+      "sha256": "09bb83d82407800fc7a5fa5764cdb6098674c9e94088852bc4d73a036571be29",
+      "size": 233,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/bzip2.zip",
+      "sha256": "2bdffc277d367160b8b212f8908bb7666a3985ef88212b86f376a134c9b3e7d5",
+      "size": 163941,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/comments.zip",
+      "sha256": "6b34696632d516ba29234c1dddf796be758421f74a25fb585d922613c8079cba",
+      "size": 220,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/corpus.zip",
+      "sha256": "0a8a80ef4efe04685ef82fe6dc6cc80fda9701642a96c4a31521831347db0e07",
+      "size": 71444,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/dot_dot_backslash_name.zip",
+      "sha256": "238aabc03f1d6a64c2f4c8d856552e2990a17779c376ae95e77c620af1dd836a",
+      "size": 139,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/encrypted_pkcrypt.zip",
+      "sha256": "2378032546f34ff78122c22bd5090a88c768eb685ad4ae514b66a3917bf8d33d",
+      "size": 198,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/encrypted_wzaes.zip",
+      "sha256": "04901b2ca80bbac14595b935fb3fc3e79aa7032f6a058353c22f157e6fce47c9",
+      "size": 204,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/gh.zip",
+      "sha256": "09e46b58ce28f811478093541028aebe2eb6f1074d1c925d1d40f5453d11bf90",
+      "size": 246,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/gh_739.zip",
+      "sha256": "d286de7cebe59e58b50d69f1242e6873f8099449cb80791cf1f62ee26786711e",
+      "size": 253,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/gh_740.zip",
+      "sha256": "d286de7cebe59e58b50d69f1242e6873f8099449cb80791cf1f62ee26786711e",
+      "size": 253,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/incorrect_number_entries.zip",
+      "sha256": "fd4fafdfb0cf6ed32d16a802f1cbb484d0eff9bf7c744dc5fa11a8410e912764",
+      "size": 131,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/infozip_symlinks.zip",
+      "sha256": "43e42ad8a9b59d9e3dc628100f0eed09fb7e80a33cf52f82dfe8a58eac515b54",
+      "size": 328,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/large_cd_comment.zip",
+      "sha256": "815d497a09b0eec86140b84ea788aa73499e6e9082767f135f8f3d750d2be26f",
+      "size": 65785,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/license_zstd.zip",
+      "sha256": "b55bbd300e031bb60717c6481d7c2fa1bd45f334be5b94345997832942f3d7c1",
+      "size": 734,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/lzma.zip",
+      "sha256": "49435bf7c3b4fa3724371e0fb1500b7da3e475a5b044b8e7c9d131d35f3b8533",
+      "size": 28864,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/permissions.zip",
+      "sha256": "aa0227c298f55aba60543aa174ea8a268904352fe92f38576822a2f83aa8f308",
+      "size": 634,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/signed.zip",
+      "sha256": "808da69463f7c894370af98948bb2d65f64ea27f305035aeb440fb1c78e7d396",
+      "size": 36122,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/storeonly.zip",
+      "sha256": "10be91b65ae959268529a0609d0d77a7b7a80d62f99b65107710330e93634232",
+      "size": 68373,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/tiny.zip",
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+      "size": 22,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/unsupported_permissions.zip",
+      "sha256": "3aa288800b110eb0a7b8c2a8eac8401075095ea157d0bc5c03321f8ba8c3b61d",
+      "size": 287,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/xz.zip",
+      "sha256": "cd8a6b13cdc1cc25ec06fa994e7a43ea2234eade07f121b0abd5ccdd5b1fc513",
+      "size": 48740,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus/zip64.zip",
+      "sha256": "02ad3be3667c8126645d757a15c62d9a933b4069b7fd08fcdfdf9e04c574b157",
+      "size": 215,
+      "mode": 436
+    },
+    {
+      "path": "test/fuzz/zip_fuzzer.c",
+      "sha256": "6009866409ddfc3a86448da26a5a88562571cb47ea07e428a89a76f18f405aef",
+      "size": 4014,
+      "mode": 436
+    },
+    {
+      "path": "test/random.bin",
+      "sha256": "2258238ace2cfc25d509ab199d2ce98444d3a1d14d85c47ede682cff949ef338",
+      "size": 131072,
+      "mode": 436
+    },
+    {
+      "path": "test/single.txt",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "size": 1,
+      "mode": 436
+    },
+    {
+      "path": "test/test.p12",
+      "sha256": "cd49fbb75daabd68eb2c4e8ee6e5e2e3891b1a9011df008048870c5ac14ede61",
+      "size": 2691,
+      "mode": 436
+    },
+    {
+      "path": "test/test.pem",
+      "sha256": "6eef712c1de4a23a820bf7bce6cd3915f8024c8043f99e3eda4e154ad25e5819",
+      "size": 3663,
+      "mode": 436
+    },
+    {
+      "path": "test/test_compat.cc",
+      "sha256": "29505e4564e15bfa9e148f826131f929554e6af382d45b5cdce37e5c99a36e1b",
+      "size": 9497,
+      "mode": 436
+    },
+    {
+      "path": "test/test_crypt.cc",
+      "sha256": "1ede2116fe50b41dac74227766a58223172d2055cf61ac814cb7af0e0f63a928",
+      "size": 18898,
+      "mode": 436
+    },
+    {
+      "path": "test/test_encoding.cc",
+      "sha256": "6cef8a0a74454ab6b4b46e358708a8420715ccd983bc97b5ba611b71cebd5408",
+      "size": 847,
+      "mode": 436
+    },
+    {
+      "path": "test/test_file.cc",
+      "sha256": "2af68ae7d6ca42085f3072df359d51bcdbfcbba793128186e7075d23cd2c4f9f",
+      "size": 1182,
+      "mode": 436
+    },
+    {
+      "path": "test/test_main.cc",
+      "sha256": "82d073997688faab9e06ea53c96a1f304d989b32b17bf4b2854e0fac44221b5e",
+      "size": 271,
+      "mode": 436
+    },
+    {
+      "path": "test/test_path.cc",
+      "sha256": "28d238428dbbd056b6587dc69c6d53151abcaf38e560d77bbae9c9d74ca92edf",
+      "size": 2824,
+      "mode": 436
+    },
+    {
+      "path": "test/test_stream.cc",
+      "sha256": "e944389e9ddeb899f3ec47b15b5523b5243723917fe5c32cd45614c8c2ad9eca",
+      "size": 8430,
+      "mode": 436
+    },
+    {
+      "path": "test/test_stream_compress.cc",
+      "sha256": "7b1b79514ab101b4ae35a5875b46700fa209b919b03d94db50d4cb43e501c3b9",
+      "size": 4650,
+      "mode": 436
+    },
+    {
+      "path": "test/test_stream_crypt.cc",
+      "sha256": "641ea4b3a7da1fcef00ac1bc96bda26edcfa6b266070e28d5d12216067f3a165",
+      "size": 3992,
+      "mode": 436
+    },
+    {
+      "path": "test/uniform.bin",
+      "sha256": "3805eb7dbc09404924ad77bb3aac04facd9da2ad49044565ed9d6261f6776b85",
+      "size": 98304,
+      "mode": 436
+    }
+  ],
+  "directories": [
+    {
+      "path": ".github",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows",
+      "mode": 509
+    },
+    {
+      "path": "cmake",
+      "mode": 509
+    },
+    {
+      "path": "compat",
+      "mode": 509
+    },
+    {
+      "path": "doc",
+      "mode": 509
+    },
+    {
+      "path": "doc/zip",
+      "mode": 509
+    },
+    {
+      "path": "test",
+      "mode": 509
+    },
+    {
+      "path": "test/fuzz",
+      "mode": 509
+    },
+    {
+      "path": "test/fuzz/unzip_fuzzer_seed_corpus",
+      "mode": 509
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "LICENSE",
+      "sha256": "675181c03fc1302a1c8554c00f7be9bb420c5dbc9dcc2013433cec144413de03",
+      "size": 877
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

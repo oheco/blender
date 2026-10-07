@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "registry_id": "tpr/sources/sse2neon-227cc413fb2d50b2a10073087be96b59d5364aea",
+  "original_archive_sha256": "3427a495743bb6fd1b5f9f806b80f57d67b1ac7ccf39a5f44aedd487fd7e6da1",
+  "files": [
+    {
+      "path": ".ci/check-format.sh",
+      "size": 302,
+      "sha256": "d19bbdfc2c492546a6625328abc948e5b4b7a5b9980ae1fdd02f478937fbdca0",
+      "mode": 493
+    },
+    {
+      "path": ".ci/common.sh",
+      "size": 497,
+      "sha256": "91ce92d6eeb49e7aab35a5c764051ded9273e8009fcabe1cccf925c900106941",
+      "mode": 420
+    },
+    {
+      "path": ".ci/cross-check.sh",
+      "size": 560,
+      "sha256": "1be84c5ae653f3ac0db82434622d4f127fa0108ed9013056e35c7ba9ad52d774",
+      "mode": 493
+    },
+    {
+      "path": ".ci/cross-tool.sh",
+      "size": 579,
+      "sha256": "8742449c2f626cfb5f53e97e5cb3e523cdd6b2c9b492bfdfe490b4891cb02324",
+      "mode": 493
+    },
+    {
+      "path": ".clang-format",
+      "size": 500,
+      "sha256": "bd1f091e07e4c1458ea6a1f3fcb8c504c630c4bb7826629d188c057ee4e6a85a",
+      "mode": 420
+    },
+    {
+      "path": ".gitattributes",
+      "size": 71,
+      "sha256": "ec45250b69fabe9acc14aea32db1b3d4d7c48b906b24b74fc2868481e7315888",
+      "mode": 420
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "size": 157,
+      "sha256": "170ff1fd380a1c1f580d98ff9418b47731bad8565e232e648e121abad850f825",
+      "mode": 420
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "size": 3551,
+      "sha256": "71022ef02deac2dc79a6450b8d03ff430f7127ff463314da4a40bf5089f961d5",
+      "mode": 420
+    },
+    {
+      "path": ".gitignore",
+      "size": 83,
+      "sha256": "6f4955294a50a1810654c13035944f95914c1edeb4ec4ab896839518f42e4f1e",
+      "mode": 420
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 13353,
+      "sha256": "d1c96d344753e11b92765a29329433636fe7418746718e0adb4672e90e5a7df6",
+      "mode": 420
+    },
+    {
+      "path": "LICENSE",
+      "size": 1083,
+      "sha256": "5c347d431a555ec6e5bc9720ceba2119570357dab5203372d469be9bcce374cc",
+      "mode": 420
+    },
+    {
+      "path": "Makefile",
+      "size": 2189,
+      "sha256": "4e5ddadac4f2fab6433ebd2a30e2a48f76f6b8f21eebad42c074d32cf0cf7dc4",
+      "mode": 420
+    },
+    {
+      "path": "README.md",
+      "size": 26952,
+      "sha256": "1b7c9b6b47c503bcd3b9afa953717a744c5019bcb5128afb7bc834960703ec01",
+      "mode": 420
+    },
+    {
+      "path": "sse2neon.h",
+      "size": 408369,
+      "sha256": "69bb92f9553692e25079f55b6beb2de31ee01a8b270d043bf4de7d2d1b450ed9",
+      "mode": 420
+    },
+    {
+      "path": "sse2neon.sln",
+      "size": 1421,
+      "sha256": "13b046433b0a90ac214fa3b85b49aaa9c3e3a4ae542235ac98003a1dfc07fa45",
+      "mode": 420
+    },
+    {
+      "path": "sse2neon.vcxproj",
+      "size": 7442,
+      "sha256": "96cda71cae40809d571f32bfc6c5290a3d2ef72cfc1610fe9dd6d37c8ed7824a",
+      "mode": 420
+    },
+    {
+      "path": "sse2neon.vcxproj.filters",
+      "size": 1649,
+      "sha256": "0e8c5b961abd4042c1aa63ad9e02d532837d118b462c0d4c2ef91ccf3dc7a684",
+      "mode": 420
+    },
+    {
+      "path": "tests/README.md",
+      "size": 867,
+      "sha256": "7af815872fef8a74c9979614b777f108d8609985718ed64ca726d063b09c465c",
+      "mode": 420
+    },
+    {
+      "path": "tests/binding.cpp",
+      "size": 602,
+      "sha256": "f161661f745bc865f61eb467ee1c051b4e161246d289d9c4ec01bd4c32485bb7",
+      "mode": 420
+    },
+    {
+      "path": "tests/binding.h",
+      "size": 490,
+      "sha256": "a6feca1fcb37aad026e1a760412ecb667d6ec3464d4a52854fd39817d7bdb2d2",
+      "mode": 420
+    },
+    {
+      "path": "tests/common.cpp",
+      "size": 11748,
+      "sha256": "a5630239ca842fa47ae9a1f963d7108d64808a351e42af2589df0915b9466527",
+      "mode": 420
+    },
+    {
+      "path": "tests/common.h",
+      "size": 14842,
+      "sha256": "feeaf230891ec1880e73fa2c024c37d4c39c612b93861f004f6fb3ad902756af",
+      "mode": 420
+    },
+    {
+      "path": "tests/impl.cpp",
+      "size": 383366,
+      "sha256": "531761768a2cf24b7412471838006a0e9426cd285ee4d776ec5e08c06a533242",
+      "mode": 420
+    },
+    {
+      "path": "tests/impl.h",
+      "size": 20222,
+      "sha256": "f91a940fa6290e15f1401dbdccbdf4a56cc46ecab0ba845a63c5fbdfb997257c",
+      "mode": 420
+    },
+    {
+      "path": "tests/main.cpp",
+      "size": 1321,
+      "sha256": "dd5d0c821a162f8c680b5a4115232a2a30fe2b38be4270510bf000e700b607ea",
+      "mode": 420
+    }
+  ]
+}

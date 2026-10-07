@@ -1,0 +1,3494 @@
+[
+  {
+    "executable": false,
+    "path": "LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "MANIFEST.in",
+    "sha256": "45544599d848f26e4056424072c5a0940939e51309ccd044044662c414ad5ad2",
+    "size": 733
+  },
+  {
+    "executable": false,
+    "path": "NEWS.rst",
+    "sha256": "f9979dfb075f9dde736172beb552227c0211e2aec5522d2c758d4d80c3d0b24a",
+    "size": 260134
+  },
+  {
+    "executable": false,
+    "path": "PKG-INFO",
+    "sha256": "7f890ca8dbc16b63b568c89312ed6a7f9f0a79d0b2b7f3c83bf796ac3d930615",
+    "size": 6572
+  },
+  {
+    "executable": false,
+    "path": "README.rst",
+    "sha256": "c02262516d28b927e2eb0f86d285218d3e2d5adb7370b59c232a561d629c91f5",
+    "size": 2608
+  },
+  {
+    "executable": false,
+    "path": "_distutils_hack/__init__.py",
+    "sha256": "df81e6bcba34ee3e3952f776551fb669143b9490fdd6c4caeb32609f97e985b4",
+    "size": 6755
+  },
+  {
+    "executable": false,
+    "path": "_distutils_hack/override.py",
+    "sha256": "12efecf8d17a5486780aa774b5b6c0e70b56932d8864f35df1eb7a18bb759b3a",
+    "size": 44
+  },
+  {
+    "executable": false,
+    "path": "conftest.py",
+    "sha256": "943883212674a5d459cbd953f0a1bdc09b17a82c54b2131a7a16014f6bd06353",
+    "size": 2250
+  },
+  {
+    "executable": false,
+    "path": "docs/artwork.rst",
+    "sha256": "5880911fbd634288110f9d1b5c9fc526b83841e4c2d25772dbc452c4123d2429",
+    "size": 4675
+  },
+  {
+    "executable": false,
+    "path": "docs/build_meta.rst",
+    "sha256": "da3f55580dbfb85e58a8fe2f1a81729ffa26b5b4bb495eee544c8b90c89253af",
+    "size": 6815
+  },
+  {
+    "executable": false,
+    "path": "docs/conf.py",
+    "sha256": "9fbcfb535f976b863060e9ab79398be7daa783e0aed20fdb7dc88d8d10b14122",
+    "size": 9251
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/changed_keywords.rst",
+    "sha256": "c5f44e007af2d18b36585bc67ea5d2e806abd95cedfdf1b34c71f7856f1ab711",
+    "size": 2177
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/commands.rst",
+    "sha256": "8324f5a5f04bae1deb785ef6769fd860702bf743e5ac3b2bc7f733bb01fe9a73",
+    "size": 29674
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/dependency_links.rst",
+    "sha256": "0339e86c65a426c7480d4581621dcf8479ceb40879a0986ca89e0e18d5586ba0",
+    "size": 2859
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/_setuptools_disclaimer.rst",
+    "sha256": "4f56f86d329e557f9313bea0ae0711fd4c71683db0c03d04d0ad6719636863f3",
+    "size": 232
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/apiref.rst",
+    "sha256": "2fbb5a0d2c17b2b92188693402a4116b05aa2b3be2286ea0d1a9d5d36a77320f",
+    "size": 95956
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/builtdist.rst",
+    "sha256": "e181f44a8cb6b540654f0c2ae681922972e9b1a0054b6c348979fad58cf43d0f",
+    "size": 19348
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/commandref.rst",
+    "sha256": "6dcf7ec770bab1e2e396e62d693721aa78954be051909e66ac770b807a2560ed",
+    "size": 4584
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/configfile.rst",
+    "sha256": "b383a3f802f8189c6745c8c6eaa677cbe713a9d5c47d50a74923dd028d96e049",
+    "size": 5943
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/examples.rst",
+    "sha256": "0210efaba0d5e8a9b1c74faa174dd3803665633e2600064bc220527e0baf92e8",
+    "size": 10254
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/extending.rst",
+    "sha256": "d6ba862db18f188c06e9a11fdf8867038799733926e3c0b903013a471d11c51d",
+    "size": 4590
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/index.rst",
+    "sha256": "98aee3e7df49d08edae2d1918ca2d699092f5e0360479bf19750030a9b429bf4",
+    "size": 1259
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/introduction.rst",
+    "sha256": "684c58c242edcc61948d8b382032536c928a1548fe7c9bb8003c017742cd3d62",
+    "size": 8070
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/packageindex.rst",
+    "sha256": "50d9515e1ffcf0ca3ec5e40d0bbdc0c0693c8018785325c854cff9e8ff3a9944",
+    "size": 431
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/setupscript.rst",
+    "sha256": "868414c102d4a0a29db717881f76dde20a88b54b9202a0f7c3310d59afd8532c",
+    "size": 31337
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/sourcedist.rst",
+    "sha256": "7405e640b26449386dd985fc40057bd02b08ccc2706548f941cca4986cbc82c0",
+    "size": 9741
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils/uploading.rst",
+    "sha256": "a44b9acf3d0664656083ab8bd33ee172030d97571ab5a80b2a1fbf2ba0610ea0",
+    "size": 246
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/distutils-legacy.rst",
+    "sha256": "26255ce8b19c1cafad3f7feaf133796deec12a74e1c1cfb1639ffc198b1d4cd6",
+    "size": 2433
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/easy_install.rst",
+    "sha256": "69d656eca31aea53ad63d35c2a7b480495bd878018c6df1642cdda46b3b5e0ec",
+    "size": 52010
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/functionalities.rst",
+    "sha256": "5669d4720540372d4c7209947fb20f32e0bf310bed1d8468c084994a0218bf4a",
+    "size": 1451
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/index.rst",
+    "sha256": "d8873ad81a1aaa9ca93b57f55fc47ccf8df34f54f8ed82ebbf57dfa1733bffd4",
+    "size": 863
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/python_eggs.rst",
+    "sha256": "ae31222169e10b89b7afcec1ea4d61e3d27e6a38fabf9ec67e491f2c52ba164c",
+    "size": 31367
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/resource_extraction.rst",
+    "sha256": "dd8596ffac14c064aff75e6eef8cea24459afc39dd3dc86049853b860444c962",
+    "size": 3047
+  },
+  {
+    "executable": false,
+    "path": "docs/deprecated/zip_safe.rst",
+    "sha256": "90793fa64d3e3147eb198bb1140ecfeeab0d2f7d44db6e296bfb12e7a6c45ee4",
+    "size": 3649
+  },
+  {
+    "executable": false,
+    "path": "docs/development/developer-guide.rst",
+    "sha256": "f016a4bcd2c7d500a42ec03512d1cd9f23a7ae242cefa76d7f6d14f40db14168",
+    "size": 7096
+  },
+  {
+    "executable": false,
+    "path": "docs/development/index.rst",
+    "sha256": "beeb01265fb51fa5ef6cf80cf3b126c8c9686523a614adfb345c93606d57fb34",
+    "size": 1455
+  },
+  {
+    "executable": false,
+    "path": "docs/development/releases.rst",
+    "sha256": "6da28eeccac2e8b5e72e3c75071dd14fa81d8e110a593fb67722b5f0c37a1f5a",
+    "size": 1421
+  },
+  {
+    "executable": false,
+    "path": "docs/history.rst",
+    "sha256": "0f88e923bda47125352029257e7e06cde7bdce967d35fb323bef6fa4da387119",
+    "size": 1936
+  },
+  {
+    "executable": false,
+    "path": "docs/index.rst",
+    "sha256": "76b748b1410e455361de47ed753aa3c0bdac1da43b80086edd535e2fe9843de1",
+    "size": 857
+  },
+  {
+    "executable": false,
+    "path": "docs/pkg_resources.rst",
+    "sha256": "cc29ee784feb9845dd780456fb5661c02d1b0a3879459fd1521aea2e1af72a92",
+    "size": 94304
+  },
+  {
+    "executable": false,
+    "path": "docs/python 2 sunset.rst",
+    "sha256": "99e29f91d2969f13cac17076e7e13c23cd1ec3d64c7582ee79b18b1a9aef50fd",
+    "size": 3538
+  },
+  {
+    "executable": false,
+    "path": "docs/references/keywords.rst",
+    "sha256": "19b2ef8342a922845d19d5987856754057050b6d16a9f07190449a528b176c75",
+    "size": 21450
+  },
+  {
+    "executable": false,
+    "path": "docs/roadmap.rst",
+    "sha256": "4b2ae4d45a0fcd3731349f65ca21f252a5d00bdaa968f1ba784d9f48b9082f5e",
+    "size": 161
+  },
+  {
+    "executable": false,
+    "path": "docs/setuptools.rst",
+    "sha256": "d11f7c70ed50d97941946e58aa6309c86a65184ef9476fb31811279aef043891",
+    "size": 6710
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/datafiles.rst",
+    "sha256": "1a75f79a7d83e8010eb3332ddd8f7fa7fb25b1050ddd13eb9647cea67904a3ba",
+    "size": 22234
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/declarative_config.rst",
+    "sha256": "abe6979c3483a190f7c831ccc6eb6af945974409daf26c52efcc84d43743bfb6",
+    "size": 14032
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/dependency_management.rst",
+    "sha256": "7c35ff839953663d2dde648c0aef59361c7eb13c4a755b5abc61bd5196eb1d40",
+    "size": 13060
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/development_mode.rst",
+    "sha256": "aadb3183a8401e2430802cc2c7f47bd9457d50778807809e2446a2febb375e5d",
+    "size": 12943
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/distribution.rst",
+    "sha256": "9a614778aa10ceba043c8febd5ce410afccd6e081fde27d63030972b3c4bc4c3",
+    "size": 10314
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/entry_point.rst",
+    "sha256": "2b1baa016984235bfed16476d6ac01922f408775dd29ba08834bc67724bc5f96",
+    "size": 18408
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/ext_modules.rst",
+    "sha256": "4e0a0e82e2eb932d0f3216e1cde9a07ac920c683178facd60a357bf35ee2c14c",
+    "size": 7990
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/extension.rst",
+    "sha256": "309a376611eb5a34e30b61ccb14ba6869b5e5d867cd9032872cf0f58ce8f53dd",
+    "size": 13296
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/index.rst",
+    "sha256": "256c4dc171db590f4ca81d01467d1160f01f773cb8cf50d5e33b8586daf99004",
+    "size": 1652
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/interfaces.rst",
+    "sha256": "b901a3eaa1bb54252ab5658580d18d6c5accb6502f568b90d16c7ed49289ffeb",
+    "size": 9478
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/miscellaneous.rst",
+    "sha256": "538f6f3341e175751d3693819b1fc920fdbe54fa06133d29f527141f71e8b3f9",
+    "size": 10452
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/package_discovery.rst",
+    "sha256": "73c27e7d078db8dea9f29bef863b0231e77ffe9c695dacefb14148b491ff0005",
+    "size": 18305
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/pyproject_config.rst",
+    "sha256": "c26ee82cbe216b1a444d4e8d835b2002bc1f59d95158d535afe6bea8fdc8e462",
+    "size": 15378
+  },
+  {
+    "executable": false,
+    "path": "docs/userguide/quickstart.rst",
+    "sha256": "38dd39e1e80d834be567d69f6dcbe960bcee732b360f7709eeefb99abc19861e",
+    "size": 17784
+  },
+  {
+    "executable": false,
+    "path": "exercises.py",
+    "sha256": "a4186bca86f08bd4f1424c1ba89e47fd6194553f3e934c17e8b446acfd17bb0c",
+    "size": 163
+  },
+  {
+    "executable": false,
+    "path": "launcher.c",
+    "sha256": "7011ac2cdac2fc40544754b0481ef9c5ebe00fc0c2609a68442999a6f118b98e",
+    "size": 10695
+  },
+  {
+    "executable": false,
+    "path": "mypy.ini",
+    "sha256": "64bd25b67bc7e38776c491e8c72038a5754bfe312e49dc0e5686f94d8700abf0",
+    "size": 3045
+  },
+  {
+    "executable": false,
+    "path": "newsfragments/.gitignore",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "newsfragments/README.rst",
+    "sha256": "da3cffa6999d86cfad7b622c8a21e1b9f2e62a35f01d1941beae9252fbbb34ee",
+    "size": 3787
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/__init__.py",
+    "sha256": "bb1ad698a177971b06e2aea88c796ee2d07c8fc2b0f63ab1fd234cc8328fe6ae",
+    "size": 126219
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/api_tests.txt",
+    "sha256": "5c476fcb88a01c7aeadaa34734c1e795f3ba5d240a36a3b22c76e5e907297c02",
+    "size": 12595
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package-source/setup.cfg",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package-source/setup.py",
+    "sha256": "d55a1b84065b31beccf667e16ff344f0fc03b2fba4a162ecf5a5004b4a5885ef",
+    "size": 105
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package-zip/my-test-package.zip",
+    "sha256": "01845c437f4655e3cf9cc4fc4e49cfd607431f22675e1b611129a90239f34822",
+    "size": 1809
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO",
+    "sha256": "26f5aff48a363c0b98c04130d9f056e1073962f75b92c729297d6498bceca079",
+    "size": 187
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/SOURCES.txt",
+    "sha256": "e029641fc793a2f66b755ac916c56ec5d6cc105fbe941552b8aa270c03c4e497",
+    "size": 208
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/dependency_links.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size": 1
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/top_level.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size": 1
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/zip-safe",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size": 1
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/data/my-test-package_zipped-egg/my_test_package-1.0-py3.7.egg",
+    "sha256": "65394c1b18d11a2283364880d9cef98db407d93588b5e3f4d22ac5f60bdccdba",
+    "size": 843
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/test_find_distributions.py",
+    "sha256": "53dd5ca2fe4bd423802162cdab75f2e29954eff327384d56b5732eea2576c1a3",
+    "size": 1972
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/test_integration_zope_interface.py",
+    "sha256": "9f35682b9e7b29940dd15dc3210d6c55e6823a0b782a997e08e0c05ac3bba667",
+    "size": 1652
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/test_markers.py",
+    "sha256": "d28aca83b50c0dfedf9ee350bd130e73e105f4400ffc94d09e4e26b4681b5b9d",
+    "size": 241
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/test_pkg_resources.py",
+    "sha256": "e4cb786c94212c22fc8fc702e3a52fdf6369d977354d3c4b19ac087c44f9e459",
+    "size": 17111
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/test_resources.py",
+    "sha256": "2b42ea300506a5143da546fd2b4bf223b19eb2fb6542f4c7d3be26f84d95425a",
+    "size": 31252
+  },
+  {
+    "executable": false,
+    "path": "pkg_resources/tests/test_working_set.py",
+    "sha256": "951b46256222c52c123126e31e047178911088b3115dccf7c7324bdaa2fb7976",
+    "size": 8602
+  },
+  {
+    "executable": false,
+    "path": "pyproject.toml",
+    "sha256": "b4dafa39634eacfd66945528b32c2f9e86185ad85ee1bfc1a9e59b1d46e3c4a6",
+    "size": 6608
+  },
+  {
+    "executable": false,
+    "path": "pytest.ini",
+    "sha256": "3da35b08d79d76754a5033feb90e818eefb55b8f7264e691f08da6069556fcea",
+    "size": 3611
+  },
+  {
+    "executable": false,
+    "path": "setup.cfg",
+    "sha256": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
+    "size": 38
+  },
+  {
+    "executable": true,
+    "path": "setup.py",
+    "sha256": "2649137ced2be8688a950f774766047cad06db9257c2e3b5873e8cf3158c81d2",
+    "size": 2824
+  },
+  {
+    "executable": false,
+    "path": "setuptools/__init__.py",
+    "sha256": "eddb9a7016889b1ceb51ad0e821233f25560689d5f230efeb8bdafd7abd8fd21",
+    "size": 9004
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_core_metadata.py",
+    "sha256": "4fb4e3a7e592a0df3cd5a75ebf7475c335c23e79031ea6c2d8c83294dd728d2f",
+    "size": 11978
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_discovery.py",
+    "sha256": "1f112981843ccd468b38e4a9f09200e32d8c76f9fdcac571b293d3fa9a5fccce",
+    "size": 836
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/__init__.py",
+    "sha256": "c4662e856c0b1b4ec9d10e3d0559c48cfcbac320dc77abde24c0c95fb9639723",
+    "size": 359
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/_log.py",
+    "sha256": "8be94d4d37174bc4e65884c9e833831afb56e73e6d31ab6d250efa87cad9c505",
+    "size": 42
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/_macos_compat.py",
+    "sha256": "273506845e04e722084c76d468fa1b6445a318776badc355eb7cfce92e118c17",
+    "size": 239
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/_modified.py",
+    "sha256": "445d67d427b1c83615de5bc66de5d2d2cf9708955ba0338851b03cc0442a6136",
+    "size": 3211
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/_msvccompiler.py",
+    "sha256": "f4f49f487c6f2671e740be92ab3e17733ee2681213eb6a7a061790cc6b12970a",
+    "size": 335
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/archive_util.py",
+    "sha256": "430db3f8fb7e355f2535442bce3b375c31960961cc3e7a872f2b7c4e20f65c40",
+    "size": 8884
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/ccompiler.py",
+    "sha256": "14a563ab3189edcf85b68b8d8e12e268c3e6e4b28c6471c0aee5dff0b536d7a7",
+    "size": 524
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/cmd.py",
+    "sha256": "857b5a45a1fb4019df34e22a12f0ade3b8b06730fd315bc176185d41cb47b313",
+    "size": 22186
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/__init__.py",
+    "sha256": "19f140cdb06a935ab1487e0175a2a2a0a4b88514670f8e01026c0437ce42e2ef",
+    "size": 386
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/_framework_compat.py",
+    "sha256": "d2265d4896331915820afcd10ca13e474fbfc9a018bc531dd729576f67985ee8",
+    "size": 1609
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/bdist.py",
+    "sha256": "8d6b64eb547b7d635450dc49574b614d9cd4e67f342f7032d7069288ff6488b0",
+    "size": 5854
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/bdist_dumb.py",
+    "sha256": "1f1d6302aa19371608cb83794cbcd4a7a2797e2f0bb35f29cbb5252cd1613b61",
+    "size": 4631
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/bdist_rpm.py",
+    "sha256": "9f17175efe5aec1fb59ed5aee036c6982b444b810120dac968141c44d0180892",
+    "size": 21785
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/build.py",
+    "sha256": "4a91e56a07f488d68a572221c437e13c567c5f5f8b0163824000b2fb2b762b4c",
+    "size": 5923
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/build_clib.py",
+    "sha256": "68ca997147c26ce02eff1afe03d896f90f58647ce90c62d14decce80c4099924",
+    "size": 7777
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/build_ext.py",
+    "sha256": "cebaecbbd1d79f357a6d761b26e6422b84b05593232a7978a46d68ddb35cc6d7",
+    "size": 32710
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/build_py.py",
+    "sha256": "55fabe20d7a6a0c6e0e9fd34dc14f2fd47e9f1b8ce661985221a4a31c7d72e0b",
+    "size": 16696
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/build_scripts.py",
+    "sha256": "7a630438e36434b3c2f803232b2e39524b14958d70934e9eb0e193869c227483",
+    "size": 5135
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/check.py",
+    "sha256": "ca835ed8c3d8e0971333baf0a0841d7d9ef9ab9462d39f08d9ca22f86abd0a33",
+    "size": 4946
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/clean.py",
+    "sha256": "75001a70e69bc015d4f49a19fb5185bacab778596d0da7972454989dca866ef1",
+    "size": 2644
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/config.py",
+    "sha256": "aabadfcfa34440e4666ea898d9796f08359886c6cbcb165726c51129f60dfe4c",
+    "size": 12724
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/install.py",
+    "sha256": "f897a707e9ae6b885cd9123ff96f05f4f9cffc9f8e6853bb1343c918ac4ba35a",
+    "size": 30072
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/install_data.py",
+    "sha256": "1b306551658ab9b4d82653fe2f46ae52b8aaf5c2fee5128e728c874edb4a8f44",
+    "size": 2875
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/install_egg_info.py",
+    "sha256": "7df88ba14d62bd027cab6fd62fb6728196d470eb207452ca2fba2d1082565a42",
+    "size": 2868
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/install_headers.py",
+    "sha256": "e5c88a0a3f1cdd72ac60d29d91d32f9f2a5a50229ca1608379e6628f77c3f99e",
+    "size": 1272
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/install_lib.py",
+    "sha256": "dacf7e9b9f9bd6a2a6e75176f250792f7f59eafbff187325bfd74d052ba9a24d",
+    "size": 8588
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/install_scripts.py",
+    "sha256": "334a4f7626aa07b4c69aa4ccba3a4619e88bd08abf0937868cc16dae60e6c333",
+    "size": 2002
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/command/sdist.py",
+    "sha256": "711205e87b75849e9ac8e38557270c14150dc63a3de1efeb1583f1e078bc0217",
+    "size": 19151
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compat/__init__.py",
+    "sha256": "276d1a5c68c9f3a460e35c452c85a57160a067d79d31d27dbef74d110f3bbcf4",
+    "size": 522
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compat/numpy.py",
+    "sha256": "505827799c3dc3dee0e1cfb21a80083b22f150e590f9f3d122185f32ceff3ae7",
+    "size": 167
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compat/py39.py",
+    "sha256": "84eb03ea5c192ea66832769c349dcfea7500f8b250844a55b584f3547d28f7a3",
+    "size": 1964
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/base.py",
+    "sha256": "5d1d6b0424ad0aabaa9bb40e6170f8d7e2dfbec15c3e91b1af0c5e5f32729ffc",
+    "size": 54876
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/cygwin.py",
+    "sha256": "0d49704126f9e5a8fb39d72671d76b98299512311ac48889e611d43b71813cdb",
+    "size": 11844
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/errors.py",
+    "sha256": "b0a395cc96a331498d75fcb0a3d50cfd0406b0a15c7250e1b48e5394289730b7",
+    "size": 573
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/msvc.py",
+    "sha256": "7a5cc6f2ff63379432b4b3302c2754752b99dde67747df1552f9e6f58d8f0420",
+    "size": 21404
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/tests/test_base.py",
+    "sha256": "add847739e9b857b66e4d9cdf41487c2be9cebd52accc22d650ce5c3602c74c7",
+    "size": 2706
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/tests/test_cygwin.py",
+    "sha256": "5205765605178f756e95c6c373450159f132243c78dad812c12e0bcc78b1de66",
+    "size": 2701
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/tests/test_mingw.py",
+    "sha256": "8429b0cb2c084a9468c8ec926c51c12f84e9ad6455d265160ca98e2cef170571",
+    "size": 1900
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/tests/test_msvc.py",
+    "sha256": "0e51a3999d660523172209a5bbcd0129ced5f8424e66e62e730270161e5d9f6f",
+    "size": 4151
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/tests/test_unix.py",
+    "sha256": "03269d5b0d5f47e51e0e5d93bc86d807338954792913fa11450dc94c95aa6840",
+    "size": 14642
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/unix.py",
+    "sha256": "607fb2f60fe98c1163689c8725090310143bab80f6d08dbe71624d760c3e621a",
+    "size": 16531
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/compilers/C/zos.py",
+    "sha256": "be735e58b45991d224759f98c819cbf2275351f7023a7d2d2cc5b938127449c5",
+    "size": 6586
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/core.py",
+    "sha256": "1841ca6850b8f13de8fbf4a61f8f3ae06bcacb1d4881b542e884883d5971edae",
+    "size": 9364
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/cygwinccompiler.py",
+    "sha256": "986fdc53c4956786a60ff56d179bc7e815cfd3e920846b033db0d25eb43deb77",
+    "size": 594
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/debug.py",
+    "sha256": "37a32b4c0a8aea5f52564ead5b0791d74f0f33c3a5eea3657f257e9c770b86c6",
+    "size": 139
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/dep_util.py",
+    "sha256": "c4def9a7a6691e13221c473eae92f65e29494329c79c336269f1ed79a678b635",
+    "size": 349
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/dir_util.py",
+    "sha256": "0d73d495f5551ac83d07e26083802dfe3f53eef33ad0e8303579101ea4e8efe2",
+    "size": 7236
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/dist.py",
+    "sha256": "816e7df1413458c9335d0437d4dafef0becc3f0d2820ecf9392491cd8665c2b3",
+    "size": 55794
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/errors.py",
+    "sha256": "3cf136a03461e72f50d5b78a2bdae176f0da0b34218b81c25ece0a72a7ea8196",
+    "size": 3092
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/extension.py",
+    "sha256": "168caee2050b70faa6d7f53dceb6181f1364e0daa0957bf5adbb0e93f42b49db",
+    "size": 11155
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/fancy_getopt.py",
+    "sha256": "3e374ef9b5825b48a657f50df8c184c3d47618fd8e884f291e32138264c06374",
+    "size": 17895
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/file_util.py",
+    "sha256": "60540bfe90f784bb8447d208fc7ebe8430bf608184a2891d778c1e74bba24d6d",
+    "size": 7978
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/filelist.py",
+    "sha256": "30179244998f70a983bfca28660494e018903d9d0a870bfc97f8e10f9d17c9c2",
+    "size": 15337
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/log.py",
+    "sha256": "57206ce63ef3e3e2ba5d310405385473d1f2329a0f2c6b50a4446a6f3e72970c",
+    "size": 1200
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/spawn.py",
+    "sha256": "cec78287db0489fca9d08e5583bd7d24d2004a544e2767a15ea4271e5a6df3d4",
+    "size": 4086
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/sysconfig.py",
+    "sha256": "29e23c3876ccb84cc727c4347017b3f4a667cbc891cba67a634024333d6396c5",
+    "size": 19728
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/__init__.py",
+    "sha256": "8fe2283d912d42fdc438fbaa353c1a96be862f2463cc20be38e68dbd9ce61ec2",
+    "size": 1485
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/compat/py39.py",
+    "sha256": "b741814ccfb7d235fef7309f93094d045b73cda6de9b1eb4eb9989d1df7f551c",
+    "size": 1026
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/support.py",
+    "sha256": "b63b18b32c6fa532b836b902b1e876ba3bc320657431ffdbe522397cfd93d323",
+    "size": 4099
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_archive_util.py",
+    "sha256": "8e8ce2992c0f045f89a097cdfef0da895199a7ae8135c5991a1df81655b9ec34",
+    "size": 11787
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_bdist.py",
+    "sha256": "c4d1f152c2e51ec6504709332dbfe2483db8b3ef4c93e357d9f7c15b03b23f27",
+    "size": 1396
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_bdist_dumb.py",
+    "sha256": "405d393073613ce759ca1f3c5e9c3c2ac3bae2cee9445925f0a2fe4685785cad",
+    "size": 2247
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_bdist_rpm.py",
+    "sha256": "1dd9bea705a0c9aa067466c470665af1c461194e39cbc8072bcba639a9d38e29",
+    "size": 3932
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_build.py",
+    "sha256": "2496395e9399728db9658d29b2dc65fa223c987b163f4ba37f9a3c68eb6e6586",
+    "size": 1742
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_build_clib.py",
+    "sha256": "328d5915be02d555c160e1af9da965c0ded80a74edaf6e1a90b0cef198b80ac6",
+    "size": 4331
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_build_ext.py",
+    "sha256": "4053bda98561596749bb5ec75dce31f513272d99619349401e2f47569a5bb97e",
+    "size": 22545
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_build_py.py",
+    "sha256": "36c7e646ba2338705734ca9647f9a9e60e0f2d3823843ee264551f7c664521dc",
+    "size": 6882
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_build_scripts.py",
+    "sha256": "703f85472fa85f9e6c5d15f9133e7140269e1eb59a8f229ce17bb0bf67dee3cc",
+    "size": 2880
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_check.py",
+    "sha256": "847495d3ba9fed8a12c46b136dbb1443db6cb19cf945135d6eb635b364b06852",
+    "size": 6226
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_clean.py",
+    "sha256": "84f1fa8df22918552bbd66c5d6dc6488d55235a031b76c2ae578d5e3df733b81",
+    "size": 1240
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_cmd.py",
+    "sha256": "6e0441efd9a2b6838a4753a2c991e70a882f1b1b77a56931793a880b4e254164",
+    "size": 3254
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_config_cmd.py",
+    "sha256": "66ce965f421fc43be6b82d7d5f3b953676029d3afd63e865ef74c09834813786",
+    "size": 2664
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_core.py",
+    "sha256": "2fb5ca540c5af8c1a8019780368a67b8af5f44a9de621912429830f1742f705f",
+    "size": 3829
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_dir_util.py",
+    "sha256": "13ce250be938ae2554c1447259a43426ac76ba2dbe8a8fb446e25adcceea909b",
+    "size": 4500
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_dist.py",
+    "sha256": "6bac257397d025de6a43a1ce9ddcdcba93618d3c6f8fafbf24bb69b98bda3f53",
+    "size": 18793
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_extension.py",
+    "sha256": "f987a32e0642bb2705ace05deb8a551f426fc0c73d3708731ef431bef8d71ea9",
+    "size": 3670
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_file_util.py",
+    "sha256": "962be39e5dc592295096b076ac574542af67be3115647ca73726b46dfceffdbe",
+    "size": 3522
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_filelist.py",
+    "sha256": "ac9c24a8251f9060e05a50f6d93a33b13f3271bba930707c0d7a93873c13d53e",
+    "size": 10766
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_install.py",
+    "sha256": "4df081d32921231c9d202d90e12b93019cd21efb5e30782b04bf708684a02bd4",
+    "size": 8618
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_install_data.py",
+    "sha256": "bcaab72bdee4d210409ce837f279b011d7fb7040d5afdad357209e2689606f80",
+    "size": 2464
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_install_headers.py",
+    "sha256": "3d5018a68fed625f7cd107fae033ce9a64afc9e7c81dd534e9fed5b09799ca41",
+    "size": 936
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_install_lib.py",
+    "sha256": "aab8ba465fa668d4d0acd0d5f036de5cd974863b1f4482a2238adf64bae65812",
+    "size": 3612
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_install_scripts.py",
+    "sha256": "284defd1c0e4156fbdd083880fe3a665918cda6872f99904bae5bb5174b6487c",
+    "size": 1600
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_log.py",
+    "sha256": "8ac16d3ae7e5a02c84759690395edc554af8e86c2d755323e37986041e571fb9",
+    "size": 323
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_modified.py",
+    "sha256": "875fbe6ce5a6b49a356e9555eae4617674bd6ebef508188d0ccd4c0f0486a6e8",
+    "size": 4221
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_sdist.py",
+    "sha256": "71fcd4865080e35f3ed6f1fdb5adc806cdba73f8d405b909a0538ae469c0c8d9",
+    "size": 15062
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_spawn.py",
+    "sha256": "792f30f43edb4f1c852d2c916a12567ae87c29cd45f11596898fdd486e41e417",
+    "size": 4803
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_sysconfig.py",
+    "sha256": "97133c2ec522d53a268c35781e860af2ee6752806478d2fad14abc3d8d437305",
+    "size": 11986
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_text_file.py",
+    "sha256": "59059207901f7410d968c03c045822a493e7b096ffd9228c7cbf747d291156dc",
+    "size": 3460
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_util.py",
+    "sha256": "1fdce5678cf8561e137e33580c1b313fbc20b902e9c427c963239c9b5c995377",
+    "size": 7988
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_version.py",
+    "sha256": "6a17e0fe63fcc11cb5b20c18fbf3f1e61ae381febfba94c8a670a0a51e325919",
+    "size": 2750
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/test_versionpredicate.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/tests/unix_compat.py",
+    "sha256": "cfea29e82da255d5f56aae4120147b72a3b18a3284f7b6a537026a1cd74ba682",
+    "size": 386
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/text_file.py",
+    "sha256": "cf876438906bf41a362c6d1336a9bcb03eb72c411a29248fd09d1b581ac51b77",
+    "size": 12101
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/unixccompiler.py",
+    "sha256": "d5b5c9587e1f8aefc0d967eb887cdff3cc639654135e79e352465d44ab3d7165",
+    "size": 212
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/util.py",
+    "sha256": "3637e7aa4eb4ccc7648808d19c6713597dede3dfa86c76a93a56cdbf2225d362",
+    "size": 18094
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/version.py",
+    "sha256": "bc8993e7e1025e4436d6828bd17605893a8ae8dc8cd3d729cc136803fdf80905",
+    "size": 12619
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/versionpredicate.py",
+    "sha256": "a81590eb04e3d76383cada13988c9d79f218da36f8b98d6c75b81bb8b9fe2093",
+    "size": 5205
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_distutils/zosccompiler.py",
+    "sha256": "b2f7625d9da475cc0aac929f8548626f4df2f20cfb68664aba45c7dc8ed89017",
+    "size": 58
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_entry_points.py",
+    "sha256": "d744e36f37c676a5861f4ea542e3cf1830dc8be3a75e8233adfa4859b6b9019c",
+    "size": 2468
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_imp.py",
+    "sha256": "618d448d910dfb4cd8722d5cc4ed7407f69d0043abee2f1e2bc26809cf487ab7",
+    "size": 2435
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_importlib.py",
+    "sha256": "68a22370ad07297373d83f974ebc5a8b11a7fe3b9390e3709aeddd72178c385d",
+    "size": 223
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_itertools.py",
+    "sha256": "8d645fb08ae90bb9b2a28cf78435118fd1adbe9b3065e2978361da926121363a",
+    "size": 657
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_normalization.py",
+    "sha256": "f92c5d862b16dd6d492b3a8a6317775de1f2463223dc9f4455192ddda2fc9ca6",
+    "size": 5747
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_path.py",
+    "sha256": "d81bf5abdfc7adde288b32b0707de9bffd3961547a99ea2f404e99b720f8e722",
+    "size": 2976
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_reqs.py",
+    "sha256": "4515fea98b33fdfcba2bae97721087708b332b76d202d53a68ed6cdd968b575e",
+    "size": 1380
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_scripts.py",
+    "sha256": "e53ac858354eb8eddc45c7f371901404a3d11fb2b8b2f4117502d928a883d5b4",
+    "size": 11247
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_shutil.py",
+    "sha256": "21043581c3d7e17ff03e29581891b10a1c8c0aa1b8dd539e8e84194c8ac24d8f",
+    "size": 1578
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_static.py",
+    "sha256": "19347bf60112175fc968ae2dacb9290eb12e09e12d3e5c105b4311bfb54d417e",
+    "size": 4855
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand/__init__.py",
+    "sha256": "ce4a39467be896f6fe5178c2c7fd80acf4c6056c142b9418e0b21020a611ec0b",
+    "size": 1037
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand/autoasync.py",
+    "sha256": "00c772af1352e29a9625f3ffc6ea0e70898e1d60fea93ef1d3ac2628dd55a7e5",
+    "size": 5680
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand/autocommand.py",
+    "sha256": "866904990ef61ed2f9e609d44558c33a7b1f62519de652d76ef4f8286e3de90c",
+    "size": 2505
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand/automain.py",
+    "sha256": "0366fc8bbe7833173f0e353d585afabea6035a5873d1c9fc9a2bbc77c12cc55f",
+    "size": 2076
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand/autoparse.py",
+    "sha256": "5955a66493dc6f350a5cfe34ada430ff41c3f2a3c9d95f551b57851669a7171c",
+    "size": 11642
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand/errors.py",
+    "sha256": "eda6b7ae887d1deaddea720aa501cd584b25584f28abb1a21d8554b91a8e4670",
+    "size": 886
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand-2.2.2.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+    "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d",
+    "size": 7634
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand-2.2.2.dist-info/METADATA",
+    "sha256": "3800d9b91dceea2065a6ed6279383362e97ac38b8e56b9343f404ee531860099",
+    "size": 15006
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand-2.2.2.dist-info/RECORD",
+    "sha256": "822bba66b41526fa547186b80221f85da50d652bee5493dbfe5d14085112f0c3",
+    "size": 1308
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand-2.2.2.dist-info/WHEEL",
+    "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/autocommand-2.2.2.dist-info/top_level.txt",
+    "sha256": "0337e180a292f04740c16513485f2681e5506d7398f64a241c1ea44aac30aaed",
+    "size": 12
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports/__init__.py",
+    "sha256": "88e10cc2794e4567b374ef3edafc4120f491dfb0fb2468e5b99f1fe79bf3c65b",
+    "size": 81
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports/tarfile/__init__.py",
+    "sha256": "3f07f6a9421f0744a89493c229cc77bf3dd412efda89db38838b007f1cbde2a8",
+    "size": 108491
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports/tarfile/__main__.py",
+    "sha256": "630da8193d5a7ebcf6781b24cdd3d82fc45e07fde5880a6684590dd846c399ce",
+    "size": 59
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports/tarfile/compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports/tarfile/compat/py38.py",
+    "sha256": "898932b7f82f5a32f31944c90fd4ee4df30c8ce93e7abb17666465bd060ddaa1",
+    "size": 568
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/METADATA",
+    "sha256": "8215c54ead77d9dc5a108a25c6bdc72b5999aa6f62c9499a440359412afa5a51",
+    "size": 2020
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/RECORD",
+    "sha256": "258a1f1c849e1175069a55a5d6ce357afdd04e34cd5de27093e4acec7a9d2ce1",
+    "size": 1360
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/WHEEL",
+    "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/top_level.txt",
+    "sha256": "7068da2cc3a8051d452b4029a23b73595995893b49ec91882bf1f05e212cbed5",
+    "size": 10
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/__init__.py",
+    "sha256": "b59341fb6de1f018b18bdb82ad0aa3f587f469e0bef89a2c772dc8651210781d",
+    "size": 33798
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/_adapters.py",
+    "sha256": "ac88564f006f600d5b57b8bee457d55f7f2a1170d35c5792e5c6f9c49b4fde4b",
+    "size": 2317
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/_collections.py",
+    "sha256": "089d0e4c21c88d6034648552e2fa0e440b27d91e11d9c40112d3ec6442690126",
+    "size": 743
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/_compat.py",
+    "sha256": "ef740aacdf4a368699ce16d7e723c20996be15a00bc177bc4cf94347bd898015",
+    "size": 1314
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/_functools.py",
+    "sha256": "3ec636fb8aeb297e1155e442d681a9d65075a660bd78a37cf3f7fe6c3f6e3a80",
+    "size": 2895
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/_itertools.py",
+    "sha256": "72faffdaff0145bc5c225e71e6575fa9d1e3848f188bcb3cca4e741bf9e6ea34",
+    "size": 2068
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/_meta.py",
+    "sha256": "9f167b0bc19595c04500a5b254e9ff767ee8b7fb7005c6e6d4d9af8c87ad0472",
+    "size": 1801
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/_text.py",
+    "sha256": "1c2b0592c66924b7933f734493f9e0ac079755146d4ebb7287d78e001a113f80",
+    "size": 2166
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/compat/py311.py",
+    "sha256": "baa9be2beba88728f5d38d931f86bd12bfc8e68efaebb0efba5703fa00bf7d20",
+    "size": 608
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/compat/py39.py",
+    "sha256": "70f90cbfafb48a52bed09c3f4e49f4c586ce28965ce1624a407a30d1cd93e38c",
+    "size": 1102
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/diagnose.py",
+    "sha256": "9e4491322a309669212d884a86f0a0f60966b7fd750a8c7e1262f311ba984daf",
+    "size": 379
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "size": 11358
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/METADATA",
+    "sha256": "6a7b90effee1e09d5b484cdf7232016a43e2d9cc9543bcbb8e494b1ec05e1f59",
+    "size": 4648
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/RECORD",
+    "sha256": "0d8d3c6eeb9ebbe86cac7d60861552433c329da9ea51248b61d02be2e5e64030",
+    "size": 2518
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/WHEEL",
+    "sha256": "9a0b8c95618c5fe5479cca4a3a38d089d228d6cb1194216ee1ae26069cf5b363",
+    "size": 91
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/top_level.txt",
+    "sha256": "08eddf0fdcb29403625e4acca38a872d5fe6a972f6b02e4914a82dd725804fe0",
+    "size": 19
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect/__init__.py",
+    "sha256": "271cb51c95d9899f3990778b021926bf3e84313745a817be76ebeddf847a20e7",
+    "size": 103796
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect/compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect/compat/py38.py",
+    "sha256": "a0e6d57d59d65fdfcea673ae1099f59856c9c55870c91e5ea5b8933570c36aca",
+    "size": 160
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect-7.3.1.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect-7.3.1.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect-7.3.1.dist-info/METADATA",
+    "sha256": "66030d634580651b3e53cc19895d9231f8d22aa06b327817c8332cfc20303308",
+    "size": 21079
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect-7.3.1.dist-info/RECORD",
+    "sha256": "5d7834ac1ba2612c6801050fde57a7b98b0f36acf88c3c2d4f376fd8911b3091",
+    "size": 943
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect-7.3.1.dist-info/WHEEL",
+    "sha256": "cb8997f92397e1f6089289ec0060393743b2fbcfe0238157c391cd235c6abd68",
+    "size": 91
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/inflect-7.3.1.dist-info/top_level.txt",
+    "sha256": "9b9dae8dda75d02a93ea38755d0c594fa9049ed727bfeed397b52218d4f35990",
+    "size": 8
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/collections/__init__.py",
+    "sha256": "3dcd7e4aa8d69bcd5a7753f4f86b6da64c0efcb5a59da63a814abc81c2a1dafd",
+    "size": 26640
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/collections/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/context.py",
+    "sha256": "444a0b2310e43b931f118a30b7f5a8ba9342468c414b9bfb617d8f6d6f2521cb",
+    "size": 9552
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/functools/__init__.py",
+    "sha256": "844009692dae49946e17f258e02c421c8621efd669c5a3e9f4e887cabf44275c",
+    "size": 16642
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/functools/__init__.pyi",
+    "sha256": "824dddb201f3a3917f53be07cc0be9362bc500f0a43c9d5bdbec8277ad9d7e7c",
+    "size": 3878
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/functools/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/text/Lorem ipsum.txt",
+    "sha256": "37fedcffbf73c4eb9f058f47677cb33203a436ff9390e4d38a8e01c9dad28e0b",
+    "size": 1335
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/text/__init__.py",
+    "sha256": "636614a9747fa2b5280da6384a43d17ba65985be4750707f021f5108db15ca1a",
+    "size": 16250
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/text/layouts.py",
+    "sha256": "1d30bc6924cb67bb978a9c8e5daa51302d79f23b9e7232ba455c22b5f999f7fc",
+    "size": 643
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/text/show-newlines.py",
+    "sha256": "58641aeb97bc97285bf762d438ba959fa29a0ada1e560570b3a5ad49198b93ac",
+    "size": 904
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/text/strip-prefix.py",
+    "sha256": "35f55757c255368ea7a9cb980127cc57bff2e04a3cccc42a942386bc09d1215c",
+    "size": 412
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/text/to-dvorak.py",
+    "sha256": "d5235c6d2b2f212a575e0f8b9f26c81c763e45414e42bdfacdc1e4635a5616ac",
+    "size": 119
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco/text/to-qwerty.py",
+    "sha256": "b3850c4149cfc059ff741e6e642dbb06eac7390718a277417f322954be69133c",
+    "size": 119
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/METADATA",
+    "sha256": "20c51a96236c0395f53b1f4c5d458e6a0721e51e16c1bff733b7aba76f5d06d8",
+    "size": 3933
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/RECORD",
+    "sha256": "1e9b62bd70e4a5fa26e9594cbb80860ffeca3debfee8773daefa774cd259ca06",
+    "size": 873
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/WHEEL",
+    "sha256": "31d8bd3c3370119a6d3a34e551c02d87b5c90c5b4aac761a40c3ee9597810a24",
+    "size": 91
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/top_level.txt",
+    "sha256": "d099cddcb7d71f82c845f5cbf9014e18227341664edc42f1e11d5dfe5a2ea103",
+    "size": 7
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.context-5.3.0.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.context-5.3.0.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.context-5.3.0.dist-info/METADATA",
+    "sha256": "c43b60b897a3d2d37d8845c252fc44261d9aef171e21154111a9012d2afffed6",
+    "size": 4020
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.context-5.3.0.dist-info/RECORD",
+    "sha256": "55197b88a78443297bb2d827a75baae740b33896251d872835d4b4c75ec2f57e",
+    "size": 641
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.context-5.3.0.dist-info/WHEEL",
+    "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.context-5.3.0.dist-info/top_level.txt",
+    "sha256": "d099cddcb7d71f82c845f5cbf9014e18227341664edc42f1e11d5dfe5a2ea103",
+    "size": 7
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/METADATA",
+    "sha256": "8b86946900d7fa38dd1102b9c1ebe17a0cb1f09c8b7e29f61f2bda4a4dc51eca",
+    "size": 2891
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/RECORD",
+    "sha256": "632aa7c04f7c4bcc01c027af5b9bc76fe8958f4a181035b957a3bd3014ba248b",
+    "size": 843
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/WHEEL",
+    "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/top_level.txt",
+    "sha256": "d099cddcb7d71f82c845f5cbf9014e18227341664edc42f1e11d5dfe5a2ea103",
+    "size": 7
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/METADATA",
+    "sha256": "03359d9ba56231f0ce3e840c7cb5a7db380141218949ccaa78ddbd4dcb965d52",
+    "size": 3658
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/RECORD",
+    "sha256": "816d945741dca246099388ca3eed74fc0667acbaa36f70b559b2494c3979b1f6",
+    "size": 1500
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/WHEEL",
+    "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/top_level.txt",
+    "sha256": "d099cddcb7d71f82c845f5cbf9014e18227341664edc42f1e11d5dfe5a2ea103",
+    "size": 7
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools/__init__.py",
+    "sha256": "76d01b1a34c39a7fe08625396177e1c83cb4a610255d576de649590397d46be4",
+    "size": 149
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools/__init__.pyi",
+    "sha256": "e41dde4f338dd4106e38ba1bd6f09f97211bda549deaeb17410f82bfe85791e0",
+    "size": 43
+  },
+  {
+    "executable": true,
+    "path": "setuptools/_vendor/more_itertools/more.py",
+    "sha256": "d44e64cc59dc44a4c3c34718bf5c915cc80376e9ecb4b41dd504ad7272fa53dd",
+    "size": 148370
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools/more.pyi",
+    "sha256": "8975deaade3c3717bc5469885a99155ee2a947615836ebb60d4f2740b5820aed",
+    "size": 21484
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools/recipes.py",
+    "sha256": "59e76185f846560aface28bc7c86c62559914f0d1929188b2a76010c626fe276",
+    "size": 28591
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools/recipes.pyi",
+    "sha256": "4ff99d1a970575facfdc94966f0cd83fd272355f86a3eed13dfa717dfb405a50",
+    "size": 4617
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools-10.3.0.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools-10.3.0.dist-info/LICENSE",
+    "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46",
+    "size": 1053
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools-10.3.0.dist-info/METADATA",
+    "sha256": "0453bdd0ef9f2cd89540ca63ee8212e73b73809514419dd3037d8fe471f737e0",
+    "size": 36293
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools-10.3.0.dist-info/RECORD",
+    "sha256": "77c8e73e018dc0fd7e9ed6c80b05a4404545f641fb085220ce42b368b59aa3d3",
+    "size": 1259
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools-10.3.0.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/more_itertools-10.3.0.dist-info/WHEEL",
+    "sha256": "ad282afc9a4717d7c7475971e77ab083fd7ed8bca9644fea99cb976d552af78f",
+    "size": 81
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/__init__.py",
+    "sha256": "764e136bfbe67552716070dc7f286f40dc3c5773e0481a2628d5ea83e0f62436",
+    "size": 494
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/_elffile.py",
+    "sha256": "71f940400904db9b738589aafda0a2ef641f6d3fed9fcf75b4fcdfa5b7873b01",
+    "size": 3306
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/_manylinux.py",
+    "sha256": "be5e4e0a8cf8931f341f9af05ca7975a397d58d2121a6af86604e94cff6553d7",
+    "size": 9612
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/_musllinux.py",
+    "sha256": "a7d66a35888e22d19e7bc29c64578717f61c76157018774aeabfbc9608b1bc64",
+    "size": 2694
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/_parser.py",
+    "sha256": "b3f4ef4ef0cd2b436b336401dd529385d58533835cd0fe899e439b925dcc8e93",
+    "size": 10236
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/_structures.py",
+    "sha256": "ab77953666d62461bf4b40e2b7f4b7028f2a42acffe4f6135c500a0597b9cabe",
+    "size": 1431
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/_tokenizer.py",
+    "sha256": "27abf91fb273bdbfa0f35c69ff640008ac0eecbc47400ea292bc8c53bcd7c0df",
+    "size": 5273
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/licenses/__init__.py",
+    "sha256": "d71e4cd671188dc83011b2edd1d5f0cf6ba48ebd7c0e20b30b4b2b690a89f96c",
+    "size": 5715
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/licenses/_spdx.py",
+    "sha256": "a009b5ced3c5c25b2608a7bb94002cbff38839f4b57160eef5b34191ebbeda7b",
+    "size": 48398
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/markers.py",
+    "sha256": "73cf5337307b65d198864a2f9ba3d89aa1b21f15e561568b5b9f753c750d283f",
+    "size": 10561
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/metadata.py",
+    "sha256": "60989b33b1987b8adef3ed1adce9579864be5c38131283b8b6506ddaadb90678",
+    "size": 34762
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/requirements.py",
+    "sha256": "818c9148075bac8c8a0d8ebaba02035108d132fc641f600b8a84e65f7b672faa",
+    "size": 2947
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/specifiers.py",
+    "sha256": "186d703cd31c2f47cc24eebcbc5e77c0a31dc277de84371a23eafd3694df8a50",
+    "size": 40074
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/tags.py",
+    "sha256": "085aab2730337365cd19ec5eac7fff4fe639230abb59bb185ec88b1112d6c58d",
+    "size": 21014
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/utils.py",
+    "sha256": "d05dc787d385b9182b8538066549792b6d85bf560fdad665d73ff680eea42620",
+    "size": 5050
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging/version.py",
+    "sha256": "a257f2ba4fc33db7e5364278c0159eb57435edcef8c770c1e74d5d7a052fec36",
+    "size": 16676
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/INSTALLER",
+    "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+    "size": 2
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/LICENSE",
+    "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+    "size": 197
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/LICENSE.APACHE",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "size": 10174
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/LICENSE.BSD",
+    "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+    "size": 1344
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/METADATA",
+    "sha256": "a211fceacea4e6621f4316364d2d0b7127c00de3856b8062082f9bc5957ea4db",
+    "size": 3204
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/RECORD",
+    "sha256": "6380eb5ccd0a63402b7f385b0046b52d814fc16dd612011e2f8882a977be03e3",
+    "size": 2009
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/packaging-24.2.dist-info/WHEEL",
+    "sha256": "0a950253178741b44de54191407611268acee407fe432fdf1cc72d710f034862",
+    "size": 82
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/__init__.py",
+    "sha256": "10c184f2a787451f42cc316bf242f7b40f217596678988d705565dd1419358ad",
+    "size": 22225
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/__main__.py",
+    "sha256": "1e7b14407a6205a893c70726c15c3e9c568f755359b5021d8b57960ed23e3332",
+    "size": 1493
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/android.py",
+    "sha256": "c595d8f49778e963acc53d94ebee47b0db4367e210ab170452b04b977858938a",
+    "size": 9016
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/api.py",
+    "sha256": "40161d51a736782e76d5e93fcb9dee0f50dcabe9495fc22049155de089c2eae7",
+    "size": 8996
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/macos.py",
+    "sha256": "c1fb6c6ecbeaea767458e4574a20ab64d9111f3fd62ae92d9746ba982ecc1642",
+    "size": 5580
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/unix.py",
+    "sha256": "09c8bd5aab77e5d00cb20e874fd9d11874815b9a1b6f4a51dc01352499ec0978",
+    "size": 10643
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/version.py",
+    "sha256": "afb17bead6518e040aceba71fc8d3f64c40e314f8f4bb7869c70fbcc42b7281d",
+    "size": 411
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs/windows.py",
+    "sha256": "205a62a21501c313ed0b39722b036dc725b8264f2169ae96f28e7d99fac35d5a",
+    "size": 10125
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs-4.2.2.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs-4.2.2.dist-info/METADATA",
+    "sha256": "ce6b227b4d46d4cb57474c2022fe57a557933bb89daf4596bdf9b12ac296b869",
+    "size": 11429
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs-4.2.2.dist-info/RECORD",
+    "sha256": "4c211d76d42ed40efc3acfcc866d8912a718afbca2b7e51849442366d6e99fe8",
+    "size": 1642
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs-4.2.2.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs-4.2.2.dist-info/WHEEL",
+    "sha256": "cc431c46bf4aaf4df1d68cc6c20e6ff4d4012a7de49dda7a2d2a1295583e8e15",
+    "size": 87
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/platformdirs-4.2.2.dist-info/licenses/LICENSE",
+    "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+    "size": 1089
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/ruff.toml",
+    "sha256": "5d695f64b5cbc4ce0efe8b0a4199b8cce2650a69caa65d96d3965bc73d09ba77",
+    "size": 16
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli/__init__.py",
+    "sha256": "26153057ae830758381efb7551009531d7c2bbe220015f055e6bc353da27c5de",
+    "size": 396
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli/_parser.py",
+    "sha256": "83df8435a00b4be07c768918a42bb35056a55a5a20ed3f922183232d9496aed3",
+    "size": 22633
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli/_re.py",
+    "sha256": "75b8e0e428594f6dca6bdcfd0c73977ddb52a4fc147dd80c5e78fc34ea25cbec",
+    "size": 2943
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli/_types.py",
+    "sha256": "f864c6d9552a929c7032ace654ee05ef26ca75d21b027b801d77e65907138b74",
+    "size": 254
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli/py.typed",
+    "sha256": "f0f8f2675695a10a5156fb7bd66bafbaae6a13e8d315990af862c792175e6e67",
+    "size": 26
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli-2.0.1.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli-2.0.1.dist-info/LICENSE",
+    "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+    "size": 1072
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli-2.0.1.dist-info/METADATA",
+    "sha256": "ccf0dc78a98fc0918b5ad67292b1e2c4bed65575a6246cd9d63c914f9942a0f2",
+    "size": 8875
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli-2.0.1.dist-info/RECORD",
+    "sha256": "0cb9f9a451a1e365ac54b4c88662e1da0cb54a72d16a5258fb0abff9d3e1c022",
+    "size": 999
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli-2.0.1.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/tomli-2.0.1.dist-info/WHEEL",
+    "sha256": "8cf311fc3ce47385f889c42d9b3f35967358fe402c7e883baf2eeaa11bd82d7c",
+    "size": 81
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/__init__.py",
+    "sha256": "3a7878c37f1e94f0a3b65714dc963d93787bd0d8ecc5722401f966427f99d056",
+    "size": 2071
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_checkers.py",
+    "sha256": "251ae02a271d3847c8068344b5e81808422586969df9ad6ed449bb1828f45822",
+    "size": 31360
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_config.py",
+    "sha256": "9c8cfc4300dafa814edcbf4ef3feacaf396677df6949bcb6c0e33859bec5fc1d",
+    "size": 2846
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_decorators.py",
+    "sha256": "bfa76c21e5af3e113118b3ffc1717e4660d4ca365ffc0936f20ee0049fefd3ed",
+    "size": 9033
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_exceptions.py",
+    "sha256": "6483de895f8505de449b0d8469677616f96caf08b8a1cc13d9f54604802d1dc4",
+    "size": 1121
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_functions.py",
+    "sha256": "89b81200a6b9a6d226d5e47d0111b4052a3300524f14d01266a84f57241eaa28",
+    "size": 10393
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_importhook.py",
+    "sha256": "ba08c20ef15c756314ed4ba0aa5246f7522954da44231b51afef7db3487593b3",
+    "size": 6389
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_memo.py",
+    "sha256": "d63b9057fbf19c3d8960a6d2ade6e242e8f8a0a1f3ea7ebbbfda5803e0822128",
+    "size": 1303
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_pytest_plugin.py",
+    "sha256": "f9f712aa4bf9e2b21f205f290dabd8e5840f923e0e5fc18cb7f94bec24120f82",
+    "size": 4416
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_suppression.py",
+    "sha256": "5507f3c5cc086eede27f47fb54190a33b86460e03bb4d170f5aee3301b26320e",
+    "size": 2266
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_transformer.py",
+    "sha256": "f476bbfd085dc285278bfea1bdd63e8596ee11eae0a301eb34bdafcc721a9056",
+    "size": 44937
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_union_transformer.py",
+    "sha256": "bffe36afbfba1ee457d92a05c27c89f84e4f9715e955e5093c9475f8753da92a",
+    "size": 1354
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/_utils.py",
+    "sha256": "e4784ed6b3e7e5fd4ceb29a454012fed79a5cf5717fa3d0e9d3325c87aaaad1f",
+    "size": 5270
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard-4.3.0.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard-4.3.0.dist-info/LICENSE",
+    "sha256": "6163f7987dfb38d6bc320ce2b70b2f02b862bc41126516d552ef1cd43247e758",
+    "size": 1130
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard-4.3.0.dist-info/METADATA",
+    "sha256": "cf675c1c0a744f08580855390de87cc77d676b312582e8d4cfdb5bb8fd298d21",
+    "size": 3717
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard-4.3.0.dist-info/RECORD",
+    "sha256": "48a51959582478352275428ceecd78ef77d79ac9dae796e39a2eaf2540282552",
+    "size": 2402
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard-4.3.0.dist-info/WHEEL",
+    "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard-4.3.0.dist-info/entry_points.txt",
+    "sha256": "aa9ecd43568bb624a0310aa8ea05a57c6a72d08217ce830999e4132e9cea1594",
+    "size": 48
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typeguard-4.3.0.dist-info/top_level.txt",
+    "sha256": "e33dbc021b83a1dc114bf73527f97c1f9d6de50bb07d3b1eb24633971a7a82bb",
+    "size": 10
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typing_extensions-4.12.2.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typing_extensions-4.12.2.dist-info/LICENSE",
+    "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+    "size": 13936
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typing_extensions-4.12.2.dist-info/METADATA",
+    "sha256": "05e51021af1c9d86eb8d6c7e37c4cece733d5065b91a6d8389c5690ed440f16d",
+    "size": 3018
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typing_extensions-4.12.2.dist-info/RECORD",
+    "sha256": "7710002d81971e632aa6a2fc33dc5d74aaf5d7caae22040a65d3e31503b05ee9",
+    "size": 571
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typing_extensions-4.12.2.dist-info/WHEEL",
+    "sha256": "1196c6921ec87b83e865f450f08d19b8ff5592537f4ef719e83484e546abe33e",
+    "size": 81
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/typing_extensions.py",
+    "sha256": "8307a4a721bd0d51b797158a5f89e2f2eee793759ee6c946f7c980f45dc3250c",
+    "size": 134451
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/__init__.py",
+    "sha256": "9abc4c9ef757002babfcb59e81b51f879839cac599addeb75099fcf74c2f18d9",
+    "size": 59
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/__main__.py",
+    "sha256": "3643149ee4c219c3a4818d0804b8010950bf04619c58e471d8af236064b5d941",
+    "size": 455
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/_bdist_wheel.py",
+    "sha256": "520842423487fe955f71987aa118f34b0fd342171fdda9d2c753a488b48bf363",
+    "size": 21694
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/_setuptools_logging.py",
+    "sha256": "fb9282fa59ded2294e5162037ce92a6a951618c15986e2980c86af219881e643",
+    "size": 781
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/bdist_wheel.py",
+    "sha256": "b697fd5ae7e248ed51b84320e683e121f486f0333388267fe26b82285ebd0aaa",
+    "size": 1107
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/cli/__init__.py",
+    "sha256": "369abafe32a2d3776121c46799bb85870be2549c703b4b5812712158cbfd709a",
+    "size": 4402
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/cli/convert.py",
+    "sha256": "062d27b445dbf674e5942c56793450e23fa73ecdeccd64842a2a46fc68273244",
+    "size": 12634
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/cli/pack.py",
+    "sha256": "08015c1dd055ba5bec1d82659dd2953bb28c23d26a053673e628b43cac7108eb",
+    "size": 3103
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/cli/tags.py",
+    "sha256": "947c3e2da5ab912e49cbfa96730fbaa528de34ceb20230e7a8a2371392534c25",
+    "size": 4760
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/cli/unpack.py",
+    "sha256": "63f27bca7c4f4a81454d3ec7d1f3206c195512bc320c670e6e099ee4c06ecf9f",
+    "size": 1021
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/macosx_libfile.py",
+    "sha256": "935c7b084dcb3ed3951aa8fa3574359d319854f69e46b855cd41bf28fab7cc3b",
+    "size": 16572
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/metadata.py",
+    "sha256": "242e29ee395066ed9b513010d9f7af92a2e383f5fa8273724612e7e8e50ed6d7",
+    "size": 6171
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/util.py",
+    "sha256": "68beda89b1f061481f73c5a5a252f9b577645780dab5b2716476f59301c52405",
+    "size": 423
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/LICENSE",
+    "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+    "size": 197
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/LICENSE.APACHE",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "size": 10174
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/LICENSE.BSD",
+    "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+    "size": 1344
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/_elffile.py",
+    "sha256": "85b98af0e0fa67b7d8ea1c229c7114703d5bcbb73390688d62eed28671449369",
+    "size": 3266
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/_manylinux.py",
+    "sha256": "3fbb1d479ffb5c1634f4b55860f8479b274c2482303d75ac878a2593be14ba3e",
+    "size": 9588
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/_musllinux.py",
+    "sha256": "cf5b3c4e8da1434be99ff77e3b68b9ab11b010af1698694bb7777fdba57b35e6",
+    "size": 2674
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/_parser.py",
+    "sha256": "e2d4f87a64a5daa4da53b553404d576bda358cc3c2b017b3b18071c8d31437eb",
+    "size": 10347
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/_structures.py",
+    "sha256": "ab77953666d62461bf4b40e2b7f4b7028f2a42acffe4f6135c500a0597b9cabe",
+    "size": 1431
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/_tokenizer.py",
+    "sha256": "6a50ad6f05e138502614667a050fb0093485a11009db3fb2b087fbfff31327f9",
+    "size": 5292
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/markers.py",
+    "sha256": "fd348f2350612583bb069f40cd398743122a1c45576938e60e1f46fb0f2accf0",
+    "size": 8232
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/requirements.py",
+    "sha256": "760a01795a6b3eed9813a43c9c67f038f4e30131db45afd918bc978451259fa4",
+    "size": 2933
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/specifiers.py",
+    "sha256": "2164add12acb48fef685e5a1002f142f4786bdab3b5c84078ea8958957e63ca1",
+    "size": 39778
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/tags.py",
+    "sha256": "7de7475e2387901c4d6535e8b57bfcb973e630553d69ef93281ba38181e281c0",
+    "size": 18950
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/utils.py",
+    "sha256": "5e07663f7cb1f7ec101058ceecebcc8fd46311fe49951e4714547af6fed243d1",
+    "size": 5268
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/packaging/version.py",
+    "sha256": "3c525a6190f1060cb191f6211f7490c38a9f13d202096ad39a2b6fab5e32ddbb",
+    "size": 16234
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/vendored/vendor.txt",
+    "sha256": "67610d8c1d62e69adf7b3f0274cd5276bddce99c6fdab451a253292e60677001",
+    "size": 16
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel/wheelfile.py",
+    "sha256": "5120adb4d949c1a7f1b79d5860514a1bb8e7c73f1d7e16f2a8064bea331303db",
+    "size": 8411
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel-0.45.1.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel-0.45.1.dist-info/LICENSE.txt",
+    "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654",
+    "size": 1107
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel-0.45.1.dist-info/METADATA",
+    "sha256": "98acfce07ee6ee3b31272cde21c4d53918936f434f315dfd2af3886211a09a30",
+    "size": 2313
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel-0.45.1.dist-info/RECORD",
+    "sha256": "d639f1ac7c993c3715bd42f27c616189b6b86792fdfd1b17afd77170d6e16984",
+    "size": 4900
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel-0.45.1.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel-0.45.1.dist-info/WHEEL",
+    "sha256": "0a950253178741b44de54191407611268acee407fe432fdf1cc72d710f034862",
+    "size": 82
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/wheel-0.45.1.dist-info/entry_points.txt",
+    "sha256": "ad363505b90f1e1906326e10dc5d29233241cd6da4331a06d68ae27dfbc6740d",
+    "size": 104
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp/__init__.py",
+    "sha256": "42e235834d06e1f440706b7e1ea6d5d285889264a079d086198b071d8ccd6bc0",
+    "size": 13412
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp/compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp/compat/py310.py",
+    "sha256": "799a645b4cd1b6e9e484487c8e35f780219edb67a6a0a081270ef666de119210",
+    "size": 219
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp/glob.py",
+    "sha256": "7ad5a99df1284727d4beb52c8bab13886984aef3f07ba1f363aa53f2383f9542",
+    "size": 3082
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp-3.19.2.dist-info/INSTALLER",
+    "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp-3.19.2.dist-info/LICENSE",
+    "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "size": 1023
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp-3.19.2.dist-info/METADATA",
+    "sha256": "508ae4fe43081c64b0b0a2828588b3a8cc3430c6693d1676662569400b0dfdb1",
+    "size": 3575
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp-3.19.2.dist-info/RECORD",
+    "sha256": "f316f2e03fd9ade7ebbc0b154706848e2bb8fd568b90935109f0d8e3ce2b9bfe",
+    "size": 1039
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp-3.19.2.dist-info/REQUESTED",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp-3.19.2.dist-info/WHEEL",
+    "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/_vendor/zipp-3.19.2.dist-info/top_level.txt",
+    "sha256": "8806dda121df686a817d56f65ee47d26a4901c2a0eb0eb46eb2f42fcb4a9a85c",
+    "size": 5
+  },
+  {
+    "executable": false,
+    "path": "setuptools/archive_util.py",
+    "sha256": "4e5ffae21493b5ce32f31ef16bdf2b15551b1b6e2802ba63ccb0181983f6fec2",
+    "size": 7356
+  },
+  {
+    "executable": false,
+    "path": "setuptools/build_meta.py",
+    "sha256": "ddc1c05ae70968b03d0d4e4e7c26ca924b5e4c3890e5b0782e891f4d1320253e",
+    "size": 19968
+  },
+  {
+    "executable": false,
+    "path": "setuptools/cli-32.exe",
+    "sha256": "32acc1bc543116cbe2cff10cb867772df2f254ff2634c870aef0b46c4b696fdb",
+    "size": 11776
+  },
+  {
+    "executable": false,
+    "path": "setuptools/cli-64.exe",
+    "sha256": "bbb3de5707629e6a60a0c238cd477b28f07f0066982fda953fa6fcec39073a4a",
+    "size": 14336
+  },
+  {
+    "executable": false,
+    "path": "setuptools/cli-arm64.exe",
+    "sha256": "b9a7d08da880dfac8bcf548eba4b06fb59b6f09b17d33148a0f6618328926c61",
+    "size": 13824
+  },
+  {
+    "executable": false,
+    "path": "setuptools/cli.exe",
+    "sha256": "32acc1bc543116cbe2cff10cb867772df2f254ff2634c870aef0b46c4b696fdb",
+    "size": 11776
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/__init__.py",
+    "sha256": "c1d4ab94d4743fa9c2cfdfe816d08088091e14932c65ad633dca574f9ddfd123",
+    "size": 803
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/_requirestxt.py",
+    "sha256": "22d60c4c91a1fe2e53950b2d5ff9c5a29a848640b83c915a7412f665ddd5ebbd",
+    "size": 4228
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/alias.py",
+    "sha256": "ac376b32ddf60d2eaa7f72bbb63659c870ff74c2ab9bbec05dc02dc7e9c14342",
+    "size": 2380
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/bdist_egg.py",
+    "sha256": "266b4aa086e2c201077090646dcef3c9709970017ce75b7a7a4d7c8267beeb44",
+    "size": 16948
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/bdist_rpm.py",
+    "sha256": "2f2a88e3dc38f122a4d059ae1ec13d30bcd7d52b978cbed830d6d930566a1482",
+    "size": 1435
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/bdist_wheel.py",
+    "sha256": "4a49d83d5c21ad13df5ee7663bf82fa8d1c71e1cd27d4f1c12616d428990f712",
+    "size": 22247
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/build.py",
+    "sha256": "788ed24cc111186644a73935b6f24df29f483a30005cc7062f3963bf69b02373",
+    "size": 6052
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/build_clib.py",
+    "sha256": "01b8293c817fdea2fc7d9af724879b23e5874cc4c188c7eb164550cfc2b8d06e",
+    "size": 4528
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/build_ext.py",
+    "sha256": "59d762ea1a38327561f38aaa65436a4ef8ca2ea7a859ee9c6f07493948ad5c27",
+    "size": 18465
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/build_py.py",
+    "sha256": "0c26e3bc1d7c9242fec542b9aef9739b40bab704de3b1361caf243c716bb7c82",
+    "size": 15539
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/develop.py",
+    "sha256": "d5db1bda592370f41002540d55595f3c8254059f5d8b49796ece25f3783dfbd6",
+    "size": 1610
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/dist_info.py",
+    "sha256": "1d4ef9da22cb9a660c1dbb03060cf6b9b4639202686ee80ea7c1fbd4bcf30f2b",
+    "size": 3450
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/easy_install.py",
+    "sha256": "5eb379715e7599fcdb083a1aa59ea24fc9c2cda2e9ba677025844a78c1c48c24",
+    "size": 780
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/editable_wheel.py",
+    "sha256": "317c90c78d60c2edddd6b6984991a0cc2569e64915b6508a7ed64abd399adf06",
+    "size": 34836
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/egg_info.py",
+    "sha256": "197cafab913c86e3b883e143a0dcdfdcc1e37977f1ccfa12d0792f6ed6bfcdcf",
+    "size": 25878
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/install.py",
+    "sha256": "e31da188d801190ac51172ae3c140cadbf1e712c087d81784d81d940b8cf5408",
+    "size": 5066
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/install_egg_info.py",
+    "sha256": "dc8f483c21fb0f9f5287ee9a558cfe87ac30cb1abec24c6b2b02a0de70dd26ab",
+    "size": 2075
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/install_lib.py",
+    "sha256": "f67d7f53cdde1dc1112ff6bfaeffcb8470a485794b76ac99e12741a30fbda9c1",
+    "size": 4319
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/install_scripts.py",
+    "sha256": "2660c69e01f308ed98d63e2668535d1c1fc82e118f864f9be4a871b19c14c224",
+    "size": 2490
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/launcher manifest.xml",
+    "sha256": "c652db8d6ac1d35b4a0b4fa195590e2a48923dbccc9a5d9e38fb49fee7029db1",
+    "size": 628
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/rotate.py",
+    "sha256": "5cd77f04410e5802475b515c2d3314596978401eb302e93b6fc556420dc51e8b",
+    "size": 2187
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/saveopts.py",
+    "sha256": "369d0f55bed20fba136eef59f6ca2c4bb0fe0a4908914ef1e2096ee44b35b630",
+    "size": 692
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/sdist.py",
+    "sha256": "e59880f327dd35f97e90b4e77cf021b75c8a9d2d68fc7ad216986c25dfbd7e85",
+    "size": 7369
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/setopt.py",
+    "sha256": "c59176442738001bc4f5e1c7033179d3e7e4420ddabbc7dc45455519de7c9375",
+    "size": 5100
+  },
+  {
+    "executable": false,
+    "path": "setuptools/command/test.py",
+    "sha256": "93bc5cabb0fb6c47a18316ab6f0f9d5b702d98664e46acfc1e3291e85189de39",
+    "size": 1343
+  },
+  {
+    "executable": false,
+    "path": "setuptools/compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/compat/py310.py",
+    "sha256": "2708d067770d4e2cdfa432cd97d18bb141b306bfad56530fc663185434e58622",
+    "size": 344
+  },
+  {
+    "executable": false,
+    "path": "setuptools/compat/py311.py",
+    "sha256": "7bab49005c1910ff36866301975d0761e4b2a5e968fd38b6c138ca65528bc0e1",
+    "size": 790
+  },
+  {
+    "executable": false,
+    "path": "setuptools/compat/py312.py",
+    "sha256": "bd8295b5dadd393b0efd1f747499045ec1707cc245b881497e5848807ae327e6",
+    "size": 366
+  },
+  {
+    "executable": false,
+    "path": "setuptools/compat/py39.py",
+    "sha256": "04932d9e47dcab24df71caa3610c5fa11b54da74e759a104481564b214e25ea6",
+    "size": 493
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/NOTICE",
+    "sha256": "2dddf08818297a3b89d43d95ff659d8da85741108c9136dfa3a4d856c0623bd8",
+    "size": 493
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/__init__.py",
+    "sha256": "6a23e72fd0499f53ba31f9ae357ca7f16d8ba7cbbdaa2cd156ac0f88e74f2236",
+    "size": 1499
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_apply_pyprojecttoml.py",
+    "sha256": "494c93c3b0366ed675941b9628de68e36f838b2bfde5e193898277ad93a71927",
+    "size": 19120
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_validate_pyproject/NOTICE",
+    "sha256": "5d300dbfa643138b013b75ac9caeee591f951b8b0ee24288c34ccd926c4780c8",
+    "size": 18737
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_validate_pyproject/__init__.py",
+    "sha256": "767a7a4fb78f3f5479cf83ae0bb15dd9d905948aed21f8b351fbe91893fa9f3d",
+    "size": 1042
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_validate_pyproject/error_reporting.py",
+    "sha256": "99e95d0fb9c141da25421bc6fb8debd547be814d67ece440251f3abe1dd1aef9",
+    "size": 11813
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_validate_pyproject/extra_validations.py",
+    "sha256": "f86506e52fbe8a363c59f5db7573e81e5eb2c06b32105f5db43a5e9d2a093c78",
+    "size": 2858
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_validate_pyproject/fastjsonschema_exceptions.py",
+    "sha256": "c3be3d260a8a8bc72504570e6dd71b655aac985e2827f401ca16754866d414dc",
+    "size": 1612
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_validate_pyproject/fastjsonschema_validations.py",
+    "sha256": "162843e5970cea9efb04f674e021aa877044c153683cc289649032b89a64014d",
+    "size": 354682
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/_validate_pyproject/formats.py",
+    "sha256": "4c44e890904af618e5f9c560d6896ca23909c0bc5f3fbfdc860250366cc007df",
+    "size": 13564
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/distutils.schema.json",
+    "sha256": "4dca77da44678703911b0ffda7a1848b4f258f6875e6d411cce6016f31a67015",
+    "size": 972
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/expand.py",
+    "sha256": "24d024b510accb2441fab42875b3e70ae7262d6a9c62fcc20c2f046e7d99ef13",
+    "size": 16041
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/pyprojecttoml.py",
+    "sha256": "60cbb93dd6c9248e5ace9ea447f6e833599f95fe67a8e03e227178b3a2e72e0c",
+    "size": 18320
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/setupcfg.py",
+    "sha256": "5590e4c04ec362fe3949b69d243f02c0aac3b625ef8e09652fc3d84afa110b28",
+    "size": 26575
+  },
+  {
+    "executable": false,
+    "path": "setuptools/config/setuptools.schema.json",
+    "sha256": "759051b921276646ada1596dd645701bca1c4de45d3bb043d31bce58a1f9e0f6",
+    "size": 16071
+  },
+  {
+    "executable": false,
+    "path": "setuptools/depends.py",
+    "sha256": "8ca61f8e6b7fd9941856085bf0bf5b53b2c9e9eac7279cdef8afdf295d413179",
+    "size": 5965
+  },
+  {
+    "executable": false,
+    "path": "setuptools/discovery.py",
+    "sha256": "fb8d9cdd7870ce47e874328a3f9d02d98073af5d5f9dc020994cc174145bd3e4",
+    "size": 21258
+  },
+  {
+    "executable": false,
+    "path": "setuptools/dist.py",
+    "sha256": "8eb2c67fee2e7598e867250bb86ad710fce014356ad421c27c6b2a8d3ab9d868",
+    "size": 44887
+  },
+  {
+    "executable": false,
+    "path": "setuptools/errors.py",
+    "sha256": "818db1d8f21a220cb4d724403510becdc0b0c430aa09272026808e6457b4ca2a",
+    "size": 3024
+  },
+  {
+    "executable": false,
+    "path": "setuptools/extension.py",
+    "sha256": "2829eff69ded826d1956ab60138e757f220bb26e210b2bce894b4ebbbf3b0fee",
+    "size": 6683
+  },
+  {
+    "executable": false,
+    "path": "setuptools/glob.py",
+    "sha256": "002fc1df70d8f20f821c42f10ec26bb7016ba62b9c48066c6a43c5752390ce17",
+    "size": 6062
+  },
+  {
+    "executable": false,
+    "path": "setuptools/gui-32.exe",
+    "sha256": "85dae1e95d77845f2cb59bcac3d4afe74bbe4c91a9bcc5bf4a71cd43104dbe7c",
+    "size": 11776
+  },
+  {
+    "executable": false,
+    "path": "setuptools/gui-64.exe",
+    "sha256": "3471b6140eadc6412277dbbefe3fef8c345a0f1a59776086b80a3618c3a83e3b",
+    "size": 14336
+  },
+  {
+    "executable": false,
+    "path": "setuptools/gui-arm64.exe",
+    "sha256": "e694f4743405c8b5926ff457db6fe7f1a12dec7c16a9c3864784d3f4e07ae097",
+    "size": 13824
+  },
+  {
+    "executable": false,
+    "path": "setuptools/gui.exe",
+    "sha256": "85dae1e95d77845f2cb59bcac3d4afe74bbe4c91a9bcc5bf4a71cd43104dbe7c",
+    "size": 11776
+  },
+  {
+    "executable": false,
+    "path": "setuptools/installer.py",
+    "sha256": "bde8a8f8f0c2b1e58dd09d44ff5823bd52e470884fa502e510aa52680d375969",
+    "size": 5093
+  },
+  {
+    "executable": false,
+    "path": "setuptools/launch.py",
+    "sha256": "2016f9944bfaf42cae67d7b022b98a957875e7891d2e63f6f4b29f4cc9318a61",
+    "size": 820
+  },
+  {
+    "executable": false,
+    "path": "setuptools/logging.py",
+    "sha256": "5b5ea21c9d477025d8434471cab11f27cdc54f8d7be6d0ada1883e13ab92a552",
+    "size": 1261
+  },
+  {
+    "executable": false,
+    "path": "setuptools/modified.py",
+    "sha256": "6706df05f0853fcf25b6f6effdd243cfeb752ec4239ccf895298199e74198e33",
+    "size": 568
+  },
+  {
+    "executable": false,
+    "path": "setuptools/monkey.py",
+    "sha256": "1703169769f5bf66c76dea81cbea3d83cc9435a0246056eccc26d77bd77965af",
+    "size": 3717
+  },
+  {
+    "executable": false,
+    "path": "setuptools/msvc.py",
+    "sha256": "be6334a8be2b233aed0fda626bd644c2da99e0b6dbae02f4754d0400d558466f",
+    "size": 41631
+  },
+  {
+    "executable": false,
+    "path": "setuptools/namespaces.py",
+    "sha256": "d861aa618d4134312132d05cd6b1d3bfb92582635545d92c25e5be2f57fefb2b",
+    "size": 3171
+  },
+  {
+    "executable": false,
+    "path": "setuptools/script (dev).tmpl",
+    "sha256": "454cd0cc2414697b7074bb581d661b21098e6844b906baaad45bd403fb6efb92",
+    "size": 218
+  },
+  {
+    "executable": false,
+    "path": "setuptools/script.tmpl",
+    "sha256": "5864ede6989eccedbb73e0dbc7a9794384f715fdb4039cfbf3bda1bf76808586",
+    "size": 138
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/__init__.py",
+    "sha256": "02705f96cda225b4c343398c29e2d1b7ef65c6168e1d454e644817bfcf54c2fb",
+    "size": 335
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/compat/py39.py",
+    "sha256": "794cbbfc5fba2914ce20a97ebdeb2152ee88d0475349d059321d04574959d7e8",
+    "size": 135
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/downloads/__init__.py",
+    "sha256": "f62c670c47722ff6ab29b5337ee8897ed023f5b1b12b3f0cf5a94e159323c7d6",
+    "size": 1827
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/downloads/preload.py",
+    "sha256": "b081866696377263293308896186181c6da27d9264bc9804a2d445b62ba55752",
+    "size": 450
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/setupcfg_examples.txt",
+    "sha256": "7006d5bc26e4159b9350beb1451cd182ac81d2b2ef2537efc370f7d20968d8e1",
+    "size": 1912
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/test_apply_pyprojecttoml.py",
+    "sha256": "97a9c4e1df162d4fde49646273b552a2a78abfd062ec26461dc12e0767a1936c",
+    "size": 28807
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/test_expand.py",
+    "sha256": "4b4a13e89be003fa2e8d1e184b8454b9fe6098eb75093415eba4500f357cc5de",
+    "size": 8933
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/test_pyprojecttoml.py",
+    "sha256": "d0b79f4a58d4840e8caad279015ccb8689aa65c62214a76eff57240de313d4b6",
+    "size": 12406
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/test_pyprojecttoml_dynamic_deps.py",
+    "sha256": "f56ef7fb22e16499af0a23b8ad3890a01a594f9c0d03dd176dde67d870ac85de",
+    "size": 3271
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/config/test_setupcfg.py",
+    "sha256": "66f37e3bed838289f569da7aa0cea297c2567604fdcb5f7a7d1bea11253910b2",
+    "size": 33427
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/contexts.py",
+    "sha256": "3b375f7362b2745f71f7038352c76e9fcd349b22ee3f6eeec68793d3a19b93b3",
+    "size": 3166
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/environment.py",
+    "sha256": "f79fd4b536918aebf0602f5e5ca1076e7d36903b59cacbd9ab75192663d48f52",
+    "size": 3102
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/fixtures.py",
+    "sha256": "68f7b074f1e5287440b0ca3d1fcdbc737642f25dce26a8327d1630a4b06f8029",
+    "size": 11705
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/indexes/test_links_priority/external.html",
+    "sha256": "78bf5eb8eb84f7724a65daa55f104e9476cac08b8db8876aec6051a6c68f31c5",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/indexes/test_links_priority/simple/foobar/index.html",
+    "sha256": "0c3f932abed4538cc08c71f3e157b1603352033476ee57af4a1d5cfa4dd974b1",
+    "size": 174
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/integration/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/integration/helpers.py",
+    "sha256": "dcf1dc4bd48203e7f05499943f669de4d40eb6d240113239367a1cff1ae83b99",
+    "size": 2522
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/integration/test_pbr.py",
+    "sha256": "d9e2ae92514d9a99c1800fde12160f06beab2cb1b65e6e0c63a3e5726cd98065",
+    "size": 432
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/integration/test_pip_install_sdist.py",
+    "sha256": "4856efb9817f843cede8eb6c4391a314d9f19a827f78495fbe962c8b2c8627e8",
+    "size": 8256
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/mod_with_constant.py",
+    "sha256": "5ff2a3f34339e70d6d990e1feee658f7565300ba3884a553e841f1818a1c50c4",
+    "size": 22
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/namespaces.py",
+    "sha256": "1cf708de74793021565e96800c82757f02b1ca671080192ec3cec87393d44804",
+    "size": 2774
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/script-with-bom.py",
+    "sha256": "851460222cc450b1a21bf653368318e3a1e12a1c6959fcb9146703e906e1e5f7",
+    "size": 18
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_archive_util.py",
+    "sha256": "6eeb8a758f17916dba3dedc8280a014461c6d0c0ee9a7b8da0f8365ac010cc88",
+    "size": 845
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_bdist_deprecations.py",
+    "sha256": "ef95eade0627efd2c8232bac125b5b1da9f46c4800b767bf09a2fb28b4bcf8a4",
+    "size": 775
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_bdist_egg.py",
+    "sha256": "e8f6983751772436c8875b8ad2eaefef2245731f7ccf9767f52389f0cbfdd65f",
+    "size": 1957
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_bdist_wheel.py",
+    "sha256": "759f5aece4ff53246f2e7a028b62861086edce11108ccdd8bad60c03a6427b3b",
+    "size": 23083
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_build.py",
+    "sha256": "c0980ccf68701c00dc2c583e9d7af045586eb3b8639807841a0ae9210c021a70",
+    "size": 798
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_build_clib.py",
+    "sha256": "6d7e755d101fe2e3bb22e1c5a6378f9e82bc984ef837682ca1e12a17ea1f830b",
+    "size": 3123
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_build_ext.py",
+    "sha256": "7b8652c6c60f079cead4a4aa184b804d9d2dd0f250ccc8638e4289fa12237207",
+    "size": 10099
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_build_meta.py",
+    "sha256": "92f8b4067e29f4305599edf3c9642c9f742007da0f76af12d796a08f59baf4bd",
+    "size": 33289
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_build_py.py",
+    "sha256": "8286cc13f0afcdfe94831abbd2259f5de91bff1cb24fad648708c5abcce4c1fc",
+    "size": 14186
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_config_discovery.py",
+    "sha256": "16a57e94eb64a9a23e6b2cd4db3a1c49d0f94da4408026678b13438a5280e854",
+    "size": 22580
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_core_metadata.py",
+    "sha256": "bdb549e7f2ecc7f86c3bf19d07a9d01172518c0db2771ebfa926ebe4ba617800",
+    "size": 20881
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_depends.py",
+    "sha256": "c90057a106cd425262b7a99b455a33e816f9e777f7b0daead369598a6373e576",
+    "size": 424
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_develop.py",
+    "sha256": "30760bfd80ea34c5398e12a48ec05418a3060a4aef6bc08547c75173a92460a1",
+    "size": 3072
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_dist.py",
+    "sha256": "fc862578747d615ab357e9cbabf26a4aea7a0cd79474fcee434117869d34f549",
+    "size": 8893
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_dist_info.py",
+    "sha256": "17fc535dce531a18e2ba3b46ba416deb036cb6aa535bbb1542d5272f5217ef2a",
+    "size": 4988
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_distutils_adoption.py",
+    "sha256": "fdeca7ace7f212a5c51268d4261ce97bc1973f24d43ef35239bb38a80026072f",
+    "size": 5987
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_editable_install.py",
+    "sha256": "4e0e24ba7bf06280cb62c7ef4a48209de520a4a41f7ab503c77104bef75f9b01",
+    "size": 42619
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_egg_info.py",
+    "sha256": "47b9d3dbb621573f684ae0f28a60067ab5a09646d15a23123c1b391737129c13",
+    "size": 44941
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_extern.py",
+    "sha256": "ae9294ea809c92cba62f07f94de2a50e5b854344d47db3f04cb41ba71705ac25",
+    "size": 296
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_find_packages.py",
+    "sha256": "0932c0713cd619604b09c776680b14564bcede26eb96a7b114174328e58fa2af",
+    "size": 7819
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_find_py_modules.py",
+    "sha256": "cd08ee8481b94d03764893e2c7d011a380cbff0f382e7f10b070d48e36ebb404",
+    "size": 2404
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_glob.py",
+    "sha256": "3f726fa47fa45d0e01677cef445fb32b13a0c325b3c08690233d161ddc52d249",
+    "size": 887
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_install_scripts.py",
+    "sha256": "b1c22b27a6bfb2c2aa838bc804d6948e600a1c460b51467d58a9cf78a9c4ea07",
+    "size": 3433
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_logging.py",
+    "sha256": "ce51390e595dba40bb25ce7814dbc357feeec7712b024adfacde424ac9cd3944",
+    "size": 2099
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_manifest.py",
+    "sha256": "78c83ae69200e760e2cc1ea6a64b5253e6fc0a3c1a3424b931280bfd5d4bac52",
+    "size": 18562
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_namespaces.py",
+    "sha256": "63abada1ee4f1c7a8bfc39606b0a81f45f17a6c5033efbf0d6c40c7a72b4e1ed",
+    "size": 4515
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_scripts.py",
+    "sha256": "feb6b9d3ac9017b9fbd913940dccf6af7093b06b1ac0ed66fb5a2a03d11009fc",
+    "size": 379
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_sdist.py",
+    "sha256": "4582ef3dafe77f20b5666a229f3a8ccc9ca74c31b846d3d80b5f7fd0b53aa6fb",
+    "size": 32872
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_setopt.py",
+    "sha256": "dd5c713380137cff8fe001a70e3a160a71ebe7e8bd0921104c5614d7e1539ef2",
+    "size": 1365
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_setuptools.py",
+    "sha256": "fde221a8a7f8e7e3ad1eac517f6d0a9dd39926525d4b43ee14b5c13b733e2cdf",
+    "size": 9008
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_shutil_wrapper.py",
+    "sha256": "835e44d753ed6711be227076056345c87facbce6d7c765dc32180c2c93ee1677",
+    "size": 641
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_unicode_utils.py",
+    "sha256": "c567c4125f239100adf68b615135c97c599dc804c0160809b36b53c636ee99bc",
+    "size": 316
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_virtualenv.py",
+    "sha256": "83e9e30bff494c0b35615c7fd5d189fd0e919489cee2a295bbdf9702035be936",
+    "size": 3730
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_warnings.py",
+    "sha256": "cf0476cdc9c2782783a882d994938f01cbb23c7a03bc6bb53ad3956222cc93be",
+    "size": 3347
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_wheel.py",
+    "sha256": "23bd3d9903b8602cedc48d8bf31edbbbfac4f35f2f0bd4971d1f2ab593f0656f",
+    "size": 18752
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/test_windows_wrappers.py",
+    "sha256": "c018d737788695d9334464e0293af1f7dc6a52ac0f27457e95dca2075a560fe8",
+    "size": 7868
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/text.py",
+    "sha256": "6b5db5f7ba4c553bc1e85016434ba34fc7c84222c8589945025d5409a0d40df8",
+    "size": 123
+  },
+  {
+    "executable": false,
+    "path": "setuptools/tests/textwrap.py",
+    "sha256": "14d34dabf322684271f3c3e7b1b250211c668f5aa681c00e0975d1b0e0cf24de",
+    "size": 98
+  },
+  {
+    "executable": false,
+    "path": "setuptools/unicode_utils.py",
+    "sha256": "ba430687ca44030e85fc4cdbf8ae43ddcfb4efc46003f19c174a16ea5838952b",
+    "size": 3189
+  },
+  {
+    "executable": false,
+    "path": "setuptools/version.py",
+    "sha256": "58909e52ecaaef80289364de2bdf8e7b164ebbc5eb950cbbfb2d0112e58da2f4",
+    "size": 161
+  },
+  {
+    "executable": false,
+    "path": "setuptools/warnings.py",
+    "sha256": "a18d127b978eaa37bf144ca34e0a2751cd171b082cac8e5c826d64930ba5cffc",
+    "size": 3796
+  },
+  {
+    "executable": false,
+    "path": "setuptools/wheel.py",
+    "sha256": "fc9ba18a75a6950c011c9add221d727e1ac34bb18531a70288988e6371f98300",
+    "size": 9477
+  },
+  {
+    "executable": false,
+    "path": "setuptools/windows_support.py",
+    "sha256": "c16e0860b33506fed9d4c69ab8fdb198f8f2cbec249909d7772bd7b1c01ff5fc",
+    "size": 726
+  },
+  {
+    "executable": false,
+    "path": "setuptools.egg-info/PKG-INFO",
+    "sha256": "7f890ca8dbc16b63b568c89312ed6a7f9f0a79d0b2b7f3c83bf796ac3d930615",
+    "size": 6572
+  },
+  {
+    "executable": false,
+    "path": "setuptools.egg-info/SOURCES.txt",
+    "sha256": "c57197a8903ee39f4f7f2c7887eaf4e1d508c4f533976705810175f5f4b9ff1b",
+    "size": 24260
+  },
+  {
+    "executable": false,
+    "path": "setuptools.egg-info/dependency_links.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size": 1
+  },
+  {
+    "executable": false,
+    "path": "setuptools.egg-info/entry_points.txt",
+    "sha256": "ce482d8697ff15af4d544f69e85293dd793d0d1d5f680711538728820b15ee30",
+    "size": 2449
+  },
+  {
+    "executable": false,
+    "path": "setuptools.egg-info/requires.txt",
+    "sha256": "cd186b9559d56bb22f53a7730a6ffdd8b0c2a342bbf97705c98b547553d584e3",
+    "size": 1231
+  },
+  {
+    "executable": false,
+    "path": "setuptools.egg-info/top_level.txt",
+    "sha256": "77dc8bdfdbff5bbaa62830d21fab13e1b1348ff2ecd4cdcfd7ad4e1a076c9b88",
+    "size": 41
+  },
+  {
+    "executable": false,
+    "path": "tools/build_launchers.py",
+    "sha256": "3b1efef6b86527cad354d283472077bdeac0e2c4a369ffac2deb5b9d1f8c4cd5",
+    "size": 5090
+  },
+  {
+    "executable": false,
+    "path": "tools/finalize.py",
+    "sha256": "aca8d4dd83a96a7e0c3c13df368056cfab07b76093cbe97a75a77c0ebf129ac5",
+    "size": 1430
+  },
+  {
+    "executable": false,
+    "path": "tools/generate_validation_code.py",
+    "sha256": "e865bc7fdaf3f93096c8a7e358c2641f2e280e605f771a274781680f0f186cfd",
+    "size": 1044
+  },
+  {
+    "executable": false,
+    "path": "tools/vendored.py",
+    "sha256": "b34cb5e157ce3bcff7ac048c7527192a5794427e07e95d60c57b68cd7ea460e0",
+    "size": 1526
+  },
+  {
+    "executable": false,
+    "path": "tox.ini",
+    "sha256": "c399d92367f9b96965246aa42703f84c6d7c8fa9531645927f0c400bb806e3fc",
+    "size": 2611
+  }
+]

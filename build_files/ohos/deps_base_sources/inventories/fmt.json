@@ -1,0 +1,774 @@
+{
+  "source_archive_sha256": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea",
+  "archive_root": "fmt-12.1.0",
+  "files": [
+    {
+      "path": ".clang-format",
+      "type": "file",
+      "size": 421,
+      "sha256": "f1516681d53cbc0e816b1e9365eea382df20271bad9e9dfdb01cb44701f4025a"
+    },
+    {
+      "path": ".clang-tidy",
+      "type": "file",
+      "size": 134,
+      "sha256": "95ba583cebd694c8838b779afa642bd0293f55aa9fea8865fd668fc63173b76a"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "type": "file",
+      "size": 259,
+      "sha256": "496e2016d5fca9249992ab8a3ffa9457e4f07e73e8cc698988bdf97e68ba4e14"
+    },
+    {
+      "path": ".github/issue_template.md",
+      "type": "file",
+      "size": 194,
+      "sha256": "4d08044b5a6819592c7ff5cfaaae6c9f0259fb3de6d779a27dfe12523bfe7c58"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "type": "file",
+      "size": 305,
+      "sha256": "4547e593fddf1cd9df97eb380f41a27176afac43cacd3cf793274e0fb8c4d6f6"
+    },
+    {
+      "path": ".github/workflows/cifuzz.yml",
+      "type": "file",
+      "size": 840,
+      "sha256": "4ae0c128c1ad7251dd99e9bf5398658e7bea58828041bc14296e4e27bf92884c"
+    },
+    {
+      "path": ".github/workflows/doc.yml",
+      "type": "file",
+      "size": 1559,
+      "sha256": "48b1fea088719e54e2461d5be56f69817d9d6cc3a67e0ff705edb09f1caa7674"
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "type": "file",
+      "size": 602,
+      "sha256": "39f2c78ce1e6b28379bcc3aa88bc6afadeb141f8643f0f5a56368f3a6c42a4e0"
+    },
+    {
+      "path": ".github/workflows/linux.yml",
+      "type": "file",
+      "size": 7514,
+      "sha256": "e13aa01ad50e54cda4e639faa2fbe9f7ae86671bc59a29280c2fc0869fb8e4ee"
+    },
+    {
+      "path": ".github/workflows/macos.yml",
+      "type": "file",
+      "size": 1668,
+      "sha256": "89e2c1d41c717ef98564d370ee10f68d2cec63df90b20d968a0aa566e0b51e85"
+    },
+    {
+      "path": ".github/workflows/scorecard.yml",
+      "type": "file",
+      "size": 2631,
+      "sha256": "2c71b6d05b05004a73ba616b5889be19207c19a74f734be0ae85552ff474b37e"
+    },
+    {
+      "path": ".github/workflows/windows.yml",
+      "type": "file",
+      "size": 2774,
+      "sha256": "5160bba0f879751b07644a9374f52a865ff314b843fcdb1854d109d57ed95b9e"
+    },
+    {
+      "path": ".gitignore",
+      "type": "file",
+      "size": 260,
+      "sha256": "d68705668119b7f66e29deb3343acc25866da7aa73cec2b67518476e44194e83"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "type": "file",
+      "size": 19680,
+      "sha256": "a91e5476ddc2eb686564020489a8b828b0d1112a0917e8e47b1f545021016baa"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "file",
+      "size": 710,
+      "sha256": "be39c4f99e35a65dc2212867fc13a58478c0591e2e1e523cc07a9e77a0c681f3"
+    },
+    {
+      "path": "ChangeLog.md",
+      "type": "file",
+      "size": 120608,
+      "sha256": "6c938bfd92c52124e558603877d523e1b9be73503a8784c62810f936f6314c63"
+    },
+    {
+      "path": "LICENSE",
+      "type": "file",
+      "size": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "path": "README.md",
+      "type": "file",
+      "size": 19681,
+      "sha256": "aa938105a81b0ac41ae2844d5d1bde7521b098172c5992b243a90339041703fa"
+    },
+    {
+      "path": "doc/ChangeLog-old.md",
+      "type": "file",
+      "size": 112559,
+      "sha256": "779707b9ed897e64896d9bcd6b43ccee83786667f653cf571ff5d6c694ad2619"
+    },
+    {
+      "path": "doc/api.md",
+      "type": "file",
+      "size": 23330,
+      "sha256": "4d98384832e727e802fdae9e1d5bd7746b493d8b3a21ad5430f395d351a7a043"
+    },
+    {
+      "path": "doc/fmt.css",
+      "type": "file",
+      "size": 1267,
+      "sha256": "6897a0a79b0509030b8c11d755f550e306e61395991561b5ff630f6fb0773da4"
+    },
+    {
+      "path": "doc/fmt.js",
+      "type": "file",
+      "size": 76,
+      "sha256": "8a70279ed02d04ebeabfdd88945dcd59a6da04fd4cb69115312ec04ff4bdaa3b"
+    },
+    {
+      "path": "doc/get-started.md",
+      "type": "file",
+      "size": 7309,
+      "sha256": "14082de2c0f8e0af44728771266e3fbf70be568e05bb7e921a6b3ad299748fbb"
+    },
+    {
+      "path": "doc/index.md",
+      "type": "file",
+      "size": 4697,
+      "sha256": "05b0bd2d27e25cf08036b925f67ec5747bd7b0fb27b85aa1f59e3e40a0e13999"
+    },
+    {
+      "path": "doc/perf.svg",
+      "type": "file",
+      "size": 4353,
+      "sha256": "dd280260ade5ad3a8a1eb2dbd44da387f04571faf57d89e65d3224531abf467e"
+    },
+    {
+      "path": "doc/python-license.txt",
+      "type": "file",
+      "size": 14903,
+      "sha256": "dcc4d9738d3e8d3b9f51286f1dc90d0c49ea8325982008ced021932a0b0b0cda"
+    },
+    {
+      "path": "doc/syntax.md",
+      "type": "file",
+      "size": 28075,
+      "sha256": "e0fe9296e6ba6c9f2db8006d63b570e9392d9d8cfcfd5c41c871ef52ec3392bd"
+    },
+    {
+      "path": "include/fmt/args.h",
+      "type": "file",
+      "size": 7199,
+      "sha256": "6e0bf8ffbd904e6ef525cdce8e6e00312ce5d14f616cea5d88132606ca0384c4"
+    },
+    {
+      "path": "include/fmt/base.h",
+      "type": "file",
+      "size": 105031,
+      "sha256": "73ba80ca15c02d6826a611d1651ca6f1495ec127815e257a5d6552d6f6ad313e"
+    },
+    {
+      "path": "include/fmt/chrono.h",
+      "type": "file",
+      "size": 77454,
+      "sha256": "f8e2a69bd97bc5b90c9af7fb87e010775b695d487a77e8d8cbe624e57bd2f9bf"
+    },
+    {
+      "path": "include/fmt/color.h",
+      "type": "file",
+      "size": 24145,
+      "sha256": "f88bf0c4833caed3a7f01b6d633c7b259741a26119e84c651ac1e31cfc980b72"
+    },
+    {
+      "path": "include/fmt/compile.h",
+      "type": "file",
+      "size": 20493,
+      "sha256": "636c13842acce0b42b378e65fe67a69e5635e8225c9701975e5b326a97be5cb8"
+    },
+    {
+      "path": "include/fmt/core.h",
+      "type": "file",
+      "size": 187,
+      "sha256": "b2b6692145b11c7c2774db106078c97575a47d18e80c7783c68566475325ebb4"
+    },
+    {
+      "path": "include/fmt/format-inl.h",
+      "type": "file",
+      "size": 81008,
+      "sha256": "e7baf108b84e89b29915bb35733540f8f4262cd8f4b41c15754eed4d2f185f61"
+    },
+    {
+      "path": "include/fmt/format.h",
+      "type": "file",
+      "size": 162666,
+      "sha256": "b4c65350362bf40e76a8e6b450587d912c7081b6eafeafaf3d7bcf53153e17fc"
+    },
+    {
+      "path": "include/fmt/os.h",
+      "type": "file",
+      "size": 12860,
+      "sha256": "45d4e84be4e84a128442f04eda06e1305c8e02c61166854a3b8b348194d35da5"
+    },
+    {
+      "path": "include/fmt/ostream.h",
+      "type": "file",
+      "size": 5027,
+      "sha256": "742416a6a88286609887fa512c4423820764aafbb723a42a825f3193cb52b4f0"
+    },
+    {
+      "path": "include/fmt/printf.h",
+      "type": "file",
+      "size": 19991,
+      "sha256": "afddb422a86125e04a7260bb0f0ae3423ea8d591181ed5d4ef60b7a5d068993a"
+    },
+    {
+      "path": "include/fmt/ranges.h",
+      "type": "file",
+      "size": 28126,
+      "sha256": "ccaf61c9b5937e0fa97737fb047121c5fca9db34de516b8edfc1d913583e3c8e"
+    },
+    {
+      "path": "include/fmt/std.h",
+      "type": "file",
+      "size": 23532,
+      "sha256": "3f06cdf32774b9e6915e9762411f5f4de8b8ba5660adccbdea514be7f0b23826"
+    },
+    {
+      "path": "include/fmt/xchar.h",
+      "type": "file",
+      "size": 13098,
+      "sha256": "f0903d522c64faaee2c374a0b2063ac3e43d0b5006dfd3411f0e5dccd8ff6062"
+    },
+    {
+      "path": "src/fmt.cc",
+      "type": "file",
+      "size": 3331,
+      "sha256": "7b58ba737d2dc1e61a5abcbade6f96125e5ae799baeefb05f23e65639e547998"
+    },
+    {
+      "path": "src/format.cc",
+      "type": "file",
+      "size": 1221,
+      "sha256": "f349197184b097403798c08b1758f4f7405916157cc7bcd070ea331f9f6604d5"
+    },
+    {
+      "path": "src/os.cc",
+      "type": "file",
+      "size": 11388,
+      "sha256": "2dc03e2c6dc21197f5ac967e01211feca1e5da7c51c07b27e80a1e54126ee313"
+    },
+    {
+      "path": "support/Android.mk",
+      "type": "file",
+      "size": 299,
+      "sha256": "3bed3cd78eda81bab8836b2ba69da50e88a1781760fb4219a35236bb34b58e6f"
+    },
+    {
+      "path": "support/AndroidManifest.xml",
+      "type": "file",
+      "size": 31,
+      "sha256": "efe10ca9770cd6e40029ec80966c019e3618764c7da5a864fd6d2e26386e52de"
+    },
+    {
+      "path": "support/C++.sublime-syntax",
+      "type": "file",
+      "size": 72324,
+      "sha256": "dc918929ddf6994bd0da45bfd619ecfdbd5e77482005dfb2049e1278541e06ac"
+    },
+    {
+      "path": "support/README",
+      "type": "file",
+      "size": 85,
+      "sha256": "99df194e16daa0f113f65261da812d08d4c69c2c08335744870c3d20880b3908"
+    },
+    {
+      "path": "support/Vagrantfile",
+      "type": "file",
+      "size": 583,
+      "sha256": "9295f399d8704020eeed7bd7a5e1b7be082ecf46f635aee8ce70bdbd8367e029"
+    },
+    {
+      "path": "support/build.gradle",
+      "type": "file",
+      "size": 3977,
+      "sha256": "761326806692d751cfb7ff2f4f7d4d7c0aa10de6856bba6ceb22dda2582c4c19"
+    },
+    {
+      "path": "support/check-commits",
+      "type": "file",
+      "size": 1389,
+      "sha256": "34bb8e36e10641bdebef010f4f87dae2b5c5f30038dcb091b3c3a4492bd4978f"
+    },
+    {
+      "path": "support/cmake/FindSetEnv.cmake",
+      "type": "file",
+      "size": 299,
+      "sha256": "44fa708653778bc92c337fcc976e662f12e4a8efa943b5d0717c714897e34425"
+    },
+    {
+      "path": "support/cmake/JoinPaths.cmake",
+      "type": "file",
+      "size": 959,
+      "sha256": "8b7434dd86fdcb38e7ea037da0d3e069a015a439bfc5738f950c2b3cd9d04c9f"
+    },
+    {
+      "path": "support/cmake/fmt-config.cmake.in",
+      "type": "file",
+      "size": 147,
+      "sha256": "a7e7ed7e1d21b05b7ba76d8ed6b2d286ef7771fe03dd1d946ece665a35c413fd"
+    },
+    {
+      "path": "support/cmake/fmt.pc.in",
+      "type": "file",
+      "size": 264,
+      "sha256": "734b9afb583495c8297b6f4736f2dc780d5075ece0f5fd2aa40e872524437051"
+    },
+    {
+      "path": "support/docopt.py",
+      "type": "file",
+      "size": 19784,
+      "sha256": "ee8a677f71fa3ab35fb456c141d8853a366fe91d5fe73c2f84e7b4d3014f6980"
+    },
+    {
+      "path": "support/mkdocs",
+      "type": "file",
+      "size": 2770,
+      "sha256": "e1c240fdb8e91c85496986bb46ecc6879157252f42e55b3f899a8a61e2fc420e"
+    },
+    {
+      "path": "support/mkdocs.yml",
+      "type": "file",
+      "size": 997,
+      "sha256": "50c58b824ecd7d8597207b34864f482f64e76ddf601713df2ceacd24258a7895"
+    },
+    {
+      "path": "support/printable.py",
+      "type": "file",
+      "size": 6109,
+      "sha256": "c60d5af1143573bfb0995b36c3de7b56b2d8f8a910fbd7fea58b64bccf95f669"
+    },
+    {
+      "path": "support/python/mkdocstrings_handlers/cxx/__init__.py",
+      "type": "file",
+      "size": 12091,
+      "sha256": "5746f9b56895c28a1c5caaf5a496efe5549c24df0d6a3de7ad2ed6937abd5110"
+    },
+    {
+      "path": "support/python/mkdocstrings_handlers/cxx/templates/README",
+      "type": "file",
+      "size": 64,
+      "sha256": "791eb3f2079575cab5a1b6d39594f977f5e616e0f16339f53b64362fbb182e14"
+    },
+    {
+      "path": "support/release.py",
+      "type": "file",
+      "size": 5908,
+      "sha256": "e01fb0fad01f5b81cbe7ce4d9b2863790b8e0f8e568c72b7d585735ccef9d8cd"
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "type": "file",
+      "size": 9148,
+      "sha256": "2f8acedc6b07e6f7968a98c71d157ea820be167be1f010ac08e108cce3349124"
+    },
+    {
+      "path": "test/add-subdirectory-test/CMakeLists.txt",
+      "type": "file",
+      "size": 595,
+      "sha256": "724f3726afe9b4897eaf8c4412e1dfc4e670145be135afe6ce343a8f73e40bc4"
+    },
+    {
+      "path": "test/add-subdirectory-test/main.cc",
+      "type": "file",
+      "size": 128,
+      "sha256": "400f01bbe88c51b36659237218922047f4d0ba62131d2daaaabbf776e71fb8b3"
+    },
+    {
+      "path": "test/args-test.cc",
+      "type": "file",
+      "size": 5502,
+      "sha256": "c4135a56b0f75ea297c01d8b9e286ac96ca375b037c019c8b93ce87218799df2"
+    },
+    {
+      "path": "test/assert-test.cc",
+      "type": "file",
+      "size": 852,
+      "sha256": "e3ee8863ea52d1c0af3cfa76a285c42db35cbfb16ca127cbe3a676b255dc70af"
+    },
+    {
+      "path": "test/base-test.cc",
+      "type": "file",
+      "size": 27749,
+      "sha256": "ad5733577aa300967f8334066203853d3fab0237a8876a5c502407d2be7a373a"
+    },
+    {
+      "path": "test/chrono-test.cc",
+      "type": "file",
+      "size": 40953,
+      "sha256": "ae93054e456dd53f8a7ece5bf043a7303b5f765e1d2ea64a3a122f53d900a3f0"
+    },
+    {
+      "path": "test/color-test.cc",
+      "type": "file",
+      "size": 6381,
+      "sha256": "a7c2eefbbe20fb7910a4a5b1bf6c25f873d3badd4f2336950ddced0ebfaad9a4"
+    },
+    {
+      "path": "test/compile-error-test/CMakeLists.txt",
+      "type": "file",
+      "size": 6869,
+      "sha256": "6d0c8f989e9a8f726b9c3670ee693e6a62d9efd3884c427205607b540d879839"
+    },
+    {
+      "path": "test/compile-fp-test.cc",
+      "type": "file",
+      "size": 2592,
+      "sha256": "8621596c056e85fbaff860bc40a272b0fcaf94b574b1a1eb4a931f64caab87ad"
+    },
+    {
+      "path": "test/compile-test.cc",
+      "type": "file",
+      "size": 16275,
+      "sha256": "c15de973ceb19ab7434c63f9e808160b4508144aa1167b4dcdcb56c5e99d2099"
+    },
+    {
+      "path": "test/cuda-test/CMakeLists.txt",
+      "type": "file",
+      "size": 3364,
+      "sha256": "164bf731833d3e1f062cc7a592e3400b5a1eba02d11396059630482a9d485b13"
+    },
+    {
+      "path": "test/cuda-test/cpp14.cc",
+      "type": "file",
+      "size": 418,
+      "sha256": "48b894a0066425e00911d72850bf3dfc10a6a278a15e44d74b24743ad489a954"
+    },
+    {
+      "path": "test/cuda-test/cuda-cpp14.cu",
+      "type": "file",
+      "size": 905,
+      "sha256": "78a5c3be653ba3ef15834fb83d94e07bfc548728320d9209296b1406ace899b0"
+    },
+    {
+      "path": "test/detect-stdfs.cc",
+      "type": "file",
+      "size": 607,
+      "sha256": "4a90585b1afb17d0b1ff511af66a132b4b946fe0fad5892a52ed3413945d3b37"
+    },
+    {
+      "path": "test/enforce-checks-test.cc",
+      "type": "file",
+      "size": 1746,
+      "sha256": "81484c31cad7b3495a746887e790c2c0cc77fe0c1252251a47796ca8b8854880"
+    },
+    {
+      "path": "test/find-package-test/CMakeLists.txt",
+      "type": "file",
+      "size": 590,
+      "sha256": "8ba32aa78684d9f173b0b2f404cbb2261c64e108e628d2fc63fe0e25c6b8d103"
+    },
+    {
+      "path": "test/find-package-test/main.cc",
+      "type": "file",
+      "size": 130,
+      "sha256": "9d18781837ea0373de73f68a6b569033526d4e601e1da0553da42f2d00603383"
+    },
+    {
+      "path": "test/format-impl-test.cc",
+      "type": "file",
+      "size": 14870,
+      "sha256": "da1079c4bc13290ffe0470348cf0100f6c0029141fe56cab662553f966c36a82"
+    },
+    {
+      "path": "test/format-test.cc",
+      "type": "file",
+      "size": 103875,
+      "sha256": "26edc9f80ef90dc0fc7b5acd50861240b5c25cd5ab31e8a73b8aadb4eb5de60a"
+    },
+    {
+      "path": "test/fuzzing/.gitignore",
+      "type": "file",
+      "size": 54,
+      "sha256": "ee7c3240dcf16788b92c9f7642171be381a8d63184dd45c14024c867de728f99"
+    },
+    {
+      "path": "test/fuzzing/CMakeLists.txt",
+      "type": "file",
+      "size": 1225,
+      "sha256": "efbe58fd97b6416b8bb0d01ac11b71da4d850f9bdcb7f0f3eb7edacb05f907d1"
+    },
+    {
+      "path": "test/fuzzing/README.md",
+      "type": "file",
+      "size": 789,
+      "sha256": "6fbe23b8a3b185e842167eb39a50b28320634f728743a6747be1f7c28b32139d"
+    },
+    {
+      "path": "test/fuzzing/build.sh",
+      "type": "file",
+      "size": 2113,
+      "sha256": "cdc1e779610dc134c78a1184182bd3d997a14cf2c00b9d7abbef86ff19ffef31"
+    },
+    {
+      "path": "test/fuzzing/chrono-duration.cc",
+      "type": "file",
+      "size": 3303,
+      "sha256": "6cbec065eaf12e8c1d44bd6d1baac68f69ce263e0ace49f9de7704bbdc8fdc91"
+    },
+    {
+      "path": "test/fuzzing/chrono-timepoint.cc",
+      "type": "file",
+      "size": 828,
+      "sha256": "2238b277d8c4248927e7a3278b93246dc1a707171bca31d5de1e38e81db692ca"
+    },
+    {
+      "path": "test/fuzzing/float.cc",
+      "type": "file",
+      "size": 1219,
+      "sha256": "6bcf73b39b26b59ea2542f64b38104fda54c644c0e918035cb0c990e82672dd8"
+    },
+    {
+      "path": "test/fuzzing/fuzzer-common.h",
+      "type": "file",
+      "size": 2419,
+      "sha256": "bd1fa0ab2f74a3896573fc5cc0e952ce8330a79bd8f83ce1c24f5fe96f746fba"
+    },
+    {
+      "path": "test/fuzzing/main.cc",
+      "type": "file",
+      "size": 592,
+      "sha256": "8328d417518b8dd2203e51c1b0346e9cefc2327a97b124db589937835ec0f1b4"
+    },
+    {
+      "path": "test/fuzzing/named-arg.cc",
+      "type": "file",
+      "size": 2266,
+      "sha256": "7752e1dfd95ccbe29fa3c63492a7697b54c2be63f57ca189e7a0d89989986c5f"
+    },
+    {
+      "path": "test/fuzzing/one-arg.cc",
+      "type": "file",
+      "size": 2048,
+      "sha256": "5e4a8d3dbdeaab85d8731ed66cc35db694a2382806119d57a691246390eb3dc8"
+    },
+    {
+      "path": "test/fuzzing/two-args.cc",
+      "type": "file",
+      "size": 2343,
+      "sha256": "745d0eabf68dda4ed271623dc8ad4dcae265b90e20686215643228e081488ed5"
+    },
+    {
+      "path": "test/gtest-extra-test.cc",
+      "type": "file",
+      "size": 13810,
+      "sha256": "e4ce359558caf71b287392805fea85b818b9aa830b64bb4e5a277553a0eb1ac6"
+    },
+    {
+      "path": "test/gtest-extra.cc",
+      "type": "file",
+      "size": 2030,
+      "sha256": "210092e9de8d893f61d2d33ed7fd73778aeca2254d6b43a5adff28ce93b287ca"
+    },
+    {
+      "path": "test/gtest-extra.h",
+      "type": "file",
+      "size": 7693,
+      "sha256": "f68eac91247d8b2bb9fecea283813a8487bf5801ca075c75620c7c7e5b20dfc3"
+    },
+    {
+      "path": "test/gtest/.clang-format",
+      "type": "file",
+      "size": 68,
+      "sha256": "abadb738c47dea7e085bb1e16516c55751b715d662447dfaea05c94016bcc85d"
+    },
+    {
+      "path": "test/gtest/CMakeLists.txt",
+      "type": "file",
+      "size": 1291,
+      "sha256": "b508954bc7178a2f365daff7a3745dd4a07b4042dff42bdcffa51af9bdca2f96"
+    },
+    {
+      "path": "test/gtest/gmock-gtest-all.cc",
+      "type": "file",
+      "size": 532839,
+      "sha256": "880ddcab57683f54c8b4263ba591f4fb20ce402ce80ac1a1907756287c39ff85"
+    },
+    {
+      "path": "test/gtest/gmock/gmock.h",
+      "type": "file",
+      "size": 454768,
+      "sha256": "fe5c9ce9bca0725bcd6f6ceaa24b179b0ed322fc9c87efc4b67d862e56a17b32"
+    },
+    {
+      "path": "test/gtest/gtest/gtest-spi.h",
+      "type": "file",
+      "size": 10112,
+      "sha256": "bc7de52471740743412a62784af636375d05bf913302c74fc50483f20eff45f4"
+    },
+    {
+      "path": "test/gtest/gtest/gtest.h",
+      "type": "file",
+      "size": 474166,
+      "sha256": "a61461e558fa54e29fd5a7764d386b8861093ebd47665f347d3b54cdb9419038"
+    },
+    {
+      "path": "test/header-only-test.cc",
+      "type": "file",
+      "size": 253,
+      "sha256": "905554797fff0f49b5f2907d58df3a277d72be92608e8e45288323c552be7d3e"
+    },
+    {
+      "path": "test/mock-allocator.h",
+      "type": "file",
+      "size": 2240,
+      "sha256": "809483154d04030418bfdd37facd76959fdccb0285436bed5bb881c46bf7d268"
+    },
+    {
+      "path": "test/module-test.cc",
+      "type": "file",
+      "size": 16599,
+      "sha256": "6d510a06dcb71d59ec7eb707e5dca3a264e8e2cb70d304f9bdfc956c45677c16"
+    },
+    {
+      "path": "test/no-builtin-types-test.cc",
+      "type": "file",
+      "size": 651,
+      "sha256": "f4cbc31f3305d802ef7b3987c204b59e48455ba959b72d268de9e0616f7f049c"
+    },
+    {
+      "path": "test/noexception-test.cc",
+      "type": "file",
+      "size": 437,
+      "sha256": "e8a1746fc7bb2aa4775756923d3b1281b03188b5e7a361bb9cbec4b1b91d43ba"
+    },
+    {
+      "path": "test/os-test.cc",
+      "type": "file",
+      "size": 16366,
+      "sha256": "fdc9153e8d242829f701a1450ad8ca1155414c7d92ec8229b8fae8bb2f039b24"
+    },
+    {
+      "path": "test/ostream-test.cc",
+      "type": "file",
+      "size": 9237,
+      "sha256": "676dfaa0f20374300f23781f0b004d96f9f70a3ae12f5a0ae9ce9afa0939e4dd"
+    },
+    {
+      "path": "test/perf-sanity.cc",
+      "type": "file",
+      "size": 764,
+      "sha256": "afed1501a3a03e8868eb2e07712609ce7823ec1368e4e9c9e21ab9c1d285b3e1"
+    },
+    {
+      "path": "test/posix-mock-test.cc",
+      "type": "file",
+      "size": 11154,
+      "sha256": "83010bca3b9fe5e07dbf2684401a62aeeeb31b2b8668a7205dbebd0c954d98b4"
+    },
+    {
+      "path": "test/posix-mock.h",
+      "type": "file",
+      "size": 1556,
+      "sha256": "89c5e485bffe7c24fc93726749abff4b5fcabcb59cbca956cd684cd3f4776980"
+    },
+    {
+      "path": "test/printf-test.cc",
+      "type": "file",
+      "size": 18515,
+      "sha256": "3ebde72472d616a6ca32b3fd4176da3fa3bd439c1abce2049eb34fc691bd414c"
+    },
+    {
+      "path": "test/ranges-odr-test.cc",
+      "type": "file",
+      "size": 478,
+      "sha256": "f980be7b2e2ac75e0c38aa38e87abe0928ddfd5d00db4a54a4d8a0cbf9a08020"
+    },
+    {
+      "path": "test/ranges-test.cc",
+      "type": "file",
+      "size": 24587,
+      "sha256": "c24a895302e3e556d8a1b05bdd53046121a389f90ecce68d883a90d722b6a7e7"
+    },
+    {
+      "path": "test/scan-test.cc",
+      "type": "file",
+      "size": 4862,
+      "sha256": "9b0fb8571e39f1c7c660b537f7b86a50bcf4732cbb5025568f57515e483dbc3e"
+    },
+    {
+      "path": "test/scan.h",
+      "type": "file",
+      "size": 20439,
+      "sha256": "56707e0e14a1f2fb77bf92001408dea5c459b0d90284fa56f27db90699117f24"
+    },
+    {
+      "path": "test/static-export-test/CMakeLists.txt",
+      "type": "file",
+      "size": 813,
+      "sha256": "f0c081d49590846413b3965283c91c882c85679ec9f90c02f302dbf9f2529caa"
+    },
+    {
+      "path": "test/static-export-test/library.cc",
+      "type": "file",
+      "size": 142,
+      "sha256": "c29971cd8eeb091a28906d62c86fe494b10827ac570c2216b26e5fe953d9a592"
+    },
+    {
+      "path": "test/static-export-test/main.cc",
+      "type": "file",
+      "size": 114,
+      "sha256": "7d67e1f228ea02492c02e4ab517f1bf19b1b03a675eea559f8c1b0955ea088c8"
+    },
+    {
+      "path": "test/std-test.cc",
+      "type": "file",
+      "size": 17346,
+      "sha256": "515bbb4f057dc0097bbf2ae4fa2613db8795283435d37e2590161693fe212219"
+    },
+    {
+      "path": "test/test-assert.h",
+      "type": "file",
+      "size": 1120,
+      "sha256": "20c01c2b9a337512116c0a975e45a248821a6d577eeef7c148dc35314e033349"
+    },
+    {
+      "path": "test/test-main.cc",
+      "type": "file",
+      "size": 1210,
+      "sha256": "3366e937721943a8ecb9c9a0a9055d8962b156ca27e755f8ed5f2a431987d01c"
+    },
+    {
+      "path": "test/unicode-test.cc",
+      "type": "file",
+      "size": 1314,
+      "sha256": "5f29a1c357c4cf5036cdf4059c3da86d41b65fc182cba50331151afdb7768926"
+    },
+    {
+      "path": "test/util.cc",
+      "type": "file",
+      "size": 1258,
+      "sha256": "19989928f6f10b39bd6e287d4cae082cd5520e61563cafdfaefda6c0abbb59b1"
+    },
+    {
+      "path": "test/util.h",
+      "type": "file",
+      "size": 1797,
+      "sha256": "17873035a32ae6025f49cb1a0c60184c607ba351fbe1dba6a4ef224777a4a98d"
+    },
+    {
+      "path": "test/xchar-test.cc",
+      "type": "file",
+      "size": 14803,
+      "sha256": "49fa356dbc8256e82e79cc405c0fd28e81d5883f8c70f66a8c13ae8bc252eff6"
+    }
+  ]
+}

@@ -52,6 +52,9 @@ class StringRefNull;
 
 enum GHOST_TVulkanPlatformType {
   GHOST_kVulkanPlatformHeadless = 0,
+#ifdef WITH_GHOST_OHOS
+  GHOST_kVulkanPlatformOHOS = 3,
+#endif
 #ifdef WITH_GHOST_X11
   GHOST_kVulkanPlatformX11 = 1,
 #endif
@@ -124,7 +127,12 @@ class GHOST_ContextVK : public GHOST_Context {
                   int contextMajorVersion,
                   int contextMinorVersion,
                   const GHOST_GPUDevice &preferred_device,
-                  const GHOST_WindowHDRInfo *hdr_info_ = nullptr);
+                  const GHOST_WindowHDRInfo *hdr_info_ = nullptr
+#ifdef WITH_GHOST_OHOS
+                  , void *ohos_native_window = nullptr,
+                  const GHOST_ContextVK_WindowInfo *ohos_window_info = nullptr
+#endif
+                  );
 
   /**
    * Destructor.
@@ -156,6 +164,12 @@ class GHOST_ContextVK : public GHOST_Context {
    * \return Indication as to whether initialization has succeeded.
    */
   GHOST_TSuccess initializeDrawingContext() override;
+#ifdef WITH_GHOST_OHOS
+  /* Engine-frame-boundary WSI suspension preserves device/GPU resources. */
+  GHOST_TSuccess detachOHOSWindow();
+  GHOST_TSuccess attachOHOSWindow(void *native_window,
+                                const GHOST_ContextVK_WindowInfo *window_info);
+#endif
 
   /**
    * Removes references to native handles from this context and then returns
@@ -253,6 +267,14 @@ class GHOST_ContextVK : public GHOST_Context {
   const GHOST_ContextVK_WindowInfo *wayland_window_info_;
 #endif
 
+#ifdef WITH_GHOST_OHOS
+  /* Held by GHOST_WindowOHOS's host lease, never reinterpreted as X11/Wayland. */
+  void *ohos_native_window_;
+  const GHOST_ContextVK_WindowInfo *ohos_window_info_;
+  bool ohos_device_user_acquired_ = false;
+  VkExtent2D ohos_extent_max_ = {UINT32_MAX, UINT32_MAX};
+  VkExtent2D ohos_requested_extent_ = {0, 0};
+#endif
   const int context_major_version_;
   const int context_minor_version_;
   const GHOST_GPUDevice preferred_device_;

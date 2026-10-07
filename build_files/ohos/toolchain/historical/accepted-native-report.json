@@ -1,0 +1,263 @@
+{
+  "native_host": {
+    "system": "HarmonyOS",
+    "node": "localhost",
+    "release": "HongMeng Kernel 1.13.0",
+    "version": "#1 SMP Tue Sep 22 13:13:01 UTC 2026",
+    "machine": "aarch64",
+    "processor": ""
+  },
+  "install": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20",
+  "tools": [
+    {
+      "name": "clang",
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/clang",
+      "real_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/clang-20",
+      "size": 118680128,
+      "sha256": "0afe035589f4f940d781a2efe8ce48452fa89a266eb44447b19ef8e7ac0dc2c7",
+      "version": "clang version 20.1.8\nTarget: aarch64-unknown-linux-ohos\nThread model: posix\nInstalledDir: /data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin",
+      "codesign_present": true
+    },
+    {
+      "name": "clang++",
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/clang++",
+      "real_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/clang-20",
+      "size": 118680128,
+      "sha256": "0afe035589f4f940d781a2efe8ce48452fa89a266eb44447b19ef8e7ac0dc2c7",
+      "version": "clang version 20.1.8\nTarget: aarch64-unknown-linux-ohos\nThread model: posix\nInstalledDir: /data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin",
+      "codesign_present": true
+    },
+    {
+      "name": "ld.lld",
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/ld.lld",
+      "real_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/lld",
+      "size": 71191104,
+      "sha256": "42ac72cbd22c52bc4931c5c86bbeb50ac3d7d33677da1dddd3680276c716b5bb",
+      "version": "LLD 20.1.8 (compatible with GNU linkers)",
+      "codesign_present": true
+    },
+    {
+      "name": "llvm-min-tblgen",
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/build-llvm20-sdk15/bin/llvm-min-tblgen",
+      "real_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/build-llvm20-sdk15/bin/llvm-min-tblgen",
+      "size": 3373632,
+      "sha256": "24fc3249acda2d9085376574ba4217f5ccd5487868d53f781dab6603920bfd81",
+      "version": "LLVM (http://llvm.org/):\n  LLVM version 20.1.8\n  Optimized build.",
+      "codesign_present": true
+    },
+    {
+      "name": "llvm-tblgen",
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/llvm-tblgen",
+      "real_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/llvm-tblgen",
+      "size": 7113280,
+      "sha256": "e98cb500a17d2f6dd7083d4699e6823e680eba00aa39d04556eb8b8bfc928922",
+      "version": "LLVM (http://llvm.org/):\n  LLVM version 20.1.8\n  Optimized build.",
+      "codesign_present": true
+    },
+    {
+      "name": "clang-tblgen",
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/clang-tblgen",
+      "real_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20/bin/clang-tblgen",
+      "size": 6400576,
+      "sha256": "2eb89699cb764541f70067f153166c0af651e0b4a3d3e63b47c1cdf2f7a9841d",
+      "version": "LLVM (http://llvm.org/):\n  LLVM version 20.1.8\n  Optimized build.",
+      "codesign_present": true
+    }
+  ],
+  "stdlib": "SDK15 libc++15004 ABI __n1, experimental feature opt-in, static linking",
+  "offline_reproduction_scope": "Pinned archive/patch verification plus fresh signed native C/C++ compiler consumption; no second full LLVM rebuild or signed-bit reproducibility claim",
+  "cxx20_required_subset_passed": [
+    "atomic_wait",
+    "bit_endian_bitcast",
+    "erase_if_contains",
+    "exceptions_rtti_format_error",
+    "filesystem",
+    "format",
+    "identity",
+    "language_concepts",
+    "latch_barrier_semaphore",
+    "memory_construct_destroy",
+    "ranges_algorithms",
+    "ranges_pointer_projection_equal",
+    "ranges_sort_projection",
+    "ranges_transform_ref",
+    "ranges_views",
+    "span"
+  ],
+  "cxx20_optional_or_unavailable": [
+    "atomic_ref",
+    "jthread_stop_token",
+    "source_location"
+  ],
+  "cxx20_probe_report": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/results/clang20-sdk15/report.json",
+  "fresh_offline_native_cmake_smoke_passed": true,
+  "incremental_before_execution_no_work": true,
+  "execution_artifacts_before": [
+    {
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/offline-clang20-cmake-smoke-accepted2/ohos_native_smoke_test",
+      "mtime_ns": 1790903662064598282,
+      "ctime_ns": 1790903662184596720,
+      "sha256": "277498a5b5a192e4ef30f77e63fdb4df6b3714d67de34adf38b86bdb9dbb9a8d"
+    },
+    {
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/offline-clang20-cmake-smoke-accepted2/libohos_native_smoke.so",
+      "mtime_ns": 1790903661420600157,
+      "ctime_ns": 1790903661552599063,
+      "sha256": "2211d63f25e7b295fb1904c541aa65ffb1333534cdbcc89c4984531a4b683c5c"
+    }
+  ],
+  "execution_artifacts_after": [
+    {
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/offline-clang20-cmake-smoke-accepted2/ohos_native_smoke_test",
+      "mtime_ns": 1790903662496600157,
+      "ctime_ns": 1790903662496600157,
+      "sha256": "277498a5b5a192e4ef30f77e63fdb4df6b3714d67de34adf38b86bdb9dbb9a8d"
+    },
+    {
+      "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/offline-clang20-cmake-smoke-accepted2/libohos_native_smoke.so",
+      "mtime_ns": 1790903662516599532,
+      "ctime_ns": 1790903662516599532,
+      "sha256": "2211d63f25e7b295fb1904c541aa65ffb1333534cdbcc89c4984531a4b683c5c"
+    }
+  ],
+  "execution_signed_bytes_unchanged": true,
+  "post_execution_relink_due_metadata": true,
+  "runtime_timestamp_limit": "This device updates mtime/ctime on executing/loading signed ELF; .so newer than executable may correctly cause one relink after each run. No timestamp restoration or signed-byte mutation was used to claim no-work.",
+  "c_consumer": {
+    "path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/probe-clang20-native-c",
+    "sha256": "07a70d3c8466179e4c79b29f962c6461220109ad83d4ff7a6ec95f51b3bb63bc",
+    "signed": true
+  },
+  "bootstrap_runtime_overlay": {
+    "sdk": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta",
+    "bootstrap_sdk_version": "26.0.0.35-Beta",
+    "compiler_rt_version": "15.0.4",
+    "note": "LLVM20 compiler, LLVM20 builtin headers, genuine SDK15 runtime objects/archives; not represented as compiler-rt20",
+    "files": [
+      {
+        "name": "libclang_rt.fuzzer.a",
+        "sha256": "defa126fce79e114953445181e86571e74d68925be7572c103812e5ba04499c3"
+      },
+      {
+        "name": "libclang_rt.tsan_cxx.a",
+        "sha256": "0ac589a7bca83ce2807f2e708d3652fe66df7b2519a388043176b4559d2d8f17"
+      },
+      {
+        "name": "libclang_rt.profile.a",
+        "sha256": "ef803d07848f11faffa8025dbc51c8e350c275a5da5391a6f5f2228fe0c89701"
+      },
+      {
+        "name": "libclang_rt.asan-preinit.a",
+        "sha256": "ba98164be5c2f69598350a2aadfed746f751ba021f3d82eb40b3db524e0c1856"
+      },
+      {
+        "name": "libclang_rt.tsan.a",
+        "sha256": "04d58c0794642e4deafd346fe673f04bc2fc36c06eedae8a0b0bd0be6779a2c9"
+      },
+      {
+        "name": "libclang_rt.stats_client.a",
+        "sha256": "a3d1c009cfc3bf1cc563c59ba54221e3c5c9663d69ec8c060788c118b62421dd"
+      },
+      {
+        "name": "libclang_rt.fuzzer_no_main.a",
+        "sha256": "13ce73f3322ec63ec293882c284e54c34d27e051ec090a4ded3125baebf11f4a"
+      },
+      {
+        "name": "libclang_rt.hwasan.a",
+        "sha256": "f6d2cb5ab7d7a3f719c651484ca9a5c136666b916e5a044c7b14706898614bd8"
+      },
+      {
+        "name": "libclang_rt.ubsan_minimal.a",
+        "sha256": "570fd594ce7f35735e570a446806f2a82a81bd04738d3ed1fa759453e50c73c4"
+      },
+      {
+        "name": "libclang_rt.scudo_minimal.a",
+        "sha256": "8ecb234d23b7d640e9969d6b28678cd488dcf720deb82e4b0eb5f19d9ce0f954"
+      },
+      {
+        "name": "libclang_rt.ubsan_standalone_cxx.a",
+        "sha256": "ed58e0af0ad892c667ee37d19a959d34fcb243d7551f4fa979c94a7d0e5971e7"
+      },
+      {
+        "name": "libclang_rt.memgraph.a",
+        "sha256": "bc90d708e345f4deea6668fd5319a0ba17bea42c687129edf0c14d23c7da123d"
+      },
+      {
+        "name": "libclang_rt.scudo.a",
+        "sha256": "87ff67b7c8735f89a3abf655ed19e111c3cd32476f1fa63ec804ed79998f34c7"
+      },
+      {
+        "name": "libclang_rt.fuzzer_interceptors.a",
+        "sha256": "ed3d21ae36109db47726cc6b887448fc50b5664286bdf05281b006a427bd89a1"
+      },
+      {
+        "name": "libclang_rt.scudo_cxx_minimal.a",
+        "sha256": "f2a83a2322c5063d34fd9454bf46a9673f42c4707c5c74c1f62b13b0127421b5"
+      },
+      {
+        "name": "libclang_rt.asan.a",
+        "sha256": "7a15fbac16f7ded0ab47201bb1b712cf241ad9807a4e5ba088d1df5674efcf85"
+      },
+      {
+        "name": "libclang_rt.ubsan_standalone.a",
+        "sha256": "b359a29d92fd3da6887dd39dbbf440d9b5c481b4c024349ea857c1c3208b6549"
+      },
+      {
+        "name": "libclang_rt.builtins.a",
+        "sha256": "e1b47c38457293fdc6d19e28972812b344b6bfc94f9eaeb5f44cf2e219a40a6a"
+      },
+      {
+        "name": "libclang_rt.hwasan_cxx.a",
+        "sha256": "0443fb1298dcb3f87959229fd82609893910f7363daa5e214aea43f072abdc26"
+      },
+      {
+        "name": "clang_rt.crtbegin.o",
+        "sha256": "b3167f5bee0451a74b63a7582c84c83410e2e94cfa261df816f5a1d44ef7a0af"
+      },
+      {
+        "name": "libclang_rt.asan_static.a",
+        "sha256": "ca5d51e34e8f9fb9bb4e16544ecd6048a678d1bd04f84033217fdb4078dbf90f"
+      },
+      {
+        "name": "libclang_rt.scudo_standalone_cxx.a",
+        "sha256": "295ab88d72b58785444fb485df78a6cc059346295fd6b61662179e8379782005"
+      },
+      {
+        "name": "libclang_rt.scudo_standalone.a",
+        "sha256": "1b0ff1f053e2731c4820b545751d6f6ea65105ec777638d986142fed3948da7c"
+      },
+      {
+        "name": "libclang_rt.scudo_cxx.a",
+        "sha256": "73015f44c844fc3cc98e4636b8975cea49d855ba61f978e111cf42a651098090"
+      },
+      {
+        "name": "libclang_rt.gwp_asan.a",
+        "sha256": "3b7aefedd85c4d9b33742d08e9409e904a9c522ae3b91801b2b21d0da5343722"
+      },
+      {
+        "name": "libclang_rt.cfi.a",
+        "sha256": "038365b61b1ca31f3d5f450e3fffb9b87174affafcd31e251ab00f63a604d339"
+      },
+      {
+        "name": "libclang_rt.asan_cxx.a",
+        "sha256": "d139f34100042b21be8b815d1d9eee7db2f6fae6a1f70a9fb5ffdf8a8dd9646f"
+      },
+      {
+        "name": "libclang_rt.cfi_diag.a",
+        "sha256": "85c0dcd08f3677fdf01bd43dacde4837542288e719efba77ca6fcb8c295054f6"
+      },
+      {
+        "name": "libclang_rt.stats.a",
+        "sha256": "81985456aad5e4e9440c2245db401e3ee280afac4e767aba4021099cec161804"
+      },
+      {
+        "name": "clang_rt.crtend.o",
+        "sha256": "f7f0dd2c6815975b30a7092467f39432dd0a0510063def86d6e0b26f75f4de2b"
+      },
+      {
+        "name": "libclang_rt.hwasan-preinit.a",
+        "sha256": "7100b4f472f0fe2fad8b4c48a265540c9db8916837369183f984ea22fa306553"
+      }
+    ]
+  }
+}

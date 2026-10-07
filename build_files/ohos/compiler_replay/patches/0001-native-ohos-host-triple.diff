@@ -1,0 +1,22 @@
+--- a/llvm/cmake/modules/GetHostTriple.cmake
++++ b/llvm/cmake/modules/GetHostTriple.cmake
+@@ -41,6 +41,19 @@
+     else()
+       set( value "powerpc-ibm-aix" )
+     endif()
++  elseif(CMAKE_HOST_SYSTEM_NAME MATCHES "^(HarmonyOS|OpenHarmony|OHOS)$")
++    # Native OHOS: config.guess lacks HarmonyOS uname recognition. Ask the real
++    # configured compiler; never masquerade as a Linux host or cache probe success.
++    execute_process(COMMAND uname -m
++      RESULT_VARIABLE OHOS_UNAME_RV OUTPUT_VARIABLE OHOS_UNAME_MACHINE
++      OUTPUT_STRIP_TRAILING_WHITESPACE)
++    execute_process(COMMAND "${CMAKE_C_COMPILER}" -dumpmachine
++      RESULT_VARIABLE OHOS_TRIPLE_RV OUTPUT_VARIABLE value
++      OUTPUT_STRIP_TRAILING_WHITESPACE)
++    if(NOT OHOS_UNAME_RV EQUAL 0 OR NOT OHOS_UNAME_MACHINE STREQUAL "aarch64" OR
++       NOT OHOS_TRIPLE_RV EQUAL 0 OR NOT value MATCHES "^aarch64-[^-]+-linux-ohos$")
++      message(FATAL_ERROR "Native OHOS ARM64 host/compiler mismatch: ${OHOS_UNAME_MACHINE}, ${value}")
++    endif()
+   else()
+     if(CMAKE_HOST_SYSTEM_NAME STREQUAL Windows AND NOT MSYS)
+       message(WARNING "unable to determine host target triple")

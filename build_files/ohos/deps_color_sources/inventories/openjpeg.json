@@ -1,0 +1,3047 @@
+{
+  "archive_root": "openjpeg-2.5.3",
+  "source_archive_sha256": "368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707",
+  "members": 519,
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE.md",
+      "sha256": "7d8611e79667f776d3019048114673a0962751620c1fe0252d5b1a404662ee1f",
+      "size": 792,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/abi_check.yml",
+      "sha256": "36113649bf66db4eae3fe4a756e50e1bdfed6e313deca65cb0ddfba76d9fc907",
+      "size": 700,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "sha256": "3ed93ab30fe598f853f6e955e08a15aa1ef28dbc18bd6310243cb6fc847450a9",
+      "size": 6677,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/cifuzz.yml",
+      "sha256": "f9e62a5fb94f84d2be778e01e8adb1d7294cef197a462def02ca7d7ee2c64e1e",
+      "size": 697,
+      "mode": 436
+    },
+    {
+      "path": ".github/workflows/code_style.yml",
+      "sha256": "0563dc97bb38a4ba6a59dbb537f1635137fc09cbe82f591f8d60700fa3995f52",
+      "size": 664,
+      "mode": 436
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9fae5da27519035e2a4d15d19a84b4fa93e41d94c1c7696309a8f0143b492a63",
+      "size": 384,
+      "mode": 436
+    },
+    {
+      "path": ".travis.yml",
+      "sha256": "cc859454fb837aa03d3df17bb201a8eb97672d717d436fb275da5faf9642952f",
+      "size": 5481,
+      "mode": 436
+    },
+    {
+      "path": "AUTHORS.md",
+      "sha256": "cf22e984f9fbb9be7550e9a94120595ba8c4a7de0d63f47d3725f4b2e28a4387",
+      "size": 712,
+      "mode": 436
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "517f68bfaea6c432b7597e80dab326d85c635c2fc0b8b25054d4f6b870647d24",
+      "size": 115119,
+      "mode": 436
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "f7874049804cc7ca7c7cde61ff68581543dbc17366a6f1807d90491264958685",
+      "size": 13485,
+      "mode": 436
+    },
+    {
+      "path": "CTestConfig.cmake",
+      "sha256": "bc53107bc8ae7c73f9bcb93065fe291e8a409199e5d1d28ab589e94a1f5fd10e",
+      "size": 234,
+      "mode": 436
+    },
+    {
+      "path": "HOWTO-RELEASE",
+      "sha256": "d6a40249882871c904860c83a0075beb322c404614b77da80e2f3cf2519253c3",
+      "size": 2366,
+      "mode": 436
+    },
+    {
+      "path": "INSTALL.md",
+      "sha256": "e7640c6476a5152f9a9719bd80bbef7ecb44a52cd6d14abc3e21c5855a9612a9",
+      "size": 5763,
+      "mode": 436
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6",
+      "size": 2112,
+      "mode": 436
+    },
+    {
+      "path": "NEWS.md",
+      "sha256": "067a280ec9f630676bab2f633aef93b2ee998d7e4f3d46020108430391d241ae",
+      "size": 9139,
+      "mode": 436
+    },
+    {
+      "path": "README.md",
+      "sha256": "cc0090eb6abfbea7d44351851d04bcfcfeb9181eac9fcb8b2d108091b5eefc24",
+      "size": 5402,
+      "mode": 436
+    },
+    {
+      "path": "THANKS.md",
+      "sha256": "9017703395bb7fe594020db23607143c30838cab55bfdab6c5fd3b7ba90f2369",
+      "size": 818,
+      "mode": 436
+    },
+    {
+      "path": "appveyor.yml",
+      "sha256": "af0df76a58f34fc65eec37402bdc099c82bc3a73a407c62700b8c974ce85163e",
+      "size": 1377,
+      "mode": 436
+    },
+    {
+      "path": "cmake/CTestCustom.cmake.in",
+      "sha256": "9b34b66d6ab67b1c7bc25de523270d199a064122ed3000741403be3794b18d73",
+      "size": 1215,
+      "mode": 436
+    },
+    {
+      "path": "cmake/EnsureFileInclude.cmake",
+      "sha256": "a2c3521573453c8e09240ba706ec930ce126cf907e3315d0b977668935c79ed0",
+      "size": 928,
+      "mode": 436
+    },
+    {
+      "path": "cmake/FindCPPCHECK.cmake",
+      "sha256": "584f2809fddf6dc5ceb80c807074bfadd5d92c6a69abde87ed77bfa35efb83fa",
+      "size": 332,
+      "mode": 436
+    },
+    {
+      "path": "cmake/FindFCGI.cmake",
+      "sha256": "9a9020c8e2618b091c9c7c67c50f06ed4bcece7520f68a26ed9f439bb76bb470",
+      "size": 612,
+      "mode": 436
+    },
+    {
+      "path": "cmake/FindJPYLYZER.cmake",
+      "sha256": "78ea02d9ef7f4f19fe8d39adf86297f8c38f08ae62e19e9daf707b1a8f5280fd",
+      "size": 170,
+      "mode": 436
+    },
+    {
+      "path": "cmake/FindKAKADU.cmake",
+      "sha256": "a3db42e10f8d7e597e0349799306d8ebc1424b4c3b683610e83ec881f3d72b3e",
+      "size": 483,
+      "mode": 436
+    },
+    {
+      "path": "cmake/FindLCMS.cmake",
+      "sha256": "ec22266fd61eb45c8b1b6ff756e70c3c086590f13b33106b6348e8919b7ec656",
+      "size": 1131,
+      "mode": 436
+    },
+    {
+      "path": "cmake/FindLCMS2.cmake",
+      "sha256": "2e1cc4c5e236af1c466c86178ea522dfb6ac20025368331e1229424dd0ec6480",
+      "size": 1168,
+      "mode": 436
+    },
+    {
+      "path": "cmake/JPIPTestDriver.cmake",
+      "sha256": "ef3d8882663b6ce1e337b40f48de58c913bbb59002e1b3d1d47a3430f2373367",
+      "size": 165,
+      "mode": 436
+    },
+    {
+      "path": "cmake/OpenJPEGCPack.cmake",
+      "sha256": "0d22016e50a93a13bec838003178ae7c00798052fa11457c216346d8d396ae0c",
+      "size": 3004,
+      "mode": 436
+    },
+    {
+      "path": "cmake/OpenJPEGConfig.cmake.in",
+      "sha256": "2bb70dd631d2dd30b152ac7ba6f983090b714fe26c86e9341aa838dd1de657af",
+      "size": 1534,
+      "mode": 436
+    },
+    {
+      "path": "cmake/TestFileOffsetBits.c",
+      "sha256": "91806187d30bbf8e6071d4248dcb4f47ce8fe02279f5c4e4afa285820ad57b73",
+      "size": 305,
+      "mode": 436
+    },
+    {
+      "path": "cmake/TestLargeFiles.c.cmake.in",
+      "sha256": "8b32ed7822ab69712f92b67bef2a337f2040c748bd2aef7bf1242ebe6e468140",
+      "size": 615,
+      "mode": 436
+    },
+    {
+      "path": "cmake/TestLargeFiles.cmake",
+      "sha256": "b15a2d20d48ed8a5fefdb2407ff51d31f031003e4ac8d3842eb9ae6afb9bcab3",
+      "size": 5529,
+      "mode": 436
+    },
+    {
+      "path": "cmake/TestWindowsFSeek.c",
+      "sha256": "02c06e43ab8c10beb3f99169ce3712975028a1d7038ad084c24e0ebd6235cc05",
+      "size": 113,
+      "mode": 436
+    },
+    {
+      "path": "cmake/openjpeg_valgrind.supp",
+      "sha256": "90b3b4bbc68d06f00fb917497cc0481ee45192fde15766966a630e0474459848",
+      "size": 832,
+      "mode": 436
+    },
+    {
+      "path": "doc/CMakeLists.txt",
+      "sha256": "74b1e5d6960237b802ff5e1dc518bf79cbdd61beccf76438b4106baa5c3ecec8",
+      "size": 2150,
+      "mode": 436
+    },
+    {
+      "path": "doc/Doxyfile.dox.cmake.in",
+      "sha256": "c61b204cb421a33027f436144a17ec7d2a698e08dfbbc0118689d8993f5d30ac",
+      "size": 10136,
+      "mode": 436
+    },
+    {
+      "path": "doc/jpip_architect.png",
+      "sha256": "90fe5de6a41690deba519c18a8e68dd634554f36a1e300920de4e5f8bdfe1fe6",
+      "size": 62577,
+      "mode": 436
+    },
+    {
+      "path": "doc/jpip_protocol.png",
+      "sha256": "e04485eb4c94eeee3726b7cdff82bd264ff7620e66cb8f76923d4c69b387f846",
+      "size": 6376,
+      "mode": 436
+    },
+    {
+      "path": "doc/mainpage.dox.in",
+      "sha256": "3097914a024049b1099610b826f3375a7f9e38da0aff9ce63efb60e0410a016a",
+      "size": 2709,
+      "mode": 436
+    },
+    {
+      "path": "doc/man/man1/opj_compress.1",
+      "sha256": "d34f6f384401f79b42eb2d546eaeba5e1e9837e069c3dbcc6bcdc315af6d10c8",
+      "size": 6273,
+      "mode": 436
+    },
+    {
+      "path": "doc/man/man1/opj_decompress.1",
+      "sha256": "e67c86c21f08344bb888a552563ad26357be00dbf1c1ff968642b2106f549b5c",
+      "size": 3154,
+      "mode": 436
+    },
+    {
+      "path": "doc/man/man1/opj_dump.1",
+      "sha256": "ec6a8a0eed93a794a2bfbc37044c84b1a4b3eb0f0695ac9570d998960348ca35",
+      "size": 1199,
+      "mode": 436
+    },
+    {
+      "path": "doc/man/man3/libopenjp2.3",
+      "sha256": "45c113bdee2c85917b648e4d51e0ebfe9f59964a64abf2d305ba01607b0bbb8a",
+      "size": 10793,
+      "mode": 436
+    },
+    {
+      "path": "doc/openjpip.dox.in",
+      "sha256": "fcc8809e7a559552ec89ad324e948dd8c17a55e232a9f1e1baca4700edabca94",
+      "size": 5880,
+      "mode": 436
+    },
+    {
+      "path": "scripts/astyle.options",
+      "sha256": "581ec99f791f14f5050e18bf658fde7d931a6653c009fa9d5684e4635c479e67",
+      "size": 168,
+      "mode": 436
+    },
+    {
+      "path": "scripts/astyle.sh",
+      "sha256": "8680508d7d621dce44fbaa91fcedafef8e65d399d322c1aabfe5dd9c4565a4f1",
+      "size": 2869,
+      "mode": 509
+    },
+    {
+      "path": "scripts/prepare-commit.sh",
+      "sha256": "a12205efabbc53dc3c40ddae3e816455e658f22af37fad06026c98fad6461483",
+      "size": 2462,
+      "mode": 509
+    },
+    {
+      "path": "scripts/remove_temporary_files.sh",
+      "sha256": "ccc43b539ff03c41a9ae852414b59ae4695179850f01406e68e80b2de497a6fd",
+      "size": 1470,
+      "mode": 509
+    },
+    {
+      "path": "scripts/verify-indentation.sh",
+      "sha256": "eeb58c77bd3787adb5dbc15746f19ca4173c38572400e73258576995441a5c92",
+      "size": 2275,
+      "mode": 509
+    },
+    {
+      "path": "src/CMakeLists.txt",
+      "sha256": "deb535d410f137a76103fbc651829f18e7b33b97e1dd04f4d07b9efdf4332475",
+      "size": 303,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/CMakeLists.txt",
+      "sha256": "fc7f22a6f4a02ceae366738b18adcaace3c646d8a04251b370b7992cbdf8f2d0",
+      "size": 200,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/CMakeLists.txt",
+      "sha256": "df7d1f65ec0b2a7190ca301b1b515a535083cbd5b83da3000065507990d97f8f",
+      "size": 239,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/color.c",
+      "sha256": "d823e0fce3523cc8a1173841cc761af07888fad0752806b0a25ae3214aeb9134",
+      "size": 34365,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/color.h",
+      "sha256": "a9b4538ad6c7f7cd2e19cfe4d302b00dfcc02bc67c185b52228b5c785a0ab9ca",
+      "size": 2307,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/format_defs.h",
+      "sha256": "21813ffc8250f94f6bb3dcc2d1f2217d5d9d3171472e918fae72cb574ca71861",
+      "size": 2351,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/opj_apps_config.h.cmake.in",
+      "sha256": "7538b0a10aba4072e0e435d2ba29e4f5a22b4f2765519119ca79b043bacd8a76",
+      "size": 370,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/opj_getopt.c",
+      "sha256": "7dca642e902964f203aa35090628ba96d804882a02f5b34393c7eef8433fdc61",
+      "size": 10403,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/opj_getopt.h",
+      "sha256": "3a7ff523d1e497fbda3f51ce7b8c8533218e507e314f623ec7bcfe606d6f7045",
+      "size": 672,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/common/opj_string.h",
+      "sha256": "f7d50b892384f9b07847cf5c24e512c7d0d56cee1d7a7f99aa72d8264921023a",
+      "size": 2641,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/CMakeLists.txt",
+      "sha256": "602cf51480ec6b3ecedbd1b2a0c9aa8580414367d11e0ed2f9b349d7113251c3",
+      "size": 2362,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/convert.c",
+      "sha256": "f57ef543386ea13c6fe1485d68ad35e49453f597d59b4db4447351c4b0444ba7",
+      "size": 80087,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/convert.h",
+      "sha256": "7b9bc731eb0c19da28713c9a0fffe3405bdbf89d0bfa56c713956c53bd2bab4d",
+      "size": 5487,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/convertbmp.c",
+      "sha256": "b006c53707f539938f438381771436cdab36e0b11b8a82bef8ca06408a8d1559",
+      "size": 42354,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/convertpng.c",
+      "sha256": "e20673d8d169c98747f249f41db672a6cc13733a50b7a01f5cfd384d25b03a8c",
+      "size": 17602,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/converttif.c",
+      "sha256": "61ffcd115fead6bd5139e31cfe53d3324153225a4046dc733b5a9735eeb34f0a",
+      "size": 51699,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/index.c",
+      "sha256": "d0b3898d55de852833dbfb129122077dfba2d24e1d3d1ac3582eb68a32c663ec",
+      "size": 22152,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/index.h",
+      "sha256": "71d71b963b8038f33b56b4f1a1433e8f91b94586b67871d89ffd66fab5768eb6",
+      "size": 2159,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/opj_compress.c",
+      "sha256": "bbfc0d48246472d24237c7138798f995eb6ca249818332b01195ce80843e9c20",
+      "size": 91160,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/opj_decompress.c",
+      "sha256": "c359c2f0a44ad38b1d24b1fe4888454692de1b406a7e5b0d5cae20cf75b6aef2",
+      "size": 67005,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/opj_dump.c",
+      "sha256": "caeb2fcb9a51f438fcb600f566522eeebc790146178e73c59e778201ca33cffe",
+      "size": 21939,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jp2/windirent.h",
+      "sha256": "f832145b6d1a9f9d161ce3194b2b20975615248ad319650d1e9f3b7b33b841c3",
+      "size": 22757,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/CMakeLists.txt",
+      "sha256": "0854cd890614119a717761bee2f2aafb594d31143503402d0d36c18fca792eee",
+      "size": 5337,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/README",
+      "sha256": "1489af5aeecd6b779e958d8cf24aefea3d1d40316987e9e8714da2bc12ba84e3",
+      "size": 6114,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_dec_server.c",
+      "sha256": "ac829c514a56064882f34d7e4eb936291cc8eee22adb1318bf9c6f9e4ef136f6",
+      "size": 3319,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_jpip_addxml.c",
+      "sha256": "ebf36e2ce2818848064071c9c1dcc1cc07cccdbe9a14d78ae83e80d379f25516",
+      "size": 5643,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_jpip_test.c",
+      "sha256": "022f1b90241adb473b452a751d8570a2cb4719aaa17666b1700d54b7cffb82dd",
+      "size": 2504,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_jpip_transcode.c",
+      "sha256": "2b031a045b3286e2a46b8719b499b971b058c35e6c6c90ad0b29802b1b0d4fc4",
+      "size": 3696,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_server.c",
+      "sha256": "3d3d5e8217a5551a15948203b0ff0b98b9112dbb38fc21ffed445a767526ae43",
+      "size": 4101,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/dist/manifest.txt",
+      "sha256": "6744c9b1f541695b84e9ff107db22747867c0c6d701b09750a61344d5603199b",
+      "size": 103,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/ImageManager.java",
+      "sha256": "9e272c5e96d07c6a9c408b342c018741e0088e2493265d29ea19a9e69ca7ba84",
+      "size": 4355,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/ImageViewer.java",
+      "sha256": "2aab084b33603da5de72f4cbb97f4ea0889d523ffa66e819e486fd4ba7675471",
+      "size": 7404,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/ImageWindow.java",
+      "sha256": "55941614607301d02ab5b7201be2c415fb314e59874b5c9149e34ed1de6d2184",
+      "size": 3620,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/ImgdecClient.java",
+      "sha256": "175b6f35d79572a187c252e86cae56d624d1723a40f5c4bbef71fabb265b50ad",
+      "size": 10702,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/JPIPHttpClient.java",
+      "sha256": "7752c63ee515b8148131ecf07dea82fd44922f38cc5a65cf82c4717594b4d3a8",
+      "size": 15087,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/MML.java",
+      "sha256": "661c44ccb3c7f0dc0f86283a9166d6c1f21ac2d58eb6dabe9c74daf9b322c701",
+      "size": 3098,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/PnmImage.java",
+      "sha256": "02522113b413df6e41ad291732575fcdb162f9a24287421fcdbbfb763883cf8e",
+      "size": 4429,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/RegimViewer.java",
+      "sha256": "dcd80d26f341091a8a58e95de6058441d5bc858ebe80535de1e9bf1a4da0b27b",
+      "size": 3642,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src/ResizeListener.java",
+      "sha256": "91567a84c8b694078a1d724d166d349d6b5069308d391c31a0a001f033007b76",
+      "size": 2485,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces/dist/manifest.txt.in",
+      "sha256": "8696739b3a3d26c872650a427cbf97c0883da004d296f17fd53deb7688cd44ce",
+      "size": 135,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces/src/ImageViewer.java",
+      "sha256": "e7e2705d46dc017974f60651e3443f8a1ec301ffa3dd0cc400daa5b53371d895",
+      "size": 7223,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces/src/ImageWindow.java",
+      "sha256": "28978abfa54475b842be659a75f3d019c3263eb3db48e46d142373dd720ac92f",
+      "size": 3753,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces/src/JP2XMLparser.java",
+      "sha256": "ffe2d82f44bc2c53f922b0d4b05c2625e60eaee39564239544def03720b9d55f",
+      "size": 4051,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces/src/OptionPanel.java",
+      "sha256": "f1ebd87b394b53393d77146a58b4364b9d861ca91cf03a62918d6814ea453e34",
+      "size": 3439,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/CMakeLists.txt",
+      "sha256": "4ae775e75adb0865013ec9faa40a0252d49602b7dc529c657572af6d6ef4e679",
+      "size": 57,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/CMakeLists.txt",
+      "sha256": "d6c998b2c23da5db13a690aff29c12a6ef23bc3923efd5c7db800bb1207f8128",
+      "size": 1105,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/OPJViewer.iss",
+      "sha256": "9583ba1220e54da40dd84d93d2e001acff3183c2d84a2c1b0437773ad4694e88",
+      "size": 1876,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/Readme.txt",
+      "sha256": "cd4bd6afab504bb1face1dfc159fae68db340f9174fb2679f81a554cfa5e0166",
+      "size": 4387,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/about/about.htm",
+      "sha256": "7f1fd04a34ae68854e4f3fad3dea80e7448401cbbf7ade1802b31c1f29fa129b",
+      "size": 1412,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/about/opj_logo.png",
+      "sha256": "ef3302c24f9c95a233f9426c4837a3d28966958f6108917fe8f5a0fa1aa0d5ce",
+      "size": 6500,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJAbout.cpp",
+      "sha256": "312ef7d800e3816a13e916164cd6375263b13a196bb7a862eb5609a7e40fcf20",
+      "size": 3421,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJChild.ico",
+      "sha256": "1bfa2f61340d440afb45d703a6c4c39afdd767b6ebc5318601c3b0f100db7687",
+      "size": 1078,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJChild16.xpm",
+      "sha256": "afc5867a0450169b78e576a3527389b66e2f88825fda9c8539c359e09298508d",
+      "size": 511,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJDialogs.cpp",
+      "sha256": "61b09d69c7607a90dd620dc8d7a3a8e0b85f252e02e64634d7402fad921c4907",
+      "size": 45659,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJThreads.cpp",
+      "sha256": "a2b3d901add5f5b302c1556d2e7c335e9d9b4ab396aa26a13f9a5f45a8dac498",
+      "size": 42992,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJViewer.cpp",
+      "sha256": "9381f470071b2271e70183514a0b6e125833ddf1b491b76f4376e80cc4c0d46a",
+      "size": 61347,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJViewer.h",
+      "sha256": "492f663ef1ac9739c4e6511f77b61b3d648b4782136e37075266e168ebbfac64",
+      "size": 26384,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJViewer.ico",
+      "sha256": "f064d2bbd8130db665723faae778a2fa358db47491f6e32abc0e8d425c7bf59e",
+      "size": 1078,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJViewer.rc",
+      "sha256": "87c4e56ed18051e2ac6f6ff84c1f2e1180fbc27a82566ec88110e3e554c2067e",
+      "size": 83,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/OPJViewer16.xpm",
+      "sha256": "69b896b094ec73238f10cd53674aff671eb0b7b30ebc50a6495eff08429c0635",
+      "size": 482,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/about_htm.h",
+      "sha256": "540d73c3cafbe1e1f2405d0164112f2f724c078f8cf8159cdf0f4fe01078284e",
+      "size": 3458,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/build.h",
+      "sha256": "176d913e75485468dfa38f31b55323bee3e33acf8e6bc1b50a5bf0371e5ea428",
+      "size": 11,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/icon1.xpm",
+      "sha256": "a812272fae8ed1aa280e65d1090b3e4cd34f303454482f3f45db3e5d16108bb6",
+      "size": 1880,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/icon2.xpm",
+      "sha256": "dfa06ebe3474f5c6b51439e3cf00e18e7e0e553b680464c60dc07bb28ea5617e",
+      "size": 1488,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/icon3.xpm",
+      "sha256": "04807a21978eaaded58dc6fe41746f42afb202d4f7f0d19018c58b3aa1f18215",
+      "size": 1880,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/icon4.xpm",
+      "sha256": "19b1eca3fed82cb48b5c02b22f12653e10d7c99f9842f05f0510916c9058cdc4",
+      "size": 1337,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/icon5.xpm",
+      "sha256": "9dcfdc3f4b32107ef2d0650078db8ca2ad86fffa93fcf8306f9c1e28fa43824e",
+      "size": 1880,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/imagjpeg2000.cpp",
+      "sha256": "83b6cdc0b724d6a2d09f178499d92f31f81f690138897d3d8b5fc4de5d21ac0b",
+      "size": 49914,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/imagjpeg2000.h",
+      "sha256": "b1ab790f830a59af35e0c988126ca55622f1ac9b39fd36bce996ac5631bd2ec1",
+      "size": 6016,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/imagmxf.cpp",
+      "sha256": "5d01cccf8920961f0df60355bfa9a6e20cdd356edf73c7dba5d45f56a0874c0e",
+      "size": 14091,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/imagmxf.h",
+      "sha256": "4a05b64b7242bf302c22cc4dc9f03cbc7d17a9f995d688a054e063adacb8bfc7",
+      "size": 3783,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/license.txt",
+      "sha256": "8081c33f6953950dcf424aa844714658b73ada0fcaea16e4487f5fa07ef0960d",
+      "size": 1683,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/opj_logo.xpm",
+      "sha256": "0644b50fb5c22e9133a278535656fc814195b2eb253bcb510606a303ca25a404",
+      "size": 14822,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/readmeafter.txt",
+      "sha256": "1a57bb56ff9cfe71c42e146dadfd10af7bd7c6f5d6be97d4cbdbf24bdc12a595",
+      "size": 1465,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/readmebefore.txt",
+      "sha256": "89dd5caa69f1322dffdb870cd0813c7fb7f92494b8438d68de75ac6378e4298c",
+      "size": 1328,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/wxj2kparser.cpp",
+      "sha256": "42b020f5b00e569acda5a476c631b86076e23879ae22534ee93c9726b4c9d58e",
+      "size": 34939,
+      "mode": 436
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/wxjp2parser.cpp",
+      "sha256": "fd69638223768f1e252983ecbcd30af0ed1556f4f9c06a5387680605462d10f3",
+      "size": 37093,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/CMakeLists.txt",
+      "sha256": "1677f691d899ffca28f33c86fbe907bcade4ce99636511f8ee60b0f80cdd4f2d",
+      "size": 129,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/CMakeLists.txt",
+      "sha256": "65d2ab3a0651e85c4d0d724c36ea9b6fcf1ceccd2ffdb7658502a72266fd28c1",
+      "size": 8083,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/bench_dwt.c",
+      "sha256": "86e31278dc29840b08c34ebb2fa915fdc27abcbe468078f3386ce21ecbdf0158",
+      "size": 11566,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/bio.c",
+      "sha256": "eab2df6d857ce33b73b9dde04c18e4b5906fa50064a1511b370104583f23e110",
+      "size": 5794,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/bio.h",
+      "sha256": "25a12f4ad6b8cb68819094d0d671f431a34843e34d6358c495b18c9ee3b786a9",
+      "size": 4505,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/cidx_manager.c",
+      "sha256": "a79245f742bbdb67e057a3c73c809bd9fd66523e5ef8b84d5fc298a1d532e306",
+      "size": 9376,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/cidx_manager.h",
+      "sha256": "a042f133118342cab678f32d1fabc855033b52495e463c8f300940e7ddaaaf14",
+      "size": 2738,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/cio.c",
+      "sha256": "5a70f55f8b655f06af55f4750a69a41d12cd813dffd9a6d3f103c28b4dc63b3e",
+      "size": 24430,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/cio.h",
+      "sha256": "91c84cc511735466e880b30b06c1d5c858e136e876c34fc325be39cc6457c5d7",
+      "size": 15573,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/dwt.c",
+      "sha256": "2aaea513c0c84922e7488f3556525e6f6538f5ca9e6cf77d8db525768559aef8",
+      "size": 145750,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/dwt.h",
+      "sha256": "5b2efbadc57042cf9c1865d87f0d2c46712003bb67bb059f41ed073fc8e9407c",
+      "size": 4807,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/event.c",
+      "sha256": "6af6dad4e683c22d7ba67159a4e644fee029aea4ec1aa4c4dca754f1b950378e",
+      "size": 5052,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/event.h",
+      "sha256": "3e451c164a8ad9b4bc58b1f0cf321388764b494c66c4ed20d7d196247a397c26",
+      "size": 3971,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/function_list.c",
+      "sha256": "4e1888dd7c21911b2baf954ad9cab498433ac37e4cb1ce39220904ae80455869",
+      "size": 4375,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/function_list.h",
+      "sha256": "df25ddfab444d485eabd9da4fdd6843b6b6d5f61b7513438c6d497a4b1e5817b",
+      "size": 4490,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/ht_dec.c",
+      "sha256": "7a5c66ddd5c9c159368230397c9e762d75bff399df6d59022b1a30ea9671c4e1",
+      "size": 109089,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/image.c",
+      "sha256": "d8cc7e7dd380aa39e8aeebea8bee62790d0fe4f02472eb7cc0e0617fc657ecd9",
+      "size": 9806,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/image.h",
+      "sha256": "3890c9fa361ebee6e276b56e25b80f44145516b6d15fa1655d8588b1da4fad1e",
+      "size": 2616,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/indexbox_manager.h",
+      "sha256": "c85cfa0feca00d01bb0bc2619199917a08717c5536d581724f4560a403b8a137",
+      "size": 6342,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/invert.c",
+      "sha256": "387fd5e2b3446b6caf3e29cec51713c0f698c086dca695b67a432e774930197a",
+      "size": 10421,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/invert.h",
+      "sha256": "52980bf14becaf7189e367e87c87f9f7c4bc0ddcc7bf4939237788332aca9830",
+      "size": 2825,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/j2k.c",
+      "sha256": "a6ad86347e52b0108f4a3dedf5f844f274c35a61a08dafc4d15af0b4413f3194",
+      "size": 514588,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/j2k.h",
+      "sha256": "9fc3343f01f6ce7998c001b44a324230a20664e9d27709bc1582d1aa6eddc5c0",
+      "size": 33298,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/jp2.c",
+      "sha256": "8e361d9d4776b72f94ed64006e254bf05a826d6619f8c3219f3d80589e6825e7",
+      "size": 116480,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/jp2.h",
+      "sha256": "7ba31d730591a7a6465ced2d62f5b50a2abca4cefc4077be248ec875d67e7bda",
+      "size": 17006,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/libopenjp2.pc.cmake.in",
+      "sha256": "8b826378fef9a52bad076193acd8b9155b80cc91d5b105d243300c3891a53571",
+      "size": 335,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/mct.c",
+      "sha256": "d19ec7420ffa852d3ce823a36349979348b2287d3e5fd66ff74cffa12960a3bf",
+      "size": 13572,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/mct.h",
+      "sha256": "274ba52a3638998b1714fac81b8e2238199bffd5bb1d2604f6b8f1ab8ec6e1a2",
+      "size": 6033,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/mqc.c",
+      "sha256": "2880968a3ff002bf591a0e6ec89383b5523b011d6bb50f34ee07cbb79a46504e",
+      "size": 17992,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/mqc.h",
+      "sha256": "564c073098ba0d036d8af9d1c0ac1bebb2e63423b01c18fb63046dec0ee64a3d",
+      "size": 9045,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/mqc_inl.h",
+      "sha256": "4d94976da5d5063b96c86bf40c51a81d9ddc1746cd397e670c38def4d4ae5d0f",
+      "size": 8343,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/openjpeg.c",
+      "sha256": "88e5154fbd83966adaa430ab51af989095d96bf862f1d56f04b65399d3dc522a",
+      "size": 38329,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/openjpeg.h",
+      "sha256": "a4d612777a74fc6986b508a4ed7bafeb69501f1253ff5921ac75621ae014f772",
+      "size": 64386,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_clock.c",
+      "sha256": "426f6681f19fc1ea061d31137da7cdb906508775bf8db628a3e471f920d3b95c",
+      "size": 2806,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_clock.h",
+      "sha256": "43ac54b84019c391d14b29f1a22e4ca095b3451a6e27a4b897231d391371e9b9",
+      "size": 2283,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_codec.h",
+      "sha256": "f5451538219c6f2fcef7ff817c802f57eb64e7e409ff4dc56876316e31cf5d38",
+      "size": 8335,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_common.h",
+      "sha256": "1b2b8fb706888c37bbef7d3854fad71321c1e2d12701f318aca8892bc36bcbcc",
+      "size": 2194,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_config.h.cmake.in",
+      "sha256": "5531108212d5d2074b74f7f2471e92d2f43a206c11421e9e04b483a1fd17e31c",
+      "size": 440,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_config_private.h.cmake.in",
+      "sha256": "b380f7c2fcfcc9be666f1c7804f97ba0e33e9ceb035ce9ccc162c577a6d752a6",
+      "size": 1851,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_includes.h",
+      "sha256": "5800ff257eb62e0f5100b915b7e1ececc42702f270b3dfd1c138080ef124bca0",
+      "size": 7268,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_intmath.h",
+      "sha256": "d8fe3e8b08059835705941dcf9cf763ca55fbae9178421f36ea1214ee3b4eebb",
+      "size": 8796,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_malloc.c",
+      "sha256": "774d07a811c71b096950d218138d3d2788a87462ccb8e2b5f10d6de411717929",
+      "size": 8339,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/opj_malloc.h",
+      "sha256": "0f376f3c19215395416d25548f212f03abe56a7362cd9461e7200826ab84aa41",
+      "size": 3827,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/phix_manager.c",
+      "sha256": "b3dc924692cd361b783a8c266fc3bdbe881f670bd5f5bb1013df218b6518cd23",
+      "size": 8856,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/pi.c",
+      "sha256": "02eb5d074e1621b5077c5d5f0c6c2c626f519ff5a275559b3529d0e1974c6496",
+      "size": 83352,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/pi.h",
+      "sha256": "d6fb17dafb0ed68fa9f771df3f7ba45d741a82cdeb6e67c2d00398fd75ab5286",
+      "size": 7424,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/ppix_manager.c",
+      "sha256": "b2f8587377fa7d810cb02bfc5a2b788f020355bc0552a521307c5de00bb8eec9",
+      "size": 8922,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/sparse_array.c",
+      "sha256": "5159bf88dd47abcf73425b478821431183241557c92ce870809e95cb37697a13",
+      "size": 15756,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/sparse_array.h",
+      "sha256": "14a2b65c50e9bf1a2e0dbe821edcc1c7a3129021897160485f30d261f02eb3ff",
+      "size": 7072,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t1.c",
+      "sha256": "69781f19af1c905fa0c0ae245803145c0047fcb1432e370a52d0e0b0e5b2d7b0",
+      "size": 96928,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t1.h",
+      "sha256": "e4e7ad9ffc4c1334526c44384947dd01a7cb4d7e4cb63837e0fcc776c8c29f88",
+      "size": 9398,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t1_generate_luts.c",
+      "sha256": "c31a1be28c47b9ef37860a9d6319dcd8eb76fa4ae31e3ed103e8263816e92f6c",
+      "size": 10564,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t1_ht_generate_luts.c",
+      "sha256": "6bc6dd8e6e63a2a023a07ba033c6f3d5d76d2d073a8767c5df76ed3596ea82ea",
+      "size": 37210,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t1_ht_luts.h",
+      "sha256": "5988bb6f3da45c4db3f233db782b24b18951f37e38b326c83beb350587e7928e",
+      "size": 17498,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t1_luts.h",
+      "sha256": "1c6cd64611fc56641e7f48ae0575808e0ed135b845cd4806f6e7f47d7bbf7c79",
+      "size": 13378,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t2.c",
+      "sha256": "2469cd3cf8231a0cab8c1cfedd761fe65fc215d890eef52ff19b3e3819b188bd",
+      "size": 64820,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/t2.h",
+      "sha256": "3f9937680969cbb406373061246cf45e045ec81028b4f4db7e000fb3b54c0663",
+      "size": 5664,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/tcd.c",
+      "sha256": "3cacb9dbb6b4d00ae61a9dda2b63e6b89a64120b523356869045d0b788e37348",
+      "size": 117630,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/tcd.h",
+      "sha256": "b694dd954f7f14f5f98323144ca486b450d51248010b6432d88a30d997c3df45",
+      "size": 19437,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/test_sparse_array.c",
+      "sha256": "e9a84b7b65a48f6d6f23193a0c464532a2b896ee599cdb5cacbddd3fb0dc6837",
+      "size": 6005,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/tgt.c",
+      "sha256": "df13b7632362da3e096f5f4103d92a4a92e6ba602f020f0d8ad10918bfcd8ec7",
+      "size": 10567,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/tgt.h",
+      "sha256": "24ecd11aa6a66a0e0b57c1ecb73229a5b05fab3c9199350a394d903e921907e7",
+      "size": 5538,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/thix_manager.c",
+      "sha256": "63072d557c294bf93cc8e7be82d9415af241303adc1ce5d3c0a867828baf517a",
+      "size": 5416,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/thread.c",
+      "sha256": "a801cc656c232ed6f3d3d8be0bae21b3c89389d0bf03613b5de483c692916b01",
+      "size": 24536,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/thread.h",
+      "sha256": "cce16c74c4906d3fdf4422f27484b580cf7e80ade7c1ec67db0eccf1ff3944c7",
+      "size": 8595,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/tls_keys.h",
+      "sha256": "95d63265be9028bd394ca4188d31373a4c1fb611f6db53ca28d956a15b527054",
+      "size": 1743,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjp2/tpix_manager.c",
+      "sha256": "42b69c8b32f7d9476535d4c1832b6e417e2a0958fc537a7b57d8462298e5056d",
+      "size": 7235,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/CMakeLists.txt",
+      "sha256": "d54fc7a0eb8f764fe061c514cfb990996279f44b57db0ccc9ab7a096f64e19b6",
+      "size": 3093,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/auxtrans_manager.c",
+      "sha256": "1e627126df076eb51e6b92439ff6b3ea01406cc3b5978b0065db7b414ea1aebd",
+      "size": 8637,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/auxtrans_manager.h",
+      "sha256": "d1456085de9cd95b111fc61e40f0a7585a1b826246aac65088c3cc2af168e576",
+      "size": 3104,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/box_manager.c",
+      "sha256": "9bc37700d37e994715d10d3b1c716686bd648cd09d109e46ed136b5c26868b97",
+      "size": 12169,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/box_manager.h",
+      "sha256": "3d7d27aa7facbaf99b276333a42e789d57b58dce5153dc33bfc3273761c62bee",
+      "size": 8062,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/boxheader_manager.c",
+      "sha256": "7d5e053b88fbcaf41125f8b7d415a1dc8e3a2846e38f0774f04d47045df78034",
+      "size": 2883,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/boxheader_manager.h",
+      "sha256": "1065a08926491264cbec3a62c9ebf0c84d561691da407a8d519500a883742463",
+      "size": 2852,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/byte_manager.c",
+      "sha256": "7ba6fa17dab7656510f3184dfdb6b6fda2627ef04b7722749eb41c4a9845a1d3",
+      "size": 5041,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/byte_manager.h",
+      "sha256": "302957409363779338ed9fedf6cefe25fc38f09788acad6aaf0dcac17e9d05c3",
+      "size": 3727,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/cache_manager.c",
+      "sha256": "8cf62cf45436675efc73c398e3be2fdfd4e675b5d29100516b6a286bf6fde0a1",
+      "size": 7283,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/cache_manager.h",
+      "sha256": "b583c61da96d87e8b4fd3d14a7aabc288128e804e3832992ebabb6e530b6cf4b",
+      "size": 5332,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/cachemodel_manager.c",
+      "sha256": "42973ba116ef39e6f516bdc07f266e98b4733b484dce45f2a4eea1b2dd0a383d",
+      "size": 8173,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/cachemodel_manager.h",
+      "sha256": "5f54aaea6b51787b73cf68ec4069df1657020be2abdf087b7f477f44de55b099",
+      "size": 4263,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/channel_manager.c",
+      "sha256": "315de62d411dd29deabfb120c5868745faa60c3a720c7e33040642671152e42d",
+      "size": 5674,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/channel_manager.h",
+      "sha256": "0db1030d884f387ecceb47d343585e5633652631348e84dd91e2c079f8a01ad5",
+      "size": 4328,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/codestream_manager.c",
+      "sha256": "9a68897e930b802f8fb4a446af3136abd9bcc5151f5f8c737bb8c92703216739",
+      "size": 2796,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/codestream_manager.h",
+      "sha256": "d84c6059fed46559baa957c8fe01a1bf725b4dee6ec11199bad4d9feea067173",
+      "size": 3615,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/dec_clientmsg_handler.c",
+      "sha256": "e218b85e30969c961e18811d43f23733515d53afbd017478973babb5ff0f3218",
+      "size": 8073,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/dec_clientmsg_handler.h",
+      "sha256": "1030a2feec481d2f68b67cd1938b000232dccb7e170985bf253a6168b1121e0b",
+      "size": 4573,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/faixbox_manager.c",
+      "sha256": "56105a3b486647746275072423d15c59905edf20c6e85f42cb9cdace9be1d35c",
+      "size": 7303,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/faixbox_manager.h",
+      "sha256": "fda9a841cd4fa055471c87835d84c7679b93c3a60e0af55c71535d2861b51c6a",
+      "size": 4973,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/ihdrbox_manager.c",
+      "sha256": "e2a6a3ae88757b3462845f10587302a74d916aaed4a61d4d17fbb88f30fdd9b9",
+      "size": 2840,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/ihdrbox_manager.h",
+      "sha256": "039353beb9c6aef0c3c34e15957730dd31d98ca11f4241ddae9699e547e6e951",
+      "size": 2207,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/imgreg_manager.c",
+      "sha256": "a73630f4e3c37e997367271a3e7eeae0c8a993ae32f706c9150fa49d071cef49",
+      "size": 5165,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/imgreg_manager.h",
+      "sha256": "35eb2245e4213ce3cbc1d0e3c0ba0d1f5ae69a7602030a65e3565ee3c1bf5907",
+      "size": 4086,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/imgsock_manager.c",
+      "sha256": "78f4abe8f61e21fb617811f7dc06c199ed4ca0ef65f700382576dd95215944de",
+      "size": 6747,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/imgsock_manager.h",
+      "sha256": "1302a8257b6d5f2fe0140276eeee42d2c10d91fabd5bb8d4af362db1fe9beca6",
+      "size": 6835,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/index_manager.c",
+      "sha256": "30eb3da34a89e0ae066204a11b9bd36ac380806aeea38f06627890565a8f0720",
+      "size": 25313,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/index_manager.h",
+      "sha256": "cefe7cf1c3294aa187b1320a5273ac36e96d058e8bc396b1e17fc7e49d7ff654",
+      "size": 7669,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/j2kheader_manager.c",
+      "sha256": "d9b1f272b14eeef487df73ccf16a0b6aa8708e78ba976b7b34cbbb42d9aa21d6",
+      "size": 10893,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/j2kheader_manager.h",
+      "sha256": "a40d18ac4bdb4568b0d6ebf2e017f558baff729be68ad8a1780249065352131c",
+      "size": 3417,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jp2k_decoder.c",
+      "sha256": "8f51d76582e2f90bfa41e818cfbcf19a02185638185374f2e5c498c49d6804dd",
+      "size": 8679,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jp2k_decoder.h",
+      "sha256": "debf513efceffc5c18c90943ff634740b64a052df4c328c838e23b70f0d21c96",
+      "size": 1730,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jp2k_encoder.c",
+      "sha256": "5c18070da15f7a7d589c7738c789237ade67c7c48ebaee066ce2296c9bf5741e",
+      "size": 29589,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jp2k_encoder.h",
+      "sha256": "640fec6a4411a478009fa4cb49bdd05c40e50dc50a6d2437268b365db163cf9e",
+      "size": 3213,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jpip_parser.c",
+      "sha256": "4e38919ca593909b4abd680ee192c16c5fa69d5c95f48f6e1ee834b3af862c0b",
+      "size": 20533,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jpip_parser.h",
+      "sha256": "1e97303a08e371830a39e685bf6f7def6cdd3b33e9676f8852f058e973c12154",
+      "size": 4932,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jpipstream_manager.c",
+      "sha256": "f4a72d313d12e2e35a0b4ef92990f24f0b3e19c6790311c6fe52c50e93240c3a",
+      "size": 4290,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/jpipstream_manager.h",
+      "sha256": "c1e52be6170c8f4eea83c320dfcbb9531c27262e94cebe81d7b1f05623e795b2",
+      "size": 2102,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/libopenjpip.pc.cmake.in",
+      "sha256": "1177cf9f3005ba059ed654bbd335b77a1fd4d76752805591db1b35d9b232ecc9",
+      "size": 408,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/manfbox_manager.c",
+      "sha256": "56d409137b3d0363c2ccc91dcb0082182b6f285a99c141f72e5c9f8e75dfab9a",
+      "size": 3436,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/manfbox_manager.h",
+      "sha256": "a67cfc2af63d52f854fd26634e99ea81f86880bf80ed7d6129e7b0e596b6eff2",
+      "size": 2564,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/marker_manager.c",
+      "sha256": "5d3161bb5eb700c0071e80c290d9b83358d28b06d40d4cda683c64a85ccb3795",
+      "size": 2444,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/marker_manager.h",
+      "sha256": "ec4e836d246012f714c0d689356671caaab2e43dca968314f465d8f304b88f55",
+      "size": 3236,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/metadata_manager.c",
+      "sha256": "5f1453c1704a6e71fead7e1d658d2d36bea418b6963885305bd328ea6b524ce0",
+      "size": 7479,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/metadata_manager.h",
+      "sha256": "b74455b8a23c41290a87ef9ac9db0fb103c8f1f8957ef5cc40616e734c4ae9c1",
+      "size": 4937,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/mhixbox_manager.c",
+      "sha256": "71f82ff852dbef3df356d304f2ed5b5b142a3823e250c4e026960af0098223cf",
+      "size": 4318,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/mhixbox_manager.h",
+      "sha256": "85b121ebf50e68d460f4baaebcea0f10ead055839509e103d67e70cef199d5fd",
+      "size": 3382,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/msgqueue_manager.c",
+      "sha256": "c446d16b20533d299486fec82614d56910943355e1a21db1a617547d9da767b2",
+      "size": 23767,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/msgqueue_manager.h",
+      "sha256": "3242a8573d682fc19a7d119e22361ed96d09a1d36544794f36ed6f1d5afa5dc4",
+      "size": 6784,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/openjpip.c",
+      "sha256": "883d6984b17c4d7d6274efa01390800cad00f7e9f720824d1361612a3c902faa",
+      "size": 12928,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/openjpip.h",
+      "sha256": "fa3afdf98de06e36a8637b6d7f87e8e658b9530d56880449d94e7e7f38dc7d09",
+      "size": 9516,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/placeholder_manager.c",
+      "sha256": "d4848e37ebea58afdd611822cbfd284b64c28f71f56a56fbdde60494f445325c",
+      "size": 4337,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/placeholder_manager.h",
+      "sha256": "7889cd1037384af064dc8cd34881bbebb7669129beecc19df2dd425bde482d4a",
+      "size": 3702,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/query_parser.c",
+      "sha256": "40b874716a6ae5191075246f66e9a9e2bb497daa1049ad6676b5b0eadd48badd",
+      "size": 13885,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/query_parser.h",
+      "sha256": "b61e18b916034ea62738add961e7f7452dabcb4d52ff41eca22d7b80771efd14",
+      "size": 4231,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/session_manager.c",
+      "sha256": "1c5742408248c8cad4c758c9dc40c3746f99d1fd98f685efcb8a2663d0e78598",
+      "size": 5897,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/session_manager.h",
+      "sha256": "ee12308ed07922356811503aed32f1469731d2b3bf8022d12144a9659e17bca2",
+      "size": 4120,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/sock_manager.c",
+      "sha256": "886a8054e741ecea40fc24daff7c5b5d44684d7996b1aa16b1ded6a385a4557f",
+      "size": 5032,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/sock_manager.h",
+      "sha256": "0b59f2371ec101d1e42817df7e5aedc0e38d51045fbf7c5c28676e4ce9b0efe2",
+      "size": 3492,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/target_manager.c",
+      "sha256": "ccf7f2622f20b61b693ce3896102956c5650998965592ecbc4075dc86f7e5f6c",
+      "size": 9589,
+      "mode": 436
+    },
+    {
+      "path": "src/lib/openjpip/target_manager.h",
+      "sha256": "2c62b3a48c7bcda7a103aae060d8b8a3960e075d1ed9152e37be8bd99375541f",
+      "size": 5181,
+      "mode": 436
+    },
+    {
+      "path": "tests/CMakeLists.txt",
+      "sha256": "2055b52c3b019851978b1f358b25b407c2f19e135a2e7c0aabec51591ecae3d5",
+      "size": 6674,
+      "mode": 436
+    },
+    {
+      "path": "tests/compare_dump_files.c",
+      "sha256": "bf7a2ebbfdd51766a4a3f4285314372e7e232ec5bcf14a908fd64f31fc185424",
+      "size": 6041,
+      "mode": 436
+    },
+    {
+      "path": "tests/compare_images.c",
+      "sha256": "9975e44718871422839a7762723982e57c10b5dd160e4083d8dd50083b10bb51",
+      "size": 37527,
+      "mode": 436
+    },
+    {
+      "path": "tests/compare_raw_files.c",
+      "sha256": "0df3d8688ccb25606ce241349f1350229b385dd21841c3c2027e1185478fa662",
+      "size": 6290,
+      "mode": 436
+    },
+    {
+      "path": "tests/conformance/CMakeLists.txt",
+      "sha256": "417e13756c63580cd80f80c2a7b4422f123012157bff006bd516551371d0c25f",
+      "size": 21413,
+      "mode": 436
+    },
+    {
+      "path": "tests/fuzzers/GNUmakefile",
+      "sha256": "a41d46f4dc218a871a89e23a42fa2703fcf141862b92721061621614a6787d42",
+      "size": 352,
+      "mode": 436
+    },
+    {
+      "path": "tests/fuzzers/README.TXT",
+      "sha256": "549becb4cf8f9f95e183253fa0d7685a297618de580a7b239a5950ed6cc079da",
+      "size": 1809,
+      "mode": 436
+    },
+    {
+      "path": "tests/fuzzers/build_google_oss_fuzzers.sh",
+      "sha256": "93556480d4a331f4b1c789caf9c9ad0f65d1a4cca0b548c73de7a322ce275846",
+      "size": 743,
+      "mode": 509
+    },
+    {
+      "path": "tests/fuzzers/build_seed_corpus.sh",
+      "sha256": "e666a56f528b31c13defae6618dd16b7bf5de62b51888be56be1f529f52fcbc1",
+      "size": 400,
+      "mode": 509
+    },
+    {
+      "path": "tests/fuzzers/fuzzingengine.c",
+      "sha256": "b78fa5839206dcd26a77f32f51daf7dd955c82bfa70518a54994585226e03667",
+      "size": 2709,
+      "mode": 436
+    },
+    {
+      "path": "tests/fuzzers/opj_decompress_fuzzer_J2K.cpp",
+      "sha256": "a34677d461585aaddcd480f572619a57ced57cbb3512b90bcd3bab504ec00dbd",
+      "size": 6631,
+      "mode": 436
+    },
+    {
+      "path": "tests/fuzzers/opj_decompress_fuzzer_JP2.cpp",
+      "sha256": "50fabf5a0279f9a53680d23dd64379df1bda20c6e6d2c8290e251612ec004ce7",
+      "size": 6639,
+      "mode": 436
+    },
+    {
+      "path": "tests/include_openjpeg.c",
+      "sha256": "8dfeb98e090b4dbfb08cd891d757f051e9ca1cde11f824d0a1da42536eb4b09d",
+      "size": 98,
+      "mode": 436
+    },
+    {
+      "path": "tests/j2k_random_tile_access.c",
+      "sha256": "0fd7e7cd39d29bf3c6d2a1be4ab02bc3911d32d9b5af682cec68605dd5b60960",
+      "size": 8711,
+      "mode": 436
+    },
+    {
+      "path": "tests/nonregression/CMakeLists.txt",
+      "sha256": "006de7c6fe151f62f0269df410e3dfea5966771d96e791568b719759e1b4f35e",
+      "size": 18805,
+      "mode": 436
+    },
+    {
+      "path": "tests/nonregression/checkmd5refs.cmake",
+      "sha256": "c6c4bdb555c3bec76e23360833899c8871eb388b2655315afe91b59be858a7dc",
+      "size": 2679,
+      "mode": 436
+    },
+    {
+      "path": "tests/nonregression/md5refs.txt",
+      "sha256": "1d3e7277362837b690e5228ade09e1da73d0fce08d39f143354d3be6f959c2d2",
+      "size": 22453,
+      "mode": 436
+    },
+    {
+      "path": "tests/nonregression/test_suite.ctest.in",
+      "sha256": "9b1050f9345ce0661e34ee0dae5e4746c44edfe797babbe48e84df8999170689",
+      "size": 51849,
+      "mode": 436
+    },
+    {
+      "path": "tests/pdf2jp2.c",
+      "sha256": "ca467f8335d117009484abce383bf93125183054587535bfa9b9c8c26bf16d54",
+      "size": 4450,
+      "mode": 436
+    },
+    {
+      "path": "tests/performance/compare_perfs.py",
+      "sha256": "7858e37876c07c09578e3649a441ad9dac2b304442a4d97cd36c01fcf758e210",
+      "size": 4659,
+      "mode": 509
+    },
+    {
+      "path": "tests/performance/perf_test.py",
+      "sha256": "ac3568bc8a6f56bec4c01ddaf8b38801ff0b7ced59d1e79ff6d6e6708475053c",
+      "size": 5102,
+      "mode": 509
+    },
+    {
+      "path": "tests/performance/perf_test_filelist.csv",
+      "sha256": "522739c86875331a2704a7639387a38b64ff00b6823f90eda09495d8711bd518",
+      "size": 522,
+      "mode": 436
+    },
+    {
+      "path": "tests/ppm2rgb3.c",
+      "sha256": "14bf1e00aeb60cfa4ab76f89b4cbef4b4012bb5090cf5d86d1e86b3626043cc0",
+      "size": 3962,
+      "mode": 436
+    },
+    {
+      "path": "tests/profiling/filter_massif_output.py",
+      "sha256": "0782cc7fe1c7fbafeb3e3826318acf27be59e07fa1f8da261d73077b460f8420",
+      "size": 1727,
+      "mode": 436
+    },
+    {
+      "path": "tests/test_decode_area.c",
+      "sha256": "2ff968762b9d38a2a6df311ab738aa039001a46a64be8ee13d5b7341a3f842b4",
+      "size": 19604,
+      "mode": 436
+    },
+    {
+      "path": "tests/test_tile_decoder.c",
+      "sha256": "4647b9b258457d52dc5f1c1597f014f72107ad3442278eea346d313151514fd4",
+      "size": 12719,
+      "mode": 436
+    },
+    {
+      "path": "tests/test_tile_encoder.c",
+      "sha256": "5af5a86dc7714cb5738273d73aa3e1bf23382658566ab5d184832aa9e5a3af53",
+      "size": 12354,
+      "mode": 436
+    },
+    {
+      "path": "tests/unit/CMakeLists.txt",
+      "sha256": "266ee8c1124462b6b16fdc5b05873dfc0f6216fccad2f438e8f0da7f9d2e670b",
+      "size": 466,
+      "mode": 436
+    },
+    {
+      "path": "tests/unit/testempty0.c",
+      "sha256": "6fedd96867d5c95e101aab0a54b8c2af97c32675cc7d88dc6591f59e6429a72b",
+      "size": 100,
+      "mode": 436
+    },
+    {
+      "path": "tests/unit/testempty1.c",
+      "sha256": "1e7c7ea656a23a05635c8da333fc2c5d66c6afdbd283d0247332ca286dfb3fff",
+      "size": 4167,
+      "mode": 436
+    },
+    {
+      "path": "tests/unit/testempty2.c",
+      "sha256": "dcb00603137c251c711bfa5f1af3523d0cf481c04bb36e11492003c5a94c66d9",
+      "size": 5584,
+      "mode": 436
+    },
+    {
+      "path": "tests/unit/testjp2.c",
+      "sha256": "47990e097fd077817b78ba625c32fea5c0e27561ec2d08ba58bbf1c2e588b73e",
+      "size": 5284,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/CMakeLists.txt",
+      "sha256": "da295576e20004a70417dcff9613c10563d063daa5b35725c19b3c126abeb26a",
+      "size": 6319,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/README.txt",
+      "sha256": "9702b8a8a59a534e1fb01e539557ba1f7f074c8b407c4f7bc41ed84aa70798f6",
+      "size": 445,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/astyle/ASBeautifier.cpp",
+      "sha256": "9c78cfcacff3353e4cc9057a37e5dd4ecc61d7fb1fd942bbf8520bcef85ef731",
+      "size": 107747,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/ASEnhancer.cpp",
+      "sha256": "7b1cbb0667813b9b284e5cb6b40442f37798eba68950ab51e9c94681c28b42fb",
+      "size": 19152,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/ASFormatter.cpp",
+      "sha256": "16bef36a6c7a2cdcc606cd4c6fe187009099b7aab7185d90fda44ae0c15ede09",
+      "size": 221611,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/ASLocalizer.cpp",
+      "sha256": "01d46f5047ca9bcdb49aab70ea6999503f8e1de99e20e99e6756caac0a09e3f6",
+      "size": 60018,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/ASLocalizer.h",
+      "sha256": "ca85846d05c0f99582b3578ac9b9d4348582208749eeef697b9aedb086df1c24",
+      "size": 4290,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/ASResource.cpp",
+      "sha256": "11e6ee524f72917dd203b757d4cf13a794bd2c85cd37169c1596a6ac88a1c90c",
+      "size": 28293,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/CMakeLists.txt",
+      "sha256": "25617cd2371084cfa00a6879806887e285fef2ee9dc3f336666de83a90b9613a",
+      "size": 866,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/astyle/LICENSE.md",
+      "sha256": "2e8480e753b7a1d100c80920f4250b1bc9f93a18c6a5953c42b11445218cd0fb",
+      "size": 1094,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/astyle.h",
+      "sha256": "1cf0ca82b286948692e56970c302321cb05e374ea5333b56d7c44242abb9175e",
+      "size": 36901,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/astyle_main.cpp",
+      "sha256": "78dbf64c7bca0c6035acdf33800a9a019290be4078a084a86bf895e1ebe7a8e8",
+      "size": 117264,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle/astyle_main.h",
+      "sha256": "f873207d0c7a5472fc4d7b836b65b3db45a20375ea2f0b8e56ff2af9e4e2be10",
+      "size": 17585,
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/include/zconf.h",
+      "sha256": "f5134250a67d57459234b63858f0d9d3ef8dcc48e9e1028d3f4fdcf6eae677ae",
+      "size": 16500,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/include/zlib.h",
+      "sha256": "8a5579af72ea4f427ff00a4150f0ccb3fc5c1e4379f726e101133b1ab9fc600c",
+      "size": 96829,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/CMakeLists.txt",
+      "sha256": "9a8031fb54ad7b2bab64e98407d6a75419326930b57198cfd4d8533da7e8a1d7",
+      "size": 440,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/COPYING",
+      "sha256": "c725daac91a9259ce5e195683c0eeb797d345035c36ac5ba114c9fa80e11639a",
+      "size": 1078,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/include/lcms2.h",
+      "sha256": "f7eae738e75a3631ec34162f7b9e2c2675138303b8760452b261799a6c0ad1c8",
+      "size": 101540,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/include/lcms2_plugin.h",
+      "sha256": "8dfed5ff49b2b65da3cf27fe14bd6c366209107c66cff125775d9e44053f3202",
+      "size": 29888,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsalpha.c",
+      "sha256": "c8e24529271a0087ed197ce6b673ace352e65fa5a4cbe9f72ba7ba2ad564ee02",
+      "size": 15558,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmscam02.c",
+      "sha256": "eb5ecad507996a702e29bf00d0eac63a42fe0399693bfea26db3c5e042b00a78",
+      "size": 13953,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmscgats.c",
+      "sha256": "713a1090ff9c189d307d61c841b05820e2c73311147ef67fd87db672193b99e8",
+      "size": 72376,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmscnvrt.c",
+      "sha256": "f31d096e3ad496068b9d7ab5f8971b0cf7115737c5a2ae8476a6b147545a01e4",
+      "size": 42580,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmserr.c",
+      "sha256": "d06b9fb71e45b53dbbbffe4dcfa54da0397aa357148ba8ea5a3fe26ef093e40c",
+      "size": 20969,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsgamma.c",
+      "sha256": "2e9279d9eb4449ac781ba9b8cbe19426a2f96f21f86815001e578d6c77055b58",
+      "size": 37276,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsgmt.c",
+      "sha256": "10e2f7e3e80fa5e2d97516fc53fe62b60d8cd6787c90b46e953ac5f2d21c4765",
+      "size": 20565,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmshalf.c",
+      "sha256": "a9ab64ee3515cffa8c723d98a51813336075a1366ad4f2d2cf98dcf1ba17e88b",
+      "size": 35311,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsintrp.c",
+      "sha256": "ceb70525fc366920914d76ee4030339863366c0395181fdbb257e9e0d19bf2eb",
+      "size": 44181,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsio0.c",
+      "sha256": "75c7c971290896a159ec50a4bf8e51bd0735c5c0c981280494021d0b4d71d5d8",
+      "size": 58187,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsio1.c",
+      "sha256": "eba3b2a1edbc2a4adeae68a1b9dbfe1157ab668df7314b0e493ca7f0d26af639",
+      "size": 35099,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmslut.c",
+      "sha256": "119a28a52d294316ff0a086d5c9de9882621b3897c648828310eea76a6a3ce29",
+      "size": 51357,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsmd5.c",
+      "sha256": "f57255d5c277f64ab79307243c5ad57f325cbeed6ad9a6deee9c47c3734c29c6",
+      "size": 9489,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsmtrx.c",
+      "sha256": "82a7d0ce9baaaf7427a360136f77f339d2287331a48f51049db330c5ea30ac8d",
+      "size": 5682,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsnamed.c",
+      "sha256": "096d9d3dad415e2e8d61ae16cfc72ac9429f097f346424d7b289e9d1916b5561",
+      "size": 28249,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsopt.c",
+      "sha256": "00a0ecc5d78011c5b8b2dce78e2673f8e0549f89068d1af993ba5186d9fab9a8",
+      "size": 64096,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmspack.c",
+      "sha256": "d8f8189085e28f5eac56205173925d1406a973c31aa2464136a6b317e2f95f29",
+      "size": 109149,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmspcs.c",
+      "sha256": "cddab1c0e994c419576fbff63cbdc3275f417d55ea9c4c887af16b1a03ff3d7b",
+      "size": 25466,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsplugin.c",
+      "sha256": "8a39320af9cfc0c3df2e2caa536cb580553ccc16888bc11914502f2bb9f55651",
+      "size": 27989,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsps2.c",
+      "sha256": "11b954cc7eedcfeb8c9e32ae64e1448e21c69b13821b0bd27a59559814c2ccf8",
+      "size": 46878,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmssamp.c",
+      "sha256": "ddd0fc079fda33742eebb7e5b51e26476dd33371dec929148bf1ec4917be6a50",
+      "size": 17852,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmssm.c",
+      "sha256": "b3637bf04ef39fb5ed3edfb3520e7c673eb095c07f8041a8d69dfb78d9e1c20b",
+      "size": 19084,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmstypes.c",
+      "sha256": "b80731c452709e78b8605b793fa59f7f19d73b887461aa0d3c02d300181b13d8",
+      "size": 181143,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsvirt.c",
+      "sha256": "4e1f49e38d798132915b143e3e5478b47b6bc7d6cb4312da653029990201a9c5",
+      "size": 36914,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmswtpnt.c",
+      "sha256": "8526826891b729cd9c1fe1b733b9c634d718e9dd068f70b942182491f62802b5",
+      "size": 10979,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/cmsxform.c",
+      "sha256": "f49bbb859c33d19416af2953a7e7581899399516a560ed0aaa908db0a4165a47",
+      "size": 47803,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/liblcms2/src/lcms2_internal.h",
+      "sha256": "0a2f0324febb64a1d0399cdefed1cc3205c59b30452c63d6159a6cfd01bf6afc",
+      "size": 36408,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/CMakeLists.txt",
+      "sha256": "801a65cfa7e976dedf9f0ac725bc61ab34bed8abb15b6398e3b1c4be700e155e",
+      "size": 862,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/LICENSE",
+      "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e",
+      "size": 5345,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/png.c",
+      "sha256": "aa0ad48f3acf1522b4a1c077ef7811935498e8dc0f73ea0345d6e4efaf5d31a2",
+      "size": 155728,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/png.h",
+      "sha256": "4be1482ccb03edbb14998345fa47cfe7ceca0463767032ab728c12f941ae0558",
+      "size": 143047,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngconf.h",
+      "sha256": "81d6c4f63320918fa5b5f027244c9d2c471a3cd4a7ce8e0e5cc1a67806a55c26",
+      "size": 22806,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngdebug.h",
+      "sha256": "58941a11daeee436541b19684f711efc84354e9c36a3be274315a412be219e45",
+      "size": 5319,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngerror.c",
+      "sha256": "db93b6c3d369374815a025c283ae37d3998fb6d42cd9ab62c2b35d3be1ada5c0",
+      "size": 29131,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngget.c",
+      "sha256": "63df6a755c70262f4e5d8054aae49ad0f1cddc6d7dcf36087ebefd76172fb611",
+      "size": 34156,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pnginfo.h",
+      "sha256": "87cb3efc4dcf22b46f2a01225d5c6eea7722753d85cb4e6f69cc48bb61b7687c",
+      "size": 12514,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pnglibconf.h",
+      "sha256": "b5b0821371a9eccc464b6d4ee3df5a35d71ce80d97b7dcf99b5adb72e8d7deba",
+      "size": 7814,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngmem.c",
+      "sha256": "9de067f559b202f63be02e26cc6bd6e320131727de5533eb51728b50af5c4b3b",
+      "size": 8323,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngpread.c",
+      "sha256": "90636e07a0d811a803dbfbc75d81da37a7dc44099b819cfe760816e278344e5e",
+      "size": 31912,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngpriv.h",
+      "sha256": "0ae1a77455f947a54be7f2a560415d4a0960e64c599b6d769f4f27dbd6542e2f",
+      "size": 92752,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngread.c",
+      "sha256": "2b80c8e3477eec6c778039d011e5cacc81653a2e243571184df147309fec2c52",
+      "size": 142349,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngrio.c",
+      "sha256": "e82f31b39701aa872f9c38a66e98d3d58fa2c681e2d027543404d5e52312a92d",
+      "size": 3898,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngrtran.c",
+      "sha256": "8daa63d659ca6a4f27fd8a4c8fd58b43b48c796f5010e8a5a612797bbc037151",
+      "size": 167158,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngrutil.c",
+      "sha256": "a606ae5b03b2c58a48096f6baba0816d54ac293fe65fdb146a43cb856a17ba3f",
+      "size": 147415,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngset.c",
+      "sha256": "dcb7ec5bd64d03472a0c44ef546c719c8d52425f078a061d29b4c1c2e76c4069",
+      "size": 51670,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngstruct.h",
+      "sha256": "4f41e1c6920c6532d069a0af58618906f53681b2cddd7dfb51d81c6382ac3950",
+      "size": 19901,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngtrans.c",
+      "sha256": "23cd6e3b737e4834e5ef3fd24c12fcecc5324af283097ad10479a553eb13389b",
+      "size": 25333,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngwio.c",
+      "sha256": "c598db8a3d4232c23418199c047a784a735307dd655486fcb7d4edc34b753418",
+      "size": 5601,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngwrite.c",
+      "sha256": "0e49ca2ad9a92f82323c5c3fb191f50e29cbc5ad27a58c1cc69bce3f23e99602",
+      "size": 77084,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngwtran.c",
+      "sha256": "81a5e4ea609250ecee20c8587aa429a3cb728d2197a1b96841a34807032fae60",
+      "size": 15337,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libpng/pngwutil.c",
+      "sha256": "341ab864d6f5f402ac012c91226562952831754189177b08c7c81853c4421b5f",
+      "size": 80340,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/CMakeLists.txt",
+      "sha256": "15c4703870e1edaa44e3b08b0963a771bd76b7fcdb9a496d83212ff17c84a6a3",
+      "size": 4946,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/LibraryFeatures.cmake",
+      "sha256": "bb8f89fe682ad40d69649941965d850912d7626bcf8275690cc1359f1e561b15",
+      "size": 2986,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/TypeSizeChecks.cmake",
+      "sha256": "42530ea7410abacab290357cd430c68ef94e6719383be7094f0bd05e384b65c8",
+      "size": 2077,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/libport.h",
+      "sha256": "be430d42ee96dedca0e093f2e84f0c1ac5dabf8c9bec0690a53024afd6b6b340",
+      "size": 1967,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/libtiff.def",
+      "sha256": "0bf38122edc2d4793a9d344f58e64a8c06c983bb6200f0b2e0def56f0d690c03",
+      "size": 3005,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/t4.h",
+      "sha256": "68fea8b3e6ac6f9c02395de1ac7759686d82c773024caa9c112784dfa967cae5",
+      "size": 13144,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_aux.c",
+      "sha256": "5aa39eb289e643a6bef4bff1e1b02115e0dff951a19719614fbbf91cc02886e0",
+      "size": 13809,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_close.c",
+      "sha256": "618ef3c9e905dc9cc31aa7936341ba5f75b777b095b8245a9f13581cf9685276",
+      "size": 5095,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_codec.c",
+      "sha256": "ba6c41b956bfccb221b8e9d088502880544f7dedb751f50fdaddefd1edd263cb",
+      "size": 5113,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_color.c",
+      "sha256": "e37d27706116a0c6a66e97028f254ed049addfbe20a5904443ba58ea0a13d016",
+      "size": 10855,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_compress.c",
+      "sha256": "9cb851d88f5cd8b0ffadd0b35fe467f8160c5160e477fac9b373479eafff056c",
+      "size": 8739,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_config.h.cmake.in",
+      "sha256": "28942a45c47f1da591a76e95a6f44779397c04d9892c536122389670e21bb8b1",
+      "size": 4040,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_dir.c",
+      "sha256": "bcb4bd47061187e0525d81b6f9d7271abdbe70dd760be859f853feeddfa78f13",
+      "size": 86439,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_dir.h",
+      "sha256": "6337a3edefcc484895363262b2e80d611eb61460a34ba4c3b73b915189f782c0",
+      "size": 12396,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_dirinfo.c",
+      "sha256": "1098e0ba0536b9d3208a10beee9201a988eaf18c17555a4760d4b94e4d57062e",
+      "size": 85096,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_dirread.c",
+      "sha256": "2f3f7f4606aa9eed1994c51c79024e032c48bf98939304b554808727d3b463dd",
+      "size": 260468,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_dirwrite.c",
+      "sha256": "ccebf85da2d7e88223caaf6dbe5f7f6bb2e4c9d58667f36e53779867942853a0",
+      "size": 138262,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_dumpmode.c",
+      "sha256": "683cdc74f4b387cd3c253e64300b905f360e08369a55ff07fb494445b4aae0c7",
+      "size": 3567,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_error.c",
+      "sha256": "ec178c0dcb7d1e4e6a5aec3220549ab5372cdc1725b185584972c005d11f5abd",
+      "size": 3754,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_extension.c",
+      "sha256": "b49abfbd8f153237ff1187c6c1d34ffd0a6f26013b70d133b41ba64cbbf725ca",
+      "size": 3099,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_fax3.c",
+      "sha256": "de770c2d3326ad3f066321d9369d9049c4aa92dfd4269a7b5a2dc561c508742f",
+      "size": 57918,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_fax3.h",
+      "sha256": "358b9ca53680dba71b827760aa807ec9deafbd8c9094e106de20a5a9042559f3",
+      "size": 42433,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_fax3sm.c",
+      "sha256": "7484907f2bd8a2439f582158e2eeef7f209780a411ea07e1b88ce74fa0cbbc75",
+      "size": 104760,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_flush.c",
+      "sha256": "0d6277cc2c3c898056290be7162913b148ce13f0d27a1146e1f1f30e34a014ae",
+      "size": 5525,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_getimage.c",
+      "sha256": "c0550f2775f1bd8f4b1007dbda7202751b827ffd56610e683e05eb254c259f7e",
+      "size": 103828,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_hash_set.c",
+      "sha256": "18c55f74204dbe4bfc5c137577d49712d4c294fe507fa4b54580fa71d63c09ba",
+      "size": 18315,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_hash_set.h",
+      "sha256": "de1ba012c293a798301e445e2d65b8a37bfd60426b7a6be59891058163c896eb",
+      "size": 3384,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_jbig.c",
+      "sha256": "29bad8119226c88724317ebea9be2b6e17665088380a70ef0713c9a9f7237287",
+      "size": 6886,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_jpeg.c",
+      "sha256": "a98fd10b7b9442354747f443428e2657f6af97904650085d04cdc01eb55264ad",
+      "size": 98011,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_jpeg_12.c",
+      "sha256": "ced2ed32bd1f9537b004eebfdda273833655e747fea6103289597a22fa5394e4",
+      "size": 1356,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_luv.c",
+      "sha256": "860698adc6cdb7669aff34eba2204cd73a65fdeedbaa894633c5b27a867268b0",
+      "size": 53402,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_lzma.c",
+      "sha256": "099c32e13bd466fab0c8af0e67be89ee49f6d6d6081777bbddcbaa9d4d207972",
+      "size": 15435,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_lzw.c",
+      "sha256": "39b9c0415406cec3e1f34152c3dc0fd2cb125e5e51ad7490e9a22f84e39ddb96",
+      "size": 47445,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_next.c",
+      "sha256": "259dbb200cba3995914dd8bd92ccd7bbd39ac1ef837b5c3df072f013018be744",
+      "size": 7132,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_ojpeg.c",
+      "sha256": "c5664b2ffcd4540132ea2c151eb052e5995b9f801a383689b593593424648724",
+      "size": 101263,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_open.c",
+      "sha256": "48e4fd8c40ffb388f7db556875d58a4cadec2b2a5125b631aac5ef2ec54643ed",
+      "size": 26470,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_packbits.c",
+      "sha256": "e856251ed07a54b3f70e2f364007485d57c6b12b82c9e4621b0d7a7c50f58933",
+      "size": 9747,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_pixarlog.c",
+      "sha256": "c70086af5ccac2041004df13ef3dd328c41c723d5a9e042fb1ac4ab99d6f0d9e",
+      "size": 55159,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_predict.c",
+      "sha256": "e6b7b1e3016185c582381bbf4490ffea24f87511106704b4db4700c9baf26a24",
+      "size": 31233,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_predict.h",
+      "sha256": "a1a7241bac6631f1161921f5158a96c7ee53dbe293f7caefdf945cd279046c48",
+      "size": 2897,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_print.c",
+      "sha256": "f4c888f2a94c5a6914a28a9cb1516a7bb273fbaebbe5259fcf8526701aa685fe",
+      "size": 26723,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_read.c",
+      "sha256": "c8559b4a7acd97532dac96667aea2809d2463b44e96ec27f59c99e8f95364ed5",
+      "size": 54334,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_strip.c",
+      "sha256": "88f074282fb540df3f40fb382b7b9ec43498cc3477cc087c4b6aafe73ee00a1c",
+      "size": 12126,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_swab.c",
+      "sha256": "2c731d924ea3e6e394e9fa2c7f08e7f741669ac5cc64cc6731004a97c181cc75",
+      "size": 10359,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_thunder.c",
+      "sha256": "87842f70293becfce95d48d8d1fca523a31af9facda885289302421054875e8e",
+      "size": 7257,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_tile.c",
+      "sha256": "09f8d36485ce9015d982fb0ccb9bdbe6af8f2c58f4fcc29c5216173ed44d00b3",
+      "size": 9494,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_unix.c",
+      "sha256": "66281d5546260a95d80cdb88286da0a57a8650fa135d16ab5c86cfb7a2b9c26e",
+      "size": 9199,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_version.c",
+      "sha256": "c6bc3af2cc77a377f780bbe87087d2fc7a49686dd88b9a1a69d57b95530b95b0",
+      "size": 1343,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_warning.c",
+      "sha256": "cfb6a08e9240ca789b061be18b980173d07fe6d645a5eace7557f33d076369bb",
+      "size": 3127,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_win32.c",
+      "sha256": "79acb07e85d5a9991f82802a71e4aeeb572e67e46f0124c726b589fd5db5ae33",
+      "size": 11965,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_write.c",
+      "sha256": "f4354bda3780cdf021979c44842356296e95b1bda24d509b0f182b75e7da39d5",
+      "size": 32461,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tif_zip.c",
+      "sha256": "7177e10468be25303dbee814111bdd765677568bd3b061e4aaba7caecd10733f",
+      "size": 22753,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tiff.h",
+      "sha256": "ec0904a51c9392cb6a63dc5e9d563e5adb8af64517264176f370b96b6deb5200",
+      "size": 59865,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tiffconf.h.cmake.in",
+      "sha256": "bbe1b0f1434f2487e289ba753c261053a0692f2e85420d3310feef2533516efb",
+      "size": 4101,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tiffio.h",
+      "sha256": "02fbbdae5d73ef0d748c7574c0b9373c8ef8c8bb4e379c12f0cbf17e76b5f18d",
+      "size": 28488,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tiffio.hxx",
+      "sha256": "1ac75ac6bd97627d92dbdd9d9b812b92598cfb1af75cac20257cd4ae08cb982e",
+      "size": 1702,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tiffiop.h",
+      "sha256": "bed5c8e272fa49a4c136835862c2f0ebc42a563e5cda50797ff9819a48fc2e79",
+      "size": 23984,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/tiffvers.h",
+      "sha256": "a03e7ce3c04cefc201211b5a3d376e24a7e151a27704849dcd8577c4464b05ae",
+      "size": 410,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libtiff/uvcode.h",
+      "sha256": "f815e1b3530ad3f48ea47a2865d39a2b40f59a18876410cbdda976b64c2a3042",
+      "size": 5521,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/CMakeLists.txt",
+      "sha256": "feb452d99fb11c58f99c02c0ddb20982757ead71d23d4e95fe3ac28704e046bd",
+      "size": 2183,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/adler32.c",
+      "sha256": "9cd1443a24ff2a3053961695bd432035c58347386a420d3388232376ebabe211",
+      "size": 4964,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/compress.c",
+      "sha256": "86f802c16a965e7a28737e3730b4e576c5ba40981753967e3e30916f4dc1b4b1",
+      "size": 2613,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/crc32.c",
+      "sha256": "8fd16f0a7714d51c89c2eb37eb98ec15e8a4dc57ba343e7b7398b19144039fda",
+      "size": 31605,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/crc32.h",
+      "sha256": "9a2223575183ac2ee8a247f20bf3ac066e8bd0140369556bdbdffc777435749e",
+      "size": 591749,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/deflate.c",
+      "sha256": "3b956337350f94c34987750f785587ef33d9c89ceaebb7c2afb189c956360cbe",
+      "size": 81731,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/deflate.h",
+      "sha256": "48baf016326d8d5e3e32ac8153cc7e22f854b8e6834830b167b998a7fb1e7989",
+      "size": 14041,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/gzguts.h",
+      "sha256": "716fa648aca1bb06c219d7b97ad4846d8479206143bc39557bfd8283f5783e04",
+      "size": 6676,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/infback.c",
+      "sha256": "62df9a6dd3eef126f1d81d0ad7a534504610dec44482b0a472b61c93cbab6554",
+      "size": 22669,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/inffast.c",
+      "sha256": "e6ef64ce5dc0a4cd5c7ad08ceeb2b2a698b8447f6bd156057caeb2edab68c0cb",
+      "size": 12924,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/inffast.h",
+      "sha256": "05cc5dc9ff1da7b8b52a4bd8bda0d8a5c236a2f39efe84b941516ea13857e6c5",
+      "size": 422,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/inffixed.h",
+      "sha256": "237ba710f090e432b62ebf963bee8b302867e9691406b2d3f8ee89ee7bfef9b0",
+      "size": 6332,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/inflate.c",
+      "sha256": "34c998ce0037c0537c04b03b276f680b945f9b2c9d1e01b287605bd6879f7fd2",
+      "size": 55519,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/inflate.h",
+      "sha256": "e8d4a51b07694bf48cb91979c19974cf6a5ab0b8a09d26ec0d14df349230673e",
+      "size": 6683,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/inftrees.c",
+      "sha256": "5d4f335221d2dc76f17abd2577d92c2d7baf68fa6d7f23373b360830493d1563",
+      "size": 13024,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/inftrees.h",
+      "sha256": "0a0fcaf2ae2fae57426bdc06637270e9bba974f35202cadbdba479d946e6409d",
+      "size": 2920,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/trees.c",
+      "sha256": "f63c68c16c05fcd196050529d1a0e7657960e4136b9987d90a6ac3e58a964b0f",
+      "size": 40937,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/trees.h",
+      "sha256": "bb0a9d3ca88ee00c81adb7c636e73b97085f6ef1b52d6d58edbe2b6dc3adeb4d",
+      "size": 8472,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/uncompr.c",
+      "sha256": "04dca5e31b3b8a17d1806426f66f0c539f4184d657e149d40be07070c6227b52",
+      "size": 2911,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/zlib.h",
+      "sha256": "8a5579af72ea4f427ff00a4150f0ccb3fc5c1e4379f726e101133b1ab9fc600c",
+      "size": 96829,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/zutil.c",
+      "sha256": "8ced40d8c88588811edd2bdb35b7439983d5e1f8e9e32b8a3b244731f3c317b7",
+      "size": 7179,
+      "mode": 436
+    },
+    {
+      "path": "thirdparty/libz/zutil.h",
+      "sha256": "dddb2dc7a1dc339ecf2c8e089b366f08bb731c0839c7110240d17ce731bb4fea",
+      "size": 6677,
+      "mode": 436
+    },
+    {
+      "path": "tools/abi-tracker/openjpeg.json",
+      "sha256": "3bb2f84232e455178c1f8cb9fc6b5de0ccead59766844b7590583a181283994d",
+      "size": 5843,
+      "mode": 436
+    },
+    {
+      "path": "tools/ctest_scripts/toolchain-mingw32.cmake",
+      "sha256": "9e4b3406b850d80737d93db5e585e0dac8ce772235723193f89471c7731af351",
+      "size": 905,
+      "mode": 436
+    },
+    {
+      "path": "tools/ctest_scripts/toolchain-mingw64.cmake",
+      "sha256": "6ead9f543775b66a7da359f38dea70f92973cc46949dd4f8a6d78da5ccbd3a3f",
+      "size": 913,
+      "mode": 436
+    },
+    {
+      "path": "tools/ctest_scripts/travis-ci.cmake",
+      "sha256": "92a21e8956c472f2f3b2f0623244da4092eb7daf1b9aed48c0e256dfceb912a2",
+      "size": 5939,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/abi-check.sh",
+      "sha256": "ccc8b7162c14a3606a6f9b9b2636f816ad8138ff1b0e054e24d82b650ac56d42",
+      "size": 6235,
+      "mode": 509
+    },
+    {
+      "path": "tools/travis-ci/detect-avx2.c",
+      "sha256": "76f1aad9ae7b9f73706add1b0a23674e2da2e006b854b105852fd91f5ce58cc6",
+      "size": 4360,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/install.sh",
+      "sha256": "5c9c3b92cbfd2a4a02e3e0c7027c3841e5639a23c355efe37bfc852531b9d3fd",
+      "size": 5296,
+      "mode": 509
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-Ubuntu14.04-gcc4.8.4-i386-Release-3rdP.txt",
+      "sha256": "ebf71f57907d01e51594f1a73a7f70697aec677906442e2aa9196b1127c2e1e1",
+      "size": 1697,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-Ubuntu20.04-clang10.0.0-i386-Release-3rdP.txt",
+      "sha256": "792aa82e79199ba521733d46f7764058a5db1a088f8a597bb9d8df2b9b5efa0e",
+      "size": 1697,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-Ubuntu20.04-gcc9.4.0-x86_64-Release-3rdP.txt",
+      "sha256": "90ed1d6a709537a51d79429753ecc345d4fbac15fbbbf9c13ede98267e373785",
+      "size": 221,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-Ubuntu22.04-gcc11.4.0-x86_64-Release-3rdP.txt",
+      "sha256": "90ed1d6a709537a51d79429753ecc345d4fbac15fbbbf9c13ede98267e373785",
+      "size": 221,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-all.txt",
+      "sha256": "591c29568c5da10dc7dd392a9b6c805fdab20ae2cceddbd7660f3eebe2f85eb2",
+      "size": 64,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-macOS14.7-xcode15.4-arm64-Release-3rdP.txt",
+      "sha256": "b35c09c86794e851f9edc5dd42af69af3473db31ae812963ea305be8ac3fe6d6",
+      "size": 1711,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-windows-vs2010-x86-Release-3rdP.txt",
+      "sha256": "f55c39df9ea4b715b37fd73c2d48797c5ccf9e9c81f20bf954051a8b28b95e0a",
+      "size": 1682,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/knownfailures-windows-vs2015-x64-avx2-Release-3rdP.txt",
+      "sha256": "da6a7ab5f22f83215088ec5dc5f0ccdff6fd3e43e4569d275f918de5d4b6489f",
+      "size": 1635,
+      "mode": 436
+    },
+    {
+      "path": "tools/travis-ci/run.sh",
+      "sha256": "5acd82cf2cba9ad1012d060560d3004afa5b9083c4870f5a4b90373f926ee491",
+      "size": 14349,
+      "mode": 509
+    },
+    {
+      "path": "tools/travis-ci/travis_rsa.enc",
+      "sha256": "d4cbaf4ee13275ab76575267f0bf713149b760420af6159691873b1e6462e74d",
+      "size": 3248,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/CMakeLists.txt",
+      "sha256": "cd9fe61f5b5df63d499bd65d0633fa21160d5773618fbef14dd6593efe92a86d",
+      "size": 59,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/CMakeLists.txt",
+      "sha256": "b6055e2fa4430f253b4013b373b5efce3b4da143753a6284171c2f23463d5fec",
+      "size": 28,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/CMakeLists.txt",
+      "sha256": "8bbd070e4ad7bb3db0313849e9c122fa128d43f20d460900d2d8bfc433a43009",
+      "size": 1934,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/JavaOpenJPEG.c",
+      "sha256": "aad1737f1b3605965f75bbee23912dc8ebbb7e884c822bdd29117552fef8a210",
+      "size": 89422,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/JavaOpenJPEGDecoder.c",
+      "sha256": "25b87f91dc92ba3245b2984d7baa61c562ba52b943e5cdf3910776ee28dd748a",
+      "size": 27716,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/index.c",
+      "sha256": "112d4e1edea090ab7e447e8af4ceb49257313ddde9f027338c59598cb1dda76a",
+      "size": 15785,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/index.h",
+      "sha256": "fdf92e3aac256d7a3889a36352b7c6576b925ab88aeb449f10641fe4be5391a3",
+      "size": 1891,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/java-sources/org/openJpeg/OpenJPEGJavaDecoder.java",
+      "sha256": "1fd69b625960fc9029399760d19eacbe3746f062238079da09d59e19d375f82d",
+      "size": 8846,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/java-sources/org/openJpeg/OpenJPEGJavaEncoder.java",
+      "sha256": "58b71a51d886d0e22f5bee5bfdfcad040ed79cbcf7082ef9b5ea91eb53dba7cc",
+      "size": 11932,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/org_openJpeg_OpenJPEGJavaDecoder.h",
+      "sha256": "b6da80d6366dbf9f2549a6534d79d1f4dcc98c5ac3e4f7d869297b38c5e303b1",
+      "size": 558,
+      "mode": 436
+    },
+    {
+      "path": "wrapping/java/openjp2/org_openJpeg_OpenJPEGJavaEncoder.h",
+      "sha256": "45fd7f68f4cf07165d413855f164abf9dacf2e22956bc37831a48b3ba0ce5cc6",
+      "size": 559,
+      "mode": 436
+    }
+  ],
+  "directories": [
+    {
+      "path": ".github",
+      "mode": 509
+    },
+    {
+      "path": ".github/workflows",
+      "mode": 509
+    },
+    {
+      "path": "cmake",
+      "mode": 509
+    },
+    {
+      "path": "doc",
+      "mode": 509
+    },
+    {
+      "path": "doc/man",
+      "mode": 509
+    },
+    {
+      "path": "doc/man/man1",
+      "mode": 509
+    },
+    {
+      "path": "doc/man/man3",
+      "mode": 509
+    },
+    {
+      "path": "scripts",
+      "mode": 509
+    },
+    {
+      "path": "src",
+      "mode": 509
+    },
+    {
+      "path": "src/bin",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/common",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jp2",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jpip",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/dist",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer/src",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces/dist",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/jpip/opj_viewer_xerces/src",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/wx",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/wx/OPJViewer",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/about",
+      "mode": 509
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source",
+      "mode": 509
+    },
+    {
+      "path": "src/lib",
+      "mode": 509
+    },
+    {
+      "path": "src/lib/openjp2",
+      "mode": 509
+    },
+    {
+      "path": "src/lib/openjpip",
+      "mode": 509
+    },
+    {
+      "path": "tests",
+      "mode": 509
+    },
+    {
+      "path": "tests/conformance",
+      "mode": 509
+    },
+    {
+      "path": "tests/fuzzers",
+      "mode": 509
+    },
+    {
+      "path": "tests/nonregression",
+      "mode": 509
+    },
+    {
+      "path": "tests/performance",
+      "mode": 509
+    },
+    {
+      "path": "tests/profiling",
+      "mode": 509
+    },
+    {
+      "path": "tests/unit",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/astyle",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/include",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/liblcms2",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/liblcms2/include",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/liblcms2/src",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/libpng",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/libtiff",
+      "mode": 509
+    },
+    {
+      "path": "thirdparty/libz",
+      "mode": 509
+    },
+    {
+      "path": "tools",
+      "mode": 509
+    },
+    {
+      "path": "tools/abi-tracker",
+      "mode": 509
+    },
+    {
+      "path": "tools/ctest_scripts",
+      "mode": 509
+    },
+    {
+      "path": "tools/travis-ci",
+      "mode": 509
+    },
+    {
+      "path": "wrapping",
+      "mode": 509
+    },
+    {
+      "path": "wrapping/java",
+      "mode": 509
+    },
+    {
+      "path": "wrapping/java/openjp2",
+      "mode": 509
+    },
+    {
+      "path": "wrapping/java/openjp2/java-sources",
+      "mode": 509
+    },
+    {
+      "path": "wrapping/java/openjp2/java-sources/org",
+      "mode": 509
+    },
+    {
+      "path": "wrapping/java/openjp2/java-sources/org/openJpeg",
+      "mode": 509
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "AUTHORS.md",
+      "sha256": "cf22e984f9fbb9be7550e9a94120595ba8c4a7de0d63f47d3725f4b2e28a4387",
+      "size": 712
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6",
+      "size": 2112
+    },
+    {
+      "path": "src/bin/wx/OPJViewer/source/license.txt",
+      "sha256": "8081c33f6953950dcf424aa844714658b73ada0fcaea16e4487f5fa07ef0960d",
+      "size": 1683
+    },
+    {
+      "path": "thirdparty/astyle/LICENSE.md",
+      "sha256": "2e8480e753b7a1d100c80920f4250b1bc9f93a18c6a5953c42b11445218cd0fb",
+      "size": 1094
+    },
+    {
+      "path": "thirdparty/liblcms2/COPYING",
+      "sha256": "c725daac91a9259ce5e195683c0eeb797d345035c36ac5ba114c9fa80e11639a",
+      "size": 1078
+    },
+    {
+      "path": "thirdparty/libpng/LICENSE",
+      "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e",
+      "size": 5345
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

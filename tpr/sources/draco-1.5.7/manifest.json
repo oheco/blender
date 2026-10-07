@@ -1,0 +1,30 @@
+{
+  "name": "draco",
+  "version": "1.5.7",
+  "kind": "source",
+  "filename": "draco-v1.5.7.zip",
+  "url": "https://github.com/google/draco/archive/refs/tags/1.5.7.zip",
+  "license": "Apache-2.0",
+  "license_files": [
+    "AUTHORS",
+    "LICENSE",
+    "docs/assets/css/pygments/UNLICENSE.txt",
+    "docs/spec/00.00.02.authors.md"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 61004707,
+  "sha256": "27b72ba2d5ff3d0a9814ad40d4cb88f8dc89a35491c0866d952473f8f9416b77",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 33554432,
+      "sha256": "34694488442475f5f78febce2d2fe18b928d159fe9830a1154c82c30e89df798"
+    },
+    {
+      "filename": "source.part0001",
+      "size": 27450275,
+      "sha256": "9472f0e123cbbb38349f26883a0cb76aeb4c396535d4b0d9f1bb8e9d208ede4c"
+    }
+  ]
+}

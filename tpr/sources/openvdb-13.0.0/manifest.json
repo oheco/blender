@@ -1,0 +1,29 @@
+{
+  "name": "openvdb",
+  "version": "13.0.0",
+  "kind": "source",
+  "filename": "openvdb-13.0.0.tar.gz",
+  "url": "https://github.com/AcademySoftwareFoundation/openvdb/archive/v13.0.0.tar.gz",
+  "license": "MPL-2.0",
+  "license_files": [
+    "LICENSE",
+    "openvdb/openvdb/COPYRIGHT",
+    "openvdb/openvdb/LICENSE",
+    "openvdb_houdini/openvdb_houdini/COPYRIGHT",
+    "openvdb_houdini/openvdb_houdini/LICENSE",
+    "openvdb_maya/openvdb_maya/COPYRIGHT",
+    "openvdb_maya/openvdb_maya/LICENSE",
+    "openvdb_wolfram/OpenVDBLink/LTemplate/LICENSE.txt"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 4891966,
+  "sha256": "4d6a91df5f347017496fe8d22c3dbb7c4b5d7289499d4eb4d53dd2c75bb454e1",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 4891966,
+      "sha256": "4d6a91df5f347017496fe8d22c3dbb7c4b5d7289499d4eb4d53dd2c75bb454e1"
+    }
+  ]
+}

@@ -110,3 +110,17 @@
 *.rgb filter=lfs diff=lfs merge=lfs -text
 *.btx filter=lfs diff=lfs merge=lfs -text
 scripts/modules/_bpy_internal/assets/remote_library/*_openapi.py linguist-generated=true
+
+# Small generated OHOS launcher assets are published as ordinary blobs in this fork.
+# All upstream Blender LFS objects retain their original attributes and OIDs.
+build_files/ohos/hap_host/deveco/AppScope/resources/base/media/app_icon_foreground.png -filter -diff -merge -text
+build_files/ohos/hap_host/deveco/AppScope/resources/base/media/app_icon_background.png -filter -diff -merge -text
+build_files/ohos/hap_host/deveco/entry/src/main/resources/base/media/app_icon_foreground.png -filter -diff -merge -text
+build_files/ohos/hap_host/deveco/entry/src/main/resources/base/media/app_icon_background.png -filter -diff -merge -text
+
+# Reviewed dependency font fixtures travel with their source/provenance in this fork.
+build_files/ohos/deps_base_sources/builder/fixtures/font-provenance/perf/fonts/Roboto-Regular.ttf -filter -diff -merge -text
+build_files/ohos/deps_base_sources/builder/fixtures/font-provenance/test/subset/data/fonts/Roboto-Regular.ttf -filter -diff -merge -text
+build_files/ohos/deps_base_sources/builder/fixtures/fonts/Qahiri-Regular.ttf -filter -diff -merge -text
+build_files/ohos/deps_base_sources/builder/fixtures/fonts/Roboto-Regular.abc.ttf -filter -diff -merge -text
+build_files/ohos/deps_base_sources/builder/fixtures/fonts/Roboto-Regular.gsub.fi.ttf -filter -diff -merge -text

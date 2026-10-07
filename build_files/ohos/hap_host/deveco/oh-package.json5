@@ -1,0 +1,7 @@
+{
+  "name": "blender-ohos-host",
+  "version": "0.1.0",
+  "description": "Blender native embedded host candidate",
+  "modelVersion": "6.0.0",
+  "devDependencies": { "@ohos/hvigor-ohos-plugin": "6.26.4" }
+}

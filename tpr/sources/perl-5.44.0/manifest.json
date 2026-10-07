@@ -1,0 +1,23 @@
+{
+  "filename": "perl-5.44.0.tar.gz",
+  "format": "original-archive-parts",
+  "kind": "source",
+  "license": "Artistic-1.0 OR GPL-1.0-or-later; original bundled notices",
+  "license_files": [
+    "Copying",
+    "Artistic"
+  ],
+  "name": "perl",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3",
+      "size": 21265451
+    }
+  ],
+  "schema_version": 1,
+  "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3",
+  "size": 21265451,
+  "url": "https://www.cpan.org/src/5.0/perl-5.44.0.tar.gz",
+  "version": "5.44.0"
+}

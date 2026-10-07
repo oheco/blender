@@ -1,0 +1,807 @@
+[
+  {
+    "path": ".github/CODE_OF_CONDUCT.md",
+    "size": 5494,
+    "sha256": "dd39a3846bb46efeebd2ba38af13ed0f83441933deceda7da090b2ba5cbe6aaa"
+  },
+  {
+    "path": ".github/FUNDING.yml",
+    "size": 43,
+    "sha256": "5ace330b3c0e5b9ccca6516c1018fb7918e3078c22eab2faa04617a8ad99db13"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE.md",
+    "size": 317,
+    "sha256": "2c743ccfd2e6b46de53ffd909f898aa6b11fa8e8a618b7922a9447a10cd47e3b"
+  },
+  {
+    "path": ".github/SECURITY.md",
+    "size": 1024,
+    "sha256": "9e2655dc2a575b0c038b76f11c3e8ca35b6f76e3682ebd8dbd73dba1c19388ec"
+  },
+  {
+    "path": ".github/workflows/main.yml",
+    "size": 3492,
+    "sha256": "72c6189161e08dd24ff67b03c95073b75edce7242cfe38ebd0ef423360211359"
+  },
+  {
+    "path": ".github/workflows/pypi-package.yml",
+    "size": 1660,
+    "sha256": "071ef0b3246fa8a817fb2bd96540dad21e6274dab2e7a4cb0be941e7a69066cd"
+  },
+  {
+    "path": ".github/workflows/zizmor.yml",
+    "size": 983,
+    "sha256": "0e6ab9cda06bdaf9b94775acb4f56f6eb384f1aa03aba0289442320c3b633925"
+  },
+  {
+    "path": ".gitignore",
+    "size": 846,
+    "sha256": "9f2553b68263c1b7ea1888b659c7ca1ff486075735e0da15c0219413c47589c5"
+  },
+  {
+    "path": ".readthedocs.yml",
+    "size": 501,
+    "sha256": "e52e1c3e14d6faec2eb2d5a2822753a7187da9c75a9c8e88a54b607e8d38f50e"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "size": 3166,
+    "sha256": "4a2871f92816bae78ff2c23917564535e1e853412ae1438cd83ce0622bde3024"
+  },
+  {
+    "path": "HISTORY.md",
+    "size": 38278,
+    "sha256": "db50a6ac07996799a6ee37ad990fa6ae7fd5423190377d0a393b770d3bbe9dcd"
+  },
+  {
+    "path": "LICENSE",
+    "size": 1074,
+    "sha256": "f5fb9d1ede37a88ca47f420c499dca0f4a05bc993e12c77d23520aad291c01bf"
+  },
+  {
+    "path": "MANIFEST.in",
+    "size": 263,
+    "sha256": "1221504f54928625b4b351658fe4d5befb4de54d9cdddba50fd4280de244ecb4"
+  },
+  {
+    "path": "Makefile",
+    "size": 2048,
+    "sha256": "2e543936286f052d475e90328a7b8195df4c4129ae827c29850bdaa1c8b88509"
+  },
+  {
+    "path": "PKG-INFO",
+    "size": 8388,
+    "sha256": "383a926a4ddd8486598e615af92653f128b7dbfddecbfa28dad51e7d8c7442d5"
+  },
+  {
+    "path": "README.md",
+    "size": 6429,
+    "sha256": "d7e1ebd5bc85ef7ede6a05a3422006bad2a45bffdbc615d9053039b1e6e410f7"
+  },
+  {
+    "path": "bench/__init__.py",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "bench/test_attrs_collections.py",
+    "size": 3622,
+    "sha256": "b2783dfbc9d22c0a697f842a9d366fd8f11d75a39bdf1cda9f74ae840c13df45"
+  },
+  {
+    "path": "bench/test_attrs_nested.py",
+    "size": 2766,
+    "sha256": "b6cda89e8625885dc6b884722a483580e6f738a8fc09b15ef045ff100ee15a02"
+  },
+  {
+    "path": "bench/test_attrs_primitives.py",
+    "size": 2612,
+    "sha256": "ac7d819dd42ff3c26a7c1abe755bf68d196831c948a456f4c20938cb36bb286d"
+  },
+  {
+    "path": "bench/test_primitives.py",
+    "size": 425,
+    "sha256": "5dc9460e2ffbaeef3e2b1b4022403ec6f5b20bb3db348efcb2668899f12e824e"
+  },
+  {
+    "path": "docs/Makefile",
+    "size": 6895,
+    "sha256": "aa3d504c4e532093c7ae57631d1b9fb3cb526b888339ab645b2517616c014825"
+  },
+  {
+    "path": "docs/_static/custom.css",
+    "size": 2614,
+    "sha256": "183a93ff5c5d0a5aed61b27a9aa310ba70228f68de1b750ae906aaa0d247b986"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-700.woff",
+    "size": 30388,
+    "sha256": "05ec873e9cb5f8535593d45484d429ed147461aca37472f778ca132e26c26fc6"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-700.woff2",
+    "size": 25748,
+    "sha256": "453a606b4fd27d19ecd59f1f76bc8c1606f33dd66cc4915cc236d80fcf984bcf"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-700italic.woff",
+    "size": 32332,
+    "sha256": "fd2cd662b8f4a125129bef71990b512420b0dc5dc21dfb8759e43805e2846b5e"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-700italic.woff2",
+    "size": 27824,
+    "sha256": "049fd1ae88d80a7f4d9773ad6650f960287f5cd7aff6151d5ed039e362b185eb"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-italic.woff",
+    "size": 31508,
+    "sha256": "fcb705f25013ac8fff87f8b24b97ab0f4bce5ade1b163345421d43676e6edab9"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-italic.woff2",
+    "size": 26600,
+    "sha256": "2c0f1f2c461ed621da7080be3954ef04905b5fe1d18e4a1e36fb882322572275"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-regular.woff",
+    "size": 32188,
+    "sha256": "5a3860d7a668461b910b9816df3714997b08033a07e25fe585cf1c885661edf7"
+  },
+  {
+    "path": "docs/_static/fonts/ubuntu-mono-v15-latin-regular.woff2",
+    "size": 27384,
+    "sha256": "b07e4ebe8e46bb19ad150b2b52a9c2ea0a00bf9e188bbb44c553578f058de00d"
+  },
+  {
+    "path": "docs/basics.md",
+    "size": 4199,
+    "sha256": "3b251319504d5c666087f51cfa32a75e6387057d86270712b61eedbedb7cfbd3"
+  },
+  {
+    "path": "docs/benchmarking.md",
+    "size": 1050,
+    "sha256": "c8777ad2ffef3350e595311bfc4a8b4cdd8c0f25f62d575881b97f39fe6614a2"
+  },
+  {
+    "path": "docs/cattrs.gen.rst",
+    "size": 295,
+    "sha256": "55226a90ed1698248d419fd8cec56deb74788c4759813211d696cbba953b193e"
+  },
+  {
+    "path": "docs/cattrs.preconf.rst",
+    "size": 1514,
+    "sha256": "67e8c1d9cd4d3f0c20af6012afca3961f342b0cac611443d4ffd663ddfa7f343"
+  },
+  {
+    "path": "docs/cattrs.rst",
+    "size": 1008,
+    "sha256": "d649bf30a490d907b74b79c765406883c1caa9269f3c7d1f954cb1d13981a11f"
+  },
+  {
+    "path": "docs/cattrs.strategies.rst",
+    "size": 141,
+    "sha256": "71470a0a33181fbcae470aaa0a6115fef0f84a78d4a705447db73b897eec0e84"
+  },
+  {
+    "path": "docs/conf.py",
+    "size": 9503,
+    "sha256": "b4cb47e0f994f36861f3f6e0be94dc6e1ab29f1a828087ec7b0e67421f7810e2"
+  },
+  {
+    "path": "docs/contributing.md",
+    "size": 37,
+    "sha256": "355d0b7f43cfb49bac71b5612a37e1ecfeaad0cd7893c3e9bd219ac76bad28a6"
+  },
+  {
+    "path": "docs/customizing.md",
+    "size": 18623,
+    "sha256": "b7b807eddaa530f4dcca2cf5f76c439e21023851580f97e771cf167472301aa4"
+  },
+  {
+    "path": "docs/defaulthooks.md",
+    "size": 19426,
+    "sha256": "185847b6a8f8af587244e605eb62d9e09f71722f718ea0e66f70e71c0d8deae3"
+  },
+  {
+    "path": "docs/history.md",
+    "size": 32,
+    "sha256": "5643b974622682f2a0cc9a2c1af6891d2b065445199cb2069467315f624a6f6a"
+  },
+  {
+    "path": "docs/indepth.md",
+    "size": 5996,
+    "sha256": "bcca79737a285ba6a87ddecb189a51e1b9ee83b2509a06ccefd8d2cc0ff7dd90"
+  },
+  {
+    "path": "docs/index.md",
+    "size": 1200,
+    "sha256": "0355c65f2d505ffd64489cae3f955119146338f36051e523f946c3e08bfc14ba"
+  },
+  {
+    "path": "docs/make.bat",
+    "size": 6566,
+    "sha256": "94785d08733382fdf5ee392d34e76af796444fa8134f640f9ba365beb32ed8bc"
+  },
+  {
+    "path": "docs/migrations.md",
+    "size": 1077,
+    "sha256": "ecfacbed971e9463c995c0112a083596f07e3f2e885ed8a1d980052a2d6579c2"
+  },
+  {
+    "path": "docs/modules.rst",
+    "size": 55,
+    "sha256": "f5edca8a97db0f147bb94e0cef878b2b8a5fbd0ea7bec23c52ae8f3cc66d44be"
+  },
+  {
+    "path": "docs/preconf.md",
+    "size": 8803,
+    "sha256": "0883254362ca05d4a44749a227be29cd4c508e23168fed90ad25dc1df9ad2220"
+  },
+  {
+    "path": "docs/recipes.md",
+    "size": 4831,
+    "sha256": "c9f8900a8beeb21fe2a584611e32a20db9a4d9b1a854e3037e89ad9afc7f6960"
+  },
+  {
+    "path": "docs/strategies.md",
+    "size": 14749,
+    "sha256": "8f88cf43b18d22f28055a81175b3e8bec8047875eb2cf6ea2594b4d38bbb6cce"
+  },
+  {
+    "path": "docs/unions.md",
+    "size": 4268,
+    "sha256": "ff435f49464a57ed14c71ee947c5d142892c6c2e36f9b2e203996c54c6130d51"
+  },
+  {
+    "path": "docs/usage.md",
+    "size": 6846,
+    "sha256": "1ae5fed61c74b1b8f7dfb2effb2b75aab76388dacb57f1eacde9b89aaa08657e"
+  },
+  {
+    "path": "docs/validation.md",
+    "size": 5803,
+    "sha256": "b606912f03b57115bcce5330a1143b0c65f270abd85a0a6b85cf37fac39779a9"
+  },
+  {
+    "path": "docs/why.md",
+    "size": 4834,
+    "sha256": "6267d0d0705678ca5016190de1052e6153a10786fc6c166c19ebbe1cad574bf7"
+  },
+  {
+    "path": "pdm.lock",
+    "size": 136088,
+    "sha256": "840282ce796cb601934d7ff78772e02f29c57e32598bf751c797bcb3b99a979a"
+  },
+  {
+    "path": "pyproject.toml",
+    "size": 4019,
+    "sha256": "783adb4cb326547a77b91c29fc1494133a6391612bd12d7b5194c3d9a106649a"
+  },
+  {
+    "path": "src/cattr/__init__.py",
+    "size": 906,
+    "sha256": "6d8ae6c136127580bfbadd715b7d55ee6c615c194940ab3c1040a0b5406002e7"
+  },
+  {
+    "path": "src/cattr/converters.py",
+    "size": 192,
+    "sha256": "ad0858e09f2bed04d98795880ae15ee0658ed6fd034b70e043daf9ebdcddea38"
+  },
+  {
+    "path": "src/cattr/disambiguators.py",
+    "size": 103,
+    "sha256": "ba00f57ead59e71d691aee4fd65333713f88122d6aec87d02481c476683adaf3"
+  },
+  {
+    "path": "src/cattr/dispatch.py",
+    "size": 125,
+    "sha256": "b9510e807591f479f9b66fb0230f9b0dc72aaf1241c958bcc9129a632bcbebb9"
+  },
+  {
+    "path": "src/cattr/errors.py",
+    "size": 343,
+    "sha256": "578461a0239bc06ae568cde8ca7d47fc5631191f22001f5d1b937114360ce78f"
+  },
+  {
+    "path": "src/cattr/gen.py",
+    "size": 597,
+    "sha256": "856c8aa19fddd83dfa273fe7a6ca721b0f2cf695ad500ebdb177f4477b8ebe03"
+  },
+  {
+    "path": "src/cattr/preconf/__init__.py",
+    "size": 78,
+    "sha256": "36a3c4eee8557dc3fe3e0824529b1b7c0bad328f281e372807572f8e02dfb7eb"
+  },
+  {
+    "path": "src/cattr/preconf/bson.py",
+    "size": 195,
+    "sha256": "067e2127169ceceb611a0fc24782c23de069fdfcf8931dd09e2055399860b86b"
+  },
+  {
+    "path": "src/cattr/preconf/json.py",
+    "size": 206,
+    "sha256": "2e9a98b8ede878f0f16d0b4a14a07449aa1e022dd9fda808832367d55412215a"
+  },
+  {
+    "path": "src/cattr/preconf/msgpack.py",
+    "size": 207,
+    "sha256": "a7227d2fd7a43656742101db27d032fdf8bf34ea98e7fac4feaf949c3f78f913"
+  },
+  {
+    "path": "src/cattr/preconf/orjson.py",
+    "size": 203,
+    "sha256": "01d87eedcb31e1ea828f1db6ce2a4c1604a50d76d1e79e30be034711bf10e493"
+  },
+  {
+    "path": "src/cattr/preconf/pyyaml.py",
+    "size": 203,
+    "sha256": "172e346de8e3a7bbaa8282e14c0fe9e30658174b856a0b876d42bdcecf4ba02d"
+  },
+  {
+    "path": "src/cattr/preconf/tomlkit.py",
+    "size": 207,
+    "sha256": "fe000327f518a63dc488d5c662301f48e91ca052242e96153857cb12a05f2094"
+  },
+  {
+    "path": "src/cattr/preconf/ujson.py",
+    "size": 199,
+    "sha256": "23311aed051c60e69250c88b42c1445899c18a19a638b85e86c33ee5c3d8f4d2"
+  },
+  {
+    "path": "src/cattr/py.typed",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/cattrs/__init__.py",
+    "size": 1901,
+    "sha256": "5218857717fcd600ae04103a16eb68135a0eced87317f3e401da04d8056c948a"
+  },
+  {
+    "path": "src/cattrs/_compat.py",
+    "size": 11987,
+    "sha256": "74c441f1af1193115d9d00ca4696a6adeb1517f481924b0cdbf64c02e2f4b36c"
+  },
+  {
+    "path": "src/cattrs/_generics.py",
+    "size": 966,
+    "sha256": "91e1310c4d821887abf1c8b5d92a09feb5d84cbbdaf4fdbdb8b96fc9bfdfc6d3"
+  },
+  {
+    "path": "src/cattrs/cols.py",
+    "size": 8848,
+    "sha256": "9960dc85fbe3310eae0022927dd66cd396225eb59da61d873897daa98dc3fc42"
+  },
+  {
+    "path": "src/cattrs/converters.py",
+    "size": 54262,
+    "sha256": "ba2e01480c6757527a3a1d2960dda8387829fa62326ec5d6f8cf125cf0cdce5a"
+  },
+  {
+    "path": "src/cattrs/disambiguators.py",
+    "size": 6867,
+    "sha256": "794c9632d5ba6d025c5c63968ab6aad6915c32551ba3d0491f1158fbe285e8b9"
+  },
+  {
+    "path": "src/cattrs/dispatch.py",
+    "size": 6780,
+    "sha256": "f6a03ea66b0fbe0acce8c18ff04bf68153fa60bdab5efa0195afc2d15807c50d"
+  },
+  {
+    "path": "src/cattrs/errors.py",
+    "size": 4168,
+    "sha256": "e8819f13ec1541b39a0cd378c404097fb1e4fedd90355d197a6eb80fac8c66b5"
+  },
+  {
+    "path": "src/cattrs/fns.py",
+    "size": 626,
+    "sha256": "cf9cf5559399bfcb792f01bc70133fb485e0fbf3e54143b265bf7022b5cdaa5c"
+  },
+  {
+    "path": "src/cattrs/gen/__init__.py",
+    "size": 38842,
+    "sha256": "6e94461dddc6d144e959c1d17094cd014716997f9ebe83c71afa47eaedbd1435"
+  },
+  {
+    "path": "src/cattrs/gen/_consts.py",
+    "size": 511,
+    "sha256": "6704ff9b62774bba7e52396da5b0355ad7d064b363f4a866158080bfa665fa0d"
+  },
+  {
+    "path": "src/cattrs/gen/_generics.py",
+    "size": 3011,
+    "sha256": "fc3c97086aa5d902311a102fdff07586c8bcd2e3caf0f84ada18596bde583a5a"
+  },
+  {
+    "path": "src/cattrs/gen/_lc.py",
+    "size": 882,
+    "sha256": "e1f8de52c9a041c0802239cd9dd06273481fe6a2a6c554b70991ea510f51c398"
+  },
+  {
+    "path": "src/cattrs/gen/_shared.py",
+    "size": 2296,
+    "sha256": "c4ab1f715b69c98222afd016f15b8e5688926da108eedb122f42695022145fe8"
+  },
+  {
+    "path": "src/cattrs/gen/typeddicts.py",
+    "size": 21254,
+    "sha256": "0a4dd032bfc1d53eefc31c918df64f1da7caa6137686774bd7cd5da50371ccfb"
+  },
+  {
+    "path": "src/cattrs/literals.py",
+    "size": 331,
+    "sha256": "d24cc07b099693d8a4246a0aab8cac9c0476d8331ac06de236a2e5f0d2e0a64d"
+  },
+  {
+    "path": "src/cattrs/preconf/__init__.py",
+    "size": 1527,
+    "sha256": "3fb73315172378deb305c7705327819689e296d949a6d09af18776b851a5cfdc"
+  },
+  {
+    "path": "src/cattrs/preconf/bson.py",
+    "size": 4201,
+    "sha256": "ea9d6498e14c8ecc125c509bd6128978dbebde436c026d607d7fc303a8a0abc1"
+  },
+  {
+    "path": "src/cattrs/preconf/cbor2.py",
+    "size": 2022,
+    "sha256": "2e7444723a4ea7fe34da9a14191548843588e1ffd1d70bc991d2afb3932b4c65"
+  },
+  {
+    "path": "src/cattrs/preconf/json.py",
+    "size": 2631,
+    "sha256": "cd3ae47e33b15d9170c1a6cd11279a7f2f82ecc1299fb0b0e4076192478e8d4e"
+  },
+  {
+    "path": "src/cattrs/preconf/msgpack.py",
+    "size": 2325,
+    "sha256": "75913db6c000e6a5f7a527373199a51aebc9e6aff023a980343cae80a5ca8fe1"
+  },
+  {
+    "path": "src/cattrs/preconf/msgspec.py",
+    "size": 7250,
+    "sha256": "0ecd2b3d6e3dd34cec04ba9fba917eb26920f7f2b0cb1ec3fd587d6b4c8907c3"
+  },
+  {
+    "path": "src/cattrs/preconf/orjson.py",
+    "size": 3870,
+    "sha256": "e4c05c52cca9dde1ac1e02df2edb7cfaaf742f69b18c3d2db67ad6054230a2ea"
+  },
+  {
+    "path": "src/cattrs/preconf/pyyaml.py",
+    "size": 2378,
+    "sha256": "c3468cfe027a56165ff99a6efd4949922eeb760bf899f6925c494fa1f0779e51"
+  },
+  {
+    "path": "src/cattrs/preconf/tomlkit.py",
+    "size": 3148,
+    "sha256": "80958626330e3425624cc66ea613a0db15f38d0b774821151557682a00e3a9cf"
+  },
+  {
+    "path": "src/cattrs/preconf/ujson.py",
+    "size": 2425,
+    "sha256": "c112e274133c696b9c164090f616a292d63cc58a0275a9c3850b8a24b4098063"
+  },
+  {
+    "path": "src/cattrs/py.typed",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/cattrs/strategies/__init__.py",
+    "size": 339,
+    "sha256": "9e46560b349161c4beef914c7e4e769a2a194ae5b291a37c841dfd5628395e48"
+  },
+  {
+    "path": "src/cattrs/strategies/_class_methods.py",
+    "size": 2591,
+    "sha256": "3b9c61402ccda6e1620cd0cc95b73278e56acab57ae4d84c64d46c1b78e7a015"
+  },
+  {
+    "path": "src/cattrs/strategies/_subclasses.py",
+    "size": 9365,
+    "sha256": "6821365108debd94073273ce3f2976a91fe1811a60454b758fd944e2a67784d7"
+  },
+  {
+    "path": "src/cattrs/strategies/_unions.py",
+    "size": 9355,
+    "sha256": "60106495549627eec34a42c32e9ba6c00249dfd00bb921b207a5b43edcf9473e"
+  },
+  {
+    "path": "src/cattrs/typealiases.py",
+    "size": 1619,
+    "sha256": "b681dabc2da426c21cc53870bc04cf3b925287329e0bc90897d2aab5e16885bc"
+  },
+  {
+    "path": "src/cattrs/types.py",
+    "size": 278,
+    "sha256": "72abdf9b396261faef3ecc31956fed3780e6850db1a40290bd56cd0496b1896b"
+  },
+  {
+    "path": "src/cattrs/v.py",
+    "size": 4126,
+    "sha256": "22a51a8e024508a2587fee12f5308a46d25c9a62b8737127ebd4c6b9fd8528eb"
+  },
+  {
+    "path": "tests/__init__.py",
+    "size": 528,
+    "sha256": "697c752eec9c83978b4de9f01c5d7508e93408a7a440b496c4e672ad11b1920f"
+  },
+  {
+    "path": "tests/_compat.py",
+    "size": 227,
+    "sha256": "eb947d39adbbffdaae5d2528961e9a875b4f792086943ebbcb6eca31a60b2fb3"
+  },
+  {
+    "path": "tests/conftest.py",
+    "size": 1060,
+    "sha256": "0d01f347dafb57f92debe35e03a000ad853a04cf40907de9c92b3a78836d1a8e"
+  },
+  {
+    "path": "tests/preconf/__init__.py",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "tests/preconf/test_msgspec_cpython.py",
+    "size": 5450,
+    "sha256": "40d13ec85a58fea5034577947b14489f943c607504140fa9922b910eecb1b481"
+  },
+  {
+    "path": "tests/preconf/test_pyyaml.py",
+    "size": 2429,
+    "sha256": "0cc54f630ed8ca6169d87aaf1b5e46f9bdec082f2ee9234db3626d2618220a12"
+  },
+  {
+    "path": "tests/strategies/__init__.py",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "tests/strategies/test_class_methods.py",
+    "size": 3069,
+    "sha256": "ad76ba4c7fd861692a28f21905e3dc06d91b8db3fd421d0c5032211e56981567"
+  },
+  {
+    "path": "tests/strategies/test_include_subclasses.py",
+    "size": 12445,
+    "sha256": "970ce4333ff949477dbe8d70c9271202e04e90d5c261e9ecffd056111b282254"
+  },
+  {
+    "path": "tests/strategies/test_native_unions.py",
+    "size": 3534,
+    "sha256": "98b246491abdd39a0f0562ae24a602d5520293a9855133f70b39eb8b4136c2fe"
+  },
+  {
+    "path": "tests/strategies/test_tagged_unions.py",
+    "size": 5433,
+    "sha256": "312acf0ebe2925c36a157f58aaa01bf2f4d4a85efd1cc3876ad6df4637b4d143"
+  },
+  {
+    "path": "tests/strategies/test_tagged_unions_695.py",
+    "size": 694,
+    "sha256": "1d267937a50d13e77cd39fc7cb676b66c2d8ca0154a7d21276194d8273a0c655"
+  },
+  {
+    "path": "tests/test_any.py",
+    "size": 911,
+    "sha256": "e1b3f6c2d5948ef3350f6d978146590090904f763d534f8a7d7030a84b29796e"
+  },
+  {
+    "path": "tests/test_baseconverter.py",
+    "size": 6771,
+    "sha256": "08421624d4eb101fd266c5aa2a5aa026daf47cc133a80cc2621f288b70d1e126"
+  },
+  {
+    "path": "tests/test_cols.py",
+    "size": 1704,
+    "sha256": "e8654bd40abfa376f4662fd94b2b46395c6d74b1ddf934e934260f22ce8bdcee"
+  },
+  {
+    "path": "tests/test_converter.py",
+    "size": 27806,
+    "sha256": "10e4149aa7c247af8ffe249c92707baaa76cced654ce571d73e51df686123b79"
+  },
+  {
+    "path": "tests/test_converter_inheritance.py",
+    "size": 2285,
+    "sha256": "baea96c2549e154322dd32ff8c9539f5a444631d96e1fdf9275d94d5de682a9b"
+  },
+  {
+    "path": "tests/test_copy.py",
+    "size": 6961,
+    "sha256": "018f87b0835513d96830596dc5cadd6dc9ab60f3d8f64ba67b82e18c52698ea3"
+  },
+  {
+    "path": "tests/test_dataclasses.py",
+    "size": 1479,
+    "sha256": "2855909ec0e1b1c1d62160c9e0c6f5ce5faf27b24e8a0f137852accf103e7c3d"
+  },
+  {
+    "path": "tests/test_defaultdicts.py",
+    "size": 1358,
+    "sha256": "40ca41e2090d9c6938fa2c0290a854edd72c447855115d6426e358bdcf095bbc"
+  },
+  {
+    "path": "tests/test_dicts.py",
+    "size": 313,
+    "sha256": "59f78d2ccb1508dc56f8b126c0aa48014271f4bb634544087b8f467244dbcf90"
+  },
+  {
+    "path": "tests/test_disambiguators.py",
+    "size": 8025,
+    "sha256": "1422d508a5066672c2813a64ad41422d94dde8a4b4b625800a707d46d64fc20d"
+  },
+  {
+    "path": "tests/test_enums.py",
+    "size": 840,
+    "sha256": "0bda0537e4d7a4ab41df56a90b278428c023b29d797e133a71c729a92de69cbc"
+  },
+  {
+    "path": "tests/test_factory_hooks.py",
+    "size": 1562,
+    "sha256": "5acb5492763a5b6737e394e9f126054d089967f2f7c3952d7dee33049387ff5a"
+  },
+  {
+    "path": "tests/test_final.py",
+    "size": 1626,
+    "sha256": "1d177cddccbad153ffaa4f48091282e8720debd2254ec98a54ec224a89bd2f9c"
+  },
+  {
+    "path": "tests/test_function_dispatch.py",
+    "size": 754,
+    "sha256": "e6acafc39df8874879e5da5bb6ef7f9dcb9d2bc341ff52236194ee9310fe8045"
+  },
+  {
+    "path": "tests/test_gen.py",
+    "size": 1926,
+    "sha256": "903f3bff4d3ed77f6e0b6c0c9743367f293f616a93558f4f5973932ea39401f8"
+  },
+  {
+    "path": "tests/test_gen_collections.py",
+    "size": 996,
+    "sha256": "ce557b7e0af4b2146ae1644fb09f72bb8e48291353b3f0a4f8c8e06b2e5ed720"
+  },
+  {
+    "path": "tests/test_gen_dict.py",
+    "size": 18377,
+    "sha256": "811164f4c58bd584b9f4170b1d55b794fd14fae8ddee387a96dcd99f9e2fc385"
+  },
+  {
+    "path": "tests/test_gen_dict_563.py",
+    "size": 1590,
+    "sha256": "6a2f1e54724c705094e6639ca7d178d2f9008233e7894968e8075b98bc5aae42"
+  },
+  {
+    "path": "tests/test_generics.py",
+    "size": 8950,
+    "sha256": "1c3033d4c9ef52bfb63bb86bf19f2bf03a87b24c2603ee339393d05bc6ae0a12"
+  },
+  {
+    "path": "tests/test_generics_604.py",
+    "size": 355,
+    "sha256": "b6e8680d2c3ce0ccd471332a816abe633838c153f8383a2cb8ed0432614f42a2"
+  },
+  {
+    "path": "tests/test_generics_695.py",
+    "size": 3376,
+    "sha256": "a55d66884c2def91f1c8ffb40fad735aab432cb9ac7a7ed2b9d475969942903a"
+  },
+  {
+    "path": "tests/test_generics_696.py",
+    "size": 1725,
+    "sha256": "aa70fc9a5851a4dea5c04aebac88585816cc05c1e10100103a1f04454da439d4"
+  },
+  {
+    "path": "tests/test_literals.py",
+    "size": 549,
+    "sha256": "f641d5e90be3494dd16289733e10792760a447347aeb523e634fc47c12e6ffbe"
+  },
+  {
+    "path": "tests/test_multistrategy_dispatch.py",
+    "size": 1244,
+    "sha256": "7cba2a8a73545585fb0c0c2eb6c5019248c9645c06885400eaae1c9a70caef53"
+  },
+  {
+    "path": "tests/test_newtypes.py",
+    "size": 2004,
+    "sha256": "3814812a190901752147e7e01838a149bdb5312db3e126d9684907bc37455568"
+  },
+  {
+    "path": "tests/test_optionals.py",
+    "size": 2018,
+    "sha256": "a399d545cb199e306d7a0cd265920d7d74f3dd28948b0b203ee27326adf97c37"
+  },
+  {
+    "path": "tests/test_preconf.py",
+    "size": 31484,
+    "sha256": "bd9837c1327f6e587f46d2f26e34b07950023550f87d45d024b2492ffa8533b9"
+  },
+  {
+    "path": "tests/test_recursive.py",
+    "size": 420,
+    "sha256": "419b83bf159e3a25d1f648f7c5a3afb11a2e5f558fa775940971e3b59bee1544"
+  },
+  {
+    "path": "tests/test_self.py",
+    "size": 3961,
+    "sha256": "52b8dfb0332bb8dd1edf4f1d32b9295e029291e3a04c9f73ad5e8446efd41d76"
+  },
+  {
+    "path": "tests/test_structure.py",
+    "size": 10867,
+    "sha256": "eb7b2c854ddd9556626f47762f5e4558700957442cf2a312cb2bd66869bd83f7"
+  },
+  {
+    "path": "tests/test_structure_attrs.py",
+    "size": 9774,
+    "sha256": "b49ceac562fabb894be17d36dac4986c87d94d152887c5c665d6fa83f62fc021"
+  },
+  {
+    "path": "tests/test_tests.py",
+    "size": 254,
+    "sha256": "8dd1d1c200864fb89d1904b6e3f1a2953c5bdf99ab9c6c4746ae57052b0131e2"
+  },
+  {
+    "path": "tests/test_tuples.py",
+    "size": 3994,
+    "sha256": "2e0617aa9ef715fd86962e22c42b0cffca979de543198eee99cbe9c4e35ade89"
+  },
+  {
+    "path": "tests/test_tuples_563.py",
+    "size": 971,
+    "sha256": "aa0f9706f93e40f84d6218ef2d2c7a20a15f5923d0bb930990eb36680b6e5c24"
+  },
+  {
+    "path": "tests/test_typeddicts.py",
+    "size": 15864,
+    "sha256": "c8893fe855a92255639878e9cb69fc0236e258ae2664d71fc04f2665110249ea"
+  },
+  {
+    "path": "tests/test_unions.py",
+    "size": 2656,
+    "sha256": "dd91979ca84662b85dfe53db0536b99a2ddf2d6cadc4bbf3b2dd0032dccacc85"
+  },
+  {
+    "path": "tests/test_unstructure.py",
+    "size": 3974,
+    "sha256": "355b6d81f7e8e61468ef5adcb2cf4bc196f5edce9cf2ed722d95b22251b2266e"
+  },
+  {
+    "path": "tests/test_unstructure_collections.py",
+    "size": 5717,
+    "sha256": "813cd0e2d63cf07b08355ae9f2a7173e213d64bde11be8dc3a847b7513634d47"
+  },
+  {
+    "path": "tests/test_v.py",
+    "size": 9868,
+    "sha256": "41449d71dd36946bacce9dfd7965a4cda1e91685e5d3a8a8227a24ac25f8949b"
+  },
+  {
+    "path": "tests/test_validation.py",
+    "size": 8751,
+    "sha256": "8483db35a3bf15801b051ef8d6665328d6f872fa40c03436f017576cce4006e1"
+  },
+  {
+    "path": "tests/typed.py",
+    "size": 26005,
+    "sha256": "0984a59224f17a052c6b71371baabf3b88606e16aa3e77dd582c5483ffc7990e"
+  },
+  {
+    "path": "tests/typeddicts.py",
+    "size": 8682,
+    "sha256": "bf7b5ade0d29c9438304b0c2426ebd02d7f9db7560304cc6e3c690609861a7a1"
+  },
+  {
+    "path": "tests/untyped.py",
+    "size": 14679,
+    "sha256": "1b4e46f4d53c394417fba1943cd4aa34c4654bd60242923fc16b2e4513330266"
+  },
+  {
+    "path": "tox.ini",
+    "size": 1635,
+    "sha256": "962390855468c3cd5522e67728f775ae09f877e0aea2494b6d6c87eec03fbddc"
+  }
+]

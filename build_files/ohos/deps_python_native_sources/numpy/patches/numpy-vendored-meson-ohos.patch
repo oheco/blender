@@ -1,0 +1,24 @@
+--- a/vendored-meson/meson/mesonbuild/environment.py
++++ b/vendored-meson/meson/mesonbuild/environment.py
+@@ -529,6 +529,9 @@
+     return system
+ 
+ def detect_system() -> str:
++    # CPython and compiler identify the native target honestly as OHOS.
++    if sys.platform == 'ohos' or platform.system() in ('HarmonyOS', 'OpenHarmony', 'OHOS'):
++        return 'ohos'
+     if sys.platform == 'cygwin':
+         return 'cygwin'
+     return platform.system().lower()
+--- a/vendored-meson/meson/mesonbuild/dependencies/python.py
++++ b/vendored-meson/meson/mesonbuild/dependencies/python.py
+@@ -193,6 +193,9 @@
+             if 'ABIFLAGS' in self.variables:
+                 libname += self.variables['ABIFLAGS']
+             libdirs = []
++            if self.platform.startswith('ohos-'):
++                # Relocatable OHOS Python is not installed in the SDK/system prefix.
++                libdirs = [self.variables['LIBDIR']]
+ 
+         largs = self.clib_compiler.find_library(libname, environment, libdirs)
+         if largs is not None:

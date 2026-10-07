@@ -1,0 +1,545 @@
+{
+  "source_archive_sha256": "6aecc2d3b4328f1f5f4127fb16a144de80cc9eb35c32387807c8c04b0b6dbbf3",
+  "files": [
+    {
+      "path": ".clang-format",
+      "size": 388,
+      "sha256": "8dec91e8fbd8662ced18ddc4acf3ef2278802d31116969bf30a5c636353dae60"
+    },
+    {
+      "path": ".editorconfig",
+      "size": 162,
+      "sha256": "493d3227bf651bc4e11a661eb4a53b3c3fc23eca5f62e6c56aeb965b17b12c10"
+    },
+    {
+      "path": ".git-blame-ignore-revs",
+      "size": 687,
+      "sha256": "e11e72052f4df93a1558da2bf7c6b4b8d9ffcaf3f17b55651d3935712503943b"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "size": 215,
+      "sha256": "863c199a3bf2165ce2430bb0da9558c96c0cde6f894de9d14f783dd15a432378"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "size": 216,
+      "sha256": "69c2221aa7c68d14d106397dc31f32be347de26baee5441b38bcb4da43b17eca"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "size": 191,
+      "sha256": "c7fb82c8e045d4c6148f625da170fc4463a7fe140c21cd1fda5fdde51619b752"
+    },
+    {
+      "path": ".github/codecov.yml",
+      "size": 107,
+      "sha256": "776e84ec18043d2f40efdf6a2b3e1ce99bc4eb246e3de7784cdaef465b2d23f0"
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "size": 9563,
+      "sha256": "327cb49b36ac93b8c554fb92a5b679cc2639b2fd25cb1a1e4befb39c428d7af0"
+    },
+    {
+      "path": ".github/workflows/cifuzz.yml",
+      "size": 809,
+      "sha256": "d198838b13b2e2454f75482b54e394385508b600b1a08505941b2334badaaea8"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "size": 2640,
+      "sha256": "90e3286b89a471ad1226c8a0cd407ae792ccc31435692bb3cc01a712d6f753bd"
+    },
+    {
+      "path": ".gitignore",
+      "size": 187,
+      "sha256": "06a06b372001e5d022e4a8bb79f2e7d803005e17c08b69b926d4b2a05cd97615"
+    },
+    {
+      "path": ".prettierrc",
+      "size": 208,
+      "sha256": "def126e99e98fc2f6a7b42b91c66987e31e813c01f1cefe79f7b9b1a47aff0da"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "size": 7935,
+      "sha256": "13f273ab77445e4dff48ee55b7dddd58b63c24d0a003292bd5b0c8e7b6bf70e2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 4757,
+      "sha256": "d63cd384cf7a4c540aa45662021dccad308f7d07c976c354b8fad11087b2ca0c"
+    },
+    {
+      "path": "LICENSE.md",
+      "size": 1079,
+      "sha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26"
+    },
+    {
+      "path": "Makefile",
+      "size": 9974,
+      "sha256": "525e67722d4e836a8f3d49f566703bace1028eaa5baa6417cfbbbb8e6ecd1524"
+    },
+    {
+      "path": "README.md",
+      "size": 89335,
+      "sha256": "68b07559ba0561f2d8afdf9f68d4124939f0a11f754c3e932ff57ddc2168d5f8"
+    },
+    {
+      "path": "demo/ansi.c",
+      "size": 97,
+      "sha256": "45f87277cc554501a1cc7939c1791dce1a19e38d719b480183f3f6a15ae8f96b"
+    },
+    {
+      "path": "demo/clusterlod.h",
+      "size": 28127,
+      "sha256": "a8bc56a985ba23ba1313f8a2ca35e1805cbf0816a1304def9df874540433815a"
+    },
+    {
+      "path": "demo/index.html",
+      "size": 3638,
+      "sha256": "2ba63e40ac213eb4db948245ea1d98c3b0ddb286fad05add3bd3a58882ae418c"
+    },
+    {
+      "path": "demo/main.cpp",
+      "size": 62620,
+      "sha256": "b31d9fd8ec3ffdc24bee41c3bac6e1d43ee38a7bb635f1298f941dcf6f24e68c"
+    },
+    {
+      "path": "demo/meshletdec.slang",
+      "size": 7281,
+      "sha256": "98420dc6e0b7658cc65041afa5d5f5c1673158876c4917064a7797395ae4bb89"
+    },
+    {
+      "path": "demo/nanite.cpp",
+      "size": 14226,
+      "sha256": "7ac3fcf2a135da15b96bcff71aa541d9a6ccb3e6614e2f9d97a8d2b8f411c8a6"
+    },
+    {
+      "path": "demo/pirate.glb",
+      "size": 24696,
+      "sha256": "0fb46b7aa48c73994285ff8645fcb7be3541afcfdfa5c4add3a7bfe42b78c426"
+    },
+    {
+      "path": "demo/pirate.obj",
+      "size": 368962,
+      "sha256": "cf11ea6f1fad6688123fbb80c5ca39ad5e48908cfa53d68e09a3f03f53c524a1"
+    },
+    {
+      "path": "demo/simplify.html",
+      "size": 33969,
+      "sha256": "ffc0d02afea22a14a8f35496146265b7210fed65a2e66a3554e6b91857caa0f7"
+    },
+    {
+      "path": "demo/tests.cpp",
+      "size": 93492,
+      "sha256": "edd90da1375148386b7df706359ce8a25979435c578639f80a9841c41dfb9f0e"
+    },
+    {
+      "path": "extern/.clang-format",
+      "size": 20,
+      "sha256": "a46c8911862713e50ddaf798e09d3b69ecf4e7dde3fa5edb8a0c2856a88c49fa"
+    },
+    {
+      "path": "extern/cgltf.h",
+      "size": 205754,
+      "sha256": "efb169dee911696b5d35fc8e3f7ea0c56d679debc529eba9ca6aa6443ba9d5e9"
+    },
+    {
+      "path": "extern/fast_obj.h",
+      "size": 35433,
+      "sha256": "4dc1d206f104ed390d70794d3287fbf0c24748ea4ac39f86c860c74a16b9371b"
+    },
+    {
+      "path": "extern/sdefl.h",
+      "size": 28129,
+      "sha256": "d490452a22b97c44cc8542e59fdd14666d5ba5167eaa05e8c50745832c1e462c"
+    },
+    {
+      "path": "gltf/README.md",
+      "size": 9437,
+      "sha256": "74b73b7eca8141cc60cef9b8f2674422c4eaae8a6dafd1c067a24272c27de05d"
+    },
+    {
+      "path": "gltf/animation.cpp",
+      "size": 9737,
+      "sha256": "c2d1554ba635a842ef14140424e64960554fb9a6ee078739d9c00bcabf1a5f1a"
+    },
+    {
+      "path": "gltf/cli.js",
+      "size": 525,
+      "sha256": "c7f3a81fa93a3609847fb75817e4777c339bd5f94963bdbb9aa224a6fdb038ce"
+    },
+    {
+      "path": "gltf/encodebasis.cpp",
+      "size": 6889,
+      "sha256": "f5d4fa046badc1f9ecaa9caf51090abefbe3f6fa2d6d62392a9d54094150ff9c"
+    },
+    {
+      "path": "gltf/encodewebp.cpp",
+      "size": 5192,
+      "sha256": "a9e87efc983277c67a653511cf60e21388a58543c52a21f8a09e6ffcb0fe8217"
+    },
+    {
+      "path": "gltf/fileio.cpp",
+      "size": 2351,
+      "sha256": "67c1cc29321c8abe349afe7f40940f0ed01205c2fc9e4a33bfdbb6ced926a144"
+    },
+    {
+      "path": "gltf/fuzz.dict",
+      "size": 3149,
+      "sha256": "0d8726116ec976b5921fae6c0682052fed7f04c9e28a09e91575fa8e6f26ac53"
+    },
+    {
+      "path": "gltf/fuzz.glb",
+      "size": 6540,
+      "sha256": "2d055d2d56a492d1b9302de6e733046b625cf51e5f2a3090bd3a8c11acc93c17"
+    },
+    {
+      "path": "gltf/gltfpack.cpp",
+      "size": 55461,
+      "sha256": "6145950842a9850ec202bcfd10f5c762f0a5cf941325803673612c17a27c9fc1"
+    },
+    {
+      "path": "gltf/gltfpack.h",
+      "size": 14143,
+      "sha256": "0d193b43729d73dab98b5c6b420a935502ab6e389dc6a00a5e8d951f4e2796cc"
+    },
+    {
+      "path": "gltf/gltfpack.manifest",
+      "size": 391,
+      "sha256": "c545044c127a74966aaec0693053c3d02dc095b63bdc0d9ced17969220de2789"
+    },
+    {
+      "path": "gltf/image.cpp",
+      "size": 9287,
+      "sha256": "6a73ccf14a260caad17f7718f21e5c36a2059aa848412f41f2a1ce10baa3f1ff"
+    },
+    {
+      "path": "gltf/json.cpp",
+      "size": 1685,
+      "sha256": "4b76aebe9eb7ed182056cbf57958c54c684605492c33879128068f681f42c2c0"
+    },
+    {
+      "path": "gltf/library.js",
+      "size": 7958,
+      "sha256": "c7850ceabc3cb5b01a777fc0dd60dc2bcc187ccd567884bd86e4ab53d9638eb7"
+    },
+    {
+      "path": "gltf/material.cpp",
+      "size": 18891,
+      "sha256": "1528495301962fc25df4abb86dfd25fca928920c9a274e704efea0afb2ba59e8"
+    },
+    {
+      "path": "gltf/mesh.cpp",
+      "size": 33938,
+      "sha256": "58ce4b5104261dc719ac3ba287cbd1c830c75c2b31b1d76043139ca2344d048a"
+    },
+    {
+      "path": "gltf/node.cpp",
+      "size": 5528,
+      "sha256": "6295c8f9e5c9c592c02489bcbe0e66add15a0faa9ca7e5eee674fc193d9656c6"
+    },
+    {
+      "path": "gltf/package.json",
+      "size": 600,
+      "sha256": "f7d817213fabbd138c15da7937b447a370b5d8ee8a58eb92693c6335b9ff37ad"
+    },
+    {
+      "path": "gltf/parsegltf.cpp",
+      "size": 19955,
+      "sha256": "6ce7ed934ee7950c83b55b5db197802e1764f63b1dfa3c37cdca22adbdc0e4e4"
+    },
+    {
+      "path": "gltf/parselib.cpp",
+      "size": 255,
+      "sha256": "7f264d8542c0475eb256f03e0ae7d54727b3ba8fddcbc40e7d7abee8cfc6854c"
+    },
+    {
+      "path": "gltf/parseobj.cpp",
+      "size": 9826,
+      "sha256": "c6ab2a5bc01608d99e748df1e0f3e9fe9ce11a037d5395ddad000012c777685a"
+    },
+    {
+      "path": "gltf/stream.cpp",
+      "size": 27344,
+      "sha256": "6077000edb57b50eec9b5f4e7f7f28289973b292fb58b3d3058aab8605e814bf"
+    },
+    {
+      "path": "gltf/wasistubs.cpp",
+      "size": 1412,
+      "sha256": "281615d8a0057a327b400313dd545b9df16e8272147ccd0de01624259ab33d92"
+    },
+    {
+      "path": "gltf/wasistubs.txt",
+      "size": 36,
+      "sha256": "3442945d8deaec558cbf07bcc8b9d0cf163b3525bbd97ef3f81cbbbffac2d05e"
+    },
+    {
+      "path": "gltf/write.cpp",
+      "size": 52406,
+      "sha256": "533dadf437b59fdcb3197c602b3f36a09658b80b87dd502e9888426bef049797"
+    },
+    {
+      "path": "js/README.md",
+      "size": 28562,
+      "sha256": "38d96f2d977c1a47413865fdcb913adfda1a1fbcb777eef0d1b549a16493e4f5"
+    },
+    {
+      "path": "js/benchmark.js",
+      "size": 3686,
+      "sha256": "bcb8f5a5ae81a82c57f234bbff0e8d9b30207b67ca23155046c1e2c039b6af0f"
+    },
+    {
+      "path": "js/index.d.ts",
+      "size": 159,
+      "sha256": "7156f4b838a98c5550533a1505c22299659848a58b076f5bfdacbdb63e900681"
+    },
+    {
+      "path": "js/index.js",
+      "size": 160,
+      "sha256": "f813b93618618437e042a11512ad0023faf1106795941d0522a742176718ad66"
+    },
+    {
+      "path": "js/meshopt_clusterizer.d.ts",
+      "size": 1853,
+      "sha256": "0106567d192becc7894a7be4cce986cbc4ef5a6bccb61be0e2f646315e84bd8d"
+    },
+    {
+      "path": "js/meshopt_clusterizer.js",
+      "size": 32298,
+      "sha256": "bb41187a17e80511165c2fffbb99c681a7d3ca81b825c91b43f9efd4c9133145"
+    },
+    {
+      "path": "js/meshopt_clusterizer.test.js",
+      "size": 4600,
+      "sha256": "8c6ad6888b3ad5ef6d5670bd4ae832b3a0ac408693f3668e2896267fdad2a990"
+    },
+    {
+      "path": "js/meshopt_decoder.cjs",
+      "size": 29594,
+      "sha256": "b1175adbbe195e3cf5259c1ffb5cb5444c15765399c65a3cd9a059674188d668"
+    },
+    {
+      "path": "js/meshopt_decoder.d.ts",
+      "size": 870,
+      "sha256": "804e95c2fea13467a2e8002a8aa41fb470a17b3fea5a8d7eaaa156c635c03a70"
+    },
+    {
+      "path": "js/meshopt_decoder.mjs",
+      "size": 29253,
+      "sha256": "ac290f5aefbcbdaf78dfcf8ce7d3551dead5c9abf7fd9e81fd0e6a0e0952b52f"
+    },
+    {
+      "path": "js/meshopt_decoder.test.js",
+      "size": 15409,
+      "sha256": "66cf4ed3b93ac8050901cd54d182735446eef602cebfe60e2631662c133091ad"
+    },
+    {
+      "path": "js/meshopt_decoder_reference.js",
+      "size": 14948,
+      "sha256": "33cc3aab79d6485874e132ca93690899456c2393622b1e7972670fd08e2f3bcc"
+    },
+    {
+      "path": "js/meshopt_encoder.d.ts",
+      "size": 1448,
+      "sha256": "4c769e430f99a67a55ed23c981ab6b51e1587a93479d328ba16ffc08289d39a9"
+    },
+    {
+      "path": "js/meshopt_encoder.js",
+      "size": 24173,
+      "sha256": "73aa31263d81059e9b416e652d6b6f9ea382b9114b9c3cced45778dd483231a5"
+    },
+    {
+      "path": "js/meshopt_encoder.test.js",
+      "size": 8354,
+      "sha256": "532a04b27a8631f53696a82b949b3bd9155e10e9f410663970ae206f4aca593b"
+    },
+    {
+      "path": "js/meshopt_simplifier.d.ts",
+      "size": 2029,
+      "sha256": "bd2ee0cc9424bbaddb7326ef9fd9b7f521134dee243a99e029d6dec80ca72b2c"
+    },
+    {
+      "path": "js/meshopt_simplifier.js",
+      "size": 54978,
+      "sha256": "127f0bcdca85d0c4252a4b884c30c3d0c96fd1855ec1d18bd640f88f4742ee4f"
+    },
+    {
+      "path": "js/meshopt_simplifier.test.js",
+      "size": 6351,
+      "sha256": "62ed9a054a129e11afdba2d5f9e3ee55511fd33923fa45d07bb0a58b605e30c9"
+    },
+    {
+      "path": "js/package.json",
+      "size": 1311,
+      "sha256": "c1942522de406d1cbdb54626057f98453965f37602f893e5ae4540b074e8b43f"
+    },
+    {
+      "path": "js/wasi_trace.js",
+      "size": 1264,
+      "sha256": "26c6ddf615a448f2de2d5f46d75f1d639470c14011bb27c469f2642bd9f37d85"
+    },
+    {
+      "path": "src/allocator.cpp",
+      "size": 552,
+      "sha256": "0bff407ee165d338026badacce8bd37320372cc687631a2a8054afa7147f1e26"
+    },
+    {
+      "path": "src/clusterizer.cpp",
+      "size": 47051,
+      "sha256": "4eb53fd05140cefa440c67bbe10b304a8bb22a1f85f455634d2fefe3c1879140"
+    },
+    {
+      "path": "src/indexanalyzer.cpp",
+      "size": 3820,
+      "sha256": "bff37aecb10cefa33f3f6a217413c6ac98899c23e6de5282420c60e6baf786ec"
+    },
+    {
+      "path": "src/indexcodec.cpp",
+      "size": 20833,
+      "sha256": "f98c84b7ee1bc15b075fdba430b8c2d69b21ff9ff7e782b9ff84a6db8f8c8e19"
+    },
+    {
+      "path": "src/indexgenerator.cpp",
+      "size": 21122,
+      "sha256": "9dc12451a3bf2dcabd76b59237cc25ec8b40e31ef5558512df5ec98fe65de37c"
+    },
+    {
+      "path": "src/meshletcodec.cpp",
+      "size": 33807,
+      "sha256": "f7bad517cb77a646ba0beef916ac42715c2fe18002f29e12c6cd4ccd5835e678"
+    },
+    {
+      "path": "src/meshletutils.cpp",
+      "size": 20461,
+      "sha256": "1540bdbdf4b1a91ff2b820f5a9dbc621da1650f7eefdba339bc826414010c32d"
+    },
+    {
+      "path": "src/meshoptimizer.h",
+      "size": 97031,
+      "sha256": "6639dec5362e20e7f2093e7eb11d6728d0d0c87f102b7ffa4e52248e22e1af2a"
+    },
+    {
+      "path": "src/opacitymap.cpp",
+      "size": 18567,
+      "sha256": "81037b530d10aaac80a43197294aef5b27b3ccf8d1e323c5ccdc0945fc4c5d69"
+    },
+    {
+      "path": "src/overdrawoptimizer.cpp",
+      "size": 11671,
+      "sha256": "a70412562f991133ce52b2833adee9de0a9029dc45312ada1eb5c2452dc4f3ee"
+    },
+    {
+      "path": "src/partition.cpp",
+      "size": 18839,
+      "sha256": "0bec6b8a326ce15521283dcea2d1a7ca2d5d5a2ee1ba2d3bd3e82f65ff174a91"
+    },
+    {
+      "path": "src/quantization.cpp",
+      "size": 1847,
+      "sha256": "8293cf0810796dab81474a8b53bc4e26619f2407e327f7db60b52a5f25b42860"
+    },
+    {
+      "path": "src/rasterizer.cpp",
+      "size": 8717,
+      "sha256": "10b71ec7e0d865697c52d5d29c38af40a9285c2762570bdd002689e817058fe5"
+    },
+    {
+      "path": "src/simplifier.cpp",
+      "size": 104051,
+      "sha256": "b645cdaffe9e3eaf64ff77bc82c3e3b8c57c0a4459b7405a0b3d2716ed92d928"
+    },
+    {
+      "path": "src/spatialorder.cpp",
+      "size": 11093,
+      "sha256": "9005ee0069ed8c56797606de80c0cd951ab55ffb608bc3af83c4e5b2517371b1"
+    },
+    {
+      "path": "src/stripifier.cpp",
+      "size": 7752,
+      "sha256": "e653e6be3a9b821016a1f6a90b756b971422f1246ebd03e60b478251a288bfd4"
+    },
+    {
+      "path": "src/vcacheoptimizer.cpp",
+      "size": 14171,
+      "sha256": "618429ef4db8ab9b16fde4e73dcf425d89452acbf103085478bc8b1761fa6689"
+    },
+    {
+      "path": "src/vertexcodec.cpp",
+      "size": 56937,
+      "sha256": "6e76ae9946f6a550f5a357d1a365e8abad4489cea533b6973e054b4fc8a85f6b"
+    },
+    {
+      "path": "src/vertexfilter.cpp",
+      "size": 54892,
+      "sha256": "a773dcdc20bb4401a737d7cb0a0d047311a819e1efc55bfc0d1fb6e62c88d574"
+    },
+    {
+      "path": "src/vfetchoptimizer.cpp",
+      "size": 1915,
+      "sha256": "aa534bb8150ca27ae229c58a0dc51f85f9acccbc5d4214f4c82edd91fc08e478"
+    },
+    {
+      "path": "tools/bitmask.py",
+      "size": 515,
+      "sha256": "30771f53f5b3a02af09c63e731f8adbc9391b038206330dda49bbc42d94e2ad8"
+    },
+    {
+      "path": "tools/clusterfuzz.cpp",
+      "size": 2904,
+      "sha256": "81e63276bbb5ce8da404ef5d4f9d7c70112cc64f8196e97912efc5051fb22ed9"
+    },
+    {
+      "path": "tools/codecbench.cpp",
+      "size": 13265,
+      "sha256": "fb42194cfd08f21ae30d00504b42c27978a4936772d87acac7c0efc9c435610e"
+    },
+    {
+      "path": "tools/codecfuzz.cpp",
+      "size": 6885,
+      "sha256": "b3612e90f38223ff1555e1ad872ef9f1daa3e6c83d54ff2166a5253fd284a5be"
+    },
+    {
+      "path": "tools/codectest.cpp",
+      "size": 6008,
+      "sha256": "b54277c8354410ff21fd0cf359078369d8070cd734d72d87c2808265af3d435f"
+    },
+    {
+      "path": "tools/gltfbasis.py",
+      "size": 2858,
+      "sha256": "ebb96f33c46a37a6552ee4f7a0a5fd6c028513e388d50603c06d56804b8de25d"
+    },
+    {
+      "path": "tools/objloader.cpp",
+      "size": 136,
+      "sha256": "bf75dac4ca51aecb6374569876d9f903ada5607e4fdf76b78f2109d5a86dc355"
+    },
+    {
+      "path": "tools/simplifyfuzz.cpp",
+      "size": 1550,
+      "sha256": "3bda3a609315916682445594c86a75f43cbea0c32460fccede2fc0d7c2742219"
+    },
+    {
+      "path": "tools/vcachetester.cpp",
+      "size": 13388,
+      "sha256": "a85b0af1e77f2fbbb43434de45e5f654d34e0616af074e9a5fac4da20bc2f703"
+    },
+    {
+      "path": "tools/vcachetuner.cpp",
+      "size": 11475,
+      "sha256": "d70716eca4f1d137ed1bd5ce21d976e56cae501bee97a54378a71cc992c15bd7"
+    },
+    {
+      "path": "tools/wasmpack.py",
+      "size": 1329,
+      "sha256": "2a83b8f34ded072ec55f506d95bd1b4ea324b521b21877b6b3b7a3e71432ef05"
+    },
+    {
+      "path": "tools/wasmstubs.cpp",
+      "size": 2042,
+      "sha256": "a0e52af404e310ceeea38a63e713adf1b243cc33b5dbb8709ce9c6bb44dec288"
+    }
+  ]
+}

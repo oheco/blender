@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kind": "portable-native-vulkan-library-recipe",
+  "profile": "HarmonyOS aarch64, genuine Clang20 headers/frontend + accepted SDK15 static __n1 runtime; C++17 libraries",
+  "build_groups": ["vulkan-headers", "spirv-headers", "vma", "vulkan-utility", "shaderc", "spirv-reflect"],
+  "shaderc_graph": ["spirv-headers", "spirv-tools", "glslang", "shaderc_combined"],
+  "selected_overrides": "Pinned Tools2026.1/HeadersSDK341 are explicit recipe inputs, not assertions that they equal every upstream DEPS/known_good revision.",
+  "options": {
+    "vulkan-headers": {"VULKAN_HEADERS_ENABLE_TESTS": "OFF", "VULKAN_HEADERS_ENABLE_MODULE": "OFF", "VULKAN_HEADERS_ENABLE_INSTALL": "ON"},
+    "spirv-headers": {"SPIRV_HEADERS_ENABLE_TESTS": "OFF", "SPIRV_HEADERS_ENABLE_INSTALL": "ON"},
+    "vma": {"VMA_ENABLE_INSTALL": "ON", "VMA_BUILD_DOCUMENTATION": "OFF", "VMA_BUILD_SAMPLES": "OFF"},
+    "vulkan-utility": {"VUL_ENABLE_INSTALL": "ON", "UPDATE_DEPS": "OFF", "BUILD_TESTS": "OFF", "VUL_CODEGEN": "OFF", "VUL_MOCK_ANDROID": "OFF"},
+    "shaderc": {"SHADERC_SKIP_TESTS": "ON", "SHADERC_SKIP_EXAMPLES": "ON", "SHADERC_SKIP_EXECUTABLES": "ON", "SHADERC_SKIP_COPYRIGHT_CHECK": "ON", "SHADERC_SKIP_INSTALL": "OFF", "SHADERC_ENABLE_WGSL_OUTPUT": "OFF", "SHADERC_ENABLE_WERROR_COMPILE": "OFF", "SPIRV_HEADERS_ENABLE_TESTS": "OFF", "SPIRV_HEADERS_ENABLE_INSTALL": "ON", "SPIRV_SKIP_TESTS": "ON", "SPIRV_SKIP_EXECUTABLES": "ON", "SPIRV_TOOLS_BUILD_STATIC": "ON", "SKIP_SPIRV_TOOLS_INSTALL": "OFF", "SPIRV_WERROR": "OFF", "SPIRV_BUILD_FUZZER": "OFF", "SPIRV_BUILD_LIBFUZZER_TARGETS": "OFF", "SPIRV_TOOLS_USE_MIMALLOC": "OFF", "SPIRV_TOOLS_USE_MIMALLOC_IN_STATIC_BUILD": "OFF", "GLSLANG_TESTS": "OFF", "GLSLANG_ENABLE_INSTALL": "ON", "ENABLE_SPIRV": "ON", "ENABLE_OPT": "ON", "ENABLE_HLSL": "ON", "ENABLE_GLSLANG_BINARIES": "OFF", "ENABLE_GLSLANG_JS": "OFF", "ENABLE_SPVREMAPPER": "OFF", "ENABLE_PCH": "OFF", "BUILD_EXTERNAL": "OFF", "ALLOW_EXTERNAL_SPIRV_TOOLS": "OFF"},
+    "spirv-reflect": {"SPIRV_REFLECT_EXECUTABLE": "OFF", "SPIRV_REFLECT_STATIC_LIB": "ON", "SPIRV_REFLECT_BUILD_TESTS": "OFF", "SPIRV_REFLECT_EXAMPLES": "OFF", "SPIRV_REFLECT_INSTALL": "ON"}
+  },
+  "upstream_metadata": {"shaderc_pc": "2023.8.1 from dated CHANGES parser; source pin2025.4 recorded separately", "spirv_headers_project": "1.5.5 versus source SDKtag1.4.341.0", "spirv_tools_pc": "2026.1.1 versus source tag2026.1", "glslang_project": "15.4.0 versus exact source commitd213..."},
+  "artifact_policy": "Upstream still generates Shaderc/Tools DSOs; sign and audit all installed DSOs, preserve signed install bytes. Supported library entry is genuine static shaderc_combined. Static archives unsigned. PIC modules never dlopened.",
+  "loader": "Explicit existing system loader only. Never install upstream loader/ICD or alter loader environment.",
+  "acceptance": "Future CMAKE/PC and migrated-prefix native library shader compile/validate/optimize/reflect, borrowed opaque-handle metadata and public glslang/Tools/VMA APIs. Device enumeration records facts only.",
+  "not_accepted": "No new full run yet; no GPU dispatch/draw/render/readback/pixels, runtime surface creation, native handle lifetime, VMA device allocation, Blender/HAP/DevEco or publication proof"
+}

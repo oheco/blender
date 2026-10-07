@@ -1,0 +1,22 @@
+{
+  "name": "idna",
+  "version": "3.10",
+  "kind": "source",
+  "filename": "idna-3.10.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz",
+  "license": "BSD-3-Clause",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 190490,
+  "sha256": "12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 190490,
+      "sha256": "12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9"
+    }
+  ]
+}

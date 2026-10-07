@@ -1,0 +1,25 @@
+{
+  "patch_sha256": "56e767a9ed7a05b8ac23c2fd2db8e317d44cf63edd3078887eb5e4f191961ad6",
+  "source_archive_sha256": "4d6a91df5f347017496fe8d22c3dbb7c4b5d7289499d4eb4d53dd2c75bb454e1",
+  "files": [
+    {
+      "path": "nanovdb/nanovdb/GridHandle.h",
+      "before_sha256": "12eff3e55ca0d880382920b62a515f590885678f0bca6a320f9b8467a95d00e0",
+      "after_sha256": "58d57e2fa0afde3557193fbc74cdecff1a6ca4c84b36bfc4a715578370907a0c"
+    },
+    {
+      "path": "nanovdb/nanovdb/io/IO.h",
+      "before_sha256": "44f2655a1feec0383bdecf57afc20eaa1e4fb833a2f3aaa742e6783c7c8343b4",
+      "after_sha256": "219b87fde91b906415ae0bea68a93649996f7aefe9f1695f0d6720c4624b6e44"
+    }
+  ],
+  "parent_native_prototype": {
+    "checks": 1164,
+    "baseline_exit": -9,
+    "baseline_timeout_seconds": 5,
+    "patched_exit": 0,
+    "receipt_sha256": "16adce4f12645f3ef74db194e7f64f5b5fad73f8dbfdbaaddd35707802d41dcd",
+    "test_source_sha256": "78f6e667a3a163540f4c872bca863adaedc06de17c52d9575d09f7f2ef904ad3",
+    "does_not_accept_this_new_builder": true
+  }
+}

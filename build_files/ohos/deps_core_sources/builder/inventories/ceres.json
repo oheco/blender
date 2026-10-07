@@ -1,0 +1,2938 @@
+{
+  "name": "ceres",
+  "archive_sha256": "bf0bcc78fae884e59dd893693e52510da7cc6866a7444fdae9ba8f19eae266cd",
+  "files": [
+    {
+      "path": ".clang-format",
+      "sha256": "9d4e8650e93c092742d7dd43774fd7e7c33f7ed268c74c263824531e828bd368"
+    },
+    {
+      "path": ".github/workflows/android.yml",
+      "sha256": "a922810b2e43dbd4ff9712ffeb949af3f0791d508684c6807946bbd5a950ff49"
+    },
+    {
+      "path": ".github/workflows/linux.yml",
+      "sha256": "7d0ffa50a462870808ed1f5c1800776d1ecb6f9aa6d696f64d658eecdbd3dd6f"
+    },
+    {
+      "path": ".github/workflows/macos.yml",
+      "sha256": "2fb01d07102dd4e44e9e712aa8e774f58849a272bfc2539cc83e7e37f29ee239"
+    },
+    {
+      "path": ".github/workflows/windows.yml",
+      "sha256": "36834e3825772ba605be84fe5291ed4c2c41a8c712d51abc64bf23470ffcda8c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "a2a56c677f2d9814393ce86c1ffa662159bb319113c9b02f4f1992c722030fe8"
+    },
+    {
+      "path": ".gitmodules",
+      "sha256": "b2c71f56b313b5e248b9d16e006c46bbbd3dcb7b71c7a0e335b54b7943e73a94"
+    },
+    {
+      "path": ".readthedocs.yaml",
+      "sha256": "68dc3998a2ab451d939e4e6c112d2d894f8dad05bed1385a2a4a0b4714c260b2"
+    },
+    {
+      "path": "BUILD",
+      "sha256": "524ec1d28924873652b079e8fccd7232af5f0deaccf076386f7158a921fe226f"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "015f749a85f7eca32571187a81e83d0aa81479768222244e05b48c4fefd18c57"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "3c7b208f1270ccb6ee662e1d25536c07d69e5b5c16fe83a09bc9a4e4ec9c9eac"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "7d353726e3f6cc4b701cfe5ae413c22a5406de5710aef6f842d6130d6ae4dde2"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "765fd9eac4cb827fa5de4304d1f81f4f2c5c332a3f1d6f0f3f7a69a33156729b"
+    },
+    {
+      "path": "MODULE.bazel",
+      "sha256": "fd1111a20f6b9fc686b2612afc1924de8392c2e41a793e9de2ef2c1dc9406cae"
+    },
+    {
+      "path": "README.md",
+      "sha256": "5ac8d21abfdd8460d94efa7354dc5c2454fa3f0020cd351f9a7640a9f578b7a7"
+    },
+    {
+      "path": "WORKSPACE",
+      "sha256": "0768c9b73097952a00e60c875821f69b8c2e631c37acdc56f8d0c5af4fda5cf5"
+    },
+    {
+      "path": "bazel/ceres.bzl",
+      "sha256": "bb92c33e0ff229ff1b294c3857b454bca87322bdcca2ca44a1213f4be8e6c60e"
+    },
+    {
+      "path": "cmake/AddCompileFlagsIfSupported.cmake",
+      "sha256": "596eddb015044016601ee5e146aed75e9163666781bb02dc6b68dd6b951b5461"
+    },
+    {
+      "path": "cmake/AddGerritCommitHook.cmake",
+      "sha256": "c7b65636af63a0fe6e6e082b78b55f1dcd5b80138efaea13427446ae7c0691de"
+    },
+    {
+      "path": "cmake/CeresCompileOptionsToComponents.cmake",
+      "sha256": "5314786836c0ad0579a11ea502b3ce876194dd4c7e1b987252fcde21f10df9d9"
+    },
+    {
+      "path": "cmake/CeresConfig.cmake.in",
+      "sha256": "efb0db9385dc481a3664f067199bb5c611d7fafed3ce34ad26ac521f74890ef7"
+    },
+    {
+      "path": "cmake/CreateCeresConfig.cmake",
+      "sha256": "cf3bdbb91d12d34a33b55ae1e1b6ad0394d20c0dfa6ea37debeab37b290a1cae"
+    },
+    {
+      "path": "cmake/DetectBrokenStackCheckMacOSXcodePairing.cmake",
+      "sha256": "ecf5f34939146aa2cab2ca973e3067069511429f6efc51e781c0033d45d8dd67"
+    },
+    {
+      "path": "cmake/EnableSanitizer.cmake",
+      "sha256": "36a9e1c28f179b38b8a74b42a149fdf1d75bd8b3a239b2cf998ef033312f8b01"
+    },
+    {
+      "path": "cmake/FindAccelerateSparse.cmake",
+      "sha256": "5ed14977b25ea7b3bd8d0489f64104f26831824f7dc8f98d4a18446adffc75a2"
+    },
+    {
+      "path": "cmake/FindMETIS.cmake",
+      "sha256": "0e8a02701fca27f0e539e55896643a93b72cc497adb51b246aaa56d645e2b9a3"
+    },
+    {
+      "path": "cmake/FindSphinx.cmake",
+      "sha256": "dd56265740c10d122fd829f6adf0eca35e77f6d97da436b9954b25cb9285e79a"
+    },
+    {
+      "path": "cmake/FindSuiteSparse.cmake",
+      "sha256": "4b54005ae8bbab9e1e78c12453d3ca34a64f3036e5c1c197727807a3383b52b0"
+    },
+    {
+      "path": "cmake/PrettyPrintCMakeList.cmake",
+      "sha256": "f894b8c4689d848ea00032dceaa1b1a93e23fb683f2b0924de2c4d34f164b1ed"
+    },
+    {
+      "path": "cmake/ReadCeresVersionFromSource.cmake",
+      "sha256": "a510bbccc691c3f7f3a232afb712c445af522acc58d672e7bff98518a0ca8aa1"
+    },
+    {
+      "path": "cmake/UpdateCacheVariable.cmake",
+      "sha256": "80d2ff01393d17b4c1776ae19ac250a9771ef0be5b740ac7dca5a4d2b58ec51c"
+    },
+    {
+      "path": "cmake/config.h.in",
+      "sha256": "0d4cdc66d74f628b41d32f6d91a7ea859b09e2bdf38cc6e84231c29fdc280488"
+    },
+    {
+      "path": "cmake/iOS.cmake",
+      "sha256": "7d4f3e425b8e7dd0ad7496b5d6dfdd167dc492c4d13f8cdfedbce0d280765f90"
+    },
+    {
+      "path": "cmake/uninstall.cmake.in",
+      "sha256": "987b2396550662a5d94416cd5a54c14d4990211ab27eb4fc0ea908c6d4fa0b53"
+    },
+    {
+      "path": "config/ceres/internal/config.h",
+      "sha256": "68b1472741c19905b575dcdc05caba4555bb8a29f51cead3682874d06c8ee17a"
+    },
+    {
+      "path": "config/ceres/internal/export.h",
+      "sha256": "115a852da14510c93178a6680282f978382fc6b8d352042da9fb86bab2d54af6"
+    },
+    {
+      "path": "data/2x2.foe",
+      "sha256": "b05581ccdf89946e8ad24a9459c3d28e652c08d7ab7f6c8e9f5ccd5fe14fa117"
+    },
+    {
+      "path": "data/3x3.foe",
+      "sha256": "7f5c37342406c77b02b7b283bdcfafa21d5ce5b7529cb544048a421eb1c75d69"
+    },
+    {
+      "path": "data/5x5.foe",
+      "sha256": "ad85b5fbf567ffd65ef6225ab9a4c5891d6c705b5bae0f5a9d5a72ceee752491"
+    },
+    {
+      "path": "data/README.foe",
+      "sha256": "b0d976c4ea0ac0a3d69a908898bdb2e9890a5ef63e834c3c771e2c6ee8408a4d"
+    },
+    {
+      "path": "data/ceres_noisy.pgm",
+      "sha256": "134676a74c20ef696f80fbbff1418a364b97122e6a23dd343e14c8ff6e3cd85f"
+    },
+    {
+      "path": "data/libmv-ba-problems/Readme.txt",
+      "sha256": "1313c52c735681bb06955f5526680e4bddbfa54ffef2dd62c977af0825fcd3c1"
+    },
+    {
+      "path": "data/libmv-ba-problems/problem_01.bin",
+      "sha256": "4eb04540c68c3e112cfbb2c000cc8acffecaaa7e89f00c1d58fda93b3a2c4e4c"
+    },
+    {
+      "path": "data/libmv-ba-problems/problem_02.bin",
+      "sha256": "3f47aef21135974918006a36c38653b747480326cddd2cd87810389e274a382b"
+    },
+    {
+      "path": "data/libmv-ba-problems/problem_03.bin",
+      "sha256": "02c48bbf3d372917b31c8ff5c049d35406e45d065defb22b24b030bf55394348"
+    },
+    {
+      "path": "data/nist/Bennett5.dat",
+      "sha256": "b34d160605b959c301d13aac6627b693743d32ad98a6c4f830a3f728cdff0f52"
+    },
+    {
+      "path": "data/nist/BoxBOD.dat",
+      "sha256": "fc44fbed04e3be16df6498e722d4c8aedfd0af210110bc396d9f99acecd77e21"
+    },
+    {
+      "path": "data/nist/Chwirut1.dat",
+      "sha256": "d9a055dfe5af71a8754c00f073ef00f8fed2e3fd1c6fd20cea8fd62d7cc3ed84"
+    },
+    {
+      "path": "data/nist/Chwirut2.dat",
+      "sha256": "c37e5522a34f9a57e18d7d10f8736202eabc0c33b8e7ad0010e618db04b57411"
+    },
+    {
+      "path": "data/nist/DanWood.dat",
+      "sha256": "5eae83de8b34e34c631a5738d640183b0628913e728437ae77f066e832186e24"
+    },
+    {
+      "path": "data/nist/ENSO.dat",
+      "sha256": "0c644f45b0e586cb1bb0613bad68f63c704efadacd086e768468d33d83f3e5d9"
+    },
+    {
+      "path": "data/nist/Eckerle4.dat",
+      "sha256": "8ec2133b29a0a7cecbfccd51f7c61ee432f73c460bf5ce7106d672642e57a61e"
+    },
+    {
+      "path": "data/nist/Gauss1.dat",
+      "sha256": "20d0b85ffc73681ce9bdd69c566e53969a65e0e2192c3de16ad4a1dcfdca6c27"
+    },
+    {
+      "path": "data/nist/Gauss2.dat",
+      "sha256": "24fe86801c35c4f86140cced68894e31d73b6ed5738cf698474144f94bae3640"
+    },
+    {
+      "path": "data/nist/Gauss3.dat",
+      "sha256": "24842a9e795db59c2c6cbc4c11047f90faedad014f8146faa6b5555259958d6d"
+    },
+    {
+      "path": "data/nist/Hahn1.dat",
+      "sha256": "7e885af48e18a222033a66cb22b491f0f5bc761b652142c0d9b28132daf63956"
+    },
+    {
+      "path": "data/nist/Kirby2.dat",
+      "sha256": "cbd288dd9d8586ec97ca408277d1a27ef41b19b543c158d594af189de80ae61c"
+    },
+    {
+      "path": "data/nist/Lanczos1.dat",
+      "sha256": "dc7a419a4d7e7c0891e378dcde953a3e5dd273618b64b2cee8301e51577b428a"
+    },
+    {
+      "path": "data/nist/Lanczos2.dat",
+      "sha256": "be1ac732e725ef75298f082bcdedab9e2ee9395ad77d8fad2ef37c95e0421572"
+    },
+    {
+      "path": "data/nist/Lanczos3.dat",
+      "sha256": "bc998624541c49fedee08346ee2c1d495741c4ea1dd15c052d7c743ab3cf0efe"
+    },
+    {
+      "path": "data/nist/MGH09.dat",
+      "sha256": "6419da83fd9ab34615769413dc2a6d35b11372f512a9401628a1565067c51d10"
+    },
+    {
+      "path": "data/nist/MGH10.dat",
+      "sha256": "a0eb140580fdd6dcf6fba2cbbd81afa598c5226f1e6d702d1313c72a7a6e6fb4"
+    },
+    {
+      "path": "data/nist/MGH17.dat",
+      "sha256": "75edb5522ee639794ae1f0d0f4a1e3638e963c6854888b853e1f45cea3c2f4d7"
+    },
+    {
+      "path": "data/nist/Misra1a.dat",
+      "sha256": "9d3194d537d9a6bbf92eb819504070923a1885d0191f40b6b3aaeedd130b98e2"
+    },
+    {
+      "path": "data/nist/Misra1b.dat",
+      "sha256": "dd27e310f787dcbc2addc50b9f8e5e3b82155f732926898b1858e4d08eead6a8"
+    },
+    {
+      "path": "data/nist/Misra1c.dat",
+      "sha256": "012f75aa0ff112afabdff73880e324ab28e2dc267b678537611c403b959dc941"
+    },
+    {
+      "path": "data/nist/Misra1d.dat",
+      "sha256": "4dfa39a381a5ffea3e5d9306af1bda9d53bc57226a8e6f0c19af6b9702580481"
+    },
+    {
+      "path": "data/nist/Nelson.dat",
+      "sha256": "82fe77ef1a79a4441e7af5083680fc5046f9eb29b33bc2f2b76c478ecbe976d7"
+    },
+    {
+      "path": "data/nist/Rat42.dat",
+      "sha256": "fc97dd1f94fbcb381495065a053e279f23588a9ceb243276f2a2c36c8225985b"
+    },
+    {
+      "path": "data/nist/Rat43.dat",
+      "sha256": "36f08908d0f09b1d075e3701ca567701535c58ac0d795ff68fb3c04e172c2c5d"
+    },
+    {
+      "path": "data/nist/Roszman1.dat",
+      "sha256": "6cca4a6b3ed24bca298e6d6cea3a550d8529278c40b8b9c3afdffb0fbb45b927"
+    },
+    {
+      "path": "data/nist/Thurber.dat",
+      "sha256": "806b8d00a5365eff907561db796fec3af8a26a5f353297d4311fd46ed5b0146f"
+    },
+    {
+      "path": "data/problem-16-22106-pre.txt",
+      "sha256": "e128b6b076399db26007a92323d98fe7b48db2a31089240273f40f582e612a91"
+    },
+    {
+      "path": "docs/CMakeLists.txt",
+      "sha256": "b9168f79b987d9f503f29a7b16d561fddeac04aa89b2f10b0c645556c571a70e"
+    },
+    {
+      "path": "docs/requirements.txt",
+      "sha256": "65cc494e153baa28b91b26d95d7544cf288480d45a71fadae0b4736cddc37671"
+    },
+    {
+      "path": "docs/source/CMakeLists.txt",
+      "sha256": "45e3d03f65300705d060361f0c73fbbd3972bf588e3d0e226d3dc84071d2ca07"
+    },
+    {
+      "path": "docs/source/_templates/layout.html",
+      "sha256": "f395297fff93cce875a96e7ad958b467d85751d0a36e9da82085ce7d95244f8b"
+    },
+    {
+      "path": "docs/source/analytical_derivatives.rst",
+      "sha256": "16312be944a4b761cfca353fa4d256ce3170886b386e690dc21158feb0a0443c"
+    },
+    {
+      "path": "docs/source/automatic_derivatives.rst",
+      "sha256": "3680af5d023ea5078929114b77d2a2731921824cfe5c48cc42fdbffdb9407c95"
+    },
+    {
+      "path": "docs/source/bibliography.rst",
+      "sha256": "56a8c1432fe87e59cbcb0cc110984d6c87bc7efaf9207b94bc5a494fd74bbf6b"
+    },
+    {
+      "path": "docs/source/conf.py",
+      "sha256": "02a1094c432a362da0af63360b145d3f3b98868cef7bb42573ad5f04ab5d26a2"
+    },
+    {
+      "path": "docs/source/contributing.rst",
+      "sha256": "86595ffb7d8494b387352508d9262bfb3a6778c7586a85c408a96df5f5ebd546"
+    },
+    {
+      "path": "docs/source/derivatives.rst",
+      "sha256": "812fab6bc8b10968efe73029e017cf1c7a9feac0e9b8be27d40ad2df00372523"
+    },
+    {
+      "path": "docs/source/faqs.rst",
+      "sha256": "43c71dbda35ce6516ba23dbe42ea44a8205dcbf01b99b9f4f60ad7b955e2d39f"
+    },
+    {
+      "path": "docs/source/features.rst",
+      "sha256": "593907be202001910b5fd650d21c908cca5ba3cde7e8f064c3c4db86f1b76137"
+    },
+    {
+      "path": "docs/source/forward_central_error.png",
+      "sha256": "d0bc7b939b79f3348edf4264c2c7cbb677134edd3342b4c5fc2820f2a3024ba3"
+    },
+    {
+      "path": "docs/source/forward_central_ridders_error.png",
+      "sha256": "e7948157d92c83a2f43443c21a3f7a8e26ed7eb1624001868ba565f17ded3b69"
+    },
+    {
+      "path": "docs/source/gradient_solver.rst",
+      "sha256": "3bad89673504803341aed9c11284878b151c6146a4baf66dbbe32f22f16c4f4e"
+    },
+    {
+      "path": "docs/source/gradient_tutorial.rst",
+      "sha256": "94b4bcf7707b66309da68d3f3d801062523f5cb83efffc3f779d0f1473d0ecee"
+    },
+    {
+      "path": "docs/source/index.rst",
+      "sha256": "1d4354bd96a697c022ba59e5cca4deb49c730bf1bc3fb8d47704d00e99e78e85"
+    },
+    {
+      "path": "docs/source/installation.rst",
+      "sha256": "c6f3470cdc9316c34c48fbd043b369c5414e1f3f488ec6d052776e00c79f448f"
+    },
+    {
+      "path": "docs/source/interfacing_with_autodiff.rst",
+      "sha256": "a6bc4a8ace5ef3e34bf4c985ffea5bc6125d075c0155035f8d15dd6490a7643a"
+    },
+    {
+      "path": "docs/source/inverse_and_implicit_function_theorems.rst",
+      "sha256": "34ab452bbdd9081f77530edb49b948571df1557b7d99e5b993adf61f07a72cce"
+    },
+    {
+      "path": "docs/source/least_squares_fit.png",
+      "sha256": "0268f4f747024ab680b7d724c1b34009ee6a16ce5efd22a5579bdf07b17d5089"
+    },
+    {
+      "path": "docs/source/license.rst",
+      "sha256": "298272413616f53c3bd952600ecb13ae4005dce7772c02b425c431bbb244f66f"
+    },
+    {
+      "path": "docs/source/loss.png",
+      "sha256": "c0f812a6837f00775b2597d470d1c201d78d22c0af6a65e9c3b94bd8b55a8cd9"
+    },
+    {
+      "path": "docs/source/manhattan_olson_3500_result.png",
+      "sha256": "6f6376c3fbb723d49ea5fe5070cee1e20bbf42b16a81743e67501290be02c811"
+    },
+    {
+      "path": "docs/source/modeling_faqs.rst",
+      "sha256": "56f51aafaea7c88dc570928fbfa83d7f2e9d689b6a59774f3db3bc91106cee5b"
+    },
+    {
+      "path": "docs/source/nnls_covariance.rst",
+      "sha256": "9f060a00113977cf311162af54fd7297ae939fe83f645df45a35fd5e8a01825a"
+    },
+    {
+      "path": "docs/source/nnls_modeling.rst",
+      "sha256": "45309a6545ef01bd281dc70377d7d60df32925b59e98338196b651fbab7e5273"
+    },
+    {
+      "path": "docs/source/nnls_solving.rst",
+      "sha256": "cbcf029ab3996ed019926e805f852b9e69cf9266ff16d479ea44c8f746cc20de"
+    },
+    {
+      "path": "docs/source/nnls_tutorial.rst",
+      "sha256": "1cea24640884f9c4fbe37460d4734820f2d88e70b3e00ee2f1300db423fb74e4"
+    },
+    {
+      "path": "docs/source/non_robust_least_squares_fit.png",
+      "sha256": "dd7b4c1f4bf5c3206bfcfa5c0b46b650cbc5ec9ae14c31cd3be6dead2299d00d"
+    },
+    {
+      "path": "docs/source/numerical_derivatives.rst",
+      "sha256": "85764baafef0427875e52a9097d8c07fbf211a45be3f575d59278ed5d5f7eff8"
+    },
+    {
+      "path": "docs/source/pose_graph_3d_ex.png",
+      "sha256": "09c31687aba32216d713d99857f5aa98e9a4fda99bf17c21effeb827e2345832"
+    },
+    {
+      "path": "docs/source/robust_least_squares_fit.png",
+      "sha256": "3ca644a410f9b636078b9a160b84f4c8426db81bb95f15a6ecc7e3c5f5e02905"
+    },
+    {
+      "path": "docs/source/slam2d.png",
+      "sha256": "b6766278a3fbf28f244bcbe4bcb669e7ef8e3185436752bed5ea824c1363f502"
+    },
+    {
+      "path": "docs/source/solving_faqs.rst",
+      "sha256": "c2fe5384dd3682915fac7fae02767e31e01be5f165f3b9ba1f6cf32d430d2646"
+    },
+    {
+      "path": "docs/source/spivak_notation.rst",
+      "sha256": "af4b2104aef34603583c159d63d3f2cbe3cc94a31f84872e314545023936f2b4"
+    },
+    {
+      "path": "docs/source/tutorial.rst",
+      "sha256": "3fc4df7aa986e1b46bcd111a5fa77bcdd37fad90f3ddafdab35d0d121ae996b8"
+    },
+    {
+      "path": "docs/source/users.rst",
+      "sha256": "2e00eca2b5832593eda92d9c7f15543cb5ff0804c14b0abfdcd0cc659c217549"
+    },
+    {
+      "path": "docs/source/version_history.rst",
+      "sha256": "d2d8eddeeb34cb337a926f27a12c464290a67e696e02e475dca83e7c988effde"
+    },
+    {
+      "path": "examples/BUILD",
+      "sha256": "1e737e8df3020e1e33affef971eedebaa7102fbe404bf9a3740aadbd7ce34733"
+    },
+    {
+      "path": "examples/CMakeLists.txt",
+      "sha256": "205032dea5f60ed798862e9ba7360fda2e9c9580412daaff5a78b06ecd9cc209"
+    },
+    {
+      "path": "examples/bal_problem.cc",
+      "sha256": "a917373042bcc37c35ee49bfb71dddc7959260ed3797a8e69c30e122be990b21"
+    },
+    {
+      "path": "examples/bal_problem.h",
+      "sha256": "86a8c732761be2ef8e3f2af20a9b92b48e0c0e1414962f2913ae235a6bb03a18"
+    },
+    {
+      "path": "examples/bicubic_interpolation.cc",
+      "sha256": "beaa7e4aa6df5d7a64f2c74f3bb70ffb341951740e2e3f3af7d4e6045cae18d9"
+    },
+    {
+      "path": "examples/bicubic_interpolation_analytic.cc",
+      "sha256": "b88e96fe11d6acc7e156150f568ef298f67d67786389966382c2533f1d05adfd"
+    },
+    {
+      "path": "examples/bundle_adjuster.cc",
+      "sha256": "5e19c1502ad58200a9df166ea972e0b4aa4181fcf95a6a911e08d55173ec508e"
+    },
+    {
+      "path": "examples/circle_fit.cc",
+      "sha256": "c4d5c6b039527ac2db0f91e5d0d8e93a24509ff1d377153f1fe94dd944eb1ab9"
+    },
+    {
+      "path": "examples/curve_fitting.c",
+      "sha256": "53f868529e4b9d817b8bb115ecafa405a3c0e57368f055b87da931f98f512a67"
+    },
+    {
+      "path": "examples/curve_fitting.cc",
+      "sha256": "0e1c9f99339493d0a407bf805e4b6d42f217cb6de108fb66c1c9d6674e6c7ca1"
+    },
+    {
+      "path": "examples/denoising.cc",
+      "sha256": "84804055ba253ec4a9bc8afa0e7fc8717a901c724592a230d2b5800b95a51d93"
+    },
+    {
+      "path": "examples/ellipse_approximation.cc",
+      "sha256": "87a4e244efd17071834d95ab7023417c2ac82cc8bd56524b0b5a9fabaa9bab11"
+    },
+    {
+      "path": "examples/evaluation_callback_example.cc",
+      "sha256": "fd1a115275dd7e9b51a7ab4b8ae8592eea7308eadd66bcc69b263a7c2d90956d"
+    },
+    {
+      "path": "examples/fields_of_experts.cc",
+      "sha256": "278389f6dc969490d347d3b9c3ea46005128d515b0098bea74faf541aa433d7f"
+    },
+    {
+      "path": "examples/fields_of_experts.h",
+      "sha256": "4dd044300190ecedff6982446c1ca2eda72043df86402c7e4675f98f053a3ad6"
+    },
+    {
+      "path": "examples/helloworld.cc",
+      "sha256": "cb5a6f9c9576de31b367efede296c0e3d5a1ad370db6bd8b0f90908a25b75154"
+    },
+    {
+      "path": "examples/helloworld_analytic_diff.cc",
+      "sha256": "9223fec282104e37c50ab197b20a632598826664d291aa29c3b3935c65352af2"
+    },
+    {
+      "path": "examples/helloworld_numeric_diff.cc",
+      "sha256": "2974417053855b1695292c71131ce0b47deb77ca81113296611937cd0767ae7b"
+    },
+    {
+      "path": "examples/iteration_callback_example.cc",
+      "sha256": "7ad27eaf805412f114b8751f58f4dc0464fee46d3da0bbaeb84d17106f059d2a"
+    },
+    {
+      "path": "examples/libmv_bundle_adjuster.cc",
+      "sha256": "ff74f461a1cb43d02d6bd907781549af0909cabcadbe32e897ad9c3bdd38b70a"
+    },
+    {
+      "path": "examples/libmv_homography.cc",
+      "sha256": "bac4b8ea269ce4e3e6b96ddb41e27f8678cc42104c94cf68e1f9e497d051c298"
+    },
+    {
+      "path": "examples/more_garbow_hillstrom.cc",
+      "sha256": "43c8b3deffd153a47a06d1723aff5a539eeac01a93a6d356c9d97961f2c651e4"
+    },
+    {
+      "path": "examples/nist.cc",
+      "sha256": "d98549e9938d36fc94adddfd0e8af7f17a12583ca139c154eb0bde8cecbf6a41"
+    },
+    {
+      "path": "examples/pgm_image.h",
+      "sha256": "80239229f06c8b7f7196c1f396d9f987179b83a964204d1f3f94aa01cf96c0c2"
+    },
+    {
+      "path": "examples/powell.cc",
+      "sha256": "d8e316cf2b133e15747bd0331d7e61271c5a3c480d60b18e50a658fd9e9232b9"
+    },
+    {
+      "path": "examples/robot_pose_mle.cc",
+      "sha256": "eb1cd5702231e59b3a3002e19f627df9f69e833453f9c70677e01aa979a785ae"
+    },
+    {
+      "path": "examples/robust_curve_fitting.cc",
+      "sha256": "e369cc6a010b7b2237923e8096dbc44d9721c9369ef438593b7798a7e180e791"
+    },
+    {
+      "path": "examples/rosenbrock.cc",
+      "sha256": "b3d7135e8e6ca4156188bf58692d58e9f58936c1a34f4a10a353c1198e5e64ed"
+    },
+    {
+      "path": "examples/rosenbrock_analytic_diff.cc",
+      "sha256": "b6e9ca9cecf41a233a6dfee8e309d4f5d3a5c1fae83756540c99f62b404134c1"
+    },
+    {
+      "path": "examples/rosenbrock_numeric_diff.cc",
+      "sha256": "534eaafbd4425b01eb59f25f40aa19a4ba7ca671bf5d5e5d8e34fafed98195c5"
+    },
+    {
+      "path": "examples/sampled_function/CMakeLists.txt",
+      "sha256": "8f7a63e8f1a8b6bdb2e78987869df7248f4cd95d20b047d565b8e040267c538c"
+    },
+    {
+      "path": "examples/sampled_function/README.md",
+      "sha256": "4bb917e8ac0cc409e0af99ca71130a70bbf9438ad4078528e0a71ae104f80feb"
+    },
+    {
+      "path": "examples/sampled_function/sampled_function.cc",
+      "sha256": "93bbbb5ac33c3cbccecbe2e13663294790ec9e561ad0bb8aca1b4e4159235e26"
+    },
+    {
+      "path": "examples/simple_bundle_adjuster.cc",
+      "sha256": "3250ced815079b2f6445d79842f11f391e65c08ea28324592c73ce8eb74cf2ee"
+    },
+    {
+      "path": "examples/slam/CMakeLists.txt",
+      "sha256": "08bf33770ef7bddfb193836766a7e94e0e5eb5176fe17d538fc332ec1995eea1"
+    },
+    {
+      "path": "examples/slam/common/read_g2o.h",
+      "sha256": "99952e32d3d1aba1bb770ae442a6f27ae9d7779339c64a283b2a42dd517e9770"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/CMakeLists.txt",
+      "sha256": "156cc3b2c29754cd01f87666957114c0582f85dcaa8b4f680e245cf3ecb6b821"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/README.md",
+      "sha256": "70f1d85e59ed1f7f846a6b3360b903a6972942eb95721ab31a71cdad6743ac1c"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/angle_manifold.h",
+      "sha256": "2f4618932cbb1681a8f6f24e939ddd66a2187c7681f4d86658e9f0e50a40643b"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/normalize_angle.h",
+      "sha256": "08d3bbfa7a3f21ac9215b150e3f5511c513ed26b857d99dd81b5374d0a4a5189"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/plot_results.py",
+      "sha256": "d028cdf43d68f7dfef387248860a97774385130a1d591b586076370fa09f15ac"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/pose_graph_2d.cc",
+      "sha256": "bd6634a9f8a65f3396e5859f150313835cba5669354334e7d593a4c070cceec2"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/pose_graph_2d_error_term.h",
+      "sha256": "d03d3087a5022f4191a74c1f450c303f1f1d242c5378458d3043004a4c0a46e5"
+    },
+    {
+      "path": "examples/slam/pose_graph_2d/types.h",
+      "sha256": "1cc57624b0d7b59571b6ef22dde90c87fe253b6fe1061c78a275bab2589ce9b7"
+    },
+    {
+      "path": "examples/slam/pose_graph_3d/CMakeLists.txt",
+      "sha256": "51ad342095947b72281e7187b30e4211c62fbb4fa2159d0325635d14f1f8dcb0"
+    },
+    {
+      "path": "examples/slam/pose_graph_3d/README.md",
+      "sha256": "4e50851bb665a2a782bd4f8ad8c64693099543d33ba871d752599097268e3fa9"
+    },
+    {
+      "path": "examples/slam/pose_graph_3d/plot_results.py",
+      "sha256": "59643bb391b5d12abd662636c1ee1b00c485e9e3457a7d22b70f603fa5ac9783"
+    },
+    {
+      "path": "examples/slam/pose_graph_3d/pose_graph_3d.cc",
+      "sha256": "5aff560de74a0a5071aa8dbad1563d04e1708e075939d1f763831911da6aa579"
+    },
+    {
+      "path": "examples/slam/pose_graph_3d/pose_graph_3d_error_term.h",
+      "sha256": "e15c8d75ff959f4181a79d23cb39c08e2301d2c9b52d51fae424882b24ee104b"
+    },
+    {
+      "path": "examples/slam/pose_graph_3d/types.h",
+      "sha256": "c1b1cc3c491161711b161cae3f8b95352f505392e63a98a3f3a1dbd9e1883b9c"
+    },
+    {
+      "path": "examples/snavely_reprojection_error.h",
+      "sha256": "8193fc80de977decf53590b826c9c3b71566bd1e16e415d0d793bdb1fe840aa8"
+    },
+    {
+      "path": "include/ceres/autodiff_cost_function.h",
+      "sha256": "506d42a28ad878342cfbea0337941cf307adf48752b874cb8e2421836c038313"
+    },
+    {
+      "path": "include/ceres/autodiff_first_order_function.h",
+      "sha256": "d8cdc4aa04d0b50eb2be8ae357f51f48eaf9f8dc80586ec1d8250c4d868b2c02"
+    },
+    {
+      "path": "include/ceres/autodiff_manifold.h",
+      "sha256": "5fdf32344678cde4e0db0de533b0277eaab6a6521323225ce2b3825b1763cbdd"
+    },
+    {
+      "path": "include/ceres/c_api.h",
+      "sha256": "72dc8bcd147f8c522401277b9e61c4f58d78e9bf82820646e85dc54e72957eb7"
+    },
+    {
+      "path": "include/ceres/ceres.h",
+      "sha256": "70935cea44782729f6ac3fe1f0e2e622d47a02c70ef31a66ad15ea5a41664e1f"
+    },
+    {
+      "path": "include/ceres/conditioned_cost_function.h",
+      "sha256": "29aefd457e6adeee9910bb278f8e5cdce8a0d4062d47bd396902785e3451fa6b"
+    },
+    {
+      "path": "include/ceres/constants.h",
+      "sha256": "2ae0f93b8f4cfc7f90d8f4d47b1103ce4d596ca9f3f1befb4b692f6f185b4794"
+    },
+    {
+      "path": "include/ceres/context.h",
+      "sha256": "6262c7ed4e159b996a9d96c6c886776ea19484e31d232c35b197040af5aa47cf"
+    },
+    {
+      "path": "include/ceres/cost_function.h",
+      "sha256": "eef4716df05cc52758f0cdb51eb1d697b718d521695a79267f632990534db261"
+    },
+    {
+      "path": "include/ceres/cost_function_to_functor.h",
+      "sha256": "f91f434b3bd66fa78cbb3ffa3a774b0cfb5c9b2d14be29ff752d31a9bbaa6861"
+    },
+    {
+      "path": "include/ceres/covariance.h",
+      "sha256": "b8fd68df6509e5d50826841902b0165d1a3740e3fb816901138ccc541c4bcb04"
+    },
+    {
+      "path": "include/ceres/crs_matrix.h",
+      "sha256": "77e8e6f3fa3169225d2a5cbdf2aea503f9a235045b47c84fb27fdb5f9f5262f5"
+    },
+    {
+      "path": "include/ceres/cubic_interpolation.h",
+      "sha256": "320d67c62bbf1bf3eb9097b8743149595048bd382031c334a9b9a95f609cd3e5"
+    },
+    {
+      "path": "include/ceres/dynamic_autodiff_cost_function.h",
+      "sha256": "32f3c217eb10cd8a327f91faf72d991d99423fffb5fd4dfffd62e14bb6490506"
+    },
+    {
+      "path": "include/ceres/dynamic_cost_function.h",
+      "sha256": "87f15f88985b083e8d99e62c105d7c920bd065260511cb9ec4311f3e8eba7146"
+    },
+    {
+      "path": "include/ceres/dynamic_cost_function_to_functor.h",
+      "sha256": "4385b794d053ce2939e05675e865bf2b9f4ef231945d163432e90b877327011e"
+    },
+    {
+      "path": "include/ceres/dynamic_numeric_diff_cost_function.h",
+      "sha256": "1285802a38ff4df9aed3a064aadd62d33597c157ff16253dd91a36071fb2daf0"
+    },
+    {
+      "path": "include/ceres/evaluation_callback.h",
+      "sha256": "ce7996609ad9d7a937c2fc79d2d447c30b92d8b0785965bf2e01ef1f6f3cfac6"
+    },
+    {
+      "path": "include/ceres/first_order_function.h",
+      "sha256": "4dea67966d17368d82e67fefaacc32dd466236b139a05d159126282dddc0bbbc"
+    },
+    {
+      "path": "include/ceres/gradient_checker.h",
+      "sha256": "48bcb0be1d295776373e39b0233e78ca61f75a1d47345e10bbe0cc6154da0da6"
+    },
+    {
+      "path": "include/ceres/gradient_problem.h",
+      "sha256": "4f9c0b15102b6bf9cda9fae07f32c5f1e85e1f025f96b6f8fa4fb4066ead892a"
+    },
+    {
+      "path": "include/ceres/gradient_problem_solver.h",
+      "sha256": "f1ddbfae6054422d084f6b83c202cf14513147e6dadb69335b9b9894451ef4fb"
+    },
+    {
+      "path": "include/ceres/internal/array_selector.h",
+      "sha256": "9087402acaa9b94ef93031d0842d4b5ed9e309893313079023f207cf8f674747"
+    },
+    {
+      "path": "include/ceres/internal/autodiff.h",
+      "sha256": "ab98cb87cc7fceb236efa436219e6b8ea4d4f1bc41cd4ad4b288c8354eb92fab"
+    },
+    {
+      "path": "include/ceres/internal/disable_warnings.h",
+      "sha256": "7d1091aae15f63e0db3c2ec40e2c0c2a9adfea03229e38abfcb3b47e6bb32d05"
+    },
+    {
+      "path": "include/ceres/internal/eigen.h",
+      "sha256": "2602eb2b53337500e435e2f70c8368fbd7bade156acf0ddd2b42d737e11489e8"
+    },
+    {
+      "path": "include/ceres/internal/euler_angles.h",
+      "sha256": "c7fcb64ccbf2a7d5e5c39337bbb6f653398d1110b728149dbe3daf0b0e718afe"
+    },
+    {
+      "path": "include/ceres/internal/householder_vector.h",
+      "sha256": "80eedb07766836d42ac6a58005b56a6f0df8c205171acaeaecd2a344bea2e3a7"
+    },
+    {
+      "path": "include/ceres/internal/integer_sequence_algorithm.h",
+      "sha256": "1039bb3903ab3b4729afac8b28f2edfd8bdf5e6a46408ad66c6e265d0559ba38"
+    },
+    {
+      "path": "include/ceres/internal/jet_traits.h",
+      "sha256": "df3658fe67bb36b4df7c21fc2b21945ca71e75cda9a36169821e09779f37b7d3"
+    },
+    {
+      "path": "include/ceres/internal/numeric_diff.h",
+      "sha256": "f38cb842534c73db6abf032bf67d7a00aeb457243ae4f40affbde015faa3679a"
+    },
+    {
+      "path": "include/ceres/internal/parameter_dims.h",
+      "sha256": "bd395f3fd86f93d2ebfbefa8b4daeb9d7e4db28221f5dbb8f30439919f3b476a"
+    },
+    {
+      "path": "include/ceres/internal/port.h",
+      "sha256": "c9af4247479e720b7a8a5cb7fa23f3f8fd174f59e7053417d1f235c606869c38"
+    },
+    {
+      "path": "include/ceres/internal/reenable_warnings.h",
+      "sha256": "c05f0e3d5b32dbb607bcfc11b35ab8217e923087b7c65baf6b5fe55821cc386a"
+    },
+    {
+      "path": "include/ceres/internal/sphere_manifold_functions.h",
+      "sha256": "c6d3d7738328404f7e7c743349a38c9c323312434d89eb6bd9e84d3f117c28e6"
+    },
+    {
+      "path": "include/ceres/internal/variadic_evaluate.h",
+      "sha256": "069e2a44ced1f77a5100fc049351de1a417f47a8aaf665839af5932d0b2d6824"
+    },
+    {
+      "path": "include/ceres/iteration_callback.h",
+      "sha256": "597536c71dfa7bb5fcbd4b2374ab0a99ddba6fe1408381f0e0ac71ebf5057081"
+    },
+    {
+      "path": "include/ceres/jet.h",
+      "sha256": "dec775155ec7baba969c77a5d10e6d4e9bb24ff42d3812a0fed45bf43d03e449"
+    },
+    {
+      "path": "include/ceres/jet_fwd.h",
+      "sha256": "f42680c54cc5536f732c3dda2dcb9e2d48adb96e4a9925e76153e67d99ac0c22"
+    },
+    {
+      "path": "include/ceres/line_manifold.h",
+      "sha256": "4b04d17556c1b2c10fc84cb58c0cc5786eaed868647a4167c29f6d25f70c4d0d"
+    },
+    {
+      "path": "include/ceres/loss_function.h",
+      "sha256": "4b6d1963e8829cf1762f0bed840105005b4db09e69e2826c09f15233ae84acf6"
+    },
+    {
+      "path": "include/ceres/manifold.h",
+      "sha256": "dac9d863890b99a994a2c3eacd4bb270d8a9dd0eda4e3d36c7c0617bda24f270"
+    },
+    {
+      "path": "include/ceres/manifold_test_utils.h",
+      "sha256": "494aab51b9b5d3889103e9a06ef5b77d4f90ba5f7359ca1a8e8ef45fc48a7a5d"
+    },
+    {
+      "path": "include/ceres/normal_prior.h",
+      "sha256": "81405f9c763eea285b54f69d14a1daedceaa84e49b7711420d99f8443dab6fe6"
+    },
+    {
+      "path": "include/ceres/numeric_diff_cost_function.h",
+      "sha256": "d464b5ebf2d76f93f0f3aed85cf0fc9e56bd1d1d8851b4c84765be54a88d1aff"
+    },
+    {
+      "path": "include/ceres/numeric_diff_first_order_function.h",
+      "sha256": "457feabae49e0be8b620352661f137c8cca7e84dda8d48f51c687f32bebf9829"
+    },
+    {
+      "path": "include/ceres/numeric_diff_options.h",
+      "sha256": "1ab8dbb41a2ed10e479f3e61670382db3147de0203f084c51417a86c24557efd"
+    },
+    {
+      "path": "include/ceres/ordered_groups.h",
+      "sha256": "d5aea3116762aec76ce30e5e3cebc855b24f386c5abf7f9473d380e52cc4a834"
+    },
+    {
+      "path": "include/ceres/problem.h",
+      "sha256": "c8677aeb05b91ed6b45368adfbd6b78e38f0efbda06c8c4411bad9c01786747c"
+    },
+    {
+      "path": "include/ceres/product_manifold.h",
+      "sha256": "ac3892917417210254e329f1cbf87712e951cd6257b8807070e173acbd0cc43a"
+    },
+    {
+      "path": "include/ceres/rotation.h",
+      "sha256": "838156e1a7f7d0f6ff9c02f32bbb0c03198d318d64c11025bbe8f09cf5b71764"
+    },
+    {
+      "path": "include/ceres/sized_cost_function.h",
+      "sha256": "78c918d7c7d53ef6a59fa313a0d1b7a64d8f417f572fa72b531a9352f4139aeb"
+    },
+    {
+      "path": "include/ceres/solver.h",
+      "sha256": "63e5d2b2259e286057de4dcc1ba582a3eeb441682de0642dbef59393d6a429bc"
+    },
+    {
+      "path": "include/ceres/sphere_manifold.h",
+      "sha256": "c4ec22b6881481cd712a31ecfb71d4fe8cc373262c2b89e2c0eeda5848675490"
+    },
+    {
+      "path": "include/ceres/tiny_solver.h",
+      "sha256": "10690648250f7995bb180e0ddaeb14a84b4a97d7e11c8734db188634ad647f98"
+    },
+    {
+      "path": "include/ceres/tiny_solver_autodiff_function.h",
+      "sha256": "274672e07629bc17516f49fb5c124574f644f1f74233f045b818f67545105b67"
+    },
+    {
+      "path": "include/ceres/tiny_solver_cost_function_adapter.h",
+      "sha256": "5bdcdbdcbdf813d36ec802fe2f5a36e0e7065773ba675eab07b1caacf9d813f1"
+    },
+    {
+      "path": "include/ceres/types.h",
+      "sha256": "b7232cb02b46dcb3a399551d1bc4ae75c7db8064c59182b03da80a2329146a72"
+    },
+    {
+      "path": "include/ceres/version.h",
+      "sha256": "35830ede853f9f20697d4d58b3e5669b4cf6bc4eaaae6d1952e7c61bbe00248a"
+    },
+    {
+      "path": "internal/ceres/CMakeLists.txt",
+      "sha256": "06eae47c206c40eec0ac0cd73625f1f5e754cf093c730ad8ba317a6221e3a798"
+    },
+    {
+      "path": "internal/ceres/accelerate_sparse.cc",
+      "sha256": "ccd74d4b99a2df06b7d1db57445ccf90095215234576a65082bbaf5c72b305fe"
+    },
+    {
+      "path": "internal/ceres/accelerate_sparse.h",
+      "sha256": "70bf32ea6ddd024f7bec0123cc084aae1a624eaedd25b17afcb6440f3bf33b23"
+    },
+    {
+      "path": "internal/ceres/array_selector_test.cc",
+      "sha256": "4e7155ee7ef5de90b0e9f6a75dccd47b63cc6515ac246803739054029bb16733"
+    },
+    {
+      "path": "internal/ceres/array_utils.cc",
+      "sha256": "602ea9c0926872a46d426a4bc513c12f29326ddcc3cf820a8ec8cf5247deaedb"
+    },
+    {
+      "path": "internal/ceres/array_utils.h",
+      "sha256": "2601f37dccbe27963a2bda6118134bff57204a80b9ee2f9d2a40c6499031fa98"
+    },
+    {
+      "path": "internal/ceres/array_utils_test.cc",
+      "sha256": "d6c97239ab5c84db9153fdcc95cdac73f6daecbe32f78d457aea79ea1c67b884"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/CMakeLists.txt",
+      "sha256": "5e6b921a02092a4f8325e0f9919078e2cf79d21cacda6aeceff839f3dbd44395"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/autodiff_benchmarks.cc",
+      "sha256": "bd7bc0db96681e1e8fbfa818a59cc1f7697573a9aa873c31b2f1ef490b902aaf"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/brdf_cost_function.h",
+      "sha256": "7b9276b836f9efd0ebe5959657eeb1cac6787a20ff22544ea99f913b74c73c35"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/constant_cost_function.h",
+      "sha256": "40aa4fcb8f4e845fdc31d82e43213e018720b9f8ee5e9f8960d2e9cfde3c2cb1"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/linear_cost_functions.h",
+      "sha256": "a2595cf2b52a04c1441c581fd7ed007abe4e72c0151c6882475827dece5f5110"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/photometric_error.h",
+      "sha256": "64e173362c2862c6e38209feb4dcab8c8a70c112424f17848661bf574b19d671"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/relative_pose_error.h",
+      "sha256": "fdf7000e47d480fea7d8e649c8a5a7ae50b8ad45ecfc1725857283e0249a3e7c"
+    },
+    {
+      "path": "internal/ceres/autodiff_benchmarks/snavely_reprojection_error.h",
+      "sha256": "b698b6f49e5e24f8de784949339b0fbe3909d3a5bff2de3fb463095f4d735c1a"
+    },
+    {
+      "path": "internal/ceres/autodiff_cost_function_test.cc",
+      "sha256": "4c6cb9b3b5ef866f1e9161f8d434ab978454826a5b4cba0fffc5e6cb19e53350"
+    },
+    {
+      "path": "internal/ceres/autodiff_first_order_function_test.cc",
+      "sha256": "e5ff2ec94211b02aa274a3c100156a1a92fa20588930d18e5026d608c9d9b9de"
+    },
+    {
+      "path": "internal/ceres/autodiff_manifold_test.cc",
+      "sha256": "f29f08767ec29008898ff42c0fef9a0145c7a871f5f601f62d16e8c439158685"
+    },
+    {
+      "path": "internal/ceres/autodiff_test.cc",
+      "sha256": "933344191bd2dfa91f9c19a5645613b2f4cfa88bca9701526a3eeb5d015f19c5"
+    },
+    {
+      "path": "internal/ceres/benchmarks/macbook-pro-2014-small_blas_gemm_benchmark.json",
+      "sha256": "72f8d34ef9f71521c53b33469fd882b90c3a56ec29ce0e8303e59761318825c4"
+    },
+    {
+      "path": "internal/ceres/benchmarks/macbook-pro-2014-small_blas_gemv_benchmark.json",
+      "sha256": "20d47dfe77cbc8c1f402cc87d5e35fc7f301834c426fd5b83c9bd30a00956ff0"
+    },
+    {
+      "path": "internal/ceres/block_evaluate_preparer.cc",
+      "sha256": "dfb0472cf8b63d91f010dea88f636dffdacc167270ae1b902bc7a431b28edb6e"
+    },
+    {
+      "path": "internal/ceres/block_evaluate_preparer.h",
+      "sha256": "4ebaa77f292345235e5e02435917143d5f93f394fc5d49991042061dd254b82f"
+    },
+    {
+      "path": "internal/ceres/block_jacobi_preconditioner.cc",
+      "sha256": "be0f62b89d5a35269b8b7372581171499798081169e78dc4292f067c87682cad"
+    },
+    {
+      "path": "internal/ceres/block_jacobi_preconditioner.h",
+      "sha256": "5b81e171be23a4d2d0950ca8f08d6ee37db3833914a9965972146696bd0142c9"
+    },
+    {
+      "path": "internal/ceres/block_jacobi_preconditioner_benchmark.cc",
+      "sha256": "a0d9cecd7922d1053dfe48b366f01976adcf4eb4127656612b139cf434ceab30"
+    },
+    {
+      "path": "internal/ceres/block_jacobi_preconditioner_test.cc",
+      "sha256": "eccb56cabac20915d6769f27eb5fc55dd797573d56885ab12fe88c351b8ea1a5"
+    },
+    {
+      "path": "internal/ceres/block_jacobian_writer.cc",
+      "sha256": "8821d85bdd4a4e3242027bb9ebf97addb19055cdd78ebdac51862e90190f49c4"
+    },
+    {
+      "path": "internal/ceres/block_jacobian_writer.h",
+      "sha256": "74f9ba4d29c680597baba5bfb6f472c7a85d55d97b1c5fc5397a05af8ecd63f1"
+    },
+    {
+      "path": "internal/ceres/block_random_access_dense_matrix.cc",
+      "sha256": "64d2b546ba22cb69ae414ac5271714a47a51a3c7d922ae1f732c7612737f3cac"
+    },
+    {
+      "path": "internal/ceres/block_random_access_dense_matrix.h",
+      "sha256": "613e7c3d2c0cd413a293ba1f01424da0a1308d27c95cfeaf156e9586b5fd3316"
+    },
+    {
+      "path": "internal/ceres/block_random_access_dense_matrix_test.cc",
+      "sha256": "3133a1a871a22bfa83ca33b90b79a38ff69ee93db027bf40b648513ce8d694d7"
+    },
+    {
+      "path": "internal/ceres/block_random_access_diagonal_matrix.cc",
+      "sha256": "2f48ad308382e488bf6dac53c33c7b89f3d64ba5348ce3ad489582ab74baf925"
+    },
+    {
+      "path": "internal/ceres/block_random_access_diagonal_matrix.h",
+      "sha256": "728b863a1b116501c347d878ac3bd72a22216a1f03656407218e871fc81b4df0"
+    },
+    {
+      "path": "internal/ceres/block_random_access_diagonal_matrix_test.cc",
+      "sha256": "619fe9b1dd84669565f2c69c547b2ece48afd64aa20907edd6cc8846215ccb26"
+    },
+    {
+      "path": "internal/ceres/block_random_access_matrix.cc",
+      "sha256": "026393fb1ea8d55963af27ef03eda158c837dce30e591b9fc6251ee62b0982d7"
+    },
+    {
+      "path": "internal/ceres/block_random_access_matrix.h",
+      "sha256": "a9560a38a45a7cea3f5a4e13db24b3d68dfdcf6347141f099bfe57332b6e88c3"
+    },
+    {
+      "path": "internal/ceres/block_random_access_sparse_matrix.cc",
+      "sha256": "773eac7646e551ddae78de909ef5061968ce4fec8a95c0e4977d12c22110c2ac"
+    },
+    {
+      "path": "internal/ceres/block_random_access_sparse_matrix.h",
+      "sha256": "a8b5cf9ebac1be0861e3603c985688a835012df93a18cd9b7613bf51d598bca6"
+    },
+    {
+      "path": "internal/ceres/block_random_access_sparse_matrix_test.cc",
+      "sha256": "d2d37262044b14fd382f1cbab7a15146ae227e429195eaf400ecb35dd0185856"
+    },
+    {
+      "path": "internal/ceres/block_sparse_matrix.cc",
+      "sha256": "70e8f2d78a8dc3e92341182a2bc55417b8f774f768d680c9fe65b2a1cf2b21fe"
+    },
+    {
+      "path": "internal/ceres/block_sparse_matrix.h",
+      "sha256": "7eea3a6b1fc5164ca4cc48f7b9f36793a0c571ec22dd7e9b63b3f2e8fb11a05f"
+    },
+    {
+      "path": "internal/ceres/block_sparse_matrix_test.cc",
+      "sha256": "68e84dd24f393584aaef84e97802ce89a2ff4048f7bdd7c7e17a8fdad7d7d75c"
+    },
+    {
+      "path": "internal/ceres/block_structure.cc",
+      "sha256": "51e319bbe13116d9e748f780fb43bc14f65bac2363e65e013fde6a7729aadf66"
+    },
+    {
+      "path": "internal/ceres/block_structure.h",
+      "sha256": "405945faf6473a661a6d74d5ccd9accb51cb5409c9c283a4c395442b59dc3332"
+    },
+    {
+      "path": "internal/ceres/bundle_adjustment_test_util.h",
+      "sha256": "4c572a52ec370f4d8239f623df177a40c2205c6167e6b0ca2b8ced47e8a85f87"
+    },
+    {
+      "path": "internal/ceres/c_api.cc",
+      "sha256": "5649aaf7abc7cf16cdabdad294888a48451251ccada3b37f397f158f8896af5d"
+    },
+    {
+      "path": "internal/ceres/c_api_test.cc",
+      "sha256": "8b20ac713c86ad47595c2031dafc71d40b5d0b01930a98ae849a2fd68c2c4757"
+    },
+    {
+      "path": "internal/ceres/callbacks.cc",
+      "sha256": "a2baed85f00ff939e4ff0acfa5e9432f403975b9d475baa8c7737c4c60e17969"
+    },
+    {
+      "path": "internal/ceres/callbacks.h",
+      "sha256": "527b1b5dc1281fce3e15707e709e610e59ca8d3f06587390bfd96ecdbca924a5"
+    },
+    {
+      "path": "internal/ceres/canonical_views_clustering.cc",
+      "sha256": "095429a103122088caa35474710f94714a268b140075bdd1aeed20c0ac0a858a"
+    },
+    {
+      "path": "internal/ceres/canonical_views_clustering.h",
+      "sha256": "c4f6a1944ca6ef1c6ed848f53b9d977a97a59837c94edfb93c261ba206844620"
+    },
+    {
+      "path": "internal/ceres/canonical_views_clustering_test.cc",
+      "sha256": "34068ad9600862cea7aa2795952120c9f0816cf52e08a3a40a355cb4ba429027"
+    },
+    {
+      "path": "internal/ceres/casts.h",
+      "sha256": "8c4aec2011dcbb783de33f89e9f754759742d058be0d433473797fd8bd496eb7"
+    },
+    {
+      "path": "internal/ceres/cgnr_solver.cc",
+      "sha256": "84e8e3bb236c21bc647b6af94cb58bbfd8d68a792a0fa66aaae533b6e1e9aa45"
+    },
+    {
+      "path": "internal/ceres/cgnr_solver.h",
+      "sha256": "a7bdb9ec437ea94ef8f1e831481f01fd67d3edb6e2f10c14a2d2f1bd503daef3"
+    },
+    {
+      "path": "internal/ceres/compressed_col_sparse_matrix_utils.cc",
+      "sha256": "047b479a41c677a3926c492dddf3a4096a6e27b86b201b43c7f3c12a24f16401"
+    },
+    {
+      "path": "internal/ceres/compressed_col_sparse_matrix_utils.h",
+      "sha256": "e9d7892d02747ad35c61073ef9d56e5b048439694fab247ec1608d118bf9344e"
+    },
+    {
+      "path": "internal/ceres/compressed_col_sparse_matrix_utils_test.cc",
+      "sha256": "1bde52c01e94ff75c94562cbf919f8371b3803336f8de2d97a412839ae245b01"
+    },
+    {
+      "path": "internal/ceres/compressed_row_jacobian_writer.cc",
+      "sha256": "64ad065d5271b9a4764124143a4d4e03d397959091070dc39c3ab6f546860a37"
+    },
+    {
+      "path": "internal/ceres/compressed_row_jacobian_writer.h",
+      "sha256": "c0bcd821197cbe2738011de50ca7e92ba27cee642d665d37b79696d49eeb2ae4"
+    },
+    {
+      "path": "internal/ceres/compressed_row_sparse_matrix.cc",
+      "sha256": "bc2bfa78982729cfdc65883057b74a0bd07cfcca694dec08d71111c73eeb4f35"
+    },
+    {
+      "path": "internal/ceres/compressed_row_sparse_matrix.h",
+      "sha256": "c9eb69fbf98d0b23ec3315518a1d52834391a66613de8fd2ecb8569ad534da27"
+    },
+    {
+      "path": "internal/ceres/compressed_row_sparse_matrix_test.cc",
+      "sha256": "ac7d32791cfc354e9c4b311902e46652e245add3c0bd2b6760513dff3bea571a"
+    },
+    {
+      "path": "internal/ceres/concurrent_queue.h",
+      "sha256": "35f0a90c375138bfc8a667f50c927b512c5b1ad2296d59e740fa7003f2ba10ff"
+    },
+    {
+      "path": "internal/ceres/concurrent_queue_test.cc",
+      "sha256": "ea84cd922a51060bd78284a2ff3a80976c00641047097e38872e7bde1e1832a7"
+    },
+    {
+      "path": "internal/ceres/conditioned_cost_function.cc",
+      "sha256": "0433223dc80baf778a0716647b5b0aa2beffb118870716ac85784954e5aced6d"
+    },
+    {
+      "path": "internal/ceres/conditioned_cost_function_test.cc",
+      "sha256": "72605ba6cebe58a74d5341ad2aa0bd88d83b3d2387f9a361b4d904afff6cfedc"
+    },
+    {
+      "path": "internal/ceres/conjugate_gradients_solver.h",
+      "sha256": "f226229f2cad00a8e2af97e6407e0c493d328a5d4e9c76b7a91f3b42d46e7d19"
+    },
+    {
+      "path": "internal/ceres/conjugate_gradients_solver_test.cc",
+      "sha256": "8e46d679a0196710a532a159791b0f3e45b5cfe43244c539948d0f5642c79186"
+    },
+    {
+      "path": "internal/ceres/context.cc",
+      "sha256": "04b3c7ab1ff91853ce9a6aaf6f974febba2f4684a216f6209ed3313fa9cfc48e"
+    },
+    {
+      "path": "internal/ceres/context_impl.cc",
+      "sha256": "65661ce78addb8d7d04e0a240926ba5de289fc2f766b2e3ac275aba2b55d0dfc"
+    },
+    {
+      "path": "internal/ceres/context_impl.h",
+      "sha256": "901f32208feefc4cfb0fd4b3162b350b2794ec5578d637afe09b39e2dec0cea2"
+    },
+    {
+      "path": "internal/ceres/coordinate_descent_minimizer.cc",
+      "sha256": "b0b86f514ca3524650fe657fd5e594fc4bfe64d81d2429472e3fc1c64c8d44df"
+    },
+    {
+      "path": "internal/ceres/coordinate_descent_minimizer.h",
+      "sha256": "6d786aeac1a0df6d1bdb2bba121eec4212c5c3a7028b7640670340521e7539df"
+    },
+    {
+      "path": "internal/ceres/corrector.cc",
+      "sha256": "7e00b148c0d11abd899b7bc651a5ff4ea09c957e411c6db1d7a3d57b7fa462b8"
+    },
+    {
+      "path": "internal/ceres/corrector.h",
+      "sha256": "605276fd0ceadabd9e383ab204c9a162eae0bebe5aad550191e763a018004d1c"
+    },
+    {
+      "path": "internal/ceres/corrector_test.cc",
+      "sha256": "36303f03bf70e407412815ac0a49d539453bd1e9c98ed972cbd80ccff4c2a08b"
+    },
+    {
+      "path": "internal/ceres/cost_function.cc",
+      "sha256": "ee8b486b90e67ee79cb17e77516fd7ba0db3b22f7a7afebcd9cfccf3d7da05f8"
+    },
+    {
+      "path": "internal/ceres/cost_function_to_functor_test.cc",
+      "sha256": "ff269c5cc9333d73af6c2b18652b4aa7b6cd8d97e2ab751fe596db81ab2781a3"
+    },
+    {
+      "path": "internal/ceres/covariance.cc",
+      "sha256": "c7574d7f5907ef98f9c5a666725b582274a39c2b6b255c8b14264206a9795307"
+    },
+    {
+      "path": "internal/ceres/covariance_impl.cc",
+      "sha256": "71f4ec7460c6099a4d38e00c4e21e41162ca3ea09d7c00d941e3d133659704e1"
+    },
+    {
+      "path": "internal/ceres/covariance_impl.h",
+      "sha256": "9841afe45f6d01d3f4fe1b5124c41b6e3bb63fd2b8044b5feedc5cf3e8a9479e"
+    },
+    {
+      "path": "internal/ceres/covariance_test.cc",
+      "sha256": "6a49daac13c61d29cde1a3da9434dd6e45607e80180f0475791224c1a1676b0f"
+    },
+    {
+      "path": "internal/ceres/cubic_interpolation_test.cc",
+      "sha256": "1b99819c18ceeec315637e2e58a70d1d3b40e6f42ce4f08740f6dfc6b4c49f57"
+    },
+    {
+      "path": "internal/ceres/cuda_block_sparse_crs_view.cc",
+      "sha256": "375630adc0077ad444d2ab11e1e70ec4e2bf00444cc876dc44cff83eef756b85"
+    },
+    {
+      "path": "internal/ceres/cuda_block_sparse_crs_view.h",
+      "sha256": "0c4a61036dfcf8d40b17eed22e521a98581ac796d7744e7816e98612902839c6"
+    },
+    {
+      "path": "internal/ceres/cuda_block_sparse_crs_view_test.cc",
+      "sha256": "b8f83035b44aa21c275ef780234691a3e3570a1ebfb642c2ae4ef546f7800e3a"
+    },
+    {
+      "path": "internal/ceres/cuda_block_structure.cc",
+      "sha256": "5da9ecb060915548948ad59f43c59ebc398b9be075ead392367054e88721b9e4"
+    },
+    {
+      "path": "internal/ceres/cuda_block_structure.h",
+      "sha256": "fcfef6925d8c159e7e67dc3a7d9b08ca4727e37cec573553f7d06340552f4ef7"
+    },
+    {
+      "path": "internal/ceres/cuda_block_structure_test.cc",
+      "sha256": "f88bb506ecedced60069f4a3369a2887a5fc7ab8e3dd69b3070eb5df7c455a63"
+    },
+    {
+      "path": "internal/ceres/cuda_buffer.h",
+      "sha256": "1f37d5b6132ad98e4a60730e643b29c7312f3e9c7f2ccef62a3e0469317d7611"
+    },
+    {
+      "path": "internal/ceres/cuda_dense_cholesky_test.cc",
+      "sha256": "7f61c93a582fcedd8b8a83853321561bf5fa6fbe63ca93f8f55118315dc07253"
+    },
+    {
+      "path": "internal/ceres/cuda_dense_qr_test.cc",
+      "sha256": "d68f69c33e96bcbcfebbf9b528b3a74099e32c8a7fe9b3aa7725bc102571e9ec"
+    },
+    {
+      "path": "internal/ceres/cuda_kernels_bsm_to_crs.cu.cc",
+      "sha256": "706279b4dcaf90fb5e3c9e43bc922d6f3c3f3bc5e230d7ab64fd049b39131cab"
+    },
+    {
+      "path": "internal/ceres/cuda_kernels_bsm_to_crs.h",
+      "sha256": "7a5388709db254237cfd2d1f2382ab44616599337c6acbc3d59992a2e504eab0"
+    },
+    {
+      "path": "internal/ceres/cuda_kernels_utils.h",
+      "sha256": "b0983dfde6979af2d5d67ae5a3e4811ff91d98a8808d8ea5ac32381862240c2c"
+    },
+    {
+      "path": "internal/ceres/cuda_kernels_vector_ops.cu.cc",
+      "sha256": "de10afb5d3f46b69ea08899a77abcc226dd0a742f09d59a6a341e51773ed4e4c"
+    },
+    {
+      "path": "internal/ceres/cuda_kernels_vector_ops.h",
+      "sha256": "b84ee89ed97df8e5037685618431fe7e2d00ccb3e644e5a92e6a48e9ac1ea278"
+    },
+    {
+      "path": "internal/ceres/cuda_kernels_vector_ops_test.cc",
+      "sha256": "1cba83688f06769b79acdcd0497b49994ad8455c4b1f5c292b9f10536ef07ef7"
+    },
+    {
+      "path": "internal/ceres/cuda_partitioned_block_sparse_crs_view.cc",
+      "sha256": "d09a792c096edde972ef30ec79743f38f3eb3df0d231bd46258e782d3d65f7be"
+    },
+    {
+      "path": "internal/ceres/cuda_partitioned_block_sparse_crs_view.h",
+      "sha256": "752ef4782252142e1cbe8a3b9d6d0e65a3036b11768b3252b2ac2f6be3219179"
+    },
+    {
+      "path": "internal/ceres/cuda_partitioned_block_sparse_crs_view_test.cc",
+      "sha256": "e1fd9c5ccd21a33fb0fc05ff39c2e93eceda46b836e72391d88076122950f8ab"
+    },
+    {
+      "path": "internal/ceres/cuda_sparse_cholesky.cc",
+      "sha256": "41d2166fcb8c9a2b17d8ff796df3261d91ff20e693aac5391e13e8c168e0545f"
+    },
+    {
+      "path": "internal/ceres/cuda_sparse_cholesky.h",
+      "sha256": "f3b2e8ecc12b703d3b4a28b7daeacd9f240998718f4686c5cd43c134a9a2d727"
+    },
+    {
+      "path": "internal/ceres/cuda_sparse_matrix.cc",
+      "sha256": "cd8d44a7f16539931c6a5cd38e942c2ab32ef1f4f1f388d65bc82676490397fe"
+    },
+    {
+      "path": "internal/ceres/cuda_sparse_matrix.h",
+      "sha256": "973b426d1a387f7f26ead3f2056b92d2ba7e452d77d788af9e143baf6dc17c22"
+    },
+    {
+      "path": "internal/ceres/cuda_sparse_matrix_test.cc",
+      "sha256": "c74860bf362cfd1d83a3ba02053f380836554aba2d8bda6dfdf967cd3f88588f"
+    },
+    {
+      "path": "internal/ceres/cuda_streamed_buffer.h",
+      "sha256": "f50bed50612ac81f8e664e4221d0f2592899121ea3824cf554504f4dcc920613"
+    },
+    {
+      "path": "internal/ceres/cuda_streamed_buffer_test.cc",
+      "sha256": "2334e1b89404561eaebe76000feb7e48d398b44827c646d4d02b862c5cd18118"
+    },
+    {
+      "path": "internal/ceres/cuda_vector.cc",
+      "sha256": "8c40f5463f5370d42a0511dcc47952865967970e832deeb40bee114f344b6bf7"
+    },
+    {
+      "path": "internal/ceres/cuda_vector.h",
+      "sha256": "fcf7ec946e7c2da39a73bfb38f57570b29c517ad13e60f330eec58e939acd2ac"
+    },
+    {
+      "path": "internal/ceres/cuda_vector_test.cc",
+      "sha256": "7c1e8f2415ef1654a237ca70f83e90bff6d7082a26a10fb3e3306ceea060c420"
+    },
+    {
+      "path": "internal/ceres/dense_cholesky.cc",
+      "sha256": "9b8ef5306b9cbeaa6494f7cca456c548b21f6c77d15344656454eba996baf4dc"
+    },
+    {
+      "path": "internal/ceres/dense_cholesky.h",
+      "sha256": "0a3d0a5a4f00d89857c0d60affe9b2186e1448e52ca9873203107bc2ba6e3849"
+    },
+    {
+      "path": "internal/ceres/dense_cholesky_test.cc",
+      "sha256": "e6c58a1d63ef6bae3fb50519c0b6e10b6df9e4c5ec8cbd17c86ac136b93de941"
+    },
+    {
+      "path": "internal/ceres/dense_jacobian_writer.h",
+      "sha256": "3d909422c657ee1eeedf0db3e2f83b0be9c231fc801a0a25200d1cf95b7a06bf"
+    },
+    {
+      "path": "internal/ceres/dense_linear_solver_benchmark.cc",
+      "sha256": "655e693eee59f061a9e678ddcecfac11b2959eea0ddc29e8d85b7069db522c88"
+    },
+    {
+      "path": "internal/ceres/dense_linear_solver_test.cc",
+      "sha256": "e4e6ad60649f2aa2685352011c2d0db41b343e43727a3492872a4970e2208ce2"
+    },
+    {
+      "path": "internal/ceres/dense_normal_cholesky_solver.cc",
+      "sha256": "b3b470c9c55b99b66a99cfa8e4adb882ce6ccc467a417ad0e2d8ff2b7f390893"
+    },
+    {
+      "path": "internal/ceres/dense_normal_cholesky_solver.h",
+      "sha256": "0f8152a10548432a9ee4ddcfff344f8ebedd9bfccf6a62869f470b7b10efdeda"
+    },
+    {
+      "path": "internal/ceres/dense_qr.cc",
+      "sha256": "575a5dcc0923175cd562c90b3b5e866adc4c34955736bbb6bd9cf638714b3bde"
+    },
+    {
+      "path": "internal/ceres/dense_qr.h",
+      "sha256": "f94dc99bbe562166c321203698006b6eea959d91dcbe884a8f7797215c71b606"
+    },
+    {
+      "path": "internal/ceres/dense_qr_solver.cc",
+      "sha256": "b1b38d01e497a1c01dcdef98ac0aab1baa987c547b3939772a2a5ff054fc0118"
+    },
+    {
+      "path": "internal/ceres/dense_qr_solver.h",
+      "sha256": "77db94a5a10673351636d8a25911d1b5f80c5dd05f41461ecc36ed3133e33781"
+    },
+    {
+      "path": "internal/ceres/dense_qr_test.cc",
+      "sha256": "4474a6513bae74a8f06fd5b0046f347a8b57262042200ce766644d3b19d46b21"
+    },
+    {
+      "path": "internal/ceres/dense_sparse_matrix.cc",
+      "sha256": "4f7ff474ce03cf3feab2f94ab24c48407ccc9032bb8c52fe5e54f73c41df2502"
+    },
+    {
+      "path": "internal/ceres/dense_sparse_matrix.h",
+      "sha256": "786031961d7776de7286692a9097e05586ce765b730243ed30350facfb2366d2"
+    },
+    {
+      "path": "internal/ceres/dense_sparse_matrix_test.cc",
+      "sha256": "45a8e80bf92c4c6caf3c0902109902b715a8c384eb48021b196a12a9e82b3dd6"
+    },
+    {
+      "path": "internal/ceres/detect_structure.cc",
+      "sha256": "e18841ba6aa3cb1862eb3dd56e6e4cd52070831a795e7506a0bddc079b54ffe2"
+    },
+    {
+      "path": "internal/ceres/detect_structure.h",
+      "sha256": "44418b094080980b604e1dc026d277ff29cd76f9e0a3f0d90485895354b9a75c"
+    },
+    {
+      "path": "internal/ceres/detect_structure_test.cc",
+      "sha256": "02f2693130105c1ad0956773ad24c41f0eb67cf73f572af34948d14d7e683baf"
+    },
+    {
+      "path": "internal/ceres/dogleg_strategy.cc",
+      "sha256": "80fc4d0444f800c60dd0d112c300aa772b8e1e2b3c8c30c9db5838e8eb8b85e5"
+    },
+    {
+      "path": "internal/ceres/dogleg_strategy.h",
+      "sha256": "a317b02b4774a726488da0becfb439ad7a57e88ecf60dc88a32ad5fb28d8a968"
+    },
+    {
+      "path": "internal/ceres/dogleg_strategy_test.cc",
+      "sha256": "d9406352a68e7e75081d322f7d7bc81c8213d748b76395b1027c382c2960e0e9"
+    },
+    {
+      "path": "internal/ceres/dynamic_autodiff_cost_function_test.cc",
+      "sha256": "9624fb4524577588405697ec4f31ce050e6867bd86d52a8d9e34bb73335f8eca"
+    },
+    {
+      "path": "internal/ceres/dynamic_compressed_row_finalizer.h",
+      "sha256": "078b8c59c690be3975f2a5038df3dd3afa72ee50951eea7293dc6e5aac9aa09d"
+    },
+    {
+      "path": "internal/ceres/dynamic_compressed_row_jacobian_writer.cc",
+      "sha256": "715d5048906cb117b1dca615aa5eac4b9fa418078323ce067c93eefb7851dd3c"
+    },
+    {
+      "path": "internal/ceres/dynamic_compressed_row_jacobian_writer.h",
+      "sha256": "72c4a8efed8260b7e3c0c940452ae66b32d5d582723994390a13af63b49d72c1"
+    },
+    {
+      "path": "internal/ceres/dynamic_compressed_row_sparse_matrix.cc",
+      "sha256": "695e24cd7d6de29135610471445db2cf84787727a5e9fda62a45fefa6953d8b6"
+    },
+    {
+      "path": "internal/ceres/dynamic_compressed_row_sparse_matrix.h",
+      "sha256": "667960fdc1b6f5b5210615af554fa2001c10e1cd7e01eb7aa911e6c3a8c29acb"
+    },
+    {
+      "path": "internal/ceres/dynamic_compressed_row_sparse_matrix_test.cc",
+      "sha256": "70c5ec9f7a04e38c009cf5a9f9971d608b8f8746e08b027c23a4537a643daee4"
+    },
+    {
+      "path": "internal/ceres/dynamic_cost_function_to_functor.cc",
+      "sha256": "436a9674e553998fcb736171608c97d2e9367e4e9fa0583bffd46015a72c5417"
+    },
+    {
+      "path": "internal/ceres/dynamic_numeric_diff_cost_function_test.cc",
+      "sha256": "437119c684e2e5012e516139439cb2ac30433a243927331a1c0dd5d7832ac611"
+    },
+    {
+      "path": "internal/ceres/dynamic_sparse_normal_cholesky_solver.cc",
+      "sha256": "d962e17851e48228aae0617d9cd8f13c1eb0caec23e18617cf8465a2b19fa545"
+    },
+    {
+      "path": "internal/ceres/dynamic_sparse_normal_cholesky_solver.h",
+      "sha256": "6432f30135e851e908281ce89b46a9c5bc415155417270f658a29927602aefe3"
+    },
+    {
+      "path": "internal/ceres/dynamic_sparse_normal_cholesky_solver_test.cc",
+      "sha256": "938ba416f95fb7dcb6e95997c8ac0d57367bcfbde4c6add7c1e4a9b2b99f9f21"
+    },
+    {
+      "path": "internal/ceres/dynamic_sparsity_test.cc",
+      "sha256": "e66a59b455be84d57b743e1b5ce13a1158daa0148b48e46b07e8f62f73073b58"
+    },
+    {
+      "path": "internal/ceres/eigen_vector_ops.h",
+      "sha256": "8ff91c24b951a04c818bcce4bf1eb665b60462af5b749777a564dfdf421369e0"
+    },
+    {
+      "path": "internal/ceres/eigensparse.cc",
+      "sha256": "bb623bb440b06ce40b4733cb119cbd4fbdc24329df806baf980cf4c4dbbc5a62"
+    },
+    {
+      "path": "internal/ceres/eigensparse.h",
+      "sha256": "29deb20397d739ec10572f5a07f97e717809f777bf6dc59d64788db280fdd018"
+    },
+    {
+      "path": "internal/ceres/evaluation_benchmark.cc",
+      "sha256": "1627c78d630c7c30ad48dab3ef5922ce2bd494bee8a80c23b33fd8027a4701e1"
+    },
+    {
+      "path": "internal/ceres/evaluation_callback.cc",
+      "sha256": "6bb7dbe25461c8f9d09f090fde9ea605afa3dde3c17e32a30f50feba7c2caf8d"
+    },
+    {
+      "path": "internal/ceres/evaluation_callback_test.cc",
+      "sha256": "d33766915a6e06bb8e897fc6a39f29ea39ee84760f884cabecf9664845ee51e9"
+    },
+    {
+      "path": "internal/ceres/evaluator.cc",
+      "sha256": "ff6ac386de8e531b1e24255b43b98cc1850eb5a5548f80c27125003d2249328b"
+    },
+    {
+      "path": "internal/ceres/evaluator.h",
+      "sha256": "0f0a331b7ed900cf75285f9089d99e47ac3a5532a2be64408c710f31a328eeba"
+    },
+    {
+      "path": "internal/ceres/evaluator_test.cc",
+      "sha256": "0b767bc6c0d5ead9cd69ab0e49ab8da662564213545cef1d86b27c0907c36d83"
+    },
+    {
+      "path": "internal/ceres/evaluator_test_utils.cc",
+      "sha256": "86f3ba31fc7f894c3f9f19766f95d29e5309c3cdcaeaba2aa584d1c4847c7be6"
+    },
+    {
+      "path": "internal/ceres/evaluator_test_utils.h",
+      "sha256": "a95cf0dd25771ebdcb0a1b8f9453bdf58499db336356215ec904a7a29291ca0b"
+    },
+    {
+      "path": "internal/ceres/event_logger.cc",
+      "sha256": "04a245968a563eac38cf2d3bcd5422caa54e026e22626ce4b37b576b53084c84"
+    },
+    {
+      "path": "internal/ceres/event_logger.h",
+      "sha256": "1c1bdd807c6e51130eab8229c6832a7c3b9be83398fa648b39dded8be4f0acb9"
+    },
+    {
+      "path": "internal/ceres/execution_summary.h",
+      "sha256": "4c92e44e8a65272f0dd0e379476e007a257104e823b61d7080b05886dbdf9b14"
+    },
+    {
+      "path": "internal/ceres/fake_bundle_adjustment_jacobian.cc",
+      "sha256": "eca64a8fe73adfa68fbda2333dde83e04d554fc9d33ae8d6f77394eaade99f29"
+    },
+    {
+      "path": "internal/ceres/fake_bundle_adjustment_jacobian.h",
+      "sha256": "c154a08c9fe75f3b03829ee72dafd638987dc61cd44b07e5b888fa239c3f46d7"
+    },
+    {
+      "path": "internal/ceres/file.cc",
+      "sha256": "a5d22c7b1b389b267f25c89db0c60aa10aa509022759a9cff4bbcac6226413ff"
+    },
+    {
+      "path": "internal/ceres/file.h",
+      "sha256": "5b1319f692d9e69b4cf648e1724cca2ea2cef6726e78b813dc2ae4b13f3ad534"
+    },
+    {
+      "path": "internal/ceres/first_order_function.cc",
+      "sha256": "2f05eba2b7a607c6a170433ac2e70719bd8ee99acf7c7025c6caf7ae6022fd14"
+    },
+    {
+      "path": "internal/ceres/function_sample.cc",
+      "sha256": "f60eef2647b328fa499aba4ac1abcd662f50c34e759b06de589db22d19c7155c"
+    },
+    {
+      "path": "internal/ceres/function_sample.h",
+      "sha256": "43ca767de476196d96a5b2e13442780ae0e8b75f68d2917dc3d865429f87feb4"
+    },
+    {
+      "path": "internal/ceres/generate_bundle_adjustment_tests.py",
+      "sha256": "7239d1ffa6f4f35c849eb2684915f9614f92394fb16ca0a96d9a740f0ef7614f"
+    },
+    {
+      "path": "internal/ceres/generate_template_specializations.py",
+      "sha256": "843534d41d39d313ed49bcdb3282d1312d887ea48d10b35fbdcbd4f0f968c5cd"
+    },
+    {
+      "path": "internal/ceres/generated/.clang-format",
+      "sha256": "f8405bf75d1ab2ed2e69b525a538b409b801812a7c71225da7bb46434f7dcc18"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_2_2.cc",
+      "sha256": "41c0af6ee62fd782fedd58f989ad06af3ca45573843be5e3669e9906b10ab94d"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_2_3.cc",
+      "sha256": "062c56d67aea869d2881c2cdb852008a73ff3c051f47737fd9f71850ecd15149"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_2_4.cc",
+      "sha256": "9d82d0fdeb2db21dc1162d89b6780576a483d5de3f264c57e486e94c44ae536f"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_2_d.cc",
+      "sha256": "7a05cb56eace5941a11a6f931ccbdab483f09c635cf6fa82837f78f29f864aca"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_3_3.cc",
+      "sha256": "98a5bc4c4e0ce0e3241f477fbd2d10c90110db2bac8a45b33b6c77bd01a93038"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_3_4.cc",
+      "sha256": "c82d796f2201cd2d8cc09f44f6c4be3ba4f92f4b3e71a838cddef273390ea592"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_3_6.cc",
+      "sha256": "95a073a5641beb2229bfefe696f3deb30924a1a6aac719a58f11c65bb3d185a5"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_3_9.cc",
+      "sha256": "d1e7e7859acefbaf5becef4e2e4249ddff7c75542331450963423003d70cb4dd"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_3_d.cc",
+      "sha256": "f7d9b9b7c5c5d4276da70806add70f874f9bf4934301b2ad5b7541e8bd49b0b0"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_4_3.cc",
+      "sha256": "7c7e9fa61abc255c2e642b7bda8e9e397e9e32959f95236143e0ef4d4cdebf03"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_4_4.cc",
+      "sha256": "7906d91f5c12c0555e7296828764badcb7cf12479440fa12e6fe045679e37ae4"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_4_6.cc",
+      "sha256": "9e22bf381fe6f7c89b9ef3a660c2ba6fbb27469d3a0b17cb111efa2af8d09f13"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_4_8.cc",
+      "sha256": "356e089e51d48a61e8b7f2c852d55f97d489cae29cbd7d43d27f697ed2a00734"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_4_9.cc",
+      "sha256": "8656fc958cbc88a745d301b3417b169fe83eebb786a323bc67c91165a378d81a"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_4_d.cc",
+      "sha256": "07cd7adaf8e04d645d0dab35c2b7614645400c064205c0afeb34bc19b2dff75e"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_2_d_d.cc",
+      "sha256": "4f0a47356733d97f74caa46b4d2165c51646ceaf1c6542e9f2738a52dd1b37e0"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_3_3_3.cc",
+      "sha256": "8e908b11cbc376dd0d65e35b5957af4fe153c71920a1598bb73d8b5599d6748f"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_4_4_2.cc",
+      "sha256": "50e14ee2c25f63b52539a424adfb59ca1a009f25feb5ee934e5830e2c926441e"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_4_4_3.cc",
+      "sha256": "b6694560f4a58ee18d2ec321af53cc920687aa77ee55cf1a420933e92f1c9971"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_4_4_4.cc",
+      "sha256": "e5779fa6d65520a1acc9bd08bf9ab83857b2b9f8ea7ffd65bec64ea1dc4978d6"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_4_4_d.cc",
+      "sha256": "6ad296a73c70fd5be3d3863d6bb7b2c566021fd43360036f79bba08d5ecc9ca2"
+    },
+    {
+      "path": "internal/ceres/generated/partitioned_matrix_view_d_d_d.cc",
+      "sha256": "62cca7bdf156df65d3374f0c9457df3b7ccab561dcbf86195bf48cd82aa66b78"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_2_2.cc",
+      "sha256": "e8da0321f12e43600aaf3e72fc0d7fc5125b4997e91d77c90a383960ea6b857b"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_2_3.cc",
+      "sha256": "b1b5c71cf36eedd789fbc14eab7aa2d9a23e99e69ee2deb693e653f293ec3aa9"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_2_4.cc",
+      "sha256": "f9e26c9eeaee085ab3d08bce7c8579ee3c841c4366e50233b61859299fcb44fc"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_2_d.cc",
+      "sha256": "aa6ed0773e698159e6a5a8702f414ba91eefb54b26c6c8cfe482af66477dd279"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_3_3.cc",
+      "sha256": "276e86374ae9b6d96322fafc92b57e6d78448f3d61c5f2f5a73308d99162ebfb"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_3_4.cc",
+      "sha256": "ab096b5b0b1b79c03b001c05847bdb9cca6adcd5ca826423afb3608d466eece7"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_3_6.cc",
+      "sha256": "34ec12ecaee46fc3028578996b929380e6d30ab5b70cc365a1b7c9543c2a1092"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_3_9.cc",
+      "sha256": "2cd37362c81559a40fe6a3df8baf9dab7c662b3754a66883af9ad27848cc203a"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_3_d.cc",
+      "sha256": "04a3c434a13180351a3b43d1e80c2213d37f046122faf51566f69226038c0556"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_4_3.cc",
+      "sha256": "f18b9cb9f59a49cbb5ffa8701f2398f51488810306a591d9b23dc4a76bf9de87"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_4_4.cc",
+      "sha256": "d71243eccf5b1f5ac932723f8d379ae7be0503bdc467d18cbd7947e7fd976a7c"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_4_6.cc",
+      "sha256": "348e274b0c1f42e2bf7ac5be3644d5d858619c2693b0b7b616ba66489ea3d487"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_4_8.cc",
+      "sha256": "dda55a4b155223b08704fea583b7a1fd722f52e26658975cb7232084abcdd103"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_4_9.cc",
+      "sha256": "0f24f36fa86fa664104ebf09bef88b074e9ad693b7965669d6a8e72d8a058ed1"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_4_d.cc",
+      "sha256": "c07b774ad3133cc63e3b1af7e9fef3c425e7c171711e97f84733e2c7381fedaf"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_2_d_d.cc",
+      "sha256": "f46fcc7e51835ce5abbef6fbe9d9c695101906ce58203cf258d2fc7010fd327e"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_3_3_3.cc",
+      "sha256": "adbb26ff98d2d14495b74d49bd78de53f57ecb29cf6ff8b8b2254621e3bba2ce"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_4_4_2.cc",
+      "sha256": "9a4a9703eb08dcb97d055507552e6aaa61e881549918c81092dc2422c21714d9"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_4_4_3.cc",
+      "sha256": "757e3735f96767b1c344c8dcc11924344a61a5ccffc9d78e97267a68d89b96ad"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_4_4_4.cc",
+      "sha256": "c8972cd6ed3d73c7ecdf76401fbda686acc22663f96b47ad6626494a969d1394"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_4_4_d.cc",
+      "sha256": "986dbb94e6281a668e9ae2465370b6a1b10c826e8093b39a7833807b23445c8a"
+    },
+    {
+      "path": "internal/ceres/generated/schur_eliminator_d_d_d.cc",
+      "sha256": "40972fd80e073fef2df6bc50993a7f316fb8c246b4c4b105abbd306b4937e6ae"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/.clang-format",
+      "sha256": "f8405bf75d1ab2ed2e69b525a538b409b801812a7c71225da7bb46434f7dcc18"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/CMakeLists.txt",
+      "sha256": "892f8958cc542a904b7c10388cafaf32ba32f61d2c1142b37a20dd8d79d94931"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_auto_test.cc",
+      "sha256": "3be9977e8e5422c3f1d1ff796aa59a0569a6db3bb5ce0b5bb4bd30b89a5a14a5"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_auto_threads_test.cc",
+      "sha256": "142b904462a581993a0cdee46e22b9d5bcf86a59fb2a6ebe9217a5cbb659afd4"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_user_test.cc",
+      "sha256": "7fdf7af7400cda1ace83ff7f4199ee39dd14f3e095b804b096af1c4b73729941"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_user_threads_test.cc",
+      "sha256": "9a45476dcfaef06917eb94dd37d9e256ab6b6fe4d83162e9858b3e096be0de53"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_auto_test.cc",
+      "sha256": "45b95279f0c4692f1d8efcf492ae97896cb75959e3467651c33cb37d5f93e392"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_auto_threads_test.cc",
+      "sha256": "c6bf96c4b92a6002b33666362771a34c2529c3c102bbf638a7ee09a1276b2e76"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_user_test.cc",
+      "sha256": "8792941d4533e2e5992f188f375be1199e5ca0239f025f20f5e3ebc156dbad09"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_user_threads_test.cc",
+      "sha256": "b08b70ffb5beb3cc2f07c5eca99760ae534d78e3e9244093b6109f8cca7ac51f"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_auto_test.cc",
+      "sha256": "6d57656c1673f0857e916c2413747c6e73591f12f975714dfcabf389ef596b76"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_auto_threads_test.cc",
+      "sha256": "e6061656861d7f7429ee5298adda54eaf0cb5ddb28b5bd6f38ad3371b2ec42ca"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_user_test.cc",
+      "sha256": "99826e0425bc3a9410a87fd70743dde243efd9774f0a7a432091aa9428447952"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_user_threads_test.cc",
+      "sha256": "3f2f8a96f48320b9ceb3abf77464146aa7bffcec425ea9603156d1068cb0b0f7"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_auto_test.cc",
+      "sha256": "894192a11f652c1eedd3292c8babcc708a74c40d99a20d98a5973bd10de240f7"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_auto_threads_test.cc",
+      "sha256": "76a50916eb2888bc280c325dba1f7652d2bd3c0d12871ddc9b050cf9c1d413b0"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_user_test.cc",
+      "sha256": "3353d5ce9be4d75bbea6d5b31fa57801a073d46d52bbe0a04817923bcc66750d"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_user_threads_test.cc",
+      "sha256": "37f1476161bff5855d4783446390f944e31c48ecd088a1f5c26cb4060c316067"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_auto_test.cc",
+      "sha256": "43798c21c4c7f51cf97cffadcda59591b13665c70209d693289e6f485bca3ccb"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_auto_threads_test.cc",
+      "sha256": "3ca5c44d3c2b790b2d63ea8160ed7c7998b4393982eef10b445344b49364aa0a"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_user_test.cc",
+      "sha256": "f2a99348d708b952deda32c8312f9ed7b51778a574c404cc8d90777f00fce8db"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_user_threads_test.cc",
+      "sha256": "8be1f20ee68690b85e84cdf5afeadd9aa6e7cfb5656429fd08b697c517e46837"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clustjacobi_auto_test.cc",
+      "sha256": "7b4d1e41ae09b14c82f26516ef904df95deae8eefa31a8ec2ef6671d0731d4db"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clustjacobi_auto_threads_test.cc",
+      "sha256": "8a917e81845465d7b105113f502e3dfebd975251746f46d2d10bc6a6a50cc7f7"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clustjacobi_user_test.cc",
+      "sha256": "17d05d2f0fb3fe1f74aab370df0e15b18bb51ab88075a7fa63e09b84e2e6bed5"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clustjacobi_user_threads_test.cc",
+      "sha256": "7b940d26fcf21aec44f72738b05b55236d40263c170c1c6623aae6993882ce20"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clusttri_auto_test.cc",
+      "sha256": "be9498d688882eb709b22184e8c058d25364a9635ff516fc86f00b43545e54fc"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clusttri_auto_threads_test.cc",
+      "sha256": "267328ac7dd9acc19337de8ea82829b357bcaf3286e08377e314f188d2172d09"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clusttri_user_test.cc",
+      "sha256": "37bda40a5afc8cc00990e8ba2fe7e284dacb061865bf3481de1d4db3af30e50f"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_cudasparse_clusttri_user_threads_test.cc",
+      "sha256": "f1dbefec39bb9581f7c64301361647022af23ae607dbdc1d38d24d5321d2a8fd"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_auto_test.cc",
+      "sha256": "2650ad7cb1f508778da8d92271f4086214966425ec26cb0bb91b64c4dab9fca6"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_auto_threads_test.cc",
+      "sha256": "1f188944fbec34e88a342a362bba0ff86fc9ad3641be617ec863cbd68543e849"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_user_test.cc",
+      "sha256": "534b6fc8e43afbb7cc722e2a2ab141624271748efafc9239aa23758e5c42580c"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_user_threads_test.cc",
+      "sha256": "01a1c81cbbde192f116304d4088d8e011ef5b8065e0e600467c44548d6629748"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_auto_test.cc",
+      "sha256": "4d50086e8f40151bda39bbf8215e66bf83cd29f6983c306e4423af7991d11b80"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_auto_threads_test.cc",
+      "sha256": "f3ccbfbde03820c983ded37758ec9231712cf8e274bf8870309a203204529a18"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_user_test.cc",
+      "sha256": "8b908ad11ce429fbbb25b05e2b138ee033dfc5c4338dbbba9365e109b5e96ecf"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_user_threads_test.cc",
+      "sha256": "62126c63a85ac232d714944bb2096901fe55e5e2900a9231ee75b058b111b7db"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_auto_test.cc",
+      "sha256": "353d2d7d2c9b530b07f7d9ff15af94ae32be2c499776496a8c34b608426f29b0"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_auto_threads_test.cc",
+      "sha256": "1cd5c908195c10a9b7de9919658c5b6940671e99212ad1ae2ad145a4f86bb167"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_user_test.cc",
+      "sha256": "3d55bcad31b806f615aa833cbfbcc0563f1c7a08488c4086f38f8d7bbb38b126"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_user_threads_test.cc",
+      "sha256": "c0b210674a92b8b7bae3d103c8c27e1a7a2c18b5899712911936882437fd1641"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_auto_test.cc",
+      "sha256": "f8725a5344dd4e584bca759bf71fec160aaf02795d5873467a4036fe83c42dbf"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_auto_threads_test.cc",
+      "sha256": "164f6fe76838b1be4ad53f16e7d577bcf44b16549c09370aad709f2df6c1b31f"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_user_test.cc",
+      "sha256": "a1df6fb970bc0817528db5f9b5897681b85a78ac9471450c6ff32ce401fc5273"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_user_threads_test.cc",
+      "sha256": "dd5704ced31d5c0d1e0f77c421dee2df5a7234ce027294d05e1ecca40dac4cee"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_auto_test.cc",
+      "sha256": "bb1cabfd19f653a2810251fb6c9117a00f37d516e9cf8721fbd55ddf1acf8e95"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_auto_threads_test.cc",
+      "sha256": "d980d87046548f16efb42cd7b30f97a036a6f8a8382124995195661874411371"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_user_test.cc",
+      "sha256": "a6b75e20ba2ca593074971fed7ce6df5aa85506e0128896b8a45d0ae840557c2"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_user_threads_test.cc",
+      "sha256": "4852fcb37ad7d1206a78f25f1464f678c3734ec3a5b06f31f4b3f7a81b292a42"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_auto_test.cc",
+      "sha256": "87445462d7635a231403e5469b0814b5532ef9fec6c890e4a6aee26b09b84bbc"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_auto_threads_test.cc",
+      "sha256": "d5f292579a794d8fbf68e0fa84358542d64fd3bacfa5f4ed79f8cf6e26f55a01"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_user_test.cc",
+      "sha256": "8e942913491a385ade59f58ee92f03b09a4c3abe778c0eab2d5b2dbdadba28dc"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_user_threads_test.cc",
+      "sha256": "ce2e673bcceafa2ab6e6a9f888705fc2bddcb66acb0fc2b962235851b51ec7e1"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_auto_test.cc",
+      "sha256": "4b65bc88bff6b2c34ee4a39cc796afdf09fcef4a068bd401b1fc0feb5a2483a1"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_auto_threads_test.cc",
+      "sha256": "5eba32bb9c007b7fdf1d39eb78c0d1ca31e3f6546dddccaef112325e070feaed"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_user_test.cc",
+      "sha256": "c625323438ccf04a89ebf83b638b21344e1a210da620948540dd4addf765d32a"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_user_threads_test.cc",
+      "sha256": "ac08ebf8d151aa5335ee453abff9241dbc79ebc5eb67d2ee2f67723a03890702"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_auto_test.cc",
+      "sha256": "436dc20496ca2968e7a90f327427937ee2cd527255d44b2deb3fba90c2ff878b"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_auto_threads_test.cc",
+      "sha256": "0dda8cca86d8bcc70a248ec8725ba13191090c60575fe47c0c3b74ab78aed591"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_user_test.cc",
+      "sha256": "78a36109fcdc63ad680418cce6095f355d54d2337a28e44a8e46f7cb3dd319a0"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_user_threads_test.cc",
+      "sha256": "e50c3fb5cb13617320e42b77929074ec10159011335fe023c046a7b34e127c0c"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_cudasparse_auto_test.cc",
+      "sha256": "ea5c1cdadc1ee64eb8bfd0766a70859b6f0f0c2e0e60a7164fe3de134bf86408"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_cudasparse_auto_threads_test.cc",
+      "sha256": "f9eab434b430acae6bce1a21ad42ce72669137a991268af35ff8921052ec6fc4"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_cudasparse_user_test.cc",
+      "sha256": "a9f75522164ec102e41bab6d537e0fd6a05047436ba53cf4905b0525dfb3dd36"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_cudasparse_user_threads_test.cc",
+      "sha256": "dab8399a59dbb1185b91eb75b8cc9263892b00a5f8d5ccf36c7d7d456ec26009"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_auto_test.cc",
+      "sha256": "39e31e6f6f65c6acdf5b492b85cf35c9f0ae7bfc2c1aa80e05d83c449da34ee9"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_auto_threads_test.cc",
+      "sha256": "1dd2083ed460673deb496cfc6b16510c37d6bb36c97f33497f236aaafda79f6f"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_user_test.cc",
+      "sha256": "71befd640851acb240b2051f3c0393eebff0ad4661722a5a74eda418ce747161"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_user_threads_test.cc",
+      "sha256": "8d092a0eb101d4695f7504c98a3b0fbd3ebe7ed6446b79e3df1b734e93398e62"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_auto_test.cc",
+      "sha256": "0e988f75a951a283f029c457dc7bf079611db59b6670aab25fb8bcb1b242b391"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_auto_threads_test.cc",
+      "sha256": "bc08bfd93e199dd0c79800d0709da1cb15fe152c9d910677a5c7409b82b4c705"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_user_test.cc",
+      "sha256": "35d46627f78e2b629c5d888a65d540e0c1405c29ab9d1eeceaf79d4ff7b87964"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_user_threads_test.cc",
+      "sha256": "8ce91624368773d594d1abe4882f5441c91acbb5d2ead139dc622093a81214a3"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_auto_test.cc",
+      "sha256": "f6724c53700f1e6f6e4f759c3309ab9c181200ef8370b4bc53287d05ab259fbd"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_auto_threads_test.cc",
+      "sha256": "f3f5480d42b92e81732ca6ce1459becca32f6d90b0e8ce9dce61a5077e9afc57"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_user_test.cc",
+      "sha256": "8c63e6903fee125bd2c9b7b6052d035a53c71131c377262429ba495a9e53058d"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_user_threads_test.cc",
+      "sha256": "3588772206632b76f10c802aa4793078846949ae78a759495926982e9b4a65ac"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_cudasparse_auto_test.cc",
+      "sha256": "0157aecc0dbe56a6c0f2233dd9b87ca72804796105d29ada3a0047001acc2f44"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_cudasparse_auto_threads_test.cc",
+      "sha256": "830d842c92338dca1749f3eef4adf153400f79159615e1f63201c751d175f731"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_cudasparse_user_test.cc",
+      "sha256": "ab110f4b0f3296effc1d92ee58227ef84ad683da1d65fb50bb4d748fcd3471e0"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_cudasparse_user_threads_test.cc",
+      "sha256": "61575270ebc6be0f05d3c6c91cde0536c0b7c871b691e4fcaa5758f536e5b36c"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_auto_test.cc",
+      "sha256": "cda06abea68b7957eb2501aa88ae9fe177c53f0c5c2ffa4ac7c329d0d715f2f8"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_auto_threads_test.cc",
+      "sha256": "280548fba134a7067240eac16b4ab4b811e3ae850d87296ba2641c4335f10fb8"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_user_test.cc",
+      "sha256": "fd247826bef84b30cb2ce6600e316d382743ad4f42d51c7432300bae581ce22e"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_user_threads_test.cc",
+      "sha256": "93587458d6a27fd0653fd830260f82eee758ccbe0c0950ac7bdb63b716df868f"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_auto_test.cc",
+      "sha256": "95df2980f120321f683cea5e6f17d2c6ae2a26bb9d8da3acec1427b2b3a022ed"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_auto_threads_test.cc",
+      "sha256": "dcb3259c0b7fae946aa1ea64a9ae45cbe2fa0a3329ae5405cb245bccbe33f5c9"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_user_test.cc",
+      "sha256": "67afa842862a2d587e7d7567c01335c39b81808f8abb31c4f64d80c71aece3ae"
+    },
+    {
+      "path": "internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_user_threads_test.cc",
+      "sha256": "a9a0bbe56709ea352d474afa4e58d74bb69b33ac5344d09dae587212b7429ddb"
+    },
+    {
+      "path": "internal/ceres/gradient_checker.cc",
+      "sha256": "34c67eaa80409afa2c3053968682eba1df2b4cd7a3d05bd57268389a0e332d65"
+    },
+    {
+      "path": "internal/ceres/gradient_checker_test.cc",
+      "sha256": "17aa64ce77802157ae3e0adefd0d63a7337ef87c3c00f5e881d42b5b5c181b59"
+    },
+    {
+      "path": "internal/ceres/gradient_checking_cost_function.cc",
+      "sha256": "ba63b05549321fbc5eea914e80371f15b3506a4af7d6784c73919c0e3292b6cd"
+    },
+    {
+      "path": "internal/ceres/gradient_checking_cost_function.h",
+      "sha256": "9fceee2fa1475a9404460f21b4eaa77663fef648c9ccfeebc7765e9b3a3b1592"
+    },
+    {
+      "path": "internal/ceres/gradient_checking_cost_function_test.cc",
+      "sha256": "455c3339e160d5cf4466828223a950523975bca5f92d45f3518d3fe7a632453b"
+    },
+    {
+      "path": "internal/ceres/gradient_problem.cc",
+      "sha256": "9a3d6d7f8193dc782a302e09f4b4406ccb475633c6b27c42a3c66d9dd0ddabc6"
+    },
+    {
+      "path": "internal/ceres/gradient_problem_evaluator.h",
+      "sha256": "3280a5374bb220843bef6b2081703c0a824e2f4461e4dd4a48c25e6aefae691e"
+    },
+    {
+      "path": "internal/ceres/gradient_problem_solver.cc",
+      "sha256": "e183a89573c551e27f8fc3a054ca10821bb6eceb5431f245fdd79cdb04a210d9"
+    },
+    {
+      "path": "internal/ceres/gradient_problem_solver_test.cc",
+      "sha256": "da1aeea8aab3306964b05a9dfe9ed2fca025eac710e27248c556dccf4fdbb773"
+    },
+    {
+      "path": "internal/ceres/gradient_problem_test.cc",
+      "sha256": "dfed03487549fb2488dfe9723b8f47808eb7c16ca883fac4cf9da0ac77288db5"
+    },
+    {
+      "path": "internal/ceres/graph.h",
+      "sha256": "82633d89d6a3fbd7c4ecacc4e803f0da33d71539b42cb6f19b7235fa967123fa"
+    },
+    {
+      "path": "internal/ceres/graph_algorithms.h",
+      "sha256": "c9a75fb9a4975e0ee486e54e33496549aa62c10b15bb02f17340a78c691c26e4"
+    },
+    {
+      "path": "internal/ceres/graph_algorithms_test.cc",
+      "sha256": "0cbff80ed451f747f17e36c6088c161ad78001174e44565b49de6a2b0fe21785"
+    },
+    {
+      "path": "internal/ceres/graph_test.cc",
+      "sha256": "384106426d7bb5c19060dcb07c51c3a70c220472a4a14a610637005e545e9de9"
+    },
+    {
+      "path": "internal/ceres/householder_vector_test.cc",
+      "sha256": "d631269be498b3d2aa66b5de1ef8097ce88e7dbd8895d7d00de63c9c3344c229"
+    },
+    {
+      "path": "internal/ceres/implicit_schur_complement.cc",
+      "sha256": "d7b6eef7e4cbba8bea702b55882306db41b020ddda2acb802137e82e6458875b"
+    },
+    {
+      "path": "internal/ceres/implicit_schur_complement.h",
+      "sha256": "260d1695c9f502bcc6453dd2f1fe467917d2c6e1b559b6b0b8e28785b3e0ef84"
+    },
+    {
+      "path": "internal/ceres/implicit_schur_complement_test.cc",
+      "sha256": "10f6deab6d00886473b724cfcf4e5302123a871901f74f7f7f1a3335bf7ba654"
+    },
+    {
+      "path": "internal/ceres/inner_product_computer.cc",
+      "sha256": "121629bc57af77b2dd4caee2d6142103b176aaebc34f44e2cfee67de2e7d31b5"
+    },
+    {
+      "path": "internal/ceres/inner_product_computer.h",
+      "sha256": "3f2c1a12e6fb3080c051502e9c063bd319a5af612e563ddab3984ff66e4f1d0d"
+    },
+    {
+      "path": "internal/ceres/inner_product_computer_test.cc",
+      "sha256": "804685422f2765bf6c4d181e485c1e0ff99d4438c497a0ab9e045305944448a2"
+    },
+    {
+      "path": "internal/ceres/integer_sequence_algorithm_test.cc",
+      "sha256": "f10b4c92beeb5550f87fdd9dc0ab8bac76368bb4a15c95194d7a0e529a197296"
+    },
+    {
+      "path": "internal/ceres/invert_psd_matrix.h",
+      "sha256": "f48f87e72aa0f5270964bcd51180b36b1275917622d3f86986ff736ab2163acf"
+    },
+    {
+      "path": "internal/ceres/invert_psd_matrix_benchmark.cc",
+      "sha256": "efb80fa76b154b8cbfb8cf089d18ef04cfb51235a4b8691d77177d064ce3fec3"
+    },
+    {
+      "path": "internal/ceres/invert_psd_matrix_test.cc",
+      "sha256": "558b3d9276470e24865447cddf9bd7eda59bbbd1e57fcc11635f62edf6ed70d3"
+    },
+    {
+      "path": "internal/ceres/is_close.cc",
+      "sha256": "4b8cfc7af1ef510e10bce538e0f6bc2d5a54a6132cdaff351a52ced206215ac6"
+    },
+    {
+      "path": "internal/ceres/is_close.h",
+      "sha256": "8fb33b156f13d3cf288c97bee3b7d820f961058c7847ec17f850ced4183a4b71"
+    },
+    {
+      "path": "internal/ceres/is_close_test.cc",
+      "sha256": "b5ebd2503bca3c2d1120f09db5ff96ac8beda424c5e80f0c6ab318998b5ae681"
+    },
+    {
+      "path": "internal/ceres/iteration_callback.cc",
+      "sha256": "c8d4f69da38f9b13cf42ae364693c98ac1f96e9d31ca0e5d0340abdc5a93d30d"
+    },
+    {
+      "path": "internal/ceres/iterative_refiner.cc",
+      "sha256": "9c1419d7ffd2632a61c51786a37dba89b7208fbcfb864a9a1a1a7329ff1d2453"
+    },
+    {
+      "path": "internal/ceres/iterative_refiner.h",
+      "sha256": "4b2c3f9f150c8e6b0fac55874f8b0018d026e47bcad343f32802d71a73892951"
+    },
+    {
+      "path": "internal/ceres/iterative_refiner_test.cc",
+      "sha256": "0e24fa70ad8f02e0c87545c5d919fc5c8cef5f7a0833f4cc41d607e9f44063cd"
+    },
+    {
+      "path": "internal/ceres/iterative_schur_complement_solver.cc",
+      "sha256": "bec80dc6aa1bc0d713deea8fcd70fe75f71a5e88e461febe8b416ea2871ea319"
+    },
+    {
+      "path": "internal/ceres/iterative_schur_complement_solver.h",
+      "sha256": "1bce07ac62c1ae1a1791bdfab180c9010655e22baf02e9b1e8087e154512544b"
+    },
+    {
+      "path": "internal/ceres/iterative_schur_complement_solver_test.cc",
+      "sha256": "8af4d75b8b52d99feaec0f2bbc5d5504c78ef484ca52b188d1d856ea7cc7b372"
+    },
+    {
+      "path": "internal/ceres/jet_operator_benchmark.cc",
+      "sha256": "dfd256fa0c7c9047d076d1024930c66d503b86e9e4fe554e08ef587d075a9797"
+    },
+    {
+      "path": "internal/ceres/jet_test.cc",
+      "sha256": "53b04ec472c09e0b4457e4e00acc02412e89650b1c589f085cd27c31c2e08723"
+    },
+    {
+      "path": "internal/ceres/jet_traits_test.cc",
+      "sha256": "dd5f0e004562ebd1ab2142e8052b8205ddf7ae85a9fa302bc711f22474678b78"
+    },
+    {
+      "path": "internal/ceres/levenberg_marquardt_strategy.cc",
+      "sha256": "94cc8198d89d035f4ee53ea3141d967884ec5af9e3b3cf0a12c7e3100317e401"
+    },
+    {
+      "path": "internal/ceres/levenberg_marquardt_strategy.h",
+      "sha256": "9c127738495764299d4f1550ac84fd7244ed6606c6583770ee5969b69082ec9c"
+    },
+    {
+      "path": "internal/ceres/levenberg_marquardt_strategy_test.cc",
+      "sha256": "2e851f02c23514c37bd93a7fee3efee1bb25409b2fe3b925d96dcd0fbcc3d6ac"
+    },
+    {
+      "path": "internal/ceres/line_search.cc",
+      "sha256": "2f1501c1973a3766637b9fd16bed2a87c7abf57ccfa8b873726aa07eb3052c54"
+    },
+    {
+      "path": "internal/ceres/line_search.h",
+      "sha256": "6e7d2854fd8ebec326c7daa7f7cbc3462a5d0278c569fd870a597cff237f3585"
+    },
+    {
+      "path": "internal/ceres/line_search_direction.cc",
+      "sha256": "64d7cf4e9ea95e2a8bd43296c3bb591f511d7088a249b246cbb8d964c36d66d6"
+    },
+    {
+      "path": "internal/ceres/line_search_direction.h",
+      "sha256": "1489e2cffbed4c85aa4a90bd30cbc83ac758350dc5ddb18009bf727f32373ca3"
+    },
+    {
+      "path": "internal/ceres/line_search_minimizer.cc",
+      "sha256": "e380fce7aa2a6923266cd7d2066d30350ff46deaac9411baa8fc403757340e39"
+    },
+    {
+      "path": "internal/ceres/line_search_minimizer.h",
+      "sha256": "e03b363845c484dea1d1e7c554a4f53a5d04226134a288a96ffd81bd4d93fc5c"
+    },
+    {
+      "path": "internal/ceres/line_search_minimizer_test.cc",
+      "sha256": "e3a9b7f6da659d45a0540b78bee484aae7481cb71f867852a31034346d37a8be"
+    },
+    {
+      "path": "internal/ceres/line_search_preprocessor.cc",
+      "sha256": "f5c2e5926a45c668f9ed565b25787635b1a199f3af338ec7672420cd9a5ddf32"
+    },
+    {
+      "path": "internal/ceres/line_search_preprocessor.h",
+      "sha256": "9243be73ada158400539d202bd1cf4af765cf33fd71642e54fe0605330e705f8"
+    },
+    {
+      "path": "internal/ceres/line_search_preprocessor_test.cc",
+      "sha256": "6639f1f64657f3bb30ae044d356eccaae10988e18dc0324c6ee9b47114b15e73"
+    },
+    {
+      "path": "internal/ceres/linear_least_squares_problems.cc",
+      "sha256": "eec72c55e076a5190d1c200820dc779843160bc14f4e90c6c050f4a013dfa582"
+    },
+    {
+      "path": "internal/ceres/linear_least_squares_problems.h",
+      "sha256": "e496d49fbcaf87575e954e3a10f131b185240fa491e566f8de827978d52d5684"
+    },
+    {
+      "path": "internal/ceres/linear_operator.cc",
+      "sha256": "849a1f72594342766c0eae67dae2e7d5f4ffa351d093ca70dc7dab9864060ba7"
+    },
+    {
+      "path": "internal/ceres/linear_operator.h",
+      "sha256": "31e94c4a98447f05215c4e464da5647a14be417b59ae27b5697cafeebdba4896"
+    },
+    {
+      "path": "internal/ceres/linear_solver.cc",
+      "sha256": "33b04fda28d918a693d230164c6b3cf09685a77d553c966e9305f3068c8f9624"
+    },
+    {
+      "path": "internal/ceres/linear_solver.h",
+      "sha256": "3c51a77a9bd44b5f082f1027dda5ea3114fcf8685ad84fc91f19dfade11d6e68"
+    },
+    {
+      "path": "internal/ceres/loss_function.cc",
+      "sha256": "1bdc979a2cb656b9167684ada1e48534eab553f9ac9c26e3cdde55ebd35be9a7"
+    },
+    {
+      "path": "internal/ceres/loss_function_test.cc",
+      "sha256": "cef5488956f1b067c19d276ce694e06e58851cd8328151aebd08aba50ebf99d0"
+    },
+    {
+      "path": "internal/ceres/low_rank_inverse_hessian.cc",
+      "sha256": "3bcb58844f60f6d8d377bede3b2ae6ff0e0a2bddd1d0f81bd1bf822201ed257d"
+    },
+    {
+      "path": "internal/ceres/low_rank_inverse_hessian.h",
+      "sha256": "338fb1f72f44c1b0ea423b99b7701695fd138a93ad3af502503d9213d25b4665"
+    },
+    {
+      "path": "internal/ceres/manifold.cc",
+      "sha256": "c27192c04f8b0564f4e91fada4d75cb8df0447810d6c6e7c14dd4a4c70bd5418"
+    },
+    {
+      "path": "internal/ceres/manifold_test.cc",
+      "sha256": "7fb2577c690c3fbdeb11b892cccb728b62d5d94289e7771f48a0b29f7a403f9a"
+    },
+    {
+      "path": "internal/ceres/map_util.h",
+      "sha256": "b8decacc0317b25d8f0e9ae67dd3f3d4ea2fc035af1df9ff01ca6d75ed7c76b4"
+    },
+    {
+      "path": "internal/ceres/minimizer.cc",
+      "sha256": "62a264208877d158e8621717717f10422984920900aa36f0e0d12e8482911126"
+    },
+    {
+      "path": "internal/ceres/minimizer.h",
+      "sha256": "a9cc35788b39b6772f6338af09092ca48fddc9839a278aa682075e1ba0d030bd"
+    },
+    {
+      "path": "internal/ceres/minimizer_test.cc",
+      "sha256": "8af5a2368a104ee736adfe7c186e10df671f321cc1f61e7ab65cf9d542628b01"
+    },
+    {
+      "path": "internal/ceres/normal_prior.cc",
+      "sha256": "070549a043bf3bbebc1463c04bdd2d44b78f17c32d3b68e078150d97c5eecc18"
+    },
+    {
+      "path": "internal/ceres/normal_prior_test.cc",
+      "sha256": "d104f5100eef95f6563be58a669697b6c5af4e8cee276b65f6ae690619c58cc4"
+    },
+    {
+      "path": "internal/ceres/numeric_diff_cost_function_test.cc",
+      "sha256": "1fcee58e48a27a4da5ee1bcc28cad7e29c4241edbbf0c6b5320674313cad00ef"
+    },
+    {
+      "path": "internal/ceres/numeric_diff_first_order_function_test.cc",
+      "sha256": "464f116910c3a6b9755202c9e35b3087bb48346c471e56b205d39a1f02795127"
+    },
+    {
+      "path": "internal/ceres/numeric_diff_test_utils.cc",
+      "sha256": "38f13f806340c9f000c2eacbdf8c70f91f3365317ffa0686314101195fe1c42f"
+    },
+    {
+      "path": "internal/ceres/numeric_diff_test_utils.h",
+      "sha256": "b003c831a837c431b27f7d7233514aa71c64d4ffddba8c473447c33844ca46a1"
+    },
+    {
+      "path": "internal/ceres/ordered_groups_test.cc",
+      "sha256": "23ae8da5719c15fe318d6d4223af254f9a34fc2fed2f61480cfeaf648c190a59"
+    },
+    {
+      "path": "internal/ceres/parallel_for.h",
+      "sha256": "97d692a126cb5337274b3653c811f87b6cd92429976c695b6d93aa874d0a3345"
+    },
+    {
+      "path": "internal/ceres/parallel_for_benchmark.cc",
+      "sha256": "86eea4cf62d757acaba55ad2d22ca72e2949349ab11aa5d467e0a690bcdd9173"
+    },
+    {
+      "path": "internal/ceres/parallel_for_test.cc",
+      "sha256": "f10ac47062b3a95abf536a618f76f91ffdb854cbdbcc3e660000246575bf6e0b"
+    },
+    {
+      "path": "internal/ceres/parallel_invoke.cc",
+      "sha256": "5b2d9670052f5a37e64daf944b37dae8491e0cd6fcd2f227e9a5dbdfd42558d7"
+    },
+    {
+      "path": "internal/ceres/parallel_invoke.h",
+      "sha256": "efae1d790d5b3d1f07ad53cb1ce588350e85d046579972542d988646554963d2"
+    },
+    {
+      "path": "internal/ceres/parallel_utils.cc",
+      "sha256": "981ab0b87f16779c10a14f9f9d8a68e2fca381db4a87ba5d18c4a376d72cbb1c"
+    },
+    {
+      "path": "internal/ceres/parallel_utils.h",
+      "sha256": "924f51522d73f9be8bc4f6463afaf2a4f8b13a102669074969c251d705b0bca2"
+    },
+    {
+      "path": "internal/ceres/parallel_utils_test.cc",
+      "sha256": "1cccb9258d1b829726cd744d55d04ccea3bb094117840ab7c52d18c59afb55bc"
+    },
+    {
+      "path": "internal/ceres/parallel_vector_operations_benchmark.cc",
+      "sha256": "e7c1063c9a2584840d59173c35804678df9462191f58b5727bc25da9a7d3b5ab"
+    },
+    {
+      "path": "internal/ceres/parallel_vector_ops.cc",
+      "sha256": "a45639c34770a506a6a159f8fe3b85e15e9969c70a2cf3a415a66acf218a9684"
+    },
+    {
+      "path": "internal/ceres/parallel_vector_ops.h",
+      "sha256": "fe1403e6d605ac6e360efb820b862f9cf9244634554f5475b2e7578f316d9b4c"
+    },
+    {
+      "path": "internal/ceres/parameter_block.h",
+      "sha256": "567b87395df4c51c8324de73525ffe410181425d143aaf0c292cb5a381ec4185"
+    },
+    {
+      "path": "internal/ceres/parameter_block_ordering.cc",
+      "sha256": "38f1611325748c79ceb1dc704586c3e8146cd958cceb2fac5d8cc2483ed7c67b"
+    },
+    {
+      "path": "internal/ceres/parameter_block_ordering.h",
+      "sha256": "c64d9e328c9a564faaee62384062543bda1409631bbdd73f4750b8bded87e615"
+    },
+    {
+      "path": "internal/ceres/parameter_block_ordering_test.cc",
+      "sha256": "d22b3bc6b14921d44df2423d53dae2bc2e3d3871e13476e12ae1181daf7445ef"
+    },
+    {
+      "path": "internal/ceres/parameter_block_test.cc",
+      "sha256": "c6e1bd4f4d9ab97bab4451e04d072f2984213b6451ce769a7b81f95935e45db4"
+    },
+    {
+      "path": "internal/ceres/parameter_dims_test.cc",
+      "sha256": "e18dbcc1edc577f625374f35c6ffb2fba44b054ae61d42820961dbf8e63b6510"
+    },
+    {
+      "path": "internal/ceres/partition_range_for_parallel_for.h",
+      "sha256": "087bbe383a2587a14b8a4ed776dfdb03dbb0c7a17d841729c4e25083b786da06"
+    },
+    {
+      "path": "internal/ceres/partitioned_matrix_view.cc",
+      "sha256": "38be8b28869446d490c990985ef751c9b067798e8be45a274614f81d2ad0c745"
+    },
+    {
+      "path": "internal/ceres/partitioned_matrix_view.h",
+      "sha256": "e3e8432a38d2e2f99e75bb5e512469650283f996b50cc88c0010c05221c829f2"
+    },
+    {
+      "path": "internal/ceres/partitioned_matrix_view_impl.h",
+      "sha256": "ca3a9fba0df4f8abdc104ebb3aa5da86a633cdec282f3a1334ef34d68dbfa037"
+    },
+    {
+      "path": "internal/ceres/partitioned_matrix_view_template.py",
+      "sha256": "722bed85b90c2d38ce58555b5639c264203039b019595623e5d7abea22281432"
+    },
+    {
+      "path": "internal/ceres/partitioned_matrix_view_test.cc",
+      "sha256": "b09f4ccfaadb8609952c33dd12c9168a03a4389bcecc649e46ef163a38bc692a"
+    },
+    {
+      "path": "internal/ceres/polynomial.cc",
+      "sha256": "d0068f6de01c309acb9ad4082162b7bf6c4669ccebf62b14df526c2405768347"
+    },
+    {
+      "path": "internal/ceres/polynomial.h",
+      "sha256": "081aec6c53ffaee605f38ce5e847f18d4b65e0c30b9f92bb5c43c720dca84a90"
+    },
+    {
+      "path": "internal/ceres/polynomial_test.cc",
+      "sha256": "39175c243f60c9a2b2166c654a13bf75572d5e3ddc7fb5dbf2d12b747e69336d"
+    },
+    {
+      "path": "internal/ceres/power_series_expansion_preconditioner.cc",
+      "sha256": "9f62b1685fec8bb6ba1fc27f714cc0544a7d96ef12b265d6bd48094b8c7c0b85"
+    },
+    {
+      "path": "internal/ceres/power_series_expansion_preconditioner.h",
+      "sha256": "89dc491b8a534e54a20cefd7eb6e4e4d4cdac5283a66e937fc7ee66702471640"
+    },
+    {
+      "path": "internal/ceres/power_series_expansion_preconditioner_test.cc",
+      "sha256": "eb1310eb00d416bfb52bbc3667c3fb73548f28306682ede4dbf439f0cc0e448e"
+    },
+    {
+      "path": "internal/ceres/preconditioner.cc",
+      "sha256": "28e71bf6446a49b46014d7538f16e61f61421a12bb199629fbaf88ddbc352f22"
+    },
+    {
+      "path": "internal/ceres/preconditioner.h",
+      "sha256": "e52b375f1167850bd91c5f2c38d11739a11796ef42d98e208a2e1fb6d0cdbe51"
+    },
+    {
+      "path": "internal/ceres/preprocessor.cc",
+      "sha256": "7e855a637bc769083c26ddc50b679810fd6193d997d136eb7177e6d01b9c7657"
+    },
+    {
+      "path": "internal/ceres/preprocessor.h",
+      "sha256": "f09a757f250b1ceda03900a5e52c61f6e1e7334e3081683da3b560295e1ae673"
+    },
+    {
+      "path": "internal/ceres/problem.cc",
+      "sha256": "7160f4cf578e5528797c4a8c4bb0a2080655c5bc0f921078f88cb8f7cfd63e7c"
+    },
+    {
+      "path": "internal/ceres/problem_impl.cc",
+      "sha256": "e1279afbf4db7b99080955605daa9cd02570b267c4a887001caea5c594ce348f"
+    },
+    {
+      "path": "internal/ceres/problem_impl.h",
+      "sha256": "33d7e6104dc2b74858009180768c4cc8ee5dee47ebfae5613884bdbf1af7113c"
+    },
+    {
+      "path": "internal/ceres/problem_test.cc",
+      "sha256": "7ebbe7c453b859c63a9e48c0f3277a0ab485944d0a0ed7474d00e5371c19c9a5"
+    },
+    {
+      "path": "internal/ceres/program.cc",
+      "sha256": "ee0f7ed6e6c6d3e630f4fc37e844bb46ce9397a2912d43ed73d02b786ab08e07"
+    },
+    {
+      "path": "internal/ceres/program.h",
+      "sha256": "08d06a1a73022223c1cd464cf6d24b8ef4c6eb778ece63d95d52d53110e4fcdd"
+    },
+    {
+      "path": "internal/ceres/program_evaluator.h",
+      "sha256": "319a9b7fcc7d964c62af061820cb6d39275645062f339559694157263716fa1a"
+    },
+    {
+      "path": "internal/ceres/program_test.cc",
+      "sha256": "8b74a49a0bcf28d29514350f460e06403d88cd820f847eca8aac53ad91c5b96c"
+    },
+    {
+      "path": "internal/ceres/reorder_program.cc",
+      "sha256": "1705c60a6a1092bade1eaf68b76825b64caebc8ff558a5ea430bbcb2ea7b5e70"
+    },
+    {
+      "path": "internal/ceres/reorder_program.h",
+      "sha256": "e1e6fc3bae7aaacd7060ad113de7192b86ed6724c808a1542f5b57dbad881079"
+    },
+    {
+      "path": "internal/ceres/reorder_program_test.cc",
+      "sha256": "f5270d80adcb5c778a439d0ec76d787ff314b61378bd951eba1f69276f4c4ff9"
+    },
+    {
+      "path": "internal/ceres/residual_block.cc",
+      "sha256": "35047516fa1354505044631853d5f38f1728a7b78cf1d0e67671b0bccdfe31ae"
+    },
+    {
+      "path": "internal/ceres/residual_block.h",
+      "sha256": "883f40acf6b5b0881631026a746865b8bd93c7a6d93ebbbd0ad7b2d4d355f35f"
+    },
+    {
+      "path": "internal/ceres/residual_block_test.cc",
+      "sha256": "8620ae4ffad465ae01434a7ea125d439f2cb8ca523890fdf817cd944314ab71c"
+    },
+    {
+      "path": "internal/ceres/residual_block_utils.cc",
+      "sha256": "6afad29e7f24ab191ac218ba293d89466013fa107a07ff1946c87c69e13c75d7"
+    },
+    {
+      "path": "internal/ceres/residual_block_utils.h",
+      "sha256": "424026dd9305c126c3cd407d8ab89eacb9aa8ec8d3d5d6899dc01baba09244d7"
+    },
+    {
+      "path": "internal/ceres/residual_block_utils_test.cc",
+      "sha256": "d443c13d3a0a6e4cdf69c0b7183be62c9c76f636c79a322b96ab3220e6ba0c9b"
+    },
+    {
+      "path": "internal/ceres/rotation_test.cc",
+      "sha256": "3410a74ffd4d685b221e096274e965ecaa9ad787e7168f3e66e695ab7acf6987"
+    },
+    {
+      "path": "internal/ceres/schur_complement_solver.cc",
+      "sha256": "74908c0776455cac04280f931533c2896436123e58350898769cd46e42671260"
+    },
+    {
+      "path": "internal/ceres/schur_complement_solver.h",
+      "sha256": "7951ea1d34740594f7a510c1ceb3da2d0bc32bd9763927a317a5cfd4fc81d72f"
+    },
+    {
+      "path": "internal/ceres/schur_complement_solver_test.cc",
+      "sha256": "47ed861bdb090707d74441526b7e742eee517d9bac0f586d2848b9400e82aecb"
+    },
+    {
+      "path": "internal/ceres/schur_eliminator.cc",
+      "sha256": "ee23dbb1e0502d7667657fc08090c71b2b655783a41fae616aab4cfbc453a8e7"
+    },
+    {
+      "path": "internal/ceres/schur_eliminator.h",
+      "sha256": "c38eeb7eacc783d384c27f14f8aa1ca2657eed2357aad90fa17c65fba8e0551f"
+    },
+    {
+      "path": "internal/ceres/schur_eliminator_benchmark.cc",
+      "sha256": "87d51dd0eddd9630da202f19066d5bb4cd7e4f0d0a95c12daf02fbc23e0d1bf6"
+    },
+    {
+      "path": "internal/ceres/schur_eliminator_impl.h",
+      "sha256": "9681b2aaa24bb19a280c62bfb78153bc56fc4a08dc2f6b4f755674195337aff7"
+    },
+    {
+      "path": "internal/ceres/schur_eliminator_template.py",
+      "sha256": "925ace14b982b07bece1e61ac0710d275beaad874b233567048dce0b21e4131e"
+    },
+    {
+      "path": "internal/ceres/schur_eliminator_test.cc",
+      "sha256": "b5486485ffc4c3a9019d21c345148ac553d87409e8b34d76065a61dd7020441e"
+    },
+    {
+      "path": "internal/ceres/schur_jacobi_preconditioner.cc",
+      "sha256": "69aaf851ea6b0c23a42949fd48a6072fc953e5c569b7c7282041bdc07e753f85"
+    },
+    {
+      "path": "internal/ceres/schur_jacobi_preconditioner.h",
+      "sha256": "73be64e39a7647e9de7f3deedfac82cc6b0dd4270f6ba31ec06bc20abb7672bb"
+    },
+    {
+      "path": "internal/ceres/schur_templates.cc",
+      "sha256": "9cfd24cb04add21d300c0fcdc20d58504aec9dd926161f50c4711c1c74064adc"
+    },
+    {
+      "path": "internal/ceres/schur_templates.h",
+      "sha256": "b2017584b3f616e0c8f5cbff224d0ae46be1714ab6ca435b9d676fa391fe6207"
+    },
+    {
+      "path": "internal/ceres/scoped_thread_token.h",
+      "sha256": "437555afa8098c7f57857c43f008c52015d4eccb61fc80299578f0e8645170f7"
+    },
+    {
+      "path": "internal/ceres/scratch_evaluate_preparer.cc",
+      "sha256": "2198073c175272151d38c44c066257247c299e4a3536efe805595310717c61c6"
+    },
+    {
+      "path": "internal/ceres/scratch_evaluate_preparer.h",
+      "sha256": "6099c70e090411f566f3216a349bc637ada96dc96e761aa241b1af602ad6c298"
+    },
+    {
+      "path": "internal/ceres/single_linkage_clustering.cc",
+      "sha256": "ee83d7d9019f761ea8d05a73342ce63bde38a4165bc82e8e220b88c730eb37d7"
+    },
+    {
+      "path": "internal/ceres/single_linkage_clustering.h",
+      "sha256": "d55413b7c3acb7c488c5c7ca5b6c9910924f408d3da4c3f87e7b508863beec4c"
+    },
+    {
+      "path": "internal/ceres/single_linkage_clustering_test.cc",
+      "sha256": "cd8d392ae66164e8d336d02bac0d9f48fa758eb014056757573c902aa346898b"
+    },
+    {
+      "path": "internal/ceres/small_blas.h",
+      "sha256": "ce15af7e50aa0dac525f2dd50bed40423b247b71be0e4a5ebfea7f5ae7f75b3e"
+    },
+    {
+      "path": "internal/ceres/small_blas_gemm_benchmark.cc",
+      "sha256": "c853ed9951121e913dfe6bb969156c9a41d4d368b9c85cd4531352a7206a1d46"
+    },
+    {
+      "path": "internal/ceres/small_blas_gemv_benchmark.cc",
+      "sha256": "ea1e40ac90b495d6f27c50ba66412e426df81b052b058b06358ff02a82fb982e"
+    },
+    {
+      "path": "internal/ceres/small_blas_generic.h",
+      "sha256": "abe360ebad1b4d4c61dc77cb5c4994d65d784560728fc0f736d630bc0ea1f79d"
+    },
+    {
+      "path": "internal/ceres/small_blas_test.cc",
+      "sha256": "721225e722b12ede292ff9eafb5e60404695ded301fe51f50c6646f6c064efd8"
+    },
+    {
+      "path": "internal/ceres/solver.cc",
+      "sha256": "a5912a7c4ceb33ef57b6a1bc6c7f315066b076c0a68302316b37f7397394fec7"
+    },
+    {
+      "path": "internal/ceres/solver_test.cc",
+      "sha256": "cde0089e5c8ee26de31c86d9d600028a42d2ef05924373cbcebe7d0568a9fd94"
+    },
+    {
+      "path": "internal/ceres/solver_utils.cc",
+      "sha256": "9994a58ae63aa80e100cfd4f3672e5ceed23d16ee81c5df80103ef8d7d7702b7"
+    },
+    {
+      "path": "internal/ceres/solver_utils.h",
+      "sha256": "5739ff761f9f3076e5bb82d976b7db19ef125e78e1e426fbb07ceff52446a388"
+    },
+    {
+      "path": "internal/ceres/sparse_cholesky.cc",
+      "sha256": "5798ea40fe958bb5ea68816b480d1487dd0968f6ea576f8d3b465762190e0f74"
+    },
+    {
+      "path": "internal/ceres/sparse_cholesky.h",
+      "sha256": "116dbcad95a159f83d83e38402b05018022f2aef34f664ee0aaad04cbb8e21e1"
+    },
+    {
+      "path": "internal/ceres/sparse_cholesky_test.cc",
+      "sha256": "4c8f26131dedf5f8b72a5f3e1a9a257417ce18081045baea34ab73f61e0ab1d7"
+    },
+    {
+      "path": "internal/ceres/sparse_matrix.cc",
+      "sha256": "85928f0b1f23e194273611ac75705f70b95c31932e3ecbf3950a418fc8a68543"
+    },
+    {
+      "path": "internal/ceres/sparse_matrix.h",
+      "sha256": "eb2c2bbd23ff44fba0bf8f097b529ebf9330a73c916655107a2845991f963b2b"
+    },
+    {
+      "path": "internal/ceres/sparse_normal_cholesky_solver.cc",
+      "sha256": "f88b4ce51c5f3e3e0ba2dd8f45d7227257247cc41303ea29e4662bc3bec314e9"
+    },
+    {
+      "path": "internal/ceres/sparse_normal_cholesky_solver.h",
+      "sha256": "bbd270d0816779b15f8c23b3d7d4710f2ae799cc46d9a7f16c16c086eea4e2b4"
+    },
+    {
+      "path": "internal/ceres/sparse_normal_cholesky_solver_test.cc",
+      "sha256": "5690cfbbce46c671d649688ec9b8b42f883c068e9455f735e3d36ff7b2944bfd"
+    },
+    {
+      "path": "internal/ceres/spmv_benchmark.cc",
+      "sha256": "fcf222cd22deaa9bb1f0091c90c49962e0f00bd184872f4ee6a5e52bf37a6891"
+    },
+    {
+      "path": "internal/ceres/stl_util.h",
+      "sha256": "30f264755d590b6d347311e5ec0de6a652d0f7396d9bc399ae1cab73d79ffb6c"
+    },
+    {
+      "path": "internal/ceres/subset_preconditioner.cc",
+      "sha256": "c8d74dd37efbac55c13ef68e77b6103b2645aa891cea88aac0f40f6d58095a23"
+    },
+    {
+      "path": "internal/ceres/subset_preconditioner.h",
+      "sha256": "ebef359e5910072e3a8b41de0a038ccf4d97ff095a763af3ec0f41bc32f0a917"
+    },
+    {
+      "path": "internal/ceres/subset_preconditioner_test.cc",
+      "sha256": "5023d28b9c50dcb57dbb3308b2e0abb1403d10f248a442b8a62124f5045aff36"
+    },
+    {
+      "path": "internal/ceres/suitesparse.cc",
+      "sha256": "bcfe493af3d2ce5e93a7d564676460b5c926bcfb0c963285c99da4fe9d721960"
+    },
+    {
+      "path": "internal/ceres/suitesparse.h",
+      "sha256": "8a041380164547a151eace6976f445d4f13b767485408248272a5a7c65699c4f"
+    },
+    {
+      "path": "internal/ceres/system_test.cc",
+      "sha256": "dc4352f1a9c119b6195a9b4e83d9caf105faa94a7aa7d739add635307e36fe02"
+    },
+    {
+      "path": "internal/ceres/test_util.cc",
+      "sha256": "203b0c9f1f0765c4c8dc602bd70e023368113bf135be9893dd2d76aa2b10328b"
+    },
+    {
+      "path": "internal/ceres/test_util.h",
+      "sha256": "aa42a34fe6b3d4b3c0bd981706fd790139a0e50e69bf9373a9a983a80ba8dc47"
+    },
+    {
+      "path": "internal/ceres/thread_pool.cc",
+      "sha256": "87e16d09c189da416c1a79b9cc78977385fe8dbcf18b06d230922b251227a8b6"
+    },
+    {
+      "path": "internal/ceres/thread_pool.h",
+      "sha256": "475361c584f4536a0132b27e65812593f99f32b29b6acbd8c3f34b1d683dfa9e"
+    },
+    {
+      "path": "internal/ceres/thread_pool_test.cc",
+      "sha256": "339ba8104f035018e4614ebf7b8530a6f9def6bc14ece6df5a676c1ada2e4ce0"
+    },
+    {
+      "path": "internal/ceres/thread_token_provider.cc",
+      "sha256": "69634b6ca18f55a1e5ef56489f70aa0f9c74aff05b9fd974b5bceffaf0ed7016"
+    },
+    {
+      "path": "internal/ceres/thread_token_provider.h",
+      "sha256": "8a140a6f65c33aecb978285efa63f1cd28fafb60cc3e5822bfc1201c5d5e674e"
+    },
+    {
+      "path": "internal/ceres/tiny_solver_autodiff_function_test.cc",
+      "sha256": "484a6702b285268c0b45e0b72350879287800c2ecd8477c90cb27c3e1cf3a246"
+    },
+    {
+      "path": "internal/ceres/tiny_solver_cost_function_adapter_test.cc",
+      "sha256": "71a21e6841c243befc4f6df560b82c5f6f0fa523ea0848ff2643de9a62a456c1"
+    },
+    {
+      "path": "internal/ceres/tiny_solver_test.cc",
+      "sha256": "74478b10b3551e29555d9de98c3727e26ce51fd7f128124040135a9abb34c7a5"
+    },
+    {
+      "path": "internal/ceres/tiny_solver_test_util.h",
+      "sha256": "727c7a2e3f1f4e98d1e69ada33a76c481296245b16c61013131c4c23c2337468"
+    },
+    {
+      "path": "internal/ceres/triplet_sparse_matrix.cc",
+      "sha256": "4d9da89df9ae2baa2ae177d53fbdaf17adbbf2470e409759fd3827fe58aea80d"
+    },
+    {
+      "path": "internal/ceres/triplet_sparse_matrix.h",
+      "sha256": "02c696b72516b1aa665f5556ebb16cd403949fba1d0f1649ed12fa6720979786"
+    },
+    {
+      "path": "internal/ceres/triplet_sparse_matrix_test.cc",
+      "sha256": "7128cea86a0a9f289cdbda2fe2a794fb951a0a9fd64d8d89e612ad331a14714c"
+    },
+    {
+      "path": "internal/ceres/trust_region_minimizer.cc",
+      "sha256": "d2148c7d685c4daee23aae3f1a5782daca4a83114f7e0ceb13dd06d127a998af"
+    },
+    {
+      "path": "internal/ceres/trust_region_minimizer.h",
+      "sha256": "c1f1dfcd740f585b1db3e535940759e516da46fc895c3e8c4e3c5beb5935eb85"
+    },
+    {
+      "path": "internal/ceres/trust_region_minimizer_test.cc",
+      "sha256": "8e444c40ac3eb9848d945e7d9fa85cc81f402ef2edddf6eba087327a6cf90b13"
+    },
+    {
+      "path": "internal/ceres/trust_region_preprocessor.cc",
+      "sha256": "40a66d51232005b15490d635c3290504f67ea5aa5c1781203f7b3cf22c8e0904"
+    },
+    {
+      "path": "internal/ceres/trust_region_preprocessor.h",
+      "sha256": "c32c45bf4ff74341b61aa0ed824294bbc5f6cd5a440c36d39ccda27a23a4031b"
+    },
+    {
+      "path": "internal/ceres/trust_region_preprocessor_test.cc",
+      "sha256": "361daea34fc39960b01726f8a5a2c40c4c198d6b91c4214292a335b643a4cdaf"
+    },
+    {
+      "path": "internal/ceres/trust_region_step_evaluator.cc",
+      "sha256": "5e36e04644bb35a369c3e813db998d0e3a3d20ca34fed2914839c7a33e16288a"
+    },
+    {
+      "path": "internal/ceres/trust_region_step_evaluator.h",
+      "sha256": "fdb093c4ac473b514b56728d0eee7d4e7a6d0c9e90bebb8cd46b4171d462b8db"
+    },
+    {
+      "path": "internal/ceres/trust_region_strategy.cc",
+      "sha256": "0e3fa9720a434be63e2e45a310936724831e15dfea48d6f35704c4ce9d8afc5a"
+    },
+    {
+      "path": "internal/ceres/trust_region_strategy.h",
+      "sha256": "80e36719cbe297170fd542f478aee6eb41b51bbebcee2f62c6cac2e670a09194"
+    },
+    {
+      "path": "internal/ceres/types.cc",
+      "sha256": "674643dbc3fdbb903b7970f05532f11e1399dd253805e0155794222e5381771a"
+    },
+    {
+      "path": "internal/ceres/visibility.cc",
+      "sha256": "34a3be0447af2aaf7fbdc20060921c93a239089dd54027715b307cee17cfa68a"
+    },
+    {
+      "path": "internal/ceres/visibility.h",
+      "sha256": "f3afb9ca006d1cd0901e0742edd74bba2aba133269149379b4db1fe3467bbd91"
+    },
+    {
+      "path": "internal/ceres/visibility_based_preconditioner.cc",
+      "sha256": "28c477a51db50fb33caa5c27fa5688f11d88c32a0c4726a76bff7cbe9473890f"
+    },
+    {
+      "path": "internal/ceres/visibility_based_preconditioner.h",
+      "sha256": "0259f8ef768db4681374bdf93e83f1537e25be91b9bb5b1ae113019fa364388a"
+    },
+    {
+      "path": "internal/ceres/visibility_based_preconditioner_test.cc",
+      "sha256": "62293cb48eded7096188c73101511ddcfaea022afd0f5f2bfe7b28a13f139b03"
+    },
+    {
+      "path": "internal/ceres/visibility_test.cc",
+      "sha256": "458d33f85ebdb84705aed86e30d0a21c2029f0b5ceb600c176ee818050fe13e4"
+    },
+    {
+      "path": "package.xml",
+      "sha256": "699c2e0522a027d9dd9cad2cbaecaf211c7286e5b43f2625235d304bb5ac19e5"
+    },
+    {
+      "path": "scripts/format_all.sh",
+      "sha256": "8553c5ca370b1dc9810ce044324a6466a1bdf27d0bd5b3158d2a0d3f164432e3"
+    },
+    {
+      "path": "scripts/make_docs.py",
+      "sha256": "e87a46a08ee6a2fdc4a944199393406b40a78bc5a9070fe0ba043255ae0d5d76"
+    },
+    {
+      "path": "scripts/make_release",
+      "sha256": "b26bfa822eecb18eab0aacc17f3b0e8320bdaf5ab059f0884d26667a2de08609"
+    },
+    {
+      "path": "third_party/README.md",
+      "sha256": "948c0b6887a057e472cb2060b5c0c7fff350527ec4ea37f85041ea0ccb792db7"
+    }
+  ]
+}

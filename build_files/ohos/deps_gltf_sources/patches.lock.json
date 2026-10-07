@@ -1,0 +1,19 @@
+{
+  "scope": "Replay in independent owned bridge source copy only; no formal source mutation",
+  "files": [
+    {
+      "path": "intern/draco_bridge/intern/encoder.cpp",
+      "patch": "build_files/ohos/deps_gltf_sources/patches/encoder-explicit-standard-headers.patch",
+      "before_sha256": "7b6af1c154aedfdad60820f0af547f4622132e482b2ba7507cfa65f8f220d5b5",
+      "after_sha256": "79940bc2a9f9daeedbef4f55353e20031c7e81db5fb73522b62e484bee5f12fe",
+      "purpose": "Standalone real Blender wrapper has no Blender precompiled/transitive header assumptions; codec behavior unchanged"
+    },
+    {
+      "path": "intern/draco_bridge/intern/decoder.cpp",
+      "patch": "build_files/ohos/deps_gltf_sources/patches/decoder-explicit-standard-headers.patch",
+      "before_sha256": "dc2fd2c603e9d51032471a0b63c2dfd6b2e8397edb82d7b79ab28475282436cc",
+      "after_sha256": "bb59bef457a98ecea210a653f1ff2b243afea612e2923f4024a5c9b1c9cf58f5",
+      "purpose": "Standalone real Blender wrapper has no Blender precompiled/transitive header assumptions; codec behavior unchanged"
+    }
+  ]
+}

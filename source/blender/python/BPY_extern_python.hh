@@ -23,6 +23,10 @@ struct bContext;
 void BPY_python_start(bContext *C, int argc, const char **argv);
 void BPY_python_end(bool do_python_exit);
 void BPY_python_reset(bContext *C);
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+enum class BPYEmbeddedPhase { NotStarted, RawInterpreter, BindingsStarting, Ready };
+BPYEmbeddedPhase BPY_embedded_phase();
+#endif
 void BPY_python_use_system_env();
 void BPY_python_use_user_env();
 [[nodiscard]] bool BPY_python_use_system_env_get();

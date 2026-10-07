@@ -1,0 +1,816 @@
+{
+  "source_archive_sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+  "archive_root": "brotli-1.0.9",
+  "files": [
+    {
+      "path": "BUILD",
+      "type": "file",
+      "size": 2698,
+      "sha256": "44181c9a2b26c4d7cc7185e80bccfe788344d35cdea7c1ede1e55272705383c3"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "type": "file",
+      "size": 15396,
+      "sha256": "2c439e7cff29b77743d609dd2fbeccb95d6c280bf1210a9bc0fc55f8ff697de5"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "file",
+      "size": 1452,
+      "sha256": "16c968bb0a7969583975fe41489108c4e0128ee330a272d45548dd68b1127908"
+    },
+    {
+      "path": "LICENSE",
+      "type": "file",
+      "size": 1084,
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+    },
+    {
+      "path": "MANIFEST.in",
+      "type": "file",
+      "size": 361,
+      "sha256": "f498490e8dc0f212d9ea38d05a18d55c230df6b1703dd54d221a189710b21886"
+    },
+    {
+      "path": "Makefile",
+      "type": "file",
+      "size": 1472,
+      "sha256": "7389edcd71c5bc450e192f6ed4bb07782b470c6f676da4d3418d3bc5a279a7ed"
+    },
+    {
+      "path": "Makefile.am",
+      "type": "file",
+      "size": 1257,
+      "sha256": "4cde6dac124f472e8164caa334a2040a5a522f8c40e5643127eceed35e1e601a"
+    },
+    {
+      "path": "README",
+      "type": "file",
+      "size": 652,
+      "sha256": "9ff23b73c67d1792eccd841ddcf3aa574f206126defd881ad194ec15b7e3c4e6"
+    },
+    {
+      "path": "README.md",
+      "type": "file",
+      "size": 4339,
+      "sha256": "f91debb7ee809a40af2dc2b6190439e67cfb153b099a3f2848e8011dd75416f2"
+    },
+    {
+      "path": "WORKSPACE",
+      "type": "file",
+      "size": 339,
+      "sha256": "55ad044b6fdcf6a46761c538886d4197190f920e532d4e99131f5b7caa0c8c34"
+    },
+    {
+      "path": "bootstrap",
+      "type": "file",
+      "size": 1487,
+      "sha256": "4d48e2a29592506fd85dc939db53518052101b9d18bece2db9b033e7da1778df"
+    },
+    {
+      "path": "c/common/constants.c",
+      "type": "file",
+      "size": 623,
+      "sha256": "9301e0d8681044b8e33b78cf614335e61419d35d4522408341898ea83ec73255"
+    },
+    {
+      "path": "c/common/constants.h",
+      "type": "file",
+      "size": 8012,
+      "sha256": "a5ffdd6c1e800e61723fd0f0e8e1f6f6989d470e560bac0f1d0aa03dcabd43f6"
+    },
+    {
+      "path": "c/common/context.c",
+      "type": "file",
+      "size": 7967,
+      "sha256": "f739174b6c04b03a54cd35937f80e42910fe8af6955258f7b6718b37d9997d17"
+    },
+    {
+      "path": "c/common/context.h",
+      "type": "file",
+      "size": 4666,
+      "sha256": "c7dc4baae59379679c57c9eb7019ac82199c9b42cd73ffba509b29529f5c753c"
+    },
+    {
+      "path": "c/common/dictionary.c",
+      "type": "file",
+      "size": 471957,
+      "sha256": "937f194f02206ecb53390f76468a3438330de1f43063c30f67489a4f8545fa06"
+    },
+    {
+      "path": "c/common/dictionary.h",
+      "type": "file",
+      "size": 1951,
+      "sha256": "5d1679aea2303fba4ae7afc47f0ab1c5e8b0bb3bba1692ed005da4a6d4c28e49"
+    },
+    {
+      "path": "c/common/platform.c",
+      "type": "file",
+      "size": 514,
+      "sha256": "698a9d08a16334b2b775c997846a591b881c88b8ae10fed7fbb99e86029cf05c"
+    },
+    {
+      "path": "c/common/platform.h",
+      "type": "file",
+      "size": 21522,
+      "sha256": "c39af908eda34eaf601ded98859cda617f4f495e4286435df378621e30956d0f"
+    },
+    {
+      "path": "c/common/transform.c",
+      "type": "file",
+      "size": 10679,
+      "sha256": "8ebc2e4acf11af1431d167d949d754e7611a500dc178276da999f4894e15ab4b"
+    },
+    {
+      "path": "c/common/transform.h",
+      "type": "file",
+      "size": 3209,
+      "sha256": "3a28f38539e661f22b8f7cd6478b76f1916903caa5b6ae708577c62ef3559122"
+    },
+    {
+      "path": "c/common/version.h",
+      "type": "file",
+      "size": 871,
+      "sha256": "b14882569196b08c352df9478b1d566723827d768b7e7f50741bdd08307a3b74"
+    },
+    {
+      "path": "c/dec/bit_reader.c",
+      "type": "file",
+      "size": 2262,
+      "sha256": "a9dc20a6c8c590b118655fb535a67575a697edf6cde6c5e343d912f690ca42f0"
+    },
+    {
+      "path": "c/dec/bit_reader.h",
+      "type": "file",
+      "size": 11952,
+      "sha256": "10003d311994ac246399b51d0694de442b21d50e71a45d27c18da65cd01eff68"
+    },
+    {
+      "path": "c/dec/decode.c",
+      "type": "file",
+      "size": 93022,
+      "sha256": "3c6209b73b0b41526448d2315d3a104bf58a3e46d3096574158ba93ef10480c8"
+    },
+    {
+      "path": "c/dec/huffman.c",
+      "type": "file",
+      "size": 11918,
+      "sha256": "3f1437b2dce200818645fcf2de7ddcfb4b3cdbb7ffa2568be90eca385dc4f576"
+    },
+    {
+      "path": "c/dec/huffman.h",
+      "type": "file",
+      "size": 4106,
+      "sha256": "9de651fec2709074cb20afdbd937d4bb2e8f5fcd51909d865196052794ca63dd"
+    },
+    {
+      "path": "c/dec/prefix.h",
+      "type": "file",
+      "size": 31611,
+      "sha256": "914d6c55edd814e8951f0ff6a43391e99845c25d0b907f5c8c5f0bfa5f38a167"
+    },
+    {
+      "path": "c/dec/state.c",
+      "type": "file",
+      "size": 4874,
+      "sha256": "7c8d91657295343392877ede7364793b4e679013a4553e2c93a7a1b5ddd25b97"
+    },
+    {
+      "path": "c/dec/state.h",
+      "type": "file",
+      "size": 11419,
+      "sha256": "f1a026464169261d38d60f73f6e34b83e4a88aa1629f88d0d15e836303e0eb3a"
+    },
+    {
+      "path": "c/enc/backward_references.c",
+      "type": "file",
+      "size": 4001,
+      "sha256": "e77f55722610604a194c085cc9e3a923158188e32e9bf86568402178b6b0d8c5"
+    },
+    {
+      "path": "c/enc/backward_references.h",
+      "type": "file",
+      "size": 1306,
+      "sha256": "7ade19bd0d2d52dfa703ae808976ad3713003d4ef5304893b5f577be3c37531b"
+    },
+    {
+      "path": "c/enc/backward_references_hq.c",
+      "type": "file",
+      "size": 32486,
+      "sha256": "c3f138c008cf0d40942902d797021d8db42f694c8671576e61eaddda27e89e71"
+    },
+    {
+      "path": "c/enc/backward_references_hq.h",
+      "type": "file",
+      "size": 3875,
+      "sha256": "d3bd86abad1e7281dc075eaa93fc65092d4cbeca508bec60747f56655cac39af"
+    },
+    {
+      "path": "c/enc/backward_references_inc.h",
+      "type": "file",
+      "size": 6914,
+      "sha256": "ffc10d5c310e2d77e2e81e9d2e076ed2ea1db4bcf5c6e9570e3c36fd7a23005a"
+    },
+    {
+      "path": "c/enc/bit_cost.c",
+      "type": "file",
+      "size": 824,
+      "sha256": "2c7560487313f1cc3706902bb40191271d018357025dfcecb32892dcf35cab83"
+    },
+    {
+      "path": "c/enc/bit_cost.h",
+      "type": "file",
+      "size": 1680,
+      "sha256": "496f1045fe2441f69768a780b99cc57fcaba270e47b50c1bb3d862ab1f7f78fb"
+    },
+    {
+      "path": "c/enc/bit_cost_inc.h",
+      "type": "file",
+      "size": 4109,
+      "sha256": "69cc09f85cc225e6b4207d8a76f4b7fc743e2e3de2f02b754830d46aa22428d1"
+    },
+    {
+      "path": "c/enc/block_encoder_inc.h",
+      "type": "file",
+      "size": 1137,
+      "sha256": "fa99d29142869d28e6b4c471993e44b989f1350a9cfdbed7342f4b915329b9a8"
+    },
+    {
+      "path": "c/enc/block_splitter.c",
+      "type": "file",
+      "size": 6260,
+      "sha256": "78b552c49d7e19508bf00f1023439944474204442a37b86797162aebff605785"
+    },
+    {
+      "path": "c/enc/block_splitter.h",
+      "type": "file",
+      "size": 1679,
+      "sha256": "7216f1fe31a891b0cc505fac32d6937a62ead7528c989f35021603261907bbd0"
+    },
+    {
+      "path": "c/enc/block_splitter_inc.h",
+      "type": "file",
+      "size": 16811,
+      "sha256": "9d6879dcd425d88fb8db234dbe676bcdc174314407b511a696a22fd742adbd4f"
+    },
+    {
+      "path": "c/enc/brotli_bit_stream.c",
+      "type": "file",
+      "size": 49657,
+      "sha256": "f0c41da416b891b6af071a15af25cc3d5b44ff58b569315356c464c2eb1cf551"
+    },
+    {
+      "path": "c/enc/brotli_bit_stream.h",
+      "type": "file",
+      "size": 3371,
+      "sha256": "9aed9059442ca52c7061116a972974960cca5323518ab8df29d0181475cf4f9e"
+    },
+    {
+      "path": "c/enc/cluster.c",
+      "type": "file",
+      "size": 1500,
+      "sha256": "652ce4eb99de455aeef09520c2c8b4d570c90ca36ac65afbf55d9d4f20d63914"
+    },
+    {
+      "path": "c/enc/cluster.h",
+      "type": "file",
+      "size": 1033,
+      "sha256": "9ecdc1adfdf7530e2aa893e39cc07df06291a0748071e91af694970a59f747a4"
+    },
+    {
+      "path": "c/enc/cluster_inc.h",
+      "type": "file",
+      "size": 11560,
+      "sha256": "2a9c864218bb9d67cc3a69f5a0fd36a2f47f6cfccfcbe6d47b94ebf5debb12bc"
+    },
+    {
+      "path": "c/enc/command.c",
+      "type": "file",
+      "size": 1021,
+      "sha256": "0a2bf72dadaae9ea5ab9f1fa68225bcddcbcfb8e245f50a7168ba90ba949ed91"
+    },
+    {
+      "path": "c/enc/command.h",
+      "type": "file",
+      "size": 6897,
+      "sha256": "4fb0898a9179ef692f5a2979386a1430b51b1e32e5b350226c9b44e8fc52836f"
+    },
+    {
+      "path": "c/enc/compress_fragment.c",
+      "type": "file",
+      "size": 32374,
+      "sha256": "38ed33b08f65bd32ba4f1ff2fd8177bbea25937e75e193ad0341b93e2e6905f2"
+    },
+    {
+      "path": "c/enc/compress_fragment.h",
+      "type": "file",
+      "size": 2825,
+      "sha256": "db55074cb676ce830a67cb2a0e0c7d01b919e31145ec47ed25d3816d86289d80"
+    },
+    {
+      "path": "c/enc/compress_fragment_two_pass.c",
+      "type": "file",
+      "size": 25772,
+      "sha256": "4bd1a57bc95ea3824671cc7c32b25b9de7effd9fb7e7e907b3f35ec36d6b1e3f"
+    },
+    {
+      "path": "c/enc/compress_fragment_two_pass.h",
+      "type": "file",
+      "size": 2407,
+      "sha256": "99f82a94a1154be0900801e9200a486cee0df1df94460f995c614c7bd18dda8c"
+    },
+    {
+      "path": "c/enc/dictionary_hash.c",
+      "type": "file",
+      "size": 147104,
+      "sha256": "4e1eb21983ae5e335c3816efa9359a2af2a33a2deaec0a015f1e4aaed9f58714"
+    },
+    {
+      "path": "c/enc/dictionary_hash.h",
+      "type": "file",
+      "size": 646,
+      "sha256": "5832378fc20a2becae2e2e84e823b33fe00f6decec12916ad744a54cab106df4"
+    },
+    {
+      "path": "c/enc/encode.c",
+      "type": "file",
+      "size": 73933,
+      "sha256": "77a0914bf1dbbbd3aa5cb28ff09370e7688782e3a4ca015373a8384ac5595246"
+    },
+    {
+      "path": "c/enc/encoder_dict.c",
+      "type": "file",
+      "size": 949,
+      "sha256": "7c826e393a40e88a980f952033ecdbaf5a28f043d3ce91eb5bd34ea53dd6586f"
+    },
+    {
+      "path": "c/enc/encoder_dict.h",
+      "type": "file",
+      "size": 1155,
+      "sha256": "c912d82a6f2b664801a75923caa835d12fe5fe03c0dbca981d4d4ff9927470cc"
+    },
+    {
+      "path": "c/enc/entropy_encode.c",
+      "type": "file",
+      "size": 14585,
+      "sha256": "ded7dcac014299eb720f0aec574358cde8f52a07a30132dba1b1cbed2685784a"
+    },
+    {
+      "path": "c/enc/entropy_encode.h",
+      "type": "file",
+      "size": 4056,
+      "sha256": "9047de319d4388a863ed9cd4bde3546bce3bed148f6edfa46c2b7e2c36f466f5"
+    },
+    {
+      "path": "c/enc/entropy_encode_static.h",
+      "type": "file",
+      "size": 32900,
+      "sha256": "d159ce65bc19ed61fda6b033430b70c61b11d01532780441ac679bc63ccc4380"
+    },
+    {
+      "path": "c/enc/fast_log.c",
+      "type": "file",
+      "size": 6026,
+      "sha256": "325eab748c9ba137c5ff75d3b471c01462084128c93481d39934cc3489e5f7e3"
+    },
+    {
+      "path": "c/enc/fast_log.h",
+      "type": "file",
+      "size": 1649,
+      "sha256": "d2fc12f7b6f5f34579f070781166e132487f5e8712d717212395e8c98bd63a47"
+    },
+    {
+      "path": "c/enc/find_match_length.h",
+      "type": "file",
+      "size": 2533,
+      "sha256": "23179fd76459ab7ef31c7bd43be27596b8d16709001a6d14e34d5a1931aca59b"
+    },
+    {
+      "path": "c/enc/hash.h",
+      "type": "file",
+      "size": 14944,
+      "sha256": "e5cdbda79f01dbf2abdfd916d748831e38d528c9e6e25c20c398267ebee43d7d"
+    },
+    {
+      "path": "c/enc/hash_composite_inc.h",
+      "type": "file",
+      "size": 4415,
+      "sha256": "8fe6f1cfda8d2eba593085bbbe0008f8824969f7c21323438e8dad7014b90a1e"
+    },
+    {
+      "path": "c/enc/hash_forgetful_chain_inc.h",
+      "type": "file",
+      "size": 10861,
+      "sha256": "e10af674e98641e701711e4045e722e0e1c7db4a7dc1e28bdb7333289e28d4cd"
+    },
+    {
+      "path": "c/enc/hash_longest_match64_inc.h",
+      "type": "file",
+      "size": 10481,
+      "sha256": "f7efb91ba07d6d79c78df4ee9be4fadf2f2478dcffb5cf2ef78bf0e1aeab7327"
+    },
+    {
+      "path": "c/enc/hash_longest_match_inc.h",
+      "type": "file",
+      "size": 10054,
+      "sha256": "3150f9182409367d5e70bb34b100621f448862018107a081cc4c96c8f2bd2c81"
+    },
+    {
+      "path": "c/enc/hash_longest_match_quickly_inc.h",
+      "type": "file",
+      "size": 9310,
+      "sha256": "b8ff7d0b45fdd3317f9101329e7fea875bece1bde8dcb91740783af184df2191"
+    },
+    {
+      "path": "c/enc/hash_rolling_inc.h",
+      "type": "file",
+      "size": 7196,
+      "sha256": "be90a247a86e36bc20dab647858f1e8141177493a57bc3d5022e4172dd03559e"
+    },
+    {
+      "path": "c/enc/hash_to_binary_tree_inc.h",
+      "type": "file",
+      "size": 13035,
+      "sha256": "f3be9e3699b648e6b1cef135efa817cc8333652f5d774f0c68f4e1ba74fb5345"
+    },
+    {
+      "path": "c/enc/histogram.c",
+      "type": "file",
+      "size": 3227,
+      "sha256": "9dd33da9e2c6cd1a03ce16292b35fff20b7d2036c15d414b61562d8ef685dfe8"
+    },
+    {
+      "path": "c/enc/histogram.h",
+      "type": "file",
+      "size": 1884,
+      "sha256": "074310f22573141859e81e31f0a1990bedc017cc05c018ba19995291a5608f3d"
+    },
+    {
+      "path": "c/enc/histogram_inc.h",
+      "type": "file",
+      "size": 1401,
+      "sha256": "618857bb0d76c2647b26730413ddcf1ddecc63567adb5a1437eb7ff711670a71"
+    },
+    {
+      "path": "c/enc/literal_cost.c",
+      "type": "file",
+      "size": 5614,
+      "sha256": "532b7a7bd0fee3e722ecd973463a82f40b983c7e3bfae382fff97e1e43734fad"
+    },
+    {
+      "path": "c/enc/literal_cost.h",
+      "type": "file",
+      "size": 892,
+      "sha256": "b51d15d05cea44b16590b43df6d69b4f058e5e4654d49f0ed1a3c8ccfce5ef5b"
+    },
+    {
+      "path": "c/enc/memory.c",
+      "type": "file",
+      "size": 4887,
+      "sha256": "e250a96eb0248d3a4b7ed49b882fcd74fa515185fffbf26db54bc38e23e5addb"
+    },
+    {
+      "path": "c/enc/memory.h",
+      "type": "file",
+      "size": 3595,
+      "sha256": "d08515d259cd3c6d9f96dc19560e60b0b89b62ef5d4dba3abb2fd125f80357b4"
+    },
+    {
+      "path": "c/enc/metablock.c",
+      "type": "file",
+      "size": 26199,
+      "sha256": "2a3cded035eb8d73f555480c5eccb22e8a235492472c0c80c21fe5332e868549"
+    },
+    {
+      "path": "c/enc/metablock.h",
+      "type": "file",
+      "size": 3994,
+      "sha256": "403aa46cedfdaa2c6bb76234866d76719162f14a66d780c4361b644433b45a6b"
+    },
+    {
+      "path": "c/enc/metablock_inc.h",
+      "type": "file",
+      "size": 7557,
+      "sha256": "7a4e00e12ac8bca5d4c8709953f1d7f5c47cb1e278e50237422f4b99fa31b60b"
+    },
+    {
+      "path": "c/enc/params.h",
+      "type": "file",
+      "size": 1138,
+      "sha256": "a367178abd0add9d22990b88105797cd9262d8f62361b8b686503a2bb3aa762a"
+    },
+    {
+      "path": "c/enc/prefix.h",
+      "type": "file",
+      "size": 1970,
+      "sha256": "515d77a6c40029813be158fc24670b20349ca448cea431b0354646cde3a0aaca"
+    },
+    {
+      "path": "c/enc/quality.h",
+      "type": "file",
+      "size": 6165,
+      "sha256": "9131bec65755996e01f5bd47ae7ef7099095c806344269366cf6830426983de4"
+    },
+    {
+      "path": "c/enc/ringbuffer.h",
+      "type": "file",
+      "size": 6012,
+      "sha256": "7185f6abba483d359f1a25a907e86f34e794e711363bb3bee9728709b61f7637"
+    },
+    {
+      "path": "c/enc/static_dict.c",
+      "type": "file",
+      "size": 19012,
+      "sha256": "45c44a669587e79713a0a98c272261d46eede456702dbdcb37a017f58763b6e7"
+    },
+    {
+      "path": "c/enc/static_dict.h",
+      "type": "file",
+      "size": 1276,
+      "sha256": "5b6014e6f775b4bf3e5833a41ff71f0ebd2b3e259e662fd34d9cbd8bb035ff42"
+    },
+    {
+      "path": "c/enc/static_dict_lut.h",
+      "type": "file",
+      "size": 469658,
+      "sha256": "90641d422825d51b3c58d136b275197a4d9fdcf9a13cd3f227cd7a583c7ed793"
+    },
+    {
+      "path": "c/enc/utf8_util.c",
+      "type": "file",
+      "size": 2271,
+      "sha256": "57666bb292c7c5a09f790e86994756f0138edfc3808afa65dd51984196dbca36"
+    },
+    {
+      "path": "c/enc/utf8_util.h",
+      "type": "file",
+      "size": 904,
+      "sha256": "b2f2342439b189123479460f2b6abf197ffe300863bb56c46a60ecf87bbb256a"
+    },
+    {
+      "path": "c/enc/write_bits.h",
+      "type": "file",
+      "size": 2861,
+      "sha256": "59963cfbec24ad8e5be8eed69c6a0591b4a32a6060a21280ac447c04720bae36"
+    },
+    {
+      "path": "c/include/brotli/decode.h",
+      "type": "file",
+      "size": 14323,
+      "sha256": "a9665d09f77df18f8a1f4c948610474ebd8758ff3f3a0714842af0a12d263ee6"
+    },
+    {
+      "path": "c/include/brotli/encode.h",
+      "type": "file",
+      "size": 17361,
+      "sha256": "dfc6f8e43b30e2e88c5cc9d1a4842aa967aa399e2ccd4eea3fb134a990216812"
+    },
+    {
+      "path": "c/include/brotli/port.h",
+      "type": "file",
+      "size": 10712,
+      "sha256": "2cffc986439dfac586589f538db721155229ac615dfad16300dd70aff7b718f6"
+    },
+    {
+      "path": "c/include/brotli/types.h",
+      "type": "file",
+      "size": 2615,
+      "sha256": "96c9330e790aa6fe53f4cdd328d0a4b98e361b82913baa3219db73aadb11272c"
+    },
+    {
+      "path": "c/tools/brotli.c",
+      "type": "file",
+      "size": 36635,
+      "sha256": "a04121c77dc62ae57ea01fa846d9a9c0256d4a983399603fb8c3c42ac568d0cf"
+    },
+    {
+      "path": "c/tools/brotli.md",
+      "type": "file",
+      "size": 3631,
+      "sha256": "aa2e24d341ae315b99bf2e5974ef23d2790a13676da61b0312dc45664257f2b5"
+    },
+    {
+      "path": "compiler_config_setting.bzl",
+      "type": "file",
+      "size": 1044,
+      "sha256": "e43e330b36830065e16cd0f2611f4ae778b12687f129f4db4663cd4e29c80794"
+    },
+    {
+      "path": "configure",
+      "type": "file",
+      "size": 425,
+      "sha256": "41e234b9330533d6b9bd3f0a978b25424a19233b0e781944c13b6fd25f07ab67"
+    },
+    {
+      "path": "configure-cmake",
+      "type": "file",
+      "size": 11387,
+      "sha256": "34010c974f5fc0a5c778cb37bc3a8329fdff22eeb987dd2f159bd598146c8823"
+    },
+    {
+      "path": "configure.ac",
+      "type": "file",
+      "size": 321,
+      "sha256": "0d16b2ab254ca668d8fbd3718788dae3b35c8a09915ff48199fe1f37934a9c42"
+    },
+    {
+      "path": "docs/brotli.1",
+      "type": "file",
+      "size": 4314,
+      "sha256": "b8b3846908517886b235abdc9f4d3cc8d2f54ac5255804e3b9f7c209dd8982e0"
+    },
+    {
+      "path": "docs/constants.h.3",
+      "type": "file",
+      "size": 1771,
+      "sha256": "14c068cd944bc3f0e6d8f1bb9ba6d9c7e1af0491c9c852a60da5bdc3dfd3f4d7"
+    },
+    {
+      "path": "docs/decode.h.3",
+      "type": "file",
+      "size": 14067,
+      "sha256": "f3b868feb5c55023c931d343b017953bdb24cf53e844f46e97d09289918985fd"
+    },
+    {
+      "path": "docs/encode.h.3",
+      "type": "file",
+      "size": 21850,
+      "sha256": "d5cf0c2885d12681da6f0bb3b3bdeedda3ca5de5a5a215ff1b3e5f5fd242af83"
+    },
+    {
+      "path": "docs/types.h.3",
+      "type": "file",
+      "size": 3085,
+      "sha256": "bdaeca30172c88ef579dd46410d2c30c5ec7e055fc60d0c5542d104659f9b4e6"
+    },
+    {
+      "path": "premake5.lua",
+      "type": "file",
+      "size": 1706,
+      "sha256": "49d454ab6b48f86763a393b263e170aaab7c79645a85bee597853c6f25af21f9"
+    },
+    {
+      "path": "python/Makefile",
+      "type": "file",
+      "size": 1161,
+      "sha256": "dbecc5c7786e52c822521a197236ccabc7b8688309be629da4e4d5167ef4e24d"
+    },
+    {
+      "path": "python/README.md",
+      "type": "file",
+      "size": 1559,
+      "sha256": "20d23e609c97f8258a2073c8b18f4c5cc2681c2723a3306ed4735ecef6a08ff0"
+    },
+    {
+      "path": "python/_brotli.cc",
+      "type": "file",
+      "size": 23868,
+      "sha256": "87f6bc208f904085b6a4af328af5dc461e049bd3bc9016a204e5c6ade765ac7d"
+    },
+    {
+      "path": "python/bro.py",
+      "type": "file",
+      "size": 4953,
+      "sha256": "71b5aab0a8369bef78c2023c86ee9adcb99274fd27322bd532ec5946734b8ac7"
+    },
+    {
+      "path": "python/brotli.py",
+      "type": "file",
+      "size": 1857,
+      "sha256": "8b0a109cfbeb00db5a2584c9ea64a3390504347ed9f1180011b9fe1f1311fa45"
+    },
+    {
+      "path": "python/tests/__init__.py",
+      "type": "file",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "python/tests/_test_utils.py",
+      "type": "file",
+      "size": 3695,
+      "sha256": "e7db45ba7b6b70e80988056291798c1b06b99e84406834d2cfb93869736d4444"
+    },
+    {
+      "path": "python/tests/bro_test.py",
+      "type": "file",
+      "size": 3791,
+      "sha256": "d4a5638de3f6304b5864e4b5abdadc80b266c61ddc2ed02d02262fa9839b6147"
+    },
+    {
+      "path": "python/tests/compress_test.py",
+      "type": "file",
+      "size": 1509,
+      "sha256": "5d7fdb5c11ffdb08afc03be22ee413b2c6e0b19507697bb330789525c63203f2"
+    },
+    {
+      "path": "python/tests/compressor_test.py",
+      "type": "file",
+      "size": 3433,
+      "sha256": "cd03e2553341927c216e2657700d4719c39d7b306f946d2e2090c3e9f953ea70"
+    },
+    {
+      "path": "python/tests/decompress_test.py",
+      "type": "file",
+      "size": 1326,
+      "sha256": "b3f923750db0cca83e3d16bef7d376b87cfada554a573dda74027c4d55cd98e5"
+    },
+    {
+      "path": "python/tests/decompressor_test.py",
+      "type": "file",
+      "size": 1878,
+      "sha256": "b91d63bde9eaa5003953d60e2e419c18268ef4e9a25b97a56477d065bb25013f"
+    },
+    {
+      "path": "scripts/libbrotlicommon.pc.in",
+      "type": "file",
+      "size": 285,
+      "sha256": "44424db7cefad73b91699d871b9b516e072bc7207745cc06de6622c07fb9313d"
+    },
+    {
+      "path": "scripts/libbrotlidec.pc.in",
+      "type": "file",
+      "size": 312,
+      "sha256": "f3216d9c44aced783d4bc5403a59f064707eb6da28c55f2337878bd449284fb8"
+    },
+    {
+      "path": "scripts/libbrotlienc.pc.in",
+      "type": "file",
+      "size": 312,
+      "sha256": "55561386ea31808e97646f3a27621599a225d88786154fd99489a990f0305c21"
+    },
+    {
+      "path": "scripts/sources.lst",
+      "type": "file",
+      "size": 2481,
+      "sha256": "87c459b782348d11b61d721ed6f4aca6dea1e8bcb06ef573fbe44d57c71d00ad"
+    },
+    {
+      "path": "setup.cfg",
+      "type": "file",
+      "size": 53,
+      "sha256": "ed6f594f097d58e08cb952df2c470ce702faeea4f3f64236f656d310e3af1d35"
+    },
+    {
+      "path": "setup.py",
+      "type": "file",
+      "size": 9642,
+      "sha256": "dc6ec8454545f2abc16935b6c5159d85fc5e54d4e00674b079f03c4f24f245ca"
+    },
+    {
+      "path": "tests/Makefile",
+      "type": "file",
+      "size": 260,
+      "sha256": "5e5d0c4268be2bb547db67399b9cb941cd57b0272819d4cf067c92fc3f866d29"
+    },
+    {
+      "path": "tests/compatibility_test.sh",
+      "type": "file",
+      "size": 672,
+      "sha256": "8e00357477fb2b1e5f67f52cf527fc434e989215d26a5b620c04a743ac11cc3e"
+    },
+    {
+      "path": "tests/roundtrip_test.sh",
+      "type": "file",
+      "size": 921,
+      "sha256": "1a61168df14d3639e0f79f8f8945c5863e17afa97d8c476005b9d4b86112a925"
+    },
+    {
+      "path": "tests/run-compatibility-test.cmake",
+      "type": "file",
+      "size": 1119,
+      "sha256": "1c8ade142b1da5aea766864b9555b12fa03965d2d8545eeeac8c52756eff6bdc"
+    },
+    {
+      "path": "tests/run-roundtrip-test.cmake",
+      "type": "file",
+      "size": 1133,
+      "sha256": "444a6d6a559aa157a517aa51d211c098510ffcdad7c6b9cf3e5766c544d55c20"
+    },
+    {
+      "path": "tests/testdata/empty",
+      "type": "file",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/testdata/empty.compressed",
+      "type": "file",
+      "size": 1,
+      "sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6"
+    },
+    {
+      "path": "tests/testdata/ukkonooa",
+      "type": "file",
+      "size": 119,
+      "sha256": "1fb2529b0c6fbf80a60d2bb4c20efba2fff6cecb0c52d42693d404501064f407"
+    },
+    {
+      "path": "tests/testdata/ukkonooa.compressed",
+      "type": "file",
+      "size": 69,
+      "sha256": "92f59fc5a282056ef34c9521920baf3bf609ca57c8abd5a286fb4833aede421e"
+    }
+  ]
+}

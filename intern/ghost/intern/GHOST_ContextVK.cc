@@ -9,6 +9,9 @@
 #include "GHOST_ContextVK.hh"
 #include "GHOST_Types.hh"
 #include <vulkan/vulkan_core.h>
+#ifdef WITH_GHOST_OHOS
+#  include <vulkan/vulkan_ohos.h>
+#endif
 
 #ifdef _WIN32
 #  include <vulkan/vulkan_win32.h>
@@ -860,7 +863,12 @@ GHOST_ContextVK::GHOST_ContextVK(const GHOST_ContextParams &context_params,
                                  int contextMajorVersion,
                                  int contextMinorVersion,
                                  const GHOST_GPUDevice &preferred_device,
-                                 const GHOST_WindowHDRInfo *hdr_info)
+                                 const GHOST_WindowHDRInfo *hdr_info
+#ifdef WITH_GHOST_OHOS
+                                 , void *ohos_native_window,
+                                 const GHOST_ContextVK_WindowInfo *ohos_window_info
+#endif
+                                 )
     : GHOST_Context(context_params),
 #ifdef _WIN32
       hwnd_(hwnd),
@@ -875,6 +883,10 @@ GHOST_ContextVK::GHOST_ContextVK(const GHOST_ContextParams &context_params,
       wayland_surface_(wayland_surface),
       wayland_display_(wayland_display),
       wayland_window_info_(wayland_window_info),
+#endif
+#ifdef WITH_GHOST_OHOS
+      ohos_native_window_(ohos_native_window),
+      ohos_window_info_(ohos_window_info),
 #endif
       context_major_version_(contextMajorVersion),
       context_minor_version_(contextMinorVersion),
@@ -915,7 +927,11 @@ GHOST_ContextVK::~GHOST_ContextVK()
       surface_ = VK_NULL_HANDLE;
     }
 
-    if (device_vk.users > 0) {
+    if (device_vk.users > 0
+#ifdef WITH_GHOST_OHOS
+        && ohos_device_user_acquired_
+#endif
+        ) {
       device_vk.users--;
     }
     if (device_vk.users == 0) {
@@ -926,6 +942,9 @@ GHOST_ContextVK::~GHOST_ContextVK()
 
 GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
 {
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS && !ohos_native_window_) return GHOST_kFailure;
+#endif
   if (acquired_swapchain_image_index_.has_value()) {
     assert(false);
     return GHOST_kFailure;
@@ -985,6 +1004,19 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
       }
     }
 #endif
+#ifdef WITH_GHOST_OHOS
+    if (platform_ == GHOST_kVulkanPlatformOHOS && ohos_window_info_) {
+      /* OHOS may impose a fixed currentExtent while its surface size catches
+       * up with ArkUI. Compare against the request handled by the last successful
+       * creation, rather than rebuilding every frame when WSI chose another size.
+       * Genuine invalidation is still handled by acquire/present OUT_OF_DATE. */
+      const uint32_t width = uint32_t(ohos_window_info_->size[0]);
+      const uint32_t height = uint32_t(ohos_window_info_->size[1]);
+      if (width != ohos_requested_extent_.width || height != ohos_requested_extent_.height) {
+        recreateSwapchain(use_hdr_swapchain);
+      }
+    }
+#endif
   }
   /* there is no valid swapchain when the previous window was minimized. User can have maximized
    * the window so we need to check if the swapchain has to be created. */
@@ -998,8 +1030,18 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
     /* Some platforms (NVIDIA/Wayland) can receive an out of date swapchain when acquiring the next
      * swapchain image. Other do it when calling vkQueuePresent. */
     VkResult acquire_result = VK_ERROR_OUT_OF_DATE_KHR;
-    while (swapchain_ != VK_NULL_HANDLE &&
-           (ELEM(acquire_result, VK_ERROR_OUT_OF_DATE_KHR, VK_SUBOPTIMAL_KHR)))
+    const auto must_recreate = [&](VkResult result) {
+#ifdef WITH_GHOST_OHOS
+      /* SUBOPTIMAL acquired a usable image and signaled the binary semaphore.
+       * Reacquiring with that semaphore is invalid. Host resize requests already
+       * cause recreation; use this image until the next frame or OUT_OF_DATE. */
+      if (platform_ == GHOST_kVulkanPlatformOHOS) {
+        return result == VK_ERROR_OUT_OF_DATE_KHR;
+      }
+#endif
+      return ELEM(result, VK_ERROR_OUT_OF_DATE_KHR, VK_SUBOPTIMAL_KHR);
+    };
+    while (swapchain_ != VK_NULL_HANDLE && must_recreate(acquire_result))
     {
       acquire_result = vkAcquireNextImageKHR(vk_device,
                                              swapchain_,
@@ -1007,7 +1049,7 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
                                              submission_frame_data.acquire_semaphore,
                                              VK_NULL_HANDLE,
                                              &image_index);
-      if (ELEM(acquire_result, VK_ERROR_OUT_OF_DATE_KHR, VK_SUBOPTIMAL_KHR)) {
+      if (must_recreate(acquire_result)) {
         recreateSwapchain(use_hdr_swapchain);
       }
     }
@@ -1144,6 +1186,13 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferRelease()
   }
   acquired_swapchain_image_index_.reset();
 
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS && present_result == VK_SUBOPTIMAL_KHR) {
+    /* Successful presentation; a subsequent host size change or OUT_OF_DATE
+     * will rebuild. Avoid a perpetual recreation loop on stretched surfaces. */
+    return GHOST_kSuccess;
+  }
+#endif
   if (ELEM(present_result, VK_ERROR_OUT_OF_DATE_KHR, VK_SUBOPTIMAL_KHR)) {
     recreateSwapchain(use_hdr_swapchain);
     return GHOST_kSuccess;
@@ -1447,6 +1496,9 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
   use_hdr_swapchain_ = use_hdr_swapchain;
   render_extent_ = capabilities.currentExtent;
   render_extent_min_ = capabilities.minImageExtent;
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS) ohos_extent_max_ = capabilities.maxImageExtent;
+#endif
   if (render_extent_.width == UINT32_MAX) {
     /* Window Manager is going to set the surface size based on the given size.
      * Choose something between minImageExtent and maxImageExtent. */
@@ -1461,6 +1513,12 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
     }
 #endif
 
+#ifdef WITH_GHOST_OHOS
+    if (platform_ == GHOST_kVulkanPlatformOHOS && ohos_window_info_) {
+      width = ohos_window_info_->size[0];
+      height = ohos_window_info_->size[1];
+    }
+#endif
     if (width == 0 || height == 0) {
       width = 1280;
       height = 720;
@@ -1468,6 +1526,14 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
 
     render_extent_.width = width;
     render_extent_.height = height;
+#ifdef WITH_GHOST_OHOS
+    if (platform_ == GHOST_kVulkanPlatformOHOS) {
+      render_extent_.width = std::clamp(render_extent_.width,
+          capabilities.minImageExtent.width, capabilities.maxImageExtent.width);
+      render_extent_.height = std::clamp(render_extent_.height,
+          capabilities.minImageExtent.height, capabilities.maxImageExtent.height);
+    }
+#endif
 
     if (capabilities.minImageExtent.width > render_extent_.width) {
       render_extent_.width = capabilities.minImageExtent.width;
@@ -1570,6 +1636,13 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
   VK_CHECK(vkCreateSwapchainKHR(device_vk.vk_device, &create_info, nullptr, &swapchain_),
            GHOST_kFailure);
 
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS && ohos_window_info_) {
+    ohos_requested_extent_ = {uint32_t(ohos_window_info_->size[0]),
+                              uint32_t(ohos_window_info_->size[1])};
+  }
+#endif
+
   /* image_count may not be what we requested! Getter for final value. */
   uint32_t actual_image_count = 0;
   vkGetSwapchainImagesKHR(device_vk.vk_device, swapchain_, &actual_image_count, nullptr);
@@ -1657,6 +1730,54 @@ GHOST_TSuccess GHOST_ContextVK::destroySwapchain()
   return GHOST_kSuccess;
 }
 
+#ifdef WITH_GHOST_OHOS
+GHOST_TSuccess GHOST_ContextVK::detachOHOSWindow()
+{
+  if (platform_ != GHOST_kVulkanPlatformOHOS) return GHOST_kFailure;
+  if (surface_ == VK_NULL_HANDLE) {
+    ohos_native_window_ = nullptr;
+    ohos_window_info_ = nullptr;
+    return GHOST_kSuccess;
+  }
+  if (!vulkan_instance.has_value() || !vulkan_instance->device.has_value()) return GHOST_kFailure;
+  /* NOT delete context / decrement users: Blender GPU resources still own this device. */
+  GHOST_InstanceVK &instance = vulkan_instance.value();
+  instance.device->wait_idle();
+  destroySwapchain();
+  swapchain_ = VK_NULL_HANDLE;
+  acquired_swapchain_image_index_.reset();
+  vkDestroySurfaceKHR(instance.vk_instance, surface_, nullptr);
+  surface_ = VK_NULL_HANDLE;
+  ohos_native_window_ = nullptr;
+  ohos_window_info_ = nullptr;
+  render_extent_ = {0, 0};
+  render_extent_min_ = {0, 0};
+  ohos_extent_max_ = {UINT32_MAX, UINT32_MAX};
+  return GHOST_kSuccess;
+}
+GHOST_TSuccess GHOST_ContextVK::attachOHOSWindow(
+    void *native_window, const GHOST_ContextVK_WindowInfo *window_info)
+{
+  if (platform_ != GHOST_kVulkanPlatformOHOS || !native_window || !window_info ||
+      window_info->size[0] <= 0 || window_info->size[1] <= 0 || surface_ != VK_NULL_HANDLE ||
+      !vulkan_instance.has_value() || !vulkan_instance->device.has_value()) return GHOST_kFailure;
+  GHOST_InstanceVK &instance = vulkan_instance.value();
+  auto create_surface = reinterpret_cast<PFN_vkCreateSurfaceOHOS>(
+      vkGetInstanceProcAddr(instance.vk_instance, "vkCreateSurfaceOHOS"));
+  if (!create_surface) return GHOST_kFailure;
+  VkSurfaceCreateInfoOHOS info{};
+  info.sType = VK_STRUCTURE_TYPE_SURFACE_CREATE_INFO_OHOS;
+  info.window = static_cast<OHNativeWindow *>(native_window);
+  VK_CHECK(create_surface(instance.vk_instance, &info, nullptr, &surface_), GHOST_kFailure);
+  ohos_native_window_ = native_window;
+  ohos_window_info_ = window_info;
+  /* destroySwapchain clears frame storage; the next acquisition creates WSI sync. */
+  frame_data_.resize(2);
+  render_frame_ = 0;
+  return GHOST_kSuccess;
+}
+#endif
+
 const char *GHOST_ContextVK::getPlatformSpecificSurfaceExtension() const
 {
 #ifdef _WIN32
@@ -1675,6 +1796,10 @@ const char *GHOST_ContextVK::getPlatformSpecificSurfaceExtension() const
       return VK_KHR_WAYLAND_SURFACE_EXTENSION_NAME;
       break;
 #  endif
+#ifdef WITH_GHOST_OHOS
+    case GHOST_kVulkanPlatformOHOS:
+      return VK_OHOS_SURFACE_EXTENSION_NAME;
+#endif
     case GHOST_kVulkanPlatformHeadless:
       break;
   }
@@ -1702,6 +1827,11 @@ GHOST_TSuccess GHOST_ContextVK::initializeDrawingContext()
       use_window_surface = (wayland_display_ != nullptr) && (wayland_surface_ != nullptr);
       break;
 #  endif
+#ifdef WITH_GHOST_OHOS
+    case GHOST_kVulkanPlatformOHOS:
+      use_window_surface = ohos_native_window_ != nullptr;
+      break;
+#endif
     case GHOST_kVulkanPlatformHeadless:
       use_window_surface = false;
       break;
@@ -1711,6 +1841,11 @@ GHOST_TSuccess GHOST_ContextVK::initializeDrawingContext()
   blender::Vector<const char *> required_device_extensions;
   blender::Vector<const char *> optional_device_extensions;
 
+#ifdef WITH_GHOST_OHOS
+  /* The first context can be offscreen; keep the shared instance/device capable
+   * of attaching the host's surface later. Window classes request API 1.3. */
+  if (!use_window_surface) required_device_extensions.append(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+#endif
   /* Initialize VkInstance */
   if (!vulkan_instance.has_value()) {
     vulkan_instance.emplace();
@@ -1737,6 +1872,10 @@ GHOST_TSuccess GHOST_ContextVK::initializeDrawingContext()
     instance_vk.extensions.enable(VK_EXT_DEBUG_REPORT_EXTENSION_NAME, true);
 #endif
 
+#ifdef WITH_GHOST_OHOS
+    instance_vk.extensions.enable(VK_KHR_SURFACE_EXTENSION_NAME);
+    instance_vk.extensions.enable(VK_OHOS_SURFACE_EXTENSION_NAME);
+#endif
     if (use_window_surface) {
       const char *native_surface_extension_name = getPlatformSpecificSurfaceExtension();
       instance_vk.extensions.enable(VK_KHR_SURFACE_EXTENSION_NAME);
@@ -1760,8 +1899,13 @@ GHOST_TSuccess GHOST_ContextVK::initializeDrawingContext()
       required_device_extensions.append(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
     }
 
+    const uint32_t requested_api = VK_MAKE_VERSION(context_major_version_, context_minor_version_, 0);
     if (!instance_vk.create_instance(
-            VK_MAKE_VERSION(context_major_version_, context_minor_version_, 0)))
+#ifdef WITH_GHOST_OHOS
+            std::max(requested_api, uint32_t(VK_API_VERSION_1_3))))
+#else
+            requested_api))
+#endif
     {
       vulkan_instance.reset();
       return GHOST_kFailure;
@@ -1813,6 +1957,20 @@ GHOST_TSuccess GHOST_ContextVK::initializeDrawingContext()
         break;
       }
 #  endif
+#ifdef WITH_GHOST_OHOS
+      case GHOST_kVulkanPlatformOHOS: {
+        VkSurfaceCreateInfoOHOS info{};
+        info.sType = VK_STRUCTURE_TYPE_SURFACE_CREATE_INFO_OHOS;
+        info.window = static_cast<OHNativeWindow *>(ohos_native_window_);
+        /* The SDK's real extension, not Android/Xlib surface emulation. */
+        auto create_surface_ohos = reinterpret_cast<PFN_vkCreateSurfaceOHOS>(
+            vkGetInstanceProcAddr(instance_vk.vk_instance, "vkCreateSurfaceOHOS"));
+        if (!create_surface_ohos) return GHOST_kFailure;
+        VK_CHECK(create_surface_ohos(instance_vk.vk_instance, &info, nullptr, &surface_),
+                 GHOST_kFailure);
+        break;
+      }
+#endif
       case GHOST_kVulkanPlatformHeadless: {
         surface_ = VK_NULL_HANDLE;
         break;
@@ -1914,6 +2072,9 @@ GHOST_TSuccess GHOST_ContextVK::initializeDrawingContext()
   GHOST_DeviceVK &device_vk = instance_vk.device.value();
 
   device_vk.users++;
+#ifdef WITH_GHOST_OHOS
+  ohos_device_user_acquired_ = true;
+#endif
 
   render_extent_ = {0, 0};
   render_extent_min_ = {0, 0};

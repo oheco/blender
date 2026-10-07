@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "kind": "core-dependency-source-provenance",
+  "offline_builder_completed": false,
+  "sources": [
+    {
+      "name": "eigen",
+      "version": "8a1083e9bf41b91fdea6546681f806154efdc25a",
+      "registry_manifest": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/manifest.json",
+      "archive_filename": "eigen-8a1083e9bf41b91fdea6546681f806154efdc25a.tar.gz",
+      "archive_root": "eigen-8a1083e9bf41b91fdea6546681f806154efdc25a",
+      "sha256": "cc28a84fdec496c6777596350ea805519bf10f717d21044ae6ba3dd562183a26",
+      "size": 3024705,
+      "license_expression": "MPL-2.0",
+      "notices": [
+        {
+          "source_path": "COPYING.APACHE",
+          "mirror": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.APACHE",
+          "size": 11362,
+          "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7"
+        },
+        {
+          "source_path": "COPYING.BSD",
+          "mirror": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.BSD",
+          "size": 1517,
+          "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb"
+        },
+        {
+          "source_path": "COPYING.MINPACK",
+          "mirror": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.MINPACK",
+          "size": 2193,
+          "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0"
+        },
+        {
+          "source_path": "COPYING.MPL2",
+          "mirror": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.MPL2",
+          "size": 16727,
+          "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+        },
+        {
+          "source_path": "COPYING.README",
+          "mirror": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.README",
+          "size": 264,
+          "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644"
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/LICENSE",
+          "size": 16725,
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+        },
+        {
+          "source_path": "bench/btl/COPYING",
+          "mirror": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/bench/btl/COPYING",
+          "size": 18109,
+          "sha256": "b8d0e2bcbf36f6af3cdbf94055ad2ea675d5a19fc623eb0ec82febb2b08e719b"
+        }
+      ],
+      "commit": "8a1083e9bf41b91fdea6546681f806154efdc25a",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "cc28a84fdec496c6777596350ea805519bf10f717d21044ae6ba3dd562183a26",
+        "authority": "build_files/build_environment/cmake/versions.cmake"
+      }
+    },
+    {
+      "name": "embree",
+      "version": "4.4.1",
+      "registry_manifest": "tpr/sources/embree-4.4.1/manifest.json",
+      "archive_filename": "embree-v4.4.1.zip",
+      "archive_root": "embree-4.4.1",
+      "sha256": "643b87490b207475872b0721019ebe3947feb9104f36c25795455516e4e85b82",
+      "size": 71461018,
+      "license_expression": "Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE.txt",
+          "mirror": "tpr/sources/embree-4.4.1/licenses/LICENSE.txt",
+          "size": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "source_path": "third-party-programs-DPCPP.txt",
+          "mirror": "tpr/sources/embree-4.4.1/licenses/third-party-programs-DPCPP.txt",
+          "size": 6006,
+          "sha256": "9063626e7d3dfff306d6033d84b51adadbe459c7482f0296e92f597190ad33ea"
+        },
+        {
+          "source_path": "third-party-programs-OIDN.txt",
+          "mirror": "tpr/sources/embree-4.4.1/licenses/third-party-programs-OIDN.txt",
+          "size": 19025,
+          "sha256": "6c82a835b37b99f779cd9a76896cee02d64dcf1eb36e704e5d925bb9daf40a1e"
+        },
+        {
+          "source_path": "third-party-programs-TBB.txt",
+          "mirror": "tpr/sources/embree-4.4.1/licenses/third-party-programs-TBB.txt",
+          "size": 46979,
+          "sha256": "12dde7e20fd8439d0b17ad2eb33a5aeb2442f7f4f1ea52692a2401e75bb513ca"
+        },
+        {
+          "source_path": "third-party-programs-oneAPI-DPCPP.txt",
+          "mirror": "tpr/sources/embree-4.4.1/licenses/third-party-programs-oneAPI-DPCPP.txt",
+          "size": 70664,
+          "sha256": "f6581550fc752baded435452f508bc75fa6e36c3cd9d6ee69e3752487533e7e0"
+        },
+        {
+          "source_path": "third-party-programs.txt",
+          "mirror": "tpr/sources/embree-4.4.1/licenses/third-party-programs.txt",
+          "size": 111266,
+          "sha256": "29688ddc73ea2369e7e94f37f4794bf1b5ccd549b73d0debc022c4533c854a42"
+        },
+        {
+          "source_path": "tutorials/common/imgui/LICENSE.txt",
+          "mirror": "tpr/sources/embree-4.4.1/licenses/tutorials/common/imgui/LICENSE.txt",
+          "size": 1083,
+          "sha256": "1b64b23b817e547982a86984685f5e9337695caa542753fb6f08d502d5208e38"
+        }
+      ],
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "6e2eecafb312d8cf1f1ff555702637cf",
+        "authority": "build_files/build_environment/cmake/versions.cmake"
+      }
+    },
+    {
+      "name": "abseil",
+      "version": "20250814.1",
+      "registry_manifest": "tpr/sources/abseil-20250814.1/manifest.json",
+      "archive_filename": "abseil-cpp-20250814.1.tar.gz",
+      "archive_root": "abseil-cpp-20250814.1",
+      "sha256": "1692f77d1739bacf3f94337188b78583cf09bab7e420d2dc6c5605a4f86785a1",
+      "size": 2235716,
+      "license_expression": "Apache-2.0",
+      "notices": [
+        {
+          "source_path": "AUTHORS",
+          "mirror": "tpr/sources/abseil-20250814.1/licenses/AUTHORS",
+          "size": 295,
+          "sha256": "1fd39030c119b4c97014f59e0ad0ed65f23475bbdf55a52740f31eb82b34b4ee"
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/abseil-20250814.1/licenses/LICENSE",
+          "size": 11361,
+          "sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747"
+        }
+      ],
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "1692f77d1739bacf3f94337188b78583cf09bab7e420d2dc6c5605a4f86785a1",
+        "authority": "build_files/build_environment/cmake/versions.cmake"
+      }
+    },
+    {
+      "name": "ceres",
+      "version": "0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db",
+      "registry_manifest": "tpr/sources/ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db/manifest.json",
+      "archive_filename": "ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db.tar.gz",
+      "archive_root": "ceres-solver-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db",
+      "sha256": "bf0bcc78fae884e59dd893693e52510da7cc6866a7444fdae9ba8f19eae266cd",
+      "size": 3476732,
+      "license_expression": "BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db/licenses/LICENSE",
+          "size": 14355,
+          "sha256": "765fd9eac4cb827fa5de4304d1f81f4f2c5c332a3f1d6f0f3f7a69a33156729b"
+        },
+        {
+          "source_path": "docs/source/license.rst",
+          "mirror": "tpr/sources/ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db/licenses/docs/source/license.rst",
+          "size": 1912,
+          "sha256": "298272413616f53c3bd952600ecb13ae4005dce7772c02b425c431bbb244f66f"
+        }
+      ],
+      "commit": "0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "bf0bcc78fae884e59dd893693e52510da7cc6866a7444fdae9ba8f19eae266cd",
+        "authority": "build_files/build_environment/cmake/versions.cmake"
+      }
+    },
+    {
+      "name": "glog",
+      "version": "0.4.0",
+      "registry_manifest": "tpr/sources/glog-0.4.0/manifest.json",
+      "archive_filename": "glog-96a2f23dca4cc7180821ca5f32e526314395d26a.tar.gz",
+      "archive_root": "glog-96a2f23dca4cc7180821ca5f32e526314395d26a",
+      "sha256": "a72da1c10f4f1f678ec3e77aeaf9b3026ec0d2f66d20ded33753ab5940ed218e",
+      "size": 201153,
+      "license_expression": "BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "AUTHORS",
+          "mirror": "tpr/sources/glog-0.4.0/licenses/AUTHORS",
+          "size": 890,
+          "sha256": "a964843cdd281944ce6f7b60b8b3fd18f46dafbfa6f679de8f7c0f5282a2366c"
+        },
+        {
+          "source_path": "COPYING",
+          "mirror": "tpr/sources/glog-0.4.0/licenses/COPYING",
+          "size": 3215,
+          "sha256": "0fc497129c5c69ff6f22da6933c7e4aaef082fde8437fd57680c2780100772a4"
+        },
+        {
+          "source_path": "packages/deb/copyright",
+          "mirror": "tpr/sources/glog-0.4.0/licenses/packages/deb/copyright",
+          "size": 1659,
+          "sha256": "98b38f03a6467f3bf94215812c70594cca0d05bcfc40fabfa2aa023cb9e35b66"
+        }
+      ],
+      "commit": "96a2f23dca4cc7180821ca5f32e526314395d26a",
+      "hash_provenance": "Frozen official upstream commit archive; formal extern README commit authority, no formal versions archive hash"
+    },
+    {
+      "name": "gflags",
+      "version": "2.2.1",
+      "registry_manifest": "tpr/sources/gflags-2.2.1/manifest.json",
+      "archive_filename": "gflags-46f73f88b18aee341538c0dfc22b1710a6abedef.tar.gz",
+      "archive_root": "gflags-46f73f88b18aee341538c0dfc22b1710a6abedef",
+      "sha256": "a8263376b409900dd46830e4e34803a170484707327854cc252fc5865275a57d",
+      "size": 97058,
+      "license_expression": "BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "AUTHORS.txt",
+          "mirror": "tpr/sources/gflags-2.2.1/licenses/AUTHORS.txt",
+          "size": 32,
+          "sha256": "7cf895bf126394b6d67b007631956c856094d7150f1860e9454360c187670075"
+        },
+        {
+          "source_path": "COPYING.txt",
+          "mirror": "tpr/sources/gflags-2.2.1/licenses/COPYING.txt",
+          "size": 1479,
+          "sha256": "90d1f3701813c3cd65eee2dc736746fe46b465918f3f7d6d31463a2018b33fa5"
+        }
+      ],
+      "commit": "46f73f88b18aee341538c0dfc22b1710a6abedef",
+      "hash_provenance": "Frozen official upstream commit archive; formal extern README commit authority, no formal versions archive hash"
+    }
+  ],
+  "patches": [
+    {
+      "lib": "eigen",
+      "original_patch": "build_files/ohos/deps_core_sources/patches/eigen_tbb_support.diff",
+      "sha256": "27f11340df33bc0e64371c820d470199d293d3d14347b0ec028ff30effbad8f2",
+      "invocation": "git apply --recount",
+      "files": [
+        {
+          "path": "Eigen/src/SparseCore/SparseDenseProduct.h",
+          "before_sha256": "b75de5640b43b8d086d9ccea01624a26ebd486ddd73f6760028fd4e99c962154",
+          "after_sha256": "df07f1780af3de12e56256a7fa750ecb1c43748402c4d03be249f05eb22858bf"
+        }
+      ],
+      "upstream_origin": "build_files/build_environment/patches/eigen_tbb_support.diff",
+      "replay_patch": "build_files/ohos/deps_core_sources/patches/eigen_tbb_support.diff.replay.patch",
+      "replay_sha256": "27f11340df33bc0e64371c820d470199d293d3d14347b0ec028ff30effbad8f2",
+      "normalization": "Only normalize terminal newline; use --recount for actual hunk lengths"
+    },
+    {
+      "lib": "embree",
+      "original_patch": "build_files/ohos/deps_core_sources/patches/embree.diff",
+      "sha256": "92fe631d769d1e7915a66e60049a4aa73fdefc413cfe9c49621aa29274282b56",
+      "invocation": "git apply --recount",
+      "files": [
+        {
+          "path": "common/cmake/dpcpp.cmake",
+          "before_sha256": "d542ddfdb748da0416ec3ad199ad7a28f0b865a800c53e1d05eb7443a4bf892e",
+          "after_sha256": "bc5fbd8de9917edd9b6ebcfe7f123e496cce26d1ddea01d964d98d7a9c144ae3"
+        },
+        {
+          "path": "kernels/CMakeLists.txt",
+          "before_sha256": "ea4f8c56723b3f82fce548c58d47e9bb643d9fd3f629450472f47930aa7f83d5",
+          "after_sha256": "3426591d37b4c9fa44c09b5a655b20fe39ee36ab460ee63353a438a95fadb49b"
+        }
+      ],
+      "upstream_origin": "build_files/build_environment/patches/embree.diff",
+      "replay_patch": "build_files/ohos/deps_core_sources/patches/embree.diff.replay.patch",
+      "replay_sha256": "de9338ff5ebc602f6b978e81a9b488c241984001fc713800891188492cd440d1",
+      "normalization": "Only normalize terminal newline; use --recount for actual hunk lengths"
+    },
+    {
+      "lib": "embree",
+      "original_patch": "build_files/ohos/deps_core_sources/patches/embree-native-ohos.patch",
+      "sha256": "2c2d15c5b942d3c3b89876207e04b72118fd51690d44b716dd98a732266f44f6",
+      "invocation": "git apply",
+      "files": [
+        {
+          "path": "common/sys/sysinfo.cpp",
+          "before_sha256": "3d822367b2daa63be6fd8f6720676a4aca68ae42559807cc44cd48af1802cea7",
+          "after_sha256": "4c5fa8ff60794eb7ba42877a4d84fa394503bc3377fb6283404125a30c08cf22"
+        },
+        {
+          "path": "common/sys/thread.cpp",
+          "before_sha256": "1c468ba59550428e453f51f346c0b6ecf09ba6840c0b0303c3b2b2b6df13fac4",
+          "after_sha256": "66943bf8f7658517f0c9be07b315f118eaa43468f45164af081243a5c7068905"
+        }
+      ],
+      "adaptation": "OHOS-only current-thread scheduler affinity; unsupported SDK cancellation explicitly fails"
+    }
+  ],
+  "scope": "Original complete archives, original named license/copyright/notice mirrors and separately sealed source adaptations only. No accepted source/build/prefix or existing registry edits.",
+  "baseline_versions": {
+    "path": "build_files/build_environment/cmake/versions.cmake",
+    "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1"
+  },
+  "libmv_baselines": [
+    {
+      "path": "extern/glog/README.blender",
+      "sha256": "a157aab1ee3d60c9be02df6e57d0cd133c07e4a48f916f2700e0a974c2f6b311"
+    },
+    {
+      "path": "extern/gflags/README.blender",
+      "sha256": "c0555de5839d086b21725a8e0865f2c619a2fb565c6050cb16deeaf9aa0bd195"
+    }
+  ],
+  "unsupported_or_disabled": {
+    "embree": "No SYCL/ISPC/tutorials. OHOS internal force-cancel destroyThread is explicitly unsupported; selected TBB has no caller. ARM NEON2x remains off.",
+    "ceres": "EigenSparse/Schur/custom BLAS enabled in development configure; CUDA/SuiteSparse/LAPACK/METIS/Accelerate disabled.",
+    "functional_proof_scope": "Existing development acceptance evidence is separate; registry byte/hash success does not prove Blender render/libmv/HAP or a relocated offline dependency build."
+  }
+}

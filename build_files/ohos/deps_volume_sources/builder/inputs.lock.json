@@ -1,0 +1,493 @@
+{
+  "schema_version": 1,
+  "kind": "portable-volume-builder-sealed-inputs",
+  "source_closure": "Six selected complete source archives, seven build groups; Zstd available/excluded",
+  "new_full_native_acceptance": false,
+  "sealed_files": [
+    {
+      "path": "build_files/build_environment/cmake/blosc.cmake",
+      "size": 1181,
+      "sha256": "1e654e5ba4971a87f5827f78b57840624d97717cac596aa9803de2860bda82e5"
+    },
+    {
+      "path": "build_files/build_environment/cmake/fftw.cmake",
+      "size": 2808,
+      "sha256": "2220a5d91ecb34b26b2cbca3773d7bfa4b58d3d6dbff79d0e485af05afe1def1"
+    },
+    {
+      "path": "build_files/build_environment/cmake/openvdb.cmake",
+      "size": 4394,
+      "sha256": "8e16b8a37c974d07b8a07e3f782bcf4b52f9450d4591c923f7c43d44289e41cd"
+    },
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "size": 72783,
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1"
+    },
+    {
+      "path": "build_files/build_environment/patches/openvdb.diff",
+      "size": 3994,
+      "sha256": "0ba08b1c27a5ac4739db50b58a32034a79d1f14082ff4008c32e079f3231a6da"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/ATTRIBUTION.md",
+      "size": 1955,
+      "sha256": "1b52beeabf81a20e29fdf5cd5bea7dd3dc9bb36c3e2f87bc6bf709918d769939"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/README.md",
+      "size": 7391,
+      "sha256": "7067f6bb80152702cd91babf123ac9884b6a8974a7e5ea697866051e25714ef5"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/audit.py",
+      "size": 6242,
+      "sha256": "bf0b93dd102881101ea8a7f30fd91f302f26b2cb701df939ebb1963f954c004b"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/builder.py",
+      "size": 15470,
+      "sha256": "3878c54362f2fe089fcb1c94d6aa6dc91f348021981427e5196875025db9ffe0"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "size": 808,
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/cmake/native-host.cmake",
+      "size": 812,
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/cmake/zlib/CMakeLists.txt",
+      "size": 2302,
+      "sha256": "ad6d81d4aa2e003e47fdcc3c66cae5a6780d31e58fb266902ce6147c1fbda0b0"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/CMakeLists.txt",
+      "size": 2294,
+      "sha256": "d6dd3d2a1309f40ae3e0bf00c2f7127e8c900380ec60946ef929a08673151d49"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/affinity_probe.cc",
+      "size": 1421,
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/fftw_acceptance.cpp",
+      "size": 4380,
+      "sha256": "16ce32a7bf646d5108578d34c63807aaaff5ad14f213c09821745f4889627a41"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/nanovdb_stream_regression.cpp",
+      "size": 4880,
+      "sha256": "78f6e667a3a163540f4c872bca863adaedc06de17c52d9575d09f7f2ef904ad3"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/native_probe.cc",
+      "size": 1161,
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/pic.cpp",
+      "size": 392,
+      "sha256": "dc24e08a02057c8e899a36258f3f32189582382e4e61319441f015ceacf7e764"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/tbb_acceptance.cc",
+      "size": 1991,
+      "sha256": "d57ffc6bbc5e6c18e383b4e8b77dc15e153af8a3268eaa821bc7ee8f08fc9ad3"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/consumers/volume_acceptance.cpp",
+      "size": 8700,
+      "sha256": "483ea55b3fbbcb3af5052e202c489ecc34736185e6458cef5c4c5382f534e5bb"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/io_utils.py",
+      "size": 5916,
+      "sha256": "ff8c7d2a824977025e980f7f0a1a6a73811b08b66d3ba6e11ac893d52c6698be"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/launcher.py",
+      "size": 3118,
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/metadata.py",
+      "size": 8766,
+      "sha256": "cffc9c9e2ab8e1dc4170c11d0e47bdf62d19b0b264d6702a173b3467961d924e"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/patches/0003-nanovdb-stream-probe-rewind.patch",
+      "size": 4701,
+      "sha256": "56e767a9ed7a05b8ac23c2fd2db8e317d44cf63edd3078887eb5e4f191961ad6"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/patches/nanovdb-stream-baseline.json",
+      "size": 1042,
+      "sha256": "23c7c2a438236badb4dc50d19c2aa067ea99c54da0814f081f9b1b1d7e94cdaf"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/preflight/CMakeLists.txt",
+      "size": 717,
+      "sha256": "5482a000e826874e83317d7ff5199ea29079341e8803fd9e95a1f1aa8c3d669b"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/recipe.json",
+      "size": 4893,
+      "sha256": "2e872dd0328aa53cafad0dbcd676b9b46a8a06a2f09f056cb0ae6a909fda40d5"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/source_tree.py",
+      "size": 7655,
+      "sha256": "2ed1694aea2ba2a0bf6eae9d38e13c068cf57ccedbe9ccb1872de31656d69e8b"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/sources.lock.json",
+      "size": 20939,
+      "sha256": "5e1220be4e54ff4342e8380d6b893243c710588e60419a2e3ac12a3a51e38740"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/toolchain.py",
+      "size": 6880,
+      "sha256": "5802b6324d68720e10f17190f9377100fe75fd9cad8332f86d287b8f98a77977"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/builder/vendor_archive.py",
+      "size": 8263,
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/inventories/blosc.json",
+      "size": 85974,
+      "sha256": "05cd3c3442a6095eae36933b59aa4dfc9170356c66ca9ab3cb822e78f2a63154"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/inventories/fftw.json",
+      "size": 555490,
+      "sha256": "f788d4c73299eeba36878d53994181e375e02eb0e9df4f827740882b33352aee"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/inventories/imath.json",
+      "size": 66102,
+      "sha256": "fa179d4b2ab18b624a5df577d2de18921140bf572a3898aa9293f2edeaa58c17"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/inventories/openvdb.json",
+      "size": 265411,
+      "sha256": "ea2a70b59c23bc49885d182869f6e8ee7369a49dc84d7573ec13239c37203bff"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/inventories/tbb.json",
+      "size": 208342,
+      "sha256": "8fd2ec55314b8184c7a6a48ba6635cdf5992dbca36b656d47b163707904f1d07"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/inventories/zlib.json",
+      "size": 40034,
+      "sha256": "1a097ddf81911657d2396efd04038a9f812f2b5a2df8fa851d31b7512e3b9f69"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/inventories/zstd.json",
+      "size": 105626,
+      "sha256": "4d48b464184d3083999779918af67b7ad64a5fff2ed056df05ddde39b86db93e"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/LICENSE.md",
+      "size": 1497,
+      "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/website/license.rst",
+      "size": 1953,
+      "sha256": "21bd6d29519338c582dfd570a3ce9120277f24c1eff2ffb97d903b7ea93294d8"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/Apache-2.0-standard-text-from-TBB.txt",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/CreateNanoGrid.h",
+      "size": 103972,
+      "sha256": "218999c0e7e5a330c1ae42b412b7597eec22c9b7b3f6c167ff8f553db9bb0d39"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/IO.h",
+      "size": 35227,
+      "sha256": "44f2655a1feec0383bdecf57afc20eaa1e4fb833a2f3aaa742e6783c7c8343b4"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/NanoVDB.h",
+      "size": 284044,
+      "sha256": "811aabbbfa11a627c07c574e3d0ca7e5b37f3601cb89cf97bf5b60b11268e0f5"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/nanovdb/nanovdb/NanoVDB.h",
+      "size": 284044,
+      "sha256": "811aabbbfa11a627c07c574e3d0ca7e5b37f3601cb89cf97bf5b60b11268e0f5"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/nanovdb/nanovdb/io/IO.h",
+      "size": 35227,
+      "sha256": "44f2655a1feec0383bdecf57afc20eaa1e4fb833a2f3aaa742e6783c7c8343b4"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/nanovdb/nanovdb/tools/CreateNanoGrid.h",
+      "size": 103972,
+      "sha256": "218999c0e7e5a330c1ae42b412b7597eec22c9b7b3f6c167ff8f553db9bb0d39"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/CMakeLists.txt",
+      "size": 25735,
+      "sha256": "4488efb2f22a8b2733485a968a9725df216cb936d96719ab08d8c06afc812d45"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/io/Archive.cc",
+      "size": 47563,
+      "sha256": "54589745a0cd0c029540dbc69c82da6fd944d7947f2f6098edca19ef2c69b4e1"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/io/File.cc",
+      "size": 24722,
+      "sha256": "78d278bde7fb2aa1237c660f37d119c3ac8d3f273d98eb72f326945c5e7677fa"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/io/TempFile.cc",
+      "size": 4435,
+      "sha256": "98feef76bfaa3cf771ab3813f096851341c2be79a877fb68273b3333eecfdea1"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/openvdb.h",
+      "size": 9157,
+      "sha256": "cc861aef5c2bb92112e189fb9a98f9b4e14010d016a90977ea5443422cc45075"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/LICENSE",
+      "size": 1002,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/contrib/dotzlib/LICENSE_1_0.txt",
+      "size": 1359,
+      "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/COPYING",
+      "size": 18091,
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/LICENSE",
+      "size": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/build/LICENSE",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/patches/blender-openvdb-original.diff",
+      "size": 3994,
+      "sha256": "0ba08b1c27a5ac4739db50b58a32034a79d1f14082ff4008c32e079f3231a6da"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/patches/fftw-native-source.patch",
+      "size": 2263,
+      "sha256": "8bbbd08c56ec865476c222f74cad07065dafdf6b6c950557244248e80480fe57"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/patches/openvdb-native-source.patch",
+      "size": 342,
+      "sha256": "b47acded76ae6e02771511e0a6e20b0df63b0e04d8818f23f52822721e9154a8"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/LICENSES/BITSHUFFLE.txt",
+      "size": 1148,
+      "sha256": "ef357c2061cf67db298f9f1565572ee229ad9263582a9f9d0ebff5094f5d10ac"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/LICENSES/BLOSC.txt",
+      "size": 1644,
+      "sha256": "05cc09a42b9ec8ba3e8b33b605f940a302d171df103753d5809791ce3cef3271"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/LICENSES/FASTLZ.txt",
+      "size": 1226,
+      "sha256": "a453a7a272fbd24105b39959f76996d50dad80b22d1c310f6c67f74f62ae4054"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/LICENSES/LZ4.txt",
+      "size": 1544,
+      "sha256": "0dcd2b0db9e9e8371436f3cf9147c767e83777d0290958286902b31549ef0946"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/LICENSES/SNAPPY.txt",
+      "size": 1475,
+      "sha256": "5221a36a801b981fbdfda7b87db64cff231a3b88223a066c325411b539df796f"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/LICENSES/STDINT.txt",
+      "size": 1568,
+      "sha256": "f2af03db562e88539f019b1ab0881878ee82d0c80f3bce68c650064652e25d7b"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/LICENSES/ZLIB.txt",
+      "size": 1002,
+      "sha256": "fe9e40f351c2347e9550eed6839d88e565fffb3f09559af5546c7c3b4ee2e4bd"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/licenses/internal-complibs/zlib-1.2.11/contrib/dotzlib/LICENSE_1_0.txt",
+      "size": 1359,
+      "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/manifest.json",
+      "size": 813,
+      "sha256": "b616c33da6d5bd196b3f146719c9625d4908c9d834e66b99140fd8ccdbf505ee"
+    },
+    {
+      "path": "tpr/sources/blosc-1.21.1/source.part0000",
+      "size": 1456777,
+      "sha256": "f387149eab24efa01c308e4cba0f59f64ccae57292ec9c794002232f7903b55b"
+    },
+    {
+      "path": "tpr/sources/fftw-3.3.10/licenses/AUTHORS",
+      "size": 585,
+      "sha256": "14e1b1c6a7d84613c85a4c457b4167fb4927ce239ec45123e85ba5eefca4e7bb"
+    },
+    {
+      "path": "tpr/sources/fftw-3.3.10/licenses/COPYING",
+      "size": 18002,
+      "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+    },
+    {
+      "path": "tpr/sources/fftw-3.3.10/licenses/COPYRIGHT",
+      "size": 844,
+      "sha256": "8a74b35d541d93fdf58a22a3d3baa48ae3edbf6d715edfeb6457c21968ae43ac"
+    },
+    {
+      "path": "tpr/sources/fftw-3.3.10/licenses/doc/html/License-and-Copyright.html",
+      "size": 5246,
+      "sha256": "661a682f438fffc64a6d6bdcf4dc120d5c7461c4f7c4672a59c1228593f97603"
+    },
+    {
+      "path": "tpr/sources/fftw-3.3.10/licenses/doc/license.texi",
+      "size": 1842,
+      "sha256": "68f733830a3b4dbf66815ca54b5637015517848c5f32f38f1ea2057782161a77"
+    },
+    {
+      "path": "tpr/sources/fftw-3.3.10/manifest.json",
+      "size": 656,
+      "sha256": "61025e7ea37ea02713130dffc7b8adb466011c1e4b6f63f5ecc48a0c4f115d0f"
+    },
+    {
+      "path": "tpr/sources/fftw-3.3.10/source.part0000",
+      "size": 4144100,
+      "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467"
+    },
+    {
+      "path": "tpr/sources/imath-3.2.2/manifest.json",
+      "size": 593,
+      "sha256": "5d9eeb215f41ef21ff1bf5e9b99cd987d9d4a574a9a39ac1fc6c102e25ee54e2"
+    },
+    {
+      "path": "tpr/sources/imath-3.2.2/source.part0000",
+      "size": 689217,
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/LICENSE",
+      "size": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/openvdb/openvdb/COPYRIGHT",
+      "size": 81,
+      "sha256": "58917c3592999d2274199d5e1ef6a6013bf722ad8e6895720f9b7d60cfd54370"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/openvdb/openvdb/LICENSE",
+      "size": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/openvdb_houdini/openvdb_houdini/COPYRIGHT",
+      "size": 81,
+      "sha256": "58917c3592999d2274199d5e1ef6a6013bf722ad8e6895720f9b7d60cfd54370"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/openvdb_houdini/openvdb_houdini/LICENSE",
+      "size": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/openvdb_maya/openvdb_maya/COPYRIGHT",
+      "size": 81,
+      "sha256": "58917c3592999d2274199d5e1ef6a6013bf722ad8e6895720f9b7d60cfd54370"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/openvdb_maya/openvdb_maya/LICENSE",
+      "size": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/licenses/openvdb_wolfram/OpenVDBLink/LTemplate/LICENSE.txt",
+      "size": 1103,
+      "sha256": "e78e5ec7aa08533812ed5ae26d8a252da592416370f350a65c59468c39cc2772"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/manifest.json",
+      "size": 892,
+      "sha256": "f3e93db475a2bc79db95d4374945c5fbfcf2f0d83c809016c6c1753ab87c3ec4"
+    },
+    {
+      "path": "tpr/sources/openvdb-13.0.0/source.part0000",
+      "size": 4891966,
+      "sha256": "4d6a91df5f347017496fe8d22c3dbb7c4b5d7289499d4eb4d53dd2c75bb454e1"
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+      "size": 11631,
+      "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c"
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/manifest.json",
+      "size": 630,
+      "sha256": "f09bd7d1d92cf66fa0cda8c46ddd5daaea002bf3dff1eb752164518ce8850ddc"
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/source.part0000",
+      "size": 6836514,
+      "sha256": "01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a"
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/manifest.json",
+      "size": 560,
+      "sha256": "57d2b1dac5b12798d3d6d1aedcd36584efc77e933b1a40c41e08669e5467f26c"
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/source.part0000",
+      "size": 1512791,
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23"
+    },
+    {
+      "path": "tpr/sources/zstd-1.5.7/manifest.json",
+      "size": 623,
+      "sha256": "f0dd8f50451b5760e23e6c4d0c00e3e55d3b8e4a1bb8c53ec5490f59a055f259"
+    },
+    {
+      "path": "tpr/sources/zstd-1.5.7/source.part0000",
+      "size": 2434947,
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+    }
+  ]
+}

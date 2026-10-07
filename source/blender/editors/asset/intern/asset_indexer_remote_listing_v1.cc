@@ -6,6 +6,8 @@
  * \ingroup edasset
  */
 
+#include <charconv>
+
 #include <fmt/format.h>
 
 #include "BLI_assert.h"

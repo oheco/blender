@@ -1,0 +1,26 @@
+{
+  "name": "fftw",
+  "version": "3.3.10",
+  "kind": "source",
+  "filename": "fftw-3.3.10.tar.gz",
+  "url": "http://www.fftw.org/fftw-3.3.10.tar.gz",
+  "license": "GPL-2.0-or-later",
+  "license_files": [
+    "AUTHORS",
+    "COPYING",
+    "COPYRIGHT",
+    "doc/html/License-and-Copyright.html",
+    "doc/license.texi"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 4144100,
+  "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 4144100,
+      "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467"
+    }
+  ]
+}

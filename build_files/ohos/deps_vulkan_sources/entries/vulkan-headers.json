@@ -1,0 +1,18 @@
+{
+  "name": "vulkan-headers",
+  "version": "1.4.341",
+  "kind": "source",
+  "filename": "vulkan-headers-v1.4.341.tar.gz",
+  "url": "https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.341.tar.gz",
+  "license": "Apache-2.0 OR MIT",
+  "license_files": [
+    "LICENSE.md",
+    "LICENSES/Apache-2.0.txt",
+    "LICENSES/MIT.txt"
+  ],
+  "upstream_repository": "https://github.com/KhronosGroup/Vulkan-Headers",
+  "tag": "refs/tags/v1.4.341",
+  "commit": "b5c8f996196ba4aa6d8f97e52b5d3b6e70f7e4e2",
+  "size": 3058464,
+  "sha256": "8876aad926b2e72bdefddc34885472d5332e2d20aa3ed57313466f0bc982cf3f"
+}

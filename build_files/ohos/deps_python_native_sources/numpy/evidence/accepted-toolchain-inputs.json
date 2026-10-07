@@ -1,0 +1,44 @@
+{
+  "native_sdk": "26.0.0.35-Beta clang15.0.4",
+  "cplusplus": "C++17/static SDK libc++",
+  "nice": 10,
+  "ninja_jobs": 2,
+  "lld_threads": 1,
+  "files": [
+    {
+      "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/python/hap/numpy/sign_compiler.py",
+      "sha256": "b8fd03097d6472c69a006c84ce36c582b499cce9e7322ef08d8f8fbb5f9a6c61",
+      "size": 5107
+    },
+    {
+      "path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang",
+      "sha256": "9b223e08b65958d79838f28cfff8dde98e438825a0129d3c0fde297d6ccb2121",
+      "size": 109074304
+    },
+    {
+      "path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang++",
+      "sha256": "9b223e08b65958d79838f28cfff8dde98e438825a0129d3c0fde297d6ccb2121",
+      "size": 109074304
+    },
+    {
+      "path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/lib/aarch64-linux-ohos/libc++.a",
+      "sha256": "52e59afca841c33337dc4b95d3bde412961cda1ea19aeaf6ac7d4a2b84f6f78d",
+      "size": 29
+    },
+    {
+      "path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/lib/aarch64-linux-ohos/libc++_static.a",
+      "sha256": "60c24001384e7297b81ae47f5226d94dd35096164a63e18de030051405b6233c",
+      "size": 10695774
+    },
+    {
+      "path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/lib/aarch64-linux-ohos/libc++abi.a",
+      "sha256": "92ea28f2a64521e3ca40fff1ca8990d497d24a1108f5d5d2d8024e0610d5cdc4",
+      "size": 2030016
+    },
+    {
+      "path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/NOTICE.txt",
+      "sha256": "aa81614810ebe8da49122564fcddca1bbedb14bffc86aab5dcc9fe1e61007c3f",
+      "size": 693439
+    }
+  ]
+}

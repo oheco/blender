@@ -1,0 +1,13 @@
+{
+  "accepted_binary_sha256": "630ab3172ccd3cde05bc44aaf14997be83516c623dc43564281e5e01081eb152",
+  "hardlinks_materialized_as_exact_regular_bytes": 0,
+  "internal_symlinks": 0,
+  "members": 2258,
+  "native_PC_tool_rebuild": "NOTRUN",
+  "original_bytes_sha256": "053e5252d736fa55a98a09e5124ead6391103717eb3bd465c1da882705a9cfef",
+  "original_package_inventory_objects": 1912,
+  "perl5.44.0_original_binary_sha256": "630ab3172ccd3cde05bc44aaf14997be83516c623dc43564281e5e01081eb152",
+  "schema": 1,
+  "upstream_adapter_claim": "native container, PC explicitly unsupported; actual accepted generator is independent terminal evidence",
+  "upstream_network_system_mutation_build_script_executed": false
+}

@@ -1,0 +1,16 @@
+{
+  "version": "20.1.8",
+  "name": "llvm-project-20.1.8.src.tar.xz",
+  "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz",
+  "sha256": "6898f963c8e938981e6c4a302e83ec5beb4630147c7311183cf61069af16333d",
+  "size": 147242952,
+  "blender_md5": "915e251a657450a2ba8e4c106e4f9555",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_paths": ["llvm/LICENSE.TXT", "clang/LICENSE.TXT", "lld/LICENSE.TXT", "libcxx/LICENSE.TXT", "libcxxabi/LICENSE.TXT", "libunwind/LICENSE.TXT"],
+  "provenance": {
+    "blender": "build_files/build_environment/cmake/versions.cmake:287-295",
+    "github_release_metadata": "https://api.github.com/repos/llvm/llvm-project/releases/tags/llvmorg-20.1.8",
+    "github_asset_id": 271383182,
+    "note": "SHA256 and size match official GitHub release asset metadata; download script independently verifies SHA256, MD5 and size. This is a source archive, never a Linux prebuilt binary."
+  }
+}

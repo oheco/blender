@@ -1,0 +1,29 @@
+{
+  "name": "opensubdiv",
+  "version": "v3_7_0",
+  "kind": "source",
+  "filename": "opensubdiv-v3_7_0.tar.gz",
+  "url": "https://github.com/PixarAnimationStudios/OpenSubdiv/archive/v3_7_0.tar.gz",
+  "license": "TOST-1.0",
+  "license_files": [
+    "LICENSE.txt",
+    "NOTICE.txt"
+  ],
+  "upstream_repository": "https://github.com/PixarAnimationStudios/OpenSubdiv",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 40736075,
+  "sha256": "f843eb49daf20264007d807cbc64516a1fed9cdb1149aaf84ff47691d97491f9",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 33554432,
+      "sha256": "37db507c8d4366714955369dc7cc5a25d61b6ef685ce9c9058cb0e0ee0f13890"
+    },
+    {
+      "filename": "source.part0001",
+      "size": 7181643,
+      "sha256": "b2892557e124e8a5d9c6aea77021f1b611f6084e46008564add38e4eac8eac8c"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+--- a/intern/draco_bridge/intern/decoder.cpp
++++ b/intern/draco_bridge/intern/decoder.cpp
+@@ -10,6 +10,9 @@
+ #include "decoder.h"
+ 
+ #include <cinttypes>
++#include <cstdio>
++#include <cstring>
++#include <map>
+ #include <memory>
+ #include <vector>
+ 

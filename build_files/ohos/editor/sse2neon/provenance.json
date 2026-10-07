@@ -1,0 +1,16 @@
+{
+  "status": "PASS existing complete pinned source and Unicode/space full source extraction",
+  "actual_exit_code": 0,
+  "registry_id": "tpr/sources/sse2neon-227cc413fb2d50b2a10073087be96b59d5364aea",
+  "registry_manifest_sha256": "4e8168e5d0a8d3c9090493ee841169e4a44ede4d86a7509a9e0db7cf8340fb2b",
+  "archive_sha256": "3427a495743bb6fd1b5f9f806b80f57d67b1ac7ccf39a5f44aedd487fd7e6da1",
+  "archive_size": 136342,
+  "source_files": 25,
+  "source_inventory_sha256": "fddaf682cdfaaa0ec87cd2ed23e26d4f7525e2c82eecbab80f418dae9b52612b",
+  "header_sha256": "69bb92f9553692e25079f55b6beb2de31ee01a8b270d043bf4de7d2d1b450ed9",
+  "license_sha256": "5c347d431a555ec6e5bc9720ceba2119570357dab5203372d469be9bcce374cc",
+  "temporary_directory": "/data/storage/el2/base/haps/entry/temp/sse2neon-source-verify-xrfn01ac",
+  "network_requests": 0,
+  "compiler_executed": false,
+  "native_header_compatibility": "NOT_RUN"
+}

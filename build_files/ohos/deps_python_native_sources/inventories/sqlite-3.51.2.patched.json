@@ -1,0 +1,290 @@
+[
+  {
+    "executable": false,
+    "path": "Makefile.fallback",
+    "sha256": "67d473327dd92f5cad68fddb78b8bb3e8745aba851147945893e4db5a2b59892",
+    "size": 547
+  },
+  {
+    "executable": false,
+    "path": "Makefile.in",
+    "sha256": "3976c9e52b764e24af07f36efeb5751ca8f5f5ae3798069c2e7a1bd589193a4a",
+    "size": 10409
+  },
+  {
+    "executable": false,
+    "path": "Makefile.msc",
+    "sha256": "7977bc45975c42307ac77ae8384e52ea20178efd707b1af4780558dfe90363e8",
+    "size": 30979
+  },
+  {
+    "executable": false,
+    "path": "README.txt",
+    "sha256": "6c2c52310aebc296b779d1d4f2094566394f7c184bd7e53f1d7346492528ffb7",
+    "size": 3563
+  },
+  {
+    "executable": false,
+    "path": "Replace.cs",
+    "sha256": "74ba0687a84c328df2836f73d7d36368099a5f5c1c360a84211e51fa71f1dfc0",
+    "size": 7272
+  },
+  {
+    "executable": false,
+    "path": "VERSION",
+    "sha256": "0b9baa59c211d630e60177f1e0fd592d53cf8d4b04cd8b04fcc9abc409bcedf0",
+    "size": 7
+  },
+  {
+    "executable": false,
+    "path": "auto.def",
+    "sha256": "3fef2a9ad38fe623e7ae33e73814b9ca1bbe3d253e0f18953a98d5a47c697238",
+    "size": 1007
+  },
+  {
+    "executable": false,
+    "path": "autosetup/LICENSE",
+    "sha256": "679b9208e67df09977456d1d2ae4d885b9badf02c47b45a28cf95ee27c14cb18",
+    "size": 1737
+  },
+  {
+    "executable": false,
+    "path": "autosetup/README.autosetup",
+    "sha256": "5a82b34f065ec4ce6f03cfa3dae158f841fa22e9381bba5489ea4083e295903e",
+    "size": 382
+  },
+  {
+    "executable": false,
+    "path": "autosetup/README.md",
+    "sha256": "28e2b8a01c0222cbc643ce74c35796b2cfc4ca4158d31f1de83a0e46db071a1c",
+    "size": 18681
+  },
+  {
+    "executable": true,
+    "path": "autosetup/autosetup",
+    "sha256": "9005aac8dfb41edef49376711c4e153eeec98c0fa39bcfa24d9d1b05de79a356",
+    "size": 63145
+  },
+  {
+    "executable": true,
+    "path": "autosetup/autosetup-config.guess",
+    "sha256": "e3d148130e9151735f8b9a8e69a70d06890ece51468a9762eb7ac0feddddcc2f",
+    "size": 50743
+  },
+  {
+    "executable": true,
+    "path": "autosetup/autosetup-config.sub",
+    "sha256": "11c54f55c3ac99e5d2c3dc2bb0bcccbf69f8223cc68f6b2438daa806cf0d16d8",
+    "size": 39713
+  },
+  {
+    "executable": true,
+    "path": "autosetup/autosetup-find-tclsh",
+    "sha256": "546af36d01bf2be55949eeaecb0963509d03ebf1634f4f2a19760f3769aad3b7",
+    "size": 782
+  },
+  {
+    "executable": false,
+    "path": "autosetup/autosetup-test-tclsh",
+    "sha256": "955c5966fb008607030e89618f8c74dbbc69dc830393261e98dc668a80b5dd37",
+    "size": 531
+  },
+  {
+    "executable": false,
+    "path": "autosetup/cc-db.tcl",
+    "sha256": "455ba84859a051c72e607d789ae652264f657195ce2c76ea66d3113684e1e522",
+    "size": 390
+  },
+  {
+    "executable": false,
+    "path": "autosetup/cc-lib.tcl",
+    "sha256": "07614cb53758c5cc99362f6c369b9728ace86a3ed2cfd4c7ff8462d746e8f89d",
+    "size": 4500
+  },
+  {
+    "executable": false,
+    "path": "autosetup/cc-shared.tcl",
+    "sha256": "027fa233775db2d1f57b39106e025477a2943fba4cf1b9a9c7c0e70cf294be87",
+    "size": 3703
+  },
+  {
+    "executable": false,
+    "path": "autosetup/cc.tcl",
+    "sha256": "d3172a53e4b33db6e74bcbf559757932f16e1222c521ab79d5b06d96c61dacb2",
+    "size": 21049
+  },
+  {
+    "executable": false,
+    "path": "autosetup/find_tclconfig.tcl",
+    "sha256": "645fd96451fef8005ae118c7bdbbd333b5d0f9b90abb31ac3a15301fb20723a8",
+    "size": 614
+  },
+  {
+    "executable": false,
+    "path": "autosetup/jimsh0.c",
+    "sha256": "77701e658859cb470167e2b207da6775e183a3f97ef45a55fb16d6ac9b94a676",
+    "size": 630112
+  },
+  {
+    "executable": false,
+    "path": "autosetup/pkg-config.tcl",
+    "sha256": "331aa6a7e638dea9b509ca094ffd664299594f5c478986d7b1822e19cc349ba8",
+    "size": 5157
+  },
+  {
+    "executable": false,
+    "path": "autosetup/proj.tcl",
+    "sha256": "2861fefc5034019ea8aeba17915871cb90046f016e326948bffa936114fb02ee",
+    "size": 77139
+  },
+  {
+    "executable": false,
+    "path": "autosetup/sqlite-config.tcl",
+    "sha256": "dff3248e333cd90a5eb91ee92e61fd5eeb4bfb44363fbb1cfd1959009a28492a",
+    "size": 85787
+  },
+  {
+    "executable": false,
+    "path": "autosetup/system.tcl",
+    "sha256": "fc0e4f05f7c75e24955e233ba93871e3b5b54e9f1f5e69f869c768a389bf4d4e",
+    "size": 11896
+  },
+  {
+    "executable": false,
+    "path": "autosetup/teaish/README.txt",
+    "sha256": "4beb97d3537774ee1f508e9bec2f973a60af8522e1fbe078c0d5821c0331c476",
+    "size": 263
+  },
+  {
+    "executable": false,
+    "path": "autosetup/teaish/core.tcl",
+    "sha256": "73be13677038b417eaea35947407db9d5d76a26ad6e6d97b9b0af0d9cc6fd7b8",
+    "size": 82424
+  },
+  {
+    "executable": false,
+    "path": "autosetup/teaish/feature.tcl",
+    "sha256": "e2c0f5858c71bba23b996942c0d4c9beed25d47e7881cd300a0380138a49480f",
+    "size": 6459
+  },
+  {
+    "executable": false,
+    "path": "autosetup/teaish/tester.tcl",
+    "sha256": "13d4468edfbe1c9660027bdcb810c2c1e9fd044c79c927fd01ec85c325aa209c",
+    "size": 8049
+  },
+  {
+    "executable": true,
+    "path": "configure",
+    "sha256": "265f6d7745f5d2a77bea83f50a8edf3dd62496ba9404c23ca735aeb035a0029e",
+    "size": 146
+  },
+  {
+    "executable": false,
+    "path": "shell.c",
+    "sha256": "310ab119236941a5ff6f10f54d278d8958faedda3e2112319dd9006ebf5d57f1",
+    "size": 1068109
+  },
+  {
+    "executable": false,
+    "path": "sqlite3.1",
+    "sha256": "1edbafb8886b64e5e72ca559d306f5ee63356cbf1059f72e908b66d1e231c46e",
+    "size": 5315
+  },
+  {
+    "executable": false,
+    "path": "sqlite3.c",
+    "sha256": "f7d8b32e48849494f13851e13e659d70ef372c5d207b84bc71c05d1e62716305",
+    "size": 9388884
+  },
+  {
+    "executable": false,
+    "path": "sqlite3.h",
+    "sha256": "6c8b9f648f36c84b0eeb3239b1e6f32b459d2c859d905ba5d59153c3569e6562",
+    "size": 671786
+  },
+  {
+    "executable": false,
+    "path": "sqlite3.pc.in",
+    "sha256": "c5467367b8b16ba116960c97f7120a6e3ef88896617afc2d4db44faeac574cad",
+    "size": 339
+  },
+  {
+    "executable": false,
+    "path": "sqlite3.rc",
+    "sha256": "819c501ae41478928054fb1776f82bd4ffb1d42d779f29c812452cb94b43d343",
+    "size": 1988
+  },
+  {
+    "executable": false,
+    "path": "sqlite3ext.h",
+    "sha256": "ea81fb7bd05882e0e0b92c4d60f677b205f7f1fbf085f218b12f0b5b3f0b9e48",
+    "size": 38632
+  },
+  {
+    "executable": false,
+    "path": "sqlite3rc.h",
+    "sha256": "4353cc4ae0919f77a8d05f4802955e6b75bd5f6ca2cce2e09351fe296f0a6dc9",
+    "size": 78
+  },
+  {
+    "executable": false,
+    "path": "tea/Makefile.in",
+    "sha256": "169df2ee2e36f95167ee9dea5931c790edd232e9fbcf41575ded3c3b6372ae7c",
+    "size": 16310
+  },
+  {
+    "executable": false,
+    "path": "tea/README.txt",
+    "sha256": "ae3295589f941bb8af39156dfe92e60de9dfe641b2067e97c6ebf3c35137cc06",
+    "size": 2972
+  },
+  {
+    "executable": false,
+    "path": "tea/_teaish.tester.tcl.in",
+    "sha256": "5aac236286f6ea705c758d1814f461671dee9b529bb39f27032299f3cda3fd43",
+    "size": 1593
+  },
+  {
+    "executable": false,
+    "path": "tea/auto.def",
+    "sha256": "c4bf68aae0616f3f0f7f3a8c8771f06710a2f4c82bc7ce550f74510fa0ec6617",
+    "size": 259
+  },
+  {
+    "executable": true,
+    "path": "tea/configure",
+    "sha256": "e7816e8e34687c64227d507d350d03864ec80dab04ca4ed11dac7bc90603d96e",
+    "size": 625
+  },
+  {
+    "executable": false,
+    "path": "tea/generic/tclsqlite3.c",
+    "sha256": "10b5f13f7a3730a3aba7cd8600749b06c5110966ef77e07e1be392f08e63604c",
+    "size": 133637
+  },
+  {
+    "executable": false,
+    "path": "tea/license.terms",
+    "sha256": "66e056b6e8687f32af30d5187611b98b12a8f46f07aaf62f43585f276e8f0ac9",
+    "size": 257
+  },
+  {
+    "executable": false,
+    "path": "tea/pkgIndex.tcl.in",
+    "sha256": "83e655fdcf4b857c9073b7e3ab8d5c889eb0dee60dc77af88c6e45e1ee7f5e1c",
+    "size": 1238
+  },
+  {
+    "executable": false,
+    "path": "tea/teaish.tcl",
+    "sha256": "86abd4e4e188fa1ba3deabe56f06f4caa3b67ae9fbc42d734e709220246a0fb3",
+    "size": 19823
+  },
+  {
+    "executable": false,
+    "path": "tea/teaish.test.tcl",
+    "sha256": "e320b68f7b75dd1947691b642d4c35fb309e9d8047aba8772d6194c949d3311a",
+    "size": 267
+  }
+]

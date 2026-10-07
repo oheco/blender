@@ -1,0 +1,18 @@
+{
+  "name": "spirv-headers",
+  "version": "vulkan-sdk-1.4.341.0",
+  "kind": "source",
+  "filename": "spirv-headers-vulkan-sdk-1.4.341.0.tar.gz",
+  "url": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.4.341.0.tar.gz",
+  "license": "MIT-Khronos-old AND MIT AND CC-BY-4.0",
+  "license_files": [
+    "LICENSE",
+    "LICENSES/CC-BY-4.0.txt",
+    "LICENSES/MIT.txt"
+  ],
+  "upstream_repository": "https://github.com/KhronosGroup/SPIRV-Headers",
+  "tag": "refs/tags/vulkan-sdk-1.4.341.0",
+  "commit": "04f10f650d514df88b76d25e83db360142c7b174",
+  "size": 561287,
+  "sha256": "cab0a654c4917e16367483296b44cdb1d614e3120c721beafcd37e3a8580486c"
+}

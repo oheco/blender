@@ -1,0 +1,23 @@
+{
+  "name": "NumPy vendored Meson native OHOS detection/Python LIBDIR",
+  "patch": "patches/numpy-vendored-meson-ohos.patch",
+  "patch_sha256": "22d6830e3151fa567e5a9cea88e914592b20c810abb88a8c3c39704800cb94ca",
+  "numpy_original_sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+  "scope": "Apply only via common complete original sourceprep with exact forward/reverse hashes; never accepted/source/formal mutations",
+  "files": [
+    {
+      "path": "vendored-meson/meson/mesonbuild/environment.py",
+      "before_sha256": "faacf7d3eeb8944a7bd70c5cfddbfff2e91bd94a24f49d37c282a0070aac14ac",
+      "before_size": 46506,
+      "after_sha256": "bda4653d9bd77273e2bbfb1c65b5ef2884f22d5078c63ae6aaaaad5efff23539",
+      "after_size": 46692
+    },
+    {
+      "path": "vendored-meson/meson/mesonbuild/dependencies/python.py",
+      "before_sha256": "ca4d7fbb0aa28e306986e67e5b1968b318f0f37f916e9d8b882d9ee7f120c423",
+      "before_size": 21462,
+      "after_sha256": "ee96cf109b2a6924a13143e533a72c06b42413627e6d22dc9fcd275a95527a12",
+      "after_size": 21650
+    }
+  ]
+}

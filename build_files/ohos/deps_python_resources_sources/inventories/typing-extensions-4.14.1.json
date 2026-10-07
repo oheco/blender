@@ -1,0 +1,47 @@
+[
+  {
+    "path": "CHANGELOG.md",
+    "size": 29656,
+    "sha256": "d452f4ce365ad47ff8b03b2d13fbf8c324b517d98c8be9e1d77cbe78189341b2"
+  },
+  {
+    "path": "LICENSE",
+    "size": 13936,
+    "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+  },
+  {
+    "path": "PKG-INFO",
+    "size": 2995,
+    "sha256": "f0b4b77a7174c372b22f85988a69457ec91c9e401183eb2ffcbead1db3cc4b9b"
+  },
+  {
+    "path": "README.md",
+    "size": 1469,
+    "sha256": "1ae2fdc99bc1185b046e424c89ecb6c4565d742504a69e2a0b719579d9271c2b"
+  },
+  {
+    "path": "pyproject.toml",
+    "size": 2846,
+    "sha256": "db3094f4fe423728ce693f751e37fada61ca13d2d6993df153721c1442bc1634"
+  },
+  {
+    "path": "src/_typed_dict_test_helper.py",
+    "size": 564,
+    "sha256": "d522d5308180d08c7775347f5cc7c842c52f3791d5b2d3c2ff7664ebc64015e9"
+  },
+  {
+    "path": "src/test_typing_extensions.py",
+    "size": 331460,
+    "sha256": "5363287249f9ff8ff5d5998a0f0510df76e13c44b07195867f982f82fcda8550"
+  },
+  {
+    "path": "src/typing_extensions.py",
+    "size": 157408,
+    "sha256": "161d25b79642827ceceedc808473807cbd19afcdbd298531891e78dc2970560c"
+  },
+  {
+    "path": "tox.ini",
+    "size": 144,
+    "sha256": "ef1261dd8b3d4576a624842ff1970cbd0e678cfbfc5f6ffb7cd3c53c62f23a4d"
+  }
+]

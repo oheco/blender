@@ -1,0 +1,25 @@
+{
+  "name": "manifold",
+  "version": "v3.5.2",
+  "kind": "source",
+  "filename": "Manifold-v3.5.2.tar.gz",
+  "url": "https://github.com/elalish/manifold/archive/refs/tags/v3.5.2.tar.gz",
+  "license": "SPDX:Apache-2.0",
+  "license_files": [
+    "LICENSE",
+    "include/manifold/linalg.h",
+    "src/svd.h"
+  ],
+  "upstream_repository": "https://github.com/elalish/manifold",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 30975714,
+  "sha256": "35cb5e0d78882f461ec39b17d8f09c2aceca761356f3ce948e3f3908289b8f2e",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 30975714,
+      "sha256": "35cb5e0d78882f461ec39b17d8f09c2aceca761356f3ce948e3f3908289b8f2e"
+    }
+  ]
+}

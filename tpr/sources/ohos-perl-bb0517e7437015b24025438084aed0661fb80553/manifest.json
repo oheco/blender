@@ -1,0 +1,22 @@
+{
+  "filename": "ohos-perl-bb0517e7437015b24025438084aed0661fb80553.tar.gz",
+  "format": "original-archive-parts",
+  "kind": "source",
+  "license": "BSD-2-Clause",
+  "license_files": [
+    "LICENSE"
+  ],
+  "name": "ohos",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "sha256": "e86252557c71ba633d6f0d9898790efa863d45c7375d5b2429a4484a5c95ec96",
+      "size": 5280
+    }
+  ],
+  "schema_version": 1,
+  "sha256": "e86252557c71ba633d6f0d9898790efa863d45c7375d5b2429a4484a5c95ec96",
+  "size": 5280,
+  "url": "https://github.com/Harmonybrew/ohos-perl/archive/bb0517e7437015b24025438084aed0661fb80553.tar.gz",
+  "version": "bb0517e7437015b24025438084aed0661fb80553"
+}

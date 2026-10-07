@@ -1,0 +1,22 @@
+{
+  "name": "urllib3",
+  "version": "2.4.0",
+  "kind": "source",
+  "filename": "urllib3-2.4.0.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/8a/78/16493d9c386d8e60e442a35feac5e00f0913c0f4b7c217c11e8ec2ff53e0/urllib3-2.4.0.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE.txt"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 390672,
+  "sha256": "414bc6535b787febd7567804cc015fee39daab8ad86268f1310a9250697de466",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 390672,
+      "sha256": "414bc6535b787febd7567804cc015fee39daab8ad86268f1310a9250697de466"
+    }
+  ]
+}

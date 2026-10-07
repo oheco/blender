@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "kind": "offline-pure-resource-orchestration-inputs",
+  "sealed_files": [
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/README.md",
+      "size": 4180,
+      "sha256": "c6b6d0cc1e55e7a4df14d831bed6eab5d1cf6be8db4b538bd25a67bf2c7eb0d4"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/SOURCE-ATTRIBUTION.md",
+      "size": 2496,
+      "sha256": "f8f590e82940b4d002e1bc0d6d7174a6a17000b26f5b4e2dbbc412a1e7b16a52"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/acceptance.py",
+      "size": 8933,
+      "sha256": "3b3cb8a2a6e7264df5d5e8ba0a619a1e6fddc274bc4c0e10c7e46b5c8ac4972b"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/assemble.py",
+      "size": 344,
+      "sha256": "1ee7a0f2ad61a401129ef4ab54d9203c94bf30bde697f805053b7a44c03e348f"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/builder/README.md",
+      "size": 5170,
+      "sha256": "dcf4dee780e394b664b738177b58b036b4c0e3f3f4363c9c09b56826db2f6a48"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/builder/builder.py",
+      "size": 13278,
+      "sha256": "a8ae0f07f73449d1adb4d2da93ddaded553f6413dd86b96628a6626dc9f5c0f8"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/builder/guardtests.py",
+      "size": 7846,
+      "sha256": "ff00c8f9cae8d7499eb0d2cbc143882abc41916812f8595876734d116c1c6169"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/check_native.py",
+      "size": 9560,
+      "sha256": "f8fd49743a022025b5cddc766751159259474187fe95df6b3ca7eaca9f3ac959"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/attrs-25.3.0.json",
+      "size": 18039,
+      "sha256": "9d8498c67b19aec579c15b6e51103f9a546cfe1ec241679963a68d2ba3871aed"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/cattrs-25.1.1.json",
+      "size": 23788,
+      "sha256": "74d55e76c55a80b77f98885f9bb62dc398166c1dbc376bc674590a29d41ffc91"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/certifi-2026.7.22.json",
+      "size": 2692,
+      "sha256": "c5e3d605c57ada7bb6130095c68c4cfdcb684aedc95f9134ae72bc004c084849"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/charset-normalizer-3.4.1.json",
+      "size": 14322,
+      "sha256": "1877d60bda938bc55a776809c4b282c9ce99a61a632b7d650ae184276f85acc9"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/idna-3.15.json",
+      "size": 2941,
+      "sha256": "75efd25ed4c5a70d146d286247021fa687552d04a8bf5efc4c4c58ea8ec11e75"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/requests-2.33.0.json",
+      "size": 12384,
+      "sha256": "de46fa3da5e0bf7d17789d95cb799b14d37494a4ddb389e934f8dd8ca73057e6"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/typing-extensions-4.14.1.json",
+      "size": 1263,
+      "sha256": "03601dd9aba50aec8597783cf17dc2c5c34c342937f1f4bc5a1a2cbdd659e43d"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/inventories/urllib3-2.8.0.json",
+      "size": 19487,
+      "sha256": "ac32ef7349ef06191eaf0b98501133a9b204d749f239565728c1558f69cb3648"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/materialize.py",
+      "size": 336,
+      "sha256": "6585a028a1be61602bfa53a0ffb1499adc60fbf67f5303033edd2340ca5dcc50"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/attrs-25.3.0.json",
+      "size": 12774,
+      "sha256": "ad151c5dee1509ad54cb49911a801ef06629556beaf3a18c49c8077b2af5c5bb"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/cattrs-25.1.1.json",
+      "size": 10311,
+      "sha256": "d559167d624d59df856ca42e366393fef8e8af1c6a7cedbfe55dd24de583c92c"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/certifi-2026.7.22.json",
+      "size": 4584,
+      "sha256": "c6fe912677e373608eab51e324946005998faeb0fa999e6ddada24676e3556d3"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/charset-normalizer-3.4.1.json",
+      "size": 118196,
+      "sha256": "4586ad4bd57a3f1ab3f7ba6a30d0e0ecfe1a20912bdfbaa69e5b661dc53293ef"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/idna-3.15.json",
+      "size": 9756,
+      "sha256": "e939f2f3e7e1b302d6b8ade5553b713bf6ff3409ecb3fe0b98ab2eaf54965a60"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/requests-2.33.0.json",
+      "size": 7074,
+      "sha256": "f3b8c020d62a23207f4d001d74d86592f58ab40fabb71e0773d36c06e311d18d"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/typing-extensions-4.14.1.json",
+      "size": 5322,
+      "sha256": "a2e299574cfe80ea00b556c17d7c7de4ebad275a40d6acbbc7c5b01dddad892f"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/metadata/urllib3-2.8.0.json",
+      "size": 9510,
+      "sha256": "5315e7401db3cacccd0c2ce5daf81f752a9cc3614b18c37f2b79930b7159ce2f"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/attrs-25.3.0/LICENSE",
+      "size": 1109,
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/attrs-25.3.0/docs/license.md",
+      "size": 1289,
+      "sha256": "2da25a89fa0fe1957e42b32fb438290e2796009788c161da4fb9792d53f0146e"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/cattrs-25.1.1/LICENSE",
+      "size": 1074,
+      "sha256": "f5fb9d1ede37a88ca47f420c499dca0f4a05bc993e12c77d23520aad291c01bf"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/certifi-2026.7.22/LICENSE",
+      "size": 989,
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/charset-normalizer-3.4.1/LICENSE",
+      "size": 1071,
+      "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/charset-normalizer-3.4.1/data/NOTICE.md",
+      "size": 490,
+      "sha256": "0cb3efcfd8f7a02a337e98dc3de4b0b57424d7208a332b26e7deb8cb94c13922"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/idna-3.15/LICENSE.md",
+      "size": 1541,
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/requests-2.33.0/LICENSE",
+      "size": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/requests-2.33.0/NOTICE",
+      "size": 38,
+      "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/typing-extensions-4.14.1/LICENSE",
+      "size": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/notices/urllib3-2.8.0/LICENSE.txt",
+      "size": 1093,
+      "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/prepare.py",
+      "size": 333,
+      "sha256": "e373b7a4fdb13143ad0c8492f1b7224ba0b26695fd2a4b1eab10d89148e9f6db"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/resources.py",
+      "size": 20461,
+      "sha256": "fe80d6b507b842caf44214b23d9994962ad74970fd58fb4f4440706abe75388d"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/source_guard.py",
+      "size": 4759,
+      "sha256": "d47698afafea933e052a8f8993151fc9d39e360c732208cf3b7ff48f1aa8567a"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/sources.lock.json",
+      "size": 23725,
+      "sha256": "27aeac5e6fd312c672d09d31c6d937d3fa0bb9b77080017617ff75d4e444536d"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/test_guards.py",
+      "size": 8786,
+      "sha256": "c13b2a327bfba4137b668db4ec0e9439e9278d7cdee165f79c522ef1e518c733"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/verify.py",
+      "size": 338,
+      "sha256": "e0ddac7ab1e26b91c37a02ff86313ae5bef775611580bdd961946470e910a1e5"
+    },
+    {
+      "path": "build_files/ohos/vendor_archive.py",
+      "size": 8263,
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+    },
+    {
+      "path": "tpr/sources/attrs-25.3.0/manifest.json",
+      "size": 655,
+      "sha256": "b8c61753bd338b4540e9b0614aba6960f6ae27293b9d3a7f234aa2cfe40bb346"
+    },
+    {
+      "path": "tpr/sources/attrs-25.3.0/source.part0000",
+      "size": 812032,
+      "sha256": "75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b"
+    },
+    {
+      "path": "tpr/sources/cattrs-25.1.1/manifest.json",
+      "size": 635,
+      "sha256": "b15c807929a512bfa526d1bdaa2671d557aa4e6d64f6478160742e2b718cce44"
+    },
+    {
+      "path": "tpr/sources/cattrs-25.1.1/source.part0000",
+      "size": 435016,
+      "sha256": "c914b734e0f2d59e5b720d145ee010f1fd9a13ee93900922a2f3f9d593b8382c"
+    },
+    {
+      "path": "tpr/sources/certifi-2026.7.22/manifest.json",
+      "size": 651,
+      "sha256": "2d30030d096af46c93d050350fd9490aa4394521d26f5ab04927293502ec27d9"
+    },
+    {
+      "path": "tpr/sources/certifi-2026.7.22/source.part0000",
+      "size": 138112,
+      "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
+    },
+    {
+      "path": "tpr/sources/charset-normalizer-3.4.1/manifest.json",
+      "size": 668,
+      "sha256": "f21560e9e470f3ad7c584a5e82f58dee18553f01fbca35ad7c35044ed788ab86"
+    },
+    {
+      "path": "tpr/sources/charset-normalizer-3.4.1/source.part0000",
+      "size": 123188,
+      "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3"
+    },
+    {
+      "path": "tpr/sources/idna-3.15/manifest.json",
+      "size": 635,
+      "sha256": "a78044fd22c01907e48156e095a74a4001b86fb67fcec4d41e8b76c88bd83382"
+    },
+    {
+      "path": "tpr/sources/idna-3.15/source.part0000",
+      "size": 199245,
+      "sha256": "ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc"
+    },
+    {
+      "path": "tpr/sources/requests-2.33.0/manifest.json",
+      "size": 662,
+      "sha256": "4f0a975513d6e9b2bb51c5d1af91f220612347d2be196063a3dc3ad0654b4c9a"
+    },
+    {
+      "path": "tpr/sources/requests-2.33.0/source.part0000",
+      "size": 134232,
+      "sha256": "c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652"
+    },
+    {
+      "path": "tpr/sources/typing-extensions-4.14.1/manifest.json",
+      "size": 672,
+      "sha256": "ac437ce6bada6c841b7afc82b38bab44e42523e1de60c97748ff1343e7b47d30"
+    },
+    {
+      "path": "tpr/sources/typing-extensions-4.14.1/source.part0000",
+      "size": 107673,
+      "sha256": "38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36"
+    },
+    {
+      "path": "tpr/sources/urllib3-2.8.0/manifest.json",
+      "size": 639,
+      "sha256": "33544beb6d1fcc7039bdd94dacf0460182e1befcf1aaf06f21ac4e5bc034c399"
+    },
+    {
+      "path": "tpr/sources/urllib3-2.8.0/source.part0000",
+      "size": 458972,
+      "sha256": "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63"
+    }
+  ],
+  "source_lock": {
+    "path": "build_files/ohos/deps_python_resources_sources/sources.lock.json",
+    "sha256": "27aeac5e6fd312c672d09d31c6d937d3fa0bb9b77080017617ff75d4e444536d",
+    "size": 23725
+  },
+  "recipe_files": [
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/README.md",
+      "size": 4180,
+      "sha256": "c6b6d0cc1e55e7a4df14d831bed6eab5d1cf6be8db4b538bd25a67bf2c7eb0d4"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/SOURCE-ATTRIBUTION.md",
+      "size": 2496,
+      "sha256": "f8f590e82940b4d002e1bc0d6d7174a6a17000b26f5b4e2dbbc412a1e7b16a52"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/acceptance.py",
+      "size": 8933,
+      "sha256": "3b3cb8a2a6e7264df5d5e8ba0a619a1e6fddc274bc4c0e10c7e46b5c8ac4972b"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/assemble.py",
+      "size": 344,
+      "sha256": "1ee7a0f2ad61a401129ef4ab54d9203c94bf30bde697f805053b7a44c03e348f"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/builder/README.md",
+      "size": 5170,
+      "sha256": "dcf4dee780e394b664b738177b58b036b4c0e3f3f4363c9c09b56826db2f6a48"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/builder/builder.py",
+      "size": 13278,
+      "sha256": "a8ae0f07f73449d1adb4d2da93ddaded553f6413dd86b96628a6626dc9f5c0f8"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/builder/guardtests.py",
+      "size": 7846,
+      "sha256": "ff00c8f9cae8d7499eb0d2cbc143882abc41916812f8595876734d116c1c6169"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/check_native.py",
+      "size": 9560,
+      "sha256": "f8fd49743a022025b5cddc766751159259474187fe95df6b3ca7eaca9f3ac959"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/materialize.py",
+      "size": 336,
+      "sha256": "6585a028a1be61602bfa53a0ffb1499adc60fbf67f5303033edd2340ca5dcc50"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/prepare.py",
+      "size": 333,
+      "sha256": "e373b7a4fdb13143ad0c8492f1b7224ba0b26695fd2a4b1eab10d89148e9f6db"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/resources.py",
+      "size": 20461,
+      "sha256": "fe80d6b507b842caf44214b23d9994962ad74970fd58fb4f4440706abe75388d"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/source_guard.py",
+      "size": 4759,
+      "sha256": "d47698afafea933e052a8f8993151fc9d39e360c732208cf3b7ff48f1aa8567a"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/sources.lock.json",
+      "size": 23725,
+      "sha256": "27aeac5e6fd312c672d09d31c6d937d3fa0bb9b77080017617ff75d4e444536d"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/test_guards.py",
+      "size": 8786,
+      "sha256": "c13b2a327bfba4137b668db4ec0e9439e9278d7cdee165f79c522ef1e518c733"
+    },
+    {
+      "path": "build_files/ohos/deps_python_resources_sources/verify.py",
+      "size": 338,
+      "sha256": "e0ddac7ab1e26b91c37a02ff86313ae5bef775611580bdd961946470e910a1e5"
+    },
+    {
+      "path": "build_files/ohos/vendor_archive.py",
+      "size": 8263,
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+    }
+  ],
+  "recipe_sha256": "03bcd413dc1bd2fb25b90042a3e3f7f8d2b6e60d74bd860d9415cbbd5dcef637",
+  "entry": "build_files/ohos/deps_python_resources_sources/builder/builder.py",
+  "source_count": 8,
+  "source_files": 643,
+  "original_archive_bytes": 2408470,
+  "resource_files": 193,
+  "native_payload_assembled": false,
+  "terminal_native_accepted": false,
+  "bpy_acceptance": "NOT_RUN",
+  "HAP_acceptance": "NOT_RUN"
+}

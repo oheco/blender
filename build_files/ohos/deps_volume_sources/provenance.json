@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "kind": "volume-dependency-source-provenance",
+  "status": "source-only prepared",
+  "offline_builder_completed": false,
+  "sources": [
+    {
+      "name": "openvdb",
+      "version": "13.0.0",
+      "registry_manifest": "tpr/sources/openvdb-13.0.0/manifest.json",
+      "archive_filename": "openvdb-13.0.0.tar.gz",
+      "archive_root": "openvdb-13.0.0",
+      "sha256": "4d6a91df5f347017496fe8d22c3dbb7c4b5d7289499d4eb4d53dd2c75bb454e1",
+      "size": 4891966,
+      "inventory": "build_files/ohos/deps_volume_sources/inventories/openvdb.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "7a10f529ed12d9e3ed6d3fd50f157378"
+      },
+      "formal_declared_license": "SPDX:MPL-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "size": 10173
+        },
+        {
+          "source_path": "openvdb/openvdb/COPYRIGHT",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/openvdb/openvdb/COPYRIGHT",
+          "sha256": "58917c3592999d2274199d5e1ef6a6013bf722ad8e6895720f9b7d60cfd54370",
+          "size": 81
+        },
+        {
+          "source_path": "openvdb/openvdb/LICENSE",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/openvdb/openvdb/LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "size": 10173
+        },
+        {
+          "source_path": "openvdb_houdini/openvdb_houdini/COPYRIGHT",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/openvdb_houdini/openvdb_houdini/COPYRIGHT",
+          "sha256": "58917c3592999d2274199d5e1ef6a6013bf722ad8e6895720f9b7d60cfd54370",
+          "size": 81
+        },
+        {
+          "source_path": "openvdb_houdini/openvdb_houdini/LICENSE",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/openvdb_houdini/openvdb_houdini/LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "size": 10173
+        },
+        {
+          "source_path": "openvdb_maya/openvdb_maya/COPYRIGHT",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/openvdb_maya/openvdb_maya/COPYRIGHT",
+          "sha256": "58917c3592999d2274199d5e1ef6a6013bf722ad8e6895720f9b7d60cfd54370",
+          "size": 81
+        },
+        {
+          "source_path": "openvdb_maya/openvdb_maya/LICENSE",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/openvdb_maya/openvdb_maya/LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "size": 10173
+        },
+        {
+          "source_path": "openvdb_wolfram/OpenVDBLink/LTemplate/LICENSE.txt",
+          "mirror": "tpr/sources/openvdb-13.0.0/licenses/openvdb_wolfram/OpenVDBLink/LTemplate/LICENSE.txt",
+          "sha256": "e78e5ec7aa08533812ed5ae26d8a252da592416370f350a65c59468c39cc2772",
+          "size": 1103
+        }
+      ],
+      "inspected_source_spdx": [
+        {
+          "source_path": "nanovdb/nanovdb/NanoVDB.h",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/nanovdb/nanovdb/NanoVDB.h",
+          "sha256": "811aabbbfa11a627c07c574e3d0ca7e5b37f3601cb89cf97bf5b60b11268e0f5",
+          "size": 284044
+        },
+        {
+          "source_path": "nanovdb/nanovdb/io/IO.h",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/nanovdb/nanovdb/io/IO.h",
+          "sha256": "44f2655a1feec0383bdecf57afc20eaa1e4fb833a2f3aaa742e6783c7c8343b4",
+          "size": 35227
+        },
+        {
+          "source_path": "nanovdb/nanovdb/tools/CreateNanoGrid.h",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/nanovdb/nanovdb/tools/CreateNanoGrid.h",
+          "sha256": "218999c0e7e5a330c1ae42b412b7597eec22c9b7b3f6c167ff8f553db9bb0d39",
+          "size": 103972
+        },
+        {
+          "source_path": "openvdb/openvdb/CMakeLists.txt",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/CMakeLists.txt",
+          "sha256": "4488efb2f22a8b2733485a968a9725df216cb936d96719ab08d8c06afc812d45",
+          "size": 25735
+        },
+        {
+          "source_path": "openvdb/openvdb/io/Archive.cc",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/io/Archive.cc",
+          "sha256": "54589745a0cd0c029540dbc69c82da6fd944d7947f2f6098edca19ef2c69b4e1",
+          "size": 47563
+        },
+        {
+          "source_path": "openvdb/openvdb/io/File.cc",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/io/File.cc",
+          "sha256": "78d278bde7fb2aa1237c660f37d119c3ac8d3f273d98eb72f326945c5e7677fa",
+          "size": 24722
+        },
+        {
+          "source_path": "openvdb/openvdb/io/TempFile.cc",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/io/TempFile.cc",
+          "sha256": "98feef76bfaa3cf771ab3813f096851341c2be79a877fb68273b3333eecfdea1",
+          "size": 4435
+        },
+        {
+          "source_path": "openvdb/openvdb/openvdb.h",
+          "spdx": "Apache-2.0",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/openvdb-source-spdx/openvdb/openvdb/openvdb.h",
+          "sha256": "cc861aef5c2bb92112e189fb9a98f9b4e14010d016a90977ea5443422cc45075",
+          "size": 9157
+        }
+      ]
+    },
+    {
+      "name": "blosc",
+      "version": "1.21.1",
+      "registry_manifest": "tpr/sources/blosc-1.21.1/manifest.json",
+      "archive_filename": "blosc-1.21.1.tar.gz",
+      "archive_root": "c-blosc-1.21.1",
+      "sha256": "f387149eab24efa01c308e4cba0f59f64ccae57292ec9c794002232f7903b55b",
+      "size": 1456777,
+      "inventory": "build_files/ohos/deps_volume_sources/inventories/blosc.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "134b55813b1dca57019d2a2dc1f7a923"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "LICENSES/BITSHUFFLE.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/LICENSES/BITSHUFFLE.txt",
+          "sha256": "ef357c2061cf67db298f9f1565572ee229ad9263582a9f9d0ebff5094f5d10ac",
+          "size": 1148
+        },
+        {
+          "source_path": "LICENSES/BLOSC.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/LICENSES/BLOSC.txt",
+          "sha256": "05cc09a42b9ec8ba3e8b33b605f940a302d171df103753d5809791ce3cef3271",
+          "size": 1644
+        },
+        {
+          "source_path": "LICENSES/FASTLZ.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/LICENSES/FASTLZ.txt",
+          "sha256": "a453a7a272fbd24105b39959f76996d50dad80b22d1c310f6c67f74f62ae4054",
+          "size": 1226
+        },
+        {
+          "source_path": "LICENSES/LZ4.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/LICENSES/LZ4.txt",
+          "sha256": "0dcd2b0db9e9e8371436f3cf9147c767e83777d0290958286902b31549ef0946",
+          "size": 1544
+        },
+        {
+          "source_path": "LICENSES/SNAPPY.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/LICENSES/SNAPPY.txt",
+          "sha256": "5221a36a801b981fbdfda7b87db64cff231a3b88223a066c325411b539df796f",
+          "size": 1475
+        },
+        {
+          "source_path": "LICENSES/STDINT.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/LICENSES/STDINT.txt",
+          "sha256": "f2af03db562e88539f019b1ab0881878ee82d0c80f3bce68c650064652e25d7b",
+          "size": 1568
+        },
+        {
+          "source_path": "LICENSES/ZLIB.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/LICENSES/ZLIB.txt",
+          "sha256": "fe9e40f351c2347e9550eed6839d88e565fffb3f09559af5546c7c3b4ee2e4bd",
+          "size": 1002
+        },
+        {
+          "source_path": "internal-complibs/zlib-1.2.11/contrib/dotzlib/LICENSE_1_0.txt",
+          "mirror": "tpr/sources/blosc-1.21.1/licenses/internal-complibs/zlib-1.2.11/contrib/dotzlib/LICENSE_1_0.txt",
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+          "size": 1359
+        }
+      ],
+      "inspected_source_spdx": []
+    },
+    {
+      "name": "fftw",
+      "version": "3.3.10",
+      "registry_manifest": "tpr/sources/fftw-3.3.10/manifest.json",
+      "archive_filename": "fftw-3.3.10.tar.gz",
+      "archive_root": "fftw-3.3.10",
+      "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+      "size": 4144100,
+      "inventory": "build_files/ohos/deps_volume_sources/inventories/fftw.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "8ccbf6a5ea78a16dbc3e1306e234cc5c"
+      },
+      "formal_declared_license": "SPDX:GPL-2.0-or-later",
+      "notices": [
+        {
+          "source_path": "AUTHORS",
+          "mirror": "tpr/sources/fftw-3.3.10/licenses/AUTHORS",
+          "sha256": "14e1b1c6a7d84613c85a4c457b4167fb4927ce239ec45123e85ba5eefca4e7bb",
+          "size": 585
+        },
+        {
+          "source_path": "COPYING",
+          "mirror": "tpr/sources/fftw-3.3.10/licenses/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c",
+          "size": 18002
+        },
+        {
+          "source_path": "COPYRIGHT",
+          "mirror": "tpr/sources/fftw-3.3.10/licenses/COPYRIGHT",
+          "sha256": "8a74b35d541d93fdf58a22a3d3baa48ae3edbf6d715edfeb6457c21968ae43ac",
+          "size": 844
+        },
+        {
+          "source_path": "doc/html/License-and-Copyright.html",
+          "mirror": "tpr/sources/fftw-3.3.10/licenses/doc/html/License-and-Copyright.html",
+          "sha256": "661a682f438fffc64a6d6bdcf4dc120d5c7461c4f7c4672a59c1228593f97603",
+          "size": 5246
+        },
+        {
+          "source_path": "doc/license.texi",
+          "mirror": "tpr/sources/fftw-3.3.10/licenses/doc/license.texi",
+          "sha256": "68f733830a3b4dbf66815ca54b5637015517848c5f32f38f1ea2057782161a77",
+          "size": 1842
+        }
+      ],
+      "inspected_source_spdx": []
+    },
+    {
+      "name": "tbb",
+      "version": "v2022.3.0",
+      "registry_manifest": "tpr/sources/tbb-v2022.3.0/manifest.json",
+      "archive_filename": "oneTBB-v2022.3.0.tar.gz",
+      "archive_root": "oneTBB-2022.3.0",
+      "sha256": "01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a",
+      "size": 6836514,
+      "inventory": "build_files/ohos/deps_volume_sources/inventories/tbb.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "2b242c465b194ac8e1451ea1354873ae"
+      },
+      "formal_declared_license": "SPDX:Apache-2.0",
+      "notices": [
+        {
+          "source_path": "LICENSE.txt",
+          "mirror": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size": 11357
+        },
+        {
+          "source_path": "third-party-programs.txt",
+          "mirror": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+          "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c",
+          "size": 11631
+        }
+      ],
+      "inspected_source_spdx": []
+    },
+    {
+      "name": "imath",
+      "version": "3.2.2",
+      "registry_manifest": "tpr/sources/imath-3.2.2/manifest.json",
+      "archive_filename": "imath-3.2.2.tar.gz",
+      "archive_root": "Imath-3.2.2",
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
+      "size": 689217,
+      "inventory": "build_files/ohos/deps_volume_sources/inventories/imath.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "e29f25ce926ac53d8e0a52197299f61b"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/LICENSE.md",
+          "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601",
+          "size": 1497
+        },
+        {
+          "source_path": "website/license.rst",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/website/license.rst",
+          "sha256": "21bd6d29519338c582dfd570a3ce9120277f24c1eff2ffb97d903b7ea93294d8",
+          "size": 1953
+        }
+      ],
+      "inspected_source_spdx": []
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1",
+      "registry_manifest": "tpr/sources/zlib-1.3.1/manifest.json",
+      "archive_filename": "zlib-1.3.1.tar.gz",
+      "archive_root": "zlib-1.3.1",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791,
+      "inventory": "build_files/ohos/deps_volume_sources/inventories/zlib.json",
+      "formal_hash": {
+        "algorithm": "MD5",
+        "value": "9855b6d802d7fe5b7bd5b196a2271655"
+      },
+      "formal_declared_license": "SPDX:Zlib",
+      "notices": [
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/LICENSE",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+          "size": 1002
+        },
+        {
+          "source_path": "contrib/dotzlib/LICENSE_1_0.txt",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/contrib/dotzlib/LICENSE_1_0.txt",
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+          "size": 1359
+        }
+      ],
+      "inspected_source_spdx": []
+    },
+    {
+      "name": "zstd",
+      "version": "1.5.7",
+      "registry_manifest": "tpr/sources/zstd-1.5.7/manifest.json",
+      "archive_filename": "zstd-1.5.7.tar.gz",
+      "archive_root": "zstd-1.5.7",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "size": 2434947,
+      "inventory": "build_files/ohos/deps_volume_sources/inventories/zstd.json",
+      "formal_hash": {
+        "algorithm": "SHA256",
+        "value": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+      },
+      "formal_declared_license": "SPDX:BSD-3-Clause",
+      "notices": [
+        {
+          "source_path": "COPYING",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/COPYING",
+          "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+          "size": 18091
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/LICENSE",
+          "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+          "size": 1549
+        },
+        {
+          "source_path": "build/LICENSE",
+          "mirror": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/build/LICENSE",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        }
+      ],
+      "inspected_source_spdx": []
+    }
+  ],
+  "patches": [
+    {
+      "name": "openvdb",
+      "path": "build_files/ohos/deps_volume_sources/patches/openvdb-native-source.patch",
+      "sha256": "b47acded76ae6e02771511e0a6e20b0df63b0e04d8818f23f52822721e9154a8",
+      "files": [
+        {
+          "path": "openvdb/openvdb/CMakeLists.txt",
+          "before_sha256": "4488efb2f22a8b2733485a968a9725df216cb936d96719ab08d8c06afc812d45",
+          "after_sha256": "4fdfd46f07b35e4a4b74deb8b449de6602e126a04da00e747e7cad0f736d3c15"
+        }
+      ],
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    },
+    {
+      "name": "fftw",
+      "path": "build_files/ohos/deps_volume_sources/patches/fftw-native-source.patch",
+      "sha256": "8bbbd08c56ec865476c222f74cad07065dafdf6b6c950557244248e80480fe57",
+      "files": [
+        {
+          "path": "CMakeLists.txt",
+          "before_sha256": "70665025364ba1d43cd77c32d01eb5c281d8d3cb308dc805d979df1637f29e97",
+          "after_sha256": "10afafd5dbeaad73ced98d821da22e05c1daebff7654cd82359bc140f3af9bf2"
+        },
+        {
+          "path": "FFTW3Config.cmake.in",
+          "before_sha256": "9a993d678f92b240aa1a2d2e28af0bbddbfefca72bacb9ac996970290eadee5b",
+          "after_sha256": "63ab32be1447b2845242735d2771c2d63bfbae26983b264d5bd5f6485a930045"
+        },
+        {
+          "path": "fftw.pc.in",
+          "before_sha256": "7a5caf20f13be5b2e17ff8c5d84d42227ec418d74063a98f9a67d779f8499bda",
+          "after_sha256": "f704b3c82ec666d25899017c3fef056618a3434d1a9bcc36c07787241eacccb1"
+        }
+      ],
+      "invocation": [
+        "git",
+        "apply"
+      ],
+      "source_patching_is_separate_from_pristine_materialization": true
+    }
+  ],
+  "original_blender_patch": {
+    "path": "build_files/ohos/deps_volume_sources/patches/blender-openvdb-original.diff",
+    "sha256": "0ba08b1c27a5ac4739db50b58a32034a79d1f14082ff4008c32e079f3231a6da"
+  },
+  "supplementary_notices": [
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/NanoVDB.h",
+      "sha256": "811aabbbfa11a627c07c574e3d0ca7e5b37f3601cb89cf97bf5b60b11268e0f5",
+      "license": "Apache-2.0",
+      "provenance": "full original header retained, including copyright/SPDX"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/IO.h",
+      "sha256": "44f2655a1feec0383bdecf57afc20eaa1e4fb833a2f3aaa742e6783c7c8343b4",
+      "license": "Apache-2.0",
+      "provenance": "full original header retained, including copyright/SPDX"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/CreateNanoGrid.h",
+      "sha256": "218999c0e7e5a330c1ae42b412b7597eec22c9b7b3f6c167ff8f553db9bb0d39",
+      "license": "Apache-2.0",
+      "provenance": "full original header retained, including copyright/SPDX"
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/nanovdb/Apache-2.0-standard-text-from-TBB.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "license": "Apache-2.0",
+      "provenance": "standard Apache text reused from accepted TBB; NanoVDB SPDX notice above is authoritative"
+    }
+  ],
+  "license_declaration_policy": "Formal OpenVDB metadata/archive LICENSE retains MPL-2.0 text; inspected core/NanoVDB source SPDX headers state Apache-2.0. Both original declarations are retained, never silently rewritten.",
+  "baseline_recipe_inputs": [
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1"
+    },
+    {
+      "path": "build_files/build_environment/cmake/openvdb.cmake",
+      "sha256": "8e16b8a37c974d07b8a07e3f782bcf4b52f9450d4591c923f7c43d44289e41cd"
+    },
+    {
+      "path": "build_files/build_environment/cmake/blosc.cmake",
+      "sha256": "1e654e5ba4971a87f5827f78b57840624d97717cac596aa9803de2860bda82e5"
+    },
+    {
+      "path": "build_files/build_environment/cmake/fftw.cmake",
+      "sha256": "2220a5d91ecb34b26b2cbca3773d7bfa4b58d3d6dbff79d0e485af05afe1def1"
+    },
+    {
+      "path": "build_files/build_environment/patches/openvdb.diff",
+      "sha256": "0ba08b1c27a5ac4739db50b58a32034a79d1f14082ff4008c32e079f3231a6da"
+    }
+  ],
+  "scope": "Only complete pristine original sources, named notices, separately frozen patches and candidate recipe. Existing registry and compiled native inputs are unchanged. No source compile/configure/install/runtime acceptance is implied."
+}

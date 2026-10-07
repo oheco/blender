@@ -7225,7 +7225,11 @@ static wmOperatorStatus drivers_editor_show_exec(bContext *C, wmOperator *op)
   ui::Button *but = ui::context_active_but_prop_get(C, &ptr, &prop, &index);
 
   /* changes context! */
-  if (WM_window_open_temp(C, IFACE_("Blender Drivers Editor"), SPACE_GRAPH, false)) {
+  if (ED_screen_temp_space_open(C,
+                                IFACE_("Blender Drivers Editor"),
+                                SPACE_GRAPH,
+                                USER_TEMP_SPACE_DISPLAY_WINDOW,
+                                false)) {
     ED_drivers_editor_init(C, CTX_wm_area(C));
 
     /* activate driver F-Curve for the property under the cursor */
@@ -7282,7 +7286,8 @@ static void SCREEN_OT_drivers_editor_show(wmOperatorType *ot)
 static wmOperatorStatus info_log_show_exec(bContext *C, wmOperator *op)
 {
   /* changes context! */
-  if (WM_window_open_temp(C, IFACE_("Blender Info Log"), SPACE_INFO, false)) {
+  if (ED_screen_temp_space_open(
+          C, IFACE_("Blender Info Log"), SPACE_INFO, USER_TEMP_SPACE_DISPLAY_WINDOW, false)) {
     return OPERATOR_FINISHED;
   }
   BKE_report(op->reports, RPT_ERROR, "Failed to open window!");

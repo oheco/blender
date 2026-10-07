@@ -1,0 +1,202 @@
+{
+  "name": "gflags",
+  "archive_sha256": "a8263376b409900dd46830e4e34803a170484707327854cc252fc5865275a57d",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "e92dc24887132691e5ee07f827a4e5e56ef7bde923cb37cb3b75d0dfb5bb8dae"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "3a1215b2b06721416062a56adbfcec2a871431f25dc598da3e5bd97084fa52a4"
+    },
+    {
+      "path": ".gitmodules",
+      "sha256": "046995af817ac495809df4dff35084a07eee93eb722d676953f73a1e84927b64"
+    },
+    {
+      "path": ".travis.yml",
+      "sha256": "f941c85eb6366510f1ac45307c655ae73553fed448cf84f055d886448617f3d0"
+    },
+    {
+      "path": "AUTHORS.txt",
+      "sha256": "7cf895bf126394b6d67b007631956c856094d7150f1860e9454360c187670075"
+    },
+    {
+      "path": "BUILD",
+      "sha256": "60af88acfe40434c1c4e39aedbf2cc0f71baa9c7d83279eda58f5f4c4ea66576"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "371f9fac5e52573318e4a1bc89a3d55f87063d06151e6e2861950cf03ce49c32"
+    },
+    {
+      "path": "COPYING.txt",
+      "sha256": "90d1f3701813c3cd65eee2dc736746fe46b465918f3f7d6d31463a2018b33fa5"
+    },
+    {
+      "path": "ChangeLog.txt",
+      "sha256": "941a07cbcee2bf26f17caa4e58a78a8f6ef3a52e4607c1db8cbd9e5bd9abe39c"
+    },
+    {
+      "path": "INSTALL.md",
+      "sha256": "1bc81c5f2533d5a63fc827053a25f2886306f1113f39182aeb99245a95c74fd2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b4da14b21c019e1329b4dc3ee5dc78826e3b83403d6c5fcdc1569802f829a954"
+    },
+    {
+      "path": "WORKSPACE",
+      "sha256": "bf283c13bb984965d73c0576d4826154bbf5c89f42a47ea0b023064d48bf0aa5"
+    },
+    {
+      "path": "appveyor.yml",
+      "sha256": "3de313fe62e57534c013d4995e9ee5c7d27febb0db1521928d5f4e3ddf881adf"
+    },
+    {
+      "path": "bazel/gflags.bzl",
+      "sha256": "a9a275ec57d277cea5191e40791986a2a355e7315924731f5b9ba71959afc0d1"
+    },
+    {
+      "path": "cmake/README_runtime.txt",
+      "sha256": "89969261c968b5aa68fd539ed24dda23540d192e4b0fa5c55764e00592268260"
+    },
+    {
+      "path": "cmake/config.cmake.in",
+      "sha256": "945b3382aa22b3dedeadb979e2c05159bca5e68fdba09bb47db6438e7df55874"
+    },
+    {
+      "path": "cmake/execute_test.cmake",
+      "sha256": "d2a9789917a7e51ca53893ed47348644d5d6d83d07744aacbc4c34c84b1e6a70"
+    },
+    {
+      "path": "cmake/package.cmake.in",
+      "sha256": "3e4ca60d4a6a086013eba77245b81d36680abc10d7b08d2856256b688479c460"
+    },
+    {
+      "path": "cmake/package.pc.in",
+      "sha256": "492d249a9eeb9204c17318aee83fbc99e175291695c8ad0e371e83ab720a7c43"
+    },
+    {
+      "path": "cmake/utils.cmake",
+      "sha256": "17b9f8e262b579139b682848ebf909e0b9c0b0324aa1765828b945c7fd36b2e9"
+    },
+    {
+      "path": "cmake/version.cmake.in",
+      "sha256": "cc9304f632f175537783b0cb2b447025a0c93f57923ab49fa7d8e8a450788f8e"
+    },
+    {
+      "path": "src/config.h.in",
+      "sha256": "0eb2f197e692fd3023e19c3b1fc407daf2f223e4c8aff36fd8fc32000212ca6d"
+    },
+    {
+      "path": "src/gflags.cc",
+      "sha256": "172a904509c9807c0036ae349835c3cfdbc0a52fec0b8e7c0ed6f06be83d5577"
+    },
+    {
+      "path": "src/gflags.h.in",
+      "sha256": "5fab8d43db35032a3023acb7802f124100af3637addce185f6eb23f8559e5727"
+    },
+    {
+      "path": "src/gflags_completions.cc",
+      "sha256": "d2f72eccd5be6b7f68b6f87a0426e6edb59dfb6e2c8a5c7116416b7f95533413"
+    },
+    {
+      "path": "src/gflags_completions.h.in",
+      "sha256": "bac8a543bd6e1fe80379dc4af959e102e157afd920806f6429636d60240af9a2"
+    },
+    {
+      "path": "src/gflags_completions.sh",
+      "sha256": "cc8a0aae240363a0f2561f5e664ee0e96e8f04dee152f9750583ee4344606ace"
+    },
+    {
+      "path": "src/gflags_declare.h.in",
+      "sha256": "62fb17bffed1eb372de1eff761166280899ea8f7d2cd225224a158fa8b775b00"
+    },
+    {
+      "path": "src/gflags_ns.h.in",
+      "sha256": "3811d85a1b1e3a470cb7127ba5801bdab38f36a9e09eea184a41de2606e2ebd5"
+    },
+    {
+      "path": "src/gflags_reporting.cc",
+      "sha256": "a6f5b32f763c054b57094c8786909e741bd788170ebdd6fe6ea84bf82af02752"
+    },
+    {
+      "path": "src/mutex.h",
+      "sha256": "06629164f0de1904d85f8437a794dff8905cd3725ea7909aa4073b942932cf5f"
+    },
+    {
+      "path": "src/util.h",
+      "sha256": "04c8ee453a6931d4fb88d6706a37e6c4c13639a4e8cbacf0aa3570900e3985a8"
+    },
+    {
+      "path": "src/windows_port.cc",
+      "sha256": "6b6ec367a50ccb107b05e51d2ee2490e112dd0772e0598209ee7b2c6be3419f9"
+    },
+    {
+      "path": "src/windows_port.h",
+      "sha256": "1a3857d1a794224fa140d07b256a778416cf9b498d364b8c57a5adfe718faf60"
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "sha256": "78b8addfd42e583c76734cce3adfb292a2dd1db9c1853db35510aec4c296e6c6"
+    },
+    {
+      "path": "test/config/CMakeLists.txt",
+      "sha256": "9c312ba5ef78b3b0dc9b7d9df099be398107c97d01dfb92d909f8f6262ec80bb"
+    },
+    {
+      "path": "test/config/main.cc",
+      "sha256": "6b026a7bf68f54f1c66206950dcab875f89d01b318b077314f8b28b795f83773"
+    },
+    {
+      "path": "test/flagfile.1",
+      "sha256": "46dcd820f40e03f158584a12373b1a4cf12573d9caa962914261de85c0807695"
+    },
+    {
+      "path": "test/flagfile.2",
+      "sha256": "de7f32aa3e601d0141ef760d1b32c692455bb900b02f393a27eb3e716a3fc227"
+    },
+    {
+      "path": "test/flagfile.3",
+      "sha256": "00d927e8b1ef625f84775b7209de5d5a4d10154ed4935be0f4f9e0aafb2ce96b"
+    },
+    {
+      "path": "test/gflags_build.py.in",
+      "sha256": "70c5d216f4e49f7ccc48f142be998f79e26591af0e214729f654f2593bf206de"
+    },
+    {
+      "path": "test/gflags_declare_flags.cc",
+      "sha256": "3820a85d476a446b7a90b89e1e17fe7aaf08f4a6b99ab4dfdbf3cacccd7f8bd8"
+    },
+    {
+      "path": "test/gflags_declare_test.cc",
+      "sha256": "e7e5a48e1a4cbb39fbf6f33fd042eba3cc586fff72615ab9624c3783b2cf7ea6"
+    },
+    {
+      "path": "test/gflags_strip_flags_test.cc",
+      "sha256": "8a594ec75803f456e0a59d82c1214bc7d7e1b2827cd950887cd12a1e41f68cee"
+    },
+    {
+      "path": "test/gflags_strip_flags_test.cmake",
+      "sha256": "68f357129ef7daed33a24c20354ac885dc40c7b6d640b047f6107c9b94c0458d"
+    },
+    {
+      "path": "test/gflags_unittest.cc",
+      "sha256": "f8c33c3933f96cd4fcc058a4ea4c3ab4c7a1a4439eaad32b449e481d95e23432"
+    },
+    {
+      "path": "test/gflags_unittest_flagfile",
+      "sha256": "6e34489cfde260903d79b5b049fad0be8208a92a430abb6afa6fe3de75386df6"
+    },
+    {
+      "path": "test/nc/CMakeLists.txt",
+      "sha256": "1d61f37adbfe358ea2c9d63d31ff7375c5f20a0fc49b82ed38af2713fd59db09"
+    },
+    {
+      "path": "test/nc/gflags_nc.cc",
+      "sha256": "d125f1aa4575d3d8e84f7bb1ae4fb2f35584599b7afe86c0f87771aee7801b98"
+    }
+  ]
+}

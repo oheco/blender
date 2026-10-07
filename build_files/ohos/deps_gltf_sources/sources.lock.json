@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "name": "draco",
+      "version": "1.5.7",
+      "filename": "draco-v1.5.7.zip",
+      "archive_root": "draco-1.5.7",
+      "sha256": "27b72ba2d5ff3d0a9814ad40d4cb88f8dc89a35491c0866d952473f8f9416b77",
+      "size": 61004707,
+      "manifest": "tpr/sources/draco-1.5.7/manifest.json",
+      "inventory": "build_files/ohos/deps_gltf_sources/inventories/draco.json",
+      "notices": [
+        {
+          "source_path": "AUTHORS",
+          "mirror": "tpr/sources/draco-1.5.7/licenses/AUTHORS",
+          "sha256": "7399754545fa82fbf402e3e91d50de0b63772870fd807c48dd9af25c042efb10"
+        },
+        {
+          "source_path": "LICENSE",
+          "mirror": "tpr/sources/draco-1.5.7/licenses/LICENSE",
+          "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+        },
+        {
+          "source_path": "docs/assets/css/pygments/UNLICENSE.txt",
+          "mirror": "tpr/sources/draco-1.5.7/licenses/docs/assets/css/pygments/UNLICENSE.txt",
+          "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+        },
+        {
+          "source_path": "docs/spec/00.00.02.authors.md",
+          "mirror": "tpr/sources/draco-1.5.7/licenses/docs/spec/00.00.02.authors.md",
+          "sha256": "53c26600f7dbcde2153d8ba2f29e61605784ecfbc4b6d08d5bdfdfe249ac425b"
+        }
+      ]
+    },
+    {
+      "name": "meshoptimizer",
+      "version": "1.1",
+      "filename": "meshoptimizer-v1.1.zip",
+      "archive_root": "meshoptimizer-1.1",
+      "sha256": "6aecc2d3b4328f1f5f4127fb16a144de80cc9eb35c32387807c8c04b0b6dbbf3",
+      "size": 579571,
+      "manifest": "tpr/sources/meshoptimizer-1.1/manifest.json",
+      "inventory": "build_files/ohos/deps_gltf_sources/inventories/meshoptimizer.json",
+      "notices": [
+        {
+          "source_path": "LICENSE.md",
+          "mirror": "tpr/sources/meshoptimizer-1.1/licenses/LICENSE.md",
+          "sha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26"
+        }
+      ]
+    }
+  ]
+}

@@ -252,7 +252,8 @@ def sync_status_generator(repos_and_do_online):
                 # Avoid high CPU usage on exit.
                 time.sleep(0.01)
 
-    atexit.register(cmd_force_quit)
+    if sys.platform != "ohos":
+        atexit.register(cmd_force_quit)
 
     cmd_batch = bl_extension_utils.CommandBatch(
         # Used as a prefix in status.
@@ -261,6 +262,12 @@ def sync_status_generator(repos_and_do_online):
         batch_job_limit=network_connection_limit,
     )
     del cmd_batch_partial
+    if sys.platform == "ohos":
+        from . import bl_extension_worker_ui
+        bl_extension_worker_ui.track_notify_batch(cmd_batch, staging_paths=tuple(
+            os.path.join(repo.directory, ".blender_ext", "index.json" + unique_ext)
+            for repo, do_online in repos_and_do_online if do_online
+        ))
 
     yield None
 
@@ -329,7 +336,10 @@ def sync_status_generator(repos_and_do_online):
         if command_result.all_complete:
             break
 
-    atexit.unregister(cmd_force_quit)
+    if sys.platform == "ohos":
+        bl_extension_worker_ui.untrack_notify_batch(cmd_batch)
+    else:
+        atexit.unregister(cmd_force_quit)
 
     yield None
 
@@ -590,6 +600,11 @@ def update_non_blocking(*, repos_fn, immediate=False):
     # `repos_fn` A generator or function that returns a list of ``(RepoItem, do_online_sync)`` pairs.
     # Some repositories don't check for update on startup for example
 
+    if sys.platform == "ohos":
+        from .bl_extension_worker import shutdown_status
+        if not shutdown_status()["accepting"]:
+            return False
+
     # Needed so `update_in_progress` doesn't get confused by an old completed item hanging around.
     # Further, there is no need to keep this item any longer than is needed if a new notification is added.
     while _notify_queue and _notify_queue[0].is_complete:
@@ -629,3 +644,18 @@ def update_ui_region_register(region):
 
 def update_ui_region_unregister(region):
     _notify_regions.discard(region)
+
+
+def shutdown_non_blocking():
+    """Stop the notification consumers; worker/report ownership is separate."""
+    from .bl_extension_worker_ui import _assert_main
+    _assert_main()
+    if bpy.app.timers.is_registered(_ui_refresh_timer):
+        bpy.app.timers.unregister(_ui_refresh_timer)
+    for handle in _notify_queue:
+        if handle._sync_generator is not None:
+            handle._sync_generator.close()
+            handle._sync_generator = None
+        handle.is_complete = True
+    _notify_queue.clear()
+    _notify_regions.clear()

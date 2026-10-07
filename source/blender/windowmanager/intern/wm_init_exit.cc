@@ -73,6 +73,10 @@
 #include "RNA_define.hh"
 
 #include "WM_api.hh"
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+#  include <Python.h>
+#  include "GHOST_OHOSHost.h"
+#endif
 #include "WM_keymap.hh"
 #include "WM_message.hh"
 #include "WM_types.hh"
@@ -314,6 +318,9 @@ void WM_init(bContext *C, int argc, const char **argv)
     WM_init_gpu();
 
     if (!WM_platform_support_perform_checks()) {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+      GPU_render_end(); /* Balance the synchronous init render scope before unwind. */
+#endif
       WM_exit(C, -1);
     }
 
@@ -440,7 +447,11 @@ static void free_openrecent()
 
 static int wm_exit_handler(bContext *C, const wmEvent *event, void *userdata)
 {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  WM_embedded_exit_request(EXIT_SUCCESS);
+#else
   WM_exit(C, EXIT_SUCCESS);
+#endif
 
   UNUSED_VARS(event, userdata);
   return WM_UI_HANDLER_BREAK;
@@ -474,8 +485,78 @@ void wm_exit_schedule_delayed(const bContext *C)
 
 void UV_clipboard_free();
 
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+static bool embedded_exit_pre_called = false;
+static bool embedded_addon_exit_called = false;
+static bool embedded_exit_hooks_failed = false;
+static bool embedded_exit_hooks_running = false;
+bool WM_embedded_exit_prepared()
+{
+  return embedded_exit_pre_called && embedded_addon_exit_called &&
+         !embedded_exit_hooks_failed && !embedded_exit_hooks_running;
+}
+WMEmbeddedExtensionsState WM_embedded_exit_prepare(bContext *C, bool do_user_exit_actions)
+{
+  GHOST_OHOSHost *host = ghost_ohos_host_installed();
+  if (!host || ghost_ohos_host_is_engine(host) != GHOST_OHOS_OK ||
+      WM_embedded_teardown_authorized() || embedded_exit_hooks_failed || embedded_exit_hooks_running) {
+    return WMEmbeddedExtensionsState::Error;
+  }
+  const auto state = WM_embedded_extensions_status();
+  if (state != WMEmbeddedExtensionsState::Ready) { return state; }
+  if (Py_IsInitialized() && BPY_embedded_phase() == BPYEmbeddedPhase::BindingsStarting) {
+    return WMEmbeddedExtensionsState::Error;
+  }
+  embedded_exit_hooks_running = true;
+  try {
+    /* Raw interpreter has no BPY callbacks. NotStarted may have native callbacks.
+     * Completed bindings use the live context even before CTX_py_init was set. */
+    const bool bindings = Py_IsInitialized() && BPY_embedded_phase() == BPYEmbeddedPhase::Ready;
+    if (!embedded_exit_pre_called) {
+      embedded_exit_pre_called = true;
+      if (C && (!Py_IsInitialized() || bindings)) {
+        BKE_callback_exec_boolean(CTX_data_main(C), do_user_exit_actions, BKE_CB_EVT_EXIT_PRE);
+      }
+    }
+    if (!embedded_addon_exit_called) {
+      embedded_addon_exit_called = true;
+#  if defined(WITH_PYTHON) && !defined(WITH_PYTHON_MODULE)
+      if (C && bindings) {
+        const char *imports[] = {"bpy", "bpy.utils", nullptr};
+        if (!BPY_run_string_eval(C, imports, "bpy.utils._on_exit()")) {
+          embedded_exit_hooks_failed = true;
+        }
+      }
+#  endif
+    }
+  }
+  catch (...) {
+    /* No native teardown has started. Unknown partial hooks stay owned; do not
+     * replay them or let a swallowed Python/C++ exception permit finalization. */
+    embedded_exit_hooks_failed = true;
+  }
+  embedded_exit_hooks_running = false;
+  return embedded_exit_hooks_failed ? WMEmbeddedExtensionsState::Error :
+                                     WM_embedded_extensions_status();
+}
+#endif
+
 void WM_exit_ex(bContext *C, const bool do_python_exit, const bool do_user_exit_actions)
 {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  if (!WM_embedded_teardown_authorized() || !WM_embedded_teardown_finalcheck()) {
+    WM_embedded_exit_request(EXIT_FAILURE);
+    throw WMEmbeddedInitExit{EXIT_FAILURE};
+  }
+#  ifdef WITH_PYTHON
+  if (Py_IsInitialized() && BPY_embedded_phase() == BPYEmbeddedPhase::RawInterpreter) {
+    /* No BPY/RNA start happened. Gate is ready; finalize raw Python BEFORE any
+     * native context/global teardown, without calling uninitialized BPY cleanup. */
+    PyGILState_Ensure();
+    Py_FinalizeEx();
+  }
+#  endif
+#endif
   wmWindowManager *wm = C ? CTX_wm_manager(C) : nullptr;
 
   /* While nothing technically prevents saving user data in background mode,
@@ -484,10 +565,12 @@ void WM_exit_ex(bContext *C, const bool do_python_exit, const bool do_user_exit_
    * Saving #BLENDER_QUIT_FILE is also not likely to be desired either. */
   BLI_assert(G.background ? (do_user_exit_actions == false) : true);
 
+#ifndef WITH_GHOST_OHOS_EMBEDDED
   if (C) {
     /* Run `exit_pre` Python handlers. */
     BKE_callback_exec_boolean(CTX_data_main(C), do_user_exit_actions, BKE_CB_EVT_EXIT_PRE);
   }
+#endif
 
   /* First wrap up running stuff, we assume only the active WM is running. */
   /* Modal handlers are on window level freed, others too? */
@@ -535,7 +618,7 @@ void WM_exit_ex(bContext *C, const bool do_python_exit, const bool do_user_exit_
     }
   }
 
-#if defined(WITH_PYTHON) && !defined(WITH_PYTHON_MODULE)
+#if defined(WITH_PYTHON) && !defined(WITH_PYTHON_MODULE) && !defined(WITH_GHOST_OHOS_EMBEDDED)
   /* Without this, we there isn't a good way to manage false-positive resource leaks
    * where a #PyObject references memory allocated with guarded-alloc, #71362.
    *
@@ -553,7 +636,11 @@ void WM_exit_ex(bContext *C, const bool do_python_exit, const bool do_user_exit_
    * Check `CTX_py_init_get(C)` in case this function runs before Python has been initialized.
    * Which can happen when the GPU backend fails to initialize.
    */
-  if (C && CTX_py_init_get(C)) {
+  if (C && CTX_py_init_get(C)
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+      && Py_IsInitialized()
+#  endif
+  ) {
     /* Calls `addon_utils.disable_all()` as well as unregistering all "startup" modules. */
     const char *imports[] = {"bpy", "bpy.utils", nullptr};
     BPY_run_string_eval(C, imports, "bpy.utils._on_exit()");
@@ -653,7 +740,15 @@ void WM_exit_ex(bContext *C, const bool do_python_exit, const bool do_user_exit_
 
 #ifdef WITH_PYTHON
   /* Option not to exit Python so this function can be called from 'atexit'. */
-  if ((C == nullptr) || CTX_py_init_get(C)) {
+  if (((C == nullptr) || CTX_py_init_get(C)
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+       || BPY_embedded_phase() == BPYEmbeddedPhase::Ready
+#  endif
+      )
+#  ifdef WITH_GHOST_OHOS_EMBEDDED
+      && Py_IsInitialized()
+#  endif
+  ) {
     /* NOTE: (old note)
      * before BKE_blender_free so Python's garbage-collection happens while library still exists.
      * Needed at least for a rare crash that can happen in python-drivers.
@@ -717,6 +812,13 @@ void WM_exit_ex(bContext *C, const bool do_python_exit, const bool do_user_exit_
 
 void WM_exit(bContext *C, const int exit_code)
 {
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  /* Synchronous WM_init and creator argument/script/load failure paths unwind
+   * to creator initialize. Normal event-driven close uses the request flag. */
+  WM_embedded_exit_request(exit_code);
+  UNUSED_VARS(C);
+  throw WMEmbeddedInitExit{exit_code};
+#else
   const bool do_user_exit_actions = G.background ? false : (exit_code == EXIT_SUCCESS);
   WM_exit_ex(C, true, do_user_exit_actions);
 
@@ -725,6 +827,7 @@ void WM_exit(bContext *C, const int exit_code)
   }
 
   exit(exit_code);
+#endif
 }
 
 void WM_script_tag_reload()

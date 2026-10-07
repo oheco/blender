@@ -42,6 +42,11 @@
 #include "PRF_profile.hh"
 
 #include "WM_api.hh"
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+#  include "GHOST_OHOSHost.h"
+#  include "wm_ohos_extensions_shutdown.hh"
+#  include "BPY_extern_python.hh"
+#endif
 #include "WM_keymap.hh"
 #include "WM_message.hh"
 #include "WM_types.hh"
@@ -594,6 +599,109 @@ void wm_close_and_free(bContext *C, wmWindowManager *wm)
 
   MEM_delete(wm->runtime);
 }
+
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+static bool embedded_exit_requested = false;
+static int embedded_exit_code = 0;
+static bool embedded_shutdown_requested = false;
+static bool embedded_teardown_active = false;
+static ohos::ExtensionsShutdown embedded_extensions;
+static WMEmbeddedExtensionsState embedded_state(ohos::ExtensionsExitState state)
+{
+  switch (state) {
+    case ohos::ExtensionsExitState::Ready: return WMEmbeddedExtensionsState::Ready;
+    case ohos::ExtensionsExitState::Pending: return WMEmbeddedExtensionsState::Pending;
+    case ohos::ExtensionsExitState::Error: return WMEmbeddedExtensionsState::Error;
+  }
+  return WMEmbeddedExtensionsState::Error;
+}
+static void embedded_python_context(bContext *C)
+{
+  if (C && Py_IsInitialized() && BPY_embedded_phase() == BPYEmbeddedPhase::Ready) {
+    /* Context remains live while drain callbacks finish operators and redraw. */
+    const PyGILState_STATE gil = PyGILState_Ensure();
+    BPY_context_set(C);
+    PyGILState_Release(gil);
+  }
+}
+WMEmbeddedExtensionsState WM_embedded_extensions_begin(bContext *C)
+{
+  GHOST_OHOSHost *host = ghost_ohos_host_installed();
+  if (!host || ghost_ohos_host_is_engine(host) != GHOST_OHOS_OK) { return WMEmbeddedExtensionsState::Error; }
+  if (embedded_teardown_active) { return WMEmbeddedExtensionsState::Error; }
+  if (embedded_shutdown_requested) { return embedded_state(embedded_extensions.status()); }
+  embedded_shutdown_requested = true;
+  embedded_python_context(C);
+  return embedded_state(embedded_extensions.begin());
+}
+WMEmbeddedExtensionsState WM_embedded_extensions_step(bContext *C)
+{
+  GHOST_OHOSHost *host = ghost_ohos_host_installed();
+  if (!host || ghost_ohos_host_is_engine(host) != GHOST_OHOS_OK) { return WMEmbeddedExtensionsState::Error; }
+  if (embedded_teardown_active) { return WMEmbeddedExtensionsState::Error; }
+  if (!embedded_shutdown_requested) { return WMEmbeddedExtensionsState::Running; }
+  embedded_python_context(C);
+  return embedded_state(embedded_extensions.pump());
+}
+WMEmbeddedExtensionsState WM_embedded_extensions_status()
+{
+  GHOST_OHOSHost *host = ghost_ohos_host_installed();
+  if (!host || ghost_ohos_host_is_engine(host) != GHOST_OHOS_OK) { return WMEmbeddedExtensionsState::Error; }
+  if (!embedded_shutdown_requested) { return WMEmbeddedExtensionsState::Running; }
+  return embedded_state(embedded_extensions.status());
+}
+bool WM_embedded_teardown_enter()
+{
+  if (embedded_teardown_active || !WM_embedded_exit_prepared() ||
+      WM_embedded_extensions_status() != WMEmbeddedExtensionsState::Ready) {
+    return false;
+  }
+  embedded_teardown_active = true;
+  return true;
+}
+bool WM_embedded_teardown_authorized() { return embedded_teardown_active; }
+bool WM_embedded_teardown_finalcheck()
+{
+  /* Pure inventory only, including when the destructive phase has started.
+   * begin/step are forbidden after this token: failure is fatal, never resumable. */
+  return WM_embedded_exit_prepared() &&
+         WM_embedded_extensions_status() == WMEmbeddedExtensionsState::Ready;
+}
+void WM_embedded_exit_request(int exit_code)
+{
+  embedded_exit_requested = true;
+  if (exit_code != 0 || embedded_exit_code == 0) { embedded_exit_code = exit_code; }
+  /* Event callbacks are already on Blender's ENGINE/Python main thread. */
+  WM_embedded_extensions_begin(nullptr);
+}
+bool WM_embedded_exit_pending(int *exit_code)
+{
+  if (exit_code) { *exit_code = embedded_exit_code; }
+  return embedded_exit_requested;
+}
+void WM_embedded_main_begin(bContext *C)
+{
+  embedded_exit_requested = false;
+  embedded_exit_code = 0;
+  wm_event_do_refresh_wm_and_depsgraph(C);
+}
+void WM_embedded_main_step(bContext *C, bool foreground)
+{
+  PRF_scope(ProfileCategory::Core);
+  wm_window_events_process(C);
+  wm_event_do_handlers(C);
+  wm_event_do_notifiers(C);
+  /* Evaluate AFTER lifecycle processing, so detach never races a stale draw decision.
+   * No surface still processes lifecycle, timers, handlers, and cooperative stop. */
+  GHOST_OHOSHost *host = ghost_ohos_host_installed();
+  GHOST_OHOSWindowInfo surface{};
+  if (foreground && !embedded_exit_requested && host &&
+      ghost_ohos_host_get_window(host, ghost_ohos_host_main_window(host), &surface) == GHOST_OHOS_OK) {
+    wm_draw_update(C);
+  }
+  PRF_frame_mark;
+}
+#endif
 
 void WM_main(bContext *C)
 {

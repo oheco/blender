@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "classification": "SOURCE/PYTHON/READ-ONLY ARGV PLAN ONLY",
+  "result": "PASS",
+  "checks": [
+    {
+      "check": "all authored Python AST+compile (no script execution)",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "12 original formal source entries exact accepted lock",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "original patch bytes exact accepted SHA",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "native configure/build/acceptance argv is only a NOTRUN plan",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "all runtime/Meson/Cython/acceptance launches consume NEW Python",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "Ninja explicit and SDK15 ELF tools native.ini",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "exact source-complete native no-BLAS/LAPACK-lite profile",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "vendored Meson used; Meson1.9 formal sdist still sealed",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "offline source tool imports and real probes retained",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "full source-tool src/root bootstrap excludes NumPy/standalone Meson",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "Unicode/space relocated plan owns only new source/runtime routes",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "planning creates no roots, source trees, launchers or receipts",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "reject parent path traversal",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject old external accepted runtime",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject NumPy/runtime output overlap",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject partial source tool graph",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject old accepted source borrowing",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject LLVM20 substitution",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "preserve real ld.lld invocation basename",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject jobs above accepted bounded budget",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject truncated/non-ELF bytes without loader execution",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject non-AArch64 ELF parser bytes",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "reject ELF table range escape",
+      "result": "PASS",
+      "gate": "source/Python plan negative only"
+    },
+    {
+      "check": "HAP acceptance source has no subprocess/os-system imports or calls",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "after guard on failed full control flow; no receipt published",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "after-guard cofailure preserves original failure",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "success receipt only after completed after-guard",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "failed final source guard prevents native PASS receipt",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "original complete NumPy tar SHA",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "complete eight bundled BLAS/LAPACK-lite source hashes and actual selecting meson.build",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "exact forward/reverse pure-source patch contract vendored-meson/meson/mesonbuild/environment.py",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    },
+    {
+      "check": "exact forward/reverse pure-source patch contract vendored-meson/meson/mesonbuild/dependencies/python.py",
+      "result": "PASS",
+      "gate": "source/Python plan only"
+    }
+  ],
+  "authoring_python": "3.14.7 (heads/ohos/3.14.7:c831d76, Sep 12 2026, 06:45:38) [Clang 15.0.4 (/srv/workspace/llvm-release/2026_0617_llvm15_release/toolchain/ll",
+  "source_roots_created": false,
+  "temp_files_created": false,
+  "actual_sourceprep_full_inventories": "Parent common sourceguard responsibility; not a shortcut to source PASS",
+  "new_native_configure_compile_probe": "NOTRUN",
+  "old_or_new_NumPy_runtime_tests": "NOTRUN",
+  "real_HAP_install_execution": "NOTRUN"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "20.1.8",
+  "target": "llvm/cmake/modules/GetHostTriple.cmake",
+  "upstream_sha256": "412a66c5fc33d13ae28734ff3856f9f12e473ce2aaee3d4018ca31d6bc346952",
+  "patched_sha256": "e20e6d900cdc32236f19b42d3fc82cb04ce532a5240fd5e591c3b49ebea02641",
+  "patch_file": "0001-native-ohos-host-triple.diff",
+  "patch_sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d",
+  "fragment_sha256": "d1b8a8aa762421d415c17fe60a0090c8d5660ef751f49dbfed5cc6165d71d252",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "reason": "Upstream config.guess does not recognize HarmonyOS; on verified native ARM64 OHOS only, query actual compiler -dumpmachine",
+  "scope": "Only private cache LLVM source; original locked upstream archive is unchanged; no compiler version/probe/platform-name forgery"
+}

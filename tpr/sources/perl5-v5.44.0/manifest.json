@@ -1,0 +1,23 @@
+{
+  "filename": "perl5-v5.44.0.tar.gz",
+  "format": "original-archive-parts",
+  "kind": "source",
+  "license": "Artistic-1.0 OR GPL-1.0-or-later",
+  "license_files": [
+    "Copying",
+    "Artistic"
+  ],
+  "name": "perl",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "sha256": "b9a53d539af95412ecce2bdd548eac9beaf559ea48ace5dd8427504c25b01b46",
+      "size": 23036248
+    }
+  ],
+  "schema_version": 1,
+  "sha256": "b9a53d539af95412ecce2bdd548eac9beaf559ea48ace5dd8427504c25b01b46",
+  "size": 23036248,
+  "url": "https://github.com/Perl/perl5/archive/refs/tags/v5.44.0.tar.gz",
+  "version": "5.44.0"
+}

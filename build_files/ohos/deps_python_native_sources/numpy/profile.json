@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "target_python": "CPython3.13.13 actual native regular GIL, freshly built SONAME libpython3.13.so",
+  "numpy": "2.3.4",
+  "compiler": "Explicit accepted SDK15 Clang15.0.4; C++17 and static SDK libc++",
+  "accepted_profile": {
+    "strip": false,
+    "b_ndebug": "if-release",
+    "cpp_std": "c++17",
+    "blas": "none",
+    "lapack": "none",
+    "allow-noblas": true,
+    "disable-highway": false,
+    "disable-threading": false,
+    "enable-openmp": false,
+    "cpu-baseline": "min",
+    "cpu-dispatch": "max -xop -fma4"
+  },
+  "accepted_extensions": [
+    "numpy._core._multiarray_tests",
+    "numpy._core._multiarray_umath",
+    "numpy._core._operand_flag_tests",
+    "numpy._core._rational_tests",
+    "numpy._core._simd",
+    "numpy._core._struct_ufunc_tests",
+    "numpy._core._umath_tests",
+    "numpy.fft._pocketfft_umath",
+    "numpy.linalg._umath_linalg",
+    "numpy.linalg.lapack_lite",
+    "numpy.random._bounded_integers",
+    "numpy.random._common",
+    "numpy.random._generator",
+    "numpy.random._mt19937",
+    "numpy.random._pcg64",
+    "numpy.random._philox",
+    "numpy.random._sfc64",
+    "numpy.random.bit_generator",
+    "numpy.random.mtrand"
+  ],
+  "source_fallback_evidence": {
+    "path": "numpy/linalg/meson.build",
+    "lines": "5-16,19-39",
+    "condition": "not have_lapack",
+    "sources": [
+      "lapack_lite/f2c.c",
+      "lapack_lite/f2c_c_lapack.c",
+      "lapack_lite/f2c_d_lapack.c",
+      "lapack_lite/f2c_s_lapack.c",
+      "lapack_lite/f2c_z_lapack.c",
+      "lapack_lite/f2c_blas.c",
+      "lapack_lite/f2c_config.c",
+      "lapack_lite/f2c_lapack.c"
+    ],
+    "effect": "Both real lapack_lite and _umath_linalg use complete bundled fallback sources. Preserve performance limitation; no external Fortran/BLAS provider.",
+    "original_file_inventory": [
+      {
+        "path": "numpy/linalg/meson.build",
+        "size": 1415,
+        "sha256": "8ef3b3c3ad064f65e638f382ef2f40e692fa8bbe8a790364b9c1a136d392509d"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c.c",
+        "size": 12145,
+        "sha256": "2dc58f3570188a34aea9ea3a8ba567ad6ff02e989fb11d67e2ff0b6e8703ff5a"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c_c_lapack.c",
+        "size": 878639,
+        "sha256": "972924c41c0f250380594306dd4b5da66a44f3fbad5338ce80c8eb94263d58ed"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c_d_lapack.c",
+        "size": 1180203,
+        "sha256": "324cf7772bca516b2910cf60bb4ff969bf6f3405aff116f281f9276f856f7fd4"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c_s_lapack.c",
+        "size": 1161781,
+        "sha256": "d113d73157b14769cd19a0149cab296de3cb63326eb48e236b4e4d63fa18e371"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c_z_lapack.c",
+        "size": 882581,
+        "sha256": "f14974a1276e6243bd781076a9043780b5484aa12933da777e24b41af5da7b8c"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c_blas.c",
+        "size": 561076,
+        "sha256": "8e86fc4768ff8ac863589cc53c6c48383985ea840c05f2a3249db7fb0be1333f"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c_config.c",
+        "size": 50226,
+        "sha256": "738f73fa85e94bbcc2e6fcfc48d9fe138f6518fc35c4b0c811febec7104a4e9b"
+      },
+      {
+        "path": "numpy/linalg/lapack_lite/f2c_lapack.c",
+        "size": 45814,
+        "sha256": "467c1d4ff22220f85cd0769ae7aeff2f2332645753ebe5817ad85fb9c5001132"
+      }
+    ]
+  },
+  "historical_receipts": "Evidence only; do not reuse accepted runtime/NumPy binary outputs or stale configured flags",
+  "new_native_full": "NOTRUN",
+  "new_HAP_execution": "NOTRUN"
+}

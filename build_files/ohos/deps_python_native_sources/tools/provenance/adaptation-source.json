@@ -1,0 +1,26 @@
+{
+  "commit": "bb0517e7437015b24025438084aed0661fb80553",
+  "tag": "5.44.0",
+  "url": "https://github.com/Harmonybrew/ohos-perl/archive/bb0517e7437015b24025438084aed0661fb80553.tar.gz",
+  "command": [
+    "curl",
+    "--proxy",
+    "socks5h://127.0.0.1:10808",
+    "--fail",
+    "--location",
+    "--connect-timeout",
+    "30",
+    "--max-time",
+    "300",
+    "--output",
+    "/data/storage/el2/base/haps/entry/temp/blender-perl-adaptation-g5ssopvu/ohos-perl-bb0517e7437015b24025438084aed0661fb80553.tar.gz",
+    "https://github.com/Harmonybrew/ohos-perl/archive/bb0517e7437015b24025438084aed0661fb80553.tar.gz"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n\n  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\n100  1994    0  1994    0     0    772      0 --:--:--  0:00:02 --:--:--  5418\n100  5280    0  5280    0     0   2035      0 --:--:--  0:00:02 --:--:-- 13894\n",
+  "scope": "Complete immutable adaptation archive only; build/provenance correspondence not yet verified",
+  "size": 5280,
+  "sha256": "e86252557c71ba633d6f0d9898790efa863d45c7375d5b2429a4484a5c95ec96",
+  "temporary_tree_cleaned": true
+}

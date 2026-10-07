@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "kind": "core-dependency-build-recipe-candidate",
+  "status": "source handoff and development configure settings only",
+  "offline_builder_completed": false,
+  "pristine_source_materializer": "build_files/ohos/deps_core_sources/materialize_core.py",
+  "source_provenance": "build_files/ohos/deps_core_sources/provenance.json",
+  "paths": "Resolve registry records from the repository root; caller supplies private case-sensitive extraction, build and install directories. No absolute development path is build routing.",
+  "required_external_development_inputs": [
+    "Native HarmonyOS/aarch64 machine; actual native signed configure probes, not cross results",
+    "Validated native Clang20.1.8/lld20 toolchain and its actual HarmonyOS CMake platform module",
+    "SDK26.0.0.35-Beta libc++15004 __n1 headers/static runtime, experimental opt-in, and declared SDK runtime/compiler-rt objects",
+    "binary-sign-tool and real link/sign wrapper for compiler probes, executables and shared libraries",
+    "CMake3.28.2 or compatible, Ninja, Python3, Git (local patch replay only)",
+    "Complete separately frozen native TBB source recipe/prefix; real TBB::tbb and TBB::tbbmalloc exports",
+    "Current-thread sched affinity and actual whole-archive marker/linker feature checks before configuring dependent code"
+  ],
+  "candidate_common_cmake": {
+    "CMAKE_TOOLCHAIN_FILE": "${DECLARED_NATIVE_TOOLCHAIN}",
+    "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "${VERIFIED_NATIVE_HOST_INCLUDE}",
+    "CMAKE_PROJECT_INCLUDE": "${VERIFIED_NATIVE_LINK_FEATURES_AFTER_PROJECT}",
+    "CMAKE_INSTALL_PREFIX": "${PRIVATE_PREFIX}",
+    "CMAKE_INSTALL_LIBDIR": "lib",
+    "CMAKE_BUILD_TYPE": "Release",
+    "CMAKE_CXX_STANDARD": "20",
+    "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+    "CMAKE_POSITION_INDEPENDENT_CODE": "ON",
+    "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+    "CMAKE_JOB_POOLS": "compile=2;link=1",
+    "CMAKE_JOB_POOL_COMPILE": "compile",
+    "CMAKE_JOB_POOL_LINK": "link",
+    "CMAKE_FIND_USE_PACKAGE_REGISTRY": "OFF",
+    "CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY": "OFF",
+    "FETCHCONTENT_FULLY_DISCONNECTED": "ON",
+    "CMAKE_PREFIX_PATH": "${PRIVATE_PREFIX};${DECLARED_TBB_PREFIX}",
+    "TBB_DIR": "${DECLARED_TBB_PREFIX}/lib/cmake/TBB"
+  },
+  "candidate_build_order": ["eigen", "abseil", "gflags", "glog", "embree", "ceres"],
+  "candidate_component_cmake": {
+    "eigen": {
+      "BUILD_TESTING": "OFF",
+      "EIGEN_BUILD_TESTING": "OFF",
+      "EIGEN_BUILD_DOC": "OFF",
+      "EIGEN_BUILD_BLAS": "OFF",
+      "EIGEN_BUILD_LAPACK": "OFF",
+      "EIGEN_BUILD_DEMOS": "OFF"
+    },
+    "embree": {
+      "EMBREE_STATIC_LIB": "ON",
+      "EMBREE_ISPC_SUPPORT": "OFF",
+      "EMBREE_TUTORIALS": "OFF",
+      "EMBREE_SYCL_SUPPORT": "OFF",
+      "EMBREE_TASKING_SYSTEM": "TBB",
+      "EMBREE_TBB_COMPONENT": "tbb",
+      "TBB_ROOT": "${DECLARED_TBB_PREFIX}",
+      "EMBREE_TBB_ROOT": "${DECLARED_TBB_PREFIX}",
+      "EMBREE_RAY_MASK": "ON",
+      "EMBREE_FILTER_FUNCTION": "ON",
+      "EMBREE_BACKFACE_CULLING": "OFF",
+      "EMBREE_BACKFACE_CULLING_CURVES": "ON",
+      "EMBREE_BACKFACE_CULLING_SPHERES": "ON",
+      "EMBREE_TESTING_INTENSITY": "0",
+      "EMBREE_IGNORE_CMAKE_CXX_FLAGS": "OFF"
+    },
+    "abseil": {
+      "BUILD_SHARED_LIBS": "OFF",
+      "ABSL_BUILD_TESTING": "OFF",
+      "ABSL_ENABLE_INSTALL": "ON",
+      "ABSL_PROPAGATE_CXX_STD": "ON"
+    },
+    "gflags": {
+      "BUILD_SHARED_LIBS": "OFF",
+      "BUILD_STATIC_LIBS": "ON",
+      "BUILD_gflags_LIB": "ON",
+      "BUILD_gflags_nothreads_LIB": "OFF",
+      "BUILD_TESTING": "OFF",
+      "REGISTER_BUILD_DIR": "OFF",
+      "REGISTER_INSTALL_PREFIX": "OFF",
+      "GFLAGS_NAMESPACE": "gflags"
+    },
+    "glog": {
+      "BUILD_SHARED_LIBS": "OFF",
+      "BUILD_TESTING": "OFF",
+      "WITH_THREADS": "ON",
+      "WITH_TLS": "ON",
+      "WITH_GFLAGS": "ON",
+      "gflags_DIR": "${PRIVATE_PREFIX}/lib/cmake/gflags"
+    },
+    "ceres": {
+      "BUILD_SHARED_LIBS": "OFF",
+      "BUILD_TESTING": "OFF",
+      "BUILD_BENCHMARKS": "OFF",
+      "BUILD_EXAMPLES": "OFF",
+      "USE_CUDA": "OFF",
+      "SUITESPARSE": "OFF",
+      "LAPACK": "OFF",
+      "EIGENMETIS": "OFF",
+      "EIGENSPARSE": "ON",
+      "SCHUR_SPECIALIZATIONS": "ON",
+      "CUSTOM_BLAS": "ON",
+      "Eigen3_DIR": "${PRIVATE_PREFIX}/share/eigen3/cmake",
+      "absl_DIR": "${PRIVATE_PREFIX}/lib/cmake/absl"
+    }
+  },
+  "observed_development_isa": {"EMBREE_ISA_NEON": "ON", "EMBREE_ISA_NEON2X": "OFF", "meaning": "Observed actual native configuration defaults; future builder must detect the genuine target rather than preset platform/probe success"},
+  "scheduling": {"compile_parallel": 2, "link_pool": 1, "nice": 10, "lld_threads": 2},
+  "missing_final_builder_work": [
+    "Integrate repository-owned native toolchain, host and verified whole-archive feature modules without absolute developer-work dependencies",
+    "Safely extract every original archive root into caller-owned private case-sensitive storage; preserve symlinks and complete sources",
+    "Apply sealed patch sequences from provenance and check every before/after digest",
+    "Generate config headers through actual target compiler/linker/run checks; retain upstream version/platform checks",
+    "Build and install real dependencies in new directories with signing, scheduling and full provenance logging",
+    "Make installed CMake/pkgconfig metadata relocatable and ship complete runtime-selected original notices",
+    "Run native Eigen/Embree/Ceres/logging, shared PIC/ABI/exception, and moved-prefix consumers",
+    "Validate final Blender Cycles CPU/libmv/GUI and HAP packaging separately before any release claim"
+  ]
+}

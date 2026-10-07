@@ -1,0 +1,65 @@
+{
+  "archive_root": "pystring-1.1.3",
+  "source_archive_sha256": "358a56e756e701836b69a31c75d3d9d41c34d447cf7b3775bbd5620dcd3203d9",
+  "members": 9,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "156a359bbb22b0397972fcad5166213c9e2b6c093141c0535a8e249d0d1e11ce",
+      "size": 49,
+      "mode": 436
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "7b565d49be50a0490b38ae69d22f1e93ce9449546a99a8a1efcaf0ae922b7442",
+      "size": 1512,
+      "mode": 436
+    },
+    {
+      "path": "Makefile",
+      "sha256": "f75fd9abbafd49599c0ae5e57d9d2eceaab8006ff94c39eadd727723e6067b9f",
+      "size": 608,
+      "mode": 436
+    },
+    {
+      "path": "README",
+      "sha256": "e711f289e42a28f2cfcba954ba75f8060c9c5da70c2c11ca5622e9a7294e4837",
+      "size": 711,
+      "mode": 436
+    },
+    {
+      "path": "pystring.cpp",
+      "sha256": "e60cef0ead37a81326daa3b381f4cdc3189cdde2f32da4e2039967b7fb8561e6",
+      "size": 46144,
+      "mode": 436
+    },
+    {
+      "path": "pystring.h",
+      "sha256": "a389bc67c5a43c959fcaf8f8385a2ee28ce9f766d4e59e6b934f741457f8f848",
+      "size": 23403,
+      "mode": 436
+    },
+    {
+      "path": "test.cpp",
+      "sha256": "a9b065befcdbe63ab220a1ae4348cf31dbc21531f2bb67d885cf1fae7e51bd57",
+      "size": 24703,
+      "mode": 436
+    },
+    {
+      "path": "unittest.h",
+      "sha256": "887a9a3cd66151e78178802fb49b48bfb002c33c5c471372d238487e52e09685",
+      "size": 7895,
+      "mode": 436
+    }
+  ],
+  "directories": [],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "LICENSE",
+      "sha256": "7b565d49be50a0490b38ae69d22f1e93ce9449546a99a8a1efcaf0ae922b7442",
+      "size": 1512
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

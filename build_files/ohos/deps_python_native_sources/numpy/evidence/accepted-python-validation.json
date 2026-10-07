@@ -1,0 +1,127 @@
+{
+  "NAPI": {
+    "Ark_JS_registration_and_callback": "NOT_TESTED_REQUIRES_INSTALLED_HAP",
+    "elf": {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libace_napi.z.so",
+        "libc.so"
+      ],
+      "path": "NAPI-probe",
+      "runpaths": [
+        "$ORIGIN/../runtime/lib"
+      ],
+      "sha256": "91b0d31345a0c8f2d7bf088ed7e5f6890a7d553ef6aef44502bfc9c43c5350cf",
+      "size": 22848,
+      "sonames": []
+    },
+    "execution_evidence": {
+      "log": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/logs/napi-dlopen-substrate.log",
+      "output": "Shared dlopen consumer: CPython3.13.13 SSL/ffi/sqlite/compression PASS\nUnique shared PyRuntime: one libpython3.13.so before/after imports, global/consumer symbol addresses match\n",
+      "returncode": 0
+    },
+    "native_headers_compile_link_codesign": "PASS",
+    "terminal_dlopen_and_python_initialization": "PASS"
+  },
+  "actual_extensions_imported": 71,
+  "consumer": {
+    "aarch64": true,
+    "codesign": true,
+    "needed": [
+      "libpython3.13.so",
+      "libc.so"
+    ],
+    "path": "dlopen-consumer",
+    "runpaths": [
+      "$ORIGIN/../runtime/lib"
+    ],
+    "sha256": "d0f82994cfed4b0d6262887c20cc7d66a0a5181bfc617e5990fdc330e5bb4b79",
+    "size": 22848,
+    "sonames": []
+  },
+  "dlopen_layouts": {
+    "co_located_NAPI": {
+      "log": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/logs/colocated-napi-dlopen.log",
+      "output": "Shared dlopen consumer: CPython3.13.13 SSL/ffi/sqlite/compression PASS\nUnique shared PyRuntime: one libpython3.13.so before/after imports, global/consumer symbol addresses match\n",
+      "returncode": 0
+    },
+    "co_located_PyConfig_native_and_pure_paths": "PASS",
+    "co_located_consumer_ELF": {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "co-located-consumer",
+      "runpaths": [
+        "$ORIGIN"
+      ],
+      "sha256": "8e30fb852997020077d29bae2be4836bd14c18889b55e6c327a8e0944ba20d58",
+      "size": 22848,
+      "sonames": []
+    },
+    "duplicate_runtime_rejection": {
+      "log": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/logs/dlopen-reject-second-runtime.log",
+      "output": "runtime count=1 versioned=1\n",
+      "returncode": 9
+    },
+    "relative_runtime_probe_RUNPATH": [
+      "$ORIGIN/../runtime/lib"
+    ],
+    "relocated_NAPI": {
+      "log": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/logs/relocated-napi-dlopen.log",
+      "output": "Shared dlopen consumer: CPython3.13.13 SSL/ffi/sqlite/compression PASS\nUnique shared PyRuntime: one libpython3.13.so before/after imports, global/consumer symbol addresses match\n",
+      "returncode": 0
+    },
+    "relocated_runtime_and_consumer": "PASS",
+    "scope": "Terminal only; ordinary installed HAP app.loadpolicy/native namespace still required"
+  },
+  "elf_count": 74,
+  "embedding": "PASS PyConfig isolated/GIL/SSL/ffi/sqlite/compression",
+  "hap_native_libs": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/hap-layout/libs/arm64-v8a",
+  "native_configure": true,
+  "native_signature_tests": {
+    "codesign_section": true,
+    "cryptographic_certificate_trust_verification": "NOT_CLAIMED: installed binary-sign-tool has no verify command",
+    "scope": "Measured terminal process policy; ordinary HAP loadpolicy and package signing remain gates",
+    "signed_execution": "PASS",
+    "tampered_protected_payload_execution": {
+      "errno": 1,
+      "log": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/logs/signature-tampered-execution.2.log",
+      "output": "[Errno 1] Operation not permitted: '/data/storage/el2/base/haps/entry/temp/hap-python-acceptance-6klwzbvy/tampered'",
+      "returncode": null
+    },
+    "terminal_rejects_tampered": true,
+    "terminal_rejects_unsigned": true,
+    "unsigned_execution": {
+      "errno": 13,
+      "log": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/logs/signature-unsigned-execution.2.log",
+      "output": "[Errno 13] Permission denied: '/data/storage/el2/base/haps/entry/temp/hap-python-acceptance-6klwzbvy/unsigned'",
+      "returncode": null
+    },
+    "unsigned_fixture": {
+      "codesign_section": false,
+      "mode": "0755"
+    }
+  },
+  "new_native_extension": "PASS compile/sign/import",
+  "not_claimed": [
+    "full HAP install/app.loadpolicy",
+    "Ark/NAPI callback execution",
+    "NumPy until rebuilt for this SONAME",
+    "Blender application",
+    "full CPython regression",
+    "certificate-chain/Sigstore trust",
+    "formal release"
+  ],
+  "published_runtime_all_files_unchanged": true,
+  "pure_network_packages": "Can reuse only pure files from blender-ohos-python-packages/runtime; no old .so allowed",
+  "relocation": "PASS spaces/imports/embedding/dlopen",
+  "runtime_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime",
+  "soname": "libpython3.13.so",
+  "unique_shared_runtime_dlopen": "PASS",
+  "version": "3.13.13"
+}

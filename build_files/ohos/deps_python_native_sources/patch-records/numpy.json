@@ -1,0 +1,40 @@
+{
+  "changes": {
+    "numpy-2.3.4": [
+      {
+        "after": {
+          "executable": false,
+          "path": "vendored-meson/meson/mesonbuild/dependencies/python.py",
+          "sha256": "ee96cf109b2a6924a13143e533a72c06b42413627e6d22dc9fcd275a95527a12",
+          "size": 21650
+        },
+        "before": {
+          "executable": false,
+          "path": "vendored-meson/meson/mesonbuild/dependencies/python.py",
+          "sha256": "ca4d7fbb0aa28e306986e67e5b1968b318f0f37f916e9d8b882d9ee7f120c423",
+          "size": 21462
+        },
+        "path": "vendored-meson/meson/mesonbuild/dependencies/python.py"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "vendored-meson/meson/mesonbuild/environment.py",
+          "sha256": "bda4653d9bd77273e2bbfb1c65b5ef2884f22d5078c63ae6aaaaad5efff23539",
+          "size": 46692
+        },
+        "before": {
+          "executable": false,
+          "path": "vendored-meson/meson/mesonbuild/environment.py",
+          "sha256": "faacf7d3eeb8944a7bd70c5cfddbfff2e91bd94a24f49d37c282a0070aac14ac",
+          "size": 46506
+        },
+        "path": "vendored-meson/meson/mesonbuild/environment.py"
+      }
+    ]
+  },
+  "forward_check": "PASS source-only",
+  "original_archives_modified": false,
+  "reverse_check": "PASS source-only",
+  "schema": 1
+}

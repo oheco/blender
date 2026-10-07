@@ -1,0 +1,350 @@
+[
+  {
+    "executable": false,
+    "path": "LICENSE",
+    "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+    "size": 1081
+  },
+  {
+    "executable": false,
+    "path": "PKG-INFO",
+    "sha256": "3bfd818e5a898e2c01d849e2342920136d822b59454b599ad55c0d293428654c",
+    "size": 1288
+  },
+  {
+    "executable": false,
+    "path": "README.rst",
+    "sha256": "d297f465124330971cb38ef04ac94a267d4af49c4a1eab6f4553d9fdaddd6721",
+    "size": 675
+  },
+  {
+    "executable": false,
+    "path": "dev-requirements.txt",
+    "sha256": "92f21dd925c44cd617e5a15342891b5733a30c2e0b121d82f883cd7593cddb9a",
+    "size": 76
+  },
+  {
+    "executable": false,
+    "path": "docs/changelog.rst",
+    "sha256": "23c2cd98c008e1e62da60a3e6acf039e3e7c8238c89bf3a2027fcaac777abd47",
+    "size": 3168
+  },
+  {
+    "executable": false,
+    "path": "docs/conf.py",
+    "sha256": "cfa62360961df5ec4225ba7a91a13816bcda01bbb8c4621e140abcc62a2a74f0",
+    "size": 1823
+  },
+  {
+    "executable": false,
+    "path": "docs/index.rst",
+    "sha256": "89545cca6506c7e383b2fff887ea72fb2d514778f668eff823417a951512b301",
+    "size": 1302
+  },
+  {
+    "executable": false,
+    "path": "docs/pyproject_hooks.rst",
+    "sha256": "4c5052189a2838399b4c68ad5200d10553ec3a5ff9adc1ba9ed6ed5cdd52110b",
+    "size": 2002
+  },
+  {
+    "executable": false,
+    "path": "docs/release-process.rst",
+    "sha256": "de19d84f4437ba3aa1b47809afd9b0a6e765672f80b77716d2e95982feaca197",
+    "size": 389
+  },
+  {
+    "executable": false,
+    "path": "docs/requirements.txt",
+    "sha256": "9891900b48d94ed0ddd71fc453b9550ce4b77f64fc74555e78b7b4cb5ff42381",
+    "size": 12
+  },
+  {
+    "executable": false,
+    "path": "noxfile.py",
+    "sha256": "d05b1011bf8f86f3a4994baf6c4af28decf0f127c904c3cbcce714c107f4a06d",
+    "size": 1027
+  },
+  {
+    "executable": false,
+    "path": "pyproject.toml",
+    "sha256": "0ea0029caf586147fe916e274d658b0530341e3d3b78e508a56e98ad6bbf782c",
+    "size": 952
+  },
+  {
+    "executable": false,
+    "path": "pytest.ini",
+    "sha256": "c72d06da5c5af7b91d58c2500d4e12297c0ae54a685bc62fe219663ac47a1afd",
+    "size": 129
+  },
+  {
+    "executable": false,
+    "path": "src/pyproject_hooks/__init__.py",
+    "sha256": "70f07f6bd2d7cf9c6fb116d7d68daac807632dab5925d43f2dce4c70d5fe5fb6",
+    "size": 691
+  },
+  {
+    "executable": false,
+    "path": "src/pyproject_hooks/_impl.py",
+    "sha256": "8d8fab6b19e6c91c81e7baee022b6b25153311ec6e021193a6033282ac7aed9e",
+    "size": 14936
+  },
+  {
+    "executable": false,
+    "path": "src/pyproject_hooks/_in_process/__init__.py",
+    "sha256": "30934fa5f23170ef85821c6905bc641b5ac58907fa1ce51b5785399aad07167b",
+    "size": 557
+  },
+  {
+    "executable": false,
+    "path": "src/pyproject_hooks/_in_process/_in_process.py",
+    "sha256": "a9c5cc866c7ffcc209ab5d201875b7980e1397c772f18cc731c7309cda0a970d",
+    "size": 12216
+  },
+  {
+    "executable": false,
+    "path": "src/pyproject_hooks/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/compat.py",
+    "sha256": "aa7f2fe92bb2b61920d34d898383b1093a51753ff95dd6b37ff243c04ccc2e3f",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/buildsys_pkgs/buildsys.py",
+    "sha256": "b5aec38a7546ea76dd4d58253ed4219b68c7827009a83979819b11162288de11",
+    "size": 1939
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/buildsys_pkgs/buildsys_minimal.py",
+    "sha256": "848d1e217ea222146d6ab97351880583ee5faf23fa976effc452bfd733befb9b",
+    "size": 1005
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/buildsys_pkgs/buildsys_minimal_editable.py",
+    "sha256": "89e246e1b836b7c555352c39dde32653d0b063eb8f41cb8c189efac1c91d4a19",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/buildsys_pkgs/nested/buildsys.py",
+    "sha256": "d407f4278f71161173519fda56caabdd05b433870a3114d08159ad989a63b2e4",
+    "size": 39
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/path-pollution/pyproject.toml",
+    "sha256": "4a017048064bf853e9f8ac4a774af07985c633c8bdd164a7ceb2438c350c2e54",
+    "size": 90
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/path-pollution/setup.py",
+    "sha256": "50d266c4b6b978171531920470d19338808127cf8fd8c185666667cc341a67a5",
+    "size": 245
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg1/pkg1-0.5.dist-info/LICENSE",
+    "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+    "size": 1081
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg1/pkg1-0.5.dist-info/METADATA",
+    "sha256": "4557e24d1f5ef2c9cdd1933e86b8737e34e93004d1bbe955dd9a06b7fa6782d8",
+    "size": 253
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg1/pkg1-0.5.dist-info/RECORD",
+    "sha256": "19c686ba76ec178afe8b9dba21a9b57b36d14cd6017a961a1321ca2ddb53fdc5",
+    "size": 336
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg1/pkg1-0.5.dist-info/WHEEL",
+    "sha256": "f421f4d3b0177817dd5cc31b86f695ebdde392885c4b3be621a85e0ad5ce2ffa",
+    "size": 101
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg1/pkg1.py",
+    "sha256": "2096b28e01c2c5c55bb3c29966da8a8963e9db157d8bcc3ce0cc14814e67f0fa",
+    "size": 52
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg1/pyproject.toml",
+    "sha256": "01b34e9b9ff665c15ba5f55dbda81bdab01b1c442dad3c57bd702126ef67628b",
+    "size": 171
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg2/pkg2-0.5.dist-info/LICENSE",
+    "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+    "size": 1081
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg2/pkg2-0.5.dist-info/METADATA",
+    "sha256": "e3343126a73846f9e57f963eb1e5e7471f20fb514afac8d3b92d00d4a3f46a39",
+    "size": 251
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg2/pkg2-0.5.dist-info/RECORD",
+    "sha256": "5766d47f25bfc4e26f45bb6c0e53c832742964bdaad82a4ac8142fbd25ec5017",
+    "size": 336
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg2/pkg2-0.5.dist-info/WHEEL",
+    "sha256": "8f12af35a0ca1c369ca5a2e2ebdfaf9cb2a4052ca7c01ce6312f36a62a6dd53d",
+    "size": 100
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg2/pkg2.py",
+    "sha256": "2096b28e01c2c5c55bb3c29966da8a8963e9db157d8bcc3ce0cc14814e67f0fa",
+    "size": 52
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg2/pyproject.toml",
+    "sha256": "c0ced6a259410072cc433c9c6ba548c78297888cc5fef1378fbaeba50cf8b491",
+    "size": 64
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg3/pkg3-0.5.dist-info/LICENSE",
+    "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+    "size": 1081
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg3/pkg3-0.5.dist-info/METADATA",
+    "sha256": "8ac24f665f91a8c39daebaae2e28b508f0d94f8a9347cc2b2393993cae7887e7",
+    "size": 251
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg3/pkg3-0.5.dist-info/RECORD",
+    "sha256": "626c43aa5c149565e94bb327cb240b94714c57e33033b8d1e9f13b10e85a369c",
+    "size": 336
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg3/pkg3-0.5.dist-info/WHEEL",
+    "sha256": "8f12af35a0ca1c369ca5a2e2ebdfaf9cb2a4052ca7c01ce6312f36a62a6dd53d",
+    "size": 100
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg3/pkg3.py",
+    "sha256": "2096b28e01c2c5c55bb3c29966da8a8963e9db157d8bcc3ce0cc14814e67f0fa",
+    "size": 52
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg3/pyproject.toml",
+    "sha256": "8acc7dc3d4ed581b232928c3abd126779f9c0755f2628bb66e93e0b5db4f1d47",
+    "size": 73
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_intree/backend/intree_backend.py",
+    "sha256": "e3903f2ef7dc8b723cbc80544cfc353fb784d1f6943e58ceea33584ded720665",
+    "size": 88
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_intree/pyproject.toml",
+    "sha256": "da4198c5022d172593e0c4271377f4687bc06f3cdb5d6358f6d99710e0f87571",
+    "size": 75
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_intree_metadata/backend/_test_boostrap-0.0.1.dist-info/METADATA",
+    "sha256": "abfaa8bb019b21ac45c2df627a22bc6faf4b99be412a0083ad098966f9997a85",
+    "size": 37
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_intree_metadata/backend/_test_boostrap-0.0.1.dist-info/entry_points.txt",
+    "sha256": "245f486d6fe7d997d7451280b066d3db48d252623e8976c0097339a0208cb0b8",
+    "size": 49
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_intree_metadata/backend/intree_backend.py",
+    "sha256": "83c38c65670b08bb39f78b66556870e606dee946b7f7f2b8f478e76b9370b3ea",
+    "size": 250
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_intree_metadata/pyproject.toml",
+    "sha256": "da4198c5022d172593e0c4271377f4687bc06f3cdb5d6358f6d99710e0f87571",
+    "size": 75
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_nested_intree/backend/intree_backend.py",
+    "sha256": "e3b13a3c0e60f5962e62a46da0c98563ffc71486a29a8fb47d96dbcb3fa66afd",
+    "size": 173
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_nested_intree/backend/nested/intree_backend.py",
+    "sha256": "e3903f2ef7dc8b723cbc80544cfc353fb784d1f6943e58ceea33584ded720665",
+    "size": 88
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/pkg_nested_intree/pyproject.toml",
+    "sha256": "1521e674bbb2aad64f4dc8151bb2fce3e4576c9a4757169808d5f9967f2b3bcc",
+    "size": 82
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/setup-py/pyproject.toml",
+    "sha256": "4a017048064bf853e9f8ac4a774af07985c633c8bdd164a7ceb2438c350c2e54",
+    "size": 90
+  },
+  {
+    "executable": false,
+    "path": "tests/samples/setup-py/setup.py",
+    "sha256": "0b2620b3f203fa13ade1509994e342e35181b73ccb33108d7abd5a56347c41f1",
+    "size": 99
+  },
+  {
+    "executable": false,
+    "path": "tests/test_call_hooks.py",
+    "sha256": "99552ff61b5dce7890b44e35125500bc78c32de5e98dbd014f15cd76df4826fa",
+    "size": 7125
+  },
+  {
+    "executable": false,
+    "path": "tests/test_hook_fallbacks.py",
+    "sha256": "5546f364ec4c10fff912bb5de566ada6a8c84ca8ad730c5cbd638bd0459efa7e",
+    "size": 3543
+  },
+  {
+    "executable": false,
+    "path": "tests/test_inplace_hooks.py",
+    "sha256": "6e91756d36a64a64fd2986dd986bb78d8458edd5ea7ab5e7e3907aae7bd4f88d",
+    "size": 4355
+  }
+]

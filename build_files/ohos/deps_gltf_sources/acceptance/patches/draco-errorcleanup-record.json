@@ -1,0 +1,95 @@
+{
+  "after_sha256": "3759c4b69c3166757f07745681f005395a7a0cc578aa42184c9ac3063c1828d0",
+  "applied": false,
+  "before_sha256": "b53abdc450e09c6e12cb39d4d7d2edafea9d8dc7f78a791d8b95aca5fdbfd877",
+  "change": "enclose all statements after decoderCreate in try/finally; one release on every return or exception",
+  "contracts": {
+    "attribute_conversion_failure": {
+      "creates": 1,
+      "logged_errors": [
+        "Draco Decoder: Could not decode attribute POSITION. Skipping primitive ContractPrimitive."
+      ],
+      "raised": null,
+      "releases": 1,
+      "result": "PASS"
+    },
+    "buffer_exception": {
+      "creates": 1,
+      "logged_errors": [],
+      "raised": "RuntimeError",
+      "releases": 1,
+      "result": "PASS"
+    },
+    "copy_exception": {
+      "creates": 1,
+      "logged_errors": [],
+      "raised": "RuntimeError",
+      "releases": 1,
+      "result": "PASS"
+    },
+    "create_exception": {
+      "creates": 0,
+      "logged_errors": [],
+      "raised": "RuntimeError",
+      "releases": 0,
+      "result": "PASS"
+    },
+    "decode_failure": {
+      "creates": 1,
+      "logged_errors": [
+        "Draco Decoder: Unable to decode. Skipping primitive ContractPrimitive."
+      ],
+      "raised": null,
+      "releases": 1,
+      "result": "PASS"
+    },
+    "indices_failure": {
+      "creates": 1,
+      "logged_errors": [
+        "Draco Decoder: Unable to decode indices. Skipping primitive ContractPrimitive."
+      ],
+      "raised": null,
+      "releases": 1,
+      "result": "PASS"
+    },
+    "missing_extension_exception": {
+      "creates": 1,
+      "logged_errors": [],
+      "raised": "KeyError",
+      "releases": 1,
+      "result": "PASS"
+    },
+    "missing_primitive_attribute": {
+      "creates": 1,
+      "logged_errors": [
+        "Draco Decoder: Draco attribute NORMAL not in primitive attributes. Skipping primitive ContractPrimitive."
+      ],
+      "raised": null,
+      "releases": 1,
+      "result": "PASS"
+    },
+    "success": {
+      "creates": 1,
+      "logged_errors": [],
+      "raised": null,
+      "releases": 1,
+      "result": "PASS"
+    }
+  },
+  "patch": "0001-draco-decoder-errorcleanup.patch",
+  "patch_sha256": "67cd3c32cf0537ced52e18ce8327b46fb765616aa939f58fdcdce2ec7e489843",
+  "result": "PASS",
+  "schema": "ohos-draco-errorcleanup-candidate-v1",
+  "source_evidence": {
+    "create_line": 57,
+    "failure_return_lines": [
+      66,
+      83,
+      108,
+      119
+    ],
+    "success_release_line": 138
+  },
+  "target": "scripts/addons_core/io_scene_gltf2/blender/imp/draco_compression_extension.py",
+  "validation": "pure Python extracted-function contract; fake bridge only; native and bpy runtime NOTRUN"
+}

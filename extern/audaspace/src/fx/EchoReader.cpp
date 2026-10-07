@@ -16,6 +16,7 @@
 
 #include "fx/EchoReader.h"
 
+#include <algorithm>
 #include <cstring>
 
 #include "IReader.h"

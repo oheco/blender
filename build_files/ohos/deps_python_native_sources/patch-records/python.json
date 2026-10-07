@@ -1,0 +1,248 @@
+{
+  "changes": {
+    "cpython-3.13.13": [
+      {
+        "after": {
+          "executable": false,
+          "path": "Lib/_ohos_support.py",
+          "sha256": "a027062ccd80d1cbed19bd5bf1f337f58a20755317ff257e26c1f509eb790812",
+          "size": 2160
+        },
+        "before": null,
+        "path": "Lib/_ohos_support.py"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "Lib/ctypes/util.py",
+          "sha256": "43621350154cad115a5ce22c2423e9161b6bd943232dc5f2d757cb2f3f447eb1",
+          "size": 14728
+        },
+        "before": {
+          "executable": false,
+          "path": "Lib/ctypes/util.py",
+          "sha256": "b82cab9a20865a8f47ea0beda7f82fbb34778a3273e87efaade72506a4728247",
+          "size": 14252
+        },
+        "path": "Lib/ctypes/util.py"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "Lib/sysconfig/__init__.py",
+          "sha256": "46c0642c9063972361fc2dafa67b0383f82ae36e2c53da57f0ac25b52940d48e",
+          "size": 27705
+        },
+        "before": {
+          "executable": false,
+          "path": "Lib/sysconfig/__init__.py",
+          "sha256": "09a99ccf9fd3a2b5455167bf1cf64d869fe0e93107baf6c3edb1cbeb7a063b10",
+          "size": 27444
+        },
+        "path": "Lib/sysconfig/__init__.py"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "Lib/test/test_sysconfig.py",
+          "sha256": "3867ef31f7d92e373e8939d723edff4ccecbb9ed652d32dad9be1de9b749314a",
+          "size": 30870
+        },
+        "before": {
+          "executable": false,
+          "path": "Lib/test/test_sysconfig.py",
+          "sha256": "86e99b332030affedf3fcee3185ada4b96ce17681f08122028f66175254b7a04",
+          "size": 30511
+        },
+        "path": "Lib/test/test_sysconfig.py"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "Lib/venv/__init__.py",
+          "sha256": "6139d6107612e530602e86533fec238d6e25113014bc62e22ea36924db168cb2",
+          "size": 30964
+        },
+        "before": {
+          "executable": false,
+          "path": "Lib/venv/__init__.py",
+          "sha256": "6bb44af4e52578bb575ead2e65f825e3b7d286452ee59b6041703057e84db5ef",
+          "size": 30481
+        },
+        "path": "Lib/venv/__init__.py"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "Makefile.pre.in",
+          "sha256": "9051fafac0159af7d40fcf5231ea6dec784e21d664a12362ae5a797d55aaccb6",
+          "size": 122097
+        },
+        "before": {
+          "executable": false,
+          "path": "Makefile.pre.in",
+          "sha256": "eece065935a88ca410641df020a4f144d39e1b9154e87fbf2ba7c329a01ca712",
+          "size": 121814
+        },
+        "path": "Makefile.pre.in"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "Misc/platform_triplet.c",
+          "sha256": "1b24e976d07c75622411d8613634763ee04bfdfbf5409550b5453a8468f177b7",
+          "size": 8035
+        },
+        "before": {
+          "executable": false,
+          "path": "Misc/platform_triplet.c",
+          "sha256": "ba6d3fccaaf0bf52a59828e7a3baf0405b1724a1445823557c288bf5de6a52e6",
+          "size": 7770
+        },
+        "path": "Misc/platform_triplet.c"
+      },
+      {
+        "after": {
+          "executable": true,
+          "path": "config.sub",
+          "sha256": "f5ea3144a3de20a4ab6613bf781550ee25a279655609556120fb27c552a8fa41",
+          "size": 37032
+        },
+        "before": {
+          "executable": true,
+          "path": "config.sub",
+          "sha256": "e24a965c9d6c27bafa1ea9886b668e512c2ba71f6f589dc3a27b47cabf0d923c",
+          "size": 37009
+        },
+        "path": "config.sub"
+      },
+      {
+        "after": {
+          "executable": true,
+          "path": "configure",
+          "sha256": "500c03083473b55a5948e6f2d7ffeb340ab0f27a9d63c55d312af6d68ee65627",
+          "size": 895576
+        },
+        "before": {
+          "executable": true,
+          "path": "configure",
+          "sha256": "a933277bf43237249fff8e971c8fff6631ae599ed724895e9afe5a0305d274ed",
+          "size": 894552
+        },
+        "path": "configure"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "configure.ac",
+          "sha256": "827117e89a12a9a1465e3a512d6ad5eec5b9d2c9d3402b5713b05c99053405aa",
+          "size": 257047
+        },
+        "before": {
+          "executable": false,
+          "path": "configure.ac",
+          "sha256": "d3fd7e3cc497d5b9148de714ba1303bb1adf5475b30c1a95bf9b186307d0f656",
+          "size": 256122
+        },
+        "path": "configure.ac"
+      }
+    ],
+    "libffi-3.5.2": [
+      {
+        "after": {
+          "executable": true,
+          "path": "config.sub",
+          "sha256": "f5ea3144a3de20a4ab6613bf781550ee25a279655609556120fb27c552a8fa41",
+          "size": 37032
+        },
+        "before": {
+          "executable": true,
+          "path": "config.sub",
+          "sha256": "5b4d93b9d27d2d52ef9771cca2e2bd045143c2ae21625d1d5a5660e5f51a7dae",
+          "size": 36924
+        },
+        "path": "config.sub"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "src/tramp.c",
+          "sha256": "30af78a0a5b7e5c0cfc3f30c9a05e7831af147c26806c7aad69c671ba5f373f9",
+          "size": 17803
+        },
+        "before": {
+          "executable": false,
+          "path": "src/tramp.c",
+          "sha256": "72bd974d4db3b9aa440f762d8728feb3e9cd41ad1ea252294ca433a5e0da76f5",
+          "size": 17107
+        },
+        "path": "src/tramp.c"
+      }
+    ],
+    "make-source-4.4.1": [
+      {
+        "after": {
+          "executable": true,
+          "path": "build-aux/config.sub",
+          "sha256": "bb44fd25c714143d6cfb34322ba81876169f18901d6ff519899c8398bd5076db",
+          "size": 35840
+        },
+        "before": {
+          "executable": true,
+          "path": "build-aux/config.sub",
+          "sha256": "b45ba96fa578cfca60ed16e27e689f10812c3f946535e779229afe7a840763e6",
+          "size": 35818
+        },
+        "path": "build-aux/config.sub"
+      }
+    ],
+    "openssl-3.5.8": [
+      {
+        "after": {
+          "executable": false,
+          "path": "Configurations/99-ohos.conf",
+          "sha256": "b0121a6d3e06982498c509909f653f6d8233cf7d53b593c3abe0139205796f73",
+          "size": 168
+        },
+        "before": null,
+        "path": "Configurations/99-ohos.conf"
+      },
+      {
+        "after": {
+          "executable": false,
+          "path": "crypto/x509/x509_def.c",
+          "sha256": "0346da961f5bf66d1e91b50391f1cdd75dd8362b4e05405dd92dcbd2a4ead85b",
+          "size": 2847
+        },
+        "before": {
+          "executable": false,
+          "path": "crypto/x509/x509_def.c",
+          "sha256": "6a586d4218b71ec2f3f0f28a9ecd7e774f16f8c18804a2217f325ef214c9be2d",
+          "size": 2834
+        },
+        "path": "crypto/x509/x509_def.c"
+      }
+    ],
+    "xz-5.8.4": [
+      {
+        "after": {
+          "executable": true,
+          "path": "build-aux/config.sub",
+          "sha256": "f5ea3144a3de20a4ab6613bf781550ee25a279655609556120fb27c552a8fa41",
+          "size": 37032
+        },
+        "before": {
+          "executable": true,
+          "path": "build-aux/config.sub",
+          "sha256": "f9a31e9a3f5b7cbeb8d8c3f2015895a51e7222130114c9c363fcbccd78e4bf6b",
+          "size": 39972
+        },
+        "path": "build-aux/config.sub"
+      }
+    ]
+  },
+  "forward_check": "PASS source-only",
+  "original_archives_modified": false,
+  "reverse_check": "PASS source-only",
+  "schema": 1
+}

@@ -239,6 +239,15 @@ def command_output_from_json_0(
         *,
         python_args: Sequence[str],
 ) -> Generator[InfoItemSeq, bool, None]:
+    if sys.platform == "ohos":
+        from .bl_extension_worker import command_output
+        # The worker owns terminal publication after actual thread cleanup.
+        # Public action wrappers append their upstream DONE on other platforms.
+        yield from command_output(
+            args, use_idle, cli_path=os.path.join(BASE_DIR, "cli", "blender_ext.py"),
+        )
+        return
+
     cmd = [*blender_ext_cmd(python_args), *args, "--output-type=JSON_0"]
     # Note that the context-manager isn't used to wait until the process is finished as
     # the function only finishes when `poll()` is not none, it's just used to ensure file-handles
@@ -594,7 +603,8 @@ def repo_sync(
         *(("--demote-connection-errors-to-status",) if demote_connection_errors_to_status else ()),
         *(("--extension-override", extension_override) if extension_override else ()),
     ], use_idle=use_idle, python_args=python_args)
-    yield [COMPLETE_ITEM]
+    if sys.platform != "ohos":
+        yield [COMPLETE_ITEM]
 
 
 def repo_upgrade(
@@ -618,7 +628,8 @@ def repo_upgrade(
         "--access-token", access_token,
         "--temp-prefix-and-suffix", "/".join(PKG_TEMP_PREFIX_AND_SUFFIX),
     ], use_idle=use_idle, python_args=python_args)
-    yield [COMPLETE_ITEM]
+    if sys.platform != "ohos":
+        yield [COMPLETE_ITEM]
 
 
 def repo_listing(
@@ -660,7 +671,8 @@ def pkg_install_files(
         "--python-version", "{:d}.{:d}.{:d}".format(*python_version),
         "--temp-prefix-and-suffix", "/".join(PKG_TEMP_PREFIX_AND_SUFFIX),
     ], use_idle=use_idle, python_args=python_args)
-    yield [COMPLETE_ITEM]
+    if sys.platform != "ohos":
+        yield [COMPLETE_ITEM]
 
 
 def pkg_install(
@@ -693,7 +705,8 @@ def pkg_install(
         "--timeout", "{:g}".format(timeout),
         "--temp-prefix-and-suffix", "/".join(PKG_TEMP_PREFIX_AND_SUFFIX),
     ], use_idle=use_idle, python_args=python_args)
-    yield [COMPLETE_ITEM]
+    if sys.platform != "ohos":
+        yield [COMPLETE_ITEM]
 
 
 def pkg_uninstall(
@@ -714,7 +727,8 @@ def pkg_uninstall(
         "--user-dir", user_directory,
         "--temp-prefix-and-suffix", "/".join(PKG_TEMP_PREFIX_AND_SUFFIX),
     ], use_idle=use_idle, python_args=python_args)
-    yield [COMPLETE_ITEM]
+    if sys.platform != "ohos":
+        yield [COMPLETE_ITEM]
 
 
 # -----------------------------------------------------------------------------
@@ -975,6 +989,8 @@ class CommandBatch:
 
                 if request_exit is None:
                     request_exit = False
+                if sys.platform == "ohos":
+                    request_exit = request_exit or request_exit_fn()
 
             if request_exit is True:
                 break
@@ -1004,6 +1020,13 @@ class CommandBatch:
                 request_exit_fn=request_exit_fn,
             )
         return self._exec_blocking_single(report_fn, request_exit_fn)
+
+    def close_iterators(self) -> None:
+        """Detach consumers while the OHOS worker retains cleanup ownership."""
+        self._request_exit = True
+        for command in self._batch:
+            if command.fn_iter is not None:
+                command.fn_iter.close()
 
     def exec_non_blocking(
             self,
@@ -1037,6 +1060,17 @@ class CommandBatch:
                 continue
 
             send_arg: bool | None = self._request_exit
+
+            if sys.platform == "ohos" and self._request_exit and cmd.fn_iter is None:
+                cmd.status = CommandBatchItem.STATUS_COMPLETE
+                cmd.has_error = True
+                message = ('ERROR', "Extensions command cancelled before dispatch")
+                cmd.msg_log.append(message)
+                command_output[cmd_index].append(message)
+                self._log_added_since_accessed = True
+                complete_count += 1
+                status_data_changed = True
+                continue
 
             # First time initialization.
             if cmd.fn_iter is None:
@@ -2277,15 +2311,29 @@ class RepoLock:
 
             # Success, the file is locked.
             self._repo_lock_files.append((directory, local_lock_file))
+            self._held = True
+            if sys.platform == "ohos":
+                from .bl_extension_worker import register_repo_lock
+                register_repo_lock(directory, local_lock_file, self._cookie)
         self._held = True
         return result
 
     def release(self) -> dict[str, str | None]:
         # NOTE: lots of error checks here, mostly to give insights in the very unlikely case this fails.
-        if not self._held:
+        if not self._held and sys.platform != "ohos":
             raise Exception("release(): called without a lock!")
 
         result: dict[str, str | None] = {directory: None for directory in self._repo_directories}
+        if sys.platform == "ohos":
+            from .bl_extension_worker import release_repo_lock_when_idle
+            retained = []
+            for directory, local_lock_file in self._repo_lock_files:
+                result[directory] = release_repo_lock_when_idle(directory, local_lock_file, self._cookie)
+                if result[directory] is not None:
+                    retained.append((directory, local_lock_file))
+            self._repo_lock_files = retained
+            self._held = bool(retained)
+            return result
         for directory, local_lock_file in self._repo_lock_files:
             if not os.path.exists(local_lock_file):
                 result[directory] = "release(): lock missing when expected, continuing."

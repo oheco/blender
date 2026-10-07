@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "shaderc-closure-receipt-adapter-contract",
+  "source_namespace": "build_files/ohos/deps_vulkan_sources",
+  "source_input_lock_sha256": "d3ff77af2e3ba566706dcb8f583b37674f39a31527a6c0f58dbc876ce8ecd4c0",
+  "reviewed_source_sha256": {
+    "builder/inputs.lock.json": "d3ff77af2e3ba566706dcb8f583b37674f39a31527a6c0f58dbc876ce8ecd4c0",
+    "builder/recipe.json": "5731824be056b0ca77f9a8075a21eafa318b60c76db3db5aa26aaff253edcb90",
+    "builder/builder.py": "e03905d224e317883bc9a428f874de791bf1d4c023e8bba89282976e81368ce5",
+    "builder/audit.py": "952824c0f3054c69fecf8cbfabd4e7016882603c2633249de420b775fb7f7c17",
+    "builder/io_utils.py": "6bd3217c54ac3b3a62b39c39251706abdc091dae8c1003df977ea488b7bc2e8b",
+    "builder/source_tree.py": "3d61ad7b6db72ce2d5606dd237f44760a699f8f18577970901a59c2ed718bd2e",
+    "builder/toolchain.py": "366f24500b6606dc4636e84bd9395f22cc66ba880ba9363072a4fd9da65a8cdb",
+    "builder/consumers/CMakeLists.txt": "0961863fbf79828af35795b61989a33c537ecebc2238a3f8f397cfa0590bb40f",
+    "builder/consumers/integration.cc": "8ab5d8fc3ab182a9d65d1fd36e80c709eba5de05b14082a6ef1eb8b06ddc1e30"
+  },
+  "source_groups": ["vulkan-headers", "vulkan-utility", "shaderc", "glslang", "spirv-headers", "spirv-tools", "spirv-reflect", "vma"],
+  "full_result": "PASS complete new source-built offline native Vulkan libraries and moved CMAKE/PC consumers",
+  "artifact_result": "PASS actual native archives, DSOs, public headers, consumers, PIC and metadata/source lineage",
+  "migration_result": "PASS real byte-identical moved Unicode/space CMAKE/PC native library consumers",
+  "library_features": {"CompileGlslToSpv": true, "target": "Vulkan1.3/SPIRV1.6", "tileExtensionInstruction": true, "tileCoherentMode": true, "spirvStructure": true, "validator": true, "optimizerComputeAndTile": true, "shadercOptimizer": true, "reflectDescriptorAndPushLayout": true, "reflectTileOutput": true, "invalidGlslRejected": true, "invalidSpirvRejected": true, "parallelCompilers": 2},
+  "required_receipts": ["full-native-acceptance.json", "prefix-files.json", "acceptance.json", "artifacts.json", "migration.json", "prerequisites.json", "sources.json", ".vulkan-builder-owned.json", "toolchain/compiler.json"],
+  "output_scope": "Independently completed native ShaderC/glslang/SPIRV source closure and its original/moved library APIs; no geometry run",
+  "not_tested": ["GPU pixels/WSI/device allocation", "Blender/bpy", "installed HAP", "PIC module dlopen/static C++ runtime ownership", "release"],
+  "accept_requires": "Caller-pinned completed DSH full-job envelope actual exit0 and stdout hash; all frozen source/prepared inventories/current prefix bytes; all actual command/ELF/ABI/signature/runtime/migration evidence; no stub or partial adoption",
+  "current_status": "SOURCE_ONLY CONTRACT; actual adapter acceptance NOTRUN"
+}

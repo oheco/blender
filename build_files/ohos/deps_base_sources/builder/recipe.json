@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "profile": "Genuine native HarmonyOS aarch64; Clang20 frontend/resource headers + exact accepted SDK15 CRT/builtins and libc++15004 __n1; runtime C++17",
+  "source_revision": 4,
+  "parent_revision_inputs_lock_sha256": "3c2408ed9aee1ba59c91ccd42757de673bb37656b69856be6898d6db9975c594",
+  "zstd_cover_compatibility": "One-file reviewed OHOS qsort/TLS context and diagnostics patch; original archive/inventory/licenses and ordinary platforms retained; per-thread progress throttling may emit more output",
+  "runtime_groups": [
+    "zlib",
+    "zstd",
+    "jpeg",
+    "png",
+    "brotli",
+    "freetype",
+    "harfbuzz",
+    "fribidi",
+    "fmt",
+    "imath"
+  ],
+  "tool_groups": [
+    "meson",
+    "pkgconf"
+  ],
+  "graph": "zlib->PNG; Brotli common->dec/enc; zlib+PNG+Brotli->FreeType; FreeType->HarfBuzz/subset; source Meson/Python/Ninja->pkgconf and FriBidi genuine native probes/generators",
+  "cmake_options": {
+    "zstd": {
+      "ZSTD_BUILD_SHARED": "OFF",
+      "ZSTD_BUILD_STATIC": "ON",
+      "ZSTD_BUILD_PROGRAMS": "OFF",
+      "ZSTD_BUILD_TESTS": "OFF",
+      "ZSTD_MULTITHREAD_SUPPORT": "ON"
+    },
+    "jpeg": {
+      "ENABLE_SHARED": "OFF",
+      "ENABLE_STATIC": "ON",
+      "WITH_SIMD": "ON",
+      "REQUIRE_SIMD": "ON",
+      "WITH_TURBOJPEG": "ON"
+    },
+    "png": {
+      "PNG_SHARED": "OFF",
+      "PNG_STATIC": "ON",
+      "PNG_TESTS": "OFF",
+      "PNG_TOOLS": "OFF",
+      "PNG_BUILD_ZLIB": "OFF",
+      "PNG_ARM_NEON": "on",
+      "PNG_GENERATE_PNGLIBCONF": "OFF"
+    },
+    "brotli": {
+      "BROTLI_DISABLE_TESTS": "ON"
+    },
+    "freetype": {
+      "FT_REQUIRE_BROTLI": "ON",
+      "FT_REQUIRE_ZLIB": "ON",
+      "FT_REQUIRE_PNG": "ON",
+      "FT_DISABLE_BZIP2": "ON",
+      "FT_DISABLE_HARFBUZZ": "ON",
+      "FT_ENABLE_ERROR_STRINGS": "ON"
+    },
+    "harfbuzz": {
+      "HB_HAVE_FREETYPE": "ON",
+      "HB_HAVE_CAIRO": "OFF",
+      "HB_HAVE_GLIB": "OFF",
+      "HB_HAVE_ICU": "OFF",
+      "HB_HAVE_GRAPHITE2": "OFF",
+      "HB_BUILD_UTILS": "OFF",
+      "HB_BUILD_SUBSET": "ON",
+      "HB_HAVE_GOBJECT": "OFF",
+      "HB_HAVE_INTROSPECTION": "OFF"
+    },
+    "fmt": {
+      "FMT_TEST": "OFF",
+      "FMT_DOC": "OFF",
+      "FMT_INSTALL": "ON"
+    },
+    "imath": {
+      "BUILD_TESTING": "OFF",
+      "IMATH_BUILD_TESTS": "OFF",
+      "IMATH_BUILD_EXAMPLES": "OFF",
+      "PYTHON": "OFF",
+      "IMATH_INSTALL_PKG_CONFIG": "ON",
+      "IMATH_STATIC_LIB_SUFFIX": ""
+    }
+  },
+  "meson_options": {
+    "pkgconf": [
+      "-Db_lto=false",
+      "-Db_staticpic=true",
+      "-Dbackend_max_links=1",
+      "-Dtests=disabled"
+    ],
+    "fribidi": [
+      "-Db_lto=false",
+      "-Db_staticpic=true",
+      "-Dbackend_max_links=1",
+      "-Ddocs=false",
+      "-Dtests=false",
+      "-Dbin=true"
+    ]
+  },
+  "source_wrappers": "Zlib recipe-added faithful original source/header copies with genuinely CMake-configured zconf and actual native checks, preserving pristine upstream tree. Brotli selected real static targets+CLI only with tracked static install. PNG archive pnglibconf.h.prebuilt bytepin avoids ambient awk; feature checks remain mandatory.",
+  "native_probes": "No HAVE/ac_cv/cross-result copies or forced success/compiler identity. Real CMake and Meson sanity/dynamic probes through explicit signed native launcher. Meson source1.9.0 invoked by caller Python and explicit Ninja; FriBidi native Unicode generators are signed and audited. GNUmake/Autoconf optional routes are not used or prerequisites in this profile.",
+  "pkgconf": "Source-built2.5.1 under separate owned toolprefix; existing caller pkgconf allowed only explicitly recorded bootstrap for read-only metadata syntax/planning. Native library PC gates use newly built tool.",
+  "font_contract": "Five original HarfBuzz fonts retained byte-for-byte: three runtime fixtures plus two complete Roboto copyright/Apache2 provenance fonts. SHA/size verified before use; actual native Brotli WOFF2 and strict meaningful image/font/UTF8/RTL/ligature/run-layout errors and output required. Qahiri OFL; Roboto Apache2, never HarfBuzz root Old-MIT.",
+  "gates": {
+    "source": "Revision4 complete-source original/Unicode-space proof for unchanged Zstd/HarfBuzz and new JPEG ownership patch, actual source/object/variant identities and genuine forward/reverse IO plus metadata bad-closure controls required",
+    "native": "New independent CMAKE/PC standalone concurrent COVER + module pre-dlopen/internal COVER threads + existing image/text/math/PIC and migration full NOT_RUN",
+    "BlenderTextImage": "NOT_TESTED: library/layout fixture is not Blender UI/text/image acceptance",
+    "HAP": "NOT_TESTED: no device app/install/distribution acceptance"
+  },
+  "modules": "All14 canonical source-built archives wholelinked into hidden-C++-symbols signed shared module, genuine native dlopen/dlsym real API calls; opaque create/destroy owns std state entirely inside module, no cross-module C++ objects/exceptions/new/delete transfers. Real module-owned COVER training/optimizer/dictionary roundtrips from two driver threads already alive before dlopen and two module-created threads, joined before dlclose; per-thread errno address separation and driver/module accessor identity checked without errno value preservation. Broader application/HAP runtime ownership remains separate.",
+  "harfbuzz_static_subset_compatibility": "One-file original CMake patch for actual HarmonyOS static builds only: four common implementation units supplied once by unchanged harfbuzz.cc core amalgam; subset API/graph units and public CONFIG/PC core dependency retained; all14 whole-archive module/COVER gates unchanged; native fresh3 NOT_RUN",
+  "jpeg_static_owner_compatibility": "Original one-file CMake correction only for HarmonyOS with ENABLE_STATIC and no ENABLE_SHARED: JPEG core/arithmetic/SIMD implementation ownership stays in jpeg-static; TurboJPEG retains all eight API/transform/_tj memory/BMP/PPM units with original flags; actual upstream PUBLIC jpeg-static export plus recipe PC Requires.private libjpeg closure; all14 whole archives and API/runtime gates retained; native fresh4 NOT_RUN"
+}

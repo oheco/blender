@@ -1,0 +1,27 @@
+{
+  "name": "openexr",
+  "version": "3.4.10",
+  "kind": "source",
+  "filename": "openexr-3.4.10.tar.gz",
+  "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/v3.4.10.tar.gz",
+  "license": "SPDX:BSD-3-Clause",
+  "license_files": [
+    "Contrib/DtexToExr/AUTHORS",
+    "LICENSE.md",
+    "PATENTS",
+    "external/OpenJPH/LICENSE",
+    "external/deflate/COPYING",
+    "website/license.rst"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 25747896,
+  "sha256": "b61ae2d0fa4872c5f5fc45618f107945df37c0eba4853263091b949c513d3319",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 25747896,
+      "sha256": "b61ae2d0fa4872c5f5fc45618f107945df37c0eba4853263091b949c513d3319"
+    }
+  ]
+}

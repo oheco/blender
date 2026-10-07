@@ -369,6 +369,7 @@ set(VULKAN_SRC
   vulkan/vk_streaming_buffer.hh
   vulkan/vk_texture.hh
   vulkan/vk_texture_pool.hh
+  vulkan/vk_tile_blend_compat.hh
   vulkan/vk_to_string.hh
   vulkan/vk_uniform_buffer.hh
   vulkan/vk_vertex_attribute_object.hh

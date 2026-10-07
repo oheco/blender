@@ -1,0 +1,158 @@
+{
+  "bootstrap_regenerator_role": "immutable native3.13.13 versioned shared-runtime binary prerequisite for ONLY source generation; not target DLL/headers/sysconfig input",
+  "native_tools_and_preprocessor": "NOTRUN byte-only authoring; separate readonly plan measures real versions/macros",
+  "permitted_OS_system_prerequisites": [
+    "/usr/bin/sh",
+    "POSIX utilities used by original source builds",
+    "system libc/kernel trusted execution policy"
+  ],
+  "profile": "HarmonyOS/aarch64 SDK26.0.0.35-Beta Clang15.0.4 regularGIL source replay",
+  "regen_closure": [
+    {
+      "path": "lib/libpython3.13.so.1.0",
+      "sha256": "fc665c8ebfd06fbab79a13a470185770d2d00d2223fe5aa20499d50baa3932b9",
+      "size": 20539904
+    }
+  ],
+  "regen_prefix_inventory": {
+    "inventory": "tool-inventories/native313-generator-prefix.json",
+    "objects": 2956,
+    "sha256": "08d54e61f473e7f498a365872853a7ecbe9aff3536a67d4fc51bb2e339088e90"
+  },
+  "resource_relative": "llvm/lib/clang/15.0.4",
+  "schema": 1,
+  "sdk_files": [
+    {
+      "path": "llvm/lib/aarch64-linux-ohos/libc++.a",
+      "sha256": "52e59afca841c33337dc4b95d3bde412961cda1ea19aeaf6ac7d4a2b84f6f78d",
+      "size": 29
+    },
+    {
+      "path": "llvm/lib/aarch64-linux-ohos/libc++_static.a",
+      "sha256": "60c24001384e7297b81ae47f5226d94dd35096164a63e18de030051405b6233c",
+      "size": 10695774
+    },
+    {
+      "path": "llvm/lib/aarch64-linux-ohos/libc++abi.a",
+      "sha256": "92ea28f2a64521e3ca40fff1ca8990d497d24a1108f5d5d2d8024e0610d5cdc4",
+      "size": 2030016
+    },
+    {
+      "path": "NOTICE.txt",
+      "sha256": "aa81614810ebe8da49122564fcddca1bbedb14bffc86aab5dcc9fe1e61007c3f",
+      "size": 693439
+    }
+  ],
+  "sdk_tree_inventories": {
+    "llvm/include/c++/v1": {
+      "inventory": "tool-inventories/sdk-cpp-headers.json",
+      "objects": 790,
+      "sha256": "7603f8ba00f65881366aef40a862fe3e2c850f80cc014e27091ed3d5053721d7"
+    },
+    "llvm/lib/clang/15.0.4": {
+      "inventory": "tool-inventories/sdk15-resources.json",
+      "objects": 474,
+      "sha256": "0385dd956aa5d35768a9cc3a81a63e18c050092fc8963383665127afb1345ec5"
+    },
+    "sysroot/usr/include": {
+      "inventory": "tool-inventories/sdk-c-headers.json",
+      "objects": 2036,
+      "sha256": "fc244625e31bad97f3feee1609b1f73826e87d08a148ee7db691e6a98c512302"
+    }
+  },
+  "source_checkout_portability": "no source path from this authoring workdir required; example tool paths are explicit externally pinned prerequisites",
+  "tool_source_rebuild_proof": "NOTRUN complete original make/Ninja/Perl+adapter source carried; SDK programs explicit binary prerequisites",
+  "tools": {
+    "ar": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-ar",
+      "role": "explicit external native build tool",
+      "sha256": "717262db0e908d66f95e86e1553d73169d4403bb578ce446cc29c2ff60c2d38a",
+      "size": 15566720
+    },
+    "cc": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang",
+      "role": "explicit external native build tool",
+      "sha256": "9b223e08b65958d79838f28cfff8dde98e438825a0129d3c0fde297d6ccb2121",
+      "size": 109074304
+    },
+    "cxx": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang++",
+      "role": "explicit external native build tool",
+      "sha256": "9b223e08b65958d79838f28cfff8dde98e438825a0129d3c0fde297d6ccb2121",
+      "size": 109074304
+    },
+    "git": {
+      "example_path": "/storage/Users/currentUser/.oheco/bin/git",
+      "role": "explicit external native build tool",
+      "sha256": "35ec6be336d8f7c584d71b92a59749fc09d3eeceda24f31436a523525f32aa1e",
+      "size": 152
+    },
+    "lld": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/ld.lld",
+      "role": "explicit external native build tool",
+      "sha256": "cb46db2e1be714fc67d736f99ea9b09e517cbfda65cd8bd72e455e4a7d6f67d0",
+      "size": 64890752
+    },
+    "make": {
+      "example_path": "/storage/Users/currentUser/dev/ohos/tmux/out/tools/make",
+      "role": "explicit external native build tool",
+      "sha256": "a888ae0d94554dc9e28502565c439ceece267cda15ac79dea4706b044703b864",
+      "size": 276928
+    },
+    "ninja": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/build-tools/cmake/bin/ninja",
+      "role": "explicit external native build tool",
+      "sha256": "669499c51a1c1692b3469e90dc2d7b4ddfdee0cfaf373141e57295d57601ee0e",
+      "size": 988992
+    },
+    "nm": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-nm",
+      "role": "explicit external native build tool",
+      "sha256": "58e7d1818f9429f40b8c97b009e806a7c94b76f0645c0b990600b004604a24b7",
+      "size": 15792000
+    },
+    "perl": {
+      "example_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-3.13.13-build/tools/perl-5.44.0-ohos-arm64/bin/perl5.44.0",
+      "role": "explicit external native build tool",
+      "sha256": "630ab3172ccd3cde05bc44aaf14997be83516c623dc43564281e5e01081eb152",
+      "size": 4016640
+    },
+    "python": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/python3/3.14.7-ohos.1/bin/python3",
+      "role": "explicit external native build tool",
+      "sha256": "b3fa668ce71862bf78d04332f5c5938c7734c4d96d60c204d7299ed91658968e",
+      "size": 22848
+    },
+    "ranlib": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-ranlib",
+      "role": "explicit external native build tool",
+      "sha256": "717262db0e908d66f95e86e1553d73169d4403bb578ce446cc29c2ff60c2d38a",
+      "size": 15566720
+    },
+    "readelf": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-readelf",
+      "role": "explicit external native build tool",
+      "sha256": "033c8cbd655f1200b11d6816b91f5195818a983310cf3246eccd53cff5ef5f32",
+      "size": 6625152
+    },
+    "regen_python": {
+      "example_path": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-3.13.13-build/runtime/bin/python3.13",
+      "role": "explicit external native build tool",
+      "sha256": "56f4ee29ebca8bf5cbe63c90570eecda1a2c59a2f2e86692f5944ca3585681fb",
+      "size": 22848
+    },
+    "signer": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-toolchains/26.0.0.35-Beta/lib/binary-sign-tool",
+      "role": "explicit external native build tool",
+      "sha256": "82e31c66183497c55b7b8bdca5d7ae4aa9043a6a2753d2aa0df02a4e9acb3e4e",
+      "size": 2959232
+    },
+    "strip": {
+      "example_path": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/llvm-strip",
+      "role": "explicit external native build tool",
+      "sha256": "d6a5f3f0812aa25e8fc5a1ac19379709e1424bb0728f8a0598ed8ba5cbbba65a",
+      "size": 4499328
+    }
+  },
+  "whole_perl_package_manifest": "tpr/build-inputs/perl-native-build-tool-5.44.0/manifest.json"
+}

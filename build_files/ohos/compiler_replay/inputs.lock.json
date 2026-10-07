@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "kind": "complete-native-ohos-compiler-source-replay",
+  "sealed_files": [
+    {
+      "path": "build_files/ohos/compiler_replay/README.md",
+      "size": 5481,
+      "sha256": "5e13bf869f09edac54e9759c86107a58be6a4868a331e659c76134d158ea0f1b"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/builder.py",
+      "size": 8296,
+      "sha256": "0217c8c7bf4db8a5bba431594e8d3490923cffcf089003fb0c0be9533377749d"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/cmake/Platform/HarmonyOS.cmake",
+      "size": 808,
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/cmake/native-host.cmake",
+      "size": 812,
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/cmake/native-link-features.cmake",
+      "size": 2918,
+      "sha256": "b6260f4135ad4c2c53c61b210a0b9572ef2148a54fa9281bbaa426adb67e642b"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/cache_reuse.py",
+      "size": 5595,
+      "sha256": "f4e0d298c2d6a83e68aefac3894fccab7ba46286e17446cf83700cca001ca5aa"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/common.py",
+      "size": 3894,
+      "sha256": "0cd041228f822b4d5f6dce1025465b07199f4f6fe93cad26a86974113ce8afb6"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/env_policy.py",
+      "size": 1752,
+      "sha256": "4d94f1df51cfd8fab2e66063d28e097d607e71736cfe92205e460fd496ae8e7c"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/launcher.py",
+      "size": 6229,
+      "sha256": "9134c9fe561a90a6c19fcaa4ce24ee63e94cb496e221d5898d8a623314019a24"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/native_stages.py",
+      "size": 16266,
+      "sha256": "e86c234c8cd760ee6b83745cbff75a7f1d7a2163b795b09097110159a77d4c32"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/profile.py",
+      "size": 7443,
+      "sha256": "ccdc6426467e33742f4a4372700eef1b9158db4934626f4dd9c196b0d8392866"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/source_tree.py",
+      "size": 10727,
+      "sha256": "95ffe0982e448dfbeed6be7ac0a047b603f196172bc53d14673ac3f003e91317"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/helpers/vendor_archive.py",
+      "size": 8263,
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/historical/accepted-native-report.json",
+      "size": 11298,
+      "sha256": "b11f6b9831998bb50443633882f105e5bac7bcefb444cf4fb4fd98a0900e02d3"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/historical/llvm-source.lock.json",
+      "size": 975,
+      "sha256": "c209fc335fb3ad9579ad2b06562094331ce93e5c03753c22629ee1ca208bcdee"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/historical/native_llvm.py",
+      "size": 14342,
+      "sha256": "818c9220f89f9c224a8270abdee62e8b1713e24506b78187aeca6755dd626db6"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/inventory.json",
+      "size": 36866632,
+      "sha256": "9a7ddb5f52f16ef273ca685cb724efb2bba2e7e7dc960bfc8257490df033081d"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/06503d0131d16daeb21382b9e2949e3a7f6600adeca0a0e50de6a5afef860e09.txt",
+      "size": 15138,
+      "sha256": "f7891568956e34643eb6a0db1462db30820d40d7266e2a78063f2fe233ece5a0"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/09140e19be14367d63d8d1efc12b51d13efe0c911638ad55314d9c17a12a6e5f.txt",
+      "size": 16700,
+      "sha256": "0ca8cbe9219a841f9bc8fbb1f8ecdf5e39b1b0e23ee10fb6b0c090d8987dd1eb"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/0a0f0827eb45d1a56f5bae1a2db68dd9c5d70d555f2dc259a3bdfce078f49563.txt",
+      "size": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/14538857e2a6cdbe65ea17aa22362d5effe5a7c6eb2ad49eebd2eea45a2202cd.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/17a255a7c82b3c694c22bbbdc25b9349af31d98dc2697ecbf7bfdc05b79e580a.txt",
+      "size": 1411,
+      "sha256": "976ff27305a486bec99de9aa0e1756ffeaa726618fc4ba7752b42d165f876dee"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/20e2619dd82e9cf09a1b535e92fd4985083ab2c4513f5b71a4ee1eacb08aa7a3.txt",
+      "size": 18691,
+      "sha256": "6a94bedb8b707ed97f6e310d0d015ab14e0683ffa0a612b02958581b9cc9fc0e"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/28bb2d5e714e998f2c0c37ae3643dadb45f8cc28b2b8498a47a97a7254a371a1.txt",
+      "size": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/29d0d2f4203502698bcb73b7d6d524b40c3c5e3de4fe3556809aa9f8c65aaf26.txt",
+      "size": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/38569d627c6908a1b0a677eff6a318588415ae0e71a57b028c0770af7af36b80.txt",
+      "size": 1058,
+      "sha256": "d0d8b09800a45cd982e9568fc7669d9c1a4c330e275a821bbe24d54366d16fe9"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/39c4019a7d674e5048524cbe745f1b2021a940876cd18606cd0d40c94a90bee4.txt",
+      "size": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/468250e9c82f6bfd6c074cf4cbe62e2f32ab13969c9d0166cb2755cc00860196.txt",
+      "size": 13151,
+      "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/5791ec66bc03b3bee4d5d9021fc189fb1394c9c36037db080359e29d309b3a33.txt",
+      "size": 13151,
+      "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/5c002f4a254e498fb96bdc85ffc9eec6fb30701261a5a357793ff9a64c12f687.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/6011fe674a50b14211750b8be533a316d819b1e8ba4b06a7fb08866ab57b33d9.txt",
+      "size": 1136,
+      "sha256": "4556b2d9e53920d10c972b2a4a78fbbb3aedb510686f2a1cd8d41e6a8adf24e5"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/657302e109fb5d04e56cf1440e92fd15be9ce5d3ba615e8b16777b77a0a3e4df.txt",
+      "size": 2718,
+      "sha256": "0424e57d4303164dc59a8509c20dae0518b853692e5c2b0e98b11816fdbc97c7"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/866d856b1524cca19ce6dbad57244adade6bb3f345f6d22aecb51c0f66e34aa2.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/92149c79b4cedf9a0b3e70fca073d3c47f12b02f5a789c2c77fa27dac8862816.txt",
+      "size": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/a0ce125894f2131a1c21e1ec4abe95542a955d62f418aa412b7f962adf88e881.txt",
+      "size": 541,
+      "sha256": "271b9c47cbf07475b8012f708fe08a348821261d66795daefed400e9238db379"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/ab09415dabf86838a52494394c3170d3d748ea2f290a71a0b7a579a8a17a39dc.txt",
+      "size": 19741,
+      "sha256": "fdad1758a9e1f9d5a81e18879b3406772115edc92c24bfa36b70c654f325e8e4"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/ae2b0897bb3d9bedd84891163c2564c43955a28c036275b22a125dbbdb6955b6.txt",
+      "size": 15032,
+      "sha256": "76be4deddeef87f6fa9940f4992a9506c7bb222af60eb3b2a47cf65719528bbe"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/ae789ae2cb44c754425444ef30a4ada959ffa9afd8fee6defdfa32899bb94a9f.txt",
+      "size": 1042,
+      "sha256": "3a2c398103f6bca0f50a9a9465deca9230b370b0212af5fdf31ed88a36215c30"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/b292c2d62fc8d2a90e0c5576d3b17f790b96287f194b3e57d54315b1346dc125.txt",
+      "size": 15009,
+      "sha256": "eef85b40250d830eb76577fb44933cc5d81a8650f3848e5f3d89229e6995ffd3"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/b797cc8c83acd6f6aa171082becb7123aff988546aee6e97cc98cb8dcc4a35be.txt",
+      "size": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/bbb0e632c298894150a5a9daff4a2ebe08d16ee20d4f311113de845653ffa77e.txt",
+      "size": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/cb6835c9032b245bd191d2752e9c9c3cba256c31804b5a2028744a97c825ea7d.txt",
+      "size": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/ce608e220a33d6d80ad7392996ef5fb8bb38167e36f5b405eec4efd8d423b2cd.txt",
+      "size": 13151,
+      "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/d7b06930e16f4df9277449eeadb11f6c22d67a210f404d4caf38c813f28e7fc3.txt",
+      "size": 1485,
+      "sha256": "cf48cdd9ed87c2031b68fb1b9f4cfb55d00dcf815b21a30bf8304aa1e5e6f76a"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/d9d4fdcd6e428a63fbeadb7024144cc449c259c7f31384c1c67a696c94b3458a.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/dbbc4203c8345cec1710598526c8fc6ae012051f8822c8f32e94239b97c4e338.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/e03681fac13dd850860205cc2a6b7707eb05d9f3abad22d2a33d182fb83f2596.txt",
+      "size": 1136,
+      "sha256": "d8e09a37202601346ed9f3962c843cf60d985570111602399a9b845c44a654ba"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/eb84fa6401c04678b07a3e8b8eda34d5ba4655565fd79bc67855e31a109c9609.txt",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/f0ec64381518d2cf3b33565a3edbe3baf2f74352383181950537702c547c5af1.txt",
+      "size": 16469,
+      "sha256": "3c536c052db9afd997809e38785c9f2a9e54e2892330fa7c5b438e18a7413479"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/f68d03d6cc5e1849dd0de0a22819de0a03989b7604f422803e9079d3e57b2443.txt",
+      "size": 16706,
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/licenses/ff0ada5dfa7a57bdb70c74e17007be12f8bfce014199cd97643064d0277c6497.txt",
+      "size": 303,
+      "sha256": "54cbc326a78b9400065bfc5830a57fdcdaf808286d4ac35d8a9e324aa77b7241"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/patches/0001-native-ohos-host-triple.diff",
+      "size": 1151,
+      "sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/patches/manifest.json",
+      "size": 811,
+      "sha256": "383af52a75cac48de49eb1f25bca4000f748cb7ba004f6fa15fa919b5b2f5000"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probe-source-lineage.json",
+      "size": 3594,
+      "sha256": "3580b84d337661923478a66659f15a49064f7b33c2d95bae2f765ec809afe275"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/CMakeLists.txt",
+      "size": 2392,
+      "sha256": "0e568975da620aa41d3671519dc305d166fe21d43eb9715abe8f6dd017c1b79e"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/affinity_probe.cc",
+      "size": 1421,
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/c17.c",
+      "size": 532,
+      "sha256": "4eee9a522eb2674561d6d31bdf9c733675ef994ed0fbe355918dea81bbc48a33"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/cpp17.cc",
+      "size": 496,
+      "sha256": "3ba5a9f5163a43bdffd7de1dd1ccfd69715ae7155e8984f8b6beddb1ceae0c18"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/exceptions_rtti_format_error.cc",
+      "size": 506,
+      "sha256": "e5e35a3a82543e5d8ec8176ad57f1f701be514e2a7935d2b4fdecf88fb3d59f6"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/module_owner.cc",
+      "size": 671,
+      "sha256": "b6854f0c13787d4cb72ca2ccc3da5d2ccacb40be34eb7b51e96806b801c5bbf1"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/native_probe.cc",
+      "size": 1268,
+      "sha256": "256fa837aa8a2b664a1ec6a5f8a64099a8ca9b24b01f644321546e67d5f41504"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/owner.exports",
+      "size": 71,
+      "sha256": "13cc999391e1169b416639e4f1d6ef90017ea7d0112b58a637b4bec256d749f4"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/owner_module.cc",
+      "size": 726,
+      "sha256": "ecf58a49bdc822c67b184648e93a8afdf74d0bc36b8ade33bc7dfabe507535a9"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/whole_archive_marker.cc",
+      "size": 128,
+      "sha256": "3590790f762e5c62e40150e47dd12a2905f3f7bd98b07839913f495e2fbe317c"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/probes/whole_archive_probe.cc",
+      "size": 190,
+      "sha256": "338f761309213202d1efd01f519343ccf92820063019dc1db80b1a88e9286d99"
+    },
+    {
+      "path": "build_files/ohos/compiler_replay/sources.lock.json",
+      "size": 15994,
+      "sha256": "723d2a9fe3c93489d8e9b26f70acab3372fd3609dc08ab0dce4fe687fe8bc22a"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/manifest.json",
+      "size": 1509,
+      "sha256": "dc653900865240e0287224718ccdd6940ad2eb049f7adb96fc1d792237b6c8b3"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0000",
+      "size": 33554432,
+      "sha256": "06cacc1f26bacd4922cd23fec7427e44fd8db08d8c9836a7bab4dcae60a995c3"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0001",
+      "size": 33554432,
+      "sha256": "1b856c90bb260434ad78e25f3039b2e6bde9c68a52e336a10e833c28a37ddf54"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0002",
+      "size": 33554432,
+      "sha256": "b1ab7836bf5ec1a625cb1b3960dea831b9e7712642b689e74b3a3658c44c85e7"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0003",
+      "size": 33554432,
+      "sha256": "6da90b2fb7baff11b58326ce88e4e5a37a81670472c471cba94a1dd520876c6e"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0004",
+      "size": 13025224,
+      "sha256": "1a539e731a2245d52318f78524dadac90b07ddadbd6ec1ed0279e9f5c68131e8"
+    }
+  ],
+  "compiler_output_REBUILD": "NOT_RUN",
+  "complete_source_inventory_sha256": "9a7ddb5f52f16ef273ca685cb724efb2bba2e7e7dc960bfc8257490df033081d",
+  "original_archive_parts": 5
+}

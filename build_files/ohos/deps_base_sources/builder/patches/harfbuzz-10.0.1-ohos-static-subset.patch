@@ -1,0 +1,18 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -512,6 +512,15 @@
+ 
+ ## Define harfbuzz-subset library
+ if (HB_BUILD_SUBSET)
++  if (CMAKE_SYSTEM_NAME STREQUAL "HarmonyOS" AND NOT BUILD_SHARED_LIBS)
++    # The core amalgam already compiles these common definitions. Static subset
++    # resolves them through harfbuzz; a second copy also breaks whole-archive.
++    list(REMOVE_ITEM subset_project_sources
++         ${PROJECT_SOURCE_DIR}/src/hb-number.cc
++         ${PROJECT_SOURCE_DIR}/src/hb-ot-cff1-table.cc
++         ${PROJECT_SOURCE_DIR}/src/hb-ot-cff2-table.cc
++         ${PROJECT_SOURCE_DIR}/src/hb-static.cc)
++  endif ()
+   add_library(harfbuzz-subset ${subset_project_sources} ${subset_project_headers})
+   list(APPEND project_headers ${PROJECT_SOURCE_DIR}/src/hb-subset.h ${PROJECT_SOURCE_DIR}/src/hb-subset-repacker.h)
+   add_dependencies(harfbuzz-subset harfbuzz)

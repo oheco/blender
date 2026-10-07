@@ -1,0 +1,447 @@
+{
+  "source_archive_sha256": "8876aad926b2e72bdefddc34885472d5332e2d20aa3ed57313466f0bc982cf3f",
+  "archive_root": "Vulkan-Headers-1.4.341",
+  "git_commit": "b5c8f996196ba4aa6d8f97e52b5d3b6e70f7e4e2",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 594,
+      "sha256": "7bdc16faa9cd50c8820067db6b14c2242a915c6d8bb5cf8756debfb493739de0"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "size": 1153,
+      "sha256": "bddf1ef170ce5721118b86ac3567999108a873ba92d3072603a9382866e1d628"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "size": 232,
+      "sha256": "c392e1b071a11d7e8d908c41b22861ab202d4ff427d3f6ba58a0e5331f79b0d2"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "size": 560,
+      "sha256": "f087c642fa92250fe097be19210875a8b18a09fb9a94d285d8999ade3ced854e"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "size": 4191,
+      "sha256": "bad4f83ca908411ec130eac53bc1986aa3abe8d872d36c4882af0a561da74447"
+    },
+    {
+      "path": ".gitignore",
+      "size": 253,
+      "sha256": "925a1e2eccfc29d2e6bf607bcd90a41e6a38e9174a02d52d945dbca11f9c1227"
+    },
+    {
+      "path": ".reuse/dep5",
+      "size": 509,
+      "sha256": "cdf8c8274de23c2fd0eb05c8afdaa51b0ba2fe6369505959ee7b1147be22f626"
+    },
+    {
+      "path": "BUILD.gn",
+      "size": 2323,
+      "sha256": "97d0a2e736d690993ce27477c253a5e2b1217f13e788b1b0a5dace648d4db46f"
+    },
+    {
+      "path": "BUILD.md",
+      "size": 1217,
+      "sha256": "33678f65ffe16d52e84db2efd015d44dc65edcc9da7154337ca8bc8569b7a639"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "size": 5892,
+      "sha256": "43f6c3c276aec1a1eb64abf4dbc27620f448302bb863d418260671fb90d05209"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.adoc",
+      "size": 369,
+      "sha256": "118a9963d8011a2e6939eb021f8170fa39f764be3a8dc844f2a3f94c79044aba"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 1144,
+      "sha256": "af47ad1e43fbc26770dd7b474afdfd2a43993c1386046fc5e731282a9f8fcdff"
+    },
+    {
+      "path": "LICENSE.md",
+      "size": 458,
+      "sha256": "ac24e5ea920e4318e4d02c4086ae51f53cfb03feed06c18df1019e7ada1ec7bc"
+    },
+    {
+      "path": "LICENSES/Apache-2.0.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "size": 1084,
+      "sha256": "1ca3502222d967f3be5751c55f6b7ee735b5383909c3b501495f54b216dbf227"
+    },
+    {
+      "path": "Makefile.release",
+      "size": 4913,
+      "sha256": "0ce81ade2979a57d433d08e402b19242475916fae2e74ec3d40efbb54c7484fa"
+    },
+    {
+      "path": "README.md",
+      "size": 1919,
+      "sha256": "28c9757358d56c906716e81b02f5c114b44f6c66fc3515222dd6c0039aa1954b"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 411,
+      "sha256": "d6a199f2149d29a8d8230ff31c89a1b21ecf31a5d75e47b22d6d1aa56b896270"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_av1std.h",
+      "size": 16687,
+      "sha256": "9b4ebcef0d6844b226803fa91b4c4c8bf9eb941aa31b19cea48ded0886a8f9e2"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_av1std_decode.h",
+      "size": 4250,
+      "sha256": "f03abf49fcaf2bd179d48d768164f9494264b58401b98899e8860ba297a1e7aa"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_av1std_encode.h",
+      "size": 5979,
+      "sha256": "40f84c98d0341246ead3e864e1378df47d861505c5c139da5ed85c352d5e2300"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_h264std.h",
+      "size": 13861,
+      "sha256": "f6691f82e4637adda20e56d56951c673cc1ecdf2fa77e09cc8eba4b1f45118c1"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_h264std_decode.h",
+      "size": 2723,
+      "sha256": "8c4682860954d6bfc603e200d9e12586bc57265bd37b73a12b1ecf0c1ad42721"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_h264std_encode.h",
+      "size": 6878,
+      "sha256": "75cc54e489b1ec7e3c635680cabaf7c9c2ddd4071a485440e5368e76ede30a85"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_h265std.h",
+      "size": 23439,
+      "sha256": "01b5f3d0fd9d273a68ed90f898ba94c05c0305280a753bf95fab60d60727c22e"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_h265std_decode.h",
+      "size": 2429,
+      "sha256": "926a24d94afed2b1ab030e81c3b9e2e6730cca530f7a5a5bd821e7b896b93a41"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_h265std_encode.h",
+      "size": 7462,
+      "sha256": "8a56e0c78496affa84eca39ec0f5636df681c04623dd0291aeeadd012df324be"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_vp9std.h",
+      "size": 5384,
+      "sha256": "e18e20b197945929d5871836bfde923e38b350b09e1cbe430f1bd802d9eda34e"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codec_vp9std_decode.h",
+      "size": 2371,
+      "sha256": "c3929bbdd0ab79128c7f9bfb9641c9a017b3983529315b771caaafc74fdbb89a"
+    },
+    {
+      "path": "include/vk_video/vulkan_video_codecs_common.h",
+      "size": 660,
+      "sha256": "be6d2495d19e96aca6aa5c11e5c418d1cd72beac23fe19eb9169c06e2843f0af"
+    },
+    {
+      "path": "include/vulkan/vk_icd.h",
+      "size": 8224,
+      "sha256": "15d092840ca6d45fca3ccdc50cf021943e6c88aefe2a730c391f26d60bba9018"
+    },
+    {
+      "path": "include/vulkan/vk_layer.h",
+      "size": 7178,
+      "sha256": "bfe6804d3f527138fcfebb0845c1c0077c5718725bf338be09b0f9be3e8dede5"
+    },
+    {
+      "path": "include/vulkan/vk_platform.h",
+      "size": 2828,
+      "sha256": "949d517bb83e1d88fd4f1cef02bd3cb9ab50d44e8354cc68227cf2dccfdd3307"
+    },
+    {
+      "path": "include/vulkan/vulkan.cppm",
+      "size": 462150,
+      "sha256": "785393060b75fdd24444ae64ced6092a65768e794d27a7f66b8b8ac33f70198f"
+    },
+    {
+      "path": "include/vulkan/vulkan.h",
+      "size": 1616,
+      "sha256": "72b952cc6de70ee12d118d3095e80346b42ff01cfc6f2bbb37ec01800eab1da6"
+    },
+    {
+      "path": "include/vulkan/vulkan.hpp",
+      "size": 1103199,
+      "sha256": "704c9abb07352598a1596adb20e971fd6b086243be649fdf2e9c666c22564794"
+    },
+    {
+      "path": "include/vulkan/vulkan_android.h",
+      "size": 6330,
+      "sha256": "49cd5e53156cb9e36fa03d81a5f1b8c1e93428e3499698309398d66dc3872948"
+    },
+    {
+      "path": "include/vulkan/vulkan_beta.h",
+      "size": 17412,
+      "sha256": "0c8306cc75db2a51fe5c29654afde8587f44fc84c2d123eaadf538e86dd0541c"
+    },
+    {
+      "path": "include/vulkan/vulkan_core.h",
+      "size": 1265235,
+      "sha256": "03964df1e28a162285726ec7cf9098e5e0271cb1df21933e7bfef9f6fa08937f"
+    },
+    {
+      "path": "include/vulkan/vulkan_directfb.h",
+      "size": 1952,
+      "sha256": "4c6be34ee27f2fce4870c4046304b0c53f1fe62b13a4c21da8d537ec4cf8b965"
+    },
+    {
+      "path": "include/vulkan/vulkan_enums.hpp",
+      "size": 662790,
+      "sha256": "590a0d467210c9e0a0cea42677cb2636981599a9b18736a06a5010b2b8c341c3"
+    },
+    {
+      "path": "include/vulkan/vulkan_extension_inspection.hpp",
+      "size": 194339,
+      "sha256": "f6d4742873ecf881050fb0c3c1ca3637963b768fa1e5e576f640a3ecd4ed4dab"
+    },
+    {
+      "path": "include/vulkan/vulkan_format_traits.hpp",
+      "size": 424791,
+      "sha256": "e1d4fe2ce31a0b24c581a1391d51c6e2485e5a1e149d7caf4eebd5539dec9475"
+    },
+    {
+      "path": "include/vulkan/vulkan_fuchsia.h",
+      "size": 12900,
+      "sha256": "8a7a0c52e8c1ab41ede66bdabc32057255a7b385441d67dd4023121de5801194"
+    },
+    {
+      "path": "include/vulkan/vulkan_funcs.hpp",
+      "size": 2300965,
+      "sha256": "981b95abecaecbdcadb7b251e1313f6efb4153ddef42e62e323cabc98b894127"
+    },
+    {
+      "path": "include/vulkan/vulkan_ggp.h",
+      "size": 1939,
+      "sha256": "97cb1776742a4d8aae9f258ce908da76d0466da8864a5036aaca834af5f62e8d"
+    },
+    {
+      "path": "include/vulkan/vulkan_handles.hpp",
+      "size": 1668256,
+      "sha256": "53215792f7ff00783d80ee8770126b2a54f8d0ac39dfa80699628177ae5ad2a3"
+    },
+    {
+      "path": "include/vulkan/vulkan_hash.hpp",
+      "size": 1031464,
+      "sha256": "6032b801ae4640ba56d3348dcb8d03b355a18d4f0f69f54332d2cb00aba75aa0"
+    },
+    {
+      "path": "include/vulkan/vulkan_hpp_macros.hpp",
+      "size": 11194,
+      "sha256": "960ed4e577d933a59cb9f6c0db2ff2d43e05f4314423e804fb559aac672586a8"
+    },
+    {
+      "path": "include/vulkan/vulkan_ios.h",
+      "size": 1352,
+      "sha256": "8bb052cc162b4086c0f1cd29a5ed11ccf921b8ee83551194394b86efd249c572"
+    },
+    {
+      "path": "include/vulkan/vulkan_macos.h",
+      "size": 1384,
+      "sha256": "00f532e9b7229488ac9932c2b391d74e9e8566ed91d0dbbad10e15dc356c9293"
+    },
+    {
+      "path": "include/vulkan/vulkan_metal.h",
+      "size": 8066,
+      "sha256": "8f84536896b8d3c6c49883ce34242f8922840617d0b184b338c0f83da5bfaaaa"
+    },
+    {
+      "path": "include/vulkan/vulkan_ohos.h",
+      "size": 4106,
+      "sha256": "9da9b4f1a23adc0b705450ce4b5c934dff2fd1eb8cdf4ac3273465420fc9475a"
+    },
+    {
+      "path": "include/vulkan/vulkan_raii.hpp",
+      "size": 1773393,
+      "sha256": "1de9f9dfb4dea737a2febaa0fc35ece77c861b414e4d7a4b237764bf355480d4"
+    },
+    {
+      "path": "include/vulkan/vulkan_screen.h",
+      "size": 4193,
+      "sha256": "ffe2e63fbea5f0a9a7948a998eb7e1085e1f7cd5fd55b3d9a0146fe1aa8307bd"
+    },
+    {
+      "path": "include/vulkan/vulkan_shared.hpp",
+      "size": 36731,
+      "sha256": "49e6f0e1f8432e57045b4ad3b771db4897e6f791960f1f4e9c9a99b4005e379c"
+    },
+    {
+      "path": "include/vulkan/vulkan_static_assertions.hpp",
+      "size": 878256,
+      "sha256": "746cc209cd7e8d7fda8d3a44094235da57d437aa278919be48870069a15aa866"
+    },
+    {
+      "path": "include/vulkan/vulkan_structs.hpp",
+      "size": 8361480,
+      "sha256": "050b1c13b1f37664623917c34efe9a52e39983b95270b78d349e87b85c809c2b"
+    },
+    {
+      "path": "include/vulkan/vulkan_to_string.hpp",
+      "size": 621355,
+      "sha256": "2f315979dbbd56e6ba9bc2ab5e7e552ee61b767a209c9f41a5801e26b5ca5f08"
+    },
+    {
+      "path": "include/vulkan/vulkan_vi.h",
+      "size": 1325,
+      "sha256": "8caacbb6eccae5946fb367145ba5222b85d4747a3f8b30632fdfca0503f0c339"
+    },
+    {
+      "path": "include/vulkan/vulkan_video.cppm",
+      "size": 18976,
+      "sha256": "9a310e34fb0c552d759716e239c249678f15521611b8aa28bc6329cad033d8a3"
+    },
+    {
+      "path": "include/vulkan/vulkan_video.hpp",
+      "size": 271554,
+      "sha256": "7a8753b16780ec90831fff5bf5c0ebc80ccdab73d793e5c0f0ba5ba5c1dea172"
+    },
+    {
+      "path": "include/vulkan/vulkan_wayland.h",
+      "size": 1952,
+      "sha256": "d43ca1c45cd4b2e1119c168b780e2864205ad8119e5f42d9d99aa29d2654a3f2"
+    },
+    {
+      "path": "include/vulkan/vulkan_win32.h",
+      "size": 15757,
+      "sha256": "0b11442e7efa0d5b6732b9964edf6dbdf3f6cf1dd58afe7572cc9b7f6de24317"
+    },
+    {
+      "path": "include/vulkan/vulkan_xcb.h",
+      "size": 1966,
+      "sha256": "1e1525fc64826ab3ea9e8a6ee6a618ef14db3e27397fcf8fb070bb1ddaf00c0b"
+    },
+    {
+      "path": "include/vulkan/vulkan_xlib.h",
+      "size": 1947,
+      "sha256": "82346aaa80a5c984b6a26f55c7c363c65be43029da539ba0fbdfea9840051cca"
+    },
+    {
+      "path": "include/vulkan/vulkan_xlib_xrandr.h",
+      "size": 1497,
+      "sha256": "da5d5311bcffa49c614e9f397784e44668466890aeaf4e54c2e0064c20259089"
+    },
+    {
+      "path": "registry/apiconventions.py",
+      "size": 662,
+      "sha256": "824026aeb6762ee9758bd2a6d6c3a31b7e9d8ca094ddd62faae129c34a196f69"
+    },
+    {
+      "path": "registry/base_generator.py",
+      "size": 60242,
+      "sha256": "043d838d97bed6ac8bd254b30e10cfb79bb95ac9c01b6948b0bfd45e3603947e"
+    },
+    {
+      "path": "registry/cgenerator.py",
+      "size": 25246,
+      "sha256": "b818f9ad994b83aed3696cc64a04eef850ecdb9c0d17ee787a7c2c871a07ef47"
+    },
+    {
+      "path": "registry/generator.py",
+      "size": 56345,
+      "sha256": "270485adaf44299d5382472a00d3fb606028c308a454e3ef0c51a54011f88b50"
+    },
+    {
+      "path": "registry/parse_dependency.py",
+      "size": 13021,
+      "sha256": "d92cffda9d5221db9cd6f74cf065cef8c51445ff88863ef0a10c722e335212d8"
+    },
+    {
+      "path": "registry/profiles/VP_KHR_roadmap.json",
+      "size": 20529,
+      "sha256": "aa447a2f35ae9b0106fc36cebd3ff358e12528b98fbeaf008a85bf4f28945ff0"
+    },
+    {
+      "path": "registry/reg.py",
+      "size": 95937,
+      "sha256": "dbcdc619c0caf36bfe97e34795983cfa6ef4c3c5eb337b5498b88b01b2a079f2"
+    },
+    {
+      "path": "registry/spec_tools/conventions.py",
+      "size": 17840,
+      "sha256": "695bcef7ba967c00f75c406b8ff70159a32cf52bcfd531d5f88dfc96bede97e4"
+    },
+    {
+      "path": "registry/spec_tools/util.py",
+      "size": 2143,
+      "sha256": "6386baa0b90ce32088b7d0fcc4500c5689f30469fc4a5dde0addba104de81388"
+    },
+    {
+      "path": "registry/stripAPI.py",
+      "size": 1701,
+      "sha256": "9c268bde5a1e05e51af01f2e18a6c59684842b861936e7eda7384f778197cafa"
+    },
+    {
+      "path": "registry/validusage.json",
+      "size": 12916109,
+      "sha256": "cefe2b37270d254af1c9d09c6e1a20db7eea3604fd40d2e9ae796e857ff5553d"
+    },
+    {
+      "path": "registry/video.xml",
+      "size": 196809,
+      "sha256": "4480ab87c8ee6d561376fa83820af1071f85ff7fa1a26b21f521717fa04d5809"
+    },
+    {
+      "path": "registry/vk.xml",
+      "size": 3146105,
+      "sha256": "006807a47518e9ab23ecf7f4c95d936aab477a20d27a9a7ac23cedefb7210178"
+    },
+    {
+      "path": "registry/vkconventions.py",
+      "size": 12302,
+      "sha256": "1c96faf15214221884f273b4f71065023791093513a84ea7e948d403ceb7d7f1"
+    },
+    {
+      "path": "registry/vulkan_object.py",
+      "size": 20161,
+      "sha256": "10cc1a3f0d476cb4969e78468ce14bcff21dfc052566d31e080a8d2e6b110c13"
+    },
+    {
+      "path": "tests/CMakeLists.txt",
+      "size": 1255,
+      "sha256": "f69722f0d4e93b2a4e9d31ea97c2da32a31b5dbf3a80ef6d2ed819947355ff98"
+    },
+    {
+      "path": "tests/integration/CMakeLists.txt",
+      "size": 2626,
+      "sha256": "8d8963976b297977dd1953b18af488d3f6ca12da9ec876c843b6011ca70a2296"
+    },
+    {
+      "path": "tests/vk_hpp.cpp",
+      "size": 270,
+      "sha256": "05136569c1b6b6703e98280e59cbd4b045163000662322203d40c352436c5655"
+    },
+    {
+      "path": "tests/vk_hpp_module.cpp",
+      "size": 260,
+      "sha256": "45dcc6776c853c2cf5d40cc1d7927b334b4fcee6d86daafa891f4532fd49d140"
+    },
+    {
+      "path": "tests/vk_icd.c",
+      "size": 241,
+      "sha256": "a3d7c5e08b6f82038b3546493054a09303079b74e7e89d5f6da64ab5d9937eb2"
+    },
+    {
+      "path": "tests/vk_layer.c",
+      "size": 243,
+      "sha256": "c862058c054098315bf03347ffb5f1a383e927301529bf38c2073c10a7281610"
+    }
+  ]
+}

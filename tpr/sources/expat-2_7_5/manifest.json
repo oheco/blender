@@ -1,0 +1,24 @@
+{
+  "name": "expat",
+  "version": "2_7_5",
+  "kind": "source",
+  "filename": "libexpat-2_7_5.tar.gz",
+  "url": "https://github.com/libexpat/libexpat/archive/R_2_7_5.tar.gz",
+  "license": "SPDX:MIT",
+  "license_files": [
+    "COPYING",
+    "expat/AUTHORS",
+    "expat/COPYING"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 8449555,
+  "sha256": "7e23daf05f0ab028570d709ce48d724802baa6e4fbfa4db9b7cee3b72ee2062b",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 8449555,
+      "sha256": "7e23daf05f0ab028570d709ce48d724802baa6e4fbfa4db9b7cee3b72ee2062b"
+    }
+  ]
+}

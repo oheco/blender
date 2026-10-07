@@ -1,0 +1,1448 @@
+[
+  {
+    "executable": false,
+    "path": ".cirrus.yml",
+    "sha256": "3a004ce8ffc3e465b9e0c065de9cacfebf6b7720daf7001170dcc9746fde16b5",
+    "size": 1620
+  },
+  {
+    "executable": false,
+    "path": ".github/workflows/docs.yml",
+    "sha256": "60f72152c7a6aea75316cd3f908d8a9d742512bcada790642a82ff5f4663d528",
+    "size": 1021
+  },
+  {
+    "executable": false,
+    "path": ".github/workflows/tests.yml",
+    "sha256": "0e667e50a34f87b676ce226d734a5e9cf88474b4e46c672faa550bd17bdf5e3c",
+    "size": 8918
+  },
+  {
+    "executable": false,
+    "path": ".gitignore",
+    "sha256": "ad999668ddf7e58eca53bab68655bedcc0bdb3440a466aea9efaf72d03f8a763",
+    "size": 170
+  },
+  {
+    "executable": false,
+    "path": ".mailmap",
+    "sha256": "2e068807121337ed5a553fed5222b6d7eb97db7ef0aa15022e67c8d17f9a66e2",
+    "size": 167
+  },
+  {
+    "executable": false,
+    "path": ".pre-commit-config.yaml",
+    "sha256": "05eeccedcce3c85b5f99bb4c305c387cd3d440d39aa84fb6de5c45a6c3b57b8e",
+    "size": 990
+  },
+  {
+    "executable": false,
+    "path": ".readthedocs.yaml",
+    "sha256": "7184d6399bfe74d38c86ecf5902617033404cf36781323ca19cf369e8ef4b029",
+    "size": 244
+  },
+  {
+    "executable": false,
+    "path": "CHANGELOG.rst",
+    "sha256": "bb53c3018d32c7ecd49bafd20e58ff2dc63d622ba9416c11c2ecaae291aa5b1e",
+    "size": 14695
+  },
+  {
+    "executable": false,
+    "path": "LICENSE",
+    "sha256": "8f82ea9ef9a55b47f4170536d02e48b5bc33fc5135e5b4a1b5f8d6404833ec9b",
+    "size": 1155
+  },
+  {
+    "executable": false,
+    "path": "LICENSES/MIT.txt",
+    "sha256": "8f82ea9ef9a55b47f4170536d02e48b5bc33fc5135e5b4a1b5f8d6404833ec9b",
+    "size": 1155
+  },
+  {
+    "executable": false,
+    "path": "PKG-INFO",
+    "sha256": "c40ce4b6bb17c8c38b0fe77f73a4524940afb9716020e62681d3aee2576d203d",
+    "size": 2754
+  },
+  {
+    "executable": false,
+    "path": "README.rst",
+    "sha256": "7475bba922f823535d3db651808c7c14ad455e5fd80e5279c54b04b435f2e6be",
+    "size": 978
+  },
+  {
+    "executable": false,
+    "path": "RELEASE.rst",
+    "sha256": "7a934aa6c104e5829de3679907430b97664eb36fea581ab98744da66cb9e85e4",
+    "size": 1616
+  },
+  {
+    "executable": false,
+    "path": "ci/alpine-3.docker",
+    "sha256": "0778e0720eaa7edf33db15d7ae6eefa75a34b1b1ebebef5f5407e0c2457ffa82",
+    "size": 207
+  },
+  {
+    "executable": false,
+    "path": "ci/archlinux.docker",
+    "sha256": "d9cbe7f44d3a0583019c867684548a18cc7e7d16016498849343f5eef5f76f82",
+    "size": 220
+  },
+  {
+    "executable": false,
+    "path": "ci/debian-11.docker",
+    "sha256": "73b3544018cf3ff2f8f2a6a3275247b53b7af90e1005fd6883f8a686aaccd4a7",
+    "size": 247
+  },
+  {
+    "executable": false,
+    "path": "ci/debian-12.docker",
+    "sha256": "96a5cf020e59de68e90bd0cca08c75fa438cd533e6adc608785f5e64e723e00d",
+    "size": 247
+  },
+  {
+    "executable": false,
+    "path": "ci/debian-unstable.docker",
+    "sha256": "4c03e08d5b072bcca731403f76cb96f73205713c1c3e28dadac57509d4b9126d",
+    "size": 247
+  },
+  {
+    "executable": false,
+    "path": "ci/fedora-41.docker",
+    "sha256": "c27765e870b3f1f976ed1dda37b14677efe097b8ee47f800e7e365ba9b688d32",
+    "size": 227
+  },
+  {
+    "executable": false,
+    "path": "ci/manylinux.docker",
+    "sha256": "468345d91ac2037344c281a3a6fa9fd5bece37251655cb7c72e865438ee75710",
+    "size": 209
+  },
+  {
+    "executable": false,
+    "path": "ci/miniconda.docker",
+    "sha256": "5602f6ca438340f7e65cafb6684438eeea6ffe6b704ef2cd860df69e60eba232",
+    "size": 233
+  },
+  {
+    "executable": false,
+    "path": "ci/opensuse-15.docker",
+    "sha256": "a2e1aa8484cf2bce35a799ba20b2bc7c4f62659edd348934861f196c3c62ade6",
+    "size": 289
+  },
+  {
+    "executable": false,
+    "path": "codecov.yml",
+    "sha256": "4e939b63eb32dc26181c20317f5a9724f8e30da6f0be11c3146075a8e85bb1bd",
+    "size": 254
+  },
+  {
+    "executable": false,
+    "path": "docs/about.rst",
+    "sha256": "4920513f55640ca25972201e75254a4a65dbc6f23dbb5d993083f4fa4eea009d",
+    "size": 2079
+  },
+  {
+    "executable": false,
+    "path": "docs/changelog.rst",
+    "sha256": "bb53c3018d32c7ecd49bafd20e58ff2dc63d622ba9416c11c2ecaae291aa5b1e",
+    "size": 14695
+  },
+  {
+    "executable": false,
+    "path": "docs/conf.py",
+    "sha256": "e4ac760ba1bb597bfc06a50af24434dc0d31a3673c4467b05c0031fe2cea5c7f",
+    "size": 788
+  },
+  {
+    "executable": false,
+    "path": "docs/examples/spam/meson.build",
+    "sha256": "a50017b8ec965e8fc8a73fb4bcc3288cc2651739461e95b2ade152d0619cefeb",
+    "size": 791
+  },
+  {
+    "executable": false,
+    "path": "docs/examples/spam/pyproject.toml",
+    "sha256": "961d7e03bd1b9f941095bed38eaaf10d189906abd0e698e305c23e86b7a3be2d",
+    "size": 287
+  },
+  {
+    "executable": false,
+    "path": "docs/examples/spam/src/__init__.py",
+    "sha256": "9194bcbb26ae91a703f5d8fc31353efd3d9b5939cfb989620e122693305b1569",
+    "size": 130
+  },
+  {
+    "executable": false,
+    "path": "docs/examples/spam/src/spammodule.c",
+    "sha256": "782b86ea679c94a402dfe41fd2a71f89dcad61a9b70dc9ecb76bb891036c5325",
+    "size": 629
+  },
+  {
+    "executable": false,
+    "path": "docs/explanations/default-options.rst",
+    "sha256": "3429ead49f6d6c3f4a051ecb952c25c5e87f03b44e552598318bd8ad89b28864",
+    "size": 4095
+  },
+  {
+    "executable": false,
+    "path": "docs/explanations/design-old.rst",
+    "sha256": "96583153f282c1d1216a40b45ca192059efa1357f55b2606ab36cd128c053792",
+    "size": 2941
+  },
+  {
+    "executable": false,
+    "path": "docs/how-to-guides/config-settings.rst",
+    "sha256": "378492f1ba33c5b25e1bca9e657e95bbf92edf616e9a2be2e0fb2a62818cd230",
+    "size": 4648
+  },
+  {
+    "executable": false,
+    "path": "docs/how-to-guides/debug-builds.rst",
+    "sha256": "dfdc4b05ef4f96cdfc1a0d42c8631818302a64bc510b0f9754dc4065e7cf669a",
+    "size": 2200
+  },
+  {
+    "executable": false,
+    "path": "docs/how-to-guides/editable-installs.rst",
+    "sha256": "d76f33a8f5a67257477ef347af3dced1da728ada95281c7c709f217018f26b85",
+    "size": 5334
+  },
+  {
+    "executable": false,
+    "path": "docs/how-to-guides/meson-args.rst",
+    "sha256": "e2addcd0fe22383bbb501a16eabfa02544a4ac61286e4c05cf7ca3cb73bd1374",
+    "size": 6586
+  },
+  {
+    "executable": false,
+    "path": "docs/how-to-guides/sdist.rst",
+    "sha256": "299ff63c35be98ada3ec1a80708c40532c353c2045a7fbf76f0fca16ac6bda63",
+    "size": 2297
+  },
+  {
+    "executable": false,
+    "path": "docs/how-to-guides/shared-libraries.rst",
+    "sha256": "c76c21504c61e2f05c589f926bc94c99efbea46315e5f0f321eda96f5d37655d",
+    "size": 11536
+  },
+  {
+    "executable": false,
+    "path": "docs/index.rst",
+    "sha256": "40b03e87c5c2049ae9b4e593c986bf16f15310e80d56478000ec245db251cbc4",
+    "size": 3564
+  },
+  {
+    "executable": false,
+    "path": "docs/projects-using-meson-python.rst",
+    "sha256": "3486844cf9a3f7d6791f04e827cf2b8a0ba04b2b7a927314bb9d1eb59ba3c69b",
+    "size": 1139
+  },
+  {
+    "executable": false,
+    "path": "docs/reference/config-settings.rst",
+    "sha256": "8ba5ef2fbe37f3fb52ea164de95817056ed91faef5312eacc44cd04ac9052075",
+    "size": 1507
+  },
+  {
+    "executable": false,
+    "path": "docs/reference/environment-variables.rst",
+    "sha256": "233123fc70aa2cad43dbae07beeace2cbad57d145a45ede7558e049dcb92ce54",
+    "size": 5083
+  },
+  {
+    "executable": false,
+    "path": "docs/reference/limitations.rst",
+    "sha256": "62194ebde1f3d3df87edc29cf298e655fb0ebf9ba0439ce7309aa0129e6c4bac",
+    "size": 1060
+  },
+  {
+    "executable": false,
+    "path": "docs/reference/meson-compatibility.rst",
+    "sha256": "8833eed5affa3433533d25cbe2c93c2aaf3776f9c23cada745a980745a8c84c8",
+    "size": 2424
+  },
+  {
+    "executable": false,
+    "path": "docs/reference/pyproject-settings.rst",
+    "sha256": "69f6b324b3e75db3bce6ed96ea9d6982e9c3bb7841f8aa76cb8867162b18680f",
+    "size": 2763
+  },
+  {
+    "executable": false,
+    "path": "docs/spelling_wordlist.txt",
+    "sha256": "1205953cc195f920fb58f53499d8c9f156ffb80b3a2d640e705e64489f9351bf",
+    "size": 212
+  },
+  {
+    "executable": false,
+    "path": "docs/spelling_wordlist.txt.license",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "docs/tutorials/introduction.rst",
+    "sha256": "3650948815f7016ba4a5da8983373ea2b7932d9c68c47aec1c26be865ba0cd24",
+    "size": 10164
+  },
+  {
+    "executable": false,
+    "path": "meson.build",
+    "sha256": "44c69948ae1c21893f1204822053e8df95f26fef399a183307a45950501a0da9",
+    "size": 389
+  },
+  {
+    "executable": false,
+    "path": "mesonpy/__init__.py",
+    "sha256": "a8a75cc402321030cb716a69998ba78a34943e8a07f801d47fea4d8f52a80047",
+    "size": 50979
+  },
+  {
+    "executable": false,
+    "path": "mesonpy/_compat.py",
+    "sha256": "b69939922db9956da417b6c555baa34e33880632d1553c0ba1b0dd97ccd78f16",
+    "size": 1442
+  },
+  {
+    "executable": false,
+    "path": "mesonpy/_editable.py",
+    "sha256": "351e85aacdad53b5b67f6eb86ebcc69408d0d6bf52454d84478e16d34e7b6ef7",
+    "size": 14079
+  },
+  {
+    "executable": false,
+    "path": "mesonpy/_rpath.py",
+    "sha256": "fcd10de51911d7857d151c44cd348052075d9c3976e6ada5de819c02b0d06e04",
+    "size": 3272
+  },
+  {
+    "executable": false,
+    "path": "mesonpy/_tags.py",
+    "sha256": "6b8820d818c0d1be11afbdc953acaafed7c5057d75c735b87e6fe6ae4f376c4a",
+    "size": 6661
+  },
+  {
+    "executable": false,
+    "path": "mesonpy/_util.py",
+    "sha256": "fc0f37fe10f636a0c2ac5d17c967c9333bcab4aaef434dfaf614dce4adcee183",
+    "size": 1877
+  },
+  {
+    "executable": false,
+    "path": "mesonpy/_wheelfile.py",
+    "sha256": "b346278cefff1933bdeae3e004168635e15122913fa4ad32c4e4720a7bafed49",
+    "size": 4289
+  },
+  {
+    "executable": false,
+    "path": "pyproject.toml",
+    "sha256": "e2e94a44fb7097fa0871f4ac10765e3a3121145cca28ddc21b547a8711c35846",
+    "size": 2768
+  },
+  {
+    "executable": false,
+    "path": "tests/__init__.py",
+    "sha256": "d7878eea8e289bb15978e622fb1c3b4017064682308bd53574bf56fc16dda015",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/conftest.py",
+    "sha256": "a8c5309efcc5abe701f533e29385825846cd32109102e6c988cd62fe5b8c1ccb",
+    "size": 6827
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/complex/__init__.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/complex/more/__init__.py",
+    "sha256": "c11f9318dbf6d22897fb59eb73e20185e2b6cf1e583e142c1c5ce9bf2cf45129",
+    "size": 119
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/complex/more/baz.pyx",
+    "sha256": "d44ab15860f5b4bb6586433c0fbd12161a2e9fadcffdc84198e956257922aebc",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/complex/more/meson.build",
+    "sha256": "d4b3b8c1e7734b9ba552f32732a21a665c588f616dcc3e2883634fc1ff095511",
+    "size": 189
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/complex/namespace/bar.py",
+    "sha256": "90d6f67d1fde8d473c10e6940e2502501677a3ffa5d1f3ea5988bef4e059d9b5",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/complex/namespace/foo.py",
+    "sha256": "c9b2c93319bd2c76114b985984de110e96c30b6e328b67bbce6d16d34831ec37",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/extension.c",
+    "sha256": "3c30ea42b2c369e0debed8121b9663ad69df490f8b1dab5f565ae8ace2ae1731",
+    "size": 663
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/foo.py",
+    "sha256": "26ad7adc851bc9415f636576c9fd53a4083e344bdf8484853afa3a5dfe6dfad2",
+    "size": 120
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/meson.build",
+    "sha256": "e9ba6dde24f42ab6e181f23cc92657875d9887f752519bbddceefbd24532d0f2",
+    "size": 1240
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/move.py",
+    "sha256": "5b861730773ec76424b1442c4565da843692563afdc32ff15a9e87f60b5312c8",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/complex/test.pyx",
+    "sha256": "d44ab15860f5b4bb6586433c0fbd12161a2e9fadcffdc84198e956257922aebc",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/configure-data/configure_data.py.in",
+    "sha256": "986271d207425f014fcf41d60f4f1b01097a67ca945f690711e8f13bf726335f",
+    "size": 139
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/configure-data/meson.build",
+    "sha256": "d98c4d44521b2f0ae7b681083bad14d6b172f4924f7148f3c1349a3fb0fad935",
+    "size": 364
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/configure-data/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/custom-target-dir/codegen.py",
+    "sha256": "d62c0eaef875f0b6cc3fb1ea9ec38810c3bc6add83b8189548e63a935ec06e32",
+    "size": 318
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/custom-target-dir/meson.build",
+    "sha256": "839d2d4713851fa216ed73b15108bfbd5747f48ffce149aabc49fa55908a11a2",
+    "size": 337
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/custom-target-dir/pyproject.toml",
+    "sha256": "c43f7eff6f9d934f8c932074ef1fd7afd786790f66a7c0a259710b7344064121",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/detect-compiler/detect_compiler.c",
+    "sha256": "a8c0f9cbb9f1c2b541ad31b3ba774dd29d9e14476a7845f9b3db6fd3d031760b",
+    "size": 732
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/detect-compiler/meson.build",
+    "sha256": "817c01be566dbe0bfbe2d1dfed1b4b84428d8d5b8c0e38b7f0c0ac81123c836e",
+    "size": 260
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/detect-compiler/pyproject.toml",
+    "sha256": "ac4807ea898fd52112ef4db05bd14ff4561bc26d80113e2e71cd7dbf61832582",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/dist-script/meson.build",
+    "sha256": "6a12a19403e38f9f0edac603a0c7dc91d5eea18bce085640fa82f13dfa01ed1f",
+    "size": 166
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/dist-script/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/dynamic-version/meson.build",
+    "sha256": "23edddf38792e86f19001a7d3cc364c3e9d1fe3e429c8c1ef57a255529d35519",
+    "size": 138
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/dynamic-version/pyproject.toml",
+    "sha256": "cff750500818fde28efd0075cc03d5a82680e1b9648242dd0e40f81edade214b",
+    "size": 227
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/encoding/meson.build",
+    "sha256": "84f02ab4056aa4c252ebc5fd3d33d1e205c02ad108b76cbe82d72ceccf7345e3",
+    "size": 210
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/encoding/pyproject.toml",
+    "sha256": "ac4807ea898fd52112ef4db05bd14ff4561bc26d80113e2e71cd7dbf61832582",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/encoding/テスト.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/executable/example.c",
+    "sha256": "7ee4bb32790af4f7b98909ef19a8c7c70fa1ab5c8294013e07135760e7cd7dbb",
+    "size": 150
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/executable/meson.build",
+    "sha256": "6bc2fbd4d5b5bc81e2eea89409923db7b7812f102c73b18d36f1b77e0b517d86",
+    "size": 204
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/executable/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": true,
+    "path": "tests/packages/executable-bit/example-script.py",
+    "sha256": "fea69bd8f649e8bd83d5568fbbdedfea2b48de24fadc30d8b1e945824b52a093",
+    "size": 119
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/executable-bit/example.c",
+    "sha256": "7ee4bb32790af4f7b98909ef19a8c7c70fa1ab5c8294013e07135760e7cd7dbb",
+    "size": 150
+  },
+  {
+    "executable": true,
+    "path": "tests/packages/executable-bit/executable_module.py",
+    "sha256": "85608d1db6652854c063dae38501e413456fc8196dfdea584920b296137e6b14",
+    "size": 175
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/executable-bit/meson.build",
+    "sha256": "6ca79bc6cd917769fd5baa0d171508a2e66873d3e095752dea60b6aa77a99dc5",
+    "size": 406
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/executable-bit/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata/LICENSE",
+    "sha256": "1d74a800aaf6957d1a1f953e1af72776a2693054b664a244bf3a9b6e2f0ba75d",
+    "size": 13
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata/README.md",
+    "sha256": "827b87462ad1469a91eb02203ac5d8289885d788d867ac43c2939ca04ea579d4",
+    "size": 167
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata/meson.build",
+    "sha256": "957a8febd32de3fb4dcd97b605394c22101223d67bbdf1ea6025782c21c12063",
+    "size": 136
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/full-metadata/pyproject.toml",
+    "sha256": "4721a1c86ea0c56542d47f7d25b6d7c6fc732d7ca8cbf86340eba18074668473",
+    "size": 1173
+  },
+  {
+    "executable": true,
+    "path": "tests/packages/generated-files/example-script.py",
+    "sha256": "fea69bd8f649e8bd83d5568fbbdedfea2b48de24fadc30d8b1e945824b52a093",
+    "size": 119
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/generated-files/example.c",
+    "sha256": "7ee4bb32790af4f7b98909ef19a8c7c70fa1ab5c8294013e07135760e7cd7dbb",
+    "size": 150
+  },
+  {
+    "executable": true,
+    "path": "tests/packages/generated-files/executable_module.py",
+    "sha256": "85608d1db6652854c063dae38501e413456fc8196dfdea584920b296137e6b14",
+    "size": 175
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/generated-files/generate_version.py",
+    "sha256": "0f638fa023887bb89ab73a4258ee15f31406a228453f0d79a71db7d1d12044aa",
+    "size": 968
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/generated-files/meson.build",
+    "sha256": "46def97ab3eea90d94fa0d08c98ea9091cb3a1aae85257b96832ce00512affcb",
+    "size": 917
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/generated-files/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/imports-itself-during-build/meson.build",
+    "sha256": "1b2f72894b1c87a0537a2a86dc3b2bdf8b8c0d15a4e1f15a8aaeb76cfa2e3c9e",
+    "size": 350
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/imports-itself-during-build/plat.c",
+    "sha256": "572ca4b6a714efd3ba7c6d2fff547dde76df6ede328feddaf30ff57a6d6162a0",
+    "size": 501
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/imports-itself-during-build/pure.py",
+    "sha256": "ece965d95daf68e7c6d59ad6d1f4d59e9468ca1c4b2887c75ca8bdda321132aa",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/imports-itself-during-build/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/meson.build",
+    "sha256": "65131e597b57a730b0aa71c8586921ca57ccf92ab7c4221f23e4d2b625b3ac4a",
+    "size": 586
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/nested/deep/deep.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/nested/deep/excluded.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/nested/nested.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/strip/excluded.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/strip/module.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/subdir/__init__.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/subdir/excluded/__init__.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/subdir/excluded.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/install-subdir/subdir/test.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/library/example.c",
+    "sha256": "981bcf126120cc16fba722fd491047b584d95764373dcd15f827b86e3bbb00a1",
+    "size": 182
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/library/examplelib.c",
+    "sha256": "c9630c910327bad3b743c5778c4cc87e29ee50b3975f29ad92c9fc7899b4ee34",
+    "size": 137
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/library/examplelib.h",
+    "sha256": "9a9b92620b17ba681ac982935ff7c46d551fd86bec1f8816d2207a14d8f0d4d2",
+    "size": 119
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/library/meson.build",
+    "sha256": "c99ce78b1df8e28b388fb4ff95fc56914b4fac1399e2e995342c294d16d13cf5",
+    "size": 349
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/library/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/license-file/meson.build",
+    "sha256": "67b473ee2a148b214686a2036ea6ef983109da82a326f69039c2f1b2d561a8c3",
+    "size": 135
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/license-file/pyproject.toml",
+    "sha256": "e8b75f0e5ac1e2a278255ab680a530f076d8e4a5d679d6f931c6cc0d1990ea7a",
+    "size": 261
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/license-file/something/LICENSE.custom",
+    "sha256": "b22b009134622b6508d756f1062455d71a7026594eacb0badf81f4f677929ebe",
+    "size": 7
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/license-pep639/LICENSES/BSD-3-Clause.txt",
+    "sha256": "46a0002cd9cc23b04c01d14d8bd09fa9bb9029335b8cf1a2bf784165832afa5e",
+    "size": 31
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/license-pep639/LICENSES/MIT.txt",
+    "sha256": "46a0002cd9cc23b04c01d14d8bd09fa9bb9029335b8cf1a2bf784165832afa5e",
+    "size": 31
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/license-pep639/meson.build",
+    "sha256": "f1b9b2d25fc44f5a280b204df5f587c7391d88cdf012be45e5e2e605894b3d04",
+    "size": 137
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/license-pep639/pyproject.toml",
+    "sha256": "85e016e95a463275d7ef5d406bfe16c1fadbbad2a116e496e86bee2e298126a0",
+    "size": 278
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/limited-api/meson.build",
+    "sha256": "bb6d9c025f9f85e8e96a8c3a17523e0d910bfb3bb0d4f09f722691296a3f12e5",
+    "size": 387
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/limited-api/meson.options",
+    "sha256": "8378c3e0e36584db6cc09fe24cc6bacc04790bb283e90c2a1fc14146391a4816",
+    "size": 140
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/limited-api/module.c",
+    "sha256": "771fd10bebbaa78af536d53e3d7ac252b3c37fbed5cb28330d8746e5097fae5b",
+    "size": 583
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/limited-api/pyproject.toml",
+    "sha256": "fbc5be4b2b44c3c5fbad76c0700aeb798be641714ed47ac5afd07e354f89bea0",
+    "size": 202
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-against-local-lib/__init__.py",
+    "sha256": "72efa975ae5e142f0809aa67944ffa1be62f153921c31b23095a1c108f9f7ab3",
+    "size": 451
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-against-local-lib/examplemod.c",
+    "sha256": "0b7faf9c04d73daa40092893b84d77e3290cb564085f1736e61461450aac8db6",
+    "size": 693
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-against-local-lib/lib/examplelib.c",
+    "sha256": "9aacd1af39dee410ec4871da6f8aa8d0bd0c1108b31ba941d5d8830bca36b562",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-against-local-lib/lib/examplelib.h",
+    "sha256": "74c02295fcb99aa03a97afd2dcdf050d139897998cc7f94816bcc3f2dfce004e",
+    "size": 340
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-against-local-lib/lib/meson.build",
+    "sha256": "4af0bafc577866f72784ef0792ff40afdd93ba1d7aef07ef2b5f207cae9bc897",
+    "size": 209
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-against-local-lib/meson.build",
+    "sha256": "046743ea89d52aac16179861385b0278f176b8ef986e122811cf266a4bcc8195",
+    "size": 685
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-against-local-lib/pyproject.toml",
+    "sha256": "d9e3b640b07acf93359d26d9032c8d5484e5347c85eaaca087225c25625ba888",
+    "size": 225
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/foo/__init__.py",
+    "sha256": "e5fe366ec4d93e27b9728610ce573782aab00801b34be9ac9efb756aa28c17e6",
+    "size": 155
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/foo/_examplemod.c",
+    "sha256": "eace63db891da340249005d00c90a8b165a780f821097ebdf4953ce18704d350",
+    "size": 689
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/foo/meson.build",
+    "sha256": "9973f793f1320f9603db009fae53293aba2c85a15acb75ade885e9fc123bd058",
+    "size": 281
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/meson.build",
+    "sha256": "a50342fc89e54bba2a3ae8a38372528657a1f67057fdfba144104f62714f29cb",
+    "size": 341
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/pyproject.toml",
+    "sha256": "501abbcdec1e98bca5ec2f9b0b3a841e4eebcb42cafa47e52e034d956715bc54",
+    "size": 323
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/subprojects/bar/bar_dll.h",
+    "sha256": "6f79b6442be28d7055613cee6d37c861b84c9f82a71a6d0873f16e1668054842",
+    "size": 692
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/subprojects/bar/examplelib.c",
+    "sha256": "c2ef15c535e8ce0fdbaa3e2689179bd9d4f9105360038b1109f89c62b0b267f8",
+    "size": 170
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/subprojects/bar/examplelib.h",
+    "sha256": "92a422b7202398196b212db35f83a9d7811b93633cbee2348428fc143374df45",
+    "size": 149
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/link-library-in-subproject/subprojects/bar/meson.build",
+    "sha256": "58e577618d328085db240615919b6c52771d13dbad19eb038ced00d643db9744",
+    "size": 1025
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/long-path/meson.build",
+    "sha256": "7fe8decb1f156300c0739fa108c6c09acb3a4ef481d7c49c6b89c4fcca0b0854",
+    "size": 223
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/long-path/pyproject.toml",
+    "sha256": "d36883121092c9a287f3518ecf0192d3317624800036d92b0e67bdcab92cdda7",
+    "size": 214
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/missing-dynamic-version/meson.build",
+    "sha256": "58270a5ef3b5523ccafa6845df952fa730fcc2c0f39cc87e33032f76179ffc77",
+    "size": 128
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/missing-dynamic-version/pyproject.toml",
+    "sha256": "25c0139e57f48f8d68ac5a954e3ed7998b8049852c067ce85466bc958c2edd88",
+    "size": 228
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/missing-meson-version/meson.build",
+    "sha256": "5f03971e758faf6c2eeb20576ed1d0fa4aadae4ce5f2663aa016432af48c3f50",
+    "size": 126
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/missing-meson-version/pyproject.toml",
+    "sha256": "ac4807ea898fd52112ef4db05bd14ff4561bc26d80113e2e71cd7dbf61832582",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/module-types/file.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/module-types/meson.build",
+    "sha256": "1be9f6f2a3c4d9d2e731d337a1805d92e1e199c808947fcb657142541cc19882",
+    "size": 438
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/module-types/namespace/data.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/module-types/native.c",
+    "sha256": "541693566019ef238ff7977b835777aaec62f3097592196ecdc0313c6c36d440",
+    "size": 502
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/module-types/package/__init__.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/module-types/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/pure/meson.build",
+    "sha256": "259a12c1c036267a4ff190c805316924abd7460a261b6a7f53ca8f8ecda9b302",
+    "size": 201
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/pure/pure.py",
+    "sha256": "5dd50485aa67c906a3b8b05b62f0c0eaff0266bc6b38e24d9226e5d04396ff52",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/pure/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-and-platlib/meson.build",
+    "sha256": "f8ce7fae53b94d5fb23b278a119cdee6ad681ef43f6bdc83c4a268fdb04114fd",
+    "size": 353
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-and-platlib/plat.c",
+    "sha256": "845b0838566e19347aad32a6769845a3ade3869bc0f138a97d3950c8d46d3212",
+    "size": 498
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-and-platlib/pure.py",
+    "sha256": "5dd50485aa67c906a3b8b05b62f0c0eaff0266bc6b38e24d9226e5d04396ff52",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-and-platlib/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-platlib-split/meson.build",
+    "sha256": "650e339cb359c7fcc791551df1210de573ad24ac68fe0105e976c7e96eef3298",
+    "size": 354
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-platlib-split/plat.py",
+    "sha256": "a982d158f3bc2d54905227025d6303d8f7fe933a8cc98cc166e7a25a3c714c83",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-platlib-split/pure.py",
+    "sha256": "5dd50485aa67c906a3b8b05b62f0c0eaff0266bc6b38e24d9226e5d04396ff52",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/purelib-platlib-split/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/meson.build",
+    "sha256": "baee73f66c6a1c3aeceb4603beb2cde5013f124ab234507b6570d7ed5f0a3bae",
+    "size": 591
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/mypkg/__init__.py",
+    "sha256": "ece965d95daf68e7c6d59ad6d1f4d59e9468ca1c4b2887c75ca8bdda321132aa",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/mypkg/cy_extmod.pyx",
+    "sha256": "bd1f41d75465f78475b9497e60072754e03b26afd63431f67eb8bd75ed4c9d84",
+    "size": 169
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/mypkg/extmod.c",
+    "sha256": "ad5a5932922f8fe806c9a6e36d2c124f1aa7892613a7ec07e251df0ee69f01ed",
+    "size": 500
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/mypkg/meson.build",
+    "sha256": "7855e07e78327187701ba4af8cac26c6c8d145d2211e5a2955aa096d24cc2b2e",
+    "size": 856
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/mypkg/submod/__init__.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/mypkg/submod/unknown_filetype.npq",
+    "sha256": "c8b7a960f9d6d64aec211bd84aa0a3dcc5e93979747d36478644af5450466596",
+    "size": 187
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/pyproject.toml",
+    "sha256": "3b14d6ded6a88813af4b42befe506db5f93e15e21c9ede47f4d30ba0b250e8e2",
+    "size": 258
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/scipy-like/tools/generate_config.py",
+    "sha256": "ee1ac47ae39f0c70cf284da4e33bc4cbded52cf82c7d81c9d0278e640b41ae25",
+    "size": 219
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/meson.build",
+    "sha256": "8b6b3937b43379fb7e86494dd631573de88dc047a586428da5b79340715b5a6a",
+    "size": 219
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/__init__.py",
+    "sha256": "3a743db140a946f763a43139617d9606a2ab5bd35c373f457d01558163d437e6",
+    "size": 1834
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/_examplemod.c",
+    "sha256": "338d61cfa24537f0c35ff87c1b15a71652b7a2b1058caefa3fa112cb96248003",
+    "size": 1008
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/examplelib.c",
+    "sha256": "c74db315298b409f3aeac3a0c761ec52cbfe4ef06969a90b5e8d70431d174a3e",
+    "size": 178
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/examplelib.h",
+    "sha256": "eda0e49a60ccbe81bc8afa18b33b984ee50d1c8a461dab6b9c8a425572e818e0",
+    "size": 157
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/meson.build",
+    "sha256": "5e7a3a9e36b7d5edd35c204f149606c956d640cc7543f8bf65e80180cd3eebe8",
+    "size": 888
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/sub/examplelib2.c",
+    "sha256": "9f808a09a696f3b01a60e3c78ae9035d4cc853dcfb88180eb59ba2e14d47dc0a",
+    "size": 175
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/sub/examplelib2.h",
+    "sha256": "c8ecd438338b86fa3a8b1b812a41fcd84c15e0a5f2407a6c6d34e3db4fff0492",
+    "size": 154
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/sub/meson.build",
+    "sha256": "dda597e03f0a887307b86c97ed7be43f0b9e707920a6ff57c21266d60f544662",
+    "size": 373
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/mypkg/sub/mypkg_dll.h",
+    "sha256": "ddffbf27528eb37b1f0217f64c68da8a6824a4472ccf2c9f40193d2885a3fa86",
+    "size": 942
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/sharedlib-in-package/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/simple/__init__.py",
+    "sha256": "8b9daff84750083e01738e0023783a552242af7627d61522d143baea138fa038",
+    "size": 130
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/simple/data.txt",
+    "sha256": "8470d56547eea6236d7c81a644ce74670ca0bbda998e13c629ef6bb3f0d60b69",
+    "size": 4
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/simple/data.txt.license",
+    "sha256": "d7878eea8e289bb15978e622fb1c3b4017064682308bd53574bf56fc16dda015",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/simple/meson.build",
+    "sha256": "ea3f77dc325c98aa9f3715b74ae1537f9976b66281882217356645aba407aaca",
+    "size": 248
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/simple/pyproject.toml",
+    "sha256": "fbd1ef2cd8e84d7f5b5d1e12fd14ff8b0b1f4d61887bc9022ef8c2f6e6eddc7a",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/simple/test.py",
+    "sha256": "868094baa9f1d3a8b6e5fe375a23d53f697b800e6e8de30bc80be4bc5fbdfe27",
+    "size": 228
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subdirs/meson.build",
+    "sha256": "f2224866fc410e8c7b3c2f81a770350465051c9896b703dad7f2508fcf4afe6c",
+    "size": 248
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subdirs/pyproject.toml",
+    "sha256": "ec6fd8f796c538622884ad7301fa96613170a904ff8499b2105f42c6423fc2a0",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subdirs/subdirs/__init__.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subdirs/subdirs/a/__init__.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subdirs/subdirs/a/b/c.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subdirs/subdirs/b/c.py",
+    "sha256": "37fa33a1f1a5fed41eff2bca7077883896262edfa91862d0381bd4e56f8a8dfc",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subproject/meson.build",
+    "sha256": "86446584a8f09098c1a30797889d6f60f4cb7d56f73c752fd01dfc628ad3d44a",
+    "size": 232
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subproject/pyproject.toml",
+    "sha256": "ac4807ea898fd52112ef4db05bd14ff4561bc26d80113e2e71cd7dbf61832582",
+    "size": 162
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subproject/subproject.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subproject/subprojects/dep/dep.py",
+    "sha256": "ab0c3c71b086204dba680b6e2f55459b3387f9e8e86a5c870b8f37558197feb3",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/subproject/subprojects/dep/meson.build",
+    "sha256": "739aa2f9c7dca18a385e94d2e7ea6e7188e5865895ce04adb17a83756bb2a7c6",
+    "size": 181
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/symlinks/__init__.py",
+    "sha256": "3da173cacf905a459572e62890ab9a95c15f619058f41662ab45196a0713a494",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/symlinks/meson.build",
+    "sha256": "7ad01460a71da0e756e65ef81ca36f6e298e1bddfabe12168f8bcacd6b864e7a",
+    "size": 324
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/symlinks/pyproject.toml",
+    "sha256": "37aa5bef3b274e51e3993403d044944dbe5faddae2b0464fb8957954d09f48fc",
+    "size": 209
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/symlinks/submodule/__init__.py",
+    "sha256": "3da173cacf905a459572e62890ab9a95c15f619058f41662ab45196a0713a494",
+    "size": 92
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/symlinks/submodule/aaa.py",
+    "sha256": "42a9e4f966a977d8422a05e54c1ccee24f6bbb769f97f5cd4284a696a0e72a1f",
+    "size": 118
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/symlinks/submodule/bbb.py",
+    "sha256": "42a9e4f966a977d8422a05e54c1ccee24f6bbb769f97f5cd4284a696a0e72a1f",
+    "size": 118
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/unknown-user-args-meson-args/pyproject.toml",
+    "sha256": "693889c82c7afe417c3c704aa95df4a4808d6a038948df1bcaddf47959fbbf49",
+    "size": 201
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/unknown-user-args-top-level/pyproject.toml",
+    "sha256": "dd2661b976a6270d60e0f3310bdd591748f4ae994b2f31ceaba34e3a139c0649",
+    "size": 196
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/unsupported-python-version/meson.build",
+    "sha256": "27228b573c329b86cb11cad338e943cbd44d50d9efc39ba13fe069d1b63a72cc",
+    "size": 149
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/unsupported-python-version/pyproject.toml",
+    "sha256": "966d25cfdd79533c92c40be7f73e82684742adb511f546b07b64ffc61cf22c80",
+    "size": 255
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/user-args/meson.build",
+    "sha256": "fe788f00646d17bfc44434678cc11441a20a64b37646d6a265268d0160d9c87c",
+    "size": 206
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/user-args/pure.py",
+    "sha256": "ece965d95daf68e7c6d59ad6d1f4d59e9468ca1c4b2887c75ca8bdda321132aa",
+    "size": 121
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/user-args/pyproject.toml",
+    "sha256": "249d168efebc674ab84b0634ace9a9b4421d618a7d04d43e10d476e32625b952",
+    "size": 294
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/vendored-meson/meson.build",
+    "sha256": "17c9f46fcef860f8b3b6cc687cd6cb67262b4e04c27621468e85b6032578fce0",
+    "size": 293
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/vendored-meson/meson_options.txt",
+    "sha256": "b0e6852d3f4bc6b2b75c5305bbfce4c8f8f7b4cba4aa183e15df9a6b7273b8d8",
+    "size": 152
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/vendored-meson/pyproject.toml",
+    "sha256": "2db759f904619d6c8d1bc3eac88788e4ad818eacf977174f382191fe18da5e50",
+    "size": 214
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/vendored-meson/third-party/meson.py",
+    "sha256": "0324a4a5782de07002454067c2560fdf7b550de48d5a7041e9729d32b4f08c74",
+    "size": 272
+  },
+  {
+    "executable": false,
+    "path": "tests/test_consistency.py",
+    "sha256": "4a41cc61f3e236c8e96c4964669ca303e1049b0ae149e788d59ba18432e9c096",
+    "size": 1017
+  },
+  {
+    "executable": false,
+    "path": "tests/test_editable.py",
+    "sha256": "5be07bcdffe35a575323bbdbcdbbd43e8f23d8d6f049ca03ae140837b4ebf5a3",
+    "size": 13751
+  },
+  {
+    "executable": false,
+    "path": "tests/test_examples.py",
+    "sha256": "1e87e3ae3d3d1111188dfc96c7398f0bc9b57ce82e67dfdad137b1f900531aaf",
+    "size": 1017
+  },
+  {
+    "executable": false,
+    "path": "tests/test_metadata.py",
+    "sha256": "fd9dd6e31778c38cfca1e54452f4f19776c7e9307e79792b233c0056eceb7be7",
+    "size": 2730
+  },
+  {
+    "executable": false,
+    "path": "tests/test_options.py",
+    "sha256": "bfdf1f8dbf25ec5364741c95493d74c35e3a85d4a864fb4576e2dc7ce1d8d442",
+    "size": 1318
+  },
+  {
+    "executable": false,
+    "path": "tests/test_output.py",
+    "sha256": "8abd62d8671383258fb66451f22b4e17bdbb412b1284b5fa00bba3cb56411d5f",
+    "size": 1021
+  },
+  {
+    "executable": false,
+    "path": "tests/test_pep517.py",
+    "sha256": "abea3e49a9cb1a4b8decdb452a3a193e709983371f1286a82de014b46204ea96",
+    "size": 5603
+  },
+  {
+    "executable": false,
+    "path": "tests/test_project.py",
+    "sha256": "e7e6754a364b7be7ea3d2fd77ab975eb142b142fbf0602870a5a377f6cba2fe6",
+    "size": 13156
+  },
+  {
+    "executable": false,
+    "path": "tests/test_sdist.py",
+    "sha256": "917a8e4b496f88dd0c21069d58e95b78dcf94f8d81eada2835d4a735347d366a",
+    "size": 8004
+  },
+  {
+    "executable": false,
+    "path": "tests/test_tags.py",
+    "sha256": "d1df3e725b5f71c4dfeae72817c4bf94c3388e82563de2ce1a0967dc5d836e0f",
+    "size": 4260
+  },
+  {
+    "executable": false,
+    "path": "tests/test_wheel.py",
+    "sha256": "5372e32c12949a07d71cac9b3a868cb482c4e58e9abd7be585777320ab23d057",
+    "size": 15257
+  },
+  {
+    "executable": false,
+    "path": "tests/test_wheelfile.py",
+    "sha256": "cc7394c4473dca5e8681a969df3ad0a220fe75d0258538f3b1a4932cd018c161",
+    "size": 1859
+  }
+]

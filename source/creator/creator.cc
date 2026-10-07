@@ -118,6 +118,25 @@ char **environ = nullptr;
 #endif
 
 #include "creator_intern.h" /* Own include. */
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+#  include "creator_ohos.h"
+#  include "BPY_extern_python.hh"
+#  include "GHOST_OHOSLifecycle.hh"
+#  include <Python.h>
+#  include <atomic>
+#  include <new>
+struct BlenderOHOSSession {
+  blender::bContext *context = nullptr;
+  GHOST_OHOSHost *host = nullptr;
+  bool ready = false;
+  bool background = false;
+  bool stop = false;
+  bool early_cleanup = false;
+  bool teardown_failed = false;
+  bool teardown_started = false;
+  int exit_code = 0;
+};
+#endif
 
 BLI_STATIC_ASSERT(ENDIAN_ORDER == L_ENDIAN, "Blender only builds on little endian systems")
 
@@ -329,7 +348,11 @@ extern "C" int GHOST_HACK_getFirstFile(char buf[]);
  * - run #WM_main() event loop,
  *   or exit immediately when running in background-mode.
  */
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+static int blender_ohos_creator_initialize(BlenderOHOSSession *session, int argc,
+#else
 int main(int argc,
+#endif
 #ifdef USE_WIN32_UNICODE_ARGS
          const char ** /*argv_c*/
 #else
@@ -350,6 +373,31 @@ int main(int argc,
 
   CreatorAtExitData_EarlyExit app_init_data_early_exit = {nullptr};
   app_init_data.early_exit = &app_init_data_early_exit;
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  /* Keep creator's callback userdata alive during unwind; unregister before returning.
+   * Before the full initialization phase its original early cleanup owns the context. */
+  struct AtexitGuard {
+    CreatorAtExitData *data;
+    BlenderOHOSSession *session;
+    bool armed = true;
+    ~AtexitGuard() {
+      if (!armed) { return; }
+      const bool early = data->early_exit != nullptr;
+      if (early && Py_IsInitialized()) {
+        /* Suppress early native teardown until creator owns initialized Python
+         * and its Extensions drain. Only argument storage is freed on unwind. */
+        data->early_exit = nullptr;
+        session->early_cleanup = true;
+        session->stop = true;
+        try { blender::WM_embedded_extensions_begin(session->context); }
+        catch (...) { /* Retained session retries on its engine tick; never throw in unwind. */ }
+      }
+      callback_main_atexit(data);
+      BKE_blender_atexit_unregister(callback_main_atexit, data);
+      if (early && !session->early_cleanup) { session->context = nullptr; }
+    }
+  } atexit_guard{&app_init_data, session};
+#endif
 
 /* Un-buffered `stdout` makes `stdout` and `stderr` better synchronized, and helps
  * when stepping through code in a debugger (prints are immediately
@@ -365,7 +413,9 @@ int main(int argc,
   /* Use the v2 Level Zero adapter of the SYCL unified runtime. As a fix for #159584, the v1 Level
    * Zero adapter is not included. While the Cycles oneAPI device sets this as well, we also need
    * the environment variable for the use of Open Image Denoise in the compositor. */
+#ifndef WITH_GHOST_OHOS_EMBEDDED
   BLI_setenv_if_new("SYCL_UR_USE_LEVEL_ZERO_V2", "1");
+#endif
 
 #ifdef WIN32
 #  ifdef USE_WIN32_UNICODE_ARGS
@@ -444,6 +494,9 @@ int main(int argc,
   CLG_fatal_fn_set(callback_clg_fatal);
 
   C = CTX_create();
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  session->context = C;
+#endif
 
   app_init_data_early_exit.C = C;
 
@@ -547,7 +600,9 @@ int main(int argc,
    */
   BLI_args_parse(ba, ARG_PASS_SETTINGS, nullptr, nullptr);
 
+#ifndef WITH_GHOST_OHOS_EMBEDDED
   main_signal_setup();
+#endif
 #endif
 
   /* Continue with regular initialization, no need to use "early" exit. */
@@ -633,6 +688,9 @@ int main(int argc,
    */
   callback_main_atexit(&app_init_data);
   BKE_blender_atexit_unregister(callback_main_atexit, &app_init_data);
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  atexit_guard.armed = false;
+#endif
 
 /* Paranoid, avoid accidental re-use. */
 #ifndef WITH_PYTHON_MODULE
@@ -656,7 +714,12 @@ int main(int argc,
       exit_code = G.is_break ? EXIT_FAILURE : EXIT_SUCCESS;
     }
     /* Using window-manager API in background-mode is a bit odd, but works fine. */
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+    session->background = true;
+    session->exit_code = exit_code;
+#else
     WM_exit(C, exit_code);
+#endif
   }
   else {
     /* Not supported, although it could be made to work if needed. */
@@ -665,10 +728,16 @@ int main(int argc,
     /* Shows the splash as needed. */
     WM_init_splash_on_startup(C);
 
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+    WM_embedded_main_begin(C);
+#else
     WM_main(C);
+#endif
   }
   /* Neither #WM_exit, #WM_main return, this quiets CLANG's `unreachable-code-return` warning. */
+#ifndef WITH_GHOST_OHOS_EMBEDDED
   BLI_assert_unreachable();
+#endif
 
 #endif /* !WITH_PYTHON_MODULE */
 
@@ -677,3 +746,188 @@ int main(int argc,
 } /* End of `int main(...)` function. */
 
 /** \} */
+
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+/* All exports contain exceptions. ArkUI only invokes the thread launcher, never these directly. */
+static std::atomic<bool> ohos_lifetime_used{false};
+static int32_t blender_ohos_shutdown_tick(BlenderOHOSSession *session)
+{
+  using namespace blender;
+  if (session->teardown_failed || session->teardown_started) { return BLENDER_OHOS_DRAIN_ERROR; }
+  /* Stop keeps lifecycle ingress alive. Never enter normal GHOST/WM timers,
+   * event dispatch, handlers, operators or new file commands during drain. */
+  const int32_t lifecycle = ghost_ohos_process_lifecycle();
+  WM_embedded_extensions_begin(session->context);
+  auto state = WM_embedded_extensions_step(session->context);
+  if (Py_IsInitialized() && BPY_embedded_phase() == BPYEmbeddedPhase::BindingsStarting) {
+    /* A partial native BPY start has no verified cleanup protocol. Keep it
+     * owned; never use an arbitrary init exception as a finalization permit. */
+    return BLENDER_OHOS_DRAIN_ERROR;
+  }
+  if (state == WMEmbeddedExtensionsState::Ready) {
+    state = WM_embedded_exit_prepare(session->context,
+        session->ready && !session->background && session->exit_code == 0);
+  }
+  if (state == WMEmbeddedExtensionsState::Error || (lifecycle < 0 && lifecycle != GHOST_OHOS_BUSY)) {
+    return BLENDER_OHOS_DRAIN_ERROR;
+  }
+  return state == WMEmbeddedExtensionsState::Ready && lifecycle == GHOST_OHOS_OK ?
+             GHOST_OHOS_EMPTY : BLENDER_OHOS_DRAINING;
+}
+extern "C" int32_t blender_ohos_initialize(GHOST_OHOSHost *host, int argc,
+    const char **argv, BlenderOHOSSession **out) noexcept
+{
+  if (!out) { return GHOST_OHOS_INVALID; }
+  *out = nullptr;
+  if (!host || ghost_ohos_host_is_engine(host) != GHOST_OHOS_OK ||
+      ghost_ohos_host_installed() != host || argc < 1 || !argv || !argv[0]) {
+    return GHOST_OHOS_INVALID;
+  }
+  if (ohos_lifetime_used.exchange(true)) { return GHOST_OHOS_CLOSED; }
+  auto *session = new (std::nothrow) BlenderOHOSSession;
+  if (!session) { return GHOST_OHOS_NO_MEMORY; }
+  session->host = host;
+  *out = session; /* Init failures retain owned context/interpreter for engine ticks. */
+  try {
+    const int result = blender_ohos_creator_initialize(session, argc, argv);
+    session->ready = result == 0;
+    if (!session->ready || session->background) {
+      session->stop = true;
+      blender::WM_embedded_extensions_begin(session->context);
+    }
+    return result == 0 ? GHOST_OHOS_OK : GHOST_OHOS_CALLBACK_FAILED;
+  }
+  catch (const blender::WMEmbeddedInitExit &request) {
+    session->exit_code = request.exit_code;
+  }
+  catch (...) {
+    session->exit_code = EXIT_FAILURE;
+    fputs("Blender OHOS initialization failed with a C++ exception\n", stderr);
+  }
+  session->stop = true;
+  /* No Python callback is attempted before interpreter initialization. */
+  try { blender::WM_embedded_extensions_begin(session->context); }
+  catch (...) { /* Keep ownership; engine tick reports/retries the gate error. */ }
+  return GHOST_OHOS_CALLBACK_FAILED;
+}
+extern "C" int32_t blender_ohos_pump(BlenderOHOSSession *session, int foreground) noexcept
+{
+  if (!session || ghost_ohos_host_is_engine(session->host) != GHOST_OHOS_OK ||
+      ghost_ohos_host_installed() != session->host) {
+    return GHOST_OHOS_WRONG_THREAD;
+  }
+  try {
+    if (session->stop || session->background || !session->ready) {
+      session->stop = true;
+      return blender_ohos_shutdown_tick(session);
+    }
+    blender::WM_embedded_main_step(session->context, foreground != 0);
+    if (blender::WM_embedded_exit_pending(&session->exit_code)) {
+      session->stop = true; /* host0004 file API now rejects new commands. */
+      return blender_ohos_shutdown_tick(session);
+    }
+    return GHOST_OHOS_OK;
+  }
+  catch (...) {
+    session->exit_code = EXIT_FAILURE;
+    session->stop = true;
+    fputs("Blender OHOS WM/lifecycle step failed; owned shutdown must continue\n", stderr);
+    return BLENDER_OHOS_DRAIN_ERROR;
+  }
+}
+extern "C" int32_t blender_ohos_stop(BlenderOHOSSession *session) noexcept
+{
+  if (!session || ghost_ohos_host_is_engine(session->host) != GHOST_OHOS_OK ||
+      ghost_ohos_host_installed() != session->host) {
+    return GHOST_OHOS_WRONG_THREAD;
+  }
+  if (session->teardown_failed || session->teardown_started) { return BLENDER_OHOS_DRAIN_ERROR; }
+  session->stop = true;
+  try {
+    const auto state = blender::WM_embedded_extensions_begin(session->context);
+    const int32_t lifecycle = ghost_ohos_process_lifecycle();
+    return state == blender::WMEmbeddedExtensionsState::Error ||
+           (lifecycle < 0 && lifecycle != GHOST_OHOS_BUSY) ? BLENDER_OHOS_DRAIN_ERROR : GHOST_OHOS_OK;
+  }
+  catch (...) { return BLENDER_OHOS_DRAIN_ERROR; }
+}
+extern "C" int32_t blender_ohos_teardown(BlenderOHOSSession **owned_session, int32_t *exit_code) noexcept
+{
+  if (!owned_session || !exit_code) { return GHOST_OHOS_INVALID; }
+  BlenderOHOSSession *session = *owned_session;
+  if (!session || ghost_ohos_host_is_engine(session->host) != GHOST_OHOS_OK ||
+      ghost_ohos_host_installed() != session->host) {
+    return GHOST_OHOS_WRONG_THREAD;
+  }
+  if (session->teardown_failed || session->teardown_started) { return BLENDER_OHOS_DRAIN_ERROR; }
+  session->stop = true;
+  try {
+    using namespace blender;
+    const int32_t lifecycle = ghost_ohos_process_lifecycle();
+    if (lifecycle != GHOST_OHOS_OK) {
+      return lifecycle == GHOST_OHOS_BUSY ? BLENDER_OHOS_DRAINING : BLENDER_OHOS_DRAIN_ERROR;
+    }
+    WM_embedded_extensions_begin(session->context);
+    auto state = WM_embedded_extensions_status();
+    if (session->teardown_failed || state == WMEmbeddedExtensionsState::Error ||
+        (Py_IsInitialized() && BPY_embedded_phase() == BPYEmbeddedPhase::BindingsStarting)) {
+      return BLENDER_OHOS_DRAIN_ERROR;
+    }
+    if (state != WMEmbeddedExtensionsState::Ready) { return BLENDER_OHOS_DRAINING; }
+    if (Py_IsInitialized() && (!session->context ||
+        (session->early_cleanup && BPY_embedded_phase() != BPYEmbeddedPhase::RawInterpreter))) {
+      return BLENDER_OHOS_DRAIN_ERROR;
+    }
+    state = WM_embedded_exit_prepare(session->context,
+        session->ready && !session->background && session->exit_code == 0);
+    if (state == WMEmbeddedExtensionsState::Error) { return BLENDER_OHOS_DRAIN_ERROR; }
+    if (state != WMEmbeddedExtensionsState::Ready) { return BLENDER_OHOS_DRAINING; }
+    /* Fresh pure inventory check after all exit hooks, BEFORE any destruction. */
+    if (!WM_embedded_teardown_finalcheck() || !WM_embedded_teardown_enter()) {
+      return BLENDER_OHOS_DRAIN_ERROR;
+    }
+    session->teardown_started = true;
+    const int32_t result = session->exit_code;
+    if (session->early_cleanup) {
+      if (Py_IsInitialized()) {
+        if (BPY_embedded_phase() != BPYEmbeddedPhase::RawInterpreter || !WM_embedded_teardown_finalcheck()) {
+          session->teardown_failed = true;
+          return BLENDER_OHOS_DRAIN_ERROR;
+        }
+        PyGILState_Ensure();
+        Py_FinalizeEx();
+      }
+      CreatorAtExitData_EarlyExit early{session->context};
+      CreatorAtExitData data{};
+      data.early_exit = &early;
+      callback_main_atexit(&data);
+    }
+    else if (session->context) {
+      WM_exit_ex(session->context, true, session->ready && !session->background && result == 0);
+    }
+    else if (Py_IsInitialized()) {
+      /* No verified initialized-Python cleanup without its context. */
+      session->teardown_failed = true;
+      return BLENDER_OHOS_DRAIN_ERROR;
+    }
+    session->context = nullptr;
+    *exit_code = result;
+    *owned_session = nullptr; /* Only physical success consumes the caller's slot. */
+    delete session;
+    return GHOST_OHOS_OK; /* Process exit3/4 never collide with drain continuations. */
+  }
+  catch (...) {
+    /* Exceptions before the destructive token retain a live resumable context.
+     * Once destruction starts there can be no callback/pump or second attempt. */
+    session->teardown_failed = session->teardown_started;
+    fputs(session->teardown_failed ?
+        "Blender OHOS teardown failed; ownership retained, process restart required\n" :
+        "Blender OHOS pre-teardown failed; live ownership retained for bounded ticks\n", stderr);
+    return BLENDER_OHOS_DRAIN_ERROR;
+  }
+}
+#endif
+
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+#  include "creator_ohos_files_impl.hh"
+#endif

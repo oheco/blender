@@ -1,0 +1,16 @@
+{
+  "name": "vma",
+  "version": "3.2.1",
+  "kind": "source",
+  "filename": "vma-v3.2.1.tar.gz",
+  "url": "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.2.1.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE.txt"
+  ],
+  "upstream_repository": "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator",
+  "tag": "refs/tags/v3.2.1",
+  "commit": "c788c52156f3ef7bc7ab769cb03c110a53ac8fcb",
+  "size": 984837,
+  "sha256": "5e7749504cb802427ffb7bec38a0b6a15db46ae253f00560acb3e624d9fe695c"
+}

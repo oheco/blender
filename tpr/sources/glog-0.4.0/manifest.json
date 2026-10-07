@@ -1,0 +1,26 @@
+{
+  "name": "glog",
+  "version": "0.4.0",
+  "kind": "source",
+  "filename": "glog-96a2f23dca4cc7180821ca5f32e526314395d26a.tar.gz",
+  "url": "https://github.com/google/glog/archive/96a2f23dca4cc7180821ca5f32e526314395d26a.tar.gz",
+  "license": "BSD-3-Clause",
+  "license_files": [
+    "AUTHORS",
+    "COPYING",
+    "packages/deb/copyright"
+  ],
+  "upstream_repository": "https://github.com/google/glog",
+  "commit": "96a2f23dca4cc7180821ca5f32e526314395d26a",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 201153,
+  "sha256": "a72da1c10f4f1f678ec3e77aeaf9b3026ec0d2f66d20ded33753ab5940ed218e",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 201153,
+      "sha256": "a72da1c10f4f1f678ec3e77aeaf9b3026ec0d2f66d20ded33753ab5940ed218e"
+    }
+  ]
+}

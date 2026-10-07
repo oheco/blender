@@ -1,0 +1,25 @@
+{
+  "name": "spirv-reflect",
+  "version": "vulkan-sdk-1.4.341.0",
+  "kind": "source",
+  "filename": "spirv-reflect-vulkan-sdk-1.4.341.0.tar.gz",
+  "url": "https://github.com/KhronosGroup/SPIRV-Reflect/archive/refs/tags/vulkan-sdk-1.4.341.0.tar.gz",
+  "license": "Apache-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "upstream_repository": "https://github.com/KhronosGroup/SPIRV-Reflect",
+  "tag": "refs/tags/vulkan-sdk-1.4.341.0",
+  "commit": "62ca825c692334ed758027b908c5aafbbc76243f",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 348384,
+  "sha256": "3f55d5ad7dc6f02214633c851d4ea3872abe3a1ecec6b5d80cfc3255012c4b6a",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 348384,
+      "sha256": "3f55d5ad7dc6f02214633c851d4ea3872abe3a1ecec6b5d80cfc3255012c4b6a"
+    }
+  ]
+}

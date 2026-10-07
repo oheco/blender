@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "kind": "new-portable-deveco-exporter-sealed-candidate",
+  "revision": 5,
+  "status": "SOURCE_CANDIDATE_NATIVE_AND_HAP_NOT_RUN",
+  "supersedes": {
+    "lock_sha256": "0ddcd27aa34e4b9a52a3f680506a16cb1f0413273178a239f3c877e3f9efd44a",
+    "reason": "Actual positive IO failed root O_RDONLY; explicit search-only nofollow ancestors plus readable final cache root."
+  },
+  "source_layout_contract": "actual-creator-single-tu-and-ghost-api-headers-v2",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "8430a9acef0ab99e778fa69efa5dcaac8048e64cd846a58578df54b8a1ba339a",
+      "size": 25970,
+      "mode": 432
+    },
+    {
+      "path": "accepted-inputs.json",
+      "sha256": "3231d26724bf26264e4d406b61eea62729afb35e058196c2256f1ebb14017753",
+      "size": 858,
+      "mode": 432
+    },
+    {
+      "path": "common.py",
+      "sha256": "f506c4da507e1761fdfa02b883f946c2abdb99f2338f1f8be82187adc83e65a4",
+      "size": 4833,
+      "mode": 432
+    },
+    {
+      "path": "evidence.py",
+      "sha256": "d039adccb9c4cdedf9c9be1ce548b120507c709e0335dae860add29f28022025",
+      "size": 20211,
+      "mode": 432
+    },
+    {
+      "path": "exporter.py",
+      "sha256": "50586915f3c573900c4da363988d13816172ce57e05f10b342aef4e840b9d838",
+      "size": 32582,
+      "mode": 432
+    },
+    {
+      "path": "gltf.py",
+      "sha256": "14fbe97139e7ce86ab53a11bf23989aef907f52cc19d0cf58f9de6ffd9d879b6",
+      "size": 9643,
+      "mode": 432
+    },
+    {
+      "path": "native.py",
+      "sha256": "223338bf1d8c9f24e2cbe92ad088e3d84b7db870e0545ebd23b86f5e303e1986",
+      "size": 10478,
+      "mode": 432
+    },
+    {
+      "path": "offline_cache_links.py",
+      "sha256": "f81d739c03f4512ff4f0f542c5a3afe25d76cbbb17d7aa43a8c8e2629562be94",
+      "size": 19893,
+      "mode": 432
+    },
+    {
+      "path": "offline_hvigor.py",
+      "sha256": "ed500c719ff8bc033e306ca49504ea7884329c6be462319ae3c351accbfd5f73",
+      "size": 7477,
+      "mode": 432
+    },
+    {
+      "path": "patches/0001-runtime-native-inventory-hash.candidate.patch",
+      "sha256": "bdf88141939f9d1b61e9e194e26540d23169c420216b8c50dc5116b31f404f2c",
+      "size": 2679,
+      "mode": 432
+    },
+    {
+      "path": "rebuild.py",
+      "sha256": "582b0bc5b4f7d823fdb737d9bcf166f0635df19c19c97714ce1959553f630c24",
+      "size": 6975,
+      "mode": 432
+    },
+    {
+      "path": "resources.py",
+      "sha256": "cd4e8a13c5ccfc2691e0be7c2caf4610a8a19f17d57a6a22c293f891aa95bb85",
+      "size": 6453,
+      "mode": 432
+    },
+    {
+      "path": "source_guard.py",
+      "sha256": "9e0f2639065332e5e0a33b8835c3791209e20472b010a1926d9d71c1af7b2f07",
+      "size": 8861,
+      "mode": 432
+    },
+    {
+      "path": "spec.example.json",
+      "sha256": "5f87d05b2bdbe56b368425ad4666af105178c3455060c507fd0ecb20cdd8fadf",
+      "size": 6053,
+      "mode": 432
+    },
+    {
+      "path": "test_guards.py",
+      "sha256": "4baede40a962cae369ec1aadc8242071a35b35321e72aeb356294e4525e73a19",
+      "size": 18801,
+      "mode": 432
+    }
+  ],
+  "tests": "NOT_RUN_FOR_REVISION4; inert case design only, no AST/source imports/helpers/CLI/tests",
+  "source_layout_proof": "15 actual small source files/12 include edges/5 Creator C ABI definitions/4 real translation units, source-only",
+  "source_snapshot_inventory": "NOT_RUN_PARENT_STABLE_REVISION_REQUIRED",
+  "actual_assembly": "NOT_RUN_REAL_CORE_REQUIRED",
+  "audit_host": "NOT_RUN_ACTUAL_DEVECO_FINAL_HOST_REQUIRED",
+  "inherited_predecessor_tests_metadata": "48 PASS: retained37 algorithm/text guards+11 actual-source/dependency/sign-chain guards; no native-success fixture",
+  "source4_scope": "SOURCE_ONLY_NO_JS_CACHE_CONSUMPTION_NATIVE_OR_HAP",
+  "offline_cache_profile": "hvigor-npm-bin-filelinks-v1",
+  "official_tool_cache_public_redistribution": "NOT_GRANTED_USER_LOCAL_EXTERNAL_ONLY"
+}

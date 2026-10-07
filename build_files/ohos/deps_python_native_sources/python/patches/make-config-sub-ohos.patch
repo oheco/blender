@@ -1,0 +1,20 @@
+--- a/build-aux/config.sub
++++ b/build-aux/config.sub
+@@ -1727,7 +1727,7 @@
+ 	# Now accept the basic system types.
+ 	# The portable systems comes first.
+ 	# Each alternative MUST end in a * to match a version number.
+-	gnu* | android* | bsd* | mach* | minix* | genix* | ultrix* | irix* \
++	ohos* | gnu* | android* | bsd* | mach* | minix* | genix* | ultrix* | irix* \
+ 	     | *vms* | esix* | aix* | cnk* | sunos | sunos[34]* \
+ 	     | hpux* | unos* | osf* | luna* | dgux* | auroraux* | solaris* \
+ 	     | sym* |  plan9* | psp* | sim* | xray* | os68k* | v88r* \
+@@ -1778,7 +1778,7 @@
+ # As a final step for OS-related things, validate the OS-kernel combination
+ # (given a valid OS), if there is a kernel.
+ case $kernel-$os in
+-	linux-gnu* | linux-dietlibc* | linux-android* | linux-newlib* \
++	linux-ohos* | linux-gnu* | linux-dietlibc* | linux-android* | linux-newlib* \
+ 		   | linux-musl* | linux-relibc* | linux-uclibc* | linux-mlibc* )
+ 		;;
+ 	uclinux-uclibc* )

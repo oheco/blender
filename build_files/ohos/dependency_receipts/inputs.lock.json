@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "shaderc-receipt-adapter-input-seal",
+  "files": [
+    {
+      "path": "shaderc.py",
+      "sha256": "bc0d371b4a478d1fbf6a7d7af05eca2387b1dd260e3f96fbfc21a83698815e6c",
+      "size": 41998
+    },
+    {
+      "path": "contract.json",
+      "sha256": "f9005502703d235fae41e703e73e8bb52f09a0ff5ae2ffd4005bf8815f32aca9",
+      "size": 2871
+    },
+    {
+      "path": "README.md",
+      "sha256": "dc2536af565f634e03bd3163156cbc8a66bfddff311ef22836462a31bb226cb6",
+      "size": 7094
+    },
+    {
+      "path": "validate.py",
+      "sha256": "0819c46a227f8a28a43b9446806349ace2a3ca0c983bce55301fdef0250a0748",
+      "size": 11433
+    }
+  ]
+}

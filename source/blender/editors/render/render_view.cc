@@ -136,12 +136,20 @@ ScrArea *render_view_open(bContext *C, int mx, int my, ReportList *reports)
   ScrArea *area = nullptr;
   SpaceImage *sima;
   bool area_was_image = false;
+  int display_type = U.render_display_type;
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+  /* The embedding surface hosts the normal full-screen render editor. Keep
+   * user preferences intact so the same configuration works on desktop hosts. */
+  if (display_type == USER_RENDER_DISPLAY_WINDOW) {
+    display_type = USER_RENDER_DISPLAY_SCREEN;
+  }
+#endif
 
-  if (U.render_display_type == USER_RENDER_DISPLAY_NONE) {
+  if (display_type == USER_RENDER_DISPLAY_NONE) {
     return nullptr;
   }
 
-  if (U.render_display_type == USER_RENDER_DISPLAY_WINDOW) {
+  if (display_type == USER_RENDER_DISPLAY_WINDOW) {
     int sizex, sizey;
     BKE_render_resolution(&scene->r, false, &sizex, &sizey);
 
@@ -191,7 +199,7 @@ ScrArea *render_view_open(bContext *C, int mx, int my, ReportList *reports)
       sima->flag |= SI_PREVSPACE;
     }
   }
-  else if (U.render_display_type == USER_RENDER_DISPLAY_SCREEN) {
+  else if (display_type == USER_RENDER_DISPLAY_SCREEN) {
     area = CTX_wm_area(C);
 
     /* If the active screen is already in full-screen mode, skip this and

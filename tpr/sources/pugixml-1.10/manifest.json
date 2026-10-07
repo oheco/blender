@@ -1,0 +1,22 @@
+{
+  "name": "pugixml",
+  "version": "1.10",
+  "kind": "source",
+  "filename": "pugixml-1.10.tar.gz",
+  "url": "https://github.com/zeux/pugixml/archive/v1.10.tar.gz",
+  "license": "SPDX:MIT",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 562718,
+  "sha256": "10f1f0a32b559ca8435d95855928d990cfbb9796e339efb638080c897728174c",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 562718,
+      "sha256": "10f1f0a32b559ca8435d95855928d990cfbb9796e339efb638080c897728174c"
+    }
+  ]
+}

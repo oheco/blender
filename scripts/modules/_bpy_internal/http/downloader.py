@@ -20,6 +20,7 @@ __all__ = (
     "ContentLengthError",
     "HTTPRequestUnknownContentEncoding",
     "DownloadCancelled",
+    "RedirectBudgetExceeded",
     "BackgroundProcessNotRunningError",
     "http_session",
 )
@@ -37,7 +38,6 @@ import multiprocessing.process
 import os
 import sys
 import time
-import zlib  # For streaming gzip decompression.
 from collections.abc import Callable, Generator
 from pathlib import Path
 from typing import Protocol, TypeAlias, Any, override
@@ -53,6 +53,8 @@ import cattrs.preconf.json
 import requests
 import requests.adapters
 import urllib3.util.retry
+
+from ._budget import TransferBudget, RedirectBudgetExceeded, decoded_chunks
 
 logger = logging.getLogger(__name__)
 
@@ -102,6 +104,20 @@ class ConditionalDownloader:
     """Timeout in seconds, tuple (connect timeout, read timeout).
 
     When only one number is given, it is used for both timeouts.
+    """
+
+    max_redirect_bytes: int = 1024 * 1024
+    """Cumulative redirect wire AND decoded body limit, each measured separately.
+
+    Positive even when max_disk_size_bytes=0. Final asset bytes are not charged
+    to this budget. Requests' Session.max_redirects still controls redirect count.
+    """
+
+    total_timeout_seconds: float = 0
+    """Optional cooperative monotonic deadline across send, redirects and file IO.
+
+    Zero disables the deadline; socket/connect timeouts remain self.timeout.
+    Checks cannot preempt DNS, headers, adapter retries or a blocking OS call.
     """
 
     _reporter: DownloadReporter
@@ -220,12 +236,26 @@ class ConditionalDownloader:
         if not self.periodic_check(http_req_descr):
             raise DownloadCancelled(http_req_descr)
 
+        def check() -> None:
+            if not self.periodic_check(http_req_descr):
+                raise DownloadCancelled(http_req_descr)
+
+        budget = TransferBudget(check, self.chunk_size, self.max_redirect_bytes,
+                                self.http_session.max_redirects, self.total_timeout_seconds)
         req = requests.Request(http_req_descr.http_method, http_req_descr.url)
         prepped: requests.PreparedRequest = self.http_session.prepare_request(req)
         self._add_compression_request_headers(prepped)
         self._add_conditional_request_headers(prepped, meta)
 
-        with self.http_session.send(prepped, stream=True, timeout=self.timeout) as stream:
+        # Request-local hook closures survive Requests' PreparedRequest.copy()
+        # on redirects. Never mutate shared Session hooks/adapters/limits.
+        prepped.hooks['response'].insert(0, budget.response_hook)
+        # Close even if Session.send fails while draining a redirect, before the
+        # Response context manager can be entered.
+        with contextlib.ExitStack() as cleanup:
+            cleanup.callback(budget.close)
+            budget.check()
+            stream = cleanup.enter_context(self.http_session.send(prepped, stream=True, timeout=self.timeout))
             logger.debug(
                 "HTTP %s %s (headers %s) -> %d",
                 http_req_descr.http_method,
@@ -251,7 +281,7 @@ class ConditionalDownloader:
                 # The remote file matches what we have locally. Don't bother streaming.
                 return None, http_req_descr_with_headers
 
-            meta = self._stream_to_file(stream, http_req_descr_with_headers, local_path)
+            meta = self._stream_to_file(stream, http_req_descr_with_headers, local_path, check=budget.check)
             return meta, http_req_descr_with_headers
 
     def _stream_to_file(
@@ -259,6 +289,7 @@ class ConditionalDownloader:
         stream: requests.Response,
         http_req_descr: RequestDescription,
         local_path: Path,
+        *, check: Callable[[], None] | None = None,
     ) -> HTTPMetadata | None:
         """Stream the data obtained via the HTTP stream to a local file.
 
@@ -274,37 +305,22 @@ class ConditionalDownloader:
         except ValueError:
             content_length = None
 
-        # Before actually downloading, check that the size is below the limit.
-        # This check is just an upper limit, as when stream compression is used, the on-disk size will be larger than
-        # the Content-Length header indicates. But if the compressed stream is already too large, the uncompressed data
-        # will also be too large.
-        if content_length is not None and self.max_disk_size_bytes > 0 and content_length > self.max_disk_size_bytes:
+        if check is None:
+            def check() -> None:
+                if not self.periodic_check(http_req_descr):
+                    raise DownloadCancelled(http_req_descr)
+
+        check()
+        is_head = http_req_descr.http_method.upper() == 'HEAD'
+        content_encoding: str = stream.headers.get("Content-Encoding") or ""
+        if not is_head and content_encoding not in ("", "gzip"):
+            raise HTTPRequestUnknownContentEncoding(http_req_descr, content_encoding)
+        # Content-Length describes wire bytes, not gzip output. A compressed
+        # representation can even be larger than the resulting file.
+        if not is_head and not content_encoding and content_length is not None and (
+                self.max_disk_size_bytes > 0 and content_length > self.max_disk_size_bytes):
             raise ContentLengthTooBigError(http_req_descr, self.max_disk_size_bytes, content_length)
 
-        # The Content-Length header, obtained above, indicates the number of
-        # bytes that we will be downloading. The Requests library automatically
-        # decompresses this, and so if the normal (not `stream.raw`) streaming
-        # approach would be used, we would count the wrong number of bytes.
-        #
-        # In order to get to the actual downloaded byte count, we need to bypass
-        # Requests' automatic decompression, use the raw byte stream, and
-        # decompress ourselves.
-        content_encoding: str = stream.headers.get("Content-Encoding") or ""
-        decoder: zlib._Decompress | None
-        match content_encoding:
-            case "gzip":
-                wbits = 16 + zlib.MAX_WBITS
-                decoder = zlib.decompressobj(wbits=wbits)
-            case "":
-                decoder = None
-            case _:
-                raise HTTPRequestUnknownContentEncoding(http_req_descr, content_encoding)
-
-        # Avoid reporting any progress when the download was cancelled.
-        if not self.periodic_check(http_req_descr):
-            raise DownloadCancelled(http_req_descr)
-
-        # Construct a progress instance, it'll be reused for all reporting of this download.
         progress = DownloadProgress(
             network_bytes_streamed=0,
             network_bytes_total=content_length,
@@ -312,33 +328,25 @@ class ConditionalDownloader:
         )
         self._reporter.download_progress(http_req_descr, progress)
 
-        # Stream the response to a file.
+        def count_wire(chunk: bytes) -> None:
+            progress.network_bytes_streamed += len(chunk)
+            if content_length is not None and progress.network_bytes_streamed > content_length:
+                raise ContentLengthError(http_req_descr, content_length, progress.network_bytes_streamed)
+
         with local_path.open("wb") as file:
-            def write_and_report(chunk: bytes) -> None:
-                """Write a chunk to file, and report on the download progress."""
-                progress.disk_bytes_written += file.write(chunk)
-                self._reporter.download_progress(http_req_descr, progress)
+            if not is_head:
+                for chunk in decoded_chunks(stream.raw, content_encoding, self.chunk_size, check, count_wire):
+                    check()
+                    resulting_size = progress.disk_bytes_written + len(chunk)
+                    # Reject before the write that would cross the disk cap.
+                    if self.max_disk_size_bytes > 0 and resulting_size > self.max_disk_size_bytes:
+                        raise ContentLengthTooBigError(http_req_descr, self.max_disk_size_bytes, resulting_size)
+                    progress.disk_bytes_written += file.write(chunk)
+                    self._reporter.download_progress(http_req_descr, progress)
 
-            # Download and process chunks until there are no more left.
-            while chunk := stream.raw.read(self.chunk_size):
-                if not self.periodic_check(http_req_descr):
-                    raise DownloadCancelled(http_req_descr)
-
-                # Count the number of bytes streamed.
-                progress.network_bytes_streamed += len(chunk)
-                if content_length is not None and progress.network_bytes_streamed > content_length:
-                    raise ContentLengthError(http_req_descr, content_length, progress.network_bytes_streamed)
-
-                if decoder:
-                    chunk = decoder.decompress(chunk)
-                write_and_report(chunk)
-
-            if decoder:
-                # The network bytes for this last remaining decoded bit have already been counted.
-                write_and_report(decoder.flush())
-                assert decoder.eof
-
-        if content_length is not None and progress.network_bytes_streamed != content_length:
+        check()
+        # HEAD's Content-Length describes the GET representation, not a body.
+        if not is_head and content_length is not None and progress.network_bytes_streamed != content_length:
             raise ContentLengthError(http_req_descr, content_length, progress.network_bytes_streamed)
 
         meta = HTTPMetadata(
@@ -429,12 +437,19 @@ class DownloaderOptions:
     max_disk_size_bytes: int = 0
     """Maximum download size, in bytes on disk."""
 
+    max_redirect_bytes: int = dataclasses.field(default=1024 * 1024, kw_only=True)
+    """Positive cumulative redirect wire/decoded limit (separate counters)."""
+    total_timeout_seconds: float = dataclasses.field(default=0, kw_only=True)
+    """Cooperative total transfer deadline in seconds; 0 disables it."""
+
     num_parallel_downloads: int = 1
     """Maximum number of parallel downloads. Must be positive."""
 
     def __post_init__(self) -> None:
         if self.num_parallel_downloads <= 0:
             raise ValueError("num_parallel_downloads must be positive")
+        if self.max_redirect_bytes <= 0 or self.total_timeout_seconds < 0:
+            raise ValueError("Invalid redirect budget or total deadline")
         self._ensure_user_agent()
 
     def _ensure_user_agent(self) -> None:
@@ -1201,6 +1216,8 @@ def _download_queued_items(
         downloader.periodic_check = may_continue_downloading
         downloader.timeout = options.timeout
         downloader.max_disk_size_bytes = options.max_disk_size_bytes
+        downloader.max_redirect_bytes = options.max_redirect_bytes
+        downloader.total_timeout_seconds = options.total_timeout_seconds
 
         # Keep downloading queued items until we're done.
         while not do_shutdown.is_set():

@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "candidate_component_cmake": {
+    "deflate": {
+      "LIBDEFLATE_BUILD_STATIC_LIB": "ON",
+      "LIBDEFLATE_BUILD_SHARED_LIB": "OFF",
+      "LIBDEFLATE_BUILD_GZIP": "OFF"
+    },
+    "openjph": {
+      "OJPH_BUILD_TESTS": "OFF",
+      "OJPH_BUILD_EXECUTABLES": "OFF",
+      "OJPH_ENABLE_TIFF_SUPPORT": "OFF"
+    },
+    "yamlcpp": {
+      "YAML_CPP_BUILD_TESTS": "OFF",
+      "YAML_CPP_BUILD_TOOLS": "OFF",
+      "YAML_CPP_BUILD_CONTRIB": "OFF",
+      "YAML_BUILD_SHARED_LIBS": "OFF"
+    },
+    "pystring": {},
+    "expat": {
+      "EXPAT_BUILD_DOCS": "OFF",
+      "EXPAT_BUILD_EXAMPLES": "OFF",
+      "EXPAT_BUILD_TESTS": "OFF",
+      "EXPAT_BUILD_TOOLS": "OFF",
+      "EXPAT_SHARED_LIBS": "OFF"
+    },
+    "minizipng": {
+      "MZ_FETCH_LIBS": "OFF",
+      "MZ_LIBCOMP": "OFF",
+      "MZ_PKCRYPT": "OFF",
+      "MZ_WZAES": "OFF",
+      "MZ_OPENSSL": "OFF",
+      "MZ_SIGNING": "OFF",
+      "MZ_LZMA": "OFF",
+      "MZ_ZSTD": "OFF",
+      "MZ_BZIP2": "OFF",
+      "MZ_ICONV": "OFF",
+      "MZ_ZLIB": "ON",
+      "CMAKE_INSTALL_INCLUDEDIR": "include/minizip-ng",
+      "ZLIB_LIBRARY": "${PRIVATE_PREFIX}/lib/libz.a",
+      "ZLIB_INCLUDE_DIR": "${PRIVATE_PREFIX}/include"
+    },
+    "tiff": {
+      "lzma": "OFF",
+      "jbig": "OFF",
+      "zstd": "OFF",
+      "webp": "OFF",
+      "lerc": "OFF",
+      "tiff-tests": "OFF",
+      "tiff-tools": "OFF",
+      "tiff-contrib": "OFF",
+      "tiff-docs": "OFF",
+      "sphinx": "OFF",
+      "JPEG_LIBRARY": "${PRIVATE_PREFIX}/lib/libjpeg.a",
+      "JPEG_INCLUDE_DIR": "${PRIVATE_PREFIX}/include",
+      "Deflate_LIBRARY": "${PRIVATE_PREFIX}/lib/libdeflate.a",
+      "Deflate_INCLUDE_DIR": "${PRIVATE_PREFIX}/include",
+      "ZLIB_LIBRARY": "${PRIVATE_PREFIX}/lib/libz.a",
+      "ZLIB_INCLUDE_DIR": "${PRIVATE_PREFIX}/include"
+    },
+    "robinmap": {
+      "TSL_ROBIN_MAP_BUILD_TESTS": "OFF"
+    },
+    "pugixml": {
+      "BUILD_TESTING": "OFF",
+      "PUGIXML_BUILD_TESTS": "OFF"
+    },
+    "openjpeg": {
+      "BUILD_CODEC": "OFF",
+      "BUILD_TESTING": "OFF",
+      "BUILD_DOC": "OFF"
+    },
+    "webp": {
+      "WEBP_BUILD_ANIM_UTILS": "OFF",
+      "WEBP_BUILD_CWEBP": "OFF",
+      "WEBP_BUILD_DWEBP": "OFF",
+      "WEBP_BUILD_GIF2WEBP": "OFF",
+      "WEBP_BUILD_IMG2WEBP": "OFF",
+      "WEBP_BUILD_VWEBP": "OFF",
+      "WEBP_BUILD_WEBPINFO": "OFF",
+      "WEBP_BUILD_WEBPMUX": "OFF",
+      "WEBP_BUILD_EXTRAS": "OFF"
+    },
+    "openexr": {
+      "BUILD_TESTING": "OFF",
+      "OPENEXR_BUILD_TOOLS": "OFF",
+      "OPENEXR_BUILD_EXAMPLES": "OFF",
+      "OPENEXR_BUILD_PYTHON": "OFF",
+      "OPENEXR_BUILD_BOTH_STATIC_SHARED": "OFF",
+      "Imath_DIR": "${PRIVATE_PREFIX}/lib/cmake/Imath",
+      "libdeflate_DIR": "${PRIVATE_PREFIX}/lib/cmake/libdeflate",
+      "openjph_DIR": "${PRIVATE_PREFIX}/lib/cmake/openjph",
+      "OPENEXR_INSTALL_TOOLS": "OFF"
+    },
+    "opencolorio": {
+      "OHOS_STATIC_PC_CFLAGS": "-DOpenColorIO_SKIP_IMPORTS",
+      "OHOS_STATIC_PC_REQUIRES": "Imath zlib expat yaml-cpp minizip",
+      "OHOS_STATIC_PC_LIBS": "-lpystring -pthread",
+      "OCIO_BUILD_APPS": "OFF",
+      "OCIO_BUILD_PYTHON": "OFF",
+      "OCIO_BUILD_NUKE": "OFF",
+      "OCIO_BUILD_JAVA": "OFF",
+      "OCIO_BUILD_DOCS": "OFF",
+      "OCIO_BUILD_TESTS": "OFF",
+      "OCIO_BUILD_GPU_TESTS": "OFF",
+      "OCIO_INSTALL_EXT_PACKAGES": "NONE",
+      "OCIO_USE_SIMD": "ON",
+      "expat_ROOT": "${PRIVATE_PREFIX}",
+      "yaml-cpp_DIR": "${PRIVATE_PREFIX}/lib/cmake/yaml-cpp",
+      "pystring_ROOT": "${PRIVATE_PREFIX}",
+      "Imath_ROOT": "${PRIVATE_PREFIX}",
+      "minizip-ng_ROOT": "${PRIVATE_PREFIX}",
+      "minizip-ng_INCLUDE_DIR": "${PRIVATE_PREFIX}/include/minizip-ng/minizip",
+      "minizip-ng_LIBRARY": "${PRIVATE_PREFIX}/lib/libminizip.a",
+      "ZLIB_LIBRARY": "${PRIVATE_PREFIX}/lib/libz.a",
+      "ZLIB_INCLUDE_DIR": "${PRIVATE_PREFIX}/include",
+      "OCIO_USE_SSE": "OFF"
+    },
+    "openimageio": {
+      "OHOS_STATIC_PC_CFLAGS": "-DOIIO_STATIC_DEFINE=1 -DFMT_HEADER_ONLY=1",
+      "OHOS_STATIC_PC_REQUIRES": "OpenEXR OpenColorIO libpng16 libjpeg libtiff-4 libopenjp2 libwebp libwebpdemux libwebpmux tbb",
+      "OHOS_STATIC_PC_LIBS": "-lpugixml -pthread -ldl -lm",
+      "OIIO_BUILD_TOOLS": "OFF",
+      "OIIO_BUILD_TESTS": "OFF",
+      "BUILD_TESTING": "OFF",
+      "USE_PYTHON": "OFF",
+      "USE_NUKE": "OFF",
+      "USE_OPENVDB": "OFF",
+      "USE_FREETYPE": "OFF",
+      "USE_DCMTK": "OFF",
+      "USE_QT": "OFF",
+      "USE_GIF": "OFF",
+      "USE_OPENCV": "OFF",
+      "USE_FFMPEG": "OFF",
+      "USE_PTEX": "OFF",
+      "USE_LIBRAW": "OFF",
+      "USE_JXL": "OFF",
+      "USE_libuhdr": "OFF",
+      "USE_TBB": "ON",
+      "TBB_ROOT": "${PRIVATE_PREFIX}",
+      "TBB_DIR": "${PRIVATE_PREFIX}/lib/cmake/TBB",
+      "USE_LIBHEIF": "OFF",
+      "USE_OPENCOLORIO": "ON",
+      "USE_WEBP": "ON",
+      "USE_OPENJPEG": "ON",
+      "USE_EXTERNAL_PUGIXML": "ON",
+      "OIIO_INTERNALIZE_FMT": "OFF",
+      "OpenImageIO_BUILD_MISSING_DEPS": "",
+      "OpenImageIO_REQUIRED_DEPS": "WebP;libjpeg-turbo;TIFF;OpenEXR;PNG;OpenJPEG;fmt;Robinmap;ZLIB;pugixml;openjph;OpenColorIO;TBB",
+      "OpenColorIO_DIR": "${PRIVATE_PREFIX}/lib/cmake/OpenColorIO",
+      "OpenEXR_ROOT": "${PRIVATE_PREFIX}",
+      "Imath_ROOT": "${PRIVATE_PREFIX}",
+      "TIFF_ROOT": "${PRIVATE_PREFIX}",
+      "JPEG_ROOT": "${PRIVATE_PREFIX}",
+      "libjpeg-turbo_ROOT": "${PRIVATE_PREFIX}",
+      "PNG_LIBRARY": "${PRIVATE_PREFIX}/lib/libpng16.a",
+      "PNG_PNG_INCLUDE_DIR": "${PRIVATE_PREFIX}/include",
+      "FMT_ROOT": "${PRIVATE_PREFIX}",
+      "fmt_ROOT": "${PRIVATE_PREFIX}",
+      "Robinmap_ROOT": "${PRIVATE_PREFIX}",
+      "WebP_ROOT": "${PRIVATE_PREFIX}",
+      "OpenJPEG_ROOT": "${PRIVATE_PREFIX}",
+      "openjph_DIR": "${PRIVATE_PREFIX}/lib/cmake/openjph",
+      "pugixml_DIR": "${PRIVATE_PREFIX}/lib/cmake/pugixml",
+      "ZLIB_LIBRARY": "${PRIVATE_PREFIX}/lib/libz.a",
+      "ZLIB_INCLUDE_DIR": "${PRIVATE_PREFIX}/include"
+    },
+    "zlib": {
+      "COLOR_ZLIB_SOURCE": "${SOURCE_ROOT}/zlib"
+    },
+    "imath": {
+      "BUILD_TESTING": "OFF",
+      "IMATH_INSTALL": "ON",
+      "IMATH_INSTALL_PKG_CONFIG": "ON",
+      "PYTHON": "OFF",
+      "PYBIND11": "OFF",
+      "BUILD_WEBSITE": "OFF",
+      "IMATH_BUILD_TESTS": "OFF",
+      "IMATH_BUILD_EXAMPLES": "OFF",
+      "IMATH_STATIC_LIB_SUFFIX": ""
+    },
+    "tbb": {
+      "TBB_TEST": "OFF",
+      "TBB_EXAMPLES": "OFF",
+      "TBBMALLOC_BUILD": "ON",
+      "TBBMALLOC_PROXY_BUILD": "OFF",
+      "TBB_DISABLE_HWLOC_AUTOMATIC_SEARCH": "ON",
+      "TBB_STRICT": "OFF",
+      "TBB_ENABLE_IPO": "OFF",
+      "TBB_INSTALL": "ON"
+    },
+    "fmt": {
+      "FMT_TEST": "OFF",
+      "FMT_DOC": "OFF",
+      "FMT_INSTALL": "ON"
+    },
+    "png": {
+      "PNG_SHARED": "OFF",
+      "PNG_STATIC": "ON",
+      "PNG_TESTS": "ON",
+      "PNG_TOOLS": "OFF",
+      "PNG_EXECUTABLES": "OFF",
+      "ZLIB_LIBRARY": "${PRIVATE_PREFIX}/lib/libz.a",
+      "ZLIB_INCLUDE_DIR": "${PRIVATE_PREFIX}/include"
+    },
+    "jpeg": {
+      "ENABLE_SHARED": "OFF",
+      "ENABLE_STATIC": "ON",
+      "WITH_TURBOJPEG": "ON",
+      "WITH_SIMD": "ON",
+      "REQUIRE_SIMD": "ON",
+      "WITH_JPEG8": "OFF"
+    }
+  },
+  "scope": "Independent native static PIC selected color closure preserving accepted library feature set; source builds only, no inherited prefix inputs",
+  "baseline_deltas": {
+    "static_libraries": "Portable native accepted static PIC architecture",
+    "python_bindings": "Excluded accepted C++ candidate scope; upstream Python ON is explicitly deferred, not represented as validated",
+    "OIIO_tools": "Excluded accepted library consumer scope; texture API remains enabled",
+    "libheif": "No complete Libheif/codec selected closure in original color set; upstream HEIF ON explicitly deferred",
+    "TIFF_optional_codecs": "lzma/jbig/zstd/webp/lerc OFF matches baseline",
+    "OCIO_SIMD": "ON and SSE OFF for native ARM; no fake architecture/probe results",
+    "JPEG_ABI": "WITH_JPEG8=OFF matches actual accepted JPEG2.1.3 baseline; Blender official WITH_JPEG8=ON remains a disclosed upstream delta"
+  }
+}

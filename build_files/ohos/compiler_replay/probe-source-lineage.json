@@ -1,0 +1,65 @@
+{
+  "copied_sources": [
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/native_probe.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/native_probe.cc",
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/affinity_probe.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/affinity_probe.cc",
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/exceptions_rtti_format_error.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/exceptions_rtti_format_error.cc",
+      "sha256": "e5e35a3a82543e5d8ec8176ad57f1f701be514e2a7935d2b4fdecf88fb3d59f6"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/whole_archive_marker.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/whole_archive_marker.cc",
+      "sha256": "3590790f762e5c62e40150e47dd12a2905f3f7bd98b07839913f495e2fbe317c"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/whole_archive_probe.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/whole_archive_probe.cc",
+      "sha256": "338f761309213202d1efd01f519343ccf92820063019dc1db80b1a88e9286d99"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/owner_module.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/owner_module.cc",
+      "sha256": "ecf58a49bdc822c67b184648e93a8afdf74d0bc36b8ade33bc7dfabe507535a9"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/owner.exports",
+      "copied_path": "build_files/ohos/compiler_replay/probes/owner.exports",
+      "sha256": "13cc999391e1169b416639e4f1d6ef90017ea7d0112b58a637b4bec256d749f4"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/CMakeLists.txt",
+      "copied_path": "build_files/ohos/compiler_replay/probes/CMakeLists.txt",
+      "sha256": "0e568975da620aa41d3671519dc305d166fe21d43eb9715abe8f6dd017c1b79e"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/cpp17.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/cpp17.cc",
+      "sha256": "3ba5a9f5163a43bdffd7de1dd1ccfd69715ae7155e8984f8b6beddb1ceae0c18"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/c17.c",
+      "copied_path": "build_files/ohos/compiler_replay/probes/c17.c",
+      "sha256": "4eee9a522eb2674561d6d31bdf9c733675ef994ed0fbe355918dea81bbc48a33"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/probes/module_owner.cc",
+      "copied_path": "build_files/ohos/compiler_replay/probes/module_owner.cc",
+      "sha256": "b6854f0c13787d4cb72ca2ccc3da5d2ccacb40be34eb7b51e96806b801c5bbf1"
+    },
+    {
+      "original": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/cmake/native-link-features.cmake",
+      "copied_path": "build_files/ohos/compiler_replay/cmake/native-link-features.cmake",
+      "sha256": "b6260f4135ad4c2c53c61b210a0b9572ef2148a54fa9281bbaa426adb67e642b"
+    }
+  ],
+  "native_run": "NOT_RUN"
+}

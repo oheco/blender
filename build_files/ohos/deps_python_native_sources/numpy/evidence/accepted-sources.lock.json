@@ -1,0 +1,249 @@
+{
+  "target_python": "CPython3.13.13 native OHOS ARM64 regular GIL",
+  "proxy": "socks5h://127.0.0.1:10808",
+  "sources": [
+    {
+      "name": "numpy",
+      "version": "2.3.4",
+      "filename": "numpy-2.3.4.tar.gz",
+      "url": "https://github.com/numpy/numpy/releases/download/v2.3.4/numpy-2.3.4.tar.gz",
+      "sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+      "size": 20582187,
+      "directory": "numpy-2.3.4",
+      "license": "BSD-3-Clause",
+      "license_members": [
+        "numpy-2.3.4/.spin/LICENSE",
+        "numpy-2.3.4/LICENSE.txt",
+        "numpy-2.3.4/LICENSES_bundled.txt"
+      ],
+      "pypi_sdist_sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+      "official_blender_md5": "8717ed1828a8a390c454c6636e91c46a",
+      "registry_id": "numpy-2.3.4",
+      "license_files": [
+        ".spin/LICENSE",
+        "LICENSE.txt",
+        "LICENSES_bundled.txt"
+      ]
+    },
+    {
+      "name": "Cython",
+      "version": "3.0.11",
+      "filename": "cython-3.0.11.tar.gz",
+      "url": "https://github.com/cython/cython/releases/download/3.0.11-1/cython-3.0.11.tar.gz",
+      "sha256": "7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff",
+      "size": 2755544,
+      "directory": "cython-3.0.11",
+      "license": "Apache-2.0",
+      "license_members": [
+        "cython-3.0.11/COPYING.txt",
+        "cython-3.0.11/LICENSE.txt"
+      ],
+      "pypi_sdist_sha256": "7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff",
+      "official_blender_md5": "388b85b7c23f501320d19d991b169f5d",
+      "registry_id": "cython-3.0.11",
+      "license_files": [
+        "COPYING.txt",
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "meson",
+      "version": "1.9.0",
+      "filename": "meson-1.9.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/0a/8a/8315a2711dd269533019d7fdad1cf79416aadff454c539c2da88bc6e7200/meson-1.9.0.tar.gz",
+      "sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+      "size": 2366082,
+      "directory": "meson-1.9.0",
+      "license": "Apache-2.0",
+      "license_members": [
+        "meson-1.9.0/COPYING",
+        "meson-1.9.0/packaging/License.rtf"
+      ],
+      "pypi_sdist_sha256": "cd27277649b5ed50d19875031de516e270b22e890d9db65ed9af57d18ebc498d",
+      "official_blender_md5": null,
+      "registry_id": "meson-1.9.0",
+      "license_files": [
+        "COPYING",
+        "packaging/License.rtf"
+      ]
+    },
+    {
+      "name": "meson-python",
+      "version": "0.18.0",
+      "filename": "meson_python-0.18.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/26/bd/fdb26366443620f1a8a4d4ec7bfa37d1fbbe7bf737b257c205bbcf95ba95/meson_python-0.18.0.tar.gz",
+      "sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d",
+      "size": 95630,
+      "directory": "meson_python-0.18.0",
+      "license": "MIT",
+      "license_members": [
+        "meson_python-0.18.0/LICENSE"
+      ],
+      "pypi_sdist_sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d",
+      "official_blender_md5": null,
+      "registry_id": "meson-python-0.18.0",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "80.9.0",
+      "filename": "setuptools-80.9.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/18/5d/3bf57dcd21979b887f014ea83c24ae194cfcd12b9e0fda66b957c69d1fca/setuptools-80.9.0.tar.gz",
+      "sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c",
+      "size": 1319958,
+      "directory": "setuptools-80.9.0",
+      "license": "MIT",
+      "license_members": [
+        "setuptools-80.9.0/LICENSE"
+      ],
+      "pypi_sdist_sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c",
+      "official_blender_md5": null,
+      "registry_id": "setuptools-80.9.0",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "setuptools-scm",
+      "version": "9.2.2",
+      "filename": "setuptools_scm-9.2.2.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/7b/b1/19587742aad604f1988a8a362e660e8c3ac03adccdb71c96d86526e5eb62/setuptools_scm-9.2.2.tar.gz",
+      "sha256": "1c674ab4665686a0887d7e24c03ab25f24201c213e82ea689d2f3e169ef7ef57",
+      "size": 203385,
+      "directory": "setuptools_scm-9.2.2",
+      "license": "MIT",
+      "license_members": [
+        "setuptools_scm-9.2.2/LICENSE"
+      ],
+      "pypi_sdist_sha256": "1c674ab4665686a0887d7e24c03ab25f24201c213e82ea689d2f3e169ef7ef57",
+      "official_blender_md5": null,
+      "registry_id": "setuptools-scm-9.2.2",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "25.0",
+      "filename": "packaging-25.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz",
+      "sha256": "d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f",
+      "size": 165727,
+      "directory": "packaging-25.0",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "license_members": [
+        "packaging-25.0/LICENSE",
+        "packaging-25.0/LICENSE.APACHE",
+        "packaging-25.0/LICENSE.BSD",
+        "packaging-25.0/docs/licenses.rst"
+      ],
+      "pypi_sdist_sha256": "d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f",
+      "official_blender_md5": null,
+      "registry_id": "packaging-25.0",
+      "license_files": [
+        "LICENSE",
+        "LICENSE.APACHE",
+        "LICENSE.BSD",
+        "docs/licenses.rst"
+      ]
+    },
+    {
+      "name": "pyproject-metadata",
+      "version": "0.9.1",
+      "filename": "pyproject_metadata-0.9.1.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/64/ae/5fa065b049e97f96880de0611dbba513f0ee313b6edd0a64664c7b46a8e8/pyproject_metadata-0.9.1.tar.gz",
+      "sha256": "b8b2253dd1b7062b78cf949a115f02ba7fa4114aabe63fa10528e9e1a954a816",
+      "size": 38415,
+      "directory": "pyproject_metadata-0.9.1",
+      "license": "MIT",
+      "license_members": [
+        "pyproject_metadata-0.9.1/LICENSE"
+      ],
+      "pypi_sdist_sha256": "b8b2253dd1b7062b78cf949a115f02ba7fa4114aabe63fa10528e9e1a954a816",
+      "official_blender_md5": null,
+      "registry_id": "pyproject-metadata-0.9.1",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "tomli-w",
+      "version": "1.2.0",
+      "filename": "tomli_w-1.2.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/19/75/241269d1da26b624c0d5e110e8149093c759b7a286138f4efd61a60e75fe/tomli_w-1.2.0.tar.gz",
+      "sha256": "2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021",
+      "size": 7184,
+      "directory": "tomli_w-1.2.0",
+      "license": "MIT",
+      "license_members": [
+        "tomli_w-1.2.0/LICENSE"
+      ],
+      "pypi_sdist_sha256": "2dd14fac5a47c27be9cd4c976af5a12d87fb1f0b4512f81d69cce3b35ae25021",
+      "official_blender_md5": null,
+      "registry_id": "tomli-w-1.2.0",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "wheel",
+      "version": "0.45.1",
+      "filename": "wheel-0.45.1.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/8a/98/2d9906746cdc6a6ef809ae6338005b3f21bb568bea3165cfc6a243fdc25c/wheel-0.45.1.tar.gz",
+      "sha256": "661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729",
+      "size": 107545,
+      "directory": "wheel-0.45.1",
+      "license": "MIT",
+      "license_members": [
+        "wheel-0.45.1/LICENSE.txt"
+      ],
+      "pypi_sdist_sha256": "661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729",
+      "official_blender_md5": null,
+      "registry_id": "wheel-0.45.1",
+      "license_files": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "build",
+      "version": "1.3.0",
+      "filename": "build-1.3.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/25/1c/23e33405a7c9eac261dff640926b8b5adaed6a6eb3e1767d441ed611d0c0/build-1.3.0.tar.gz",
+      "sha256": "698edd0ea270bde950f53aed21f3a0135672206f3911e0176261a31e0e07b397",
+      "size": 48544,
+      "directory": "build-1.3.0",
+      "license": "MIT",
+      "license_members": [
+        "build-1.3.0/LICENSE"
+      ],
+      "pypi_sdist_sha256": "698edd0ea270bde950f53aed21f3a0135672206f3911e0176261a31e0e07b397",
+      "official_blender_md5": null,
+      "registry_id": "build-1.3.0",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "pyproject-hooks",
+      "version": "1.2.0",
+      "filename": "pyproject_hooks-1.2.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/e7/82/28175b2414effca1cdac8dc99f76d660e7a4fb0ceefa4b4ab8f5f6742925/pyproject_hooks-1.2.0.tar.gz",
+      "sha256": "1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8",
+      "size": 19228,
+      "directory": "pyproject_hooks-1.2.0",
+      "license": "MIT",
+      "license_members": [
+        "pyproject_hooks-1.2.0/LICENSE"
+      ],
+      "pypi_sdist_sha256": "1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8",
+      "official_blender_md5": null,
+      "registry_id": "pyproject-hooks-1.2.0",
+      "license_files": [
+        "LICENSE"
+      ]
+    }
+  ],
+  "rule": "Source-complete fixed sdists; only py3-none-any universal build-tool wheels allowed, never CPython3.14/native/manylinux wheels"
+}

@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "kind": "geometry-builder-exact-input-seal",
+  "sealed_files": [
+    {
+      "path": "build_files/ohos/deps_geometry_sources/README.md",
+      "sha256": "b1aca10af18604cf94f115513f5fcfffb265030228f1dab772ff2973e16e6414",
+      "size": 1683
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/ATTRIBUTION.md",
+      "sha256": "7389ee5576391083d601adfef5ff33b403182470f25b1990e36c51f574d42566",
+      "size": 2116
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/README.md",
+      "sha256": "4e1e81062e0011b6c13de25db59dc41a189744f52926a7c2771184ae1d88eddc",
+      "size": 7166
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/audit.py",
+      "sha256": "1dfc77ecb625d0beb0042cddeeca24e4545b9a8098deeda9d06929fed0bffe18",
+      "size": 6208
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/builder.py",
+      "sha256": "ec24d5ac9767f0434431e3fd597be6accca8c89bf4b0422858b3677c3165135a",
+      "size": 21514
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538",
+      "size": 808
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/cmake/native-host.cmake",
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302",
+      "size": 812
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/CMakeLists.txt",
+      "sha256": "cb3e715fc4bbaa79582a1874dd777f834883da3ee24f4a5d845f6ba8734ad2ca",
+      "size": 3948
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/affinity_probe.cc",
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6",
+      "size": 1421
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/blender-find/FindGMP.cmake",
+      "sha256": "4460cec0a4ef58dbd68b32d7e522c0086fede86b3c8dace22ae0699ca9942ccb",
+      "size": 2102
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/blender-find/FindOpenSubdiv.cmake",
+      "sha256": "84f897e00459efb66cdbe7e3fd73a2b0378edc72ed375d30de01aa169ac2847e",
+      "size": 2648
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/glsl_acceptance.cc",
+      "sha256": "b3b238ee2c520cd83c2cc793f5e6a799e4bf5134915ad4d68f0169733e7cedf0",
+      "size": 3223
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/gmp_acceptance.cc",
+      "sha256": "2d1ae12b68cf9a46c653362efdd3299d5a383953a25cbb809e09f0355232a080",
+      "size": 3363
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/manifold_acceptance.cc",
+      "sha256": "3480fb9fa32443e1c220c36b7adf5a19c0f83f9b0776cf673990740cfdef59ec",
+      "size": 3955
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/native_probe.cc",
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1",
+      "size": 1161
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/opensubdiv_acceptance.cc",
+      "sha256": "98c43d093fc2954482fbd9ca2fc293f3cfa21b95d5b60400da433c10eaa3f4b6",
+      "size": 2782
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/pic.cpp",
+      "sha256": "f5c60c4e275de34286da2af3628241c742dd51f8c61786cee891a3b3c4711a84",
+      "size": 777
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/consumers/tbb_acceptance.cc",
+      "sha256": "d57ffc6bbc5e6c18e383b4e8b77dc15e153af8a3268eaa821bc7ee8f08fc9ad3",
+      "size": 1991
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/io_utils.py",
+      "sha256": "655cdd660eb6c9fb61d6bce7e805a0b53614f49a5b1ac5caf6b06b4f56e94e3f",
+      "size": 6983
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/launcher.py",
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339",
+      "size": 3118
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/link_plan.py",
+      "sha256": "fddc37419974a31c89deef0f55a20c13a61760ba2da243f7041fe19cdbdabc45",
+      "size": 6049
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/metadata.py",
+      "sha256": "287f191eeedf56f859499bfdfca8b7ef7559a19611f7570dbfbd0154bfedadef",
+      "size": 7938
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/pic_closure.py",
+      "sha256": "ba7382ab7cc0e6a77a873dbf41c040bae524f644db3ed9945156f3a0cec59ebb",
+      "size": 25006
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/preflight/CMakeLists.txt",
+      "sha256": "47e8f5a05b545e3abb9f30689d5f98228d89d3fedd8a9c962445eba5e4e6308b",
+      "size": 719
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/recipe.json",
+      "sha256": "b115aa2369dabaeebc67cb344a3fb6d1bd12a18c30419b853b37425446f8f63b",
+      "size": 4103
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/source_tree.py",
+      "sha256": "ec68ad2421e0befcf284311afebba7d23bde45aa46a85b47037eedfed48574bc",
+      "size": 9003
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/sources.lock.json",
+      "sha256": "decc8644b9c139880bc387e99acb960cbc3295c3dd6d4e9bc7167631f01ddcea",
+      "size": 7659
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/toolchain.py",
+      "sha256": "6de85c152d5649eece51b66e01c538186d32aaaaa35d25a8ccf4eb51b3601369",
+      "size": 11373
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/builder/vendor_archive.py",
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09",
+      "size": 8263
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/input-lineage.json",
+      "sha256": "9b9ade80efa069dd5138b9d3057ce4f9660c87114d6a49f6e9a1082e3e466b29",
+      "size": 6145
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/inventories/gmp.json",
+      "sha256": "3e9a2891e6be41f447ad30cce077817b7269a607be4c11268fac042e830987bd",
+      "size": 436577
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/inventories/manifold.json",
+      "sha256": "f231e7b19341f9547d0c4ea9c234156cbbb515aa7b4187e1a158e2341f56770b",
+      "size": 81235
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/inventories/opensubdiv.json",
+      "sha256": "ed3b7f42e5c40d11cedc7c24da5f756944f07199c4edfffff6b2d4e96b9e5cdb",
+      "size": 253181
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/inventories/tbb.json",
+      "sha256": "8fd2ec55314b8184c7a6a48ba6635cdf5992dbca36b656d47b163707904f1d07",
+      "size": 208342
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/afterfiles/Makefile.am",
+      "sha256": "5b4fafadf22f5b045437cc1b6c0de2e3c790eba5dd50f5dde7e41db8f7c1cae1",
+      "size": 20634
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/afterfiles/Makefile.in",
+      "sha256": "c666356b0559f556a6459f413c622990f9da88ad3b646235a7b7975f3c75683d",
+      "size": 57554
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/afterfiles/configfsf.sub",
+      "sha256": "7089b84fdfe913aca4e7688fa415f2786f6750714c13c37725b6036070b84bf3",
+      "size": 35955
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/beforefiles/Makefile.am",
+      "sha256": "15e49ea5d3889eaaafe2dc704ac676d41e139cd39b886efe37ac074ea1d9d605",
+      "size": 20638
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/beforefiles/Makefile.in",
+      "sha256": "437533a520e7a1d0ece6962f8ce7f40a659036e762164284e060d668faa5d5eb",
+      "size": 57558
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/beforefiles/configfsf.sub",
+      "sha256": "3dcdc99d654fe86107a045fcb1879f6c72609eb390d639990df807d2da056646",
+      "size": 35947
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/gmp-before-after.json",
+      "sha256": "3153e7d37187833ca9b73855b3fc521a83ede68bf4a6f37a816270ce1657fcc2",
+      "size": 972
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/patches/gmp-native-ohos.patch",
+      "sha256": "3cf4c7af10aaf8b5c9894848a58996b50b149ca75b1746963d8bceffcb44f9b0",
+      "size": 1062
+    },
+    {
+      "path": "build_files/ohos/deps_geometry_sources/provenance.json",
+      "sha256": "31b50aa88cee1ab63fd72d36fe2d74e538609dd49ab6998375c20482c46fd26c",
+      "size": 8004
+    },
+    {
+      "path": "tpr/sources/gmp-6.3.0/licenses/COPYING",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "size": 35147
+    },
+    {
+      "path": "tpr/sources/gmp-6.3.0/licenses/COPYING.LESSERv3",
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+      "size": 7639
+    },
+    {
+      "path": "tpr/sources/gmp-6.3.0/licenses/COPYINGv2",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "size": 18092
+    },
+    {
+      "path": "tpr/sources/gmp-6.3.0/licenses/COPYINGv3",
+      "sha256": "e6037104443f9a7829b2aa7c5370d0789a7bda3ca65a0b904cdc0c2e285d9195",
+      "size": 35150
+    },
+    {
+      "path": "tpr/sources/gmp-6.3.0/manifest.json",
+      "sha256": "14a8ad3cf2f3167fff9f3fdbebe6d4c5be3a641788712708607a7d4bef976ea3",
+      "size": 674
+    },
+    {
+      "path": "tpr/sources/gmp-6.3.0/source.part0000",
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+      "size": 2094196
+    },
+    {
+      "path": "tpr/sources/make-source-4.4.1/manifest.json",
+      "sha256": "4af98a7326ab96cae13e53ea8f4bb3e5772a597aa6ad3ff901437529b7c39dd3",
+      "size": 570
+    },
+    {
+      "path": "tpr/sources/make-source-4.4.1/source.part0000",
+      "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3",
+      "size": 2348200
+    },
+    {
+      "path": "tpr/sources/manifold-v3.5.2/licenses/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "tpr/sources/manifold-v3.5.2/licenses/bindings/wasm/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "tpr/sources/manifold-v3.5.2/licenses/include/manifold/linalg.h",
+      "sha256": "0a1ae64ec20c3e38f1f90d5d4a43942ea9a076fe91acaf0f9937404634858426",
+      "size": 79516
+    },
+    {
+      "path": "tpr/sources/manifold-v3.5.2/licenses/src/svd.h",
+      "sha256": "afa69ed18d35d8210afedece8c6a43730ac2edbea1896b44f1ff4b9fa7a491d8",
+      "size": 10732
+    },
+    {
+      "path": "tpr/sources/manifold-v3.5.2/manifest.json",
+      "sha256": "36dafeb403ef94d8064112de09d3733214e3e6705f819bd8ae1bb5aad3c90170",
+      "size": 709
+    },
+    {
+      "path": "tpr/sources/manifold-v3.5.2/source.part0000",
+      "sha256": "35cb5e0d78882f461ec39b17d8f09c2aceca761356f3ce948e3f3908289b8f2e",
+      "size": 30975714
+    },
+    {
+      "path": "tpr/sources/opensubdiv-v3_7_0/licenses/LICENSE.txt",
+      "sha256": "9211071ceaea05cec948f44a025ede3030f41506960d68b50e7ddb6edc2abe5b",
+      "size": 10186
+    },
+    {
+      "path": "tpr/sources/opensubdiv-v3_7_0/licenses/NOTICE.txt",
+      "sha256": "c9a283f0d3752b74d348a57e1d45e71cf69651ce6cbdce866983e459f6422c7c",
+      "size": 357
+    },
+    {
+      "path": "tpr/sources/opensubdiv-v3_7_0/licenses/documentation/license.rst",
+      "sha256": "d0d65ebdc57aa223ade28059e9a39c3761ac34552df76ae349897fb147aa986c",
+      "size": 329
+    },
+    {
+      "path": "tpr/sources/opensubdiv-v3_7_0/manifest.json",
+      "sha256": "df9ca347e1b4bb443c9f252c8d0afb37426c6883c505ed28540be7e094271e74",
+      "size": 856
+    },
+    {
+      "path": "tpr/sources/opensubdiv-v3_7_0/source.part0000",
+      "sha256": "37db507c8d4366714955369dc7cc5a25d61b6ef685ce9c9058cb0e0ee0f13890",
+      "size": 33554432
+    },
+    {
+      "path": "tpr/sources/opensubdiv-v3_7_0/source.part0001",
+      "sha256": "b2892557e124e8a5d9c6aea77021f1b611f6084e46008564add38e4eac8eac8c",
+      "size": 7181643
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+      "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c",
+      "size": 11631
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/manifest.json",
+      "sha256": "f09bd7d1d92cf66fa0cda8c46ddd5daaea002bf3dff1eb752164518ce8850ddc",
+      "size": 630
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/source.part0000",
+      "sha256": "01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a",
+      "size": 6836514
+    }
+  ],
+  "new_full_native_acceptance": false,
+  "external_prerequisites": "Explicit SDK/tools/native signed GNU Make and accepted readonly GPU ShaderC source closure; captured separately by each actual plan/full invocation"
+}

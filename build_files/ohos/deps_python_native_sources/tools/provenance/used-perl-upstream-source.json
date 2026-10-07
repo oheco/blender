@@ -1,0 +1,25 @@
+{
+  "url": "https://github.com/Perl/perl5/archive/refs/tags/v5.44.0.tar.gz",
+  "archive": "perl5-v5.44.0.tar.gz",
+  "command": [
+    "curl",
+    "--proxy",
+    "socks5h://127.0.0.1:10808",
+    "--fail",
+    "--location",
+    "--connect-timeout",
+    "30",
+    "--max-time",
+    "600",
+    "--output",
+    "/data/storage/el2/base/haps/entry/temp/blender-used-perl-source-busi8cpe/perl5-v5.44.0.tar.gz",
+    "https://github.com/Perl/perl5/archive/refs/tags/v5.44.0.tar.gz"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n\n  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\n100  116k    0  116k    0     0  35889      0 --:--:--  0:00:03 --:--:--  131k\n100 5908k    0 5908k    0     0  1366k      0 --:--:--  0:00:04 --:--:-- 3116k\n100 18.2M    0 18.2M    0     0  3511k      0 --:--:--  0:00:05 --:--:-- 6445k\n100 21.9M    0 21.9M    0     0  3849k      0 --:--:--  0:00:05 --:--:-- 6585k\n",
+  "scope": "Actual upstream archive named by pinned Harmonybrew adapter; source acquisition only",
+  "size": 23036248,
+  "sha256": "b9a53d539af95412ecce2bdd548eac9beaf559ea48ace5dd8427504c25b01b46",
+  "temporary_tree_cleaned": true
+}

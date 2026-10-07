@@ -1,0 +1,26 @@
+{
+  "name": "glslang",
+  "version": "d213562e35573012b6348b2d584457c3704ac09b",
+  "kind": "source",
+  "filename": "glslang-d213562e35573012b6348b2d584457c3704ac09b.tar.gz",
+  "url": "https://github.com/KhronosGroup/glslang/archive/d213562e35573012b6348b2d584457c3704ac09b.tar.gz",
+  "license": "BSD-3-Clause AND MIT AND Apache-2.0",
+  "license_files": [
+    "LICENSE.txt",
+    "license-checker.cfg"
+  ],
+  "upstream_repository": "https://github.com/KhronosGroup/glslang",
+  "tag": "d213562e35573012b6348b2d584457c3704ac09b",
+  "commit": "d213562e35573012b6348b2d584457c3704ac09b",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 4233045,
+  "sha256": "9537e5896d10bc493775675153687e078d83aead3a5a3b90e9ac28af2bc966fc",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 4233045,
+      "sha256": "9537e5896d10bc493775675153687e078d83aead3a5a3b90e9ac28af2bc966fc"
+    }
+  ]
+}

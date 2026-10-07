@@ -879,6 +879,10 @@ cli_commands = []
 
 
 def register():
+    import sys
+    if sys.platform == "ohos":
+        from . import bl_extension_worker_ui
+        bl_extension_worker_ui.ensure_register_ready()
     from bpy.app.translations import (
         pgettext_n as n_,
         pgettext_rpt as rpt_,
@@ -985,6 +989,14 @@ def register():
 
     _remote_asset_library_restore_backups()
 
+    import sys
+    if sys.platform == "ohos":
+        from . import bl_extension_worker_ui
+        def stop_notify():
+            from . import bl_extension_notify
+            bl_extension_notify.shutdown_non_blocking()
+        bl_extension_worker_ui.register(bpy, repo_status_text, notify_shutdown=stop_notify)
+
     if not bpy.app.background:
         if prefs.view.show_extensions_updates:
             from . import bl_extension_notify
@@ -993,6 +1005,15 @@ def register():
 
 
 def unregister():
+    import sys
+    if sys.platform == "ohos":
+        from . import bl_extension_worker_ui
+        bl_extension_worker_ui.request_unregister(_unregister_impl)
+        return
+    _unregister_impl()
+
+
+def _unregister_impl():
     from bpy.types import WindowManager
     from . import (
         bl_extension_ops,

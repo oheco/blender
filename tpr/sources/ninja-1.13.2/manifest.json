@@ -1,0 +1,22 @@
+{
+  "filename": "ninja-v1.13.2.tar.gz",
+  "format": "original-archive-parts",
+  "kind": "source",
+  "license": "Apache-2.0",
+  "license_files": [
+    "COPYING"
+  ],
+  "name": "ninja",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+      "size": 292385
+    }
+  ],
+  "schema_version": 1,
+  "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17",
+  "size": 292385,
+  "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz",
+  "version": "1.13.2"
+}

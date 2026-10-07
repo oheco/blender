@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "source_snapshot": "host.6",
+  "files": [
+    {
+      "path": "AppScope/app.json5",
+      "sha256": "1017c6b674e951c803082344fbe99df7b7a6c9ef5543567fbe5f6798ca3bfdf0"
+    },
+    {
+      "path": "AppScope/resources/base/element/string.json",
+      "sha256": "4b6b5b0509df7aded671154143437ba30027e6bcd0d0ae052fc40ffe7a64142f"
+    },
+    {
+      "path": "AppScope/resources/base/media/app_icon.svg",
+      "sha256": "fd18ae29afd0743a6eee912fdfab71476f6da0f6699a16c1ecd7db7ea8a5de59"
+    },
+    {
+      "path": "AppScope/resources/base/media/app_icon_background.png",
+      "sha256": "1a2309fbd298f8e3f2dee6835ccf9a8d23bfefc425b9427c6e7f6c0aa2cd0315"
+    },
+    {
+      "path": "AppScope/resources/base/media/app_icon_foreground.png",
+      "sha256": "8ff57a1fa43fa93e682c1a5b898bd405b8c09ab10a4742a3307953cbf49b12e3"
+    },
+    {
+      "path": "AppScope/resources/base/media/blender_app_icon.json",
+      "sha256": "85fde69ce319e67cbd60c648e4c31735b063ad59aeb12b588375007cae926691"
+    },
+    {
+      "path": "entry/hvigorfile.ts",
+      "sha256": "f547983dcab9c8fff87cc3ddedb22bb98063663c5b8afe18bb32e131311ec289"
+    },
+    {
+      "path": "entry/oh-package.json5",
+      "sha256": "f244349ca9cdc1eb7a47e836976fa5218f12db8be8257e648258fbde77a25890"
+    },
+    {
+      "path": "entry/src/main/cpp/CMakeLists.txt",
+      "sha256": "d59974ba4c9c0701de2138bc27330fce6a278f7155bbf3be03b8a11f11a1c6da"
+    },
+    {
+      "path": "entry/src/main/cpp/file_commands.h",
+      "sha256": "82ad930677045b1ebb195be0ef8e81f6aad2c05216139bba49df7015828a4fc5"
+    },
+    {
+      "path": "entry/src/main/cpp/host.exports.map",
+      "sha256": "257f5d7be25e345c31c502188d3a33610b5e2b843bed7ae2974e84e2b5a2bc92"
+    },
+    {
+      "path": "entry/src/main/cpp/host_bridge.cc",
+      "sha256": "195ffa2c39c4e278c4377713d2b416b72f0967c2be720338f4ccd4fa99688169"
+    },
+    {
+      "path": "entry/src/main/cpp/host_bridge.h",
+      "sha256": "012504e20d2a90d448e5eb00cbc669eff592b9e885ff73fa566ee7f44d40d95e"
+    },
+    {
+      "path": "entry/src/main/cpp/ime_input.cc",
+      "sha256": "251df53316e0d18c6453e31409ad5d740b4f79b25cbbc64a181f6cbeecd8d9ee"
+    },
+    {
+      "path": "entry/src/main/cpp/ime_input.h",
+      "sha256": "5c0feb5f6b2f1990e384d02ade68ea179a25e32b7967a096a32325d5a9268b09"
+    },
+    {
+      "path": "entry/src/main/cpp/napi_init.cc",
+      "sha256": "2cb77f1871806e7ed371dafc9a3d0adc2eeb55f997a1c1d3e3120f2be6e446b0"
+    },
+    {
+      "path": "entry/src/main/cpp/reliable_input.cc",
+      "sha256": "07c955f030bd293d779394930e46c0c1aa6da2937136df1b1191cfe9a618302b"
+    },
+    {
+      "path": "entry/src/main/cpp/reliable_input.h",
+      "sha256": "137b39b7a9e5b60f39b5b5b71ba542ac80c5ea95775e202123be580ccf1950a3"
+    },
+    {
+      "path": "entry/src/main/cpp/types/libblender_host/00_blender_hap_native.pth",
+      "sha256": "c0e7f4e81077969990cfe66d24708dc88f42ad7708110cc13dd4309c8614b9e2"
+    },
+    {
+      "path": "entry/src/main/cpp/types/libblender_host/Index.d.ts",
+      "sha256": "e160247b65352b51bc3ea2530675a98fd69f8507e706f2ee88267644ba7dde14"
+    },
+    {
+      "path": "entry/src/main/cpp/types/libblender_host/blender_hap_documents.py",
+      "sha256": "5f28fafedd22bcbd75a1560ae9add3231f0d1ee3026179285800c88d73074a26"
+    },
+    {
+      "path": "entry/src/main/cpp/types/libblender_host/blender_hap_native.py",
+      "sha256": "c0433d70b8cbafc3364cfc2a816931987f1b4c44e54bb5163b6da445a7af3c92"
+    },
+    {
+      "path": "entry/src/main/cpp/types/libblender_host/oh-package.json5",
+      "sha256": "60210637557cba997fd7267468db6917fd6956e0b03dfab1fde502ff983e18ab"
+    },
+    {
+      "path": "entry/src/main/cpp/xcomponent_input.cc",
+      "sha256": "b5f363982fa8862f621654e1f73ad0ebd728a0ef768f0d42112bfcc593daf654"
+    },
+    {
+      "path": "entry/src/main/cpp/xcomponent_input.h",
+      "sha256": "a9aa4543346f5d8fc9f637743d5d11d9930a409310acb4e1acb6cce22ceb8db5"
+    },
+    {
+      "path": "entry/src/main/ets/entryability/EntryAbility.ets",
+      "sha256": "f688a615bd2eea6b2e4a8b2baa3570a880c2e1c472ef7e51ece630bd24414893"
+    },
+    {
+      "path": "entry/src/main/ets/pages/Index.ets",
+      "sha256": "bf5b7ae86b9fff9ccbd85136d26dcea3d7172296a58394190a6d259d6c94f10b"
+    },
+    {
+      "path": "entry/src/main/ets/runtime/AssetExchange.ets",
+      "sha256": "b7ed4df5a970c1a877deb92905371bc79a229c6e39a2349ad9e9381a8805f704"
+    },
+    {
+      "path": "entry/src/main/ets/runtime/AssetFormats.ets",
+      "sha256": "a02f5729a0c64d2b535ae34b9ef735b96ef249234ff817342be4d323bd715415"
+    },
+    {
+      "path": "entry/src/main/ets/runtime/IconDiagnostics.ets",
+      "sha256": "c204158aa0e2126de63b01169bfdaaea5d61d63a6f74684004c8753cc28b7353"
+    },
+    {
+      "path": "entry/src/main/ets/runtime/Runtime.ets",
+      "sha256": "760b4bb02ec2a4cfede8a61cbbf2901a2a04c3b355781381fcf38b5251cdaecf"
+    },
+    {
+      "path": "entry/src/main/module.json5",
+      "sha256": "a25b7a52a203b8ff3293672acf874c748e27597de9317730737f0e36ac2a5d64"
+    },
+    {
+      "path": "entry/src/main/resources/base/element/color.json",
+      "sha256": "3f445198bc4675b18a73647e09c639bfd7eb08a96a2ac2d1434a64648d788b5e"
+    },
+    {
+      "path": "entry/src/main/resources/base/element/string.json",
+      "sha256": "4b6b5b0509df7aded671154143437ba30027e6bcd0d0ae052fc40ffe7a64142f"
+    },
+    {
+      "path": "entry/src/main/resources/base/media/app_icon.svg",
+      "sha256": "fd18ae29afd0743a6eee912fdfab71476f6da0f6699a16c1ecd7db7ea8a5de59"
+    },
+    {
+      "path": "entry/src/main/resources/base/media/app_icon_background.png",
+      "sha256": "1a2309fbd298f8e3f2dee6835ccf9a8d23bfefc425b9427c6e7f6c0aa2cd0315"
+    },
+    {
+      "path": "entry/src/main/resources/base/media/app_icon_foreground.png",
+      "sha256": "8ff57a1fa43fa93e682c1a5b898bd405b8c09ab10a4742a3307953cbf49b12e3"
+    },
+    {
+      "path": "entry/src/main/resources/base/media/blender_app_icon.json",
+      "sha256": "85fde69ce319e67cbd60c648e4c31735b063ad59aeb12b588375007cae926691"
+    },
+    {
+      "path": "entry/src/main/resources/base/profile/main_pages.json",
+      "sha256": "4ca3fb089a34d7f463b3af626b3d472b4ae5b2021c64606d272c926535fe0814"
+    },
+    {
+      "path": "hvigor/hvigor-config.json5",
+      "sha256": "d00906a2ada85424156e6ffc4d84e4fd0e56cf9fd423999ae985ac2faad39329"
+    },
+    {
+      "path": "hvigorfile.ts",
+      "sha256": "2378c5e0c5246005ada73a67e8c9834fa08adb9ffd6fb6c219051456753bed5a"
+    },
+    {
+      "path": "oh-package.json5",
+      "sha256": "77ed7fd901ca5b34c500bb0fc2a66ccbac75d18e1e0ecd1831689886f2d8f761"
+    }
+  ],
+  "profile_derivation": "root signingConfigs/signingConfig omitted; explicit source/Core paths replaced with required user parameters",
+  "payload": "native libs and generated runtime rawfiles excluded"
+}

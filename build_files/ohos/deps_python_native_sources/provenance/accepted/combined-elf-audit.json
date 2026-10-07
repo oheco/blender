@@ -1,0 +1,2071 @@
+{
+  "HAP_installed_app_loadpolicy": "NOT_TESTED",
+  "hap_native_DSO_count": 92,
+  "hap_native_payload": [
+    {
+      "path": "libs/arm64-v8a/_asyncio.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "565e4a6bc8621729449e9b5bb3913de836d1f5f0d22da65aef2c36f72963d30e",
+      "size": 301504
+    },
+    {
+      "path": "libs/arm64-v8a/_bisect.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "83e349f1e662e7fdd3092b99f5d33a5b0703bf0675c112ff993350452b1e15fe",
+      "size": 55744
+    },
+    {
+      "path": "libs/arm64-v8a/_blake2.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "07a22f213856690445b07316cf6739b67a0cf6d928864d00e8a8a17c45c5245a",
+      "size": 412096
+    },
+    {
+      "path": "libs/arm64-v8a/_bounded_integers.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "33c48a4a4a4192282dc4f7a60efe8d3dd6e7b53c53419dc4a889eab71239a102",
+      "size": 280896
+    },
+    {
+      "path": "libs/arm64-v8a/_bz2.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "c359dccc90248b465ea38b3adb8558082b0e52c450e65eea9269565bc9cd0443",
+      "size": 133568
+    },
+    {
+      "path": "libs/arm64-v8a/_codecs_cn.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "fe79bed00c2cdfee69031f10349750450a30a9730145abe51d158cf799cf2704",
+      "size": 182720
+    },
+    {
+      "path": "libs/arm64-v8a/_codecs_hk.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "ab51cafccfb876145cbd73de874ec220ea818d236f36961560d9b03546916673",
+      "size": 190912
+    },
+    {
+      "path": "libs/arm64-v8a/_codecs_iso2022.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "e846188087f15d8629729bf26810e4fb4cdc9da85018f02894d5311c1f87df40",
+      "size": 68032
+    },
+    {
+      "path": "libs/arm64-v8a/_codecs_jp.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "1d6141501caf4d6fa8768b8ff070eb81395ad6171bd82482900617c809963806",
+      "size": 305600
+    },
+    {
+      "path": "libs/arm64-v8a/_codecs_kr.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "80f7db36f7871ace753452def96b5d6148c29aae37b1505100b9659d73e1eac7",
+      "size": 170432
+    },
+    {
+      "path": "libs/arm64-v8a/_codecs_tw.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "9cce04e000a239cbf8d312fb2c16bb8ed9f465274c46c3fb7191212ccde34379",
+      "size": 141760
+    },
+    {
+      "path": "libs/arm64-v8a/_common.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "e5b5f6859bcb2b04462695ac874d42f260850b6d24fa3afe1d7eae5c409da1c5",
+      "size": 227648
+    },
+    {
+      "path": "libs/arm64-v8a/_contextvars.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "4355927d4a102a358e679bd6a9c96ef6d25754d196654de3823666744bfa502b",
+      "size": 31104
+    },
+    {
+      "path": "libs/arm64-v8a/_csv.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "eaa77c8e7493e29dc4211dc37de0a0cfd65eab757bdbdd4bf4113ba943abaf82",
+      "size": 104896
+    },
+    {
+      "path": "libs/arm64-v8a/_ctypes.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "78f91c106c527084217c8c7e2782b863f8537a94abfcd2eaa95a60b8e2858505",
+      "size": 735680
+    },
+    {
+      "path": "libs/arm64-v8a/_ctypes_test.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "31df3600cdef20f9bfbc5ebc3aa61241cd830f3daa3a24d281afbaf1398ac8d0",
+      "size": 92544
+    },
+    {
+      "path": "libs/arm64-v8a/_datetime.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "121347e8a9bfeb3ec72cda9282a1fd2d1947b9cb5007f7db65ef067d3f897115",
+      "size": 428480
+    },
+    {
+      "path": "libs/arm64-v8a/_decimal.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "85158b29d99820ea0f16671cb9ede0faeacd81de5c2d4c2856a76a89737b1ee3",
+      "size": 1235392
+    },
+    {
+      "path": "libs/arm64-v8a/_elementtree.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "a9e236bf958511e1bacb155b04a6bd0d4dba85da036d999f3f36d4a61993ee7e",
+      "size": 338368
+    },
+    {
+      "path": "libs/arm64-v8a/_generator.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "27ea6eeece046415bad73a46cbcec2cd18f75dcc004024415dfc2e19fe523f2b",
+      "size": 842048
+    },
+    {
+      "path": "libs/arm64-v8a/_hashlib.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "530c7b3c48a418f8a71a8297999e42507d7efdd731592712a913fce4d6f97057",
+      "size": 5650880
+    },
+    {
+      "path": "libs/arm64-v8a/_heapq.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "30209d4369f9f36bc04cfc413ace01b44de675ad506177d31e531e0e72711031",
+      "size": 55680
+    },
+    {
+      "path": "libs/arm64-v8a/_interpchannels.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "8cb5a13e8e5099cd542bc04386fad3270ced33cc6e78eff39833d6f7a8e64db5",
+      "size": 231808
+    },
+    {
+      "path": "libs/arm64-v8a/_interpqueues.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "cd937ff01dc4fbec1fa25452f89714330eeeef05b5d6ebdf7b069e01a8b2e31b",
+      "size": 92608
+    },
+    {
+      "path": "libs/arm64-v8a/_interpreters.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "abc7caa6a5503b8847019b36406ba09f0a0defbacdb0808effde6fab6c97f3aa",
+      "size": 182656
+    },
+    {
+      "path": "libs/arm64-v8a/_json.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "7ef764abd9c5c24b607bb013e2085cfc52b2223e93e0d7d3bf94768a16bfa5a2",
+      "size": 215424
+    },
+    {
+      "path": "libs/arm64-v8a/_lsprof.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "4e9d0a8c6bbe44f8538f22fb6a9ed00c56ffe76a0eacce40e7d8fb3b64aa11f5",
+      "size": 174528
+    },
+    {
+      "path": "libs/arm64-v8a/_lzma.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "939816bfe8b47f3507e3315fc1238a642d0b061cb32c5a6afd447941b095d205",
+      "size": 248256
+    },
+    {
+      "path": "libs/arm64-v8a/_md5.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "1e7f8d101d45230e65df86c68e869810569052944b222ecda9626d54d186a313",
+      "size": 96704
+    },
+    {
+      "path": "libs/arm64-v8a/_mt19937.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "ee299318749e268adf5b96ccde527cad3587606e2adb0153c6246b3cb8f6e6d9",
+      "size": 121152
+    },
+    {
+      "path": "libs/arm64-v8a/_multiarray_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "79674d27c11ec288dec4723a771ba5bd1a11e98572d9763b877cc0c34307350c",
+      "size": 166272
+    },
+    {
+      "path": "libs/arm64-v8a/_multiarray_umath.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "21e2502b70d99c18da957ec5b1046b366e8a81f24c216416d16c4f76c7218ffd",
+      "size": 5270016
+    },
+    {
+      "path": "libs/arm64-v8a/_multibytecodec.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "43cedfa54bf0930cdf08e95fd9243305a5aa080d31e4b6c49dd626f3a57a9978",
+      "size": 133568
+    },
+    {
+      "path": "libs/arm64-v8a/_multiprocessing.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "616343f53e85a605f5bd99b10333a6d5d09117ea06345c6a51b131e32a7b14fd",
+      "size": 158144
+    },
+    {
+      "path": "libs/arm64-v8a/_opcode.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "dbfb12676e50ac99cb986e0ade4b8403d4606e68564c17bebdd2503ff160bb4f",
+      "size": 63936
+    },
+    {
+      "path": "libs/arm64-v8a/_operand_flag_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "fae1c3eac295264115f964813a3b3d40cce650a55aee32ef3c0e58ccc1e24425",
+      "size": 22848
+    },
+    {
+      "path": "libs/arm64-v8a/_pcg64.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "6aed58f2ef42569402518bd480d2216beeeae58ebe4c383e9a0cc838036c8387",
+      "size": 125248
+    },
+    {
+      "path": "libs/arm64-v8a/_philox.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "d10282666f506e2ee20008996bc64222fe4aa67f5be2a06785e5bcf09bc4e4d2",
+      "size": 108864
+    },
+    {
+      "path": "libs/arm64-v8a/_pickle.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "d4964e24f6f4126dfc3e6cbfcf5b742af3a713f04f5a98f2de7ab544bed0c0ed",
+      "size": 461248
+    },
+    {
+      "path": "libs/arm64-v8a/_pocketfft_umath.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "5ce73b524716947108f24adfdc921aba2e44e314c7ded783546952b8e820eade",
+      "size": 2161152
+    },
+    {
+      "path": "libs/arm64-v8a/_posixshmem.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "33c14634f33c3921b1c87f5782b9ff9c8c69c2c1fa6f98d870bab005e30a7305",
+      "size": 31104
+    },
+    {
+      "path": "libs/arm64-v8a/_posixsubprocess.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "0d8e5c41d10882412d4f7afae958e303e31bf6df130027a5ccc763c2eb3508cb",
+      "size": 158080
+    },
+    {
+      "path": "libs/arm64-v8a/_queue.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "fc1b17b4db724f98f5d657f412b6a638e2058b2fb92693fdc88925fed0af4567",
+      "size": 55744
+    },
+    {
+      "path": "libs/arm64-v8a/_random.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "071c537496d2547d324970d906bc727ed93f0391596cc3ace20c18374623175f",
+      "size": 55680
+    },
+    {
+      "path": "libs/arm64-v8a/_rational_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "910a341bb414404807fa10a1296714a81acd7d4be5d9d3f3d9ad9040e30e4562",
+      "size": 55680
+    },
+    {
+      "path": "libs/arm64-v8a/_sfc64.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "2a62ee2b9e3c483cd0da3d1b36ab104e78c7272dcedb0d734b9a1e4b73b77943",
+      "size": 84288
+    },
+    {
+      "path": "libs/arm64-v8a/_sha1.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "7ede84cb70955060760b92d41c6cd42ba8df841ddd440a08bb8e01c42df865ba",
+      "size": 68032
+    },
+    {
+      "path": "libs/arm64-v8a/_sha2.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "1ca449fd682191545dd00ba99f3ea45d38aadd337bd2cae40ae89908cb35ce9f",
+      "size": 248256
+    },
+    {
+      "path": "libs/arm64-v8a/_sha3.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "51f813fece2b1120318f5691219ecd14074970cadfba9f2ad18a90e2c8284803",
+      "size": 195008
+    },
+    {
+      "path": "libs/arm64-v8a/_simd.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "79b541f6ad50075b804b45355501d9369581d07e56deabce2d529558cfe40c8f",
+      "size": 395712
+    },
+    {
+      "path": "libs/arm64-v8a/_socket.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "4d9b85a633499e62861c35e753bfe38dbe2c22b83b47ca2c2fb9bc0ad5b4866f",
+      "size": 260544
+    },
+    {
+      "path": "libs/arm64-v8a/_sqlite3.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "2b0f7f799ef9d22ee0000759fca6b3ce2314f6f857654b71a4c9f46d83d3ef52",
+      "size": 2005440
+    },
+    {
+      "path": "libs/arm64-v8a/_ssl.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "905ba0150aa7ea79610424c2afc5acad42f3f57cde44334ad8ce784b3e451215",
+      "size": 7088576
+    },
+    {
+      "path": "libs/arm64-v8a/_statistics.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "2a78ac49353faf8034d0dfda9ff2f6fc4d24cdf63f026b660aa82badab30a926",
+      "size": 27008
+    },
+    {
+      "path": "libs/arm64-v8a/_struct.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "1ff56d0e78a48de04a6e165c158a05772fb2a2f24105573a4c8f990a587ab1a4",
+      "size": 137664
+    },
+    {
+      "path": "libs/arm64-v8a/_struct_ufunc_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "3ec1fbad0e7cfc04e86b62ecd413cfd4acf09a6dfebcf58a7ee944b0f50a1e72",
+      "size": 22848
+    },
+    {
+      "path": "libs/arm64-v8a/_testbuffer.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "1125a89dcf18cc114eefe5205e47d1918464674b2fc90b735c339c5282b82149",
+      "size": 121280
+    },
+    {
+      "path": "libs/arm64-v8a/_testcapi.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "f3ac02e7e31f3c8ce80b5d103b42f1520d1946bbe26c1d42156599ae3bcb8387",
+      "size": 915904
+    },
+    {
+      "path": "libs/arm64-v8a/_testclinic.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "c8da177f53b8b211bca2d231ea0f69fb02dab9ff7304e56cb2e0d4f18e62e21b",
+      "size": 256448
+    },
+    {
+      "path": "libs/arm64-v8a/_testclinic_limited.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "942fb9e82523d3034cc6d46c3777a9087eaf8323abc8dd8cbe293f34d383a7f4",
+      "size": 31104
+    },
+    {
+      "path": "libs/arm64-v8a/_testexternalinspection.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "4a07ab627c448de1710b865e82e2bc4de23c33bd4f7951a78adad116b446bd9c",
+      "size": 51584
+    },
+    {
+      "path": "libs/arm64-v8a/_testimportmultiple.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "a0bcb3e82c6ebf1b02377803c077b438390a40239c81440c94de805a62e18739",
+      "size": 22848
+    },
+    {
+      "path": "libs/arm64-v8a/_testinternalcapi.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "13d9d6509478a7d5573e56712da7349c1907678cf0ca8a3b76e8c9dfcd09a2a6",
+      "size": 362944
+    },
+    {
+      "path": "libs/arm64-v8a/_testlimitedcapi.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "683a87b3633e0f41609408a2d37bf9e38abeb657bec436a43669b51f211afdf3",
+      "size": 469440
+    },
+    {
+      "path": "libs/arm64-v8a/_testmultiphase.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "b45ae99ecbb864dad01793762167d68a8e9de39f8a5b58300a437b103f43efc1",
+      "size": 76224
+    },
+    {
+      "path": "libs/arm64-v8a/_testsinglephase.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "7a6a04ed567bb31d3462e4c8026581413da00cf26b2d42474168277b36273890",
+      "size": 51584
+    },
+    {
+      "path": "libs/arm64-v8a/_umath_linalg.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "b04af082cdbcdefb29010a3f72625cc9fdb2fc76f0469f24bdb561608b172f14",
+      "size": 1624448
+    },
+    {
+      "path": "libs/arm64-v8a/_umath_tests.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "153888245e216c43fb4eabb70fe34c022c6147886f87debd5f621044c64db474",
+      "size": 51584
+    },
+    {
+      "path": "libs/arm64-v8a/_xxtestfuzz.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "719da69fef2e85117e3a477dfcc859e46c1abee1b09ed12d21fc3505a690af7e",
+      "size": 63872
+    },
+    {
+      "path": "libs/arm64-v8a/_zoneinfo.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "e5f0c312d1c992b0c310c644205fb7355a6bc6be7f659289522587313999956d",
+      "size": 125376
+    },
+    {
+      "path": "libs/arm64-v8a/array.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "92859561d88bc3700d2717fcb3dd4652995db40e5cff44e41d13fc02d1c98d83",
+      "size": 174528
+    },
+    {
+      "path": "libs/arm64-v8a/binascii.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "facd80dcf0f0180dcb8a9c24eda41f9490e5880363310b80e1ce8504740fa6c0",
+      "size": 178624
+    },
+    {
+      "path": "libs/arm64-v8a/bit_generator.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "8b6204c0b26dc793b04ea1cf03872f517ab5afb5468f7b0c321ba28d9afe812c",
+      "size": 211264
+    },
+    {
+      "path": "libs/arm64-v8a/cmath.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "4e180edf956dc6f2943d48745c01d929eadbacf24158572f4d73503114762c65",
+      "size": 88512
+    },
+    {
+      "path": "libs/arm64-v8a/fcntl.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "d90aba256fa5343fc4394e0f3bd6c1eb5ed112184b70feb60215ed409ec24e80",
+      "size": 51584
+    },
+    {
+      "path": "libs/arm64-v8a/grp.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "321d16cbd0b26a1e1896f05eb09a7e0172aa95a1830efbb019394bed0b3020ff",
+      "size": 51648
+    },
+    {
+      "path": "libs/arm64-v8a/lapack_lite.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "e7dcd362611ffef66b342d8cd450dd762955d91008244517477fb940bca137d7",
+      "size": 1452352
+    },
+    {
+      "path": "libs/arm64-v8a/libpython3.13.so",
+      "sha256": "889688a24be6df3ccb8b069beb846797671dfabdf0ead6a1af6c77d06e6ecb40",
+      "size": 20539904
+    },
+    {
+      "path": "libs/arm64-v8a/libpython3.so",
+      "sha256": "310f4781dafc4c5379630072ff9eb4bbc434b269d2f0080f19f65f474ac1a04e",
+      "size": 18752
+    },
+    {
+      "path": "libs/arm64-v8a/math.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "626f5db72050f9e2b45718ee7cc978ad0b4098ec54d803f7fc536508b1add038",
+      "size": 272832
+    },
+    {
+      "path": "libs/arm64-v8a/mmap.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "0cca5829d8abe706776ea3d9e5998e240797e133de1b44051fd1d7d2d5161334",
+      "size": 174464
+    },
+    {
+      "path": "libs/arm64-v8a/mtrand.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "20767bf324a84d3548fbdf7fb9c9101f5905b94f1b61b8c72f1403d1864f71b3",
+      "size": 702784
+    },
+    {
+      "path": "libs/arm64-v8a/pyexpat.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "a6dae9666d68fb50218ae03823e98a0443a71eededcf0bcf9140b13573976c89",
+      "size": 731584
+    },
+    {
+      "path": "libs/arm64-v8a/resource.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "09b28a40d1eb026b72a1f1f07bbbdef05044f016c86a09f50e2cbea94efaae16",
+      "size": 55680
+    },
+    {
+      "path": "libs/arm64-v8a/select.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "0bcb096303d2985236723a8afd11e68182f0eef28afb57f82aa167f813fbfd93",
+      "size": 182720
+    },
+    {
+      "path": "libs/arm64-v8a/syslog.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "e7b692468658ca72029a2f6a91fcb2490660c1dec06843adf1361859134d900c",
+      "size": 141760
+    },
+    {
+      "path": "libs/arm64-v8a/termios.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "bb49af578cf1ed50b50f4add0631ba3d5b6b8e1f9703be640bc5f7270ffea846",
+      "size": 68032
+    },
+    {
+      "path": "libs/arm64-v8a/unicodedata.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "27832ba56aa1b57a653aa04ac9b28b2c359fda52f224d670a16563b6e2d3d467",
+      "size": 772544
+    },
+    {
+      "path": "libs/arm64-v8a/xxlimited.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "3835a0930e5283c0b3241af0fca30d1ec782905c3caede7952facf5a8bc011f9",
+      "size": 39296
+    },
+    {
+      "path": "libs/arm64-v8a/xxlimited_35.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "ddf0839cffe85d87d820820025d3d38fd2bbc6cb455401548912a8d6ed91a768",
+      "size": 35200
+    },
+    {
+      "path": "libs/arm64-v8a/xxsubtype.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "cc6031f5d1d4eb29e58f3490fbe4e27baf26ae080370813424eaf23d91ed4fa0",
+      "size": 39296
+    },
+    {
+      "path": "libs/arm64-v8a/zlib.cpython-313-aarch64-linux-ohos.so",
+      "sha256": "2c0c7214c6ccfb0fbcb5d33c5fe7bc42d8106f7515824ce85a80c5ae163feb3e",
+      "size": 207296
+    }
+  ],
+  "module_map": {
+    "_asyncio": "_asyncio.cpython-313-aarch64-linux-ohos.so",
+    "_bisect": "_bisect.cpython-313-aarch64-linux-ohos.so",
+    "_blake2": "_blake2.cpython-313-aarch64-linux-ohos.so",
+    "_bz2": "_bz2.cpython-313-aarch64-linux-ohos.so",
+    "_codecs_cn": "_codecs_cn.cpython-313-aarch64-linux-ohos.so",
+    "_codecs_hk": "_codecs_hk.cpython-313-aarch64-linux-ohos.so",
+    "_codecs_iso2022": "_codecs_iso2022.cpython-313-aarch64-linux-ohos.so",
+    "_codecs_jp": "_codecs_jp.cpython-313-aarch64-linux-ohos.so",
+    "_codecs_kr": "_codecs_kr.cpython-313-aarch64-linux-ohos.so",
+    "_codecs_tw": "_codecs_tw.cpython-313-aarch64-linux-ohos.so",
+    "_contextvars": "_contextvars.cpython-313-aarch64-linux-ohos.so",
+    "_csv": "_csv.cpython-313-aarch64-linux-ohos.so",
+    "_ctypes": "_ctypes.cpython-313-aarch64-linux-ohos.so",
+    "_ctypes_test": "_ctypes_test.cpython-313-aarch64-linux-ohos.so",
+    "_datetime": "_datetime.cpython-313-aarch64-linux-ohos.so",
+    "_decimal": "_decimal.cpython-313-aarch64-linux-ohos.so",
+    "_elementtree": "_elementtree.cpython-313-aarch64-linux-ohos.so",
+    "_hashlib": "_hashlib.cpython-313-aarch64-linux-ohos.so",
+    "_heapq": "_heapq.cpython-313-aarch64-linux-ohos.so",
+    "_interpchannels": "_interpchannels.cpython-313-aarch64-linux-ohos.so",
+    "_interpqueues": "_interpqueues.cpython-313-aarch64-linux-ohos.so",
+    "_interpreters": "_interpreters.cpython-313-aarch64-linux-ohos.so",
+    "_json": "_json.cpython-313-aarch64-linux-ohos.so",
+    "_lsprof": "_lsprof.cpython-313-aarch64-linux-ohos.so",
+    "_lzma": "_lzma.cpython-313-aarch64-linux-ohos.so",
+    "_md5": "_md5.cpython-313-aarch64-linux-ohos.so",
+    "_multibytecodec": "_multibytecodec.cpython-313-aarch64-linux-ohos.so",
+    "_multiprocessing": "_multiprocessing.cpython-313-aarch64-linux-ohos.so",
+    "_opcode": "_opcode.cpython-313-aarch64-linux-ohos.so",
+    "_pickle": "_pickle.cpython-313-aarch64-linux-ohos.so",
+    "_posixshmem": "_posixshmem.cpython-313-aarch64-linux-ohos.so",
+    "_posixsubprocess": "_posixsubprocess.cpython-313-aarch64-linux-ohos.so",
+    "_queue": "_queue.cpython-313-aarch64-linux-ohos.so",
+    "_random": "_random.cpython-313-aarch64-linux-ohos.so",
+    "_sha1": "_sha1.cpython-313-aarch64-linux-ohos.so",
+    "_sha2": "_sha2.cpython-313-aarch64-linux-ohos.so",
+    "_sha3": "_sha3.cpython-313-aarch64-linux-ohos.so",
+    "_socket": "_socket.cpython-313-aarch64-linux-ohos.so",
+    "_sqlite3": "_sqlite3.cpython-313-aarch64-linux-ohos.so",
+    "_ssl": "_ssl.cpython-313-aarch64-linux-ohos.so",
+    "_statistics": "_statistics.cpython-313-aarch64-linux-ohos.so",
+    "_struct": "_struct.cpython-313-aarch64-linux-ohos.so",
+    "_testbuffer": "_testbuffer.cpython-313-aarch64-linux-ohos.so",
+    "_testcapi": "_testcapi.cpython-313-aarch64-linux-ohos.so",
+    "_testclinic": "_testclinic.cpython-313-aarch64-linux-ohos.so",
+    "_testclinic_limited": "_testclinic_limited.cpython-313-aarch64-linux-ohos.so",
+    "_testexternalinspection": "_testexternalinspection.cpython-313-aarch64-linux-ohos.so",
+    "_testimportmultiple": "_testimportmultiple.cpython-313-aarch64-linux-ohos.so",
+    "_testinternalcapi": "_testinternalcapi.cpython-313-aarch64-linux-ohos.so",
+    "_testlimitedcapi": "_testlimitedcapi.cpython-313-aarch64-linux-ohos.so",
+    "_testmultiphase": "_testmultiphase.cpython-313-aarch64-linux-ohos.so",
+    "_testsinglephase": "_testsinglephase.cpython-313-aarch64-linux-ohos.so",
+    "_xxtestfuzz": "_xxtestfuzz.cpython-313-aarch64-linux-ohos.so",
+    "_zoneinfo": "_zoneinfo.cpython-313-aarch64-linux-ohos.so",
+    "array": "array.cpython-313-aarch64-linux-ohos.so",
+    "binascii": "binascii.cpython-313-aarch64-linux-ohos.so",
+    "cmath": "cmath.cpython-313-aarch64-linux-ohos.so",
+    "fcntl": "fcntl.cpython-313-aarch64-linux-ohos.so",
+    "grp": "grp.cpython-313-aarch64-linux-ohos.so",
+    "math": "math.cpython-313-aarch64-linux-ohos.so",
+    "mmap": "mmap.cpython-313-aarch64-linux-ohos.so",
+    "numpy._core._multiarray_tests": "_multiarray_tests.cpython-313-aarch64-linux-ohos.so",
+    "numpy._core._multiarray_umath": "_multiarray_umath.cpython-313-aarch64-linux-ohos.so",
+    "numpy._core._operand_flag_tests": "_operand_flag_tests.cpython-313-aarch64-linux-ohos.so",
+    "numpy._core._rational_tests": "_rational_tests.cpython-313-aarch64-linux-ohos.so",
+    "numpy._core._simd": "_simd.cpython-313-aarch64-linux-ohos.so",
+    "numpy._core._struct_ufunc_tests": "_struct_ufunc_tests.cpython-313-aarch64-linux-ohos.so",
+    "numpy._core._umath_tests": "_umath_tests.cpython-313-aarch64-linux-ohos.so",
+    "numpy.fft._pocketfft_umath": "_pocketfft_umath.cpython-313-aarch64-linux-ohos.so",
+    "numpy.linalg._umath_linalg": "_umath_linalg.cpython-313-aarch64-linux-ohos.so",
+    "numpy.linalg.lapack_lite": "lapack_lite.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random._bounded_integers": "_bounded_integers.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random._common": "_common.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random._generator": "_generator.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random._mt19937": "_mt19937.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random._pcg64": "_pcg64.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random._philox": "_philox.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random._sfc64": "_sfc64.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random.bit_generator": "bit_generator.cpython-313-aarch64-linux-ohos.so",
+    "numpy.random.mtrand": "mtrand.cpython-313-aarch64-linux-ohos.so",
+    "pyexpat": "pyexpat.cpython-313-aarch64-linux-ohos.so",
+    "resource": "resource.cpython-313-aarch64-linux-ohos.so",
+    "select": "select.cpython-313-aarch64-linux-ohos.so",
+    "syslog": "syslog.cpython-313-aarch64-linux-ohos.so",
+    "termios": "termios.cpython-313-aarch64-linux-ohos.so",
+    "unicodedata": "unicodedata.cpython-313-aarch64-linux-ohos.so",
+    "xxlimited": "xxlimited.cpython-313-aarch64-linux-ohos.so",
+    "xxlimited_35": "xxlimited_35.cpython-313-aarch64-linux-ohos.so",
+    "xxsubtype": "xxsubtype.cpython-313-aarch64-linux-ohos.so",
+    "zlib": "zlib.cpython-313-aarch64-linux-ohos.so"
+  },
+  "native_runtime_ELF_count": 93,
+  "old_versioned_ELF_used": false,
+  "runtime_ELF": [
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "bin/python3.13",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "a41fc52466eddffaed9c732e3ae6cb3e19f188077f77f52873220bb57078e5c2",
+      "size": 22848,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libc.so"
+      ],
+      "path": "lib/libpython3.13.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "889688a24be6df3ccb8b069beb846797671dfabdf0ead6a1af6c77d06e6ecb40",
+      "size": 20539904,
+      "sonames": [
+        "libpython3.13.so"
+      ],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/libpython3.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "310f4781dafc4c5379630072ff9eb4bbc434b269d2f0080f19f65f474ac1a04e",
+      "size": 18752,
+      "sonames": [
+        "libpython3.so"
+      ],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_asyncio.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "565e4a6bc8621729449e9b5bb3913de836d1f5f0d22da65aef2c36f72963d30e",
+      "size": 301504,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_bisect.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "83e349f1e662e7fdd3092b99f5d33a5b0703bf0675c112ff993350452b1e15fe",
+      "size": 55744,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_blake2.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "07a22f213856690445b07316cf6739b67a0cf6d928864d00e8a8a17c45c5245a",
+      "size": 412096,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_bz2.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "c359dccc90248b465ea38b3adb8558082b0e52c450e65eea9269565bc9cd0443",
+      "size": 133568,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_codecs_cn.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "fe79bed00c2cdfee69031f10349750450a30a9730145abe51d158cf799cf2704",
+      "size": 182720,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_codecs_hk.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "ab51cafccfb876145cbd73de874ec220ea818d236f36961560d9b03546916673",
+      "size": 190912,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_codecs_iso2022.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "e846188087f15d8629729bf26810e4fb4cdc9da85018f02894d5311c1f87df40",
+      "size": 68032,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_codecs_jp.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "1d6141501caf4d6fa8768b8ff070eb81395ad6171bd82482900617c809963806",
+      "size": 305600,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_codecs_kr.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "80f7db36f7871ace753452def96b5d6148c29aae37b1505100b9659d73e1eac7",
+      "size": 170432,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_codecs_tw.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "9cce04e000a239cbf8d312fb2c16bb8ed9f465274c46c3fb7191212ccde34379",
+      "size": 141760,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_contextvars.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "4355927d4a102a358e679bd6a9c96ef6d25754d196654de3823666744bfa502b",
+      "size": 31104,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_csv.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "eaa77c8e7493e29dc4211dc37de0a0cfd65eab757bdbdd4bf4113ba943abaf82",
+      "size": 104896,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_ctypes.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "78f91c106c527084217c8c7e2782b863f8537a94abfcd2eaa95a60b8e2858505",
+      "size": 735680,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_ctypes_test.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "31df3600cdef20f9bfbc5ebc3aa61241cd830f3daa3a24d281afbaf1398ac8d0",
+      "size": 92544,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_datetime.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "121347e8a9bfeb3ec72cda9282a1fd2d1947b9cb5007f7db65ef067d3f897115",
+      "size": 428480,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_decimal.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "85158b29d99820ea0f16671cb9ede0faeacd81de5c2d4c2856a76a89737b1ee3",
+      "size": 1235392,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_elementtree.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "a9e236bf958511e1bacb155b04a6bd0d4dba85da036d999f3f36d4a61993ee7e",
+      "size": 338368,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_hashlib.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "530c7b3c48a418f8a71a8297999e42507d7efdd731592712a913fce4d6f97057",
+      "size": 5650880,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_heapq.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "30209d4369f9f36bc04cfc413ace01b44de675ad506177d31e531e0e72711031",
+      "size": 55680,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_interpchannels.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "8cb5a13e8e5099cd542bc04386fad3270ced33cc6e78eff39833d6f7a8e64db5",
+      "size": 231808,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_interpqueues.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "cd937ff01dc4fbec1fa25452f89714330eeeef05b5d6ebdf7b069e01a8b2e31b",
+      "size": 92608,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_interpreters.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "abc7caa6a5503b8847019b36406ba09f0a0defbacdb0808effde6fab6c97f3aa",
+      "size": 182656,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_json.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "7ef764abd9c5c24b607bb013e2085cfc52b2223e93e0d7d3bf94768a16bfa5a2",
+      "size": 215424,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_lsprof.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "4e9d0a8c6bbe44f8538f22fb6a9ed00c56ffe76a0eacce40e7d8fb3b64aa11f5",
+      "size": 174528,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_lzma.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "939816bfe8b47f3507e3315fc1238a642d0b061cb32c5a6afd447941b095d205",
+      "size": 248256,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_md5.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "1e7f8d101d45230e65df86c68e869810569052944b222ecda9626d54d186a313",
+      "size": 96704,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_multibytecodec.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "43cedfa54bf0930cdf08e95fd9243305a5aa080d31e4b6c49dd626f3a57a9978",
+      "size": 133568,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_multiprocessing.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "616343f53e85a605f5bd99b10333a6d5d09117ea06345c6a51b131e32a7b14fd",
+      "size": 158144,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_opcode.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "dbfb12676e50ac99cb986e0ade4b8403d4606e68564c17bebdd2503ff160bb4f",
+      "size": 63936,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_pickle.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "d4964e24f6f4126dfc3e6cbfcf5b742af3a713f04f5a98f2de7ab544bed0c0ed",
+      "size": 461248,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_posixshmem.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "33c14634f33c3921b1c87f5782b9ff9c8c69c2c1fa6f98d870bab005e30a7305",
+      "size": 31104,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_posixsubprocess.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "0d8e5c41d10882412d4f7afae958e303e31bf6df130027a5ccc763c2eb3508cb",
+      "size": 158080,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_queue.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "fc1b17b4db724f98f5d657f412b6a638e2058b2fb92693fdc88925fed0af4567",
+      "size": 55744,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_random.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "071c537496d2547d324970d906bc727ed93f0391596cc3ace20c18374623175f",
+      "size": 55680,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_sha1.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "7ede84cb70955060760b92d41c6cd42ba8df841ddd440a08bb8e01c42df865ba",
+      "size": 68032,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_sha2.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "1ca449fd682191545dd00ba99f3ea45d38aadd337bd2cae40ae89908cb35ce9f",
+      "size": 248256,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_sha3.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "51f813fece2b1120318f5691219ecd14074970cadfba9f2ad18a90e2c8284803",
+      "size": 195008,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_socket.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "4d9b85a633499e62861c35e753bfe38dbe2c22b83b47ca2c2fb9bc0ad5b4866f",
+      "size": 260544,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_sqlite3.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "2b0f7f799ef9d22ee0000759fca6b3ce2314f6f857654b71a4c9f46d83d3ef52",
+      "size": 2005440,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_ssl.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "905ba0150aa7ea79610424c2afc5acad42f3f57cde44334ad8ce784b3e451215",
+      "size": 7088576,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_statistics.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "2a78ac49353faf8034d0dfda9ff2f6fc4d24cdf63f026b660aa82badab30a926",
+      "size": 27008,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_struct.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "1ff56d0e78a48de04a6e165c158a05772fb2a2f24105573a4c8f990a587ab1a4",
+      "size": 137664,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testbuffer.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "1125a89dcf18cc114eefe5205e47d1918464674b2fc90b735c339c5282b82149",
+      "size": 121280,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testcapi.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "f3ac02e7e31f3c8ce80b5d103b42f1520d1946bbe26c1d42156599ae3bcb8387",
+      "size": 915904,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testclinic.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "c8da177f53b8b211bca2d231ea0f69fb02dab9ff7304e56cb2e0d4f18e62e21b",
+      "size": 256448,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testclinic_limited.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "942fb9e82523d3034cc6d46c3777a9087eaf8323abc8dd8cbe293f34d383a7f4",
+      "size": 31104,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testexternalinspection.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "4a07ab627c448de1710b865e82e2bc4de23c33bd4f7951a78adad116b446bd9c",
+      "size": 51584,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testimportmultiple.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "a0bcb3e82c6ebf1b02377803c077b438390a40239c81440c94de805a62e18739",
+      "size": 22848,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testinternalcapi.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "13d9d6509478a7d5573e56712da7349c1907678cf0ca8a3b76e8c9dfcd09a2a6",
+      "size": 362944,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testlimitedcapi.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "683a87b3633e0f41609408a2d37bf9e38abeb657bec436a43669b51f211afdf3",
+      "size": 469440,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testmultiphase.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "b45ae99ecbb864dad01793762167d68a8e9de39f8a5b58300a437b103f43efc1",
+      "size": 76224,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_testsinglephase.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "7a6a04ed567bb31d3462e4c8026581413da00cf26b2d42474168277b36273890",
+      "size": 51584,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_xxtestfuzz.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "719da69fef2e85117e3a477dfcc859e46c1abee1b09ed12d21fc3505a690af7e",
+      "size": 63872,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/_zoneinfo.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "e5f0c312d1c992b0c310c644205fb7355a6bc6be7f659289522587313999956d",
+      "size": 125376,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/array.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "92859561d88bc3700d2717fcb3dd4652995db40e5cff44e41d13fc02d1c98d83",
+      "size": 174528,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/binascii.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "facd80dcf0f0180dcb8a9c24eda41f9490e5880363310b80e1ce8504740fa6c0",
+      "size": 178624,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/cmath.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "4e180edf956dc6f2943d48745c01d929eadbacf24158572f4d73503114762c65",
+      "size": 88512,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/fcntl.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "d90aba256fa5343fc4394e0f3bd6c1eb5ed112184b70feb60215ed409ec24e80",
+      "size": 51584,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/grp.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "321d16cbd0b26a1e1896f05eb09a7e0172aa95a1830efbb019394bed0b3020ff",
+      "size": 51648,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/math.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "626f5db72050f9e2b45718ee7cc978ad0b4098ec54d803f7fc536508b1add038",
+      "size": 272832,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/mmap.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "0cca5829d8abe706776ea3d9e5998e240797e133de1b44051fd1d7d2d5161334",
+      "size": 174464,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/pyexpat.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "a6dae9666d68fb50218ae03823e98a0443a71eededcf0bcf9140b13573976c89",
+      "size": 731584,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/resource.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "09b28a40d1eb026b72a1f1f07bbbdef05044f016c86a09f50e2cbea94efaae16",
+      "size": 55680,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/select.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "0bcb096303d2985236723a8afd11e68182f0eef28afb57f82aa167f813fbfd93",
+      "size": 182720,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/syslog.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "e7b692468658ca72029a2f6a91fcb2490660c1dec06843adf1361859134d900c",
+      "size": 141760,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/termios.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "bb49af578cf1ed50b50f4add0631ba3d5b6b8e1f9703be640bc5f7270ffea846",
+      "size": 68032,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/unicodedata.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "27832ba56aa1b57a653aa04ac9b28b2c359fda52f224d670a16563b6e2d3d467",
+      "size": 772544,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/xxlimited.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "3835a0930e5283c0b3241af0fca30d1ec782905c3caede7952facf5a8bc011f9",
+      "size": 39296,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/xxlimited_35.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "ddf0839cffe85d87d820820025d3d38fd2bbc6cb455401548912a8d6ed91a768",
+      "size": 35200,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/xxsubtype.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "cc6031f5d1d4eb29e58f3490fbe4e27baf26ae080370813424eaf23d91ed4fa0",
+      "size": 39296,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "aarch64": true,
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/lib-dynload/zlib.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [
+        "$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN:$ORIGIN/../lib:$ORIGIN/../..:$ORIGIN"
+      ],
+      "sha256": "2c0c7214c6ccfb0fbcb5d33c5fe7bc42d8106f7515824ce85a80c5ae163feb3e",
+      "size": 207296,
+      "sonames": [],
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/runtime"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/_core/_multiarray_tests.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "79674d27c11ec288dec4723a771ba5bd1a11e98572d9763b877cc0c34307350c",
+      "size": 166272,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "21e2502b70d99c18da957ec5b1046b366e8a81f24c216416d16c4f76c7218ffd",
+      "size": 5270016,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/_core/_operand_flag_tests.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "fae1c3eac295264115f964813a3b3d40cce650a55aee32ef3c0e58ccc1e24425",
+      "size": 22848,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/_core/_rational_tests.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "910a341bb414404807fa10a1296714a81acd7d4be5d9d3f3d9ad9040e30e4562",
+      "size": 55680,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/_core/_simd.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "79b541f6ad50075b804b45355501d9369581d07e56deabce2d529558cfe40c8f",
+      "size": 395712,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/_core/_struct_ufunc_tests.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "3ec1fbad0e7cfc04e86b62ecd413cfd4acf09a6dfebcf58a7ee944b0f50a1e72",
+      "size": 22848,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/_core/_umath_tests.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "153888245e216c43fb4eabb70fe34c022c6147886f87debd5f621044c64db474",
+      "size": 51584,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/fft/_pocketfft_umath.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "5ce73b524716947108f24adfdc921aba2e44e314c7ded783546952b8e820eade",
+      "size": 2161152,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "b04af082cdbcdefb29010a3f72625cc9fdb2fc76f0469f24bdb561608b172f14",
+      "size": 1624448,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/linalg/lapack_lite.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "e7dcd362611ffef66b342d8cd450dd762955d91008244517477fb940bca137d7",
+      "size": 1452352,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/_bounded_integers.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "33c48a4a4a4192282dc4f7a60efe8d3dd6e7b53c53419dc4a889eab71239a102",
+      "size": 280896,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/_common.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "e5b5f6859bcb2b04462695ac874d42f260850b6d24fa3afe1d7eae5c409da1c5",
+      "size": 227648,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/_generator.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "27ea6eeece046415bad73a46cbcec2cd18f75dcc004024415dfc2e19fe523f2b",
+      "size": 842048,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/_mt19937.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "ee299318749e268adf5b96ccde527cad3587606e2adb0153c6246b3cb8f6e6d9",
+      "size": 121152,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/_pcg64.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "6aed58f2ef42569402518bd480d2216beeeae58ebe4c383e9a0cc838036c8387",
+      "size": 125248,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/_philox.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "d10282666f506e2ee20008996bc64222fe4aa67f5be2a06785e5bcf09bc4e4d2",
+      "size": 108864,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/_sfc64.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "2a62ee2b9e3c483cd0da3d1b36ab104e78c7272dcedb0d734b9a1e4b73b77943",
+      "size": 84288,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/bit_generator.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "8b6204c0b26dc793b04ea1cf03872f517ab5afb5468f7b0c321ba28d9afe812c",
+      "size": 211264,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    },
+    {
+      "codesign": true,
+      "needed": [
+        "libpython3.13.so",
+        "libc.so"
+      ],
+      "path": "lib/python3.13/site-packages/numpy/random/mtrand.cpython-313-aarch64-linux-ohos.so",
+      "runpaths": [],
+      "sha256": "20767bf324a84d3548fbdf7fb9c9101f5905b94f1b61b8c72f1403d1864f71b3",
+      "size": 702784,
+      "source_prefix": "/data/storage/el2/base/haps/entry/cache/blender-ohos-python-hap/numpy/install"
+    }
+  ],
+  "source_packages": {
+    "inputs": [
+      {
+        "directory": "idna-3.10",
+        "filename": "idna-3.10.tar.gz",
+        "kind": "source",
+        "license": "BSD-3-Clause",
+        "license_files": [
+          "LICENSE.md"
+        ],
+        "metadata_url": "https://pypi.org/pypi/idna/3.10/json",
+        "module": "idna",
+        "name": "idna",
+        "registry_id": "idna-3.10",
+        "root": "idna-3.10",
+        "sha256": "12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9",
+        "size": 190490,
+        "url": "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz",
+        "version": "3.10"
+      },
+      {
+        "directory": "charset_normalizer-3.4.1",
+        "filename": "charset_normalizer-3.4.1.tar.gz",
+        "kind": "source",
+        "license": "MIT",
+        "license_files": [
+          "LICENSE"
+        ],
+        "metadata_url": "https://pypi.org/pypi/charset-normalizer/3.4.1/json",
+        "module": "charset_normalizer",
+        "name": "charset-normalizer",
+        "registry_id": "charset-normalizer-3.4.1",
+        "root": "charset_normalizer-3.4.1",
+        "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3",
+        "size": 123188,
+        "url": "https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz",
+        "version": "3.4.1"
+      },
+      {
+        "directory": "urllib3-2.4.0",
+        "filename": "urllib3-2.4.0.tar.gz",
+        "kind": "source",
+        "license": "MIT",
+        "license_files": [
+          "LICENSE.txt"
+        ],
+        "metadata_url": "https://pypi.org/pypi/urllib3/2.4.0/json",
+        "module": "urllib3",
+        "name": "urllib3",
+        "registry_id": "urllib3-2.4.0",
+        "root": "urllib3-2.4.0",
+        "sha256": "414bc6535b787febd7567804cc015fee39daab8ad86268f1310a9250697de466",
+        "size": 390672,
+        "url": "https://files.pythonhosted.org/packages/8a/78/16493d9c386d8e60e442a35feac5e00f0913c0f4b7c217c11e8ec2ff53e0/urllib3-2.4.0.tar.gz",
+        "version": "2.4.0"
+      },
+      {
+        "directory": "certifi-2025.4.26",
+        "filename": "certifi-2025.4.26.tar.gz",
+        "kind": "source",
+        "license": "MPL-2.0",
+        "license_files": [
+          "LICENSE"
+        ],
+        "metadata_url": "https://pypi.org/pypi/certifi/2025.4.26/json",
+        "module": "certifi",
+        "name": "certifi",
+        "registry_id": "certifi-2025.4.26",
+        "root": "certifi-2025.4.26",
+        "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
+        "size": 160705,
+        "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
+        "version": "2025.4.26"
+      },
+      {
+        "directory": "requests-2.32.3",
+        "filename": "requests-2.32.3.tar.gz",
+        "kind": "source",
+        "license": "Apache-2.0",
+        "license_files": [
+          "LICENSE"
+        ],
+        "metadata_url": "https://pypi.org/pypi/requests/2.32.3/json",
+        "module": "requests",
+        "name": "requests",
+        "registry_id": "requests-2.32.3",
+        "root": "requests-2.32.3",
+        "sha256": "55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760",
+        "size": 131218,
+        "url": "https://files.pythonhosted.org/packages/63/70/2bf7780ad2d390a8d301ad0b550f1581eadbd9a20f896afe06353c2a2913/requests-2.32.3.tar.gz",
+        "version": "2.32.3"
+      }
+    ],
+    "source": "Blender fixed python_site_packages.cmake versions"
+  },
+  "terminal_flat_layout_imports": "PASS all 90 extensions + NumPy/ffi/pure networking"
+}

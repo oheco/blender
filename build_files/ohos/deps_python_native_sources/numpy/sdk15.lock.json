@@ -1,0 +1,90 @@
+{
+  "native_sdk": "26.0.0.35-Beta accepted Clang15.0.4; no LLVM20 substitution",
+  "files": [
+    {
+      "sdk_relative": "llvm/bin/clang",
+      "size": 109074304,
+      "sha256": "9b223e08b65958d79838f28cfff8dde98e438825a0129d3c0fde297d6ccb2121",
+      "evidence": "Exact accepted SDK15 source/build prerequisite hash"
+    },
+    {
+      "sdk_relative": "llvm/bin/clang++",
+      "size": 109074304,
+      "sha256": "9b223e08b65958d79838f28cfff8dde98e438825a0129d3c0fde297d6ccb2121",
+      "evidence": "Exact accepted SDK15 source/build prerequisite hash"
+    },
+    {
+      "sdk_relative": "llvm/lib/aarch64-linux-ohos/libc++.a",
+      "size": 29,
+      "sha256": "52e59afca841c33337dc4b95d3bde412961cda1ea19aeaf6ac7d4a2b84f6f78d",
+      "evidence": "Exact accepted SDK15 source/build prerequisite hash"
+    },
+    {
+      "sdk_relative": "llvm/lib/aarch64-linux-ohos/libc++_static.a",
+      "size": 10695774,
+      "sha256": "60c24001384e7297b81ae47f5226d94dd35096164a63e18de030051405b6233c",
+      "evidence": "Exact accepted SDK15 source/build prerequisite hash"
+    },
+    {
+      "sdk_relative": "llvm/lib/aarch64-linux-ohos/libc++abi.a",
+      "size": 2030016,
+      "sha256": "92ea28f2a64521e3ca40fff1ca8990d497d24a1108f5d5d2d8024e0610d5cdc4",
+      "evidence": "Exact accepted SDK15 source/build prerequisite hash"
+    },
+    {
+      "sdk_relative": "NOTICE.txt",
+      "size": 693439,
+      "sha256": "aa81614810ebe8da49122564fcddca1bbedb14bffc86aab5dcc9fe1e61007c3f",
+      "evidence": "Exact accepted SDK15 source/build prerequisite hash"
+    },
+    {
+      "sdk_relative": "llvm/bin/ld.lld",
+      "size": 64890752,
+      "sha256": "cb46db2e1be714fc67d736f99ea9b09e517cbfda65cd8bd72e455e4a7d6f67d0",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    },
+    {
+      "sdk_relative": "llvm/bin/llvm-ar",
+      "size": 15566720,
+      "sha256": "717262db0e908d66f95e86e1553d73169d4403bb578ce446cc29c2ff60c2d38a",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    },
+    {
+      "sdk_relative": "llvm/bin/llvm-strip",
+      "size": 4499328,
+      "sha256": "d6a5f3f0812aa25e8fc5a1ac19379709e1424bb0728f8a0598ed8ba5cbbba65a",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    },
+    {
+      "sdk_relative": "llvm/bin/llvm-readelf",
+      "size": 6625152,
+      "sha256": "033c8cbd655f1200b11d6816b91f5195818a983310cf3246eccd53cff5ef5f32",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    },
+    {
+      "sdk_relative": "llvm/include/libcxx-ohos/include/c++/v1/__config",
+      "size": 48961,
+      "sha256": "7c03d6ea7c9dc32f5f56d771145f9738ab650844f0f21448f017e70cba9f0996",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    },
+    {
+      "sdk_relative": "llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a",
+      "size": 1254094,
+      "sha256": "e1b47c38457293fdc6d19e28972812b344b6bfc94f9eaeb5f44cf2e219a40a6a",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    },
+    {
+      "sdk_relative": "llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtbegin.o",
+      "size": 7632,
+      "sha256": "b3167f5bee0451a74b63a7582c84c83410e2e94cfa261df816f5a1d44ef7a0af",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    },
+    {
+      "sdk_relative": "llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtend.o",
+      "size": 3328,
+      "sha256": "f7f0dd2c6815975b30a7092467f39432dd0a0510063def86d6e0b26f75f4de2b",
+      "evidence": "Read-only declared accepted SDK15 actual file bytes; no version/probe execution"
+    }
+  ],
+  "actual_new_native_probe": "NOTRUN, common parent native toolchain stage observes versions/macros/probes"
+}

@@ -2323,8 +2323,12 @@ static int arg_handle_engine_set(int argc, const char **argv, void *data)
       for (RenderEngineType &type : R_engines) {
         printf("\t%s\n", type.idname);
       }
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+      WM_exit(C, EXIT_SUCCESS);
+#else
       WM_exit_ex(C, false, false);
       exit(0);
+#endif
     }
     else {
       Scene *scene = CTX_data_scene(C);
@@ -2340,8 +2344,12 @@ static int arg_handle_engine_set(int argc, const char **argv, void *data)
         }
         else {
           fprintf(stderr, "\nError: engine not found '%s'\n", engine_name);
+#ifdef WITH_GHOST_OHOS_EMBEDDED
+          WM_exit(C, EXIT_FAILURE);
+#else
           WM_exit_ex(C, false, false);
           exit(1);
+#endif
         }
       }
       else {

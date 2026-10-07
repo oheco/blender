@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "scope": "Only new NumPy source namespace; independently sealed, parent common inputs.lock anchors SHA externally",
+  "files": [
+    {
+      "path": "ATTRIBUTION.md",
+      "size": 2726,
+      "sha256": "d3c747b50b3b2e357279c1a20ad5168f3f2fefb94d5e0b89338495e9bf7a419f"
+    },
+    {
+      "path": "README.md",
+      "size": 8161,
+      "sha256": "2d4eb58453ef77e67d3e13fa54c623d00f203b1f714050703e1634f3c244b4f8"
+    },
+    {
+      "path": "acceptance.py",
+      "size": 16124,
+      "sha256": "2dd20bdb01c3fde3e769cf000bc4b8a5d49e9a0c3333dc5a7900714b7debb607"
+    },
+    {
+      "path": "elf.py",
+      "size": 3450,
+      "sha256": "cfbed7e25c5662c33089378cff80904ca191b322b30d5482e7358bd855918a55"
+    },
+    {
+      "path": "evidence/accepted-configured.json",
+      "size": 358,
+      "sha256": "243782d3d8942db7ab88ad390ec68d7e88a25cfba55e357bdbf997754165274a"
+    },
+    {
+      "path": "evidence/accepted-driver.py.txt",
+      "size": 11971,
+      "sha256": "0941b36103a2373294d16a230231119e138d64db81cea813b058732fb876dad1"
+    },
+    {
+      "path": "evidence/accepted-numpy-validation.json",
+      "size": 8123,
+      "sha256": "180f5ac5a977a050df7b614f86a97eb8a3a4cd939c2ff925c5587a860065c2cb"
+    },
+    {
+      "path": "evidence/accepted-python-validation.json",
+      "size": 5094,
+      "sha256": "ead6ba9ef64c260c02171ba1d69e01c68fed90a052354ed8b059624a74cfe934"
+    },
+    {
+      "path": "evidence/accepted-runtime-immutability.json",
+      "size": 141,
+      "sha256": "76294701a9a3eebf989bc8f29afea512607a3830402c1debed1a3ca5e371f0dc"
+    },
+    {
+      "path": "evidence/accepted-sign-compiler.py.txt",
+      "size": 5107,
+      "sha256": "b8fd03097d6472c69a006c84ce36c582b499cce9e7322ef08d8f8fbb5f9a6c61"
+    },
+    {
+      "path": "evidence/accepted-sources.lock.json",
+      "size": 9405,
+      "sha256": "9b513c9cafc2b91de64c755f09cdb25cc18ca1ed6b46b02b9275e4d42608b79d"
+    },
+    {
+      "path": "evidence/accepted-toolchain-inputs.json",
+      "size": 1805,
+      "sha256": "eb8f1d4c589bcfef678f353b72a861e97c3dc76b3d9772b9a54b9b9f5013d926"
+    },
+    {
+      "path": "evidence/accepted-verify.py.txt",
+      "size": 4584,
+      "sha256": "0559970e730cbe6ca634521c93a0a55174f15822125caa277d74a4584170933e"
+    },
+    {
+      "path": "module.py",
+      "size": 15230,
+      "sha256": "b87092c398a1469d89883acd45dd4a6b5f45724140ab5f6fe9bf848dee449985"
+    },
+    {
+      "path": "original-plan.json",
+      "size": 31762,
+      "sha256": "682d9638663bd444d815e09d0b6a84c390a25dd8225be44f7f0c917f925a512d"
+    },
+    {
+      "path": "patches/numpy-vendored-meson-ohos.patch",
+      "size": 1035,
+      "sha256": "22d6830e3151fa567e5a9cea88e914592b20c810abb88a8c3c39704800cb94ca"
+    },
+    {
+      "path": "patches/patch-record.json",
+      "size": 1096,
+      "sha256": "a9b9c6b115d2d6e314faf304c8f7189df0fe4ec6fc370ecb70833c8142c66ce3"
+    },
+    {
+      "path": "profile.json",
+      "size": 3649,
+      "sha256": "643c45dc20997aa56561ece72caf99c4b799b3b483da2d20f9e8be136914bd44"
+    },
+    {
+      "path": "provenance.json",
+      "size": 3956,
+      "sha256": "95c56b8a4c4060f405785007e3a7df07cfb6ace8492be5025aa8c065f3eec4a8"
+    },
+    {
+      "path": "sdk15.lock.json",
+      "size": 3947,
+      "sha256": "e252620229b1968dbf447f2df13893d990c6497537cccbcfb03a8e7d03389996"
+    },
+    {
+      "path": "short-checks.json",
+      "size": 5432,
+      "sha256": "b646c0d4faff977deafeddf511960be268db6430813784ddb247e2fa17f5efb6"
+    },
+    {
+      "path": "sign_compiler.py",
+      "size": 3402,
+      "sha256": "821f1f9e8d617cd247c0216a16c2771a080db35d05b1523f4a164215a66480ae"
+    },
+    {
+      "path": "source_checks.py",
+      "size": 13604,
+      "sha256": "84cfdafd1a13ada20c38305c5ca04bb40679b34158acdb671da006ea97b7cdc6"
+    },
+    {
+      "path": "sources.lock.json",
+      "size": 9485,
+      "sha256": "d7e396628e2233228384d2d74045a8ae164f62a42f93d5ac26511f97e2edd9bc"
+    },
+    {
+      "path": "unicode-space-plan.json",
+      "size": 36184,
+      "sha256": "0f48fce7d417a4897eeaea8afc00c1249e8aacaeaa41088be857f2d2513b3a6a"
+    }
+  ]
+}

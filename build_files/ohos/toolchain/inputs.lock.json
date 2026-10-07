@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "kind": "provided-native-ohos-toolkit",
+  "sealed_files": [
+    {
+      "path": "build_files/ohos/toolchain/abi-fact-probe/CMakeLists.txt",
+      "size": 209,
+      "sha256": "8258aad53dd6790a355ff3a5687907eeb57461ba4c7a0b6ef5bdb6853e9bb40d"
+    },
+    {
+      "path": "build_files/ohos/toolchain/abi-fact-probe/capture-before-project.cmake",
+      "size": 789,
+      "sha256": "4b17821c59ebd27ebe52eeb1250bb0a736852cd277d1a05ed7f37a1678f19e04"
+    },
+    {
+      "path": "build_files/ohos/toolchain/abi_capture.py",
+      "size": 11644,
+      "sha256": "120f54e9499ee09f6ebebd776ca48a43ca0378b6282a1a60c04f1cb244d6f6e2"
+    },
+    {
+      "path": "build_files/ohos/toolchain/builder.py",
+      "size": 13387,
+      "sha256": "348090bea92cf573852cfb7c65ba36cf2f6c2d8fba75f9aba4a99fa8446a18bc"
+    },
+    {
+      "path": "build_files/ohos/toolchain/capture_cmake.py",
+      "size": 3388,
+      "sha256": "52e6ba6f5e0886657eaa1fa766afb59ae0cf0ea46df61f50fef6a03ae287245a"
+    },
+    {
+      "path": "build_files/ohos/toolchain/capture_fixtures.py",
+      "size": 20809,
+      "sha256": "9d0f2840381362e9989813ce8adb2b96831d98afdffcc5271a029807a6d4d43c"
+    },
+    {
+      "path": "build_files/ohos/toolchain/capture_io.py",
+      "size": 11181,
+      "sha256": "f12bd496693323595d47472315a5009f3ed5ea0310793f205d0a879e5ff4783b"
+    },
+    {
+      "path": "build_files/ohos/toolchain/capture_launcher.py",
+      "size": 13909,
+      "sha256": "9162add8319e544af18db21eea1855a5590cc38270eee7f6de33fd15bc86318e"
+    },
+    {
+      "path": "build_files/ohos/toolchain/capture_store.py",
+      "size": 17035,
+      "sha256": "78d43327e9e20d7c56d26d4de7b0db24e1a947cbf8cfff7655319504ea55053e"
+    },
+    {
+      "path": "build_files/ohos/toolchain/cmake/Platform/HarmonyOS.cmake",
+      "size": 808,
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538"
+    },
+    {
+      "path": "build_files/ohos/toolchain/cmake/native-host.cmake",
+      "size": 812,
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302"
+    },
+    {
+      "path": "build_files/ohos/toolchain/cmake/native-link-features.cmake",
+      "size": 2918,
+      "sha256": "b6260f4135ad4c2c53c61b210a0b9572ef2148a54fa9281bbaa426adb67e642b"
+    },
+    {
+      "path": "build_files/ohos/toolchain/env_policy.py",
+      "size": 1752,
+      "sha256": "4d94f1df51cfd8fab2e66063d28e097d607e71736cfe92205e460fd496ae8e7c"
+    },
+    {
+      "path": "build_files/ohos/toolchain/historical/accepted-native-report.json",
+      "size": 11298,
+      "sha256": "b11f6b9831998bb50443633882f105e5bac7bcefb444cf4fb4fd98a0900e02d3"
+    },
+    {
+      "path": "build_files/ohos/toolchain/historical/bootstrap-inputs.json",
+      "size": 8720,
+      "sha256": "1356d4d005a644fe60f8b3218af62a41c713ebbb367d0cf89a9eaf0be90bf584"
+    },
+    {
+      "path": "build_files/ohos/toolchain/historical/llvm-source.lock.json",
+      "size": 975,
+      "sha256": "c209fc335fb3ad9579ad2b06562094331ce93e5c03753c22629ee1ca208bcdee"
+    },
+    {
+      "path": "build_files/ohos/toolchain/historical/native-build-plan.json",
+      "size": 2514,
+      "sha256": "da964f213fdf157ff8920d40974a0dae3a3d8a03fce07406544fd6eebaaf8dc4"
+    },
+    {
+      "path": "build_files/ohos/toolchain/historical/native_llvm.py",
+      "size": 14342,
+      "sha256": "818c9220f89f9c224a8270abdee62e8b1713e24506b78187aeca6755dd626db6"
+    },
+    {
+      "path": "build_files/ohos/toolchain/historical/sign_compiler.py",
+      "size": 4090,
+      "sha256": "b2f69b7565eabeab7776d17652527a731c2b1437f8383a443285a4349515d7f1"
+    },
+    {
+      "path": "build_files/ohos/toolchain/launcher.py",
+      "size": 6423,
+      "sha256": "ac581579fcef60510683c20b072a196181847843b3dcbd9d014c8e999bd72a27"
+    },
+    {
+      "path": "build_files/ohos/toolchain/licenses/clang/LICENSE.TXT",
+      "size": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "build_files/ohos/toolchain/licenses/libcxx/LICENSE.TXT",
+      "size": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "path": "build_files/ohos/toolchain/licenses/libcxxabi/LICENSE.TXT",
+      "size": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "path": "build_files/ohos/toolchain/licenses/libunwind/LICENSE.TXT",
+      "size": 16706,
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    {
+      "path": "build_files/ohos/toolchain/licenses/lld/LICENSE.TXT",
+      "size": 15138,
+      "sha256": "f7891568956e34643eb6a0db1462db30820d40d7266e2a78063f2fe233ece5a0"
+    },
+    {
+      "path": "build_files/ohos/toolchain/licenses/llvm/LICENSE.TXT",
+      "size": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "build_files/ohos/toolchain/link-feature-lineage.json",
+      "size": 955,
+      "sha256": "968f27d248b4a0dc449ae32acc848329225249e67eb8c051e0edbb38ce88afb4"
+    },
+    {
+      "path": "build_files/ohos/toolchain/native_probes.py",
+      "size": 4462,
+      "sha256": "5baa5fdc76de2de6ca72cb1d66bb7a09496a37f41fe2da432a334594c9f2d9df"
+    },
+    {
+      "path": "build_files/ohos/toolchain/patches/0001-native-ohos-host-triple.diff",
+      "size": 1151,
+      "sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d"
+    },
+    {
+      "path": "build_files/ohos/toolchain/patches/manifest.json",
+      "size": 811,
+      "sha256": "383af52a75cac48de49eb1f25bca4000f748cb7ba004f6fa15fa919b5b2f5000"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/CMakeLists.txt",
+      "size": 2392,
+      "sha256": "0e568975da620aa41d3671519dc305d166fe21d43eb9715abe8f6dd017c1b79e"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/affinity_probe.cc",
+      "size": 1421,
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/c17.c",
+      "size": 532,
+      "sha256": "4eee9a522eb2674561d6d31bdf9c733675ef994ed0fbe355918dea81bbc48a33"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/cpp17.cc",
+      "size": 496,
+      "sha256": "3ba5a9f5163a43bdffd7de1dd1ccfd69715ae7155e8984f8b6beddb1ceae0c18"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/exceptions_rtti_format_error.cc",
+      "size": 506,
+      "sha256": "e5e35a3a82543e5d8ec8176ad57f1f701be514e2a7935d2b4fdecf88fb3d59f6"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/module_owner.cc",
+      "size": 671,
+      "sha256": "b6854f0c13787d4cb72ca2ccc3da5d2ccacb40be34eb7b51e96806b801c5bbf1"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/native_probe.cc",
+      "size": 1161,
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/owner.exports",
+      "size": 71,
+      "sha256": "13cc999391e1169b416639e4f1d6ef90017ea7d0112b58a637b4bec256d749f4"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/owner_module.cc",
+      "size": 726,
+      "sha256": "ecf58a49bdc822c67b184648e93a8afdf74d0bc36b8ade33bc7dfabe507535a9"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/whole_archive_marker.cc",
+      "size": 128,
+      "sha256": "3590790f762e5c62e40150e47dd12a2905f3f7bd98b07839913f495e2fbe317c"
+    },
+    {
+      "path": "build_files/ohos/toolchain/probes/whole_archive_probe.cc",
+      "size": 190,
+      "sha256": "338f761309213202d1efd01f519343ccf92820063019dc1db80b1a88e9286d99"
+    },
+    {
+      "path": "build_files/ohos/toolchain/profile.py",
+      "size": 8329,
+      "sha256": "897f332bd500ad08ba2c407a6ba635032cb8ccfab2a6f02082e8ab4b36c0fbbe"
+    },
+    {
+      "path": "build_files/ohos/toolchain/source-originals/llvm/cmake/modules/GetHostTriple.cmake",
+      "size": 2162,
+      "sha256": "412a66c5fc33d13ae28734ff3856f9f12e473ce2aaee3d4018ca31d6bc346952"
+    },
+    {
+      "path": "build_files/ohos/toolchain/source_replay.py",
+      "size": 4126,
+      "sha256": "bf94e4c6d3b9edaba497e560ae2ae6baef3696e1898abbba1ee9f28928a57841"
+    },
+    {
+      "path": "build_files/ohos/toolchain/sources.lock.json",
+      "size": 7546,
+      "sha256": "c2f3a6be605502e42ac904b3243091fe8584feac1256c5efab88d83f45221af1"
+    },
+    {
+      "path": "build_files/ohos/toolchain/toolkit_io.py",
+      "size": 5720,
+      "sha256": "62ab2d9c6c6385bc40af00f16a7e15738cef1fb1398b53c5422866fc9d081dac"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/manifest.json",
+      "size": 1509,
+      "sha256": "dc653900865240e0287224718ccdd6940ad2eb049f7adb96fc1d792237b6c8b3"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0000",
+      "size": 33554432,
+      "sha256": "06cacc1f26bacd4922cd23fec7427e44fd8db08d8c9836a7bab4dcae60a995c3"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0001",
+      "size": 33554432,
+      "sha256": "1b856c90bb260434ad78e25f3039b2e6bde9c68a52e336a10e833c28a37ddf54"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0002",
+      "size": 33554432,
+      "sha256": "b1ab7836bf5ec1a625cb1b3960dea831b9e7712642b689e74b3a3658c44c85e7"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0003",
+      "size": 33554432,
+      "sha256": "6da90b2fb7baff11b58326ce88e4e5a37a81670472c471cba94a1dd520876c6e"
+    },
+    {
+      "path": "tpr/sources/llvm-20.1.8/source.part0004",
+      "size": 13025224,
+      "sha256": "1a539e731a2245d52318f78524dadac90b07ddadbd6ec1ed0279e9f5c68131e8"
+    }
+  ],
+  "source_compiler_rebuild": "NOT_RUN",
+  "new_native_probe": "NOT_RUN",
+  "provided_SDK_tools": "External caller inputs byte-bound at preparation, not compiled blob vendoring",
+  "native_facts_capture": {
+    "state": "SOURCE_PRODUCER_PROTOTYPE_ONLY_NATIVE_NOT_READY",
+    "response_protocol": "FINITE_NO_RSP",
+    "consumer_admission": "NOT_ADMITTED",
+    "native_facts": "NOT_READY",
+    "original_parent_toolkit_lock": {
+      "path": "/storage/Users/currentUser/dev/ohos/blender/build_files/ohos/toolchain/inputs.lock.json",
+      "size": 8376,
+      "sha256": "55fe7dfe10a01609a2138238e13997d7f5fe46f23065b52f08b03ac7d50d5ce7"
+    },
+    "other_eight_writers": "UNIMPLEMENTED_OUT_OF_SCOPE",
+    "native_roots": "NOT_CREATED",
+    "FD_cleanup_source_revision2": {
+      "status": "SOURCE_ONLY_NATIVE_NOT_READY",
+      "before_input_lock": {
+        "path": "/storage/Users/currentUser/dev/ohos/blender-ohos-work/toolchain/native-facts-capture-candidate/after/build_files/ohos/toolchain/inputs.lock.json",
+        "size": 10394,
+        "sha256": "26af0e7f1f66f15574f3a893af588e0e2c09dcc7a0b757a59c5778b6a8834b62"
+      },
+      "delivery_fixture": "OUTSIDE_RECIPE_NOT_A_NEW_INPUT_ROW",
+      "immutable_archive_transport": "5 frozen R1 byte references; parent materializes before any future full source run"
+    }
+  }
+}

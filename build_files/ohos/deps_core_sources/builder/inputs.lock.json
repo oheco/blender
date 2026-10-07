@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "status": "source-complete parameterized builder candidate; no new-root build accepted",
+  "new_builder_accepted": false,
+  "sealed_files": [
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "size": 72783,
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/README.md",
+      "size": 6568,
+      "sha256": "7280d03052b0df28c3c91ee2ad7952066cdccad906f7178326724ce1cfe95092"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/audit.py",
+      "size": 7629,
+      "sha256": "7bc8ae7b8389585e3fb05b5c2a598a339211d38c61cce5c863f9ba8037086747"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/builder.py",
+      "size": 12013,
+      "sha256": "3ef9d638b74ec1f3fbdc7feda95926bedcd113cd5c2d017416c355798c8fdb37"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "size": 808,
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/cmake/native-host.cmake",
+      "size": 812,
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/cmake/native-link-features.cmake",
+      "size": 2789,
+      "sha256": "e98f504a6eb0611d582d5ed87d1beb23c8079a16976c5cd434c723eb371d4d92"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/CMakeLists.txt",
+      "size": 4355,
+      "sha256": "4016e828b9f178a20c8644f9723f231dc28dfd73c7113f092e645903416d6666"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/affinity_probe.cc",
+      "size": 1421,
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/ceres_acceptance.cc",
+      "size": 2473,
+      "sha256": "b059afea8bc1240fe27a501c64fb618b767a383e21a7178627e6e33cb54d7a8c"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/eigen_acceptance.cc",
+      "size": 1860,
+      "sha256": "00d137d807909f349ff8513b2649886fe81710bffd4b8527070ee06ff22fdf60"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/embree_acceptance.cc",
+      "size": 3730,
+      "sha256": "1ab6058cd3b1dd45b75450be2f62a3745d1ae2e27268236e1732514b2933161f"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/logging_acceptance.cc",
+      "size": 1319,
+      "sha256": "e6c223164b6629e09333770815059c96f7ed4fac219d4f9d3889a292794613a1"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/native_probe.cc",
+      "size": 1161,
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/pic_acceptance.cc",
+      "size": 545,
+      "sha256": "c9cfdfe2cfaf8fc09a64bb1dba0f146cec517d77af59ffcc2bd3c4d4df47710f"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/pic_bridge.cc",
+      "size": 1196,
+      "sha256": "e5bf4b3bd4dd044679790b47d9a592c37bc45580d77ffd362c89f078084a513f"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/tbb_probe.cc",
+      "size": 782,
+      "sha256": "6f120dfeba32dd33450a69656d14de79be0ec3d51183f2c9d4b1f8def1443348"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/whole_archive_marker.cc",
+      "size": 128,
+      "sha256": "3590790f762e5c62e40150e47dd12a2905f3f7bd98b07839913f495e2fbe317c"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/consumers/whole_archive_probe.cc",
+      "size": 190,
+      "sha256": "338f761309213202d1efd01f519343ccf92820063019dc1db80b1a88e9286d99"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/inventories/abseil.json",
+      "size": 241503,
+      "sha256": "a711acc57b1725280fd45244032829c808cd1d816bb09bd5c4af5f5dd711c6e2"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/inventories/ceres.json",
+      "size": 115713,
+      "sha256": "fe494fe1794970388cf94a2921a874b5d9f362c3d7657286511a7b4a786ffd06"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/inventories/eigen.json",
+      "size": 287088,
+      "sha256": "1f8d4c48c55ba720f84f89f5c0f8f7c45c00469e80ae0a0bc7eb7506296e3a8e"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/inventories/embree.json",
+      "size": 345839,
+      "sha256": "7b8b2c565501dfa05f8982b314e43cc90d2fc6452539c405d62c88efe57817e2"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/inventories/gflags.json",
+      "size": 6607,
+      "sha256": "4b053c32db586cad768d72ff842620b63c91e8ce3c9cdaa22f511c4b15907cf4"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/inventories/glog.json",
+      "size": 17103,
+      "sha256": "e8e059b798efa66b9d99014bcef8abb9186634f09f9f249201f7fc92b2dcab5b"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/io_utils.py",
+      "size": 4787,
+      "sha256": "10e634fdb1f01e747d45b1252d574ef97afa47692ac405ad04d231d57c8aa6aa"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/launcher.py",
+      "size": 3118,
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/preflight/CMakeLists.txt",
+      "size": 1790,
+      "sha256": "081cd2868a106dad6a0e2146179ef96d2784a1528db8ad485fefff03f4c2b814"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/source_tree.py",
+      "size": 8788,
+      "sha256": "03a12b645293e709a9ae9725a7a73649b11013ccb58af0efc51fd2f8377123c3"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/builder/toolchain.py",
+      "size": 8373,
+      "sha256": "8d43d78aea9024e62923d401d9e5fcecb0056ce5a7f3b57638b6325a84e7aa96"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/patches/eigen_tbb_support.diff",
+      "size": 2864,
+      "sha256": "27f11340df33bc0e64371c820d470199d293d3d14347b0ec028ff30effbad8f2"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/patches/eigen_tbb_support.diff.replay.patch",
+      "size": 2864,
+      "sha256": "27f11340df33bc0e64371c820d470199d293d3d14347b0ec028ff30effbad8f2"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/patches/embree-native-ohos.patch",
+      "size": 3018,
+      "sha256": "2c2d15c5b942d3c3b89876207e04b72118fd51690d44b716dd98a732266f44f6"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/patches/embree.diff",
+      "size": 1981,
+      "sha256": "92fe631d769d1e7915a66e60049a4aa73fdefc413cfe9c49621aa29274282b56"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/patches/embree.diff.replay.patch",
+      "size": 1982,
+      "sha256": "de9338ff5ebc602f6b978e81a9b488c241984001fc713800891188492cd440d1"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/provenance.json",
+      "size": 14612,
+      "sha256": "91b799de5b70d25bc2e5e214a88bba4f7f75beb6a32cae9be1edf2066d313a99"
+    },
+    {
+      "path": "build_files/ohos/deps_core_sources/recipe.candidate.json",
+      "size": 5648,
+      "sha256": "4b5c811e584eed058db6eaca7b6f7440683a0ba51157adfcc461d3d3797068fd"
+    },
+    {
+      "path": "build_files/ohos/vendor_archive.py",
+      "size": 8263,
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09"
+    },
+    {
+      "path": "extern/gflags/README.blender",
+      "size": 859,
+      "sha256": "c0555de5839d086b21725a8e0865f2c619a2fb565c6050cb16deeaf9aa0bd195"
+    },
+    {
+      "path": "extern/glog/README.blender",
+      "size": 563,
+      "sha256": "a157aab1ee3d60c9be02df6e57d0cd133c07e4a48f916f2700e0a974c2f6b311"
+    },
+    {
+      "path": "tpr/.gitattributes",
+      "size": 197,
+      "sha256": "98e70a05f80737872d28b6049db0e9da1eb72fa01a83a6f3d48bcddd374faba1"
+    },
+    {
+      "path": "tpr/sources/abseil-20250814.1/licenses/AUTHORS",
+      "size": 295,
+      "sha256": "1fd39030c119b4c97014f59e0ad0ed65f23475bbdf55a52740f31eb82b34b4ee"
+    },
+    {
+      "path": "tpr/sources/abseil-20250814.1/licenses/LICENSE",
+      "size": 11361,
+      "sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747"
+    },
+    {
+      "path": "tpr/sources/abseil-20250814.1/manifest.json",
+      "size": 726,
+      "sha256": "420328e1c65846b20b395023d148bd584dc9b321f7e3112c773e7ed311b9a995"
+    },
+    {
+      "path": "tpr/sources/ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db/licenses/LICENSE",
+      "size": 14355,
+      "sha256": "765fd9eac4cb827fa5de4304d1f81f4f2c5c332a3f1d6f0f3f7a69a33156729b"
+    },
+    {
+      "path": "tpr/sources/ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db/licenses/docs/source/license.rst",
+      "size": 1912,
+      "sha256": "298272413616f53c3bd952600ecb13ae4005dce7772c02b425c431bbb244f66f"
+    },
+    {
+      "path": "tpr/sources/ceres-0c70ed3a1a2d6ba47c06c7e8b3b040880bc474db/manifest.json",
+      "size": 845,
+      "sha256": "2c490d978cf2d9df787fe32e8dfe6da744474d33fec3530df0d629aed7d6128a"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.APACHE",
+      "size": 11362,
+      "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.BSD",
+      "size": 1517,
+      "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.MINPACK",
+      "size": 2193,
+      "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.MPL2",
+      "size": 16727,
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/COPYING.README",
+      "size": 264,
+      "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/LICENSE",
+      "size": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/licenses/bench/btl/COPYING",
+      "size": 18109,
+      "sha256": "b8d0e2bcbf36f6af3cdbf94055ad2ea675d5a19fc623eb0ec82febb2b08e719b"
+    },
+    {
+      "path": "tpr/sources/eigen-8a1083e9bf41b91fdea6546681f806154efdc25a/manifest.json",
+      "size": 967,
+      "sha256": "b31f4ed65babfd0f89172aeb869cb13722165d8ebd771d6abfe482b6923b677c"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/licenses/LICENSE.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/licenses/third-party-programs-DPCPP.txt",
+      "size": 6006,
+      "sha256": "9063626e7d3dfff306d6033d84b51adadbe459c7482f0296e92f597190ad33ea"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/licenses/third-party-programs-OIDN.txt",
+      "size": 19025,
+      "sha256": "6c82a835b37b99f779cd9a76896cee02d64dcf1eb36e704e5d925bb9daf40a1e"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/licenses/third-party-programs-TBB.txt",
+      "size": 46979,
+      "sha256": "12dde7e20fd8439d0b17ad2eb33a5aeb2442f7f4f1ea52692a2401e75bb513ca"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/licenses/third-party-programs-oneAPI-DPCPP.txt",
+      "size": 70664,
+      "sha256": "f6581550fc752baded435452f508bc75fa6e36c3cd9d6ee69e3752487533e7e0"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/licenses/third-party-programs.txt",
+      "size": 111266,
+      "sha256": "29688ddc73ea2369e7e94f37f4794bf1b5ccd549b73d0debc022c4533c854a42"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/licenses/tutorials/common/imgui/LICENSE.txt",
+      "size": 1083,
+      "sha256": "1b64b23b817e547982a86984685f5e9337695caa542753fb6f08d502d5208e38"
+    },
+    {
+      "path": "tpr/sources/embree-4.4.1/manifest.json",
+      "size": 1199,
+      "sha256": "4f101263ae2623418a44149a52292331135878f519174d34ae9d1cf9dec444d3"
+    },
+    {
+      "path": "tpr/sources/gflags-2.2.1/licenses/AUTHORS.txt",
+      "size": 32,
+      "sha256": "7cf895bf126394b6d67b007631956c856094d7150f1860e9454360c187670075"
+    },
+    {
+      "path": "tpr/sources/gflags-2.2.1/licenses/COPYING.txt",
+      "size": 1479,
+      "sha256": "90d1f3701813c3cd65eee2dc736746fe46b465918f3f7d6d31463a2018b33fa5"
+    },
+    {
+      "path": "tpr/sources/gflags-2.2.1/manifest.json",
+      "size": 776,
+      "sha256": "686872403120b5cce1304711c1b09a6c6bbe36b3dfe9bb8e97dc9340f1365979"
+    },
+    {
+      "path": "tpr/sources/glog-0.4.0/licenses/AUTHORS",
+      "size": 890,
+      "sha256": "a964843cdd281944ce6f7b60b8b3fd18f46dafbfa6f679de8f7c0f5282a2366c"
+    },
+    {
+      "path": "tpr/sources/glog-0.4.0/licenses/COPYING",
+      "size": 3215,
+      "sha256": "0fc497129c5c69ff6f22da6933c7e4aaef082fde8437fd57680c2780100772a4"
+    },
+    {
+      "path": "tpr/sources/glog-0.4.0/licenses/packages/deb/copyright",
+      "size": 1659,
+      "sha256": "98b38f03a6467f3bf94215812c70594cca0d05bcfc40fabfa2aa023cb9e35b66"
+    },
+    {
+      "path": "tpr/sources/glog-0.4.0/manifest.json",
+      "size": 792,
+      "sha256": "8c5a5bc9cb3f2acb9b77a3aa27ee76b3714120ba98540966c39f3fe53919144e"
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+      "size": 11631,
+      "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c"
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/manifest.json",
+      "size": 630,
+      "sha256": "f09bd7d1d92cf66fa0cda8c46ddd5daaea002bf3dff1eb752164518ce8850ddc"
+    }
+  ],
+  "tbb_source": {
+    "name": "tbb",
+    "version": "v2022.3.0",
+    "registry_manifest": "tpr/sources/tbb-v2022.3.0/manifest.json",
+    "archive_filename": "oneTBB-v2022.3.0.tar.gz",
+    "archive_root": "oneTBB-2022.3.0",
+    "sha256": "01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a",
+    "size": 6836514,
+    "inventory": "build_files/ohos/deps_volume_sources/inventories/tbb.json",
+    "formal_hash": {
+      "algorithm": "MD5",
+      "value": "2b242c465b194ac8e1451ea1354873ae"
+    },
+    "formal_declared_license": "SPDX:Apache-2.0",
+    "notices": [
+      {
+        "source_path": "LICENSE.txt",
+        "mirror": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "size": 11357
+      },
+      {
+        "source_path": "third-party-programs.txt",
+        "mirror": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+        "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c",
+        "size": 11631
+      }
+    ],
+    "inspected_source_spdx": []
+  },
+  "symbol_contract": {
+    "actual_cpp_namespace": "std::__n1",
+    "sdk_libcpp_version": 15004,
+    "compiler_major": 20,
+    "linker_major": 20,
+    "forbidden_undefined": [
+      "std::__h::*",
+      "pthread_cancel"
+    ],
+    "whole_archive_plain": {
+      "marker": 0,
+      "exit": 1
+    },
+    "whole_archive_retained": {
+      "marker": 73,
+      "exit": 0
+    }
+  },
+  "prerequisite_routing": "Explicit caller SDK/compiler/resource/signer/TBB paths; no developer work imports",
+  "source_counts": {
+    "abseil": 1538,
+    "ceres": 733,
+    "eigen": 1930,
+    "embree": 2195,
+    "gflags": 49,
+    "glog": 125
+  }
+}

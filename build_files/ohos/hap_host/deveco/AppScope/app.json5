@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "org.oheco.blender",
+    "vendor": "oheco",
+    "versionCode": 6,
+    "versionName": "5.2.2-ohos.host.6",
+    "icon": "$media:blender_app_icon",
+    "label": "$string:app_name"
+  }
+}

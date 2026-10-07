@@ -340,7 +340,36 @@ Enable building Blender against SDL for windowing rather than the native APIs"
 )
 mark_as_advanced(WITH_GHOST_SDL)
 
-if(UNIX AND NOT (APPLE OR HAIKU))
+if(CMAKE_SYSTEM_NAME MATCHES "^(HarmonyOS|OpenHarmony|OHOS)$")
+  set(_ghost_ohos_default ON)
+else()
+  set(_ghost_ohos_default OFF)
+endif()
+option(WITH_GHOST_OHOS "Use the native OHOS application host and window system" ${_ghost_ohos_default})
+unset(_ghost_ohos_default)
+mark_as_advanced(WITH_GHOST_OHOS)
+option(WITH_GHOST_OHOS_EMBEDDED "Build the in-process OHOS Blender shared core" OFF)
+option(WITH_GHOST_OHOS_DIAGNOSTIC "Build the separate signed background diagnostic runner" OFF)
+if(WITH_GHOST_OHOS_EMBEDDED)
+  if(NOT WITH_GHOST_OHOS)
+    message(FATAL_ERROR "OHOS embedded requires WITH_GHOST_OHOS=ON")
+  endif()
+  # Apply consistently before creating any Blender libraries.
+  set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+  add_compile_definitions(WITH_GHOST_OHOS WITH_GHOST_OHOS_EMBEDDED)
+  include_directories("${CMAKE_SOURCE_DIR}/intern/ghost")
+elseif(WITH_GHOST_OHOS_DIAGNOSTIC)
+  message(FATAL_ERROR "Diagnostic runner requires the embedded shared core")
+endif()
+if(WITH_GHOST_OHOS)
+  if(NOT CMAKE_SYSTEM_NAME MATCHES "^(HarmonyOS|OpenHarmony|OHOS)$")
+    message(FATAL_ERROR "GHOST OHOS requires the real OHOS SDK target platform")
+  endif()
+  set(WITH_GHOST_X11 OFF)
+  set(WITH_GHOST_WAYLAND OFF)
+endif()
+
+if(UNIX AND NOT (APPLE OR HAIKU OR WITH_GHOST_OHOS))
   option(WITH_GHOST_X11 "Enable building Blender against X11 for windowing" ON)
   mark_as_advanced(WITH_GHOST_X11)
 
@@ -506,6 +535,8 @@ option(WITH_LIBMV_SCHUR_SPECIALIZATIONS "Enable fixed-size Schur specializations
 mark_as_advanced(WITH_LIBMV_SCHUR_SPECIALIZATIONS)
 
 # Logging/unit test libraries.
+# OHOS Libmv CONFIG requires caller-selected system Gflags/Glog ON.
+# Keep desktop defaults; the platform branch validates the explicit policy.
 option(WITH_SYSTEM_GFLAGS "Use system-wide Gflags instead of a bundled one" OFF)
 option(WITH_SYSTEM_GLOG "Use system-wide Glog instead of a bundled one" OFF)
 mark_as_advanced(WITH_SYSTEM_GFLAGS)
@@ -535,7 +566,7 @@ to make Blender more portable across distributions"
 endif()
 
 # Misc
-if(WIN32 OR APPLE OR ((UNIX AND (NOT HAIKU)) AND WITH_GHOST_WAYLAND))
+if(WIN32 OR APPLE OR WITH_GHOST_OHOS OR ((UNIX AND (NOT HAIKU)) AND WITH_GHOST_WAYLAND))
   option(WITH_INPUT_IME "Enable Input Method Editor (IME) for complex Asian character input" ON)
 else()
   set(WITH_INPUT_IME OFF)
@@ -761,7 +792,10 @@ Enable multi-threading. TBB is also required for features such as Cycles, OpenVD
 # TBB malloc is only supported:
 # - On MS-Windows.
 # - On Unix/Linux.
-if((WIN32 AND NOT CMAKE_SYSTEM_PROCESSOR STREQUAL "ARM64") OR (UNIX AND NOT APPLE))
+if(WITH_GHOST_OHOS)
+  # The native static TBB package keeps the application's standard allocator.
+  option(WITH_TBB_MALLOC_PROXY "Enable the TBB malloc replacement" OFF)
+elseif((WIN32 AND NOT CMAKE_SYSTEM_PROCESSOR STREQUAL "ARM64") OR (UNIX AND NOT APPLE))
   option(WITH_TBB_MALLOC_PROXY "Enable the TBB malloc replacement" ON)
 endif()
 
@@ -1636,7 +1670,12 @@ set_and_warn_incompatible(WITH_PYTHON_MODULE WITH_GTESTS OFF)
 # -----------------------------------------------------------------------------
 # Configure `GLog/GFlags`
 
-if(WITH_LIBMV OR WITH_GTESTS)
+if(WITH_GHOST_OHOS AND _OHOS_LIBMV_CONFIG_ACTIVE)
+  if(NOT WITH_SYSTEM_GFLAGS OR NOT WITH_SYSTEM_GLOG)
+    message(FATAL_ERROR "OHOS Libmv requires its selected system CONFIG interfaces")
+  endif()
+  # Real imported targets carry include/link/definition closure; do not clear it.
+elseif(WITH_LIBMV OR WITH_GTESTS)
   if(WITH_SYSTEM_GFLAGS)
     find_package(Gflags)
     if(NOT GFLAGS_FOUND)

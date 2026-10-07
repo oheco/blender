@@ -1,0 +1,12 @@
+--- a/intern/draco_bridge/intern/encoder.cpp
++++ b/intern/draco_bridge/intern/encoder.cpp
+@@ -9,6 +9,9 @@
+ 
+ #include "encoder.h"
+ 
++#include <cinttypes>
++#include <cstdio>
++#include <cstring>
+ #include <memory>
+ #include <vector>
+ 

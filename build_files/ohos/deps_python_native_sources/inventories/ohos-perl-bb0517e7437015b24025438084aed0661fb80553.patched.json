@@ -1,0 +1,32 @@
+[
+  {
+    "executable": false,
+    "path": ".github/workflows/ci.yml",
+    "sha256": "29598bfccca1920255c62f421fd16890e6473ef7b8b9c9b783222e3a14007485",
+    "size": 1497
+  },
+  {
+    "executable": false,
+    "path": "0001-add-ohos-support.patch",
+    "sha256": "ee18043946dcf6ab99c1ae9dbb89fb829ec5bd3eb1ff07d53ad82ae094ec7a50",
+    "size": 2867
+  },
+  {
+    "executable": false,
+    "path": "LICENSE",
+    "sha256": "016ea2f8177dc2fd77a088b92328a392ae5b6c7345224875401bcb95b28a44f7",
+    "size": 1300
+  },
+  {
+    "executable": false,
+    "path": "README.md",
+    "sha256": "e0d4e2649bcf6ec68aad68512ddea4956181aa06b8f7793a3cc1a738d3a239c7",
+    "size": 2339
+  },
+  {
+    "executable": true,
+    "path": "build.sh",
+    "sha256": "9ea544ebb42761b8c37b7f05dd63656f627df4dd23cefa865239b98db9c23ba8",
+    "size": 3623
+  }
+]

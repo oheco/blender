@@ -1,0 +1,22 @@
+{
+  "name": "charset-normalizer",
+  "version": "3.4.1",
+  "kind": "source",
+  "filename": "charset_normalizer-3.4.1.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz",
+  "license": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 123188,
+  "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 123188,
+      "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3"
+    }
+  ]
+}

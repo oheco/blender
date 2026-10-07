@@ -1,0 +1,855 @@
+{
+  "schema_version": 1,
+  "kind": "portable-native-color-builder-input-seal",
+  "status": "candidate; new full native run unaccepted",
+  "sealed_files": [
+    {
+      "path": "build_files/build_environment/cmake/deflate.cmake",
+      "sha256": "639380e6e3bf38e3e01485168a45868dc713c9da88a822fb1c7a3325ffb77075",
+      "size": 612
+    },
+    {
+      "path": "build_files/build_environment/cmake/expat.cmake",
+      "sha256": "b56ca1853ed14fa5aadbd9c3bd7be9f633187e43ce524b3be06517606f1e040b",
+      "size": 642
+    },
+    {
+      "path": "build_files/build_environment/cmake/fmt.cmake",
+      "sha256": "696e7bb5fa1a1676ff5d4a835a7d5ab1cde7f034a4536c430dbc59d0e6508023",
+      "size": 828
+    },
+    {
+      "path": "build_files/build_environment/cmake/imath.cmake",
+      "sha256": "fe7659035b7c1370a0815dbd4fb4fa6c67ea276cc54b1c9c5d29ef41418c20e3",
+      "size": 1300
+    },
+    {
+      "path": "build_files/build_environment/cmake/jpeg.cmake",
+      "sha256": "b0957c260a20f07d306f6e8e0bb9728108ffbe201504740e7018a641fa426ac9",
+      "size": 1674
+    },
+    {
+      "path": "build_files/build_environment/cmake/minizipng.cmake",
+      "sha256": "b9b297dd3bd2b759f966ff6684594a6e9d41b84b3ce51e45acb1770932948b83",
+      "size": 1112
+    },
+    {
+      "path": "build_files/build_environment/cmake/opencolorio.cmake",
+      "sha256": "64f5503f9355bc8a94d51aab320bb4071f4ba2e52c2432c0f02a8d80169c8103",
+      "size": 5069
+    },
+    {
+      "path": "build_files/build_environment/cmake/openexr.cmake",
+      "sha256": "f05360d27acc8bbb8f1fd28814a8327dfa2cbc8692913a9906976434408314bf",
+      "size": 2949
+    },
+    {
+      "path": "build_files/build_environment/cmake/openimageio.cmake",
+      "sha256": "5db8463c5d3e9e1d277d7dfd090b4fe0106a186e458c383b8bfba873007acda3",
+      "size": 8483
+    },
+    {
+      "path": "build_files/build_environment/cmake/openjpeg.cmake",
+      "sha256": "28060ba438ca86ad604e3c39b135de8b41b7bd1eeefdd5656e4c70ee062d3df1",
+      "size": 2272
+    },
+    {
+      "path": "build_files/build_environment/cmake/openjph.cmake",
+      "sha256": "09cc952ffe2f8f1e86a0d97cfa34ba9b501ea61e4c49958413a562f99a1c94b6",
+      "size": 1271
+    },
+    {
+      "path": "build_files/build_environment/cmake/png.cmake",
+      "sha256": "215585eb22b1819890a00dc8a0b908c76510fec2d3a5c65b4512e926e7c9203d",
+      "size": 1552
+    },
+    {
+      "path": "build_files/build_environment/cmake/pugixml.cmake",
+      "sha256": "2f8c4a38f685de887e25d02ffdbd3be59247e37378426661b08d7230023d6ec1",
+      "size": 1123
+    },
+    {
+      "path": "build_files/build_environment/cmake/pystring.cmake",
+      "sha256": "18ff4072d2da1850003030d0eb72a69403e75a2f3446b1c9ce4788ac94d4797e",
+      "size": 951
+    },
+    {
+      "path": "build_files/build_environment/cmake/robinmap.cmake",
+      "sha256": "e10bdb6b694a2e750eaa0c41684cc91d0f3c80cc91514dd3d9e72c6558bc0855",
+      "size": 466
+    },
+    {
+      "path": "build_files/build_environment/cmake/tbb.cmake",
+      "sha256": "db99cef90879ff5f5f9778480175bd94f91b46353cd0459e89c1228da8762e85",
+      "size": 1894
+    },
+    {
+      "path": "build_files/build_environment/cmake/tiff.cmake",
+      "sha256": "1ff422fbd2080fc3cfd1306544c2fdd128993ad038daa29ee7eca833f7d84332",
+      "size": 1138
+    },
+    {
+      "path": "build_files/build_environment/cmake/versions.cmake",
+      "sha256": "df53e363d5b1af1a5b085b66d9465d0349145168233b4cd15a5658fa4f7b7fb1",
+      "size": 72783
+    },
+    {
+      "path": "build_files/build_environment/cmake/webp.cmake",
+      "sha256": "8c586da54537bfec89c35455158c0c80b15f29e64b56e720f999ad13e5a9a317",
+      "size": 1331
+    },
+    {
+      "path": "build_files/build_environment/cmake/yamlcpp.cmake",
+      "sha256": "a53a04862577bf60488c24ea41382b622e86a9f01208671d4a0a173d8da26711",
+      "size": 720
+    },
+    {
+      "path": "build_files/build_environment/cmake/zlib.cmake",
+      "sha256": "b4d55dfc95da3f9fafd8a46d45a07813cebba591d86db1d007bfce8a1aa01f9c",
+      "size": 2196
+    },
+    {
+      "path": "build_files/build_environment/cmake/zstd.cmake",
+      "sha256": "1232dc8cfabade1d322b4ee89b616233493628111f20bb2615e3f268395ba077",
+      "size": 1827
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/README.md",
+      "sha256": "3e03a631346c60e2269138f42c01257943d93eb667351402e4041fe3968f8313",
+      "size": 903
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/ATTRIBUTION.md",
+      "sha256": "aecbcc2327479028771de12e10c9611b52f6140ead876cf1d2c2859a72c93e5a",
+      "size": 1504
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/README.md",
+      "sha256": "bf09bc067d8da0620c2ab58122d8ee56f4947ee86cd2a81db0528db604bc10d0",
+      "size": 8538
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/audit.py",
+      "sha256": "8f496610d7fb0a30f37edb597a1d60ccec610b566a5f6aca3244704f89225078",
+      "size": 9258
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/builder.py",
+      "sha256": "e3863c5f3f18c844c836f32c0f255a808df921192a937a0dbbc9c55b6937fb61",
+      "size": 16388
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/cmake/Platform/HarmonyOS.cmake",
+      "sha256": "3a357979f0609716f2c82372741bdb1ab09472857af65bf8e9e6dd09b67be538",
+      "size": 808
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/cmake/native-host.cmake",
+      "sha256": "23587ba8436bf0eff7151bc3fe89de9a7e8c1997fd2bf13b65465ee4dd96e302",
+      "size": 812
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/cmake/zlib/CMakeLists.txt",
+      "sha256": "a2727f4cff4789a7e0e3097a6e7ac4f8270e4103b8617b2d65426b528010fbd8",
+      "size": 2295
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/consumers/CMakeLists.txt",
+      "sha256": "a79f8edb458270ce3a2f9c74f82b4b6bc9bae584ce70976c6e951f5e3d767a28",
+      "size": 2076
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/consumers/affinity_probe.cc",
+      "sha256": "ae9d9dfb3af6ec7322af8fce7a55e4d1879ea6e85416194b6776413aca5bb0b6",
+      "size": 1421
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/consumers/color_acceptance.cpp",
+      "sha256": "46ad504c67c6410c29c92a2718ecf05b8272fe59f6f62838494c5d48c38ef10e",
+      "size": 13445
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/consumers/half_texture_acceptance.cpp",
+      "sha256": "e326d76f67112de8e85769135b7851842ae7c22ea46da18c0502dbb7bb7d2e82",
+      "size": 5844
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/consumers/native_probe.cc",
+      "sha256": "adaafbfc5d770c64136d29da9e4649ebe2c0d8e17b0be0203e6f1d9dc7d6e6a1",
+      "size": 1161
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/consumers/tbb_acceptance.cc",
+      "sha256": "d57ffc6bbc5e6c18e383b4e8b77dc15e153af8a3268eaa821bc7ee8f08fc9ad3",
+      "size": 1991
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/io_utils.py",
+      "sha256": "a124e4f9bf629372f12c17993f3b8b2a3bd0aac77e60a5c36b81ca10a51d0cae",
+      "size": 6114
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/launcher.py",
+      "sha256": "8d9b208da620dfd55f8137a085c985385faf48f1f48b419982018726fffaf339",
+      "size": 3118
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/metadata.py",
+      "sha256": "0cef7a73a4131e50889589fc704d0a69beb671154b10f01044f4c56a5a705373",
+      "size": 10435
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/patches/deflate-applied-source.patch",
+      "sha256": "adf68afded0f433590c4e751e716b8932c4728f6247e8f018ce948ff85603826",
+      "size": 317
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/patches/minizipng-applied-source.patch",
+      "sha256": "d418481b309d418f8683b69cb9a289bed304459b2959db54c0d429043fe6ce76",
+      "size": 364
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/patches/opencolorio-applied-source.patch",
+      "sha256": "61bd8818156e501bc4449db74467dc3b21f3df85b2043d3cd1d4742227063e91",
+      "size": 1482
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/patches/openimageio-applied-source.patch",
+      "sha256": "9d0182dc545945912588ab56ba573ad2a721955566aa4881a03a1d4a465c98f1",
+      "size": 11990
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/patches/openjph-applied-source.patch",
+      "sha256": "a19b4fa881d3aba84fd1cd091b76167c30801489cedbd9f740012085324848f2",
+      "size": 8428
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/patches/pystring-applied-source.patch",
+      "sha256": "e20582674bff731b8d09d326c49c0b32a47fc21646b5255cf05b8f86bb7a7a07",
+      "size": 716
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/preflight/CMakeLists.txt",
+      "sha256": "e26f4232159e1f6d9bfb19092c9cf38ac64c171737074cbab56aa6a09a96084a",
+      "size": 716
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/recipe.json",
+      "sha256": "cdb235880c87e89d868a574a851dfe0e1cfcefcdf3e893edc49e9c75bfe0ef5a",
+      "size": 8022
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/short_checks.py",
+      "sha256": "6c7da2d8884a9a8b306162ab267403572fc6bb842d274594d03e972fb98981a4",
+      "size": 10987
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/source_tree.py",
+      "sha256": "d6c8f16fb36bdb3eff9a99c119442f7fb59b079c02e7a967addb6eae8557ddfb",
+      "size": 13072
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/sources.lock.json",
+      "sha256": "1f75a7bd067aabaf810433647bfada4ea581d79fd459a457edc343cd4bcf37d9",
+      "size": 44602
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/toolchain.py",
+      "sha256": "5802b6324d68720e10f17190f9377100fe75fd9cad8332f86d287b8f98a77977",
+      "size": 6880
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/builder/vendor_archive.py",
+      "sha256": "f72e4f796e2244a4adfe1a963a6c030da9656e6b3bb4e8d87bd824fe969ead09",
+      "size": 8263
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/deflate.json",
+      "sha256": "a34cc31bcd7d6cdb2d00095b1f1e573f1a3f61887d72c6191ae3bb6323f670da",
+      "size": 18309
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/expat.json",
+      "sha256": "98c3ff606d528085e6332b184f106176a872243e736e4f9ee4db2f4c81697ed6",
+      "size": 41262
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/fmt.json",
+      "sha256": "5011ea2b3d7dd13f2801bb5e2b3f9c17f1f588ace52e508014e1656483b4c64f",
+      "size": 24476
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/imath.json",
+      "sha256": "1e594369cffaa6059f7924bccfb97a25e1a2fa1136a95f46c903202a09e7531b",
+      "size": 76527
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/jpeg.json",
+      "sha256": "eb068d351acbd3d12b0200a59403df830c90cfce54ce12c7e1f564d6c3840a31",
+      "size": 92945
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/minizipng.json",
+      "sha256": "6dd0a74992c837c6c4f5ea3453ee65e9daf492bc78081118142ac632aac49d30",
+      "size": 23410
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/opencolorio.json",
+      "sha256": "48e29639e458dcd3b7d024f5b92181e30012e6c7dba9c07cfc660f692060dd5f",
+      "size": 354471
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/openexr.json",
+      "sha256": "86279254b832c1dfaf2f7967d11f938c5e8bc1480162942d0957c85ca3aa526e",
+      "size": 236607
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/openimageio.json",
+      "sha256": "7244d84d5df1873d8d6351b5cc40b03192cccd29b2df4a73331c5989ff0b005e",
+      "size": 330753
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/openjpeg.json",
+      "sha256": "d619d4aba046d963eea38b00ccac058724d63a43f79f29e737cfca921bd49b81",
+      "size": 90446
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/openjph.json",
+      "sha256": "8be1252a7f227a22cbbd61a0befbab2370a3651f43b8de62ab34f8c659c01980",
+      "size": 29075
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/png.json",
+      "sha256": "e6d2a388c38e3e674decd5632befb988cea614f454da6254b6277033a67b8a17",
+      "size": 116079
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/pugixml.json",
+      "sha256": "6d143d4ec7b32b08d1d0e07e871a04448bc280ff6d4950d5f53ed1111b095d03",
+      "size": 33446
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/pystring.json",
+      "sha256": "792ce063d085c5d662cd7dea7864907e0ed1b270bb139548a373039e5e455123",
+      "size": 1798
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/robinmap.json",
+      "sha256": "82bf0fccc8e0911591de77e872e3f74e588fb0e5442b2d5c35b4d170a60f2b52",
+      "size": 4317
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/tbb.json",
+      "sha256": "e53f433c23b354c6ef95debdce899af93c7e30c362a09c5840ed1128ec3b2ca5",
+      "size": 242146
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/tiff.json",
+      "sha256": "41d3a55ff7b2cd53c58c4c9a372e50cbce219c9f4bbdc4775550f92ffea5d3e9",
+      "size": 199945
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/webp.json",
+      "sha256": "b640d0d84e2e1ec9f7c2f36db41bcdf78db015d290af71bc95ae217be7c9079d",
+      "size": 65856
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/yamlcpp.json",
+      "sha256": "bf494a14a3c78127b7ec05d14e08405f3900a1775c876b03f729f73e20ccb5ac",
+      "size": 82699
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/zlib.json",
+      "sha256": "79906a33fac78cba4064c9b3e1bae081fc174629f1e3f9c11e22cd4871e65032",
+      "size": 47558
+    },
+    {
+      "path": "build_files/ohos/deps_color_sources/inventories/zstd.json",
+      "sha256": "cc208f10976a7475a998c18777386265c5634aeeac03894c562984ebb8e7fda5",
+      "size": 125407
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/LICENSE.md",
+      "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601",
+      "size": 1497
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/imath-3.2.2/website/license.rst",
+      "sha256": "21bd6d29519338c582dfd570a3ce9120277f24c1eff2ffb97d903b7ea93294d8",
+      "size": 1953
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/LICENSE",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "size": 1002
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zlib-1.3.1/contrib/dotzlib/LICENSE_1_0.txt",
+      "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+      "size": 1359
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/COPYING",
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+      "size": 18091
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/LICENSE",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "size": 1549
+    },
+    {
+      "path": "build_files/ohos/deps_volume_sources/notices/zstd-1.5.7/build/LICENSE",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "tpr/sources/deflate-1.18/licenses/COPYING",
+      "sha256": "5d246dd2537307b80fed9ba5fdddf5d0fe7a8f023393a071182b9daed56b40fe",
+      "size": 1052
+    },
+    {
+      "path": "tpr/sources/deflate-1.18/manifest.json",
+      "sha256": "17fbf4ba11a2ffaac45152e86e99704f82ea410423a47b867e1aa53437c6527a",
+      "size": 584
+    },
+    {
+      "path": "tpr/sources/deflate-1.18/source.part0000",
+      "sha256": "225d982bcaf553221c76726358d2ea139bb34913180b20823c782cede060affd",
+      "size": 184924
+    },
+    {
+      "path": "tpr/sources/expat-2_7_5/licenses/COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "size": 1144
+    },
+    {
+      "path": "tpr/sources/expat-2_7_5/licenses/expat/AUTHORS",
+      "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877",
+      "size": 142
+    },
+    {
+      "path": "tpr/sources/expat-2_7_5/licenses/expat/COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "size": 1144
+    },
+    {
+      "path": "tpr/sources/expat-2_7_5/manifest.json",
+      "sha256": "ad0b2c24b13c39ef49d860efa7aaa98905cf042eeec91cdb9582db673ebda7bc",
+      "size": 615
+    },
+    {
+      "path": "tpr/sources/expat-2_7_5/source.part0000",
+      "sha256": "7e23daf05f0ab028570d709ce48d724802baa6e4fbfa4db9b7cee3b72ee2062b",
+      "size": 8449555
+    },
+    {
+      "path": "tpr/sources/fmt-12.1.0/manifest.json",
+      "sha256": "a02c824082442095e35ea523d86094b53a843efde23b0f75014fcdcd87a27c84",
+      "size": 568
+    },
+    {
+      "path": "tpr/sources/fmt-12.1.0/source.part0000",
+      "sha256": "ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea",
+      "size": 711419
+    },
+    {
+      "path": "tpr/sources/imath-3.2.2/manifest.json",
+      "sha256": "5d9eeb215f41ef21ff1bf5e9b99cd987d9d4a574a9a39ac1fc6c102e25ee54e2",
+      "size": 593
+    },
+    {
+      "path": "tpr/sources/imath-3.2.2/source.part0000",
+      "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
+      "size": 689217
+    },
+    {
+      "path": "tpr/sources/jpeg-2.1.3/manifest.json",
+      "sha256": "7f40562f04c1095bda946e43e8a3a5d8cc7ff4b82f8bda3db8e6be7728132ce4",
+      "size": 615
+    },
+    {
+      "path": "tpr/sources/jpeg-2.1.3/source.part0000",
+      "sha256": "dbda0c685942aa3ea908496592491e5ec8160d2cf1ec9d5fd5470e50768e7859",
+      "size": 2260756
+    },
+    {
+      "path": "tpr/sources/minizipng-4.0.10/licenses/LICENSE",
+      "sha256": "675181c03fc1302a1c8554c00f7be9bb420c5dbc9dcc2013433cec144413de03",
+      "size": 877
+    },
+    {
+      "path": "tpr/sources/minizipng-4.0.10/manifest.json",
+      "sha256": "95a0e8f6207fd6b9e0ef17401a41cce27207a8469acb6319ab9489e376683ffc",
+      "size": 580
+    },
+    {
+      "path": "tpr/sources/minizipng-4.0.10/source.part0000",
+      "sha256": "c362e35ee973fa7be58cc5e38a4a6c23cc8f7e652555daf4f115a9eb2d3a6be7",
+      "size": 773269
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/licenses/LICENSE",
+      "sha256": "82a40c52065ee968aa62015735e84378ac11425db7a233e6a2dcd2c83fc24276",
+      "size": 1485
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/licenses/THIRD-PARTY.md",
+      "sha256": "2e0df1b675fcd133b78360b4d40539518ea1c2081be68e91a456fb9db51c5009",
+      "size": 10893
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/licenses/docs/aswf/license.rst",
+      "sha256": "a5b30db79a9f518916fd74e0faeda39fbaa93e2829c066786ebaa351b2bdae66",
+      "size": 448
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/licenses/docs/site/LICENSE",
+      "sha256": "bfdfe12481e744f740b08d2df89d9229963c3f1b9d6d96b3cea87dcb27c5199d",
+      "size": 594
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/licenses/tests/data/LICENSE.md",
+      "sha256": "2d9b807f962facff42bc33f108ccbea6bedf0b56cd67345cf4fbc97d838c709c",
+      "size": 124
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/licenses/vendor/openfx/Support/LICENSE",
+      "sha256": "1e52150d77eb6c335db92ea82cbd7dc8a837a1fd2f08f192b108d89251a8f147",
+      "size": 1646
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/manifest.json",
+      "sha256": "00c87b234b0e38bcd5e472e77e4cd177fb5e91c7b7af6ae05d9cbc3675412e71",
+      "size": 754
+    },
+    {
+      "path": "tpr/sources/opencolorio-2.5.0/source.part0000",
+      "sha256": "124e2bfa8a9071959d6ddbb64ffbf78d3f6fe3c923ae23e96a6bbadde1af55b6",
+      "size": 14122936
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/licenses/Contrib/DtexToExr/AUTHORS",
+      "sha256": "001ea4855801e70deef7213ca2f3c5fa8b709b31b36873d19a69e2f4a334a89b",
+      "size": 67
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/licenses/LICENSE.md",
+      "sha256": "84853c91d4c2e0310741d4773469d98bb93e61029608e0ba0882a3fffdf330bd",
+      "size": 1501
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/licenses/PATENTS",
+      "sha256": "7f5dee333a82cab38b3567b85ec52a74487a5b2a8f4097eb8b4071c892c47b12",
+      "size": 13721
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/licenses/external/OpenJPH/LICENSE",
+      "sha256": "5ddf5177863dfc9ab65fa129d587db651241f00e21ed2427b218bea997591f98",
+      "size": 1448
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/licenses/external/deflate/COPYING",
+      "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a",
+      "size": 1078
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/licenses/website/license.rst",
+      "sha256": "07f2605f2d4406af7b91ce23ad11529ad8fb8e0140ea9a2d05c940d8d4309b22",
+      "size": 1955
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/manifest.json",
+      "sha256": "a770b9e441d62840f9ab5c1edd387e230a17da00340783361d2cc0bc38b19797",
+      "size": 745
+    },
+    {
+      "path": "tpr/sources/openexr-3.4.10/source.part0000",
+      "sha256": "b61ae2d0fa4872c5f5fc45618f107945df37c0eba4853263091b949c513d3319",
+      "size": 25747896
+    },
+    {
+      "path": "tpr/sources/openimageio-v3.1.13.1/licenses/LICENSE.md",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "tpr/sources/openimageio-v3.1.13.1/licenses/RELICENSING.md",
+      "sha256": "2fa2802162c4885a1cce1fcac70640dfab1980dbbcf9753d686346f414e4ed79",
+      "size": 5778
+    },
+    {
+      "path": "tpr/sources/openimageio-v3.1.13.1/licenses/THIRD-PARTY.md",
+      "sha256": "1e86c485c25256a807b11c6f56014acac43bdc297944c2d6b4af16fd65188c2b",
+      "size": 13418
+    },
+    {
+      "path": "tpr/sources/openimageio-v3.1.13.1/licenses/src/doc/copyr.rst",
+      "sha256": "85bd3ae56e07cd049537ad54d0694351611d04fd1f7d756e1e712d79a543dc64",
+      "size": 1137
+    },
+    {
+      "path": "tpr/sources/openimageio-v3.1.13.1/manifest.json",
+      "sha256": "0171aa1b606dbb4e9850be6cc767a9717178de5d7f6ece12b33821b29d461ffb",
+      "size": 860
+    },
+    {
+      "path": "tpr/sources/openimageio-v3.1.13.1/source.part0000",
+      "sha256": "71f284af7bb512d0b480e23d53a0d8cd78c0d12e2802f9541da9d2f45afad80e",
+      "size": 33554432
+    },
+    {
+      "path": "tpr/sources/openimageio-v3.1.13.1/source.part0001",
+      "sha256": "f3e34f8ae5908e1e418356b614efc9598f8c9e9160c569b1ab2cad5cbfb388d7",
+      "size": 21783810
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/licenses/AUTHORS.md",
+      "sha256": "cf22e984f9fbb9be7550e9a94120595ba8c4a7de0d63f47d3725f4b2e28a4387",
+      "size": 712
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/licenses/LICENSE",
+      "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6",
+      "size": 2112
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/licenses/src/bin/wx/OPJViewer/source/license.txt",
+      "sha256": "8081c33f6953950dcf424aa844714658b73ada0fcaea16e4487f5fa07ef0960d",
+      "size": 1683
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/licenses/thirdparty/astyle/LICENSE.md",
+      "sha256": "2e8480e753b7a1d100c80920f4250b1bc9f93a18c6a5953c42b11445218cd0fb",
+      "size": 1094
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/licenses/thirdparty/liblcms2/COPYING",
+      "sha256": "c725daac91a9259ce5e195683c0eeb797d345035c36ac5ba114c9fa80e11639a",
+      "size": 1078
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/licenses/thirdparty/libpng/LICENSE",
+      "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e",
+      "size": 5345
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/manifest.json",
+      "sha256": "e8d2743ec70d433864751bd60c5c298ccaa92ee2808ab16148a6c8e1c33b6206",
+      "size": 755
+    },
+    {
+      "path": "tpr/sources/openjpeg-2.5.3/source.part0000",
+      "sha256": "368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707",
+      "size": 2155188
+    },
+    {
+      "path": "tpr/sources/openjph-0.25.2/licenses/LICENSE",
+      "sha256": "5ddf5177863dfc9ab65fa129d587db651241f00e21ed2427b218bea997591f98",
+      "size": 1448
+    },
+    {
+      "path": "tpr/sources/openjph-0.25.2/manifest.json",
+      "sha256": "b93c68fe45d6d0278b43b95fb1b96a25e622dcb3e2f62ff550a438180d099969",
+      "size": 590
+    },
+    {
+      "path": "tpr/sources/openjph-0.25.2/source.part0000",
+      "sha256": "ae5f09562cb811cb2fb881c5eb74583e18db941848cfa3c35787e2580f3defc6",
+      "size": 477255
+    },
+    {
+      "path": "tpr/sources/png-1.6.58/manifest.json",
+      "sha256": "2796f6fca6c5a6e151ee644e04cb2cf76f1e342dcc2a08be6792dcfff7aba795",
+      "size": 581
+    },
+    {
+      "path": "tpr/sources/png-1.6.58/source.part0000",
+      "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+      "size": 1070096
+    },
+    {
+      "path": "tpr/sources/pugixml-1.10/licenses/LICENSE.md",
+      "sha256": "9ddc2f8e3003601aff5a4d37f3caf3b6b60a729ebbc466bafd965cdf0883b12c",
+      "size": 1079
+    },
+    {
+      "path": "tpr/sources/pugixml-1.10/manifest.json",
+      "sha256": "a94c37538af9ae7cbaab0c2820f2944ef8393e5cd6511d7c751dc5a882cf9b0a",
+      "size": 566
+    },
+    {
+      "path": "tpr/sources/pugixml-1.10/source.part0000",
+      "sha256": "10f1f0a32b559ca8435d95855928d990cfbb9796e339efb638080c897728174c",
+      "size": 562718
+    },
+    {
+      "path": "tpr/sources/pystring-v1.1.3/licenses/LICENSE",
+      "sha256": "7b565d49be50a0490b38ae69d22f1e93ce9449546a99a8a1efcaf0ae922b7442",
+      "size": 1512
+    },
+    {
+      "path": "tpr/sources/pystring-v1.1.3/manifest.json",
+      "sha256": "f04d995d41ebfda9b42f70491275451a07ca514a31398a9e3a2d2529c0fb0332",
+      "size": 595
+    },
+    {
+      "path": "tpr/sources/pystring-v1.1.3/source.part0000",
+      "sha256": "358a56e756e701836b69a31c75d3d9d41c34d447cf7b3775bbd5620dcd3203d9",
+      "size": 18364
+    },
+    {
+      "path": "tpr/sources/robinmap-v1.3.0/licenses/LICENSE",
+      "sha256": "11f2c685ba565a31aef1219f63a7a8845602c97bff70016b9e3278dfe51a2ec5",
+      "size": 1102
+    },
+    {
+      "path": "tpr/sources/robinmap-v1.3.0/manifest.json",
+      "sha256": "226dff4b883df18bd621bd79480661bab54d4f972c376f207cc419aef6697fb8",
+      "size": 582
+    },
+    {
+      "path": "tpr/sources/robinmap-v1.3.0/source.part0000",
+      "sha256": "a8424ad3b0affd4c57ed26f0f3d8a29604f0e1f2ef2089f497f614b1c94c7236",
+      "size": 70562
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/licenses/third-party-programs.txt",
+      "sha256": "1634857eb058dce5278c57a832b8974190785145f4be9acdbdb511f3a0c4091c",
+      "size": 11631
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/manifest.json",
+      "sha256": "f09bd7d1d92cf66fa0cda8c46ddd5daaea002bf3dff1eb752164518ce8850ddc",
+      "size": 630
+    },
+    {
+      "path": "tpr/sources/tbb-v2022.3.0/source.part0000",
+      "sha256": "01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a",
+      "size": 6836514
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/licenses/LICENSE.md",
+      "sha256": "0e27c2382d7b8147972bbb746e04059a1152c8d0fda9d03ef1399d1a433c4ade",
+      "size": 2416
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/_sources/project/acknowledgements.rst.txt",
+      "sha256": "f25936c5b1c1707ab216c0169734cdb66ce656c66a25d434fae8f390d71a7ace",
+      "size": 2916
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/_sources/project/license.rst.txt",
+      "sha256": "02e86af3b805e0f2075ebb5ac512831f6ab2a97ddeb186de076c418956418ba1",
+      "size": 1181
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/project/acknowledgements.html",
+      "sha256": "178f274f39f59f347bbcc39d6a7f76ad4a37dbc5a95b283551debef2fb295b8c",
+      "size": 10090
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/licenses/doc/html-prebuilt/project/license.html",
+      "sha256": "c5bc827b485b77932fd610bbedf8ec7fe9fbbc6fa6e9cf944e9c5a7446e885a6",
+      "size": 5718
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/licenses/doc/project/acknowledgements.rst",
+      "sha256": "f25936c5b1c1707ab216c0169734cdb66ce656c66a25d434fae8f390d71a7ace",
+      "size": 2916
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/licenses/doc/project/license.rst",
+      "sha256": "02e86af3b805e0f2075ebb5ac512831f6ab2a97ddeb186de076c418956418ba1",
+      "size": 1181
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/manifest.json",
+      "sha256": "3f914d0b824bbb66fb24956ee186018b8e8fba15a395d0a2ba0bdeb0f736609c",
+      "size": 864
+    },
+    {
+      "path": "tpr/sources/tiff-4.7.1/source.part0000",
+      "sha256": "f698d94f3103da8ca7438d84e0344e453fe0ba3b7486e04c5bf7a9a3fabe9b69",
+      "size": 4000609
+    },
+    {
+      "path": "tpr/sources/webp-1.6.0/licenses/AUTHORS",
+      "sha256": "f251be89fd442bd9d701360730aea163cc8e2076ff03528f59267dc2c4f8b60a",
+      "size": 3279
+    },
+    {
+      "path": "tpr/sources/webp-1.6.0/licenses/COPYING",
+      "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+      "size": 1496
+    },
+    {
+      "path": "tpr/sources/webp-1.6.0/licenses/PATENTS",
+      "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c",
+      "size": 1436
+    },
+    {
+      "path": "tpr/sources/webp-1.6.0/manifest.json",
+      "sha256": "33cd12862044cdb2f69c53d03f5b093a7ff505ca4482194892f5dfb172bcbb70",
+      "size": 642
+    },
+    {
+      "path": "tpr/sources/webp-1.6.0/source.part0000",
+      "sha256": "e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564",
+      "size": 4296070
+    },
+    {
+      "path": "tpr/sources/yamlcpp-0.8.0/licenses/LICENSE",
+      "sha256": "aa6fcc27be034e41e21dd832f9175bfe694a48491d9e14ff0fa278e19ad14f1b",
+      "size": 1061
+    },
+    {
+      "path": "tpr/sources/yamlcpp-0.8.0/licenses/test/gtest-1.11.0/LICENSE",
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+      "size": 1475
+    },
+    {
+      "path": "tpr/sources/yamlcpp-0.8.0/licenses/test/gtest-1.11.0/googlemock/scripts/generator/LICENSE",
+      "sha256": "5e0df8c845c742e76f2f64d2d9ce1b7e74a2422fddbc577ae6a56319083de0bf",
+      "size": 11386
+    },
+    {
+      "path": "tpr/sources/yamlcpp-0.8.0/manifest.json",
+      "sha256": "d76a4281e8aceea1947d477c202b94a46c97a8c696f94c194d310c6b3b87a10d",
+      "size": 676
+    },
+    {
+      "path": "tpr/sources/yamlcpp-0.8.0/source.part0000",
+      "sha256": "fbe74bbdcee21d656715688706da3c8becfd946d92cd44705cc6098bb23b3a16",
+      "size": 1017151
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/manifest.json",
+      "sha256": "57d2b1dac5b12798d3d6d1aedcd36584efc77e933b1a40c41e08669e5467f26c",
+      "size": 560
+    },
+    {
+      "path": "tpr/sources/zlib-1.3.1/source.part0000",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "size": 1512791
+    },
+    {
+      "path": "tpr/sources/zstd-1.5.7/manifest.json",
+      "sha256": "f0dd8f50451b5760e23e6c4d0c00e3e55d3b8e4a1bb8c53ec5490f59a055f259",
+      "size": 623
+    },
+    {
+      "path": "tpr/sources/zstd-1.5.7/source.part0000",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "size": 2434947
+    }
+  ],
+  "complete_archives": 21,
+  "selected_source_build_groups": 20,
+  "new_full_native_acceptance": false
+}

@@ -1,0 +1,506 @@
+{
+  "name": "glog",
+  "archive_sha256": "a72da1c10f4f1f678ec3e77aeaf9b3026ec0d2f66d20ded33753ab5940ed218e",
+  "files": [
+    {
+      "path": ".bazelci/presubmit.yml",
+      "sha256": "6da008db4bc2102c3541a545041c699eb0cbd0b24cf183f951856300e4fc3443"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "7372a10551c9321143a1a16c2c120b25764e18c26f4a6fda0bdd2424adb825d6"
+    },
+    {
+      "path": ".travis.ubuntu.sh",
+      "sha256": "8cf0e12ff5b54d7b63f43b02b04888055bd8524e10821571b4eb68999693e05c"
+    },
+    {
+      "path": ".travis.yml",
+      "sha256": "f26eced3177991b4e7c4fac14d1972af32dcd11a48d2e586b489a9c399528089"
+    },
+    {
+      "path": "AUTHORS",
+      "sha256": "a964843cdd281944ce6f7b60b8b3fd18f46dafbfa6f679de8f7c0f5282a2366c"
+    },
+    {
+      "path": "BUILD",
+      "sha256": "0638b15991e7207b280497f356f2427390a518b49de100a784244cea212192aa"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "61514cf6cb5a94fc262b6671709501e820584900521338022d26014c9fd36b4d"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "49ca25038f001931162e3140ba8cae9a7494f88353e33a96129ffa61ce922068"
+    },
+    {
+      "path": "CONTRIBUTORS",
+      "sha256": "4e87c5c3fab1b4dc60601b193eac70ce5edfa048edd202ca3780ea7658394242"
+    },
+    {
+      "path": "COPYING",
+      "sha256": "0fc497129c5c69ff6f22da6933c7e4aaef082fde8437fd57680c2780100772a4"
+    },
+    {
+      "path": "ChangeLog",
+      "sha256": "50f5c24416637edbac771edb756c50e57d9d3bbcf356e9b2f69b67a2de7493d7"
+    },
+    {
+      "path": "Dockerfile.ubuntu.template",
+      "sha256": "88a6890f5dee13247b0339b3b4200b49b6e2aadd8f777d52cd2b3375b2219cda"
+    },
+    {
+      "path": "INSTALL",
+      "sha256": "1de353510ad01044b0847837fe257ae9c50f4fe1bb1c6eebeadc3652645f5d93"
+    },
+    {
+      "path": "Makefile.am",
+      "sha256": "d58ea267128a62bf2643fa280efe84290c77fb79d77b13e094a88377338489ec"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f8b81502da67a4a3c88d8d168290235de3e802a21456a487d307746a85506561"
+    },
+    {
+      "path": "README.windows",
+      "sha256": "8a31f893340c91e71a00cbffe9e505b14e6c00c09f00128c737966c771c82017"
+    },
+    {
+      "path": "WORKSPACE",
+      "sha256": "943e9794ebc16a1ba2123de67729a1a59b29fdf2a9e6b5adb4b722e2de2c8a7a"
+    },
+    {
+      "path": "appveyor.yml",
+      "sha256": "99176a96e6ea0d8ee7af36deedceffa3f537abf4fff1a2ed307a02849c576426"
+    },
+    {
+      "path": "autogen.sh",
+      "sha256": "69907f71f22bbc9edf1131eb212f1b2e23fe581988c2482443511100f4d00b1b"
+    },
+    {
+      "path": "bazel/example/BUILD",
+      "sha256": "e33274dbc3a70747ff804987ab52ed1f79d7ebc94b2e3825d2c1ba2c642ce9aa"
+    },
+    {
+      "path": "bazel/example/main.cc",
+      "sha256": "5c7c0fa82933b062aea4a06ce54a62d31a5ff32c076bae7332d7d3210f6abefb"
+    },
+    {
+      "path": "bazel/glog.bzl",
+      "sha256": "555a7bf5e5d115e9a5b75fc3cf0daff91738980d316e6c2dc965d384b26a04a5"
+    },
+    {
+      "path": "cmake/DetermineGflagsNamespace.cmake",
+      "sha256": "3ea37bfda61596710492a3862ad4c847aba7169008b548fba4dd13fda34906f1"
+    },
+    {
+      "path": "cmake/INSTALL.md",
+      "sha256": "07817fa2482999ed636d873f42bd5a4da566b2bdbcd596c0000f09845fb94903"
+    },
+    {
+      "path": "configure.ac",
+      "sha256": "1ba88145c20b2d996e635e5532539f0d5017622aa9113a73f51fb13151a40dae"
+    },
+    {
+      "path": "doc/designstyle.css",
+      "sha256": "3fb926b171a87df85c7fc538ab8dde60183143216f39b5a1a1a3faddb3ba046c"
+    },
+    {
+      "path": "doc/glog.html",
+      "sha256": "8dd6ed6b5100d880cec44c954c95068e174a3ab41479e4e5adaf07809cec3aa3"
+    },
+    {
+      "path": "glog-config.cmake.in",
+      "sha256": "8c47cb62d3424dc801dee52b7a81db3dfc70f602c9817c0f245bff58ba710e24"
+    },
+    {
+      "path": "libglog.pc.in",
+      "sha256": "b1310449cbcd506c63f3a6ee6a608188e633c5a6fb0e130c5fe3ee4747257fab"
+    },
+    {
+      "path": "m4/ac_have_attribute.m4",
+      "sha256": "d325d8256d1723bcd1213d94bf8fd575b28b9896c688165e6dbbed52fd728ee4"
+    },
+    {
+      "path": "m4/ac_have_builtin_expect.m4",
+      "sha256": "0a5e11d6b2b1b58b703c052139077b414edea8c43fea2f4ac7d7affb2d8bc06e"
+    },
+    {
+      "path": "m4/ac_have_sync_val_compare_and_swap.m4",
+      "sha256": "f9ac2336fa0179d886140fc00bf2810c2fadf2c5b8433e9d4f23e152f0056ff4"
+    },
+    {
+      "path": "m4/ac_rwlock.m4",
+      "sha256": "29731ee4192d6e69a9b1c6d07b03eb520bb96954a1feb3f3ada5083cecabaf8e"
+    },
+    {
+      "path": "m4/acx_pthread.m4",
+      "sha256": "3326e3746b6b351d1671fe31f798269cda8de92c365b8a8305404ec0fa6c6b32"
+    },
+    {
+      "path": "m4/google_namespace.m4",
+      "sha256": "05e1892a08b302221425f97aad650df94de343f5a2578a6dba582647e9a07a22"
+    },
+    {
+      "path": "m4/ltsugar.m4",
+      "sha256": "e8bfa437be7af72bf41b86e7e714bc8b8545046c339f80cfb5e69681bc97f90d"
+    },
+    {
+      "path": "m4/lt~obsolete.m4",
+      "sha256": "ee8a1723c8c022eb20bb2d03450cc37f92ec6c3db2c7b8c313eb3f5e935249fc"
+    },
+    {
+      "path": "m4/namespaces.m4",
+      "sha256": "f2f77dbaf68b3eea1d6c25af62a4925394ab2fa984f3fddfa535302a4e7df2e7"
+    },
+    {
+      "path": "m4/pc_from_ucontext.m4",
+      "sha256": "d1ff4e9c610de85707fdcd01fadae67d4701d5795c6144bcde4831bb475ef178"
+    },
+    {
+      "path": "m4/stl_namespace.m4",
+      "sha256": "11790c9af25dfda7c3a59bf48136adc7c54ea7c55fa0baee3edd778dabfb6026"
+    },
+    {
+      "path": "m4/using_operator.m4",
+      "sha256": "260907af707ed2aef5ed12c32ba4cff24c42a87f5b4eed8d47a1cfb45c111f9c"
+    },
+    {
+      "path": "packages/deb.sh",
+      "sha256": "9381225efe3f8cb6afb7326d620243edc6efe961081912963e78f7b1fded400f"
+    },
+    {
+      "path": "packages/deb/README",
+      "sha256": "8618eac493bbf50586f7bf006f5521d6dcbd750c880b8fc49943735a2b66e656"
+    },
+    {
+      "path": "packages/deb/changelog",
+      "sha256": "2bc631a99b7a9e2c950ef2076fd6fa9d4181c4e9dd20b727fc69e80d862fa833"
+    },
+    {
+      "path": "packages/deb/compat",
+      "sha256": "7de1555df0c2700329e815b93b32c571c3ea54dc967b89e81ab73b9972b72d1d"
+    },
+    {
+      "path": "packages/deb/control",
+      "sha256": "1f4a8703bd353cde12d89d034edcdb8bc503bcebb35ef7c98e2d88a025d7a4a9"
+    },
+    {
+      "path": "packages/deb/copyright",
+      "sha256": "98b38f03a6467f3bf94215812c70594cca0d05bcfc40fabfa2aa023cb9e35b66"
+    },
+    {
+      "path": "packages/deb/docs",
+      "sha256": "3d5f73c0b84c4da88186ff34292d0784f9967732899847bda7aff70e42a60b08"
+    },
+    {
+      "path": "packages/deb/libgoogle-glog-dev.dirs",
+      "sha256": "8b125385e5b1720b88eb7b743ca89a9029027263c0b7928534f09c218e3cc85a"
+    },
+    {
+      "path": "packages/deb/libgoogle-glog-dev.install",
+      "sha256": "f745cbba80a54217e7e61996d52f46d77e9163dad01d4a9e8d1e379d230bf97e"
+    },
+    {
+      "path": "packages/deb/libgoogle-glog0.dirs",
+      "sha256": "0bb13c291b79916c16ba0cb8da8d0daa0d0034da2c05616e71c6d6a7660bbdb4"
+    },
+    {
+      "path": "packages/deb/libgoogle-glog0.install",
+      "sha256": "7f82858df3c574f0289ce4985a8b167dcb71a63b69fde8b34ba1a29e91bd8649"
+    },
+    {
+      "path": "packages/deb/rules",
+      "sha256": "c50caec136a50dccb3a83b0d6d7502096e60e3fb24855358b271e463aa6dca09"
+    },
+    {
+      "path": "packages/rpm.sh",
+      "sha256": "423e9f3632b5c53979014b328037d1884d571d6eabfa8e8352c77503b505be40"
+    },
+    {
+      "path": "packages/rpm/rpm.spec",
+      "sha256": "3df05dea5b4f460751e5bf559a745155cca4586d37bc04a607d3d15741819cc6"
+    },
+    {
+      "path": "src/base/commandlineflags.h",
+      "sha256": "798b32a3efea1f7cdec030e68a2f5620d9fc303d5095a10c9ec188b8100dd6cc"
+    },
+    {
+      "path": "src/base/googleinit.h",
+      "sha256": "3e2e9307fcde90166160210005530d6fad6d4519d96b02be53fd7ab91e389438"
+    },
+    {
+      "path": "src/base/mutex.h",
+      "sha256": "59b3072f4c336a123bca658313e0a60322b32693812ed422c87caebde15c129a"
+    },
+    {
+      "path": "src/config.h.cmake.in",
+      "sha256": "fdc7de3ef285debf94d9f3468a86276adb642841ae1ee85df53e0a0d695be267"
+    },
+    {
+      "path": "src/config_for_unittests.h",
+      "sha256": "e2549b5e556fe1704dcf8f6ebfab5e48070bce3da04a29aa4179e73f36f550a0"
+    },
+    {
+      "path": "src/demangle.cc",
+      "sha256": "4ca5aaee06932e899cd2ddb8345cf4896385b9e8daa24e2df10b2538d624fc57"
+    },
+    {
+      "path": "src/demangle.h",
+      "sha256": "2d2ed9112fd7efb3b31a2b626e5dfb38b2fe67400048c71359b995c32554de28"
+    },
+    {
+      "path": "src/demangle_unittest.cc",
+      "sha256": "31f1f1bcd9699687192634b057a2763a5f8230d926a08fa379969044e3fbb0a2"
+    },
+    {
+      "path": "src/demangle_unittest.sh",
+      "sha256": "1795a62f12db4632f1df976aeca48231777f1638a169b1928057e646f4371b2d"
+    },
+    {
+      "path": "src/demangle_unittest.txt",
+      "sha256": "04c01e8b2820feae71b15e9f1bf96732dc5dff391c6471168ef65a51699396e4"
+    },
+    {
+      "path": "src/glog/log_severity.h",
+      "sha256": "4d208e76bfd345e6b198ccb24a864bc11bb3a151d13964caeb4fb9fcd81feeb6"
+    },
+    {
+      "path": "src/glog/logging.h.in",
+      "sha256": "1bd2005275178d72a10f5838641374e3d3ca537edc25c41f5da0796c8da95096"
+    },
+    {
+      "path": "src/glog/raw_logging.h.in",
+      "sha256": "5cf05c3ea2285567e428262d44b4cca1b0254c2745903194aa3ffa5ad6778ec0"
+    },
+    {
+      "path": "src/glog/stl_logging.h.in",
+      "sha256": "324d23fc505e62da34e76454f019896fe15251295e1eefd20bed0287580a7013"
+    },
+    {
+      "path": "src/glog/vlog_is_on.h.in",
+      "sha256": "87d12ca7d8f44d158ee2a5b20d1c1a727a5dca5d6c5d82ee3736ba6130217e57"
+    },
+    {
+      "path": "src/googletest.h",
+      "sha256": "df49c4d336572431afa896b3f61435212b3ccba14abbc95570290af9255d7550"
+    },
+    {
+      "path": "src/logging.cc",
+      "sha256": "177ca7962c259164b2df5f81f0fda0182b4e7b76a6c00c0d70031ac2a7baf845"
+    },
+    {
+      "path": "src/logging_striplog_test.sh",
+      "sha256": "aa949cad4df3e86190ec76f4027b2b0fee1599f86a7ec62f63703061bfe982b4"
+    },
+    {
+      "path": "src/logging_striptest10.cc",
+      "sha256": "5080bed29ad93c46809c18e5a91acc062b42311d07fa74dbe293e71b74607071"
+    },
+    {
+      "path": "src/logging_striptest2.cc",
+      "sha256": "bd2dfb373221b62aece378e929fb6866b3b095710ed8af0dfe7d0ef032df0002"
+    },
+    {
+      "path": "src/logging_striptest_main.cc",
+      "sha256": "e85634a1230bd5dfab00952ce8f37da974069c1d28814e881aab42d84e2e292f"
+    },
+    {
+      "path": "src/logging_unittest.cc",
+      "sha256": "1f992d6b2d646b38846f2150a023d433f7f019ff28a0a480d050c6b29e63aefa"
+    },
+    {
+      "path": "src/logging_unittest.err",
+      "sha256": "554d2b5ce963cf1d7d3e4d1ce759d4b2740e1359c2b6676d5bb1d7ac0890a488"
+    },
+    {
+      "path": "src/mock-log.h",
+      "sha256": "2ac6db9ecb3e06dc89da40286807a984f99381ae7f3e93e4c14e7657be6abd02"
+    },
+    {
+      "path": "src/mock-log_test.cc",
+      "sha256": "e04ccd9d5f2806a1c0beba77a45de6f1e13452432b119afc80904f489b48b022"
+    },
+    {
+      "path": "src/raw_logging.cc",
+      "sha256": "e7ca16791d1093ef8fcf0290524abcfacbc02ada22daf9ed9b294831b8fa14e1"
+    },
+    {
+      "path": "src/signalhandler.cc",
+      "sha256": "7d0ee08845f7b6614446348045235a265909f6ad26604221612fe20adae858e0"
+    },
+    {
+      "path": "src/signalhandler_unittest.cc",
+      "sha256": "b1fd08501bfa1366c9c495ace87a302f5e2cc547843a16be62f6f27091709b27"
+    },
+    {
+      "path": "src/signalhandler_unittest.sh",
+      "sha256": "f249f8fc75b9eb43ecf43501e924f42aa63f4a0ee8e87f2828658452ca15ac01"
+    },
+    {
+      "path": "src/stacktrace.h",
+      "sha256": "011fc9815ae3de6288c179878a9f294c75610c03d89d95eb25fba7a4f0ab9e3c"
+    },
+    {
+      "path": "src/stacktrace_generic-inl.h",
+      "sha256": "3b710222521197887ced5d9d797831c5f0ea9480c54c01fc1c485d4c0bf51c03"
+    },
+    {
+      "path": "src/stacktrace_libunwind-inl.h",
+      "sha256": "93167cc49624c582d4035989d211f9ac4cf03aaa7f02f8b4c6129c9cd2e3ea8d"
+    },
+    {
+      "path": "src/stacktrace_powerpc-inl.h",
+      "sha256": "d45b2c64b900cbc8281e3206097081e7fa82e6868a0e427bf2332efe87b25f39"
+    },
+    {
+      "path": "src/stacktrace_unittest.cc",
+      "sha256": "f4b854bf35b9210b88e3ffdb1d5646637c538913a61c276f37cdf4f85f8337e6"
+    },
+    {
+      "path": "src/stacktrace_windows-inl.h",
+      "sha256": "24a3636673eb84b03408fc6d6e9570fa0a444aa4fbeca7cd7f72b36304f1e331"
+    },
+    {
+      "path": "src/stacktrace_x86-inl.h",
+      "sha256": "2a0cf937917303048dc349f52d4c355a493969ad24301437d957b30190e4d3f3"
+    },
+    {
+      "path": "src/stacktrace_x86_64-inl.h",
+      "sha256": "5f3ae7f4a806f989c567e1a5e1ba4c59e6c072caf0afaa59b2ae78b43da3c823"
+    },
+    {
+      "path": "src/stl_logging_unittest.cc",
+      "sha256": "8d3a7e7e3ec7cc372835663dc48606eb6afaf40e6bb88557f8dad9a4990c2c12"
+    },
+    {
+      "path": "src/symbolize.cc",
+      "sha256": "368930bf13839ad245fea9f85e69ce2c372784fcc6377c4000047e2271c73385"
+    },
+    {
+      "path": "src/symbolize.h",
+      "sha256": "5d864cdeebcdef528044592154a928bd17d251e7cb3ad5aa31d8ac368d7c20bb"
+    },
+    {
+      "path": "src/symbolize_unittest.cc",
+      "sha256": "14c64852f082b45830500122cbf354628e6c0b918350b759f585ead4006b48cc"
+    },
+    {
+      "path": "src/utilities.cc",
+      "sha256": "1d519422511344ba056081155d02adce38949c98f3075ccaee862a67cd75850d"
+    },
+    {
+      "path": "src/utilities.h",
+      "sha256": "bb569db3fcadab92c4916bdf2873297f329e8988585bac76cfec8c0db3212074"
+    },
+    {
+      "path": "src/utilities_unittest.cc",
+      "sha256": "05c5ca538010c0b0cad056d8648f5b1f76d60bfbe2e633017c4915c0c677e167"
+    },
+    {
+      "path": "src/vlog_is_on.cc",
+      "sha256": "be1ee9e10350b9f18aec152572244775d839b1b1b8297f87b5ab2bc360c3d8fb"
+    },
+    {
+      "path": "src/windows/config.h",
+      "sha256": "9fe2057b56423f586b73899a94287c8035c966658479f3b2beb905e7f834f5f3"
+    },
+    {
+      "path": "src/windows/glog/log_severity.h",
+      "sha256": "bed5bff0811cb45243f8ab0fd4361eff972af41c56e93b9d287b0b298abb74c3"
+    },
+    {
+      "path": "src/windows/glog/logging.h",
+      "sha256": "baf4eefa363934b69fb34efe06f6683cdecfd9b3ba7224d2371bcdac1210d822"
+    },
+    {
+      "path": "src/windows/glog/raw_logging.h",
+      "sha256": "88f3675fb9caef4629350d1e246fc9fb7c3382675dbf0a07af1f41a1c28c7825"
+    },
+    {
+      "path": "src/windows/glog/stl_logging.h",
+      "sha256": "85aba4cda69771f259a5bcf81b0c7a69c4257905085e22d6ae897d3826b9023c"
+    },
+    {
+      "path": "src/windows/glog/vlog_is_on.h",
+      "sha256": "fb79a24f00004c33c6f27c8f3c2c06e143b001a9eecc08844708a8dc5a4c5c89"
+    },
+    {
+      "path": "src/windows/port.cc",
+      "sha256": "dfb47bbe70e17334b12e054e2deb556457e8c3184539f1783f4f7bf4582aad2e"
+    },
+    {
+      "path": "src/windows/port.h",
+      "sha256": "b4881966bc33a6b4a649209a3d6e42724bdcfceca5fed4576bf2e76a85cdfdb9"
+    },
+    {
+      "path": "src/windows/preprocess.sh",
+      "sha256": "38ac36e71c20113d9d68a5a827ac68874073c0aceb2065fdcfed07a753989300"
+    },
+    {
+      "path": "toolchains/.gitignore",
+      "sha256": "dcbcef0a04c9254ab575b7a4cfca586704338edc66a57fbe671726aecfb634de"
+    },
+    {
+      "path": "toolchains/clang-cxx17.cmake",
+      "sha256": "7a9c1519cbcff76976b8b9cdb83567bfd70327e15642b49e5291482451d2d2f0"
+    },
+    {
+      "path": "toolchains/gcc-cxx11.cmake",
+      "sha256": "506f89b8f8c4a47b51b73c24a16931b76ee31120f7bc60716a0d32818919b48a"
+    },
+    {
+      "path": "toolchains/gcc-cxx17.cmake",
+      "sha256": "22ffdf0e91c9cf08131c838167206c3bc4f87f4544afd66f75010addbe35a335"
+    },
+    {
+      "path": "toolchains/gcc-cxx98.cmake",
+      "sha256": "99f3a4381476fe4b49e23a4df459ee3a3e508a7abd78c3fa5c4ff10be948fedf"
+    },
+    {
+      "path": "toolchains/gcc-gnuxx11.cmake",
+      "sha256": "05a06c679013df167684759b991cde4746e8dc20a71da1c3c66a3ed8e18d4033"
+    },
+    {
+      "path": "toolchains/linux-mingw-w64-cxx11.cmake",
+      "sha256": "02c16eefd471f8b6ca9188ae48638b241606adbe43b079080971743809be5806"
+    },
+    {
+      "path": "toolchains/linux-mingw-w64-cxx17.cmake",
+      "sha256": "69255c3fa7050d3114b4f3eaee81d3957abc947b787308a671b41333f4d83917"
+    },
+    {
+      "path": "toolchains/linux-mingw-w64-gnuxx11.cmake",
+      "sha256": "d00d8bad51e28df1b7f6a5e43963af7ef8cedd97776a31b8eedb615347117de6"
+    },
+    {
+      "path": "toolchains/mingw-cxx11.cmake",
+      "sha256": "56a992d1e1abfff56379ce0e6ac9c9a9bc12f140e8e93d06456ec46810c0bfc6"
+    },
+    {
+      "path": "toolchains/mingw-cxx17.cmake",
+      "sha256": "f59ff9673529d439cccd12ab6ba056bb18249ded01de41ee5bf5d6540e0fa94a"
+    },
+    {
+      "path": "toolchains/mingw-gnuxx11.cmake",
+      "sha256": "24d0e7d21b3e0919a05b0b4217d482142ee97bccd7f2a4f8516ca0263eaab700"
+    },
+    {
+      "path": "toolchains/vs-14-2015-sdk-8-1.cmake",
+      "sha256": "4b6a415d53c067be1032e35e951fb3ccc8cb30de3fd8bf5fc5e1b1f9ccfe73a4"
+    },
+    {
+      "path": "toolchains/vs-14-2015-win64.cmake",
+      "sha256": "8433e997c93fbab459f0c5de2e85b4d472de7a0229df564c4d330741a288b846"
+    },
+    {
+      "path": "toolchains/vs-15-2017-win64-cxx17.cmake",
+      "sha256": "622dd14516001c7eb5b3d74a7d791d0374129de56f09c3378d6fe72dbeb8e9d7"
+    },
+    {
+      "path": "toolchains/vs-15-2017-win64.cmake",
+      "sha256": "8433e997c93fbab459f0c5de2e85b4d472de7a0229df564c4d330741a288b846"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+--- a/src/dds.imageio/ddsinput.cpp
++++ b/src/dds.imageio/ddsinput.cpp
+@@ -699,7 +699,7 @@
+         if (m_dds.mipmaps < 2) {
+             if (j > 0) {
+                 if (m_compression != Compression::None)
+-                    len = GetStorageRequirements(w, h, m_compression);
++                    len = GetStorageRequirements(w, h, m_compression) * d;
+                 else
+                     len = w * h * d * m_Bpp;
+                 ofs += len;
+@@ -711,7 +711,7 @@
+         int seekLevel = (j == cubeface) ? miplevel : m_dds.mipmaps;
+         for (int i = 0; i < seekLevel; i++) {
+             if (m_compression != Compression::None)
+-                len = GetStorageRequirements(w, h, m_compression);
++                len = GetStorageRequirements(w, h, m_compression) * d;
+             else
+                 len = w * h * d * m_Bpp;
+             ofs += len;
+@@ -786,7 +786,7 @@
+         internal_seek_subimage(0, miplevel, w, h, d);
+         // create imagespec
+         m_spec       = ImageSpec(w, h, m_nchans, basetype);
+-        m_spec.depth = d;
++        m_spec.depth = m_spec.full_depth = d;
+     }
+ 
+     // fill the imagespec
+@@ -862,6 +862,11 @@
+     // detect texture type
+     if (m_dds.caps.flags2 & DDS_CAPS2_VOLUME) {
+         m_spec.attribute("textureformat", "Volume Texture");
++        // Because we don't support reading scanlines from volume textures,
++        // pretend it's tiled with width x 1 x 1 tiles.
++        m_spec.tile_width  = m_spec.width;
++        m_spec.tile_height = 1;
++        m_spec.tile_depth  = 1;
+     } else if (m_dds.caps.flags2 & DDS_CAPS2_CUBEMAP) {
+         m_spec.attribute("textureformat", "CubeFace Environment");
+         // check available cube map sides
+@@ -940,27 +945,29 @@
+         // create source buffer
+         size_t bufsize = GetStorageRequirements(w, h, m_compression);
+         std::unique_ptr<uint8_t[]> tmp(new uint8_t[bufsize]);
+-        // load image into buffer
+-        if (!ioread(tmp.get(), bufsize, 1))
+-            return false;
+-        // decompress image
+-        DecompressImage(dst, int(w), int(h), tmp.get(), m_compression,
+-                        m_dds.fmt, threads());
+-        tmp.reset();
+-        // correct pre-multiplied alpha, if necessary
+-        if (m_compression == Compression::DXT2
+-            || m_compression == Compression::DXT4) {
+-            size_t k;
+-            for (size_t y = 0; y < h; y++) {
+-                for (size_t x = 0; x < w; x++) {
+-                    k = (y * w + x) * 4;
+-                    if (dst[k + 3]) {
+-                        dst[k + 0] = (unsigned char)((int)dst[k + 0] * 255
+-                                                     / (int)dst[k + 3]);
+-                        dst[k + 1] = (unsigned char)((int)dst[k + 1] * 255
+-                                                     / (int)dst[k + 3]);
+-                        dst[k + 2] = (unsigned char)((int)dst[k + 2] * 255
+-                                                     / (int)dst[k + 3]);
++        // BCn blocks represent 2D slices. A volume has d consecutive slices;
++        // account for native channel count and HALF storage for BC6H.
++        const size_t plane_bytes = w * h * m_spec.pixel_bytes(true);
++        for (size_t z = 0; z < d; ++z) {
++            if (!ioread(tmp.get(), bufsize, 1))
++                return false;
++            unsigned char* plane = dst + z * plane_bytes;
++            DecompressImage(plane, int(w), int(h), tmp.get(), m_compression,
++                            m_dds.fmt, threads());
++            // Correct pre-multiplied alpha separately for every slice.
++            if (m_compression == Compression::DXT2
++                || m_compression == Compression::DXT4) {
++                for (size_t y = 0; y < h; ++y) {
++                    for (size_t x = 0; x < w; ++x) {
++                        size_t k = (y * w + x) * 4;
++                        if (plane[k + 3]) {
++                            plane[k + 0] = (unsigned char)((int)plane[k + 0] * 255
++                                                           / (int)plane[k + 3]);
++                            plane[k + 1] = (unsigned char)((int)plane[k + 1] * 255
++                                                           / (int)plane[k + 3]);
++                            plane[k + 2] = (unsigned char)((int)plane[k + 2] * 255
++                                                           / (int)plane[k + 3]);
++                        }
+                     }
+                 }
+             }
+@@ -981,7 +988,7 @@
+             }
+         }
+         if (direct) {
+-            return ioread(dst, w * m_Bpp, h);
++            return ioread(dst, w * m_Bpp, h * d);
+         }
+ 
+         std::unique_ptr<uint8_t[]> tmp(new uint8_t[w * m_Bpp]);
+@@ -1054,8 +1061,10 @@
+     // don't proceed if a cube map - use tiles then instead
+     if (m_dds.caps.flags2 & DDS_CAPS2_CUBEMAP)
+         return false;
+-    if (m_buf.empty())
+-        readimg_scanlines();
++    if (m_buf.empty() && !readimg_scanlines()) {
++        m_buf.clear();
++        return false;
++    }
+ 
+     size_t size   = spec().scanline_bytes();
+     size_t offset = size_t(z) * m_spec.height * size + size_t(y) * size;
+@@ -1073,12 +1082,33 @@
+     if (!seek_subimage(subimage, miplevel))
+         return false;
+ 
++    // don't proceed if not tiled
++    if (m_spec.tile_width == 0)
++        return false;
++
++    if (m_dds.caps.flags2 & DDS_CAPS2_VOLUME) {
++        // This is a 3D volume file. For DDS files, we are emulating tiles,
++        // with each scanline as a tile.
++        // We reported scanlines as tiles, so x must be 0 and y/z in range.
++        if (x != 0 || y < 0 || y >= m_spec.height || z < 0 || z >= m_spec.depth) {
++            errorfmt("DDS volume tile coordinate ({}, {}, {}) is out of range", x, y, z);
++            return false;
++        }
++        if (m_buf.empty() && !readimg_scanlines()) {
++            m_buf.clear();
++            return false;
++        }
++        size_t size   = spec().scanline_bytes();
++        size_t offset = size * (size_t(z) * size_t(m_spec.height) + y);
++        if (offset + size > m_buf.size())  // Bounds check
++            return false;
++        memcpy(data, m_buf.data() + offset, size);
++        return true;
++    }
++
+     // static ints to keep track of the current cube face and re-seek and
+     // re-read face
+     static int lastx = -1, lasty = -1, lastz = -1;
+-    // don't proceed if not a cube map - use scanlines then instead
+-    if (!(m_dds.caps.flags2 & DDS_CAPS2_CUBEMAP))
+-        return false;
+     // make sure we get the right dimensions
+     if (x % m_spec.tile_width || y % m_spec.tile_height
+         || z % m_spec.tile_width)
+--- a/src/libOpenImageIO/imageinput.cpp
++++ b/src/libOpenImageIO/imageinput.cpp
+@@ -691,9 +691,9 @@
+         return false;
+ 
+     // Default implementation (for now): call the old pointer+stride
+-    return read_tiles(subimage, miplevel, ybegin, yend, xbegin, xend, zbegin,
++    return read_tiles(subimage, miplevel, xbegin, xend, ybegin, yend, zbegin,
+                       zend, chbegin, chend, format, data.data(),
+-                      data.xstride());
++                      data.xstride(), data.ystride(), data.zstride());
+ }
+ 
+ 
+--- a/src/build-scripts/OpenImageIO.pc.in
++++ b/src/build-scripts/OpenImageIO.pc.in
+@@ -1,4 +1,4 @@
+-prefix=@CMAKE_INSTALL_PREFIX@
++prefix=${pcfiledir}/../..
+ exec_prefix=${prefix}
+ libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+ includedir=${prefix}/include
+@@ -7,4 +7,7 @@
+ Description: OpenImageIO is a library for reading and writing images.
+ Version: @PROJECT_VERSION_MAJOR@.@PROJECT_VERSION_MINOR@.@PROJECT_VERSION_PATCH@.@PROJECT_VERSION_TWEAK@
+ Libs: -L${libdir} -lOpenImageIO -lOpenImageIO_Util
+-Cflags: -I${includedir}
++# Explicit native static dependency closure, selected from this build's real targets.
++Requires.private: @OHOS_STATIC_PC_REQUIRES@
++Libs.private: @OHOS_STATIC_PC_LIBS@
++Cflags: -I${includedir} @OHOS_STATIC_PC_CFLAGS@
+--- a/src/cmake/Config.cmake.in
++++ b/src/cmake/Config.cmake.in
+@@ -9,7 +9,7 @@
+ # add here all the find_dependency() whenever switching to config based dependencies
+ if (NOT @OPENIMAGEIO_CONFIG_DO_NOT_FIND_IMATH@ AND NOT OPENIMAGEIO_CONFIG_DO_NOT_FIND_IMATH)
+     find_dependency(Imath @Imath_VERSION@
+-                    HINTS @Imath_DIR@)
++                    HINTS "${CMAKE_CURRENT_LIST_DIR}/../Imath")
+ endif ()
+ 
+ if (NOT @fmt_LOCAL_BUILD@ AND NOT @OIIO_INTERNALIZE_FMT@)
+@@ -20,8 +20,27 @@
+     # This is required in static library builds, as e.g. PNG::PNG appears among
+     # INTERFACE_LINK_LIBRARIES. If the project does not know about PNG target, it will cause
+     # configuration error about unknown targets being linked in.
++    find_dependency(Threads)
++    find_dependency(OpenEXR)
+     find_dependency(TIFF)
+     find_dependency(OpenColorIO)
++    if (@OpenJPEG_FOUND@)
++        find_dependency(OpenJPEG CONFIG)
++    endif ()
++    if (@openjph_FOUND@)
++        find_dependency(openjph CONFIG)
++    endif ()
++    if (@WebP_FOUND@)
++        find_dependency(WebP CONFIG)
++    endif ()
++    if (@USE_EXTERNAL_PUGIXML@ AND @pugixml_FOUND@)
++        find_dependency(pugixml CONFIG)
++        # Blender pins pugixml 1.10, whose real config exports the plain target.
++        # Match the compatibility target used by OIIO's own Findpugixml module.
++        if (TARGET pugixml AND NOT TARGET pugixml::pugixml)
++            add_library(pugixml::pugixml ALIAS pugixml)
++        endif ()
++    endif ()
+     if (@JPEG_FOUND@)
+         find_dependency(JPEG)
+     endif()
+@@ -41,12 +60,10 @@
+ # Compute the installation prefix relative to this file. Note that cmake files are installed
+ # to ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME} (see OIIO_CONFIG_INSTALL_DIR)
+ get_filename_component(_CURR_INSTALL_LIBDIR "${CMAKE_CURRENT_LIST_DIR}/../../" ABSOLUTE)
+-get_filename_component(_ABS_CMAKE_INSTALL_LIBDIR "@CMAKE_INSTALL_FULL_LIBDIR@" ABSOLUTE)
+-get_filename_component(_ABS_CMAKE_INSTALL_INCLUDEDIR "@CMAKE_INSTALL_FULL_INCLUDEDIR@" ABSOLUTE)
+-file(RELATIVE_PATH _INCLUDEDIR_RELATIVE_TO_LIBDIR
+-     "${_ABS_CMAKE_INSTALL_LIBDIR}" "${_ABS_CMAKE_INSTALL_INCLUDEDIR}")
++# This native recipe deliberately fixes lib/include as relative install dirs.
++# Do not retain the build machine's private prefix in an exported config.
+ get_filename_component(_CURR_INSTALL_INCLUDE_DIR
+-                       "${_CURR_INSTALL_LIBDIR}/${_INCLUDEDIR_RELATIVE_TO_LIBDIR}" ABSOLUTE)
++                       "${CMAKE_CURRENT_LIST_DIR}/../../../@CMAKE_INSTALL_INCLUDEDIR@" ABSOLUTE)
+ 
+ set_and_check (@PROJECT_NAME@_INCLUDE_DIR "${_CURR_INSTALL_INCLUDE_DIR}")
+ set_and_check (@PROJECT_NAME@_INCLUDES    "${_CURR_INSTALL_INCLUDE_DIR}")
+--- a/src/png.imageio/CMakeLists.txt
++++ b/src/png.imageio/CMakeLists.txt
+@@ -3,10 +3,14 @@
+ # https://github.com/AcademySoftwareFoundation/OpenImageIO
+ 
+ if (PNG_TARGET OR PNG_LIBRARIES)
++    set(_PNG_LINK ${PNG_LIBRARIES})
++    if (PNG_TARGET)
++        set(_PNG_LINK ${PNG_TARGET})
++    endif ()
+     add_oiio_plugin (pnginput.cpp pngoutput.cpp
+                      INCLUDE_DIRS ${PNG_INCLUDE_DIRS}
+                      DEFINITIONS ${PNG_DEFINITIONS}
+-                     LINK_LIBRARIES ${PNG_LIBRARIES} ${PNG_TARGET} ZLIB::ZLIB)
++                     LINK_LIBRARIES ${_PNG_LINK} ZLIB::ZLIB)
+ else ()
+     message (WARNING "libpng not found, so PNG support will not work")
+     set (format_plugin_definitions ${format_plugin_definitions} DISABLE_PNG=1 PARENT_SCOPE)
+--- a/src/ico.imageio/CMakeLists.txt
++++ b/src/ico.imageio/CMakeLists.txt
+@@ -6,7 +6,7 @@
+     add_oiio_plugin (icoinput.cpp icooutput.cpp
+                      INCLUDE_DIRS ${PNG_INCLUDE_DIRS}
+                      DEFINITIONS ${PNG_DEFINITIONS}
+-                     LINK_LIBRARIES ${PNG_LIBRARIES} ${PNG_TARGET} ZLIB::ZLIB)
++                     LINK_LIBRARIES ${PNG_TARGET} ZLIB::ZLIB)
+ else ()
+     message (WARNING "libpng not found, so ICO support will not work")
+     set (format_plugin_definitions ${format_plugin_definitions} DISABLE_ICO=1 PARENT_SCOPE)

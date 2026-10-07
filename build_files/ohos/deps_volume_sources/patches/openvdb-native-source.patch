@@ -1,0 +1,12 @@
+--- a/openvdb/openvdb/CMakeLists.txt
++++ b/openvdb/openvdb/CMakeLists.txt
+@@ -161,6 +161,9 @@
+     endif()
+   endif()
+ endif()
++
++# Retained applicable Blender recipe definitions (Windows/Python-only hunks are not used).
++add_compile_definitions(__TBB_NO_IMPLICIT_LINKAGE OPENVDB_OPENEXR_STATICLIB)
+ 
+ if(USE_BLOSC)
+   # Find Blosc libraries

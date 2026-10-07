@@ -1,0 +1,26 @@
+{
+  "name": "vulkan-utility",
+  "version": "1.4.341",
+  "kind": "source",
+  "filename": "vulkan-utility-v1.4.341.tar.gz",
+  "url": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/v1.4.341.tar.gz",
+  "license": "Apache-2.0",
+  "license_files": [
+    "LICENSE.md",
+    "LICENSES/Apache-2.0.txt"
+  ],
+  "upstream_repository": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries",
+  "tag": "refs/tags/v1.4.341",
+  "commit": "a663eca87ba71294dd4b74ba9d3e64a72d725453",
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 1517782,
+  "sha256": "066e9d0eb098f6cb3aa80585ae57757ae2c56bc6dbdd5990f6b3bc1c778b9a42",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 1517782,
+      "sha256": "066e9d0eb098f6cb3aa80585ae57757ae2c56bc6dbdd5990f6b3bc1c778b9a42"
+    }
+  ]
+}

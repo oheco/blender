@@ -1,0 +1,22 @@
+{
+  "name": "robinmap",
+  "version": "v1.3.0",
+  "kind": "source",
+  "filename": "robinmap-v1.3.0.tar.gz",
+  "url": "https://github.com/Tessil/robin-map/archive/refs/tags/v1.3.0.tar.gz",
+  "license": "SPDX:MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 70562,
+  "sha256": "a8424ad3b0affd4c57ed26f0f3d8a29604f0e1f2ef2089f497f614b1c94c7236",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 70562,
+      "sha256": "a8424ad3b0affd4c57ed26f0f3d8a29604f0e1f2ef2089f497f614b1c94c7236"
+    }
+  ]
+}

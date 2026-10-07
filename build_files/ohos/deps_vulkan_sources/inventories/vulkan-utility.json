@@ -1,0 +1,422 @@
+{
+  "source_archive_sha256": "066e9d0eb098f6cb3aa80585ae57757ae2c56bc6dbdd5990f6b3bc1c778b9a42",
+  "archive_root": "Vulkan-Utility-Libraries-1.4.341",
+  "git_commit": "a663eca87ba71294dd4b74ba9d3e64a72d725453",
+  "files": [
+    {
+      "path": ".clang-format",
+      "size": 320,
+      "sha256": "3401a22ec43430c6c753b13b153ba0b566cbbd75da4278234b3a038f64ea1efd"
+    },
+    {
+      "path": ".gitattributes",
+      "size": 514,
+      "sha256": "d9fef889dcb06c7e7eaac40cce3f6edebd8351cbc2634ef24325c7a66f82c1c5"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "size": 232,
+      "sha256": "c392e1b071a11d7e8d908c41b22861ab202d4ff427d3f6ba58a0e5331f79b0d2"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "size": 3818,
+      "sha256": "0abc0b0a923cd745969947d16c4c7c2d6a94f7b80891d0529a0197e3e1af92ed"
+    },
+    {
+      "path": ".github/workflows/format.yml",
+      "size": 693,
+      "sha256": "e2daba85c0291db32eeca14bc3483f2a4f1734e1676e74559d47902636799bed"
+    },
+    {
+      "path": ".gitignore",
+      "size": 360,
+      "sha256": "9445fc5a9ccf6014026295d778d161c9677322be902299521858d3fec49817cb"
+    },
+    {
+      "path": ".reuse/dep5",
+      "size": 417,
+      "sha256": "efef4c10e4022bd72c65947434b06cb96aea77aae75712a9b96a7a4a7ef4e2ed"
+    },
+    {
+      "path": "BUILD.gn",
+      "size": 1429,
+      "sha256": "d60ef77ad1c1b4da7479f5c1bc1c5446200be396cdc3d234d03818567cbf50c8"
+    },
+    {
+      "path": "BUILD.md",
+      "size": 1501,
+      "sha256": "2a98d250717a7a8af0ec30297feab8ab10837b165ee4e60ab1cfdfc4082a77af"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "size": 4127,
+      "sha256": "05aae86afd72b02bac6e82bda2d5960fc692222cfab0fc5812cfa070ccef6943"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "size": 426,
+      "sha256": "2d05e796249e7c8ef5e6f41a56381952021b0a6ff701011555c4be2f6e0da8d9"
+    },
+    {
+      "path": "LICENSE.md",
+      "size": 304,
+      "sha256": "69760673abf91cfd0280ae73739a29c078f493804d9016a122b3b189b48ad6e6"
+    },
+    {
+      "path": "LICENSES/Apache-2.0.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "README.md",
+      "size": 2079,
+      "sha256": "c59f12a6e2ac2afcf6dde9d8c9e5092392f66a4026bb776b03e873ded8c92520"
+    },
+    {
+      "path": "docs/Configuring-Vulkan-Layers-Whitepaper.pdf",
+      "size": 1020570,
+      "sha256": "f2d23fc5164ae3c3fdeb2291a2374f0d233d654b869356ec9b9829ff280f18c2"
+    },
+    {
+      "path": "docs/generated_code.md",
+      "size": 871,
+      "sha256": "ffbaa473c2a3c61f5937782a2c61110f10a9446d2d1ba44bfefefc8bcf355724"
+    },
+    {
+      "path": "docs/layer_configuration.md",
+      "size": 23238,
+      "sha256": "c1f2e925e554a5cdc37a6d89bb3fc97293b0d46bae5f1395a699e6152ca42a9a"
+    },
+    {
+      "path": "include/CMakeLists.txt",
+      "size": 1451,
+      "sha256": "4fed429c5604735ac59ce36f1c446c53b23b5449fe18d03c747f64068f96dc00"
+    },
+    {
+      "path": "include/vulkan/layer/vk_layer_settings.h",
+      "size": 3642,
+      "sha256": "437c864cdb447de492b7425da26d610770a090199e792df9fb93299bec387d79"
+    },
+    {
+      "path": "include/vulkan/layer/vk_layer_settings.hpp",
+      "size": 3422,
+      "sha256": "25f5d304e6d47c1aa788dd1da25d2fe6af4d4f9e223b9d65b7bc329c7f7a6f10"
+    },
+    {
+      "path": "include/vulkan/utility/vk_concurrent_unordered_map.hpp",
+      "size": 6793,
+      "sha256": "1f7e600ebe38f833fb99c5441cd40d54ad146c84ebc9b3c926f131c750a0e8fd"
+    },
+    {
+      "path": "include/vulkan/utility/vk_dispatch_table.h",
+      "size": 150645,
+      "sha256": "3954249d78549fed412658afcb0366aef2f9086a7681bba1422855a44f55216a"
+    },
+    {
+      "path": "include/vulkan/utility/vk_format_utils.h",
+      "size": 138915,
+      "sha256": "bdeb4cb113d8145e9b1084cdfb6b3df4fb4e5a11d98b85db8c898502e245110a"
+    },
+    {
+      "path": "include/vulkan/utility/vk_safe_struct.hpp",
+      "size": 1488358,
+      "sha256": "dd3d34c16dc798d4c5e7c45cbe1cb1158fb9ea25c36f1c495710bc104d58f8f6"
+    },
+    {
+      "path": "include/vulkan/utility/vk_safe_struct_utils.hpp",
+      "size": 4464,
+      "sha256": "f0a9841c556ccdd5773aa6ca935c24ce0ad2cca9cad323b56c27e9a41f8e6160"
+    },
+    {
+      "path": "include/vulkan/utility/vk_small_containers.hpp",
+      "size": 24460,
+      "sha256": "8a7752668228b254fafb3a5b13d139bf0155e95a2c8da40a5727cc797b5ea134"
+    },
+    {
+      "path": "include/vulkan/utility/vk_sparse_range_map.hpp",
+      "size": 89911,
+      "sha256": "e391c16df50cd12780a428b5ecd05b7690d86c1c41df6ac0ebfc0595c4742ed8"
+    },
+    {
+      "path": "include/vulkan/utility/vk_struct_helper.hpp",
+      "size": 191503,
+      "sha256": "596d388df414bd40f8545ffa5073a89c8aaa1cb245c12c44de2a052500aa165c"
+    },
+    {
+      "path": "include/vulkan/vk_enum_string_helper.h",
+      "size": 772205,
+      "sha256": "4de1ebddf2c69ab4dfa1c62dddedc0ea609e907cc43b2e5ef0568d1ad1e5b651"
+    },
+    {
+      "path": "scripts/CMakeLists.txt",
+      "size": 5289,
+      "sha256": "7e065fcd51dd7381f8c593d3d1cfcf6a25b20e6386219dbd541a508637628b26"
+    },
+    {
+      "path": "scripts/common_ci.py",
+      "size": 1760,
+      "sha256": "ae4388b478219f88ddfe1331aebe65a0586cb9dd4acd486cb405f18b4331bcf6"
+    },
+    {
+      "path": "scripts/generate_source.py",
+      "size": 7736,
+      "sha256": "df216bb48c37f2fd4c3eb2bb70e476ae1b07f1671fde711db1da65a8c1757d35"
+    },
+    {
+      "path": "scripts/generators/dispatch_table_generator.py",
+      "size": 3675,
+      "sha256": "d366a485364ba8465512c887bfca9506887f7b56029f12c45e23dd6e7e73f906"
+    },
+    {
+      "path": "scripts/generators/enum_string_helper_generator.py",
+      "size": 5755,
+      "sha256": "ae9a55e4a7e9cc7a50aab4abf9d330402f2c48fb6635ccbba8e1d6f2720203ad"
+    },
+    {
+      "path": "scripts/generators/format_utils_generator.py",
+      "size": 33286,
+      "sha256": "33b42a588a9910891ddbde08a28958ed4c30e79f1983fa7054e95e3a69178c1c"
+    },
+    {
+      "path": "scripts/generators/generator_utils.py",
+      "size": 5330,
+      "sha256": "d3b72e35c5de6b1179b42d6292f8c1a961e978131e49c212fd6c59f14417670f"
+    },
+    {
+      "path": "scripts/generators/safe_struct_generator.py",
+      "size": 42736,
+      "sha256": "679019769c5c76f23e6a33521ad7d5fa57aef0968806cbd46c26b85ca1f60782"
+    },
+    {
+      "path": "scripts/generators/struct_helper_generator.py",
+      "size": 5121,
+      "sha256": "c80df850adca2b35b1941de10bd40da3b35d00d5208542a550a38508cecc11ef"
+    },
+    {
+      "path": "scripts/gn/DEPS",
+      "size": 1676,
+      "sha256": "9d346d9cd333529209d939309b3219be80291f64d7fdf947509be11429b38529"
+    },
+    {
+      "path": "scripts/gn/gn.py",
+      "size": 1775,
+      "sha256": "ecada5bc9b32a8a6950d3c797f83ba30806b2f6d9c056c4464fff596bb4f8bee"
+    },
+    {
+      "path": "scripts/gn/secondary/build_overrides/build.gni",
+      "size": 274,
+      "sha256": "7150940d5854565e112c9cabe0c2e83ca4410999a1d930e47dcca8b710bcd3f6"
+    },
+    {
+      "path": "scripts/gn/secondary/build_overrides/vulkan_headers.gni",
+      "size": 168,
+      "sha256": "f3b173f0ea81fbb4856516498927e27e334fc064f1312f00d35e5a66c83d0ee1"
+    },
+    {
+      "path": "scripts/gn/secondary/build_overrides/vulkan_utility_libraries.gni",
+      "size": 195,
+      "sha256": "016da5e06dd94d082b4ada4b6592a2976c5f6f262f5762b625534b9f0ea09512"
+    },
+    {
+      "path": "scripts/gn/stub.cpp",
+      "size": 757,
+      "sha256": "e23f4867ed1f66a1b56854345fc6d4493c9142278f11310a85dfcfdeb605ebe6"
+    },
+    {
+      "path": "scripts/gn/update_deps.sh",
+      "size": 909,
+      "sha256": "b79851867730870c32b8f861b4a9f145e2421373cabfec64e05ed38fcd4a6711"
+    },
+    {
+      "path": "scripts/known_good.json",
+      "size": 1571,
+      "sha256": "327d560e8cf5643c1859f7d3a101eafe4b308e561dbaef70a4aa2697588e120e"
+    },
+    {
+      "path": "scripts/update_deps.py",
+      "size": 28798,
+      "sha256": "6b1faecca378d12ac1059170bcabc1a873ffdadffeda587b674807701f06ca6c"
+    },
+    {
+      "path": "src/CMakeLists.txt",
+      "size": 3715,
+      "sha256": "da8b4242c64cc42f8419264da238af843cf0f6c6cf86ce5115ae51613aac8aa4"
+    },
+    {
+      "path": "src/layer/CMakeLists.txt",
+      "size": 644,
+      "sha256": "65a09de8a2ee52039e38c2da20fc4260aea1f5bc71e8c2925db920e0ee112444"
+    },
+    {
+      "path": "src/layer/layer_settings_manager.cpp",
+      "size": 13268,
+      "sha256": "d36b8b9e35fabe5c64399da264deb5b80799eee0b79f6cb46e0ce4152b55eac4"
+    },
+    {
+      "path": "src/layer/layer_settings_manager.hpp",
+      "size": 1909,
+      "sha256": "ac951ede30f33f5c45f39680a98e0c8344c807ea164e75eaac67079ff5197981"
+    },
+    {
+      "path": "src/layer/layer_settings_util.cpp",
+      "size": 8225,
+      "sha256": "dc42b74f1283363eec3fad0e0e1add439d076e1abb4cb0220c68900c17c2ff17"
+    },
+    {
+      "path": "src/layer/layer_settings_util.hpp",
+      "size": 1807,
+      "sha256": "775297894c57626f1e83f8b68b85cac91f6d413b077946cf494c8f46b4ccf64d"
+    },
+    {
+      "path": "src/layer/vk_layer_settings.cpp",
+      "size": 35022,
+      "sha256": "b0292932e996e65d43f8c9006c459fd63570607fc4254112ac306cbbc09925b4"
+    },
+    {
+      "path": "src/layer/vk_layer_settings_helper.cpp",
+      "size": 12142,
+      "sha256": "348a5b77a185980e98ed50a11d29b0a4536d3086a377ce5ac26d631f2a7704c1"
+    },
+    {
+      "path": "src/vulkan/CMakeLists.txt",
+      "size": 783,
+      "sha256": "7e96e62b0a7b9146623f00d100e6a670a20c4a5417036e265159e6cd900e4811"
+    },
+    {
+      "path": "src/vulkan/vk_safe_struct_core.cpp",
+      "size": 1022487,
+      "sha256": "492b166c10b401a2cb70c4922adc4532b7784c943a449ad6fd733a49a972fdb5"
+    },
+    {
+      "path": "src/vulkan/vk_safe_struct_ext.cpp",
+      "size": 844004,
+      "sha256": "973c4d39dd31b97cbc40fdf7c72ac6734074ae87704d22df0307d9311450fe80"
+    },
+    {
+      "path": "src/vulkan/vk_safe_struct_khr.cpp",
+      "size": 844859,
+      "sha256": "759a26a240747b7d979a0b5cd49841f2836feef5d729c4150399a90297f21d1c"
+    },
+    {
+      "path": "src/vulkan/vk_safe_struct_manual.cpp",
+      "size": 86034,
+      "sha256": "021eef8861ad3f8f95d09629282ba2bfcd097bf78608acecf7cfbdf81e034138"
+    },
+    {
+      "path": "src/vulkan/vk_safe_struct_utils.cpp",
+      "size": 364727,
+      "sha256": "80e04793106f93a748f9a7307644e1b43206cd0a3b3746a3b94ce9a36fca3b53"
+    },
+    {
+      "path": "src/vulkan/vk_safe_struct_vendor.cpp",
+      "size": 1019399,
+      "sha256": "b9ac9ded1185a06337dde43406fb139cc831b33170dada7e0e14c5d741870b04"
+    },
+    {
+      "path": "tests/CMakeLists.txt",
+      "size": 2370,
+      "sha256": "f447155a1fb21db78f79769da0dbaffd9e2e363a7d35c7ed4b35ed342615b7c4"
+    },
+    {
+      "path": "tests/README.md",
+      "size": 1204,
+      "sha256": "d17e42157c2df99058de19e80231110d32904013bd4414203e649822e43b0e15"
+    },
+    {
+      "path": "tests/integration/CMakeLists.txt",
+      "size": 3742,
+      "sha256": "18bdc207ca012d87bcf6a175a28bccdb683aaa34bb5d4d506f108781c0c17333"
+    },
+    {
+      "path": "tests/integration/vk_dispatch_table.c",
+      "size": 908,
+      "sha256": "48095216b03f47fca3d10aaad7c0bed7a4fceb6f4862f510e8aac375888d20b1"
+    },
+    {
+      "path": "tests/integration/vk_enum_string_helper.c",
+      "size": 545,
+      "sha256": "13cf6aa61bd6e9678bda62d1e3beb99119687ed1cebd4a236a29d7536370d5f2"
+    },
+    {
+      "path": "tests/integration/vk_format_utils.c",
+      "size": 553,
+      "sha256": "f3dd70b370e56d22ddd989bf6981f6e6167ea3930762f78d9a80f75dffa50bb0"
+    },
+    {
+      "path": "tests/integration/vk_format_utils_2.c",
+      "size": 627,
+      "sha256": "43dff9574be9f5448c63114b2aef3759c989b987fc36cfc4c4575799ce86be09"
+    },
+    {
+      "path": "tests/integration/vk_layer_settings.c",
+      "size": 546,
+      "sha256": "eb425012dc3484c9d73f381cc10e8166bba789395dfbbfce0b3f7962ca164b72"
+    },
+    {
+      "path": "tests/safe_struct.cpp",
+      "size": 10192,
+      "sha256": "38489c4309ec5b26e5b6abf2945a6fb93d7d455266ee8b44ca751b34a6ebcef1"
+    },
+    {
+      "path": "tests/small_containers.cpp",
+      "size": 13644,
+      "sha256": "9427f96d0a6260ba73499e07a6f00cd6cbde4d9df0bad99a7d452d62de3c9683"
+    },
+    {
+      "path": "tests/sparse_range_map.cpp",
+      "size": 1242,
+      "sha256": "125b36d78b57fe9bc4ed02f6bf50628a0796a18e29fa6f352e947a08e157ec96"
+    },
+    {
+      "path": "tests/struct_helper.cpp",
+      "size": 5887,
+      "sha256": "cf45c42d4122595e4b8202dff9d6b9b918e5437dca686e10fe8f49d742a972d1"
+    },
+    {
+      "path": "tests/test_formats.cpp",
+      "size": 30792,
+      "sha256": "3a8cea8ecb99a38015ec7f5290826217c013919a20914823c493e84e7ba8a734"
+    },
+    {
+      "path": "tests/test_interface.cpp",
+      "size": 1851,
+      "sha256": "7030d7320870abf1267ce35f043f6b7b101948c9b70040fe69f9d304a160445d"
+    },
+    {
+      "path": "tests/test_setting_api.cpp",
+      "size": 25814,
+      "sha256": "031fdc51ac05478df07eff7bb4486f88ebb7594d3cba5fb1e08a3082ff82270c"
+    },
+    {
+      "path": "tests/test_setting_cast.cpp",
+      "size": 15610,
+      "sha256": "c31cc1f96a7639889834afe3b169f97831cccecab6629820a755b2d48da989c1"
+    },
+    {
+      "path": "tests/test_setting_cpp.cpp",
+      "size": 27841,
+      "sha256": "93ebffc07dc66f507e5d5d3cf489a99f0c515fe19c1b386b272851d174112b75"
+    },
+    {
+      "path": "tests/test_setting_env.cpp",
+      "size": 18537,
+      "sha256": "7297a333febfa8f8741de37119ab782d06d8f6b515a55e14d3bcdf0aaf6c6056"
+    },
+    {
+      "path": "tests/test_setting_file.cpp",
+      "size": 13346,
+      "sha256": "fd1d45d844c8deb03313a5059d725360c8c1f218df2f3444f8d47ef10d79acb0"
+    },
+    {
+      "path": "tests/test_setting_util.cpp",
+      "size": 28982,
+      "sha256": "465c435f7be7c25f7d7181bd0e4685b883a919f99d7f9f693d59a3a2d6b709c5"
+    },
+    {
+      "path": "tests/vk_enum_string_helper.cpp",
+      "size": 2855,
+      "sha256": "05d7659fe5832a02ae1728c8aceb766a51d2d5236c5dea176cff4c3e031b859e"
+    }
+  ]
+}

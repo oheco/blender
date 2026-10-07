@@ -1,0 +1,20 @@
+{
+  "name": "shaderc",
+  "version": "2025.4",
+  "kind": "source",
+  "filename": "shaderc-v2025.4.tar.gz",
+  "url": "https://github.com/google/shaderc/archive/v2025.4.tar.gz",
+  "license": "Apache-2.0",
+  "license_files": [
+    "LICENSE",
+    "kokoro/linux/license_check.sh",
+    "license-checker.cfg",
+    "third_party/LICENSE.glslang",
+    "third_party/LICENSE.spirv-tools"
+  ],
+  "upstream_repository": "https://github.com/google/shaderc",
+  "tag": "v2025.4",
+  "commit": "73743588fe9c39f2f1c780a087d94afac691a189",
+  "size": 228962,
+  "sha256": "8a89fb6612ace8954470aae004623374a8fc8b7a34a4277bee5527173b064faf"
+}

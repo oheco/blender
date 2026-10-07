@@ -1,0 +1,39 @@
+{
+  "source": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/sources/llvm-project-20.1.8.src",
+  "build": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/build-llvm20-sdk15",
+  "install": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-llvm20",
+  "libcxx20_build": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/build-libcxx20",
+  "libcxx20_install": "/data/storage/el2/base/haps/entry/cache/blender-ohos-toolchain/install-libcxx20",
+  "bootstrap": "/storage/Users/currentUser/.oheco/packages/ohos-sdk-native/26.0.0.35-Beta/llvm/bin/clang++",
+  "native_generators": true,
+  "compile_jobs": 2,
+  "link_jobs": 1,
+  "lld_threads": 2,
+  "build_type": "Release",
+  "lto": false,
+  "projects": [
+    "clang",
+    "lld"
+  ],
+  "targets": [
+    "AArch64"
+  ],
+  "disk_estimate": "source measured 2.0GiB; reserve 35GiB for Release build/install (estimate, not measured)",
+  "memory_policy": "Require MemAvailable >= 8GiB at each action; default -j2; no full-CPU build; parent coordinates Godot",
+  "stdlib_policy": "LLVM compiler/generators bootstrap against static SDK libc++15; Blender SDK15 experimental subset needs fresh clang20 probes; own libc++20 is optional and uses ABI namespace __blender20",
+  "network": "No network in any build action; only prepare_source.py fetches pinned source through required SOCKS5 proxy",
+  "runtime_overlay": "LLVM20 builtin headers + copied SDK15 compiler-rt builtins/crt .a/.o; record SDK provenance, no SDK edits",
+  "signing": "Compiler wrapper signs every linked ELF before execution, including llvm-min-tblgen/llvm-tblgen/clang-tblgen/CMake try_run",
+  "source_patch": {
+    "version": "20.1.8",
+    "target": "llvm/cmake/modules/GetHostTriple.cmake",
+    "upstream_sha256": "412a66c5fc33d13ae28734ff3856f9f12e473ce2aaee3d4018ca31d6bc346952",
+    "patched_sha256": "e20e6d900cdc32236f19b42d3fc82cb04ce532a5240fd5e591c3b49ebea02641",
+    "patch_file": "0001-native-ohos-host-triple.diff",
+    "patch_sha256": "a57a92bd07be555267a674d6d3294d435133883c98609017477573a6e250116d",
+    "fragment_sha256": "d1b8a8aa762421d415c17fe60a0090c8d5660ef751f49dbfed5cc6165d71d252",
+    "license": "Apache-2.0 WITH LLVM-exception",
+    "reason": "Upstream config.guess does not recognize HarmonyOS; on verified native ARM64 OHOS only, query actual compiler -dumpmachine",
+    "scope": "Only private cache LLVM source; original locked upstream archive is unchanged; no compiler version/probe/platform-name forgery"
+  }
+}

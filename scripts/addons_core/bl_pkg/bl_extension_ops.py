@@ -13,6 +13,7 @@ __all__ = (
 )
 
 import os
+import sys
 
 from functools import partial
 
@@ -1282,6 +1283,9 @@ def _preferences_theme_state_restore(state):
 def _is_modal(op):
     if is_background:
         return False
+    if sys.platform == "ohos":
+        # GUI EXEC_DEFAULT is asynchronous too; background CLI stays blocking.
+        return True
     if not op.options.is_invoke:
         return False
     return True
@@ -1293,6 +1297,9 @@ class CommandHandle:
         "cmd_batch",
         "wm",
         "request_exit",
+        "terminal_result",
+        "status_cleared",
+        "finish_complete",
     )
 
     def __init__(self):
@@ -1300,16 +1307,27 @@ class CommandHandle:
         self.cmd_batch = None
         self.wm = None
         self.request_exit = None
+        self.terminal_result = None
+        self.status_cleared = False
+        self.finish_complete = False
 
     @staticmethod
     def op_exec_from_iter(op, context, cmd_batch, is_modal):
         if not is_modal:
-            with CheckSIGINT_Context() as sigint_ctx:
+            if sys.platform == "ohos":
+                from .bl_extension_worker import shutdown_status
                 has_request_exit = cmd_batch.exec_blocking(
                     report_fn=_report,
-                    request_exit_fn=lambda: sigint_ctx.has_interrupt,
+                    request_exit_fn=lambda: not shutdown_status()["accepting"],
                     concurrent=is_concurrent,
                 )
+            else:
+                with CheckSIGINT_Context() as sigint_ctx:
+                    has_request_exit = cmd_batch.exec_blocking(
+                        report_fn=_report,
+                        request_exit_fn=lambda: sigint_ctx.has_interrupt,
+                        concurrent=is_concurrent,
+                    )
             if has_request_exit:
                 op.report({'WARNING'}, "Command interrupted")
                 return {'FINISHED'}
@@ -1327,6 +1345,8 @@ class CommandHandle:
         return {'RUNNING_MODAL'}
 
     def op_modal_step(self, op, context):
+        if sys.platform == "ohos" and self.terminal_result is not None:
+            return self.terminal_result
         command_result = self.cmd_batch.exec_non_blocking(
             request_exit=self.request_exit,
         )
@@ -1355,11 +1375,14 @@ class CommandHandle:
         # Avoid high CPU usage by only redrawing when there has been a change.
         msg_list = self.cmd_batch.calc_status_log_or_none()
         if msg_list is not None:
-            context.workspace.status_text_set(
-                " | ".join(
-                    ["{:s}: {:s}".format(ty, str(msg)) for (ty, msg) in msg_list]
+            # Host shutdown ticks have no active window/workspace. StatusInfoUI
+            # delivery still runs; workspace decoration is optional in that case.
+            if context.workspace is not None:
+                context.workspace.status_text_set(
+                    " | ".join(
+                        ["{:s}: {:s}".format(ty, str(msg)) for (ty, msg) in msg_list]
+                    )
                 )
-            )
 
             # Setting every time is a bit odd. but OK.
             repo_status_text.title = self.cmd_batch.title
@@ -1368,6 +1391,9 @@ class CommandHandle:
             _preferences_ui_redraw()
 
         if command_result.all_complete:
+            if sys.platform == "ohos":
+                self.terminal_result = {'CANCELLED'} if self.request_exit else {'FINISHED'}
+                return self.terminal_result
             self.wm.event_timer_remove(self.modal_timer)
             op.runtime_handle_clear()
             context.workspace.status_text_set(None)
@@ -1378,6 +1404,30 @@ class CommandHandle:
             return {'FINISHED'}
 
         return {'RUNNING_MODAL'}
+
+    def op_finish_owned(self, op, context):
+        """Commit each cleanup stage once; retain the operator on any failure."""
+        if self.terminal_result is None:
+            raise RuntimeError("operator commands are still owned")
+        if self.modal_timer is not None:
+            self.wm.event_timer_remove(self.modal_timer)
+            self.modal_timer = None
+        if not self.status_cleared:
+            if context.workspace is not None:
+                context.workspace.status_text_set(None)
+            self.status_cleared = True
+        repo_status_text.running = False
+        if not self.finish_complete:
+            op.exec_command_finish('CANCELLED' in self.terminal_result)
+            self.finish_complete = True
+        # A finish retry may revisit an already released RepoLock. Keep the
+        # object until the entire callback succeeds, then drop it exactly once.
+        if hasattr(op, "repo_lock"):
+            if op.repo_lock._held:
+                raise RuntimeError("operator repository locks are still owned")
+            del op.repo_lock
+        op.runtime_handle_clear()
+        return self.terminal_result
 
     def op_modal_impl(self, op, context, event):
         pass_through = True
@@ -1400,6 +1450,10 @@ class CommandHandle:
         return {'RUNNING_MODAL'}
 
     def op_modal_cancel(self, op, context):
+        if sys.platform == "ohos":
+            from . import bl_extension_worker_ui
+            bl_extension_worker_ui.defer_operator_cancel(op, self)
+            return
         import time
         self.request_exit = True
         while operator_finished_result(self.op_modal_step(op, context)) is None:
@@ -1469,6 +1523,12 @@ def _extensions_maybe_online_action_poll_impl(cls, repo, action):
 # Public Repository Actions
 #
 
+def _repo_lock_release_owned(op):
+    result = op.repo_lock.release()
+    if lock_result_any_failed_with_report(op, result, report_type='WARNING'):
+        raise RuntimeError("operator repository lock release failed; ownership retained")
+
+
 class _ExtCmdMixIn:
     """
     Utility to execute mix-in.
@@ -1500,6 +1560,11 @@ class _ExtCmdMixIn:
         repo_status_text.log.append(("ERROR", str(ex)))
 
     def execute(self, context):
+        if sys.platform == "ohos":
+            from .bl_extension_worker import shutdown_status
+            if not shutdown_status()["accepting"]:
+                self.report({'ERROR'}, "Extensions shutdown rejects new commands")
+                return {'CANCELLED'}
         is_modal = _is_modal(self)
         cmd_batch = self.exec_command_iter(is_modal)
         # It's possible the action could not be started.
@@ -1517,6 +1582,19 @@ class _ExtCmdMixIn:
         return result
 
     def modal(self, context, event):
+        if sys.platform == "ohos":
+            if self._runtime_handle is None:
+                return {'CANCELLED'}
+            handle = self._runtime_handle
+            try:
+                result = handle.op_modal_impl(self, context, event)
+                if operator_finished_result(result) is not None:
+                    return handle.op_finish_owned(self, context)
+                return result
+            except Exception as ex:
+                from . import bl_extension_worker_ui
+                bl_extension_worker_ui.defer_operator_retry(self, handle, ex)
+                return {'RUNNING_MODAL'}
         result = self._runtime_handle.op_modal_impl(self, context, event)
         if (canceled := operator_finished_result(result)) is not None:
             wm_wait_cursor(True)
@@ -1528,20 +1606,29 @@ class _ExtCmdMixIn:
     def cancel(self, context):
         # Happens when canceling before the operator has run any commands.
         # Canceling from an operator popup dialog for example.
-        if not hasattr(self, "_runtime_handle"):
+        if getattr(self, "_runtime_handle", None) is None:
             return
 
         canceled = True
         self._runtime_handle.op_modal_cancel(self, context)
-        self.exec_command_finish(canceled)
+        if sys.platform != "ohos":
+            self.exec_command_finish(canceled)
 
     def runtime_handle_set(self, runtime_handle):
         assert isinstance(runtime_handle, CommandHandle)
         # pylint: disable-next=attribute-defined-outside-init
         self._runtime_handle = runtime_handle
+        if sys.platform == "ohos":
+            from . import bl_extension_worker_ui
+            bl_extension_worker_ui.track_operator(self, runtime_handle)
 
     def runtime_handle_clear(self):
-        del self._runtime_handle
+        if sys.platform == "ohos":
+            from . import bl_extension_worker_ui
+            self._runtime_handle = None
+            bl_extension_worker_ui.untrack_operator(self)
+        else:
+            del self._runtime_handle
 
 
 class EXTENSIONS_OT_repo_sync(Operator, _ExtCmdMixIn):
@@ -1619,8 +1706,11 @@ class EXTENSIONS_OT_repo_sync(Operator, _ExtCmdMixIn):
         )
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         repo_stats_calc()
 
@@ -1720,8 +1810,11 @@ class EXTENSIONS_OT_repo_sync_all(Operator, _ExtCmdMixIn):
             )
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         repo_stats_calc()
 
@@ -2121,8 +2214,11 @@ class EXTENSIONS_OT_package_upgrade_all(Operator, _ExtCmdMixIn):
     def exec_command_finish(self, canceled):
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         # Refresh installed packages for repositories that were operated on.
         repo_cache_store = repo_cache_store_ensure()
@@ -2256,8 +2352,11 @@ class EXTENSIONS_OT_package_install_marked(Operator, _ExtCmdMixIn):
     def exec_command_finish(self, canceled):
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         # TODO: it would be nice to include this message in the banner.
         def handle_error(ex):
@@ -2418,8 +2517,11 @@ class EXTENSIONS_OT_package_uninstall_marked(Operator, _ExtCmdMixIn):
     def exec_command_finish(self, canceled):
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         # TODO: it would be nice to include this message in the banner.
         def handle_error(ex):
@@ -2657,8 +2759,11 @@ class EXTENSIONS_OT_package_install_files(Operator, _ExtCmdMixIn):
         _extension_repo_directory_validate_module(self.repo_directory)
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         # TODO: it would be nice to include this message in the banner.
         def handle_error(ex):
@@ -3048,8 +3153,11 @@ class EXTENSIONS_OT_package_install(Operator, _ExtCmdMixIn):
             self.report({'ERROR'}, str(ex))
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         # Refresh installed packages for repositories that were operated on.
         repo_cache_store = repo_cache_store_ensure()
@@ -3542,8 +3650,11 @@ class EXTENSIONS_OT_package_uninstall(Operator, _ExtCmdMixIn):
         del repo_item
 
         # Unlock repositories.
-        lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
-        del self.repo_lock
+        if sys.platform == "ohos":
+            _repo_lock_release_owned(self)
+        else:
+            lock_result_any_failed_with_report(self, self.repo_lock.release(), report_type='WARNING')
+            del self.repo_lock
 
         repo_cache_store.refresh_local_from_directory(
             directory=self.repo_directory,

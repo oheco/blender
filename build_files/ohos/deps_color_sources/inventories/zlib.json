@@ -1,0 +1,1685 @@
+{
+  "archive_root": "zlib-1.3.1",
+  "source_archive_sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+  "members": 290,
+  "files": [
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "ab5f3afca6fe38983dc30a28da4877706e3a690a564eda3d4929fff39dab190e",
+      "size": 7649,
+      "mode": 420
+    },
+    {
+      "path": "ChangeLog",
+      "sha256": "f3bc368fd1722570d25411fece6b0e026ab95a9e20ccf39c4395aa41a956a4f0",
+      "size": 83837,
+      "mode": 420
+    },
+    {
+      "path": "FAQ",
+      "sha256": "e18aaaae6d7d8acd15c1f439306ef554372bc39db7e19258836708362a0b7cca",
+      "size": 16482,
+      "mode": 420
+    },
+    {
+      "path": "INDEX",
+      "sha256": "3b4e325d47ae66456d43fcf143ba21ab67a02a4f81be7ef2da480ba30d774266",
+      "size": 1988,
+      "mode": 420
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "size": 1002,
+      "mode": 420
+    },
+    {
+      "path": "Makefile",
+      "sha256": "ef23b08ce01239843f1ded3f373bfc432627a477d62f945cbf63b2ac03db118a",
+      "size": 100,
+      "mode": 420
+    },
+    {
+      "path": "Makefile.in",
+      "sha256": "a6d202a2ac158f8fbd1fa7361e1f2c7adfd1b7b80c1f6515a4203925c2c0f24a",
+      "size": 13811,
+      "mode": 420
+    },
+    {
+      "path": "README",
+      "sha256": "d106dcdb2a0b3087cb3a2380b9f00a0bbadc7eb835cd80408f94a2d78d69727d",
+      "size": 5317,
+      "mode": 420
+    },
+    {
+      "path": "adler32.c",
+      "sha256": "9cd1443a24ff2a3053961695bd432035c58347386a420d3388232376ebabe211",
+      "size": 4964,
+      "mode": 420
+    },
+    {
+      "path": "amiga/Makefile.pup",
+      "sha256": "a65cb3cd40b1b8ec77e288974dd9dc53d91ed78bbe495e94ccc84ddd423edf1f",
+      "size": 1981,
+      "mode": 420
+    },
+    {
+      "path": "amiga/Makefile.sas",
+      "sha256": "0e63cf88b505a1a04327bb666af3a985c5e11835c0c00aed4058c0dcc315d60e",
+      "size": 1847,
+      "mode": 420
+    },
+    {
+      "path": "compress.c",
+      "sha256": "86f802c16a965e7a28737e3730b4e576c5ba40981753967e3e30916f4dc1b4b1",
+      "size": 2613,
+      "mode": 420
+    },
+    {
+      "path": "configure",
+      "sha256": "f7c0050f218691ee1cae28311144a703bfa3515df903d537d6a5cb4bd3dcd8cd",
+      "size": 28199,
+      "mode": 493
+    },
+    {
+      "path": "contrib/README.contrib",
+      "sha256": "b925ae08d371b33c4b5ffd67c707150729a476caf47cfe2eafc002291f23f931",
+      "size": 2240,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/buffer_demo.adb",
+      "sha256": "469cf566a6965767fee6b987a239ed8cedcc66614940d45a9b434331fbb435ce",
+      "size": 3717,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/mtest.adb",
+      "sha256": "41b6f31684770334afdc4375871eb1408542f37a823a073556fdbfdb63753160",
+      "size": 4467,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/read.adb",
+      "sha256": "fa5b989aef0c5715a3fcb15de93985f7f10aeb0a7f5716745c95ed820eb9af9c",
+      "size": 4248,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/readme.txt",
+      "sha256": "2cb6c99547bf527648342723a2183f503ef64182bc19a506976815725a207438",
+      "size": 2177,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/test.adb",
+      "sha256": "ad2b2f61e0603044065887849e2cca394cfe37d3ba08d3cd368f670462b9296e",
+      "size": 13178,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/zlib-streams.adb",
+      "sha256": "f45988e2bac76eb25a0dc981f46576e7432c35dde1790bbc2b650f0090b7fa72",
+      "size": 5996,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/zlib-streams.ads",
+      "sha256": "2dae2309e863a6ea44731773aabac5fd5f5436b6dcfcf53fd7e6389556ca8c3c",
+      "size": 4330,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/zlib-thin.adb",
+      "sha256": "03d89244ee5ec9771d9b5050e586c609f851af551b2e64eb151f1d5be0b63ae9",
+      "size": 3329,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/zlib-thin.ads",
+      "sha256": "631ef170bde16c3ca8d412b54a0e519815b80197d208f8f393e6fe017bb0968e",
+      "size": 15819,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/zlib.adb",
+      "sha256": "8168ac962cd775e1f3dc35dc95a038eb370034c9b1f8cb1511d4bcd6b297a1f5",
+      "size": 20401,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/zlib.ads",
+      "sha256": "9340f4cfaeafca0efce7a649ef5e9b42a8bcafc5dbdc4abff41f9a19ee08c3cc",
+      "size": 13595,
+      "mode": 420
+    },
+    {
+      "path": "contrib/ada/zlib.gpr",
+      "sha256": "859bb69dce38dbe9dca06753cf7ae7bd16d48f4fece8b87582dab8e30681d3de",
+      "size": 511,
+      "mode": 420
+    },
+    {
+      "path": "contrib/blast/Makefile",
+      "sha256": "17d5d26c24bf51cad51045a38ffb73cc3539d29e89885aa249fcfd45a8659d5c",
+      "size": 127,
+      "mode": 420
+    },
+    {
+      "path": "contrib/blast/README",
+      "sha256": "baa763ae03d88ef7ece6eb80d9a099b43d0b57639d6d281e1c7c6ca79d81daba",
+      "size": 74,
+      "mode": 420
+    },
+    {
+      "path": "contrib/blast/blast.c",
+      "sha256": "1ab3e479d342bfc144167b808fb00142264bc50f24a110ca88cc774e351c218e",
+      "size": 18162,
+      "mode": 420
+    },
+    {
+      "path": "contrib/blast/blast.h",
+      "sha256": "9c1c422b76311d4cb06863ffc056668b6240f3dd998bc02e89ee590d482bfdc2",
+      "size": 3864,
+      "mode": 420
+    },
+    {
+      "path": "contrib/blast/test.pk",
+      "sha256": "5f5c262c545574a5c221132d5ef832478d222d70b015341795b3860204140d7c",
+      "size": 8,
+      "mode": 420
+    },
+    {
+      "path": "contrib/blast/test.txt",
+      "sha256": "9679b2c98e1283222d0782b25a1c198dc64ba9ebd1addd6dc6f643a45947cda3",
+      "size": 13,
+      "mode": 420
+    },
+    {
+      "path": "contrib/delphi/ZLib.pas",
+      "sha256": "0a3ea9e7e6644df99dda9c275f5a7be7cbaa96f8333f0467bd007141496dff17",
+      "size": 16412,
+      "mode": 420
+    },
+    {
+      "path": "contrib/delphi/ZLibConst.pas",
+      "sha256": "84bcc580bdf397e570f86f3f5a5b8c7bf537828f30b4b72648b81911f6bf5095",
+      "size": 186,
+      "mode": 420
+    },
+    {
+      "path": "contrib/delphi/readme.txt",
+      "sha256": "f7420ed2de77d4b498eefbbe6402a1d17dc2d411735289c78a265c7f10fdaee5",
+      "size": 2500,
+      "mode": 420
+    },
+    {
+      "path": "contrib/delphi/zlibd32.mak",
+      "sha256": "850e91b6c9ea05de61a411cbda16fa0f10118cd88bb32c4b7226988776f8d511",
+      "size": 2360,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib.build",
+      "sha256": "b96137097669644ecb9f42cdd3399d1fce9c512788374609303f7e50abf597f0",
+      "size": 1175,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib.chm",
+      "sha256": "20d0e3edd57f849143255a7f0df1cd59d41db464a72c0d5ab42846438a729579",
+      "size": 72726,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib.sln",
+      "sha256": "a979198c5b8d144c1ac8f993bfb6f4085d135aa58ca9dcf63ebabf52b5c695f7",
+      "size": 907,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/AssemblyInfo.cs",
+      "sha256": "314afcfb339ea95f5431047b7ab24631b11c3532c7ce5dc2094ed0cf80a7c16d",
+      "size": 2500,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/ChecksumImpl.cs",
+      "sha256": "871fc7b34a095dde13cf4505800d4edc9f40b033d5e840c597ad8ada599d26ed",
+      "size": 8041,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/CircularBuffer.cs",
+      "sha256": "be84c9736fe7bdc2bfae70466d8fff582504e928d5b5e110fd758090090c8cb7",
+      "size": 2246,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/CodecBase.cs",
+      "sha256": "b373f1f0c08565bf362c41969881a2f25be449eb894a477659231d6d3b86c07a",
+      "size": 6334,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/Deflater.cs",
+      "sha256": "06ba6696a3c15c53ba5fd5a1c2bf50b51f217010228fc1e4c8495ee578f480de",
+      "size": 3992,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/DotZLib.cs",
+      "sha256": "9837fe993fd631233cc5e53ff084d86754b97f05ec77c54b0764c2706f186134",
+      "size": 9927,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/DotZLib.csproj",
+      "sha256": "21606db31dfef6410dd438b73f1db68856eacabcce6c0f0411fc4f17e17001f3",
+      "size": 5396,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/GZipStream.cs",
+      "sha256": "7c4e8bf7e0b51f04bd3f457bead842aee133388d18ec8e210295899ad2327cbf",
+      "size": 11159,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/Inflater.cs",
+      "sha256": "9016ca73818f5b6a28791abc3af6da7c4d2773b6a3804f593f6d5737a62b99ad",
+      "size": 3740,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib/UnitTests.cs",
+      "sha256": "3f22cb690bd38fa151a944afa5a1844499fe30df5b410edfd769b7e2a41ddc94",
+      "size": 7684,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/LICENSE_1_0.txt",
+      "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+      "size": 1359,
+      "mode": 420
+    },
+    {
+      "path": "contrib/dotzlib/readme.txt",
+      "sha256": "bdb18e0114d3b5683749cf08cedbdf6b502e5abd344418b858e339839561e66c",
+      "size": 2358,
+      "mode": 420
+    },
+    {
+      "path": "contrib/gcc_gvmat64/gvmat64.S",
+      "sha256": "22ff411b8b1d1b04aeaa8418b68245400267dc43c6f44104f6ccd37f0daee89f",
+      "size": 16413,
+      "mode": 420
+    },
+    {
+      "path": "contrib/infback9/README",
+      "sha256": "890288f02bb3b1f9cc654b87a07fcea695f90f6b9bd672d25bf6be1da2ec1688",
+      "size": 51,
+      "mode": 420
+    },
+    {
+      "path": "contrib/infback9/infback9.c",
+      "sha256": "c236f4e5ef216f5ebc66f95ccbf9d399a19ad3838444065308b8d859cb42dc74",
+      "size": 21608,
+      "mode": 420
+    },
+    {
+      "path": "contrib/infback9/infback9.h",
+      "sha256": "c89d926607c1afa1830c17f807de368d2f1afe2d1e7df426763f6d4bf5950379",
+      "size": 1564,
+      "mode": 420
+    },
+    {
+      "path": "contrib/infback9/inffix9.h",
+      "sha256": "84a2ba4727767c18af6505f0e81d9c814489c8b9ed330a25dad433db72997e43",
+      "size": 6599,
+      "mode": 420
+    },
+    {
+      "path": "contrib/infback9/inflate9.h",
+      "sha256": "32a907676cc36e27d0fdc0d99adb83a0b23f20ab61896269216d40fecf08d349",
+      "size": 1991,
+      "mode": 420
+    },
+    {
+      "path": "contrib/infback9/inftree9.c",
+      "sha256": "9e739f5735d3cd77ca1b0d46d2a43371acf2afd64c9c0889e737da369ccd92d0",
+      "size": 13405,
+      "mode": 420
+    },
+    {
+      "path": "contrib/infback9/inftree9.h",
+      "sha256": "4ecd9db884bf43e33fbd34273c814029022477e1597676129f9c98e09d8cef56",
+      "size": 2881,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream/test.cpp",
+      "sha256": "0f3c77e013949eb9c91e6b690ea894e19d97944d6b0885b82806fc3ad99680cf",
+      "size": 526,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream/zfstream.cpp",
+      "sha256": "8ebb9b3d521cc3392953f27658cf1f6dcb763216079f69a1518ec5ca0e42a63b",
+      "size": 5112,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream/zfstream.h",
+      "sha256": "4369c35e66f63f52ca4a5e1759bf720507ccabb8f3f132e2f18e68686c812401",
+      "size": 2467,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream2/zstream.h",
+      "sha256": "d0343e0c57ff58008b6f29643d289c72713aa2d653fe3dcd2e939fc77e7e20b6",
+      "size": 9283,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream2/zstream_test.cpp",
+      "sha256": "f789df183cc58b78751985466380c656308490a9036eb48a7ef79704c3d3f229",
+      "size": 711,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream3/README",
+      "sha256": "43ec48ecbd95a8c45db20b107fac73b740bb11595a4737329188f06b713972cc",
+      "size": 1490,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream3/TODO",
+      "sha256": "af5ebc83fb88f69706c8af896733784753dead147687e1c046f410c0997fd88b",
+      "size": 491,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream3/test.cc",
+      "sha256": "8e17fc48dfdbc6e268838b8b427491b5843b6d18bc97caa6924de9fad7abe3da",
+      "size": 1490,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream3/zfstream.cc",
+      "sha256": "8cdd67ed0b13c192c11e5ea90e9d5782d6627eb303fbc4aa5ebda2531ec00ff8",
+      "size": 13447,
+      "mode": 420
+    },
+    {
+      "path": "contrib/iostream3/zfstream.h",
+      "sha256": "d89587b446f928351565d099decd006a06b7a420cb1ff8ee9bb82e4d8c7235dd",
+      "size": 12240,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/Makefile",
+      "sha256": "b95eb8b05baef661a18ca90fa72f43e76f1bc987f9199197fe283e2860060e0a",
+      "size": 563,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/Makefile.am",
+      "sha256": "2313a3480a2c3745fa7ce216829cd0367058907d3a0902e5832c66c84a2fdfc6",
+      "size": 818,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/MiniZip64_Changes.txt",
+      "sha256": "c371d1672b1ec23c6fe0c600543e0c96374400b4d434447ff2596f21255079f1",
+      "size": 108,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/MiniZip64_info.txt",
+      "sha256": "122719c32ef1763a5f6ba9c8cdefc1d78a76f7156b09e7b6f69b73f968e0dac3",
+      "size": 3048,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/configure.ac",
+      "sha256": "99a48f7b786cf192a778aae2af30836b0d2aaaec6e84c3a89a2edcbe77b46e1a",
+      "size": 786,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/crypt.h",
+      "sha256": "5c978923cff1e80f76baf437eed699d5b4ad1bf515008d669475d3dd0d89ef70",
+      "size": 4801,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/ioapi.c",
+      "sha256": "6dff11ded396f5e3147c632a639423e80ced6705bf7bf75d21cda0c571fdf86b",
+      "size": 7740,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/ioapi.h",
+      "sha256": "6d2f2c3520dfc3061ea9128a1afb843f5cfe8d7317adcefe3a45884bc06e06a1",
+      "size": 7100,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/iowin32.c",
+      "sha256": "882383d1ee9df8c5f236411734b51e96f5e29c38496d4e531f2beb3d07f682ef",
+      "size": 13749,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/iowin32.h",
+      "sha256": "4feed64c3c5f5cff2d8a0431233766b61d4e06a9f232482cb41272ed1ca487df",
+      "size": 831,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/make_vms.com",
+      "sha256": "65736d9c4888f2373d3db0a13864d150c5040453f5bc2a5c8784379a7ea67590",
+      "size": 901,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/miniunz.c",
+      "sha256": "c60f2c68be981464ff02dfbe01da2a8e66692416bdda2144fc75df3420b4107f",
+      "size": 18126,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/miniunzip.1",
+      "sha256": "66d8684392167091ef0fe01598d6a0daa26e7e448e2df6c3cb257487735b83f7",
+      "size": 1861,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/minizip.1",
+      "sha256": "5404596e8e5587a52f563906119f32ceee30a6d97a966afa5c7afbe4d373e210",
+      "size": 1462,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/minizip.c",
+      "sha256": "6d7d7daffc713ba15a9768143471902c5bfd661a19287172f3870bc9ed2d5665",
+      "size": 15088,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/minizip.pc.in",
+      "sha256": "8b6670b42d8e5e519e1cc89db093efc07ba23cb1ddfedd3c93ff2df08c3ce8ac",
+      "size": 263,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/mztools.c",
+      "sha256": "3d6027270a2b6ed5ca19a339d7488f682c69798e3977d2278d379b7f14f17b63",
+      "size": 8091,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/mztools.h",
+      "sha256": "6f82c52279e8f79165f4446be652e5741a49992ac58632470335aa34c564072a",
+      "size": 708,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/unzip.c",
+      "sha256": "10881ab576f49fe0825a21f77e322ece6ee88d34ed66fb3a3ce7a22f4b6cd2d9",
+      "size": 67640,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/unzip.h",
+      "sha256": "2ff9df0b1da7499adc806bc0ec098ef1c7b9d361a8fd5b08a98299a1a4e88399",
+      "size": 16448,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/zip.c",
+      "sha256": "213f853d71266ebe8d8335740cfe94b0731009d8fb3f7e6ae01a627398732ec8",
+      "size": 65418,
+      "mode": 420
+    },
+    {
+      "path": "contrib/minizip/zip.h",
+      "sha256": "99ad45c0b546b5fd0ee3d0819ff057840a892a3d6dbacc85b757a35a43047398",
+      "size": 15517,
+      "mode": 420
+    },
+    {
+      "path": "contrib/nuget/nuget.csproj",
+      "sha256": "a6cf81c9a9b8be66fae032193ac6282a4ceae93c8a25a9245d7eaf477d532471",
+      "size": 3674,
+      "mode": 420
+    },
+    {
+      "path": "contrib/nuget/nuget.sln",
+      "sha256": "074a80c6c3898ea4f7935734d81fe81d3c15f5dae5b17806fa7a036b69ad5c33",
+      "size": 963,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pascal/example.pas",
+      "sha256": "d842d456ecb6ff80e34cee2da31deb2072cc69ca837497bea8b8bee203403474",
+      "size": 15687,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pascal/readme.txt",
+      "sha256": "02f997c37991ddae0cb986039f7b4f6fc816b3fd0ffd332cad371d04c12cf1b9",
+      "size": 3004,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pascal/zlibd32.mak",
+      "sha256": "850e91b6c9ea05de61a411cbda16fa0f10118cd88bb32c4b7226988776f8d511",
+      "size": 2360,
+      "mode": 420
+    },
+    {
+      "path": "contrib/pascal/zlibpas.pas",
+      "sha256": "c5559b148a9dcdd32843e6920b4d2a2b030f7d32979dfd253aeaa9a4ed31770f",
+      "size": 10126,
+      "mode": 420
+    },
+    {
+      "path": "contrib/puff/Makefile",
+      "sha256": "d9d738030464aaae354196c14fd928adf591832fce7d71ac1977c1d8d4923a4b",
+      "size": 1899,
+      "mode": 420
+    },
+    {
+      "path": "contrib/puff/README",
+      "sha256": "c5b9852fb11e0d6b6e916e5134cf034524d901b95368972133e0381e480eb479",
+      "size": 3077,
+      "mode": 420
+    },
+    {
+      "path": "contrib/puff/puff.c",
+      "sha256": "5b9d75aeb5baf3575415bc6ade3f2a02e50b6b971b3f8b4fda2b03543bc6e52f",
+      "size": 37882,
+      "mode": 420
+    },
+    {
+      "path": "contrib/puff/puff.h",
+      "sha256": "969b7be2a930db0cdcb19b0e5b29ae6741f5a8f663b6dba6d647e12ec60cfa8e",
+      "size": 1415,
+      "mode": 420
+    },
+    {
+      "path": "contrib/puff/pufftest.c",
+      "sha256": "d24e31c1d277d07c268f34e9490050c6b53c68b128da3efbb1d05fc5b31004f7",
+      "size": 4918,
+      "mode": 420
+    },
+    {
+      "path": "contrib/puff/zeros.raw",
+      "sha256": "b7b0887089f7af1f6d1e0b4c0a1e8eddd10223b23554299455c6c9be71b653a3",
+      "size": 2517,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testzlib/testzlib.c",
+      "sha256": "753dbb39c5d2f0fffac0406c1c94fd1da7b0251d679e4d137b0708901dfd61d8",
+      "size": 7644,
+      "mode": 420
+    },
+    {
+      "path": "contrib/testzlib/testzlib.txt",
+      "sha256": "2359bbdc84eb8a04e0f1cd16cd81a2896e957f2ad58dab3ca78ef55b7d0dc577",
+      "size": 205,
+      "mode": 420
+    },
+    {
+      "path": "contrib/untgz/Makefile",
+      "sha256": "8f5ab1564813e091cea8f1bb63da32fd80ac763d029277b0cabf50f60aceefe1",
+      "size": 234,
+      "mode": 420
+    },
+    {
+      "path": "contrib/untgz/Makefile.msc",
+      "sha256": "d0f537de11d9e0e36e2a98b3971c537265f4b533b4c48797094365ad9ae8388b",
+      "size": 281,
+      "mode": 420
+    },
+    {
+      "path": "contrib/untgz/untgz.c",
+      "sha256": "f96c1e8529eb10d723b4547aa965741d72a46f2b1d5c9a2c193bd3f5e2c2a45e",
+      "size": 16736,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/readme.txt",
+      "sha256": "ee95a52d9d2a16aceb070a54dd2c45a1f861178351baf8ea03c2f80328691974",
+      "size": 3136,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/miniunz.vcxproj",
+      "sha256": "dd607d43c64581172c20c22112821924dfe862f56b2e5eb8780bdd0714d9527b",
+      "size": 18969,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/miniunz.vcxproj.filters",
+      "sha256": "4b8466bf00c70b81c31cc903e756e04151fd90fdcbe102f3568a2c8b6190ea27",
+      "size": 917,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/minizip.vcxproj",
+      "sha256": "af73f2cf8ae51e65e85342faeb40849a2310c97bc77def42b38d7070460a6cf0",
+      "size": 18549,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/minizip.vcxproj.filters",
+      "sha256": "f2815f9e3386c393d0a351632823b221ef9689da1f422ecaa561dba2a612fb0a",
+      "size": 917,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/testzlib.vcxproj",
+      "sha256": "c21e64259bf9efe97e1103212e7a6e1b7372b50067b4ba14cfa678e1f491095f",
+      "size": 26288,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/testzlib.vcxproj.filters",
+      "sha256": "a7caddbac3ba90b5d482e6d926ef35cc40dc3553ed3776ef6b68a528fd5b0631",
+      "size": 2026,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/testzlibdll.vcxproj",
+      "sha256": "3f317d8964f17901c3e68bff5deaec10b6ccc50a572235999e8097292692984c",
+      "size": 19022,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/testzlibdll.vcxproj.filters",
+      "sha256": "29c9535775aa76320ee4efd001d41961faf6c58cedd8b29d3986e85f73d2f6fb",
+      "size": 919,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/zlib.rc",
+      "sha256": "7aa6cfd50ac67821504304eb4a28668b3aaf78f4c792c389d1fb8ea23a5d3ef6",
+      "size": 954,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/zlibstat.vcxproj",
+      "sha256": "50402ab8c63f746c034d6ce51d9612aff5b6af9aa27790cffa4b7deed4b30eb8",
+      "size": 26585,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/zlibstat.vcxproj.filters",
+      "sha256": "eeb1de64c252c46b822f73f272127f6f9f0570ef22d234e093070ba95a4dde24",
+      "size": 2405,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/zlibvc.def",
+      "sha256": "40c8e74194874b8c1a288edb9c6fbf32283df77afef7e520790def28a2e5b0d5",
+      "size": 7333,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/zlibvc.sln",
+      "sha256": "e659860f705f31b87ea9139a3cb4ebe1561e120bce495383a54614fc82b49990",
+      "size": 10153,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/zlibvc.vcxproj",
+      "sha256": "efad8cb150c0e5122f8c700d95c5de659dff92b171917c66bdbd082fff500b58",
+      "size": 38693,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc10/zlibvc.vcxproj.filters",
+      "sha256": "c801732b7c7017796add50d2b71a228f99f95a46650baad307ff7e8358a2bfb0",
+      "size": 3930,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/miniunz.vcxproj",
+      "sha256": "746e4c11fb8af4bcd6a9d68ba81ed1dc366a5de3bed56b291ee969ad733a7bb0",
+      "size": 19150,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/minizip.vcxproj",
+      "sha256": "340617cae9cf4fcb003308021d3782ec3639e60d62d79a3aafc0a50bb55b061e",
+      "size": 18730,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/testzlib.vcxproj",
+      "sha256": "99eadfdf2e41bc036141c174c4d0035d87572ce5795dcc28f39133f818a79d08",
+      "size": 26559,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/testzlibdll.vcxproj",
+      "sha256": "583bdef522b0176829f0d8139ea2a88b9cbc14379d1334f3a863989ed3df9b67",
+      "size": 19203,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/zlib.rc",
+      "sha256": "7aa6cfd50ac67821504304eb4a28668b3aaf78f4c792c389d1fb8ea23a5d3ef6",
+      "size": 954,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/zlibstat.vcxproj",
+      "sha256": "b07f792843d05ac883391075bc3b9625437490d8d40944ad359aa2134a09a3aa",
+      "size": 26909,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/zlibvc.def",
+      "sha256": "40c8e74194874b8c1a288edb9c6fbf32283df77afef7e520790def28a2e5b0d5",
+      "size": 7333,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/zlibvc.sln",
+      "sha256": "27389b515997defd080519f95aff87e89fcbe8b26d73c5ebb73c544cfef4d60e",
+      "size": 8539,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc11/zlibvc.vcxproj",
+      "sha256": "d02d014ef957119a6fd0ab243c892b74d1592b117750b95fed21097c8ed922d9",
+      "size": 40458,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/miniunz.vcxproj",
+      "sha256": "1494af54570f6e93852932956d49a8c25e57b5abc1ac979945605ca9143df9f8",
+      "size": 18926,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/minizip.vcxproj",
+      "sha256": "9bf128ed6760ca5f019006f178b1c65f4c7ff122dba8d297b64b0eb72feeb120",
+      "size": 18509,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/testzlib.vcxproj",
+      "sha256": "be88bc1220c0447c2379fdab3ac88055f58a8a788d3e9cec494342187e760eaf",
+      "size": 26350,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/testzlibdll.vcxproj",
+      "sha256": "93416510256935d79625dc9fd349cfce6968c062d42a138bec404a26b2f92f5e",
+      "size": 18979,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/zlib.rc",
+      "sha256": "c0e44b6f99079b298e0a11f013e7b1476402a49f19e4d892467abb4aa116f2c8",
+      "size": 922,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/zlibstat.vcxproj",
+      "sha256": "faa229a851c76b77d65bb4742d8369efe566652bb6a1447d1e3539f289b5313d",
+      "size": 26587,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/zlibvc.def",
+      "sha256": "40c8e74194874b8c1a288edb9c6fbf32283df77afef7e520790def28a2e5b0d5",
+      "size": 7333,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/zlibvc.sln",
+      "sha256": "162e0faa80a56d89eea71a0b89377708eec2faa0dc72091cc0abb07fbdea49a0",
+      "size": 8499,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc12/zlibvc.vcxproj",
+      "sha256": "8ac8cb2d29b880a738011d29d0511af9b14f321bed90f674109c446f4108d442",
+      "size": 40003,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/miniunz.vcxproj",
+      "sha256": "0312511d4a30cea979c4e36edf994a537ed8a9d924f6b5c536cbcd094773c11f",
+      "size": 18926,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/minizip.vcxproj",
+      "sha256": "9e7bb7a6ac723e4b2db900627c366f9bb93a351381995d9c69a50c0126f64233",
+      "size": 18509,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/testzlib.vcxproj",
+      "sha256": "88667873d9d61d65016b9501ca925532eb55f56230e5911d3e2a01cd8a9fb2a4",
+      "size": 26350,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/testzlibdll.vcxproj",
+      "sha256": "69f544898b4275cd3d8e19b8f1f8cb39c1cb98a30cdb033242e4b94c57bfa150",
+      "size": 18979,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/zlib.rc",
+      "sha256": "c0e44b6f99079b298e0a11f013e7b1476402a49f19e4d892467abb4aa116f2c8",
+      "size": 922,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/zlibstat.vcxproj",
+      "sha256": "5629eb0cc30674a39aa3636f1cdd190393b0dbd4c69a35e36ad85b6340055605",
+      "size": 26587,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/zlibvc.def",
+      "sha256": "40c8e74194874b8c1a288edb9c6fbf32283df77afef7e520790def28a2e5b0d5",
+      "size": 7333,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/zlibvc.sln",
+      "sha256": "47a50bbde8ca6336cecd8c0e4b65e515fc46ae84c7b61008ac9864162f777286",
+      "size": 8497,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc14/zlibvc.vcxproj",
+      "sha256": "09f496a2ad3afdd5e3f36b7285440369dcac4559656edc00ed7a74c7ec9fa10f",
+      "size": 40003,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/miniunz.vcxproj",
+      "sha256": "aa70a28fb573e98c0ef68ead2b875765de180e4c6f46c6135806244257fd918f",
+      "size": 24294,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/minizip.vcxproj",
+      "sha256": "43ab4593b3ea568dc9e6f78a46cbb011850349e9cf3337cfb91dfdc3e623b414",
+      "size": 23802,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/testzlib.vcxproj",
+      "sha256": "e596d1170c68c6c7912070293e74b794f6753afb1a6d42177dc3626fe1b0e0d4",
+      "size": 30120,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/testzlibdll.vcxproj",
+      "sha256": "c61f1f6e7e0625f283ac4f4e3ca76f25773ada0da43c7c72ce003637f9892c3b",
+      "size": 24364,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/zlib.rc",
+      "sha256": "c0e44b6f99079b298e0a11f013e7b1476402a49f19e4d892467abb4aa116f2c8",
+      "size": 922,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/zlibstat.vcxproj",
+      "sha256": "331effbbcf295912daff00fb3594c2ee300824733897efc5df7d31b2d379a222",
+      "size": 34454,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/zlibvc.def",
+      "sha256": "1fa9a4d1624675b0181554ddd841d368a9cf39fe931b80737bfa21402f27a7d8",
+      "size": 7175,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/zlibvc.sln",
+      "sha256": "36da58a5377e65f446c95c7e4c04a915caac9873b94d0dab231e9862391bba78",
+      "size": 13040,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc17/zlibvc.vcxproj",
+      "sha256": "f3222e055d4001f9ee04265a72b8f349f92bd27189ce51852c96dde58539c335",
+      "size": 52148,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/miniunz.vcproj",
+      "sha256": "7db9b2ef5ff05d3de4ba633feab10e85d45434c865d520ffa1974421904996f3",
+      "size": 12935,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/minizip.vcproj",
+      "sha256": "7797a9ad3c0056f3a3cf8fcde7618acd1d151c65d15f841fccd8d9d878ae7bb0",
+      "size": 12749,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/testzlib.vcproj",
+      "sha256": "8df405917800adccee6bad2116022c2c82d661b37ea40ea16405fe4dbcb4b69f",
+      "size": 17457,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/testzlibdll.vcproj",
+      "sha256": "cde6806f5c81d1fc311f9921c17ba56f8e386d097783a6a90875d385837c47e7",
+      "size": 12974,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/zlib.rc",
+      "sha256": "7aa6cfd50ac67821504304eb4a28668b3aaf78f4c792c389d1fb8ea23a5d3ef6",
+      "size": 954,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/zlibstat.vcproj",
+      "sha256": "d393d418d827ad9fb9c6516f1a7620371d15e3f5afef8ba60b51e50acc7199e9",
+      "size": 18106,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/zlibvc.def",
+      "sha256": "40c8e74194874b8c1a288edb9c6fbf32283df77afef7e520790def28a2e5b0d5",
+      "size": 7333,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/zlibvc.sln",
+      "sha256": "26e58d4b2cfcd941c367fb2a18537b3b9f002f2ac1278b700ea1129c50501452",
+      "size": 10612,
+      "mode": 420
+    },
+    {
+      "path": "contrib/vstudio/vc9/zlibvc.vcproj",
+      "sha256": "eaca98fcf166738b59fcdbd179dac9f98f985c6ba49212b186343a998816f081",
+      "size": 26409,
+      "mode": 420
+    },
+    {
+      "path": "crc32.c",
+      "sha256": "8fd16f0a7714d51c89c2eb37eb98ec15e8a4dc57ba343e7b7398b19144039fda",
+      "size": 31605,
+      "mode": 420
+    },
+    {
+      "path": "crc32.h",
+      "sha256": "9a2223575183ac2ee8a247f20bf3ac066e8bd0140369556bdbdffc777435749e",
+      "size": 591749,
+      "mode": 420
+    },
+    {
+      "path": "deflate.c",
+      "sha256": "3b956337350f94c34987750f785587ef33d9c89ceaebb7c2afb189c956360cbe",
+      "size": 81731,
+      "mode": 420
+    },
+    {
+      "path": "deflate.h",
+      "sha256": "48baf016326d8d5e3e32ac8153cc7e22f854b8e6834830b167b998a7fb1e7989",
+      "size": 14041,
+      "mode": 420
+    },
+    {
+      "path": "doc/algorithm.txt",
+      "sha256": "a2581ab546bf053e3e95d191a6accc3b06bbd4f08ad2fb888eacbfb9773c1d30",
+      "size": 9334,
+      "mode": 420
+    },
+    {
+      "path": "doc/crc-doc.1.0.pdf",
+      "sha256": "064f9252d6e2e15ea56c2bd18e160e5c9c84bcd137c11a7af497aaa511ace998",
+      "size": 776142,
+      "mode": 420
+    },
+    {
+      "path": "doc/rfc1950.txt",
+      "sha256": "8f0475a5c984657bf26277f73df9456c9b97f175084f0c1748f1eb1f0b9b10b9",
+      "size": 20502,
+      "mode": 420
+    },
+    {
+      "path": "doc/rfc1951.txt",
+      "sha256": "5ebf4b5b7fe1c3a0c0ab9aa3ac8c0f3853a7dc484905e76e03b0b0f301350009",
+      "size": 36944,
+      "mode": 420
+    },
+    {
+      "path": "doc/rfc1952.txt",
+      "sha256": "164ef0897b4cbec63abf1b57f069f3599bd0fb7c72c2a4dee21bd7e03ec9af67",
+      "size": 25037,
+      "mode": 420
+    },
+    {
+      "path": "doc/txtvsbin.txt",
+      "sha256": "d1549fb75137f03102798f70fd34ff76285e717ddd520dd82274c1c0510eacf0",
+      "size": 5193,
+      "mode": 420
+    },
+    {
+      "path": "examples/README.examples",
+      "sha256": "1bc1c677bbebe1aa5e85015bb62f0cf3fcdbf95652d30494159bee6166c1854a",
+      "size": 1970,
+      "mode": 420
+    },
+    {
+      "path": "examples/enough.c",
+      "sha256": "c14a257c60bbe0d65bb54746dd97774a1853ef9e3f78db118a27d8bc0d26d738",
+      "size": 24856,
+      "mode": 420
+    },
+    {
+      "path": "examples/fitblk.c",
+      "sha256": "bec64da6fc0c9a2a37a96722e8b88ca09059148e5be5ecbb486bdba5339e228a",
+      "size": 8596,
+      "mode": 420
+    },
+    {
+      "path": "examples/gun.c",
+      "sha256": "3bfd36b06284ba97d6105b8a6a5d18b2b34b75b3a1285f16d018680fb174915f",
+      "size": 25942,
+      "mode": 420
+    },
+    {
+      "path": "examples/gzappend.c",
+      "sha256": "6de91c8305e37560117bff44136abff72b16b028c0bda0bbac7ea07e4988b0ce",
+      "size": 16978,
+      "mode": 420
+    },
+    {
+      "path": "examples/gzjoin.c",
+      "sha256": "90b9d6c39a5fc91cf1cc9b96b025a508a8015dc502cd9374c754b44078593f57",
+      "size": 14132,
+      "mode": 420
+    },
+    {
+      "path": "examples/gzlog.c",
+      "sha256": "d9a2f9871e7f1724f9f9359fd4851dc0eac7af10d8234bab66327badb33d1a38",
+      "size": 41537,
+      "mode": 420
+    },
+    {
+      "path": "examples/gzlog.h",
+      "sha256": "681f280437f867820bf39880e2f4fc641d402879e399ba2e6a31d73feefe8edc",
+      "size": 4558,
+      "mode": 420
+    },
+    {
+      "path": "examples/gznorm.c",
+      "sha256": "e5a8f5c3b107f27212f7d5fbfcf072a337a1b4ea32929ae31c168997438a5cc0",
+      "size": 22182,
+      "mode": 420
+    },
+    {
+      "path": "examples/zlib_how.html",
+      "sha256": "bada2526c34e9da7c9682a7216c0b0d7ac26f49195f98d3ef56f14ae9b438177",
+      "size": 29827,
+      "mode": 420
+    },
+    {
+      "path": "examples/zpipe.c",
+      "sha256": "68140a82582ede938159630bca0fb13a93b4bf1cb2e85b08943c26242cf8f3a6",
+      "size": 6323,
+      "mode": 420
+    },
+    {
+      "path": "examples/zran.c",
+      "sha256": "f4bc94b710841b8412aee04c42ea522bd1687343d65f0c0d92b4dd5801d03956",
+      "size": 21412,
+      "mode": 420
+    },
+    {
+      "path": "examples/zran.h",
+      "sha256": "913158e13f6177224074cfa9b497438545054ac0d54ab13a6ad4182df8d2ee99",
+      "size": 2722,
+      "mode": 420
+    },
+    {
+      "path": "gzclose.c",
+      "sha256": "35ea6e991a63095f797d8c4cc25817fac7a7155c2ba7dcdbbf648f7871c7ea40",
+      "size": 668,
+      "mode": 420
+    },
+    {
+      "path": "gzguts.h",
+      "sha256": "716fa648aca1bb06c219d7b97ad4846d8479206143bc39557bfd8283f5783e04",
+      "size": 6676,
+      "mode": 420
+    },
+    {
+      "path": "gzlib.c",
+      "sha256": "042c2be8ec67ad525a2812e508de7381c6766dde903acf5ae6ac4fa6b541946d",
+      "size": 16270,
+      "mode": 420
+    },
+    {
+      "path": "gzread.c",
+      "sha256": "72e481aca07b0b85a9783237b85dc67ff3a4c1d19878d0cec69f58d38634867b",
+      "size": 19918,
+      "mode": 420
+    },
+    {
+      "path": "gzwrite.c",
+      "sha256": "469b1e58932ea11bdda2a153f6655f7b3c13254240fae157181b49ed1bc93b47",
+      "size": 19237,
+      "mode": 420
+    },
+    {
+      "path": "infback.c",
+      "sha256": "62df9a6dd3eef126f1d81d0ad7a534504610dec44482b0a472b61c93cbab6554",
+      "size": 22669,
+      "mode": 420
+    },
+    {
+      "path": "inffast.c",
+      "sha256": "e6ef64ce5dc0a4cd5c7ad08ceeb2b2a698b8447f6bd156057caeb2edab68c0cb",
+      "size": 12924,
+      "mode": 420
+    },
+    {
+      "path": "inffast.h",
+      "sha256": "05cc5dc9ff1da7b8b52a4bd8bda0d8a5c236a2f39efe84b941516ea13857e6c5",
+      "size": 422,
+      "mode": 420
+    },
+    {
+      "path": "inffixed.h",
+      "sha256": "237ba710f090e432b62ebf963bee8b302867e9691406b2d3f8ee89ee7bfef9b0",
+      "size": 6332,
+      "mode": 420
+    },
+    {
+      "path": "inflate.c",
+      "sha256": "34c998ce0037c0537c04b03b276f680b945f9b2c9d1e01b287605bd6879f7fd2",
+      "size": 55519,
+      "mode": 420
+    },
+    {
+      "path": "inflate.h",
+      "sha256": "e8d4a51b07694bf48cb91979c19974cf6a5ab0b8a09d26ec0d14df349230673e",
+      "size": 6683,
+      "mode": 420
+    },
+    {
+      "path": "inftrees.c",
+      "sha256": "5d4f335221d2dc76f17abd2577d92c2d7baf68fa6d7f23373b360830493d1563",
+      "size": 13024,
+      "mode": 420
+    },
+    {
+      "path": "inftrees.h",
+      "sha256": "0a0fcaf2ae2fae57426bdc06637270e9bba974f35202cadbdba479d946e6409d",
+      "size": 2920,
+      "mode": 420
+    },
+    {
+      "path": "make_vms.com",
+      "sha256": "14ed54bdd391c1648cedfb69d8a73a26dcc7f1187d59b0f18d944b7665cec85b",
+      "size": 26404,
+      "mode": 420
+    },
+    {
+      "path": "msdos/Makefile.bor",
+      "sha256": "292ab363f7ffbc4ae84d37cd9bdffd2dac1003bee52d223a8489844870f20702",
+      "size": 3098,
+      "mode": 420
+    },
+    {
+      "path": "msdos/Makefile.dj2",
+      "sha256": "9208450c2ae6dcbfcc25560b5b9ca763f461e7246e37b0552474edf8fa898906",
+      "size": 2620,
+      "mode": 420
+    },
+    {
+      "path": "msdos/Makefile.emx",
+      "sha256": "c749d6ec7f88e8e639d4f03bdbdcbbe9d1c304210be4c4be621ceb22961d3d64",
+      "size": 1447,
+      "mode": 420
+    },
+    {
+      "path": "msdos/Makefile.msc",
+      "sha256": "0e021a6f42212415b060e4ad468eb415d0a8c1f343137fb9dff2cb8f9ead3027",
+      "size": 2924,
+      "mode": 420
+    },
+    {
+      "path": "msdos/Makefile.tc",
+      "sha256": "2ae12ee2a3e62f7c5a0520d0fbe4adee772bc07fe816002b07ccb43db3daa76a",
+      "size": 2657,
+      "mode": 420
+    },
+    {
+      "path": "nintendods/Makefile",
+      "sha256": "ea5823efe6830132294eddf2f56dbd7db8712244c210bb4968c431b1a91bd066",
+      "size": 4741,
+      "mode": 420
+    },
+    {
+      "path": "nintendods/README",
+      "sha256": "e362426c47b39ff6a7d6c75c6660b20abf076cdfa5e1e421716dc629a71aef95",
+      "size": 209,
+      "mode": 420
+    },
+    {
+      "path": "old/Makefile.emx",
+      "sha256": "d811f032272aae50123a889297af3a02fbd60d1e42bbef11466462f627ff7b5b",
+      "size": 1456,
+      "mode": 420
+    },
+    {
+      "path": "old/Makefile.riscos",
+      "sha256": "d1a488b160fbfd53272b68a913283a4be08ba9d490796b196dddb2ba535b41e0",
+      "size": 3767,
+      "mode": 420
+    },
+    {
+      "path": "old/README",
+      "sha256": "551a0f4d91fe0f827a31cbdfbb4a71d1f3dc4d06564d80a3f526b749dd104d11",
+      "size": 133,
+      "mode": 420
+    },
+    {
+      "path": "old/descrip.mms",
+      "sha256": "8ff08c35c056df9c986f23c09cf8936db63ccf12c3c42f7d18a48b36f060cff7",
+      "size": 1545,
+      "mode": 420
+    },
+    {
+      "path": "old/os2/Makefile.os2",
+      "sha256": "6ad247c00f00ff42fd2d62555e86251cef06e4079378241b5f320c227507d51d",
+      "size": 4109,
+      "mode": 420
+    },
+    {
+      "path": "old/os2/zlib.def",
+      "sha256": "ea9c61876d2e20b67ef2d9495991a32798eb40d13ede95859a2f4f03b65b9b61",
+      "size": 778,
+      "mode": 420
+    },
+    {
+      "path": "old/visual-basic.txt",
+      "sha256": "04f39c86a8894561498430ca169e9d6ca2c5cc99b43ee923081884065a0b2b1f",
+      "size": 6056,
+      "mode": 420
+    },
+    {
+      "path": "os400/README400",
+      "sha256": "96580d63002088615c4b5ea865cdbec234fef0c8471667d2dc66273398123743",
+      "size": 1870,
+      "mode": 420
+    },
+    {
+      "path": "os400/bndsrc",
+      "sha256": "3c36a17975eed5a8d33bc5443b39fead1e68c01393496be9c1f4a61444bcb0f6",
+      "size": 4313,
+      "mode": 420
+    },
+    {
+      "path": "os400/make.sh",
+      "sha256": "143394d1e3876c61c29078c0e47310e726e1f5bd42739fe92df9ece65711655f",
+      "size": 10727,
+      "mode": 420
+    },
+    {
+      "path": "os400/zlib.inc",
+      "sha256": "c01ddd22689c281066f2bd2e3a020fad4cd50c1e543f17fae963da89a0d69a29",
+      "size": 32792,
+      "mode": 420
+    },
+    {
+      "path": "qnx/package.qpg",
+      "sha256": "6c499168c561fc08e2fc41b07fc7a43882a52ede30c1599ed9f6a4035e764225",
+      "size": 6427,
+      "mode": 420
+    },
+    {
+      "path": "test/example.c",
+      "sha256": "b7aeca68f7585e29ca6572542e0ecbd9c3c9370035ae15152008b3efbd4f84ac",
+      "size": 15547,
+      "mode": 420
+    },
+    {
+      "path": "test/infcover.c",
+      "sha256": "13a0d18d8bca440c4617d88c2236913f53eedebc50e469be472edd4280c697e5",
+      "size": 24724,
+      "mode": 420
+    },
+    {
+      "path": "test/minigzip.c",
+      "sha256": "57e4a1b9bb1bdb59ac9e5ac1dc9132183e8740cec2f6b5c5f2476aac08a2375f",
+      "size": 14874,
+      "mode": 420
+    },
+    {
+      "path": "treebuild.xml",
+      "sha256": "7d1cb70609017f6f22079af7569c8d8be2ae51e9524fc173719a487181d60860",
+      "size": 3140,
+      "mode": 420
+    },
+    {
+      "path": "trees.c",
+      "sha256": "f63c68c16c05fcd196050529d1a0e7657960e4136b9987d90a6ac3e58a964b0f",
+      "size": 40937,
+      "mode": 420
+    },
+    {
+      "path": "trees.h",
+      "sha256": "bb0a9d3ca88ee00c81adb7c636e73b97085f6ef1b52d6d58edbe2b6dc3adeb4d",
+      "size": 8472,
+      "mode": 420
+    },
+    {
+      "path": "uncompr.c",
+      "sha256": "04dca5e31b3b8a17d1806426f66f0c539f4184d657e149d40be07070c6227b52",
+      "size": 2911,
+      "mode": 420
+    },
+    {
+      "path": "watcom/watcom_f.mak",
+      "sha256": "7e039b912f9cffaa40835281430bb284fa9042b0a0d12f6b34700a06bca6576e",
+      "size": 1439,
+      "mode": 420
+    },
+    {
+      "path": "watcom/watcom_l.mak",
+      "sha256": "d11b4064604a034725860e63e3f6d347056372e4b1675b183e20a93533b20cc9",
+      "size": 1407,
+      "mode": 420
+    },
+    {
+      "path": "win32/DLL_FAQ.txt",
+      "sha256": "539adcdcea4dcab44d0e788febd217a6f192bc0758dc7813cd5f5d8474d9b428",
+      "size": 17313,
+      "mode": 420
+    },
+    {
+      "path": "win32/Makefile.bor",
+      "sha256": "7d73a0d2c3e38b7c610bbc9c22f683a4fe1ab9b8b65649a3a8ac4ff7fcc14ba6",
+      "size": 2507,
+      "mode": 420
+    },
+    {
+      "path": "win32/Makefile.gcc",
+      "sha256": "97140c30506a8f6b2edb6b3d8a1b6b539d7929d4b957deba9950301090f579bf",
+      "size": 4983,
+      "mode": 420
+    },
+    {
+      "path": "win32/Makefile.msc",
+      "sha256": "235529bd529d4690d5d4b7871fdd0a1f118f2fe18862cbdec5f5ac674c55a60d",
+      "size": 4657,
+      "mode": 420
+    },
+    {
+      "path": "win32/README-WIN32.txt",
+      "sha256": "508bee0ef1a34892281517919970eb337e017503671d0fa0f139523b44b4d0eb",
+      "size": 4864,
+      "mode": 420
+    },
+    {
+      "path": "win32/VisualC.txt",
+      "sha256": "9ec0babd46eaa012371dee2d3a8a55d9c7130f7895512c3371c737e4a7f6a997",
+      "size": 124,
+      "mode": 420
+    },
+    {
+      "path": "win32/zlib.def",
+      "sha256": "c00693a5c825f8bfbdb68124fd03cb2fa5269338071147bdaa14434aaf3962b9",
+      "size": 1688,
+      "mode": 420
+    },
+    {
+      "path": "win32/zlib1.rc",
+      "sha256": "54e161029b59e99a4f9cb2281b956f00ecfb1814318ddef9c741ff4f832c5c1d",
+      "size": 1138,
+      "mode": 420
+    },
+    {
+      "path": "zconf.h",
+      "sha256": "f5134250a67d57459234b63858f0d9d3ef8dcc48e9e1028d3f4fdcf6eae677ae",
+      "size": 16500,
+      "mode": 420
+    },
+    {
+      "path": "zconf.h.cmakein",
+      "sha256": "350fb02462487a3e8612c18ad279053996ce0c85ebfece25a959baea9db86562",
+      "size": 16551,
+      "mode": 420
+    },
+    {
+      "path": "zconf.h.in",
+      "sha256": "f5134250a67d57459234b63858f0d9d3ef8dcc48e9e1028d3f4fdcf6eae677ae",
+      "size": 16500,
+      "mode": 420
+    },
+    {
+      "path": "zlib.3",
+      "sha256": "5aadb3f129c4c7e29f28bb6c5954dea061df3046d0fe3e134aff2ef4a217b1d6",
+      "size": 4476,
+      "mode": 420
+    },
+    {
+      "path": "zlib.3.pdf",
+      "sha256": "434e8d80e43ed24ed58a7dad0867a1136035864ad3e5fd4cc2c69e0715628c66",
+      "size": 25523,
+      "mode": 420
+    },
+    {
+      "path": "zlib.h",
+      "sha256": "8a5579af72ea4f427ff00a4150f0ccb3fc5c1e4379f726e101133b1ab9fc600c",
+      "size": 96829,
+      "mode": 420
+    },
+    {
+      "path": "zlib.map",
+      "sha256": "e83d883a3f7bb93b3dcfab28f5300a569bc7586ded2e067c0639d0697d13fe1e",
+      "size": 1453,
+      "mode": 420
+    },
+    {
+      "path": "zlib.pc.cmakein",
+      "sha256": "2f1d0b18ce37c2af415a469857f02aee2c41a58877aff21d29e9c6db32b55cb7",
+      "size": 294,
+      "mode": 420
+    },
+    {
+      "path": "zlib.pc.in",
+      "sha256": "04c01cc2e1a0ed123518b5855f585c93a24526dd88982c414111ea1fc9f07997",
+      "size": 254,
+      "mode": 420
+    },
+    {
+      "path": "zutil.c",
+      "sha256": "8ced40d8c88588811edd2bdb35b7439983d5e1f8e9e32b8a3b244731f3c317b7",
+      "size": 7179,
+      "mode": 420
+    },
+    {
+      "path": "zutil.h",
+      "sha256": "dddb2dc7a1dc339ecf2c8e089b366f08bb731c0839c7110240d17ce731bb4fea",
+      "size": 6677,
+      "mode": 420
+    }
+  ],
+  "directories": [
+    {
+      "path": "amiga",
+      "mode": 493
+    },
+    {
+      "path": "contrib",
+      "mode": 493
+    },
+    {
+      "path": "contrib/ada",
+      "mode": 493
+    },
+    {
+      "path": "contrib/blast",
+      "mode": 493
+    },
+    {
+      "path": "contrib/delphi",
+      "mode": 493
+    },
+    {
+      "path": "contrib/dotzlib",
+      "mode": 493
+    },
+    {
+      "path": "contrib/dotzlib/DotZLib",
+      "mode": 493
+    },
+    {
+      "path": "contrib/gcc_gvmat64",
+      "mode": 493
+    },
+    {
+      "path": "contrib/infback9",
+      "mode": 493
+    },
+    {
+      "path": "contrib/iostream",
+      "mode": 493
+    },
+    {
+      "path": "contrib/iostream2",
+      "mode": 493
+    },
+    {
+      "path": "contrib/iostream3",
+      "mode": 493
+    },
+    {
+      "path": "contrib/minizip",
+      "mode": 493
+    },
+    {
+      "path": "contrib/nuget",
+      "mode": 493
+    },
+    {
+      "path": "contrib/pascal",
+      "mode": 493
+    },
+    {
+      "path": "contrib/puff",
+      "mode": 493
+    },
+    {
+      "path": "contrib/testzlib",
+      "mode": 493
+    },
+    {
+      "path": "contrib/untgz",
+      "mode": 493
+    },
+    {
+      "path": "contrib/vstudio",
+      "mode": 493
+    },
+    {
+      "path": "contrib/vstudio/vc10",
+      "mode": 493
+    },
+    {
+      "path": "contrib/vstudio/vc11",
+      "mode": 493
+    },
+    {
+      "path": "contrib/vstudio/vc12",
+      "mode": 493
+    },
+    {
+      "path": "contrib/vstudio/vc14",
+      "mode": 493
+    },
+    {
+      "path": "contrib/vstudio/vc17",
+      "mode": 493
+    },
+    {
+      "path": "contrib/vstudio/vc9",
+      "mode": 493
+    },
+    {
+      "path": "doc",
+      "mode": 493
+    },
+    {
+      "path": "examples",
+      "mode": 493
+    },
+    {
+      "path": "msdos",
+      "mode": 493
+    },
+    {
+      "path": "nintendods",
+      "mode": 493
+    },
+    {
+      "path": "old",
+      "mode": 493
+    },
+    {
+      "path": "old/os2",
+      "mode": 493
+    },
+    {
+      "path": "os400",
+      "mode": 493
+    },
+    {
+      "path": "qnx",
+      "mode": 493
+    },
+    {
+      "path": "test",
+      "mode": 493
+    },
+    {
+      "path": "watcom",
+      "mode": 493
+    },
+    {
+      "path": "win32",
+      "mode": 493
+    }
+  ],
+  "case_collisions": [],
+  "notices": [
+    {
+      "path": "LICENSE",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "size": 1002
+    },
+    {
+      "path": "contrib/dotzlib/LICENSE_1_0.txt",
+      "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+      "size": 1359
+    }
+  ],
+  "symlink_policy": "Original symlink targets are inventoried literally; no source extraction was used to create this inventory."
+}

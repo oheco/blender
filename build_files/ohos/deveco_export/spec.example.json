@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "source_root": "/EXPLICIT_STABLE_COMPLETE_SOURCE",
+  "source_manifest": "/EXPLICIT_PRIVATE_CACHE/new-source-inventory.json",
+  "host_root": "/EXPLICIT_FROZEN_HOST",
+  "host_inventory": "/EXPLICIT_FROZEN_HOST151_INVENTORY.json",
+  "runtime_root": "/EXPLICIT_ACCEPTED_DEVELOPMENT_2",
+  "development_receipt": "/EXPLICIT_ACCEPTED_DEVELOPMENT_2/development-runtime.json",
+  "python_audit": "/EXPLICIT_ACCEPTED_PYTHON_AUDIT.json",
+  "numpy_audit": "/EXPLICIT_ACCEPTED_NUMPY_VALIDATION.json",
+  "pure_root": "/EXPLICIT_FORMAL_PURE193_ROOT",
+  "core_library": "/EXPLICIT_REAL_FINAL_SIGNED_CORE/libblender_core.so",
+  "core_receipt": "/EXPLICIT_ACTUAL_CREATOR_SINGLE_TU_CORE_LINK_SIGN_SOURCE_RECEIPT.json",
+  "core_receipt_contract_note": "Documentation only: actual immutable creator-single-TU/GHOST3 map; no receipt header override. No native evidence is supplied by this example.",
+  "core_receipt_example_shape": {
+    "implementation_compile": {
+      "compile_commands":{"path":"/ACTUAL_CORE_COMPILE_COMMANDS.json","sha256":"REQUIRED_ACTUAL_SHA256"},
+      "tuples":[{
+        "source":"source/creator/creator.cc",
+        "source_sha256":"REQUIRED_ACTUAL_SOURCE_SHA256",
+        "object":{"path":"/ACTUAL_BUILD/source/creator/CMakeFiles/blender.dir/creator.cc.o","sha256":"REQUIRED_ACTUAL_OBJECT_SHA256"},
+        "command_index":"REPLACE_WITH_ACTUAL_INTEGER_INDEX",
+        "dependency_file":{"path":"/ACTUAL_SAVED_CREATOR_NINJA_DEPS.txt","sha256":"REQUIRED_ACTUAL_SHA256","format":"ninja-deps","command":{"path":"/ACTUAL_SUCCESSFUL_NINJA_DEPS_COMMAND.json","sha256":"REQUIRED_ACTUAL_SHA256"}}
+      }],
+      "remaining_tuples_note":"Also actual GHOST_OHOSHost.cc/GHOST_OHOSNative.cc/GHOST_OHOSEngine.cc; their object outputs must be direct core link inputs or real members of an actual hashed linked archive."
+    },
+    "creator_required_headers":["source/creator/creator_intern.h","source/creator/creator_ohos.h","source/creator/creator_ohos_files.h","source/creator/creator_ohos_files_impl.hh","source/creator/creator_ohos_files_path.hh","intern/ghost/GHOST_OHOSHost.h"],
+    "ninja":{"path":"/EXPLICIT_ACTUAL_NINJA","sha256":"REQUIRED_SELECTED_TOOL_SHA256"}
+  },
+  "sdk_root": "/USER_INSTALLED_NATIVE_SDK26",
+  "sdk_ets_root": "/USER_INSTALLED_ETS_SDK26",
+  "readelf": "/EXPLICIT_NATIVE_READELF",
+  "bridge_stl": "c++_shared",
+  "feature_profile": "full-required",
+  "gltf_receipt_root": "/EXPLICIT_ACTUAL_ACCEPTED_GLTF_NATIVE_ROOT",
+  "gltf_run_records": [
+    {"path":"/EXPLICIT_ACTUAL_GLTF_CMAKE_NATIVE_RUN.json","sha256":"REQUIRED_SHA256"},
+    {"path":"/EXPLICIT_ACTUAL_GLTF_PC_NATIVE_RUN.json","sha256":"REQUIRED_SHA256"},
+    {"path":"/EXPLICIT_ACTUAL_GLTF_BRIDGE_ABI_RUN.json","sha256":"REQUIRED_SHA256"}
+  ],
+  "system_libraries": ["libc.so", "libvulkan.so", "libace_ndk.z.so", "libace_napi.z.so", "libhilog_ndk.z.so", "libnative_window.so", "libohinputmethod.so", "libohinput.so", "libpasteboard.so", "libudmf.so"],
+  "native_extras": [
+    {
+      "library": "libc++_shared.so",
+      "path": "/EXPLICIT_PRIVATE_FINAL_SIGNED_SDK_RUNTIME/libc++_shared.so",
+      "signed_sha256": "REQUIRED_ACTUAL_FINAL_SHA256",
+      "sdk_original": "llvm/lib/aarch64-linux-ohos/libc++_shared.so",
+      "sdk_original_sha256": "REQUIRED_ACTUAL_SDK_INPUT_SHA256",
+      "sign_receipt": "/EXPLICIT_ACTUAL_EXTRA_SIGN_RECEIPT.json"
+    },
+    {
+      "library":"libbf_intern_draco_bridge.so",
+      "path":"/EXPLICIT_ACTUAL_SIGNED_GLTF_PREFIX/lib/libbf_intern_draco_bridge.so",
+      "signed_sha256":"REQUIRED_ACTUAL_FINAL_SHA256",
+      "sign_receipt":"/EXPLICIT_ACTUAL_DRACO_LINK_SIGN_RECEIPT.json"
+    },
+    {
+      "library":"libbf_intern_meshopt_bridge.so",
+      "path":"/EXPLICIT_ACTUAL_SIGNED_GLTF_PREFIX/lib/libbf_intern_meshopt_bridge.so",
+      "signed_sha256":"REQUIRED_ACTUAL_FINAL_SHA256",
+      "sign_receipt":"/EXPLICIT_ACTUAL_MESHOPT_LINK_SIGN_RECEIPT.json"
+    }
+  ],
+  "notice_inputs": [
+    {"label":"base","root":"/EXPLICIT_BASE_NOTICES","inventory":"/EXPLICIT_BASE_NOTICE_INVENTORY.json"},
+    {"label":"geometry","root":"/EXPLICIT_GEOMETRY_NOTICES","inventory":"/EXPLICIT_GEOMETRY_NOTICE_INVENTORY.json"},
+    {"label":"core","root":"/EXPLICIT_CORE_NOTICES","inventory":"/EXPLICIT_CORE_NOTICE_INVENTORY.json"},
+    {"label":"volume","root":"/EXPLICIT_VOLUME_NOTICES","inventory":"/EXPLICIT_VOLUME_NOTICE_INVENTORY.json"},
+    {"label":"color","root":"/EXPLICIT_COLOR_NOTICES","inventory":"/EXPLICIT_COLOR_NOTICE_INVENTORY.json"},
+    {"label":"vulkan","root":"/EXPLICIT_VULKAN_NOTICES","inventory":"/EXPLICIT_VULKAN_NOTICE_INVENTORY.json"},
+    {"label":"sdk-runtime","root":"/EXPLICIT_SDK_RUNTIME_NOTICES","inventory":"/EXPLICIT_SDK_RUNTIME_NOTICE_INVENTORY.json"}
+  ],
+  "offline_inputs": [
+    {"label":"hvigor","cache_profile":"hvigor-npm-bin-filelinks-v1","root":"/EXPLICIT_COMPLETE_NATIVE_HVIGOR_6_26_4_ADAPTER_CACHE","inventory":"/EXPLICIT_SEALED_HVIGOR_FILELINK_CONTRACT.json"},
+    {"label":"ohpm","root":"/EXPLICIT_PINNED_OHPM_CACHE","inventory":"/EXPLICIT_OHPM_OFFLINE_INVENTORY.json"}
+  ],
+  "support_inputs": [],
+  "rebuild_commands": {},
+  "tool_prerequisites": {
+    "python":{"path":"/EXPLICIT_NATIVE_PYTHON","sha256":"REQUIRED_SHA256"},
+    "node":{"path":"/EXPLICIT_NODE","sha256":"REQUIRED_SHA256"},
+    "hvigor":{"path":"/EXPLICIT_COMPLETE_NATIVE_HVIGOR_6_26_4_ADAPTER_CACHE/bin/hvigor.cjs","kind":"file","sha256":"REQUIRED_SHA256"},
+    "ohpm":{"path":"/EXPLICIT_OHPM_ENTRYPOINT","sha256":"REQUIRED_SHA256"},
+    "cmake":{"path":"/EXPLICIT_CMAKE","sha256":"REQUIRED_SHA256"},
+    "ninja":{"path":"/EXPLICIT_NINJA","sha256":"REQUIRED_SHA256"},
+    "signer":{"path":"/EXPLICIT_BINARY_SIGN_TOOL","sha256":"REQUIRED_SHA256"},
+    "git":{"path":"/EXPLICIT_GIT","sha256":"REQUIRED_SHA256"},
+    "ctest":{"path":"/EXPLICIT_CTEST","sha256":"REQUIRED_SHA256"},
+    "pkgconf":{"path":"/EXPLICIT_PKGCONF","sha256":"REQUIRED_SHA256"},
+    "native_llvm20_cc":{"path":"/EXPLICIT_NATIVE_CLANG20_C","sha256":"REQUIRED_SHA256"},
+    "native_llvm20_cxx":{"path":"/EXPLICIT_NATIVE_CLANG20_CXX","sha256":"REQUIRED_SHA256"},
+    "native_lld20":{"path":"/EXPLICIT_NATIVE_LLD20","sha256":"REQUIRED_SHA256"}
+  }
+}

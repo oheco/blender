@@ -1,0 +1,434 @@
+[
+  {
+    "executable": false,
+    "path": ".dockerignore",
+    "sha256": "e255512d257e17a6353cfd24146c3856bb05cc346964db6b52e496c1604a6795",
+    "size": 47
+  },
+  {
+    "executable": false,
+    "path": ".gitignore",
+    "sha256": "d483a8ca6b744eb0cbe3f7c91090beedf8da19a5f8dc306b25f4d78b61af8f7e",
+    "size": 339
+  },
+  {
+    "executable": false,
+    "path": "CHANGELOG.rst",
+    "sha256": "1e56bb34715baea7fa2dcf9819deb851d82ac9d40c8c87bfa76f0b1a5a598f30",
+    "size": 13659
+  },
+  {
+    "executable": false,
+    "path": "LICENSE",
+    "sha256": "aaf9a29ca5907971ccf07de025375db34539a8d5eeebce20b46099805722106f",
+    "size": 1113
+  },
+  {
+    "executable": false,
+    "path": "PKG-INFO",
+    "sha256": "8bf61ef1c4aeb139423ab04e5a97248889f4864c5be948b4daf602f5aa531dfc",
+    "size": 5608
+  },
+  {
+    "executable": false,
+    "path": "README.md",
+    "sha256": "84471f8c074710036406f1a4f3dff69a94f8decbabdca58fbf456143dd96249f",
+    "size": 3833
+  },
+  {
+    "executable": false,
+    "path": "docs/api.rst",
+    "sha256": "e4910c6e46ffac75429f8e73d8d1c2217da3148d5f6c5614713a06937cbcfc1e",
+    "size": 399
+  },
+  {
+    "executable": false,
+    "path": "docs/changelog.rst",
+    "sha256": "bd8b3e8b5551105b987eb3f26cc72889cf471457ed78d12d93870ab39e1ec311",
+    "size": 30
+  },
+  {
+    "executable": false,
+    "path": "docs/conf.py",
+    "sha256": "020926dd8e612901ddfff2ce79b59e9174a0d87f2c81c579afdc6cabb8f2c6cf",
+    "size": 2440
+  },
+  {
+    "executable": false,
+    "path": "docs/differences.rst",
+    "sha256": "34025e1c5fb0358a35651fb4b768610baa269d57802bfb615fb19885c3b26ecc",
+    "size": 933
+  },
+  {
+    "executable": false,
+    "path": "docs/index.rst",
+    "sha256": "125491576027768199bc38600e1039aeda64d31fbe5750a509365959522c9282",
+    "size": 1172
+  },
+  {
+    "executable": false,
+    "path": "docs/installation.rst",
+    "sha256": "6220c369613f02fd553331680602756ce4b1ce8cb0ab3579c057404da571a24c",
+    "size": 2764
+  },
+  {
+    "executable": false,
+    "path": "docs/mission.rst",
+    "sha256": "869ce5a45bff788a5c17dec71d2f33e0c0c76d2bf5ae02e0ee65d893891cf5a3",
+    "size": 807
+  },
+  {
+    "executable": false,
+    "path": "docs/release.rst",
+    "sha256": "675c5c82376c54d24e7035666fc8f746d02abfda62d591e8f9b8fb8b22ebfd20",
+    "size": 823
+  },
+  {
+    "executable": false,
+    "path": "docs/test_suite.rst",
+    "sha256": "0d97a09d8161b600b7facc466dfc06a352c9b1147eaa901151d5300a381f8135",
+    "size": 2081
+  },
+  {
+    "executable": false,
+    "path": "pyproject.toml",
+    "sha256": "9fe741aa945d7a827ffcb413be6f046ec8a534f6ad4bc1db9121b2b516e7f904",
+    "size": 5482
+  },
+  {
+    "executable": false,
+    "path": "src/build/__init__.py",
+    "sha256": "70e41a66e4e0ac1291e40266f66f91e19f3fd7c882fe731924837d01f143d503",
+    "size": 837
+  },
+  {
+    "executable": false,
+    "path": "src/build/__main__.py",
+    "sha256": "3d857229a5732557ab2b53d47ebd25391ed0db2ffc968b89d4603b49645f9286",
+    "size": 15512
+  },
+  {
+    "executable": false,
+    "path": "src/build/_builder.py",
+    "sha256": "6a442f4197a08ff90c8f5f559f311e29d156ee015d7f55bf275f9f48a9f29075",
+    "size": 13469
+  },
+  {
+    "executable": false,
+    "path": "src/build/_compat/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "src/build/_compat/importlib.py",
+    "sha256": "99d518627e5c89abc143acc513eda08450e8b4a642e10b9f6ca3323e0e61dd62",
+    "size": 467
+  },
+  {
+    "executable": false,
+    "path": "src/build/_compat/tarfile.py",
+    "sha256": "4bc7d39aa1706d717c969b74e93dbdb8298ea188c0e07f57e8ffbb931645ebcb",
+    "size": 765
+  },
+  {
+    "executable": false,
+    "path": "src/build/_compat/tomllib.py",
+    "sha256": "253faaf5f06efef3ade1f3d62a1d9b20abdf928eb7df3ffbe05fd33ff635edcb",
+    "size": 255
+  },
+  {
+    "executable": false,
+    "path": "src/build/_ctx.py",
+    "sha256": "d701c1fc9f1b1283ab0de7f94b4d557c3b540b14af30eb8e9cb4735d5f10c28f",
+    "size": 2885
+  },
+  {
+    "executable": false,
+    "path": "src/build/_exceptions.py",
+    "sha256": "971118af8d9e1bec207cb6dc321964b3871cd2ef8fdf330cf2c6d6ada20dc08e",
+    "size": 1625
+  },
+  {
+    "executable": false,
+    "path": "src/build/_types.py",
+    "sha256": "2f2de70148a2e74bc806191d35b00621c648df1df99663902f335198cfe6534e",
+    "size": 553
+  },
+  {
+    "executable": false,
+    "path": "src/build/_util.py",
+    "sha256": "0f8c45c680383d3dbbc5a96ff5afb97e50ad66064734568aa6220cd97a5d33db",
+    "size": 2325
+  },
+  {
+    "executable": false,
+    "path": "src/build/env.py",
+    "sha256": "17c94328ed1c6bdc101bd49181121e1359609a3919ae7bbae716d4a885b6916f",
+    "size": 14241
+  },
+  {
+    "executable": false,
+    "path": "src/build/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "src/build/util.py",
+    "sha256": "22a64c723f32bdf72e3e525241b9a81e61d4f6de4885070e0eb8ff5a477cd356",
+    "size": 1840
+  },
+  {
+    "executable": false,
+    "path": "tests/conftest.py",
+    "sha256": "45915d6445d68629a425506f0278a4688f796b57659e7d1ceed5c2d33ab305f2",
+    "size": 6208
+  },
+  {
+    "executable": false,
+    "path": "tests/constraints.txt",
+    "sha256": "68fade48c54dabaf53ee44fcab38bd259516e00e9edf58d32972089e67853521",
+    "size": 540
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/inline/build.py",
+    "sha256": "0208901bae95fe30fc0be3d8ba49aa82a5dfc895f6e19eac6b857511dbb50d30",
+    "size": 1694
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/inline/pyproject.toml",
+    "sha256": "efdcaf3a4ab1fb2500f1e41b96f2ee8f5ed9d60ac7bc8c9f6e0b7a78e41142bc",
+    "size": 74
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/legacy/legacy/__init__.py",
+    "sha256": "9a1b01fcc043c4e135acc55d52b86ced11dd835f99ec5df9491e2237c2512e3a",
+    "size": 95
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/legacy/setup.py",
+    "sha256": "0109e3f97ac3b08465dc14ecabe16473dfe0acd16871c64afef79a72423af456",
+    "size": 367
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-bad-backend/pyproject.toml",
+    "sha256": "51390014e5c11b7beceb04508a4a98f4e70b12f07117a12f26f3fd8f3256e9b4",
+    "size": 64
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-bad-syntax/pyproject.toml",
+    "sha256": "b49b8458106b9242468d66d96e622af6ea7a93734ff6c4e57582f7f1eec41f4b",
+    "size": 43
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-bad-wheel/backend_bad_wheel.py",
+    "sha256": "3987af3e6125bb8af0526e4d13f97fa69b9e0bad75dbd3581d584e39bf52483f",
+    "size": 201
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-bad-wheel/pyproject.toml",
+    "sha256": "07caf7532dc076e7d5273692a671efe6ffe219297f3e47a91a7efecf83e17029",
+    "size": 108
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-bad-wheel/setup.cfg",
+    "sha256": "0948379d4351106af7fffa526b234d1ee5a9664f4697c5862fe6a497b4d2a95d",
+    "size": 49
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-cant-build-via-sdist/backend_bad_sdist.py",
+    "sha256": "ff53c91797e72379627a8ed3aa112f3b6f706cb7419deeef6c938ed2656fe09c",
+    "size": 849
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-cant-build-via-sdist/pyproject.toml",
+    "sha256": "e9aae9e2351b636b375045571dd2543cc28e04a06f29cd6c64b9b5912fb8edb5",
+    "size": 86
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-cant-build-via-sdist/some-file-that-is-needed-for-build.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-flit/pyproject.toml",
+    "sha256": "4bdf9f897c747cd1d8e806d477b120a79e47f282fc645998b045b88c599d016c",
+    "size": 341
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-flit/test_flit/__init__.py",
+    "sha256": "04f2bf333c163a40d6c9f7104b710e02d9e7aa7df002aabc6d609ff44e8bc8a5",
+    "size": 96
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-invalid-requirements/pyproject.toml",
+    "sha256": "f19670c67a925c6133c251c6edb84dd7353a2d56234f766013c68ba75562f028",
+    "size": 110
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-invalid-requirements/setup.cfg",
+    "sha256": "2824d09269d46f54f2a3a4de31a332d8550e42e10d917e6881d36cde8f044701",
+    "size": 60
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-metadata/backend.py",
+    "sha256": "6635a53aa1b208e32c4ca2cedbf18337ef5ffdea3f7909a738aff91da9790ae1",
+    "size": 1127
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-metadata/pyproject.toml",
+    "sha256": "05fba0e544d3f23d289d024860e755494907ad1369986512d494f440aa24b175",
+    "size": 266
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-no-backend/pyproject.toml",
+    "sha256": "c33d7e35b0f4745fe1b0bc59725a27025820d8814e92bb6436e0b0d3cc180c19",
+    "size": 29
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-no-permission/pyproject.toml",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-no-prepare/backend_no_prepare.py",
+    "sha256": "88cf36179bf3809bea3326b159f52fff763a2bbea73a16cc235251fb13158915",
+    "size": 768
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-no-prepare/pyproject.toml",
+    "sha256": "57e5b0d9ec6683a1804d4695e51b1a47c5d4516610c352de1cf15e5b90c8ce96",
+    "size": 243
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-no-project/empty.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-no-requires/pyproject.toml",
+    "sha256": "3a295e6d24c0e9511764cac3ac7bb00df264561a1ffb15252eb1369f036f2034",
+    "size": 43
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-optional-hooks/hookless_backend.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-optional-hooks/pyproject.toml",
+    "sha256": "b380e7a7e1100d08acd9f33b9fe6673f94cd0d67e83f15a0cb28eee0c473fc05",
+    "size": 85
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-setuptools/MANIFEST.in",
+    "sha256": "9787a801d0af13d6ebfe37db4f6caf0e2e547a8203b7e68730be6cae07fec564",
+    "size": 33
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-setuptools/pyproject.toml",
+    "sha256": "67529dd1daf6c45672c2cf974d79f36de2548d66726817110a6648a876f56f64",
+    "size": 91
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-setuptools/setup.cfg",
+    "sha256": "b0316a23c26acd49e179d0bdd9ff7872f3d5d777d3404a1ab43dc91c2fbeb10c",
+    "size": 50
+  },
+  {
+    "executable": false,
+    "path": "tests/packages/test-typo/pyproject.toml",
+    "sha256": "e692d931331e0fb4e5480f721bd1f2c6d4d278f07344c8fa440ea030d501d4d9",
+    "size": 90
+  },
+  {
+    "executable": false,
+    "path": "tests/test_ctx_logger.py",
+    "sha256": "e7032923924cb91f567e823fba24d41fb06988de6196032baaf14ec993304150",
+    "size": 1881
+  },
+  {
+    "executable": false,
+    "path": "tests/test_env.py",
+    "sha256": "e6c4ba4aa9bdc642e07cf6cbfc5ace1d07a6c2d2dc0c822a31e4cc1da526892c",
+    "size": 10340
+  },
+  {
+    "executable": false,
+    "path": "tests/test_integration.py",
+    "sha256": "70b47098602d49f482f8da5ef816638dad460e0b2f135e26afea2ca51ac1e0a6",
+    "size": 4944
+  },
+  {
+    "executable": false,
+    "path": "tests/test_main.py",
+    "sha256": "71c4616e2dada1ba153c340f1ce89331638d9c42bf7a86f021d168e540435855",
+    "size": 16181
+  },
+  {
+    "executable": false,
+    "path": "tests/test_main_helpers.py",
+    "sha256": "6e9f893fb8557d23ddcca4794e42e4b6d655d65b52ee03705f52f22fa97c32fb",
+    "size": 395
+  },
+  {
+    "executable": false,
+    "path": "tests/test_module.py",
+    "sha256": "816d12c1f9c89d75b512cec439f380c204bef8d8be2ae99c3536df2f21763691",
+    "size": 163
+  },
+  {
+    "executable": false,
+    "path": "tests/test_projectbuilder.py",
+    "sha256": "b7845386502064ae3329b3945e4999410c90c360a141a36590b6737073b4dd53",
+    "size": 22255
+  },
+  {
+    "executable": false,
+    "path": "tests/test_self_packaging.py",
+    "sha256": "7f774aff1cde943b96382d8ccbbf29afee7ac7b3187abc6b4174a7e536de9cd1",
+    "size": 2748
+  },
+  {
+    "executable": false,
+    "path": "tests/test_util.py",
+    "sha256": "62858b2b44260c90fb8ec28024984ba0e3311bff3f32d2e2dc872bd25bf2387a",
+    "size": 1745
+  },
+  {
+    "executable": false,
+    "path": "tox.ini",
+    "sha256": "aafa63cd9e0d50b9748c739732f2efecbc0f87c1c1566548318eff64b8248f54",
+    "size": 3072
+  }
+]

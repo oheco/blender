@@ -1,0 +1,14 @@
+/* Parent applies this ONLY to the separate libblender_core.so target.
+ * NAPI module callbacks live in libblender_host.so; Python extension symbols
+ * belong to the ONE shared libpython3.13.so (not to a hidden static Python copy).
+ * Audit Blender Python extensions' actual dynamic imports before final link. */
+BLENDER_OHOS_CORE_1 {
+  global:
+    blender_ohos_initialize;
+    blender_ohos_pump;
+    blender_ohos_stop;
+    blender_ohos_teardown;
+    blender_ohos_file_command;
+    ghost_ohos_*;
+  local: *;
+};

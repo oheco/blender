@@ -1,0 +1,98 @@
+--- a/common/sys/sysinfo.cpp
++++ b/common/sys/sysinfo.cpp
+@@ -656,6 +656,9 @@
+ #include <sys/ioctl.h>
+ #include <sys/time.h>
+ #include <pthread.h>
++#if defined(__OHOS__)
++#include <sched.h>
++#endif
+ 
+ #if defined(__EMSCRIPTEN__)
+ #include <emscripten.h>
+@@ -671,6 +674,16 @@
+ #if defined(__MACOSX__) || defined(__ANDROID__)
+     nThreads = sysconf(_SC_NPROCESSORS_ONLN); // does not work in Linux LXC container
+     assert(nThreads);
++#elif defined(__OHOS__)
++    // The OHOS SDK exposes current-thread sched affinity, not the pthread NP API.
++    cpu_set_t set;
++    CPU_ZERO(&set);
++    if (sched_getaffinity(0, sizeof(set), &set) == 0)
++      nThreads = CPU_COUNT(&set);
++    if (nThreads < 1) {
++      const long online = sysconf(_SC_NPROCESSORS_ONLN);
++      nThreads = online > 0 ? static_cast<int>(online) : 1;
++    }
+ #elif defined(__EMSCRIPTEN__)
+     // WebAssembly supports pthreads, but not pthread_getaffinity_np. Get the number of logical
+     // threads from the browser or Node.js using JavaScript.
+--- a/common/sys/thread.cpp
++++ b/common/sys/thread.cpp
+@@ -6,6 +6,9 @@
+ #include "estring.h"
+ 
+ #include <iostream>
++#if defined(__OHOS__)
++#include <sched.h>
++#endif
+ #if defined(__ARM_NEON)
+ #include "../simd/arm/emulation.h"
+ #else
+@@ -222,7 +225,11 @@
+     cpu_set_t set;
+     CPU_ZERO(&set);
+     
++#if defined(__OHOS__)
++    if (sched_getaffinity(0, sizeof(set), &set) == 0)
++#else
+     if (pthread_getaffinity_np(pthread_self(), sizeof(set), &set) == 0)
++#endif
+     {
+       for (int i=0, j=0; i<CPU_SETSIZE; i++)
+       {
+@@ -248,7 +255,12 @@
+     size_t threadID = affinity;
+     CPU_SET(threadID, &cset);
+ 
++#if defined(__OHOS__)
++    if (sched_setaffinity(0, sizeof(cset), &cset) != 0)
++      WARNING("sched_setaffinity failed");
++#else
+     pthread_setaffinity_np(pthread_self(), sizeof(cset), &cset);
++#endif
+   }
+ }
+ #endif
+@@ -367,8 +379,8 @@
+   {
+     _mm_setcsr(_mm_getcsr() | /*FTZ:*/ (1<<15) | /*DAZ:*/ (1<<6));
+     
+-    /*! Mac OS X does not support setting affinity at thread creation time */
+-#if defined(__MACOSX__)
++    /*! Set affinity in the worker when the platform has no pthread NP setter. */
++#if defined(__MACOSX__) || defined(__OHOS__)
+     if (parg->affinity >= 0)
+ 	setAffinity(parg->affinity);
+ #endif
+@@ -396,7 +408,7 @@
+     pthread_attr_destroy(&attr);
+ 
+     /* set affinity */
+-#if defined(__LINUX__) && !defined(__ANDROID__)
++#if defined(__LINUX__) && !defined(__ANDROID__) && !defined(__OHOS__)
+     if (threadID >= 0) {
+       cpu_set_t cset;
+       CPU_ZERO(&cset);
+@@ -437,7 +449,10 @@
+ 
+   /*! destroy a hardware thread by its handle */
+   void destroyThread(thread_t tid) {
+-#if defined(__ANDROID__)
++#if defined(__OHOS__)
++    // No SDK cancellation API; the selected TBB path never calls destroyThread.
++    FATAL("HarmonyOS SDK does not provide pthread_cancel; destroyThread unsupported.");
++#elif defined(__ANDROID__)
+     FATAL("Can't destroy threads on Android."); // pthread_cancel not implemented.
+ #else
+     pthread_cancel(*(pthread_t*)tid);

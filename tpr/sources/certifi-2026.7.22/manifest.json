@@ -1,0 +1,22 @@
+{
+  "name": "certifi",
+  "version": "2026.7.22",
+  "kind": "source",
+  "filename": "certifi-2026.7.22.tar.gz",
+  "url": "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz",
+  "license": "MPL-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "schema_version": 1,
+  "format": "original-archive-parts",
+  "size": 138112,
+  "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55",
+  "parts": [
+    {
+      "filename": "source.part0000",
+      "size": 138112,
+      "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
+    }
+  ]
+}

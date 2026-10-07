@@ -2149,7 +2149,8 @@ platform_system_replace_for_wheels = {
 
 def platform_from_this_system() -> str:
     import platform
-    system = platform.system().lower()
+    # CPython's real OHOS platform must not inherit a Linux/Android label.
+    system = "ohos" if sys.platform == "ohos" else platform.system().lower()
     machine = platform.machine().lower()
     return "{:s}-{:s}".format(
         platform_system_replace.get(system, system),

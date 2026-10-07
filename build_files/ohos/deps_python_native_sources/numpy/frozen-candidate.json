@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "classification": "FROZEN NUMPY SOURCE/BUILD REPLAY CANDIDATE ONLY",
+  "namespace": "build_files/ohos/deps_python_native_sources/numpy",
+  "files_lock_sha256": "799b6a7b580b5b4009b61a8502cc139c3f6d6485ed188768ea3164b486f15501",
+  "sealed_files": 25,
+  "new_namespace_total_files": 28,
+  "module_sha256": "b87092c398a1469d89883acd45dd4a6b5f45724140ab5f6fe9bf848dee449985",
+  "source_lock_sha256": "d7e396628e2233228384d2d74045a8ae164f62a42f93d5ac26511f97e2edd9bc",
+  "sdk15_lock_sha256": "e252620229b1968dbf447f2df13893d990c6497537cccbcfb03a8e7d03389996",
+  "acceptance_sha256": "2dd20bdb01c3fde3e769cf000bc4b8a5d49e9a0c3333dc5a7900714b7debb607",
+  "short_checks_sha256": "b646c0d4faff977deafeddf511960be268db6430813784ddb247e2fa17f5efb6",
+  "independent_seal_verify": {
+    "files": 25,
+    "files_lock_sha256": "799b6a7b580b5b4009b61a8502cc139c3f6d6485ed188768ea3164b486f15501",
+    "gate": "source inputs only"
+  },
+  "SDK_readonly_byte_pins": {
+    "profile": "accepted SDK Clang15.0.4 bytes",
+    "pins": 14,
+    "native_probe": "NOTRUN"
+  },
+  "source_checks": {
+    "result": "PASS",
+    "checks": 32,
+    "scope": "SOURCE/PYTHON/READ-ONLY ARGV PLAN ONLY",
+    "source_roots_created": false,
+    "temporary_files_created": false
+  },
+  "source_archives": {
+    "count": 12,
+    "exact_accepted_lock_entries": true,
+    "NumPy_original_sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+    "actual_backend": "complete NumPy vendored Meson1.8.3, not standalone Meson1.9.0 sdist"
+  },
+  "profile": {
+    "strip": false,
+    "b_ndebug": "if-release",
+    "cpp_std": "c++17",
+    "blas": "none",
+    "lapack": "none",
+    "allow-noblas": true,
+    "disable-highway": false,
+    "disable-threading": false,
+    "enable-openmp": false,
+    "cpu-baseline": "min",
+    "cpu-dispatch": "max -xop -fma4"
+  },
+  "complete_bundled_BLAS_LAPACK_lite_files": 8,
+  "expected_real_extension_count": 19,
+  "patch": {
+    "name": "NumPy vendored Meson native OHOS detection/Python LIBDIR",
+    "patch": "patches/numpy-vendored-meson-ohos.patch",
+    "patch_sha256": "22d6830e3151fa567e5a9cea88e914592b20c810abb88a8c3c39704800cb94ca",
+    "numpy_original_sha256": "a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a",
+    "scope": "Apply only via common complete original sourceprep with exact forward/reverse hashes; never accepted/source/formal mutations",
+    "files": [
+      {
+        "path": "vendored-meson/meson/mesonbuild/environment.py",
+        "before_sha256": "faacf7d3eeb8944a7bd70c5cfddbfff2e91bd94a24f49d37c282a0070aac14ac",
+        "before_size": 46506,
+        "after_sha256": "bda4653d9bd77273e2bbfb1c65b5ef2884f22d5078c63ae6aaaaad5efff23539",
+        "after_size": 46692
+      },
+      {
+        "path": "vendored-meson/meson/mesonbuild/dependencies/python.py",
+        "before_sha256": "ca4d7fbb0aa28e306986e67e5b1968b318f0f37f916e9d8b882d9ee7f120c423",
+        "before_size": 21462,
+        "after_sha256": "ee96cf109b2a6924a13143e533a72c06b42413627e6d22dc9fcd275a95527a12",
+        "after_size": 21650
+      }
+    ]
+  },
+  "interface": {
+    "plan": "plan(args,root,runtime_prefix) read-only argv; no execution/mutation",
+    "build": "build(args,runner,root,runtime_prefix) owns root/numpy only; new runtime under same fresh parent root",
+    "sources": "args.numpy_sources exactly12 registryID->newprepared absolute Path; args.numpy_verify_sources() common noargs guard success/failure before/after",
+    "runner": "run(command,label,cwd=None,extra_env=None,timeout=None) stdout or raise; common ownership/clean environment/logs",
+    "args": [
+      "sdk_root",
+      "cc",
+      "cxx",
+      "lld",
+      "ar",
+      "strip",
+      "ninja",
+      "signer",
+      "readelf",
+      "tmp_dir",
+      "jobs",
+      "python (bootstrap only, NumPy launches NEWruntime/bin/python3.13)"
+    ],
+    "seal": "verify_inputs(expected_lock_sha256=None), common parent anchors lock SHA; call -B or sys.dont_write_bytecode before imports"
+  },
+  "source_review": "Independent read-only review of seven core files; two findings corrected and reread confirmed, no unresolved issues",
+  "new_native_configure_compile_linker_probe": "NOTRUN",
+  "new_signing": "NOTRUN",
+  "old_or_new_NumPy_runtime_tests": "NOTRUN",
+  "actual_HAP_install_execution": "NOTRUN",
+  "Blender": "NOTRUN",
+  "external_accepted_runtime": "Immutable read-only bootstrap is common parent responsibility; never NumPy binary/runtime/cache fallback",
+  "source_prepare_full_tar_inventories": "Common parent strict original parts/inventories/sourceprep; module does not claim its pure source contracts as full sourceprep/native proof",
+  "gap": "Fresh full native and actual installed-HAP gates remain pending parent scheduling; full NumPy regression/optimized BLAS performance not claimed",
+  "no_network": true,
+  "no_existing_source_cache_SDK_acceptedroots_formal150_mutation": true,
+  "no_glTF_frozen44_mutation": true
+}
