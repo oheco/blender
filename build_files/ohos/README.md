@@ -2,7 +2,7 @@
 
 This branch starts at upstream `v5.2.2`, commit
 `d13f752e3b9c4f8c261cda552b1021f8bcc0382c`.
-The complete port remains **work in progress**. The user-confirmed host.15 editor is published as a **development preview**, with a self-signable DevEco project and a device-restricted developer HAP. See [host.15 release scope and usage](hap_host/RELEASE_HOST15.md); this preview does not establish full Blender editing/rendering acceptance.
+The complete port remains **work in progress**. The user-confirmed `5.2.2-ohos.15` editor is published as a **development preview**, with a self-signable DevEco project and a device-restricted developer HAP. See [release scope and usage](hap_host/RELEASE_HOST15.md); this preview does not establish full Blender editing/rendering acceptance.
 
 ## Product requirements
 

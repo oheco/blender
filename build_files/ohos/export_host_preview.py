@@ -17,13 +17,13 @@ import subprocess
 import tempfile
 import zipfile
 
-VERSION = '5.2.2-ohos.host.15'
+VERSION = '5.2.2-ohos.15'
 HAP_SHA256 = 'ea6f3f99651cb27143034a999d4928bfffc00de5c13bef3ad12b9cb68e54f683'
 CORE_SHA256 = '5b659f4e3b64c1da64deec60e00d129fd71f8c7b6c7990d0a1d093b774a3c443'
 HOST_SHA256 = 'ce2bd83d5ba8d066dd3efac57c8b5d4a5e55682971664343d1f1d8811b1d2320'
-README = '''# Blender HarmonyOS host.15 — DevEco preview
+README = '''# Blender 5.2.2-ohos.15 — DevEco preview
 
-This project contains the host.15 editor sources, runtime resources, and the
+This project contains the editor sources, runtime resources, and the
 same 94 signed ARM64 native libraries as the accepted development HAP. The
 native Core was built incrementally with strict OFF/libmv OFF; this is an
 experimental editor preview, not complete Blender port acceptance.
@@ -74,7 +74,7 @@ https://github.com/oheco/blender/tree/ohos/5.2.2/build_files/ohos .
 ## Source and licenses
 
 Upstream: https://github.com/blender/blender (v5.2.2).
-Adaptation: https://github.com/oheco/blender/tree/5.2.2-ohos.host.15 .
+Adaptation: https://github.com/oheco/blender/tree/5.2.2-ohos.15 .
 Blender is GPL-2.0-or-later. COPYING and third-party license notices are
 included. PREVIEW_MANIFEST.json binds the accepted HAP, native libraries,
 ABI/source inputs and bundled payload. Do not describe an app rebuild using
@@ -134,7 +134,7 @@ def main():
             'compatibleSdkVersion': '6.0.2(22)', 'runtimeOS': 'HarmonyOS'}]},
             'modules': [{'name': 'entry', 'srcPath': './entry', 'targets': [{'name': 'default'}]}]}, indent=2) + '\n',
         'oh-package.json5': json.dumps({'name': 'blender-ohos-host', 'version': '5.2.2',
-            'description': 'Blender host.15 preview with prebuilt signed native inputs',
+            'description': 'Blender 5.2.2-ohos.15 preview with prebuilt signed native inputs',
             'modelVersion': '6.0.0', 'devDependencies': {'@ohos/hvigor-ohos-plugin': '7.26.8'}}, indent=2) + '\n',
         'entry/build-profile.json5': json.dumps({'apiType': 'stageMode',
             'buildOption': {'nativeLib': {'debugSymbol': {'strip': False, 'exclude': []}}},
@@ -210,7 +210,8 @@ def main():
                 'Native byte parity failed')
         metadata = {'schema': 1, 'version': VERSION, 'bundle': 'org.oheco.blender', 'minimum_api': 22,
             'native_policy': 'prebuilt signed libraries preserved; no fresh Core build',
-            'accepted_hap_sha256': HAP_SHA256, 'native_libraries': native_members,
+            'accepted_hap_sha256': HAP_SHA256, 'accepted_hap_version': packaging['app_version'],
+            'native_libraries': native_members,
             'payload_files': payload_members, 'source_and_notices': {k: v for k, v in inventory.items()
                 if not k.startswith(('entry/libs/', 'entry/src/main/resources/rawfile/'))},
             'signing_material_included': False, 'user_confirmed': ['resize', 'IME', 'shortcuts'],
