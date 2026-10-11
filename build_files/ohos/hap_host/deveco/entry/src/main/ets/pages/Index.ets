@@ -21,19 +21,56 @@ struct Index {
   private disposed: boolean = false;
   private automaticClose: boolean = false;
   private appWindow: window.Window | undefined = undefined;
-  private surfaceLeft: number = 0;
-  private surfaceTop: number = 0;
-  private geometryChanged: (options: window.RectChangeOptions) => void = () => this.updateGeometry();
-  private updateGeometry(): void {
-    if (this.disposed || this.appWindow === undefined) { return; }
+  private controller: XComponentController = new XComponentController();
+  private displayChanged: (id: number) => void = (_) => this.updateGeometry();
+  private densityChanged: (density: number) => void = (_) => this.updateGeometry();
+  private resizeTimer: number = -1;
+  private statusListener: boolean = false;
+  private lastWindowStatus: window.WindowStatusType | undefined = undefined;
+  private statusChanged: (status: window.WindowStatusType) => void = (status) => {
+    if (status === this.lastWindowStatus) { return; }
+    this.lastWindowStatus = status;
+    const reason = status === window.WindowStatusType.MAXIMIZE ||
+      status === window.WindowStatusType.FULL_SCREEN ? 1 :
+      status === window.WindowStatusType.FLOATING ? 2 : 0;
+    this.updateGeometry(reason);
+  };
+  private geometryChanged: (options: window.RectChangeOptions) => void = (options) => {
+    const reason = options.reason === window.RectChangeReason.MAXIMIZE ? 1 :
+      options.reason === window.RectChangeReason.RECOVER ? 2 : 0;
+    this.updateGeometry(reason);
+  };
+  private stopResizeSampling(): void {
+    if (this.resizeTimer !== -1) { clearInterval(this.resizeTimer); this.resizeTimer = -1; }
+  }
+  private updateGeometry(reason: number = 0): void {
+    if (this.disposed || this.closing || this.appWindow === undefined) { return; }
     const properties = this.appWindow.getWindowProperties();
-    native.imeGeometry(properties.id, properties.windowRect.left + this.surfaceLeft,
-      properties.windowRect.top + this.surfaceTop);
+    const ui = this.getUIContext();
+    const node = ui.getFrameNodeById('blender-surface');
+    if (node !== null) {
+      const position = node.getGlobalPositionOnDisplay();
+      const surface = this.controller.getXComponentSurfaceRect();
+      native.imeGeometry(properties.id, ui.vp2px(position.x) + (surface.offsetX ?? 0),
+        ui.vp2px(position.y) + (surface.offsetY ?? 0));
+    }
+    // Sample throughout a mode transition. Only distinct sizes restart native quiet time.
+    if (properties.windowRect.width <= 0 || properties.windowRect.height <= 0) {
+      this.stopResizeSampling(); return;
+    }
+    const pending = native.resizeObservation(properties.windowRect.width, properties.windowRect.height, reason);
+    if (pending && this.resizeTimer === -1) {
+      this.resizeTimer = setInterval(() => this.updateGeometry(), 16);
+    } else if (!pending) { this.stopResizeSampling(); }
   }
   aboutToAppear(): void { this.prepare(); }
   aboutToDisappear(): void {
     this.disposed = true;
     this.appWindow?.off('windowRectChange', this.geometryChanged);
+    this.appWindow?.off('displayIdChange', this.displayChanged);
+    this.appWindow?.off('systemDensityChange', this.densityChanged);
+    if (this.statusListener) { this.appWindow?.off('windowStatusChange', this.statusChanged); }
+    this.stopResizeSampling();
     this.exchange?.close();
     if (this.timer !== -1) { clearInterval(this.timer); this.timer = -1; }
     native.shutdown().catch((error: Error) => { this.message = error.message; });
@@ -45,6 +82,13 @@ struct Index {
       this.appWindow = await window.getLastWindow(context);
       if (this.disposed) { return; }
       this.appWindow.on('windowRectChange', this.geometryChanged);
+      this.appWindow.on('displayIdChange', this.displayChanged);
+      this.appWindow.on('systemDensityChange', this.densityChanged);
+      try {
+        this.lastWindowStatus = this.appWindow.getWindowStatus();
+        this.appWindow.on('windowStatusChange', this.statusChanged);
+        this.statusListener = true;
+      } catch (_) { /* Rectangle notifications remain available when SessionManager is unsupported. */ }
       this.updateGeometry();
       const paths = await prepareRuntime(context);
       if (this.disposed) { return; }
@@ -56,9 +100,12 @@ struct Index {
       this.message = '正在启动 Blender…';
       this.timer = setInterval(() => {
         const state: number = native.state();
+        const wasReady = this.ready;
         this.ready = state === 2;
         if (this.ready) {
+          this.updateGeometry();
           this.message = '';
+          if (!wasReady) { this.requestSurfaceFocus(); }
           if (!this.assetBusy) {
             const operation: number = native.takeDocumentRequest();
             if (operation >= 1 && operation <= 6) { this.asset(operation as AssetOperation); }
@@ -78,6 +125,7 @@ struct Index {
   private async close(terminate: boolean): Promise<void> {
     if (this.closing) { return; }
     this.closing = true;
+    this.stopResizeSampling();
     this.ready = false;
     this.exchange?.close();
     this.message = 'Blender 正在等待任务与资源所有权释放…';
@@ -106,7 +154,15 @@ struct Index {
       if (!this.disposed) { this.assetMessage = finished ? `${label}完成` : `已取消${label}`; }
     } catch (error) {
       if (!this.disposed) { this.assetMessage = `${label}失败：${(error as Error).message}`; }
-    } finally { this.assetBusy = false; }
+    } finally {
+      this.assetBusy = false;
+      setTimeout(() => this.requestSurfaceFocus(), 0);
+    }
+  }
+  private requestSurfaceFocus(): void {
+    if (!this.ready || !this.mounted || this.assetBusy || this.closing || this.disposed) { return; }
+    try { this.getUIContext().getFocusController().requestFocus('blender-surface'); }
+    catch (_) { /* A pointer press retries after asynchronous surface mounting. */ }
   }
   private printable(event: KeyEvent): void {
     // SDK26 common.d.ts: modifier query accepts only Ctrl/Alt/Shift; Meta is
@@ -124,18 +180,15 @@ struct Index {
       if (this.message.length > 0) { Text(this.message).fontColor(Color.White).padding(8) }
       if (this.assetMessage.length > 0) { Text(this.assetMessage).fontColor(Color.White).padding(8) }
       if (this.mounted) {
-        XComponent({ id: 'blender-surface', type: XComponentType.SURFACE, libraryname: 'blender_host' })
-          .id('blender-surface').focusable(true).defaultFocus(true)
+        XComponent({ id: 'blender-surface', type: XComponentType.SURFACE, libraryname: 'blender_host', controller: this.controller })
+          .id('blender-surface').focusable(true).defaultFocus(true).focusOnTouch(true)
           .enabled(!this.assetBusy && !this.closing)
+          // The native callback owns physical keys for this libraryname-backed surface.
           .onKeyEvent((event: KeyEvent) => this.printable(event))
-          .onAreaChange((_previous: Area, area: Area) => {
-            const left: number = Number(area.globalPosition.x);
-            const top: number = Number(area.globalPosition.y);
-            if (!Number.isFinite(left) || !Number.isFinite(top)) { return; }
-            this.surfaceLeft = this.getUIContext().vp2px(left);
-            this.surfaceTop = this.getUIContext().vp2px(top);
-            this.updateGeometry();
+          .onMouse((event: MouseEvent) => {
+            if (event.action === MouseAction.Press) { this.requestSurfaceFocus(); }
           })
+          .onAreaChange(() => this.updateGeometry())
           .width('100%').layoutWeight(1)
       } else { Blank().layoutWeight(1) }
     }.width('100%').height('100%').backgroundColor('#202124')

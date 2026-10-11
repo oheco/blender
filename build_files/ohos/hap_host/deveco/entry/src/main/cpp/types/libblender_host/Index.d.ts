@@ -2,10 +2,15 @@ export const configure: (runtime: string, config: string, cache: string, temp: s
 export const state: () => number;
 export const result: () => number;
 export const foreground: (active: boolean) => void;
+export const windowActive: (active: boolean) => void;
+// Physical keys and modifier snapshot; composed text stays on the IME commit path.
+export const keyEvent: (code: number, pressed: boolean, ctrl: boolean, alt: boolean, shift: boolean, meta: boolean) => boolean;
 export const commitText: (text: string) => void;
 export const imeActive: () => boolean;
 export const takeDocumentRequest: () => number;
 export const imeGeometry: (osWindowId: number, surfaceScreenLeft: number, surfaceScreenTop: number) => void;
+// Sample physical window size; 0=sample, 1=maximize, 2=recover. True while quiet observation is pending.
+export const resizeObservation: (width: number, height: number, reason: number) => boolean;
 export const wheel: (physicalX: number, physicalY: number, rightDetents: number, upDetents: number) => void;
 export const detach: () => Promise<void>;
 export const shutdown: () => Promise<void>;

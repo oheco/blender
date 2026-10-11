@@ -27,6 +27,7 @@
 #include "BLI_math_matrix.h"
 #include "BLI_math_vector.h"
 #include "BLI_math_vector_types.hh"
+#include "BLI_memory_utils.hh"
 #include "BLI_rect.h"
 #include "BLI_utildefines.h"
 
@@ -48,6 +49,9 @@
 #include "GPU_batch_presets.hh"
 #include "GPU_capabilities.hh"
 #include "GPU_context.hh"
+#ifdef WITH_GHOST_OHOS
+#  include "GPU_context_ohos.hh"
+#endif
 #include "GPU_debug.hh"
 #include "GPU_framebuffer.hh"
 #include "GPU_immediate.hh"
@@ -1648,10 +1652,24 @@ void wm_draw_update(bContext *C)
   const bool rna_disallow_writes = true;
 
   CTX_rna_disallow_write_set_p(C, &rna_disallow_writes);
+#ifdef WITH_GHOST_OHOS
+  /* Submission failure propagates to the embedded owner. Never leave its shutdown with a
+   * locked GPU context or a pointer into this function's abandoned stack frame. */
+  BLI_SCOPED_DEFER([&] {
+    CTX_wm_window_set(C, nullptr);
+    CTX_rna_disallow_write_set_p(C, nullptr);
+  });
+#endif
 
   GPU_context_main_lock();
+#ifdef WITH_GHOST_OHOS
+  BLI_SCOPED_DEFER([&] { GPU_context_main_unlock(); });
+#endif
 
   GPU_render_begin();
+#ifdef WITH_GHOST_OHOS
+  BLI_SCOPED_DEFER([&] { GPU_render_end(); });
+#endif
   GPU_render_step();
 
   BKE_image_free_unused_gpu_textures();
@@ -1677,19 +1695,89 @@ void wm_draw_update(bContext *C)
 
     CTX_wm_window_set(C, &win);
 
-    if (wm_draw_update_test_window(bmain, C, &win)) {
-      PRF_frame_mark_start("Window Drawing"_ustr);
+    const bool full_redraw_requested = wm_draw_update_test_window(bmain, C, &win);
+#ifdef WITH_GHOST_OHOS
+    const bool present_progress = GPU_context_ohos_needs_redraw(
+        static_cast<const GPUContext *>(win.runtime->gpuctx));
+#else
+    const bool present_progress = false;
+#endif
+    if (full_redraw_requested || present_progress) {
       /* Sets context window+screen. */
       wm_window_make_drawable(wm, &win);
-      wm_window_swap_buffer_acquire(&win);
+#ifdef WITH_GHOST_OHOS
+      GPUContext *gpu_context = static_cast<GPUContext *>(win.runtime->gpuctx);
+      const int2 draw_size = WM_window_native_pixel_size(&win);
+      int2 previous_draw_size = draw_size;
+      GPU_context_ohos_window_draw_size(gpu_context, previous_draw_size.x, previous_draw_size.y);
+      const bool mouse_pressed = wm_window_ohos_mouse_buttons_held();
+      const bool client_resized = draw_size != previous_draw_size;
+      /* External window changes take priority over popup/modal interaction redraws. Input uses
+       * the retained composition's geometry until the final layout is committed. */
+      const bool allow_cached = client_resized || present_progress ||
+                                (!mouse_pressed && win.runtime->modalhandlers.is_empty() &&
+                                 win.runtime->gesture.is_empty() && wm->runtime->drags.is_empty());
+      const GPUWindowDrawPolicy policy = !full_redraw_requested ?
+                                             GPUWindowDrawPolicy::PresentOnly :
+                                         allow_cached ? GPUWindowDrawPolicy::Resize :
+                                                        GPUWindowDrawPolicy::Immediate;
+      GPUWindowDraw draw = GPU_context_ohos_prepare_window(
+          gpu_context, draw_size.x, draw_size.y, policy, false);
+      if (draw == GPUWindowDraw::Hold) {
+#  ifdef WITH_INPUT_IME
+        wm_window_ohos_ime_reposition(&win);
+#  endif
+        continue;
+      }
+      if (draw == GPUWindowDraw::Retry) {
+        GPU_flush();
+        continue;
+      }
+#endif
+      if (!wm_window_swap_buffer_acquire(&win)) {
+        /* No image/semaphore was acquired. Submit only pending off-screen work, and leave
+         * screen/region dirty flags intact so the event pump can retry after WSI recovers. */
+        GPU_flush();
+        continue;
+      }
+      PRF_frame_mark_start("Window Drawing"_ustr);
+#ifdef WITH_GHOST_OHOS
+      /* Acquire can change the surface format. Re-evaluate cached presentation after its callback.
+       */
+      draw = GPU_context_ohos_prepare_window(gpu_context, draw_size.x, draw_size.y, policy, true);
+      if (draw == GPUWindowDraw::Retry) {
+        /* Consume the acquired semaphore even if a new-format source could not be allocated.
+         * The GPU callback initializes the target instead of using an incompatible source. */
+        wm_window_swap_buffer_release(&win);
+        PRF_frame_mark_end("Window Drawing"_ustr);
+        continue;
+      }
+      if (draw == GPUWindowDraw::Cached) {
+#  ifdef WITH_INPUT_IME
+        wm_window_ohos_ime_reposition(&win);
+#  endif
+        GPU_context_begin_frame(gpu_context);
+        GPU_context_end_frame(gpu_context);
+        wm_window_swap_buffer_release(&win);
+        /* A cached frame does not satisfy any pending layout or region redraw. */
+        PRF_frame_mark_end("Window Drawing"_ustr);
+        continue;
+      }
+#endif
 
       /* Notifiers for screen redraw. */
       ED_screen_ensure_updated(C, wm, &win);
-
+#ifdef WITH_GHOST_OHOS
+      wm_window_ohos_resize_input_update(&win, previous_draw_size.x, previous_draw_size.y);
+#endif
       wm_draw_window(C, &win);
       wm_draw_update_clear_window(C, &win);
-
-      wm_window_swap_buffer_release(&win);
+#ifdef WITH_GHOST_OHOS
+      GPU_context_ohos_window_drawn(gpu_context);
+#endif
+      if (!wm_window_swap_buffer_release(&win)) {
+        WM_window_get_active_screen(&win)->do_draw = true;
+      }
       PRF_frame_mark_end("Window Drawing"_ustr);
     }
   }
@@ -1711,10 +1799,12 @@ void wm_draw_update(bContext *C)
     }
   }
 
+#ifndef WITH_GHOST_OHOS
   GPU_render_end();
   GPU_context_main_unlock();
 
   CTX_rna_disallow_write_set_p(C, nullptr);
+#endif
 }
 
 void wm_draw_region_clear(wmWindow *win, ARegion * /*region*/)

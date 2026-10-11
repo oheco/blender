@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "version": "5.2.2-ohos.host.15",
+  "bundle": "org.oheco.blender",
+  "channel": "development-preview",
+  "minimum_api": 22,
+  "tested_device": {"model": "MOR-M2", "gpu": "Maleoon 935", "api": 26},
+  "hap": {
+    "filename": "blender-5.2.2-ohos.host.15-native-key-route-signed.hap",
+    "size": 419636693,
+    "sha256": "ea6f3f99651cb27143034a999d4928bfffc00de5c13bef3ad12b9cb68e54f683",
+    "official_signature_verification_exit_code": 0,
+    "profile_type": "debug",
+    "authorized_device_count": 7,
+    "universal_installation": false
+  },
+  "native": {
+    "library_count": 94,
+    "packaged_bytes_equal_staged_inputs": true,
+    "native_stripping": false,
+    "host_build": "fresh five-source native HarmonyOS ARM64 build",
+    "core_imports_bound": 23,
+    "host_sha256": "ce2bd83d5ba8d066dd3efac57c8b5d4a5e55682971664343d1f1d8811b1d2320",
+    "core_sha256": "5b659f4e3b64c1da64deec60e00d129fd71f8c7b6c7990d0a1d093b774a3c443",
+    "core_profile": "incremental diagnostic embedded Core; strict OFF; libmv OFF",
+    "fresh_full_core_build": false,
+    "core_base_commit": "21fc6c0fc3ba24528f6c1cb7883ccb88ff4fde72",
+    "core_source_note": "Includes the frozen resize source patch atop the base; the embedded old Git HEAD is not the complete source identity."
+  },
+  "checks": {
+    "physical_key_modifier_cases_passed": 8,
+    "previous_resize_shared_regression_checks": 290839,
+    "previous_resize_retirement_suite": "PASS",
+    "native_escape_press_release": "received with live generation, active/focused window and queue result 0",
+    "automated_f3_search": "not confirmed; focus guards skipped subsequent injections",
+    "upgrade_install": "hdc install -r succeeded, same UID and signing fingerprint retained",
+    "app_process_and_window_startup": "PASS"
+  },
+  "user_confirmation": {
+    "host12_resize": "等待已合适，仍然完全不卡",
+    "host14_ime": "输入法可以正常工作",
+    "host15_shortcuts": "我试了一下快捷键正常工作了",
+    "host15_shortcuts_local_time": "2026-10-11T23:49:20+08:00",
+    "publication_authorized": "可以发布这个版本了"
+  },
+  "resize_wait_ms": {"ordinary": 120, "maximize_recover": 250},
+  "limits": [
+    "User explicitly deferred broad testing and fresh full Core rebuilding.",
+    "Complete editing, picker, rendering and cross-display candidate placement acceptance is not claimed.",
+    "Maleoon tile-blend trial remains limited to the reviewed hardware cohort.",
+    "The signed HAP is restricted to its authorized developer devices; other devices need their own signing/profile.",
+    "The catalog exports a DevEco project; oo does not install the HarmonyOS app."
+  ]
+}

@@ -26,6 +26,15 @@ typedef enum GHOST_OHOSKey {
 GHOST_OHOS_EXPORT int32_t ghost_ohos_native_retain(void *userdata, void *window) GHOST_OHOS_NOEXCEPT;
 GHOST_OHOS_EXPORT int32_t ghost_ohos_native_release(void *userdata, void *window) GHOST_OHOS_NOEXCEPT;
 GHOST_OHOS_EXPORT int32_t ghost_ohos_native_geometry(void *window, uint32_t *width, uint32_t *height) GHOST_OHOS_NOEXCEPT;
+/* Engine-thread only, once before Vulkan begins using each retained surface generation. */
+GHOST_OHOS_EXPORT int32_t ghost_ohos_native_resize_presentation(void *window) GHOST_OHOS_NOEXCEPT;
+/* Single embedded window: host/UI thread samples physical outer size. reason 0=sample,
+ * 1=maximize, 2=recover. Returns remaining quiet milliseconds or a negative error.
+ * This coordinates a bounded observation period, not compositor completion. */
+GHOST_OHOS_EXPORT int32_t ghost_ohos_native_resize_observe(uint32_t width, uint32_t height,
+    uint32_t reason) GHOST_OHOS_NOEXCEPT;
+/* Engine thread reads the Core-owned monotonic deadline; zero means no transition hold. */
+GHOST_OHOS_EXPORT int64_t ghost_ohos_native_resize_deadline(void) GHOST_OHOS_NOEXCEPT;
 /* malloc result; caller frees. READ_PASTEBOARD permission/interaction checked by
  * OS. No hidden clipboard cache substitutes for a denied native read. */
 GHOST_OHOS_EXPORT char *ghost_ohos_native_clipboard_get(void) GHOST_OHOS_NOEXCEPT;

@@ -27,9 +27,27 @@ float3 nonlinear_to_linear_scrgb(float3 c)
 void main()
 {
   int2 dst_texel = int2(gl_GlobalInvocationID.xy);
+  int2 dst_size = int2(imageSize(dst_img));
+  if (any(greaterThanEqual(dst_texel, dst_size))) {
+    return;
+  }
   int2 src_size = int2(imageSize(src_img));
-  int2 src_texel = int2(dst_texel.x, src_size.y - dst_texel.y - 1);
-  float4 color = imageLoad(src_img, int2(src_texel));
+  float4 color;
+  if (all(equal(src_size, dst_size))) {
+    color = imageLoad(src_img, int2(dst_texel.x, src_size.y - dst_texel.y - 1));
+  }
+  else {
+    float2 uv = (float2(dst_texel) + 0.5f) / float2(dst_size);
+    float2 src_pos = float2(uv.x, 1.0f - uv.y) * float2(src_size) - 0.5f;
+    int2 lo = int2(floor(src_pos));
+    int2 hi = lo + int2(1);
+    float2 weight = fract(src_pos);
+    lo = clamp(lo, int2(0), src_size - int2(1));
+    hi = clamp(hi, int2(0), src_size - int2(1));
+    color = mix(mix(imageLoad(src_img, lo), imageLoad(src_img, int2(hi.x, lo.y)), weight.x),
+                mix(imageLoad(src_img, int2(lo.x, hi.y)), imageLoad(src_img, hi), weight.x),
+                weight.y);
+  }
   /*
    * Convert from extended sRGB non-linear to linear.
    *

@@ -114,10 +114,20 @@ void wm_window_set_size(wmWindow *win, int width, int height);
 /**
  * \brief Push rendered buffer to the screen.
  */
-void wm_window_swap_buffer_acquire(wmWindow *win);
-void wm_window_swap_buffer_release(wmWindow *win);
+bool wm_window_swap_buffer_acquire(wmWindow *win);
+bool wm_window_swap_buffer_release(wmWindow *win);
 void wm_window_set_swap_interval(wmWindow *win, int interval);
 bool wm_window_get_swap_interval(wmWindow *win, int *r_interval);
+
+#ifdef WITH_GHOST_OHOS
+/** Query the complete native button set, including multi-button and keyboard interleaving. */
+bool wm_window_ohos_mouse_buttons_held();
+/** Reproject stored input after a complete resize layout, before composing it. */
+void wm_window_ohos_resize_input_update(wmWindow *win, int previous_width, int previous_height);
+#  ifdef WITH_INPUT_IME
+void wm_window_ohos_ime_reposition(wmWindow *win);
+#  endif
+#endif
 
 bool wm_cursor_position_get(wmWindow *win, int *r_x, int *r_y) ATTR_WARN_UNUSED_RESULT;
 void wm_cursor_position_from_ghost_screen_coords(wmWindow *win, int *x, int *y);

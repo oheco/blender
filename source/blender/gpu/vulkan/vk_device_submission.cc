@@ -9,6 +9,9 @@
 #include <chrono>
 #include <condition_variable>
 #include <thread>
+#ifdef WITH_GHOST_OHOS
+#  include <stdexcept>
+#endif
 
 #include "BLI_mutex.hh"
 #include "BLI_task.h"
@@ -29,6 +32,7 @@ namespace gpu {
  * \{ */
 
 struct VKRenderGraphWait {
+  VkResult result = VK_SUCCESS;
   Mutex is_submitted_mutex;
   std::condition_variable_any is_submitted_condition;
   bool is_submitted;
@@ -55,12 +59,29 @@ TimelineValue VKDevice::render_graph_submit(render_graph::VKRenderGraph *render_
                                             VkSemaphore signal_semaphore,
                                             VkFence signal_fence)
 {
+#ifdef WITH_GHOST_OHOS
+  if (submission_error_.load() != VK_SUCCESS) {
+    if (!submit_to_device && !wait_for_submission && !wait_for_completion) {
+      /* Deactivation/teardown can return CPU-only graphs without creating another GPU promise. */
+      render_graph->reset();
+      BLI_thread_queue_push(
+          unused_render_graphs_, render_graph, BLI_THREAD_QUEUE_WORK_PRIORITY_NORMAL);
+      return 0;
+    }
+    throw std::runtime_error("Vulkan queue submission stopped after a device error");
+  }
+#endif
   /* Syncing input flags. */
   /* When we wait for completion/submission we must submit to device. */
   submit_to_device |= wait_for_completion;
   submit_to_device |= wait_for_submission;
   /* We don't need to wait for submission when waiting for completion. */
+#ifdef WITH_GHOST_OHOS
+  /* Check acceptance before waiting for a timeline which a failed submit cannot signal. */
+  wait_for_submission |= wait_for_completion;
+#else
   wait_for_submission &= !wait_for_completion;
+#endif
 
   VKRenderGraphSubmitTask *submit_task = MEM_new<VKRenderGraphSubmitTask>(__func__);
   submit_task->render_graph = render_graph;
@@ -89,6 +110,11 @@ TimelineValue VKDevice::render_graph_submit(render_graph::VKRenderGraph *render_
   if (wait_for_submission) {
     std::unique_lock<Mutex> lock(wait_condition.is_submitted_mutex);
     wait_condition.is_submitted_condition.wait(lock, [&] { return wait_condition.is_submitted; });
+#ifdef WITH_GHOST_OHOS
+    if (wait_condition.result != VK_SUCCESS) {
+      throw std::runtime_error(to_string(wait_condition.result));
+    }
+#endif
   }
 
   if (wait_for_completion) {
@@ -99,12 +125,30 @@ TimelineValue VKDevice::render_graph_submit(render_graph::VKRenderGraph *render_
 
 void VKDevice::wait_for_timeline(TimelineValue timeline)
 {
+#ifdef WITH_GHOST_OHOS
+  if (submission_error_.load() != VK_SUCCESS) {
+    /* A failed batch owns no GPU completion; teardown drains the actual queue separately. */
+    CLOG_ERROR(&LOG, "Vulkan: skip an unsignaled timeline after submission failure");
+    return;
+  }
+#endif
   if (timeline == 0) {
     return;
   }
   VkSemaphoreWaitInfo vk_semaphore_wait_info = {
       VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO, nullptr, 0, 1, &vk_timeline_semaphore_, &timeline};
+#ifdef WITH_GHOST_OHOS
+  VkResult wait_result;
+  do {
+    wait_result = vkWaitSemaphores(vk_device_, &vk_semaphore_wait_info, 16'000'000);
+    if (submission_error_.load() != VK_SUCCESS) {
+      CLOG_ERROR(&LOG, "Vulkan: timeline promise canceled by submission failure");
+      return;
+    }
+  } while (wait_result == VK_TIMEOUT);
+#else
   VkResult wait_result = vkWaitSemaphores(vk_device_, &vk_semaphore_wait_info, UINT64_MAX);
+#endif
   if (wait_result != VK_SUCCESS) {
     CLOG_ERROR(
         &LOG, "Vulkan: failed to wait for synchronization timeline [%s]", to_string(wait_result));
@@ -161,6 +205,24 @@ void VKDevice::submission_runner(TaskPool *__restrict pool, void *task_data)
     if (submit_task == nullptr) {
       continue;
     }
+#ifdef WITH_GHOST_OHOS
+    const VkResult preceding_error = device->submission_error_.load();
+    if (preceding_error != VK_SUCCESS) {
+      /* Cancel tasks already queued behind a failed timeline instead of submitting waits on it. */
+      if (submit_task->wait_for_submission) {
+        std::unique_lock<Mutex> lock(submit_task->wait_for_submission->is_submitted_mutex);
+        submit_task->wait_for_submission->result = preceding_error;
+        submit_task->wait_for_submission->is_submitted = true;
+        submit_task->wait_for_submission->is_submitted_condition.notify_one();
+      }
+      submit_task->render_graph->reset();
+      BLI_thread_queue_push(device->unused_render_graphs_,
+                            submit_task->render_graph,
+                            BLI_THREAD_QUEUE_WORK_PRIORITY_NORMAL);
+      MEM_delete<VKRenderGraphSubmitTask>(submit_task);
+      continue;
+    }
+#endif
     uint64_t current_timeline = device->submission_finished_timeline_get();
     if (assign_if_different(previous_gc_timeline, current_timeline)) {
       device->orphaned_data.destroy_discarded_resources(*device, current_timeline);
@@ -241,12 +303,21 @@ void VKDevice::submission_runner(TaskPool *__restrict pool, void *task_data)
       CLOG_TRACE(&LOG, "Submitting %u render graph nodes to device.", uint32_t(num_nodes));
       num_nodes = 0;
 
+      VkResult submit_result;
       {
         std::scoped_lock lock_queue(*device->queue_mutex_);
-        vkQueueSubmit(device->vk_queue_, 1, &vk_submit_info, submit_task->signal_fence);
+        submit_result = vkQueueSubmit(
+            device->vk_queue_, 1, &vk_submit_info, submit_task->signal_fence);
+      }
+      if (submit_result != VK_SUCCESS) {
+        CLOG_ERROR(&LOG, "Vulkan: queue submission failed [%s]", to_string(submit_result));
+#ifdef WITH_GHOST_OHOS
+        device->submission_error_.store(submit_result);
+#endif
       }
       if (submit_task->wait_for_submission != nullptr) {
         std::unique_lock<Mutex> lock(submit_task->wait_for_submission->is_submitted_mutex);
+        submit_task->wait_for_submission->result = submit_result;
         submit_task->wait_for_submission->is_submitted = true;
         submit_task->wait_for_submission->is_submitted_condition.notify_one();
       }
@@ -281,6 +352,9 @@ void VKDevice::submission_runner(TaskPool *__restrict pool, void *task_data)
 
 void VKDevice::init_submission_pool()
 {
+#ifdef WITH_GHOST_OHOS
+  submission_error_.store(VK_SUCCESS);
+#endif
   CLOG_TRACE(&LOG, "Create submission pool");
   submission_pool_ = BLI_task_pool_create_background_serial(this, TASK_PRIORITY_HIGH);
   submitted_render_graphs_ = BLI_thread_queue_init();

@@ -15,6 +15,9 @@
 #include <cstdlib>
 #include <cstring>
 #include <thread>
+#if defined(WITH_GHOST_OHOS) && defined(WITH_INPUT_IME)
+#  include <unordered_map>
+#endif
 
 #include <fmt/format.h>
 
@@ -92,6 +95,10 @@
 #include "BLF_api.hh"
 #include "GPU_capabilities.hh"
 #include "GPU_context.hh"
+#ifdef WITH_GHOST_OHOS
+#  include "GPU_context_ohos.hh"
+#  include "GPU_ohos_window_geometry.hh"
+#endif
 #include "GPU_framebuffer.hh"
 #include "GPU_init_exit.hh"
 
@@ -112,6 +119,17 @@ static void wm_window_csd_title_redraw_tag(wmWindowManager *wm, wmWindow *win);
 
 /* The global to talk to GHOST. */
 static GHOST_ISystem *g_system = nullptr;
+
+#if defined(WITH_GHOST_OHOS) && defined(WITH_INPUT_IME)
+struct WMOHOSIMEGeometry {
+  int2 position = int2(0);
+  int2 size = int2(1);
+  int2 draw_size = int2(1);
+  int2 client_size = int2(0);
+};
+/* Owned per WM window and erased on IME end/window destruction. */
+static std::unordered_map<const wmWindow *, WMOHOSIMEGeometry> g_ohos_ime_geometry;
+#endif
 #if !(defined(WIN32) || defined(__APPLE__))
 static const char *g_system_backend_id = nullptr;
 #endif
@@ -273,6 +291,9 @@ static void wm_ghostwindow_destroy(wmWindowManager *wm, wmWindow *win)
 
 void wm_window_free(bContext *C, wmWindowManager *wm, wmWindow *win)
 {
+#if defined(WITH_GHOST_OHOS) && defined(WITH_INPUT_IME)
+  g_ohos_ime_geometry.erase(win);
+#endif
   /* Update context. */
   if (C) {
     WM_event_remove_handlers(C, &win->runtime->handlers);
@@ -1077,16 +1098,16 @@ static void wm_window_ghostwindow_add(wmWindowManager *wm,
     ui::theme::get_color_3fv(TH_BACK, window_bg_color);
 
     /* Until screens get drawn, draw a default background using the window theme color. */
-    wm_window_swap_buffer_acquire(win);
-    GPU_clear_color(window_bg_color[0], window_bg_color[1], window_bg_color[2], 1.0f);
+    if (wm_window_swap_buffer_acquire(win)) {
+      GPU_clear_color(window_bg_color[0], window_bg_color[1], window_bg_color[2], 1.0f);
+      wm_window_swap_buffer_release(win);
+
+      /* Clear double buffer to avoid flickering of new windows on certain drivers, see #97600. */
+      GPU_clear_color(window_bg_color[0], window_bg_color[1], window_bg_color[2], 1.0f);
+    }
 
     /* Needed here, because it's used before it reads #UserDef. */
     WM_window_dpi_set_userdef(win);
-
-    wm_window_swap_buffer_release(win);
-
-    /* Clear double buffer to avoids flickering of new windows on certain drivers, see #97600. */
-    GPU_clear_color(window_bg_color[0], window_bg_color[1], window_bg_color[2], 1.0f);
 
     GPU_render_end();
   }
@@ -1554,8 +1575,84 @@ wmOperatorStatus wm_window_fullscreen_toggle_exec(bContext *C, wmOperator * /*op
 /** \name Events
  * \{ */
 
+#ifdef WITH_GHOST_OHOS
+bool wm_window_ohos_mouse_buttons_held()
+{
+  if (!g_system) {
+    return true;
+  }
+  for (int button = 0; button < GHOST_kButtonNum; button++) {
+    bool pressed = false;
+    if (g_system->getButtonState(GHOST_TButton(button), pressed) != GHOST_kSuccess || pressed) {
+      return true;
+    }
+  }
+  return false;
+}
+
+static bool wm_ohos_window_draw_sizes(const wmWindow *win, int2 &draw, int2 &client)
+{
+  if (!win->runtime->ghostwin ||
+      !GPU_context_ohos_window_draw_size(
+          static_cast<const GPUContext *>(win->runtime->gpuctx), draw.x, draw.y))
+  {
+    return false;
+  }
+  GHOST_Rect bounds;
+  static_cast<GHOST_IWindow *>(win->runtime->ghostwin)->getClientBounds(bounds);
+  client = int2(bounds.getWidth(), bounds.getHeight());
+  return draw.x > 0 && draw.y > 0 && client.x > 0 && client.y > 0;
+}
+
+void wm_window_ohos_resize_input_update(wmWindow *win, int previous_width, int previous_height)
+{
+  int2 draw, client;
+  if (previous_width <= 0 || previous_height <= 0 ||
+      !wm_ohos_window_draw_sizes(win, draw, client) ||
+      (draw.x == previous_width && draw.y == previous_height))
+  {
+    return;
+  }
+  const GPUOHOSWindowGeometry resized{draw.x, draw.y, previous_width, previous_height};
+  const auto project_point = [&](int xy[2]) {
+    xy[1] = previous_height - xy[1] - 1;
+    resized.from_client(xy[0], xy[1]);
+  };
+  const auto project_event = [&](wmEvent *event) {
+    if (event) {
+      project_point(event->xy);
+      project_point(event->prev_xy);
+      project_point(event->prev_press_xy);
+      event->mval[0] = event->mval[1] = -1; /* Recomputed by the next region event dispatch. */
+    }
+  };
+  project_event(win->runtime->eventstate);
+  project_event(win->runtime->event_last_handled);
+  for (wmEvent &event : win->runtime->event_queue) {
+    project_event(&event);
+  }
+  if (wmEvent *state = win->runtime->eventstate) {
+    int x, y;
+    auto *ghost_window = static_cast<GHOST_IWindow *>(win->runtime->ghostwin);
+    if (g_system->getCursorPositionClientRelative(ghost_window, x, y) == GHOST_kSuccess) {
+      wm_cursor_position_from_ghost_client_coords(win, &x, &y);
+      state->xy[0] = state->prev_xy[0] = x;
+      state->xy[1] = state->prev_xy[1] = y;
+    }
+  }
+  WM_event_add_mousemove(win);
+}
+#endif
+
 void wm_cursor_position_from_ghost_client_coords(wmWindow *win, int *x, int *y)
 {
+#ifdef WITH_GHOST_OHOS
+  int2 draw, client;
+  if (wm_ohos_window_draw_sizes(win, draw, client)) {
+    GPUOHOSWindowGeometry{draw.x, draw.y, client.x, client.y}.from_client(*x, *y);
+    return;
+  }
+#endif
   GHOST_IWindow *ghost_window = static_cast<GHOST_IWindow *>(win->runtime->ghostwin);
   const float fac = ghost_window->getNativePixelSize();
 
@@ -1566,6 +1663,13 @@ void wm_cursor_position_from_ghost_client_coords(wmWindow *win, int *x, int *y)
 
 void wm_cursor_position_to_ghost_client_coords(wmWindow *win, int *x, int *y)
 {
+#ifdef WITH_GHOST_OHOS
+  int2 draw, client;
+  if (wm_ohos_window_draw_sizes(win, draw, client)) {
+    GPUOHOSWindowGeometry{draw.x, draw.y, client.x, client.y}.to_client(*x, *y);
+    return;
+  }
+#endif
   GHOST_IWindow *ghost_window = static_cast<GHOST_IWindow *>(win->runtime->ghostwin);
   const float fac = ghost_window->getNativePixelSize();
 
@@ -2901,16 +3005,16 @@ void wm_window_raise(wmWindow *win)
 /** \name Window Buffers
  * \{ */
 
-void wm_window_swap_buffer_acquire(wmWindow *win)
+bool wm_window_swap_buffer_acquire(wmWindow *win)
 {
   GHOST_IWindow *ghost_window = static_cast<GHOST_IWindow *>(win->runtime->ghostwin);
-  ghost_window->swapBufferAcquire();
+  return ghost_window->swapBufferAcquire() == GHOST_kSuccess;
 }
 
-void wm_window_swap_buffer_release(wmWindow *win)
+bool wm_window_swap_buffer_release(wmWindow *win)
 {
   GHOST_IWindow *ghost_window = static_cast<GHOST_IWindow *>(win->runtime->ghostwin);
-  ghost_window->swapBufferRelease();
+  return ghost_window->swapBufferRelease() == GHOST_kSuccess;
 }
 
 void wm_window_set_swap_interval(wmWindow *win, int interval)
@@ -3432,16 +3536,52 @@ void wm_window_IME_begin(wmWindow *win, int x, int y, int w, int h, bool complet
     return;
   }
 
-  /* Convert to native OS window coordinates. */
+  /* Convert to the visible composition's native OS window coordinates. */
   GHOST_IWindow *ghost_window = static_cast<GHOST_IWindow *>(win->runtime->ghostwin);
+#  ifdef WITH_GHOST_OHOS
+  /* Widget reposition requests can have zero size; the native host requires a non-empty caret. */
+  w = std::max(w, 1);
+  h = std::max(h, 1);
+  int2 draw, client;
+  if (wm_ohos_window_draw_sizes(win, draw, client)) {
+    g_ohos_ime_geometry[win] = {int2(x, y), int2(w, h), draw, client};
+    GPUOHOSWindowGeometry{draw.x, draw.y, client.x, client.y}.ime_to_client(x, y, w, h);
+    ghost_window->beginIME(x, y, w, h, complete);
+    return;
+  }
+#  endif
   const float fac = ghost_window->getNativePixelSize();
   x /= fac;
   y /= fac;
   ghost_window->beginIME(x, win->sizey - y, w, h, complete);
 }
 
+#  ifdef WITH_GHOST_OHOS
+void wm_window_ohos_ime_reposition(wmWindow *win)
+{
+  const auto found = g_ohos_ime_geometry.find(win);
+  int2 draw, client;
+  if (found == g_ohos_ime_geometry.end() || !wm_ohos_window_draw_sizes(win, draw, client)) {
+    return;
+  }
+  WMOHOSIMEGeometry &geometry = found->second;
+  if (geometry.client_size == client) {
+    return;
+  }
+  int x = geometry.position.x, y = geometry.position.y;
+  int width = geometry.size.x, height = geometry.size.y;
+  GPUOHOSWindowGeometry{geometry.draw_size.x, geometry.draw_size.y, client.x, client.y}
+      .ime_to_client(x, y, width, height);
+  static_cast<GHOST_IWindow *>(win->runtime->ghostwin)->beginIME(x, y, width, height, false);
+  geometry.client_size = client;
+}
+#  endif
+
 void wm_window_IME_end(wmWindow *win)
 {
+#  ifdef WITH_GHOST_OHOS
+  g_ohos_ime_geometry.erase(win);
+#  endif
   if ((WM_capabilities_flag() & WM_CAPABILITY_INPUT_IME) == 0) {
     return;
   }

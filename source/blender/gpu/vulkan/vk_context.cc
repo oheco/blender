@@ -9,6 +9,13 @@
 #include "DNA_userdef_types.h"
 
 #include "GPU_debug.hh"
+#ifdef WITH_GHOST_OHOS
+#  include "GHOST_OHOSNative.h"
+#  include "GHOST_Rect.hh"
+#  include "GPU_context_ohos.hh"
+#  include "intern/GHOST_ContextVK.hh"
+#  include <exception>
+#endif
 
 #include "gpu_capabilities_private.hh"
 
@@ -64,53 +71,178 @@ VKContext::~VKContext()
   this->process_frame_timings();
 }
 
-void VKContext::sync_backbuffer()
+bool VKContext::sync_backbuffer(int width, int height)
 {
-  if (ghost_window_) {
-    GHOST_VulkanSwapChainData swap_chain_data = {};
-    ghost_window_->getVulkanSwapChainFormat(&swap_chain_data);
-
-    const bool reset_framebuffer = swap_chain_format_.format !=
-                                       swap_chain_data.surface_format.format ||
-                                   swap_chain_format_.colorSpace !=
-                                       swap_chain_data.surface_format.colorSpace ||
-                                   vk_extent_.width != swap_chain_data.extent.width ||
-                                   vk_extent_.height != swap_chain_data.extent.height;
-    if (reset_framebuffer) {
-      if (has_active_framebuffer()) {
-        deactivate_framebuffer();
-      }
-      if (surface_texture_) {
-        GPU_texture_free(surface_texture_);
-        surface_texture_ = nullptr;
-      }
-      vk_extent_ = swap_chain_data.extent;
-      vk_extent_.width = max_uu(vk_extent_.width, 1u);
-      vk_extent_.height = max_uu(vk_extent_.height, 1u);
-      surface_texture_ = GPU_texture_create_2d(
-          "back-left",
-          vk_extent_.width,
-          vk_extent_.height,
-          1,
-          to_gpu_format(swap_chain_data.surface_format.format),
-          GPU_TEXTURE_USAGE_ATTACHMENT | GPU_TEXTURE_USAGE_SHADER_READ,
-          nullptr);
-
-      back_left->attachment_set(GPU_FB_COLOR_ATTACHMENT0,
-                                GPU_ATTACHMENT_TEXTURE(surface_texture_));
-      front_left->attachment_set(GPU_FB_COLOR_ATTACHMENT0,
-                                 GPU_ATTACHMENT_TEXTURE(surface_texture_));
-
-      back_left->bind(false);
-
-      swap_chain_format_ = swap_chain_data.surface_format;
-      GCaps.hdr_viewport_support = (swap_chain_format_.format == VK_FORMAT_R16G16B16A16_SFLOAT) &&
-                                   ELEM(swap_chain_format_.colorSpace,
-                                        VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT,
-                                        VK_COLOR_SPACE_PASS_THROUGH_EXT);
-    }
+  if (!ghost_window_) {
+    return true;
   }
+  GHOST_VulkanSwapChainData swap_chain_data = {};
+  ghost_window_->getVulkanSwapChainFormat(&swap_chain_data);
+  const bool same_format = swap_chain_format_.format == swap_chain_data.surface_format.format &&
+                           swap_chain_format_.colorSpace ==
+                               swap_chain_data.surface_format.colorSpace;
+  VkExtent2D draw_extent = swap_chain_data.extent;
+#ifdef WITH_GHOST_OHOS
+  /* Acquire/activation must not discard the last complete composition just because WSI changed.
+   * WM supplies the frame's layout size when it chooses to perform a complete redraw. */
+  if (width <= 0 || height <= 0) {
+    if (surface_texture_ && same_format) {
+      return true;
+    }
+    GHOST_Rect bounds;
+    ghost_window_->getClientBounds(bounds);
+    width = bounds.getWidth();
+    height = bounds.getHeight();
+  }
+  draw_extent = {uint32_t(std::max(width, 1)), uint32_t(std::max(height, 1))};
+#else
+  UNUSED_VARS(width, height);
+#endif
+  draw_extent.width = max_uu(draw_extent.width, 1u);
+  draw_extent.height = max_uu(draw_extent.height, 1u);
+  if (surface_texture_ && same_format && vk_extent_.width == draw_extent.width &&
+      vk_extent_.height == draw_extent.height)
+  {
+    return true;
+  }
+  if (swap_chain_data.surface_format.format == VK_FORMAT_UNDEFINED) {
+    return false;
+  }
+
+  /* Allocate before replacing the only valid source. Freeing it is deferred by the timeline. */
+  gpu::Texture *candidate = GPU_texture_create_2d(
+      "back-left",
+      draw_extent.width,
+      draw_extent.height,
+      1,
+      to_gpu_format(swap_chain_data.surface_format.format),
+      GPU_TEXTURE_USAGE_ATTACHMENT | GPU_TEXTURE_USAGE_SHADER_READ,
+      nullptr);
+  if (!candidate) {
+    return false;
+  }
+  if (has_active_framebuffer()) {
+    deactivate_framebuffer();
+  }
+#ifdef WITH_GHOST_OHOS
+  if (surface_texture_ && ohos_surface_complete_ && same_format) {
+    render_graph::VKBlitImageNode::CreateInfo copy = {};
+    copy.src_image = unwrap(surface_texture_)->vk_image_handle();
+    copy.dst_image = unwrap(candidate)->vk_image_handle();
+    copy.filter = VK_FILTER_LINEAR;
+    copy.region.srcOffsets[1] = {int32_t(vk_extent_.width), int32_t(vk_extent_.height), 1};
+    copy.region.dstOffsets[1] = {int32_t(draw_extent.width), int32_t(draw_extent.height), 1};
+    copy.region.srcSubresource = {VK_IMAGE_ASPECT_COLOR_BIT, 0, 0, 1};
+    copy.region.dstSubresource = {VK_IMAGE_ASPECT_COLOR_BIT, 0, 0, 1};
+    render_graph().add_node(copy);
+  }
+  else {
+    const float clear[4] = {0.0f, 0.0f, 0.0f, 1.0f};
+    GPU_texture_clear(candidate, GPU_DATA_FLOAT, clear);
+  }
+  ohos_surface_complete_ = false;
+#endif
+  gpu::Texture *previous = surface_texture_;
+  surface_texture_ = candidate;
+  vk_extent_ = draw_extent;
+  back_left->attachment_set(GPU_FB_COLOR_ATTACHMENT0, GPU_ATTACHMENT_TEXTURE(candidate));
+  front_left->attachment_set(GPU_FB_COLOR_ATTACHMENT0, GPU_ATTACHMENT_TEXTURE(candidate));
+  back_left->bind(false);
+  if (previous) {
+    GPU_texture_free(previous);
+  }
+  swap_chain_format_ = swap_chain_data.surface_format;
+  GCaps.hdr_viewport_support = (swap_chain_format_.format == VK_FORMAT_R16G16B16A16_SFLOAT) &&
+                               ELEM(swap_chain_format_.colorSpace,
+                                    VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT,
+                                    VK_COLOR_SPACE_PASS_THROUGH_EXT);
+  return true;
 }
+
+#ifdef WITH_GHOST_OHOS
+GPUWindowDraw VKContext::prepare_window_draw(int width,
+                                             int height,
+                                             GPUWindowDrawPolicy policy,
+                                             bool acquired)
+{
+  const bool allow_cached = policy != GPUWindowDrawPolicy::Immediate;
+  ohos_clear_present_ = false;
+  if (width <= 0 || height <= 0) {
+    ohos_clear_present_ = true;
+    return GPUWindowDraw::Retry;
+  }
+  GHOST_VulkanSwapChainData swap_chain_data = {};
+  ghost_window_->getVulkanSwapChainFormat(&swap_chain_data);
+  const bool same_format = swap_chain_format_.format == swap_chain_data.surface_format.format &&
+                           swap_chain_format_.colorSpace ==
+                               swap_chain_data.surface_format.colorSpace;
+  const int64_t now_ms = std::chrono::duration_cast<std::chrono::milliseconds>(
+                             std::chrono::steady_clock::now().time_since_epoch())
+                             .count();
+  ohos_resize_settlement_.observe(width, height, now_ms);
+  /* Reuse the complete image throughout a resize, then commit one latest layout after quiet.
+   * Repeated observations of unchanged dimensions must not restart the quiet period. */
+  const bool transition_hold = ghost_ohos_native_resize_deadline() > now_ms;
+  const bool resize_hold = allow_cached && ohos_resize_settlement_.cache_frame(now_ms);
+  if (ohos_surface_complete_ && same_format && (transition_hold || resize_hold)) {
+    if (!acquired) {
+      /* Native buffer hold/scaling keeps the last submitted image visible. Do not rebuild WSI
+       * or submit a replacement while the external window is still settling. */
+      return GPUWindowDraw::Hold;
+    }
+    /* A transition notification can race an acquisition. Consume its semaphore using the
+     * existing complete source, without changing the layout. */
+    back_left->bind(false);
+    return GPUWindowDraw::Cached;
+  }
+  if (allow_cached && ohos_surface_complete_ && same_format &&
+      policy == GPUWindowDrawPolicy::PresentOnly && !ohos_resize_settlement_.pending())
+  {
+    back_left->bind(false);
+    return GPUWindowDraw::Cached;
+  }
+  if (!acquired) {
+    /* The format query deliberately returns no image. Use WM's explicit acquisition phase;
+     * WSI timeouts must not replace the complete source or accumulate candidate textures. */
+    return GPUWindowDraw::Full;
+  }
+  if (!sync_backbuffer(width, height)) {
+    if (allow_cached && surface_texture_ && ohos_surface_complete_ && same_format) {
+      back_left->bind(false);
+      return GPUWindowDraw::Cached;
+    }
+    ohos_clear_present_ = true;
+    return GPUWindowDraw::Retry;
+  }
+  return GPUWindowDraw::Full;
+}
+
+bool VKContext::needs_window_redraw() const
+{
+  if (!ghost_window_ || !ghost_window_->getDrawingContext()) {
+    return false;
+  }
+  return ohos_resize_settlement_.pending() || ghost_ohos_native_resize_deadline() != 0 ||
+         static_cast<GHOST_ContextVK *>(ghost_window_->getDrawingContext())
+             ->needsOHOSPresentProgress();
+}
+
+void VKContext::window_drawn()
+{
+  ohos_surface_complete_ = true;
+  ohos_resize_settlement_.drawn();
+}
+
+bool VKContext::window_draw_size(int &width, int &height) const
+{
+  if (!surface_texture_) {
+    return false;
+  }
+  width = int(vk_extent_.width);
+  height = int(vk_extent_.height);
+  return true;
+}
+#endif
 
 void VKContext::activate()
 {
@@ -180,16 +312,32 @@ TimelineValue VKContext::flush_render_graph(RenderGraphFlushFlags flags,
   push_constants_pool.ensure_uploaded();
   push_constants_pool.discard();
   descriptor_set_get().upload_descriptor_sets();
-  TimelineValue timeline = device.render_graph_submit(
-      &render_graph_.value().get(),
-      discard_pool,
-      bool(flags & RenderGraphFlushFlags::SUBMIT),
-      bool(flags & RenderGraphFlushFlags::WAIT_FOR_SUBMISSION),
-      bool(flags & RenderGraphFlushFlags::WAIT_FOR_COMPLETION),
-      wait_dst_stage_mask,
-      wait_semaphore,
-      signal_semaphore,
-      signal_fence);
+  TimelineValue timeline;
+#ifdef WITH_GHOST_OHOS
+  std::exception_ptr submission_error;
+  try {
+    timeline = device.render_graph_submit(
+#else
+  timeline = device.render_graph_submit(
+#endif
+        &render_graph_.value().get(),
+        discard_pool,
+        bool(flags & RenderGraphFlushFlags::SUBMIT),
+        bool(flags & RenderGraphFlushFlags::WAIT_FOR_SUBMISSION),
+        bool(flags & RenderGraphFlushFlags::WAIT_FOR_COMPLETION),
+        wait_dst_stage_mask,
+        wait_semaphore,
+        signal_semaphore,
+        signal_fence);
+#ifdef WITH_GHOST_OHOS
+  }
+  catch (...) {
+    /* The submitter may have recycled the graph before acknowledging the error. Drop this
+     * context's reference and renew it before propagating failure to GHOST. */
+    timeline = 0;
+    submission_error = std::current_exception();
+  }
+#endif
   render_graph_.reset();
   streaming_buffers_.clear();
   if (bool(flags & RenderGraphFlushFlags::RENEW_RENDER_GRAPH)) {
@@ -204,6 +352,11 @@ TimelineValue VKContext::flush_render_graph(RenderGraphFlushFlags flags,
                                                     debug::get_debug_group_color(str_group));
     }
   }
+#ifdef WITH_GHOST_OHOS
+  if (submission_error) {
+    std::rethrow_exception(submission_error);
+  }
+#endif
   return timeline;
 }
 
@@ -439,9 +592,18 @@ void VKContext::swap_buffer_draw_handler(const GHOST_VulkanSwapChainData &swap_c
                                          bool wait_for_submission)
 {
   const bool do_blit_to_swapchain = swap_chain_data.image != VK_NULL_HANDLE;
-  const bool use_shader = ELEM(swap_chain_data.surface_format.colorSpace,
-                               VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT,
-                               VK_COLOR_SPACE_PASS_THROUGH_EXT);
+  const bool compatible_source = surface_texture_ &&
+                                 swap_chain_format_.format ==
+                                     swap_chain_data.surface_format.format &&
+                                 swap_chain_format_.colorSpace ==
+                                     swap_chain_data.surface_format.colorSpace
+#ifdef WITH_GHOST_OHOS
+                                 && !ohos_clear_present_
+#endif
+      ;
+  const bool use_shader = compatible_source && ELEM(swap_chain_data.surface_format.colorSpace,
+                                                    VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT,
+                                                    VK_COLOR_SPACE_PASS_THROUGH_EXT);
 
   /* When swapchain is invalid/minimized we only flush the render graph to free GPU resources. */
   if (!do_blit_to_swapchain) {
@@ -453,11 +615,22 @@ void VKContext::swap_buffer_draw_handler(const GHOST_VulkanSwapChainData &swap_c
   render_graph::VKRenderGraph &render_graph = this->render_graph();
   VKFrameBuffer &framebuffer = *unwrap(active_fb);
   framebuffer.rendering_end(*this);
+#ifdef WITH_GHOST_OHOS
+  VKTexture *color_attachment = compatible_source ? unwrap(surface_texture_) : nullptr;
+#else
   VKTexture *color_attachment = unwrap(unwrap(framebuffer.color_tex(0)));
+#endif
   device.resources.add_swapchain_image(swap_chain_data.image, "SwapchainImage");
 
   GPU_debug_group_begin("BackBuffer.Blit");
-  if (use_shader) {
+  if (!compatible_source) {
+    render_graph::VKClearColorImageNode::CreateInfo clear = {};
+    clear.vk_image = swap_chain_data.image;
+    clear.vk_clear_color_value.float32[3] = 1.0f;
+    clear.vk_image_subresource_range = {VK_IMAGE_ASPECT_COLOR_BIT, 0, 1, 0, 1};
+    render_graph.add_node(clear);
+  }
+  else if (use_shader) {
     VKTexture swap_chain_texture("swap_chain_texture");
     swap_chain_texture.init_swapchain(swap_chain_data.image,
                                       to_gpu_format(swap_chain_data.surface_format.format));
@@ -506,7 +679,8 @@ void VKContext::swap_buffer_draw_handler(const GHOST_VulkanSwapChainData &swap_c
   flush_render_graph(RenderGraphFlushFlags::SUBMIT | RenderGraphFlushFlags::RENEW_RENDER_GRAPH |
                          (wait_for_submission ? RenderGraphFlushFlags::WAIT_FOR_SUBMISSION :
                                                 RenderGraphFlushFlags::NONE),
-                     VK_PIPELINE_STAGE_TRANSFER_BIT,
+                     use_shader ? VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT :
+                                  VK_PIPELINE_STAGE_TRANSFER_BIT,
                      swap_chain_data.acquire_semaphore,
                      swap_chain_data.present_semaphore,
                      swap_chain_data.submission_fence);
@@ -658,3 +832,37 @@ void VKContext::openxr_release_framebuffer_image_handler(GHOST_VulkanOpenXRData 
 /** \} */
 
 }  // namespace blender::gpu
+
+#ifdef WITH_GHOST_OHOS
+namespace blender {
+GPUWindowDraw GPU_context_ohos_prepare_window(
+    GPUContext *context, int width, int height, GPUWindowDrawPolicy policy, bool acquired)
+{
+  if (!context || GPU_backend_get_type() != GPU_BACKEND_VULKAN) {
+    return GPUWindowDraw::Full;
+  }
+  return static_cast<gpu::VKContext *>(gpu::unwrap(context))
+      ->prepare_window_draw(width, height, policy, acquired);
+}
+
+bool GPU_context_ohos_needs_redraw(const GPUContext *context)
+{
+  return context && GPU_backend_get_type() == GPU_BACKEND_VULKAN &&
+         static_cast<const gpu::VKContext *>(gpu::unwrap(context))->needs_window_redraw();
+}
+
+void GPU_context_ohos_window_drawn(GPUContext *context)
+{
+  if (context && GPU_backend_get_type() == GPU_BACKEND_VULKAN) {
+    static_cast<gpu::VKContext *>(gpu::unwrap(context))->window_drawn();
+  }
+}
+
+bool GPU_context_ohos_window_draw_size(const GPUContext *context, int &width, int &height)
+{
+  return context && GPU_backend_get_type() == GPU_BACKEND_VULKAN &&
+         static_cast<const gpu::VKContext *>(gpu::unwrap(context))
+             ->window_draw_size(width, height);
+}
+}  // namespace blender
+#endif

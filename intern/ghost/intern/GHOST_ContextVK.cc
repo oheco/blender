@@ -10,6 +10,7 @@
 #include "GHOST_Types.hh"
 #include <vulkan/vulkan_core.h>
 #ifdef WITH_GHOST_OHOS
+#  include <exception>
 #  include <vulkan/vulkan_ohos.h>
 #endif
 
@@ -43,6 +44,7 @@
 #include <algorithm>
 #include <array>
 #include <cassert>
+#include <chrono>
 #include <cinttypes>
 #include <cstdio>
 #include <cstring>
@@ -94,6 +96,9 @@ void GHOST_FrameDiscard::destroy(VkDevice vk_device)
     semaphores.pop_back();
     vkDestroySemaphore(vk_device, vk_semaphore, nullptr);
   }
+#ifdef WITH_GHOST_OHOS
+  ohos_image_bytes = 0;
+#endif
 }
 
 void GHOST_Frame::destroy(VkDevice vk_device)
@@ -102,6 +107,11 @@ void GHOST_Frame::destroy(VkDevice vk_device)
   submission_fence = VK_NULL_HANDLE;
   vkDestroySemaphore(vk_device, acquire_semaphore, nullptr);
   acquire_semaphore = VK_NULL_HANDLE;
+#ifdef WITH_GHOST_OHOS
+  vkDestroyFence(vk_device, ohos_acquisition_fence, nullptr);
+  ohos_acquisition_fence = VK_NULL_HANDLE;
+  ohos_acquisition_pending = ohos_submission_pending = ohos_retirement_witness = false;
+#endif
   discard_pile.destroy(vk_device);
 }
 
@@ -940,10 +950,204 @@ GHOST_ContextVK::~GHOST_ContextVK()
   }
 }
 
+#ifdef WITH_GHOST_OHOS
+static uint64_t ohos_monotonic_ms()
+{
+  return std::chrono::duration_cast<std::chrono::milliseconds>(
+             std::chrono::steady_clock::now().time_since_epoch())
+      .count();
+}
+
+bool GHOST_ContextVK::needsOHOSPresentProgress() const
+{
+  if (platform_ != GHOST_kVulkanPlatformOHOS || !ohos_native_window_ || ohos_terminal_failure_) {
+    return false;
+  }
+  if (ohos_recreate_pending_ || ohos_settlement_pending_ ||
+      !ohos_pending_retirement_.swapchains.empty())
+  {
+    return true;
+  }
+  if (ohos_window_info_ && (uint32_t(ohos_window_info_->size[0]) != ohos_requested_extent_.width ||
+                            uint32_t(ohos_window_info_->size[1]) != ohos_requested_extent_.height))
+  {
+    return true;
+  }
+  for (const GHOST_Frame &frame : frame_data_) {
+    if (frame.ohos_retirement_witness) {
+      return true;
+    }
+  }
+  return false;
+}
+
+bool GHOST_ContextVK::collectOHOSRetiredSwapchains()
+{
+  const VkDevice device = vulkan_instance->device->vk_device;
+  /* Check EVERY slot before any acquisition fence is reset, including slots skipped after timeout.
+   * Khronos swapchain_recreation: reacquiring the successor's first presented image and completing
+   * that acquisition proves ancestor presentations finished. An empty submit/queue idle does not.
+   * If a successor is retired before this happens, its ancestors follow the next successor. */
+  for (GHOST_Frame &frame : frame_data_) {
+    if (!frame.ohos_retirement_witness) {
+      continue;
+    }
+    const VkResult status = vkGetFenceStatus(device, frame.ohos_acquisition_fence);
+    if (status != VK_SUCCESS && status != VK_NOT_READY) {
+      ohos_terminal_failure_ = true;
+      return false;
+    }
+    if (GHOST_OHOSSwapchainRetirement::witness_complete(
+            frame.ohos_acquisition_pending, frame.ohos_retirement_witness, status == VK_SUCCESS))
+    {
+      frame.discard_pile.destroy(device);
+      frame.ohos_retirement_witness = false;
+    }
+  }
+  return true;
+}
+
+GHOST_TSuccess GHOST_ContextVK::swapBufferAcquireOHOS()
+{
+  if (!ohos_native_window_ || !ohos_window_info_ || ohos_terminal_failure_ ||
+      ohos_window_info_->size[0] <= 0 || ohos_window_info_->size[1] <= 0 ||
+      acquired_swapchain_image_index_.has_value() || frame_data_.empty())
+  {
+    return GHOST_kFailure;
+  }
+  ohos_recreations_this_tick_ = 0;
+  const uint64_t now = ohos_monotonic_ms();
+  const VkExtent2D latest = {uint32_t(ohos_window_info_->size[0]),
+                             uint32_t(ohos_window_info_->size[1])};
+  if (latest.width != ohos_latest_extent_.width || latest.height != ohos_latest_extent_.height) {
+    ohos_latest_extent_ = latest;
+    ohos_host_changed_ms_ = now;
+    ohos_settlement_pending_ = true;
+  }
+  if (!collectOHOSRetiredSwapchains()) {
+    return GHOST_kFailure;
+  }
+  const auto deadline = std::chrono::steady_clock::now() + std::chrono::milliseconds(16);
+  const auto remaining_ns = [&]() -> uint64_t {
+    const auto remaining = std::chrono::duration_cast<std::chrono::nanoseconds>(
+                               deadline - std::chrono::steady_clock::now())
+                               .count();
+    return remaining > 0 ? uint64_t(remaining) : 0;
+  };
+  const VkDevice device = vulkan_instance->device->vk_device;
+  render_frame_ = (render_frame_ + 1) % frame_data_.size();
+  GHOST_Frame &frame = frame_data_[render_frame_];
+  if (frame.ohos_submission_pending) {
+    const VkResult result = vkWaitForFences(
+        device, 1, &frame.submission_fence, VK_TRUE, remaining_ns());
+    if (result != VK_SUCCESS) {
+      if (result != VK_TIMEOUT)
+        ohos_terminal_failure_ = true;
+      return GHOST_kFailure;
+    }
+    /* This fence belongs to the successful GPU submission that consumed THIS slot's semaphore.
+     * It permits semaphore reuse, but is deliberately not ancestor presentation proof. */
+    frame.ohos_submission_pending = false;
+  }
+  if (frame.ohos_acquisition_pending) {
+    const VkResult result = vkWaitForFences(
+        device, 1, &frame.ohos_acquisition_fence, VK_TRUE, remaining_ns());
+    if (result != VK_SUCCESS) {
+      if (result != VK_TIMEOUT)
+        ohos_terminal_failure_ = true;
+      return GHOST_kFailure;
+    }
+    if (!collectOHOSRetiredSwapchains()) {
+      return GHOST_kFailure;
+    }
+    assert(!frame.ohos_retirement_witness);
+    frame.ohos_acquisition_pending = false;
+  }
+  const bool use_hdr_swapchain = hdr_info_ &&
+                                 (hdr_info_->wide_gamut_enabled || hdr_info_->hdr_enabled) &&
+                                 vulkan_instance->device->use_vk_ext_swapchain_colorspace;
+  if (use_hdr_swapchain != use_hdr_swapchain_)
+    ohos_settlement_pending_ = true;
+  const bool settled = GHOST_OHOSSwapchainRetirement::host_settled(now, ohos_host_changed_ms_);
+  const bool resolution_update = ohos_settlement_pending_ && settled &&
+                                 GHOST_OHOSSwapchainRetirement::host_settled(
+                                     now, ohos_last_settlement_ms_);
+  if (!swapchain_ || ohos_recreate_pending_ || use_hdr_swapchain != use_hdr_swapchain_ ||
+      resolution_update)
+  {
+    const bool forced = !swapchain_ || ohos_recreate_pending_;
+    if (recreateSwapchainOHOS(use_hdr_swapchain, forced) != GHOST_kSuccess &&
+        (!swapchain_ || ohos_recreate_pending_))
+    {
+      /* Backpressure leaves all ancestors and the last displayed frame intact. A valid current
+       * chain can still acquire/present and complete the witness despite a pending host request.
+       */
+      return GHOST_kFailure;
+    }
+  }
+  if (!swapchain_ || initializeFrameData() != GHOST_kSuccess) {
+    return GHOST_kFailure;
+  }
+  for (uint32_t attempt = 0; attempt < 2; attempt++) {
+    if (!collectOHOSRetiredSwapchains() ||
+        vkResetFences(device, 1, &frame.ohos_acquisition_fence) != VK_SUCCESS)
+    {
+      ohos_terminal_failure_ = true;
+      return GHOST_kFailure;
+    }
+    uint32_t image = 0;
+    const VkResult result = vkAcquireNextImageKHR(device,
+                                                  swapchain_,
+                                                  remaining_ns(),
+                                                  frame.acquire_semaphore,
+                                                  frame.ohos_acquisition_fence,
+                                                  &image);
+    if (ELEM(result, VK_SUCCESS, VK_SUBOPTIMAL_KHR)) {
+      frame.ohos_acquisition_pending = true;
+      ohos_current_chain_.acquired_image();
+      if (ohos_current_chain_.witnesses_ancestors(image) &&
+          !ohos_pending_retirement_.swapchains.empty())
+      {
+        assert(frame.discard_pile.swapchains.empty() && frame.discard_pile.semaphores.empty());
+        std::swap(frame.discard_pile, ohos_pending_retirement_);
+        frame.ohos_retirement_witness = true;
+      }
+      if (result == VK_SUBOPTIMAL_KHR && ohos_current_chain_.note_suboptimal()) {
+        /* Probe once per generation. An unchanged/clamped extent may stay SUBOPTIMAL; do not
+         * keep an otherwise idle window presenting forever after the request was handled. */
+        ohos_settlement_pending_ = true;
+      }
+      acquired_swapchain_image_index_ = image;
+      if (swap_buffer_acquired_callback_)
+        swap_buffer_acquired_callback_();
+      return GHOST_kSuccess;
+    }
+    /* On failure neither synchronization object was signaled and no image was acquired. */
+    if (result == VK_ERROR_OUT_OF_DATE_KHR) {
+      ohos_recreate_pending_ = true;
+      if (attempt == 0 && ohos_recreations_this_tick_ == 0 &&
+          recreateSwapchainOHOS(use_hdr_swapchain, true) == GHOST_kSuccess)
+      {
+        continue;
+      }
+    }
+    else if (!ELEM(result, VK_TIMEOUT, VK_NOT_READY)) {
+      CLOG_ERROR(&LOG, "OHOS Vulkan acquisition failed: %s", blender::gpu::to_string(result));
+      ohos_terminal_failure_ = true;
+      ohos_surface_lost_ = result == VK_ERROR_SURFACE_LOST_KHR;
+    }
+    return GHOST_kFailure;
+  }
+  return GHOST_kFailure;
+}
+#endif
+
 GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
 {
 #ifdef WITH_GHOST_OHOS
-  if (platform_ == GHOST_kVulkanPlatformOHOS && !ohos_native_window_) return GHOST_kFailure;
+  if (platform_ == GHOST_kVulkanPlatformOHOS) {
+    return swapBufferAcquireOHOS();
+  }
 #endif
   if (acquired_swapchain_image_index_.has_value()) {
     assert(false);
@@ -953,26 +1157,29 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
   GHOST_DeviceVK &device_vk = vulkan_instance->device.value();
   VkDevice vk_device = device_vk.vk_device;
 
-  /* This method is called after all the draw calls in the application, and it signals that
-   * we are ready to both (1) submit commands for those draw calls to the device and
-   * (2) begin building the next frame. It is assumed as an invariant that the submission fence
-   * in the current GHOST_Frame has been signaled. So, we wait for the *next* GHOST_Frame's
-   * submission fence to be signaled, to ensure the invariant holds for the next call to
-   * `swapBuffers`.
-   *
-   * We will pass the current GHOST_Frame to the swap_buffer_draw_callback_ for command buffer
-   * submission, and it is the responsibility of that callback to use the current GHOST_Frame's
-   * fence for it's submission fence. Since the callback is called after we wait for the next frame
-   * to be complete, it is also safe in the callback to clean up resources associated with the next
-   * frame.
-   */
+  /* WM acquires before drawing. Reuse a frame only after its previous GPU submission completed;
+   * release passes this frame's fence to the GPU submission callback. An acquisition failure
+   * must leave that fence signaled and must not expose an image index to release. */
   render_frame_ = (render_frame_ + 1) % frame_data_.size();
   GHOST_Frame &submission_frame_data = frame_data_[render_frame_];
   /* Wait for previous time that the frame was used to finish rendering. Presenting can
    * still happen in parallel, but acquiring needs can only happen when the frame acquire semaphore
    * has been signaled and waited for. */
+  uint64_t acquire_timeout = UINT64_MAX;
+  uint32_t acquire_attempt_limit = UINT32_MAX;
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS) {
+    acquire_timeout =
+        16'000'000; /* Return to the host event pump instead of blocking on resize. */
+    acquire_attempt_limit = 2;
+  }
+#endif
   if (submission_frame_data.submission_fence) {
-    vkWaitForFences(vk_device, 1, &submission_frame_data.submission_fence, true, UINT64_MAX);
+    const VkResult wait_result = vkWaitForFences(
+        vk_device, 1, &submission_frame_data.submission_fence, true, acquire_timeout);
+    if (wait_result != VK_SUCCESS) {
+      return GHOST_kFailure;
+    }
   }
   for (VkSwapchainKHR swapchain : submission_frame_data.discard_pile.swapchains) {
     this->destroySwapchainPresentFences(swapchain);
@@ -984,7 +1191,9 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
                                  device_vk.use_vk_ext_swapchain_colorspace;
   if (use_hdr_swapchain != use_hdr_swapchain_) {
     /* Re-create swapchain if HDR mode was toggled in the system settings. */
-    recreateSwapchain(use_hdr_swapchain);
+    if (recreateSwapchain(use_hdr_swapchain) != GHOST_kSuccess) {
+      return GHOST_kFailure;
+    }
   }
   else {
 #ifdef WITH_GHOST_WAYLAND
@@ -1012,19 +1221,26 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
        * Genuine invalidation is still handled by acquire/present OUT_OF_DATE. */
       const uint32_t width = uint32_t(ohos_window_info_->size[0]);
       const uint32_t height = uint32_t(ohos_window_info_->size[1]);
-      if (width != ohos_requested_extent_.width || height != ohos_requested_extent_.height) {
-        recreateSwapchain(use_hdr_swapchain);
+      if (ohos_recreate_pending_ || width != ohos_requested_extent_.width ||
+          height != ohos_requested_extent_.height)
+      {
+        if (recreateSwapchain(use_hdr_swapchain, ohos_recreate_pending_) != GHOST_kSuccess) {
+          return GHOST_kFailure;
+        }
       }
     }
 #endif
   }
   /* there is no valid swapchain when the previous window was minimized. User can have maximized
    * the window so we need to check if the swapchain has to be created. */
-  if (swapchain_ == VK_NULL_HANDLE) {
-    recreateSwapchain(use_hdr_swapchain);
+  if (swapchain_ == VK_NULL_HANDLE && recreateSwapchain(use_hdr_swapchain) != GHOST_kSuccess) {
+    return GHOST_kFailure;
   }
 
-  /* Acquiree next image, swapchain can be (or become) invalid when minimizing window. */
+  if (initializeFrameData() != GHOST_kSuccess) {
+    return GHOST_kFailure;
+  }
+  /* Acquire next image; only successful results own an image and signaled semaphore. */
   uint32_t image_index = 0;
   if (swapchain_ != VK_NULL_HANDLE) {
     /* Some platforms (NVIDIA/Wayland) can receive an out of date swapchain when acquiring the next
@@ -1041,17 +1257,34 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferAcquire()
 #endif
       return ELEM(result, VK_ERROR_OUT_OF_DATE_KHR, VK_SUBOPTIMAL_KHR);
     };
-    while (swapchain_ != VK_NULL_HANDLE && must_recreate(acquire_result))
-    {
+    for (uint32_t attempt = 0; attempt < acquire_attempt_limit; attempt++) {
       acquire_result = vkAcquireNextImageKHR(vk_device,
                                              swapchain_,
-                                             UINT64_MAX,
-                                             submission_frame_data.acquire_semaphore,
+                                             acquire_timeout,
+                                             frame_data_[render_frame_].acquire_semaphore,
                                              VK_NULL_HANDLE,
                                              &image_index);
-      if (must_recreate(acquire_result)) {
-        recreateSwapchain(use_hdr_swapchain);
+      if (!must_recreate(acquire_result)) {
+        break;
       }
+      if (attempt + 1 == acquire_attempt_limit) {
+#ifdef WITH_GHOST_OHOS
+        if (platform_ == GHOST_kVulkanPlatformOHOS) {
+          ohos_recreate_pending_ = true;
+        }
+#endif
+        return GHOST_kFailure;
+      }
+      if (recreateSwapchain(use_hdr_swapchain) != GHOST_kSuccess || swapchain_ == VK_NULL_HANDLE) {
+        return GHOST_kFailure;
+      }
+    }
+    if (!ELEM(acquire_result, VK_SUCCESS, VK_SUBOPTIMAL_KHR)) {
+      if (!ELEM(acquire_result, VK_TIMEOUT, VK_NOT_READY)) {
+        CLOG_ERROR(
+            &LOG, "Vulkan: image acquisition failed: %s", blender::gpu::to_string(acquire_result));
+      }
+      return GHOST_kFailure;
     }
   }
 
@@ -1154,9 +1387,47 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferRelease()
   swap_chain_data.present_semaphore = swapchain_image.present_semaphore;
   swap_chain_data.sdr_scale = (hdr_info_) ? hdr_info_->sdr_white_level : 1.0f;
 
-  vkResetFences(vk_device, 1, &submission_frame_data.submission_fence);
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS) {
+    if (ohos_terminal_failure_ || !swap_buffer_draw_callback_ ||
+        vkResetFences(vk_device, 1, &submission_frame_data.submission_fence) != VK_SUCCESS)
+    {
+      ohos_terminal_failure_ = true;
+      return GHOST_kFailure;
+    }
+    /* GPU callback must report submission failure to its caller; a reset but never-submitted fence
+     * cannot be treated as completed. That separate GPU error propagation is a prerequisite. */
+    submission_frame_data.ohos_submission_pending = true;
+  }
+  else
+#endif
+  {
+    vkResetFences(vk_device, 1, &submission_frame_data.submission_fence);
+  }
   if (swap_buffer_draw_callback_) {
-    swap_buffer_draw_callback_(&swap_chain_data, true);
+#ifdef WITH_GHOST_OHOS
+    if (platform_ == GHOST_kVulkanPlatformOHOS) {
+      try {
+        swap_buffer_draw_callback_(&swap_chain_data, true);
+      }
+      catch (const std::exception &error) {
+        /* The acquired image/semaphore remain owned for teardown. Never queue a present waiting
+         * on a semaphore when its producing batch was rejected by vkQueueSubmit. */
+        ohos_terminal_failure_ = true;
+        CLOG_ERROR(&LOG, "OHOS Vulkan submission failed before presentation: %s", error.what());
+        return GHOST_kFailure;
+      }
+      catch (...) {
+        ohos_terminal_failure_ = true;
+        CLOG_ERROR(&LOG, "OHOS Vulkan submission failed before presentation");
+        return GHOST_kFailure;
+      }
+    }
+    else
+#endif
+    {
+      swap_buffer_draw_callback_(&swap_chain_data, true);
+    }
   }
 
   VkPresentInfoKHR present_info = {};
@@ -1173,7 +1444,12 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferRelease()
     std::scoped_lock lock(device_vk.queue_mutex);
     VkSwapchainPresentFenceInfoEXT fence_info{VK_STRUCTURE_TYPE_SWAPCHAIN_PRESENT_FENCE_INFO_EXT};
     VkFence present_fence = VK_NULL_HANDLE;
-    if (device_vk.use_vk_ext_swapchain_maintenance_1) {
+    if (device_vk.use_vk_ext_swapchain_maintenance_1
+#ifdef WITH_GHOST_OHOS
+        && platform_ != GHOST_kVulkanPlatformOHOS
+#endif
+    )
+    {
       present_fence = this->getFence();
 
       fence_info.swapchainCount = 1;
@@ -1187,10 +1463,27 @@ GHOST_TSuccess GHOST_ContextVK::swapBufferRelease()
   acquired_swapchain_image_index_.reset();
 
 #ifdef WITH_GHOST_OHOS
-  if (platform_ == GHOST_kVulkanPlatformOHOS && present_result == VK_SUBOPTIMAL_KHR) {
-    /* Successful presentation; a subsequent host size change or OUT_OF_DATE
-     * will rebuild. Avoid a perpetual recreation loop on stretched surfaces. */
-    return GHOST_kSuccess;
+  if (platform_ == GHOST_kVulkanPlatformOHOS) {
+    if (ELEM(present_result, VK_SUCCESS, VK_SUBOPTIMAL_KHR)) {
+      /* Only an actually queued successful presentation selects the successor witness image. */
+      ohos_current_chain_.queued_present(image_index);
+      if (present_result == VK_SUBOPTIMAL_KHR && ohos_current_chain_.note_suboptimal()) {
+        ohos_settlement_pending_ = true;
+      }
+      return GHOST_kSuccess;
+    }
+    /* Error returns may leave ownership/consumption ambiguous. Retain this used generation and
+     * its present semaphores until a later successor witness; do not acquire/reuse it again. */
+    ohos_recreate_pending_ = true;
+    if (present_result == VK_ERROR_DEVICE_LOST || present_result == VK_ERROR_SURFACE_LOST_KHR) {
+      ohos_terminal_failure_ = true;
+      ohos_surface_lost_ = present_result == VK_ERROR_SURFACE_LOST_KHR;
+    }
+    if (present_result != VK_ERROR_OUT_OF_DATE_KHR) {
+      CLOG_ERROR(
+          &LOG, "OHOS Vulkan presentation failed: %s", blender::gpu::to_string(present_result));
+    }
+    return GHOST_kFailure;
   }
 #endif
   if (ELEM(present_result, VK_ERROR_OUT_OF_DATE_KHR, VK_SUBOPTIMAL_KHR)) {
@@ -1444,19 +1737,242 @@ GHOST_TSuccess GHOST_ContextVK::initializeFrameData()
       VK_CHECK(vkCreateFence(device, &vk_fence_create_info, nullptr, &frame_data.submission_fence),
                GHOST_kFailure);
     }
+#ifdef WITH_GHOST_OHOS
+    if (platform_ == GHOST_kVulkanPlatformOHOS &&
+        frame_data.ohos_acquisition_fence == VK_NULL_HANDLE)
+    {
+      const VkFenceCreateInfo acquisition_info = {VK_STRUCTURE_TYPE_FENCE_CREATE_INFO};
+      VK_CHECK(
+          vkCreateFence(device, &acquisition_info, nullptr, &frame_data.ohos_acquisition_fence),
+          GHOST_kFailure);
+    }
+#endif
   }
 
   return GHOST_kSuccess;
 }
 
-GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
+#ifdef WITH_GHOST_OHOS
+GHOST_TSuccess GHOST_ContextVK::recreateSwapchainOHOS(bool use_hdr_swapchain, bool force)
 {
+  GHOST_DeviceVK &device_vk = vulkan_instance->device.value();
+  const VkDevice device = device_vk.vk_device;
+  VkSurfaceFormatKHR format = {};
+  VkPresentModeKHR mode;
+  VkSurfaceCapabilitiesKHR capabilities = {};
+  if (!selectSurfaceFormat(device_vk.vk_physical_device, surface_, use_hdr_swapchain, format) ||
+      !selectPresentMode(getVSync(), device_vk.vk_physical_device, surface_, &mode))
+  {
+    return GHOST_kFailure;
+  }
+  VK_CHECK(vkGetPhysicalDeviceSurfaceCapabilitiesKHR(
+               device_vk.vk_physical_device, surface_, &capabilities),
+           GHOST_kFailure);
+  VkExtent2D extent = capabilities.currentExtent;
+  if (extent.width == UINT32_MAX) {
+    extent = {std::clamp(uint32_t(ohos_window_info_->size[0]),
+                         capabilities.minImageExtent.width,
+                         capabilities.maxImageExtent.width),
+              std::clamp(uint32_t(ohos_window_info_->size[1]),
+                         capabilities.minImageExtent.height,
+                         capabilities.maxImageExtent.height)};
+  }
+  const uint64_t now = ohos_monotonic_ms();
+  const VkExtent2D latest = {uint32_t(ohos_window_info_->size[0]),
+                             uint32_t(ohos_window_info_->size[1])};
+  if (latest.width != ohos_latest_extent_.width || latest.height != ohos_latest_extent_.height) {
+    ohos_latest_extent_ = latest;
+    ohos_host_changed_ms_ = now;
+    ohos_settlement_pending_ = true;
+  }
+  if (!force && swapchain_ && extent.width == render_extent_.width &&
+      extent.height == render_extent_.height && format.format == surface_format_.format &&
+      format.colorSpace == surface_format_.colorSpace && mode == ohos_present_mode_ &&
+      capabilities.currentTransform == ohos_surface_transform_ &&
+      use_hdr_swapchain == use_hdr_swapchain_)
+  {
+    ohos_requested_extent_ = {uint32_t(ohos_window_info_->size[0]),
+                              uint32_t(ohos_window_info_->size[1])};
+    ohos_settlement_pending_ = false;
+    ohos_last_settlement_ms_ = now;
+    return GHOST_kSuccess;
+  }
+  if (!force && !ohos_pending_retirement_.swapchains.empty()) {
+    /* Prefer presenting/reacquiring this valid successor until it witnesses the ancestors. A
+     * newer host size must not starve the first-present image's completion opportunity. */
+    return GHOST_kFailure;
+  }
+  /* Do not retire a usable chain before resource admission, and do not turn a zero-extent tick
+   * into another retired generation. Forced invalidation stays pending until recovery is possible.
+   */
+  if (extent.width == 0 || extent.height == 0 || ohos_recreations_this_tick_ != 0 ||
+      capabilities.minImageCount > GHOST_OHOSSwapchainRetirement::max_images)
+  {
+    return GHOST_kFailure;
+  }
+  uint32_t requested_images = std::max(capabilities.minImageCount,
+                                       mode == VK_PRESENT_MODE_MAILBOX_KHR ? 3u : 2u);
+  if (capabilities.maxImageCount)
+    requested_images = std::min(requested_images, capabilities.maxImageCount);
+  const uint32_t admission_images = capabilities.maxImageCount ?
+                                        std::min(capabilities.maxImageCount,
+                                                 GHOST_OHOSSwapchainRetirement::max_images) :
+                                        GHOST_OHOSSwapchainRetirement::max_images;
+  const uint32_t texel_bytes = format.format == VK_FORMAT_R16G16B16A16_SFLOAT ? 8 : 4;
+  const uint64_t candidate_bytes = GHOST_OHOSSwapchainRetirement::image_bytes(
+      extent.width, extent.height, texel_bytes, admission_images);
+  uint32_t resident_generations = uint32_t(ohos_pending_retirement_.swapchains.size()) +
+                                  (swapchain_ != VK_NULL_HANDLE);
+  uint64_t resident_bytes = ohos_pending_retirement_.ohos_image_bytes + ohos_current_image_bytes_;
+  for (const GHOST_Frame &frame : frame_data_) {
+    resident_generations += uint32_t(frame.discard_pile.swapchains.size());
+    resident_bytes += frame.discard_pile.ohos_image_bytes;
+  }
+  /* An unused current intermediate needs no completion witness. Admit its replacement after
+   * reclaiming that payload, then reclaim BEFORE allocating, so the hard cap cannot trap an
+   * OUT_OF_DATE-before-first-acquire chain merely because it has no image to reacquire. */
+  const bool replace_unused = swapchain_ && !ohos_current_chain_.acquired;
+  if (replace_unused) {
+    --resident_generations;
+    resident_bytes -= ohos_current_image_bytes_;
+  }
+  const bool recovery = resident_generations == 0 ||
+                        (force &&
+                         GHOST_OHOSSwapchainRetirement::host_settled(now, ohos_host_changed_ms_));
+  if (!GHOST_OHOSSwapchainRetirement::admit(
+          resident_generations, resident_bytes, candidate_bytes, recovery))
+  {
+    /* Preserve dirty/latest size and let the valid current chain reach its first-present witness.
+     * If every generation is invalidated before any witness, the hard limit intentionally stops
+     * allocation; a recovery slot is reserved for a settled latest target, not endless churn. */
+    return GHOST_kFailure;
+  }
+  /* Reserve host bookkeeping before passing oldSwapchain. After that call even a failed creation
+   * retires the old chain; we can no longer back out to acquiring it. */
+  ohos_pending_retirement_.swapchains.reserve(ohos_pending_retirement_.swapchains.size() + 1);
+  ohos_pending_retirement_.semaphores.reserve(ohos_pending_retirement_.semaphores.size() +
+                                              swapchain_images_.size());
+  if (replace_unused) {
+    for (GHOST_SwapchainImage &image : swapchain_images_)
+      image.destroy(device);
+    swapchain_images_.clear();
+    vkDestroySwapchainKHR(device, swapchain_, nullptr);
+    swapchain_ = VK_NULL_HANDLE;
+    ohos_current_image_bytes_ = 0;
+    ohos_current_chain_ = {};
+  }
+  VkSwapchainCreateInfoKHR info = {};
+  info.sType = VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR;
+  info.surface = surface_;
+  info.minImageCount = requested_images;
+  info.imageFormat = format.format;
+  info.imageColorSpace = format.colorSpace;
+  info.imageExtent = extent;
+  info.imageArrayLayers = 1;
+  info.imageUsage = VK_IMAGE_USAGE_TRANSFER_DST_BIT |
+                    (use_hdr_swapchain ? VK_IMAGE_USAGE_STORAGE_BIT : 0);
+  info.preTransform = capabilities.currentTransform;
+  info.compositeAlpha = VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR;
+  info.presentMode = mode;
+  info.clipped = VK_TRUE;
+  info.oldSwapchain = swapchain_;
+  info.imageSharingMode = VK_SHARING_MODE_EXCLUSIVE;
+  VkSwapchainKHR candidate = VK_NULL_HANDLE;
+  ++ohos_recreations_this_tick_;
+  const VkResult created = vkCreateSwapchainKHR(device, &info, nullptr, &candidate);
+  const VkSwapchainKHR old = swapchain_;
+  if (old && ohos_current_chain_.acquired) {
+    /* Conservatively retain every used chain, including present OUT_OF_DATE/error cases and an
+     * acquired chain whose GPU callback failed. No current/old render fence can retire it. */
+    ohos_pending_retirement_.swapchains.push_back(old);
+    ohos_pending_retirement_.ohos_image_bytes += ohos_current_image_bytes_;
+    for (GHOST_SwapchainImage &image : swapchain_images_) {
+      if (image.present_semaphore) {
+        ohos_pending_retirement_.semaphores.push_back(image.present_semaphore);
+        image.present_semaphore = VK_NULL_HANDLE;
+      }
+    }
+  }
+  else {
+    /* A chain never acquired/submitted/presented has no GPU or presentation users. Passing it as
+     * oldSwapchain retired it; free this intermediate now, without waiting for a successor. */
+    for (GHOST_SwapchainImage &image : swapchain_images_)
+      image.destroy(device);
+    if (old)
+      vkDestroySwapchainKHR(device, old, nullptr);
+  }
+  swapchain_images_.clear();
+  swapchain_ = candidate;
+  ohos_current_chain_ = {};
+  ohos_current_image_bytes_ = 0;
+  ohos_recreate_pending_ = true;
+  if (created != VK_SUCCESS) {
+    swapchain_ = VK_NULL_HANDLE;
+    CLOG_ERROR(
+        &LOG, "OHOS Vulkan swapchain creation failed: %s", blender::gpu::to_string(created));
+    if (created == VK_ERROR_DEVICE_LOST || created == VK_ERROR_SURFACE_LOST_KHR) {
+      ohos_terminal_failure_ = true;
+      ohos_surface_lost_ = created == VK_ERROR_SURFACE_LOST_KHR;
+    }
+    return GHOST_kFailure;
+  }
+  const auto reject_unused_candidate = [&]() {
+    vkDestroySwapchainKHR(device, swapchain_, nullptr);
+    swapchain_ = VK_NULL_HANDLE;
+    swapchain_images_.clear();
+    return GHOST_kFailure;
+  };
+  uint32_t count = 0;
+  if (vkGetSwapchainImagesKHR(device, swapchain_, &count, nullptr) != VK_SUCCESS || count == 0 ||
+      count > admission_images)
+  {
+    /* Driver may return more images than requested. Never use a candidate outside the admitted
+     * image bound; it has no acquisition/presentation users and can be immediately discarded. */
+    return reject_unused_candidate();
+  }
+  std::vector<VkImage> images(count);
+  if (vkGetSwapchainImagesKHR(device, swapchain_, &count, images.data()) != VK_SUCCESS ||
+      count == 0 || count > images.size())
+  {
+    return reject_unused_candidate();
+  }
+  swapchain_images_.resize(count);
+  for (uint32_t index = 0; index < count; ++index)
+    swapchain_images_[index].vk_image = images[index];
+  ohos_current_image_bytes_ = GHOST_OHOSSwapchainRetirement::image_bytes(
+      extent.width, extent.height, texel_bytes, count);
+  render_extent_ = extent;
+  render_extent_min_ = capabilities.minImageExtent;
+  surface_format_ = format;
+  use_hdr_swapchain_ = use_hdr_swapchain;
+  image_count_ = count;
+  ohos_requested_extent_ = {uint32_t(ohos_window_info_->size[0]),
+                            uint32_t(ohos_window_info_->size[1])};
+  ohos_latest_extent_ = ohos_requested_extent_;
+  ohos_extent_max_ = capabilities.maxImageExtent;
+  ohos_present_mode_ = mode;
+  ohos_surface_transform_ = capabilities.currentTransform;
+  ohos_recreate_pending_ = ohos_settlement_pending_ = false;
+  ohos_last_settlement_ms_ = now;
+  /* Keep frame count and ALL per-frame acquire semaphores/fences across generations. Recreating
+   * a chain does not end another slot's acquire-semaphore wait or successful submission. */
+  return initializeFrameData();
+}
+#endif
+
+GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain, bool force)
+{
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS) {
+    return recreateSwapchainOHOS(use_hdr_swapchain, force);
+  }
+#endif
   GHOST_InstanceVK &instance_vk = vulkan_instance.value();
   GHOST_DeviceVK &device_vk = instance_vk.device.value();
 
-  surface_format_ = {};
+  VkSurfaceFormatKHR new_surface_format = {};
   if (!selectSurfaceFormat(
-          device_vk.vk_physical_device, surface_, use_hdr_swapchain, surface_format_))
+          device_vk.vk_physical_device, surface_, use_hdr_swapchain, new_surface_format))
   {
     return GHOST_kFailure;
   }
@@ -1493,26 +2009,17 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
              GHOST_kFailure);
   }
 
-  use_hdr_swapchain_ = use_hdr_swapchain;
-  render_extent_ = capabilities.currentExtent;
-  render_extent_min_ = capabilities.minImageExtent;
-#ifdef WITH_GHOST_OHOS
-  if (platform_ == GHOST_kVulkanPlatformOHOS) ohos_extent_max_ = capabilities.maxImageExtent;
-#endif
-  if (render_extent_.width == UINT32_MAX) {
-    /* Window Manager is going to set the surface size based on the given size.
-     * Choose something between minImageExtent and maxImageExtent. */
+  VkExtent2D new_extent = capabilities.currentExtent;
+  if (new_extent.width == UINT32_MAX) {
+    /* Respect WSI's fixed currentExtent; only an unconstrained extent uses the host request. */
     int width = 0;
     int height = 0;
-
 #ifdef WITH_GHOST_WAYLAND
-    /* Wayland doesn't provide a windowing API via WSI. */
     if (wayland_window_info_) {
       width = wayland_window_info_->size[0];
       height = wayland_window_info_->size[1];
     }
 #endif
-
 #ifdef WITH_GHOST_OHOS
     if (platform_ == GHOST_kVulkanPlatformOHOS && ohos_window_info_) {
       width = ohos_window_info_->size[0];
@@ -1523,44 +2030,50 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
       width = 1280;
       height = 720;
     }
-
-    render_extent_.width = width;
-    render_extent_.height = height;
+    new_extent = {uint32_t(width), uint32_t(height)};
 #ifdef WITH_GHOST_OHOS
     if (platform_ == GHOST_kVulkanPlatformOHOS) {
-      render_extent_.width = std::clamp(render_extent_.width,
-          capabilities.minImageExtent.width, capabilities.maxImageExtent.width);
-      render_extent_.height = std::clamp(render_extent_.height,
-          capabilities.minImageExtent.height, capabilities.maxImageExtent.height);
+      new_extent.width = std::clamp(
+          new_extent.width, capabilities.minImageExtent.width, capabilities.maxImageExtent.width);
+      new_extent.height = std::clamp(new_extent.height,
+                                     capabilities.minImageExtent.height,
+                                     capabilities.maxImageExtent.height);
     }
 #endif
-
-    if (capabilities.minImageExtent.width > render_extent_.width) {
-      render_extent_.width = capabilities.minImageExtent.width;
-    }
-    if (capabilities.minImageExtent.height > render_extent_.height) {
-      render_extent_.height = capabilities.minImageExtent.height;
-    }
+    new_extent.width = std::max(new_extent.width, capabilities.minImageExtent.width);
+    new_extent.height = std::max(new_extent.height, capabilities.minImageExtent.height);
   }
-
   if (device_vk.use_vk_ext_swapchain_maintenance_1) {
-    if (vk_surface_present_scaling_capabilities.minScaledImageExtent.width > render_extent_.width)
-    {
-      render_extent_.width = vk_surface_present_scaling_capabilities.minScaledImageExtent.width;
-    }
-    if (vk_surface_present_scaling_capabilities.minScaledImageExtent.height >
-        render_extent_.height)
-    {
-      render_extent_.height = vk_surface_present_scaling_capabilities.minScaledImageExtent.height;
-    }
+    new_extent.width = std::max(
+        new_extent.width, vk_surface_present_scaling_capabilities.minScaledImageExtent.width);
+    new_extent.height = std::max(
+        new_extent.height, vk_surface_present_scaling_capabilities.minScaledImageExtent.height);
   }
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS && !force && swapchain_ &&
+      new_extent.width == render_extent_.width && new_extent.height == render_extent_.height &&
+      new_surface_format.format == surface_format_.format &&
+      new_surface_format.colorSpace == surface_format_.colorSpace &&
+      present_mode == ohos_present_mode_ &&
+      capabilities.currentTransform == ohos_surface_transform_ &&
+      use_hdr_swapchain == use_hdr_swapchain_)
+  {
+    /* A delayed WSI may choose the same extent for several distinct host sizes. The final blit
+     * already scales to it; keep its images/semaphores until a genuine invalidation occurs. */
+    ohos_requested_extent_ = {uint32_t(ohos_window_info_->size[0]),
+                              uint32_t(ohos_window_info_->size[1])};
+    return GHOST_kSuccess;
+  }
+#else
+  (void)force;
+#endif
 
   /* Discard swapchain resources of current swapchain. */
-  GHOST_FrameDiscard &discard_pile = frame_data_[render_frame_].discard_pile;
+  GHOST_FrameDiscard *discard_pile = &frame_data_[render_frame_].discard_pile;
   for (GHOST_SwapchainImage &swapchain_image : swapchain_images_) {
     swapchain_image.vk_image = VK_NULL_HANDLE;
     if (swapchain_image.present_semaphore != VK_NULL_HANDLE) {
-      discard_pile.semaphores.push_back(swapchain_image.present_semaphore);
+      discard_pile->semaphores.push_back(swapchain_image.present_semaphore);
       swapchain_image.present_semaphore = VK_NULL_HANDLE;
     }
   }
@@ -1570,9 +2083,9 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
    *
    * VUID-VkSwapchainCreateInfoKHR-imageExtent-01689
    */
-  if (render_extent_.width == 0 || render_extent_.height == 0) {
+  if (new_extent.width == 0 || new_extent.height == 0) {
     if (swapchain_) {
-      discard_pile.swapchains.push_back(swapchain_);
+      discard_pile->swapchains.push_back(swapchain_);
       swapchain_ = VK_NULL_HANDLE;
     }
     return GHOST_kFailure;
@@ -1618,9 +2131,9 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
   }
   create_info.surface = surface_;
   create_info.minImageCount = image_count_requested;
-  create_info.imageFormat = surface_format_.format;
-  create_info.imageColorSpace = surface_format_.colorSpace;
-  create_info.imageExtent = render_extent_;
+  create_info.imageFormat = new_surface_format.format;
+  create_info.imageColorSpace = new_surface_format.colorSpace;
+  create_info.imageExtent = new_extent;
   create_info.imageArrayLayers = 1;
   create_info.imageUsage = VK_IMAGE_USAGE_TRANSFER_DST_BIT |
                            (use_hdr_swapchain ? VK_IMAGE_USAGE_STORAGE_BIT : 0);
@@ -1633,34 +2146,61 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
   create_info.queueFamilyIndexCount = 0;
   create_info.pQueueFamilyIndices = nullptr;
 
+  /* Passing oldSwapchain retires it even when creation fails. Never acquire it again. */
+  swapchain_ = VK_NULL_HANDLE;
+  if (old_swapchain) {
+    discard_pile->swapchains.push_back(old_swapchain);
+  }
   VK_CHECK(vkCreateSwapchainKHR(device_vk.vk_device, &create_info, nullptr, &swapchain_),
            GHOST_kFailure);
 
-#ifdef WITH_GHOST_OHOS
-  if (platform_ == GHOST_kVulkanPlatformOHOS && ohos_window_info_) {
-    ohos_requested_extent_ = {uint32_t(ohos_window_info_->size[0]),
-                              uint32_t(ohos_window_info_->size[1])};
-  }
-#endif
-
+  const auto invalid_images = [&]() {
+    discard_pile->swapchains.push_back(swapchain_);
+    swapchain_ = VK_NULL_HANDLE;
+    swapchain_images_.clear();
+    return GHOST_kFailure;
+  };
   /* image_count may not be what we requested! Getter for final value. */
   uint32_t actual_image_count = 0;
-  vkGetSwapchainImagesKHR(device_vk.vk_device, swapchain_, &actual_image_count, nullptr);
+  if (vkGetSwapchainImagesKHR(device_vk.vk_device, swapchain_, &actual_image_count, nullptr) !=
+          VK_SUCCESS ||
+      actual_image_count == 0)
+  {
+    return invalid_images();
+  }
   /* Some platforms require a minimum amount of render frames that is larger than we expect. When
    * that happens we should increase the number of frames in flight. We could also consider
    * splitting the frame in flight and image specific data. */
   if (actual_image_count > frame_data_.size()) {
     CLOG_TRACE(&LOG, "Vulkan: Increasing frame data to %u frames", actual_image_count);
-    assert(actual_image_count <= frame_data_.capacity());
     frame_data_.resize(actual_image_count);
+    discard_pile = &frame_data_[render_frame_].discard_pile;
   }
   swapchain_images_.resize(actual_image_count);
   std::vector<VkImage> swapchain_images(actual_image_count);
-  vkGetSwapchainImagesKHR(
-      device_vk.vk_device, swapchain_, &actual_image_count, swapchain_images.data());
+  if (vkGetSwapchainImagesKHR(
+          device_vk.vk_device, swapchain_, &actual_image_count, swapchain_images.data()) !=
+      VK_SUCCESS)
+  {
+    return invalid_images();
+  }
   for (int index = 0; index < actual_image_count; index++) {
     swapchain_images_[index].vk_image = swapchain_images[index];
   }
+  render_extent_ = new_extent;
+  render_extent_min_ = capabilities.minImageExtent;
+  surface_format_ = new_surface_format;
+  use_hdr_swapchain_ = use_hdr_swapchain;
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS && ohos_window_info_) {
+    ohos_requested_extent_ = {uint32_t(ohos_window_info_->size[0]),
+                              uint32_t(ohos_window_info_->size[1])};
+    ohos_extent_max_ = capabilities.maxImageExtent;
+    ohos_present_mode_ = present_mode;
+    ohos_surface_transform_ = capabilities.currentTransform;
+    ohos_recreate_pending_ = false;
+  }
+#endif
   CLOG_DEBUG(&LOG,
              "Vulkan: recreating swapchain: width=%u, height=%u, format=%s, colorSpace=%s, "
              "present_mode=%s, image_count_requested=%u, image_count_acquired=%u, "
@@ -1679,18 +2219,12 @@ GHOST_TSuccess GHOST_ContextVK::recreateSwapchain(bool use_hdr_swapchain)
   /* Previous handles from the frame data cannot be used and should be discarded. */
   for (GHOST_Frame &frame : frame_data_) {
     if (frame.acquire_semaphore != VK_NULL_HANDLE) {
-      discard_pile.semaphores.push_back(frame.acquire_semaphore);
+      discard_pile->semaphores.push_back(frame.acquire_semaphore);
     }
     frame.acquire_semaphore = VK_NULL_HANDLE;
   }
-  if (old_swapchain) {
-    discard_pile.swapchains.push_back(old_swapchain);
-  }
-  initializeFrameData();
-
   image_count_ = actual_image_count;
-
-  return GHOST_kSuccess;
+  return initializeFrameData();
 }
 
 void GHOST_ContextVK::destroySwapchainPresentFences(VkSwapchainKHR swapchain)
@@ -1709,12 +2243,26 @@ void GHOST_ContextVK::destroySwapchainPresentFences(VkSwapchainKHR swapchain)
 GHOST_TSuccess GHOST_ContextVK::destroySwapchain()
 {
   GHOST_DeviceVK &device_vk = vulkan_instance.value().device.value();
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS) {
+    /* Shutdown is separate from runtime retirement: drain GPU use BEFORE destroying images/chain.
+     * Without swapchain maintenance/present-wait there is still no formal final-presentation
+     * completion witness once the surface is gone. Existing idle-based teardown retains that
+     * explicit no-extension limitation; runtime resize never uses idle as presentation proof. */
+    device_vk.wait_idle();
+  }
+#endif
 
   if (swapchain_ != VK_NULL_HANDLE) {
     this->destroySwapchainPresentFences(swapchain_);
     vkDestroySwapchainKHR(device_vk.vk_device, swapchain_, nullptr);
   }
-  device_vk.wait_idle();
+#ifdef WITH_GHOST_OHOS
+  if (platform_ != GHOST_kVulkanPlatformOHOS)
+#endif
+  {
+    device_vk.wait_idle();
+  }
   for (GHOST_SwapchainImage &swapchain_image : swapchain_images_) {
     swapchain_image.destroy(device_vk.vk_device);
   }
@@ -1726,6 +2274,19 @@ GHOST_TSuccess GHOST_ContextVK::destroySwapchain()
     frame_data.destroy(device_vk.vk_device);
   }
   frame_data_.clear();
+#ifdef WITH_GHOST_OHOS
+  if (platform_ == GHOST_kVulkanPlatformOHOS) {
+    ohos_pending_retirement_.destroy(device_vk.vk_device);
+    ohos_current_chain_ = {};
+    ohos_current_image_bytes_ = 0;
+    ohos_recreate_pending_ = ohos_settlement_pending_ = false;
+    /* A lost device stays terminal across surface detach/attach; only a new context/device can
+     * recover it. Do not mistake teardown for successful device-loss recovery. */
+    ohos_latest_extent_ = ohos_requested_extent_ = {0, 0};
+    ohos_host_changed_ms_ = ohos_last_settlement_ms_ = 0;
+    ohos_recreations_this_tick_ = 0;
+  }
+#endif
 
   return GHOST_kSuccess;
 }
@@ -1771,6 +2332,11 @@ GHOST_TSuccess GHOST_ContextVK::attachOHOSWindow(
   VK_CHECK(create_surface(instance.vk_instance, &info, nullptr, &surface_), GHOST_kFailure);
   ohos_native_window_ = native_window;
   ohos_window_info_ = window_info;
+  if (ohos_surface_lost_) {
+    /* A newly leased surface may recover WSI loss; device/submission failures remain terminal. */
+    ohos_surface_lost_ = false;
+    ohos_terminal_failure_ = false;
+  }
   /* destroySwapchain clears frame storage; the next acquisition creates WSI sync. */
   frame_data_.resize(2);
   render_frame_ = 0;

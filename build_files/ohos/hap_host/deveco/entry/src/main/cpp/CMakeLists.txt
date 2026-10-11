@@ -33,6 +33,6 @@ endif()
 target_include_directories(blender_host PRIVATE "${BLENDER_SOURCE}/intern/ghost" "${BLENDER_SOURCE}/source/creator")
 target_compile_options(blender_host PRIVATE -Wall -Wextra -fvisibility=hidden)
 target_link_options(blender_host PRIVATE "LINKER:--no-undefined" "LINKER:--threads=1" "LINKER:--version-script=${CMAKE_CURRENT_LIST_DIR}/host.exports.map")
-target_link_libraries(blender_host PRIVATE blender_core ace_ndk.z ace_napi.z hilog_ndk.z ohinputmethod)
+target_link_libraries(blender_host PRIVATE blender_core ace_ndk.z ace_napi.z hilog_ndk.z ohinputmethod native_window_manager native_display_manager)
 # Core already owns ONE GHOST queue/launcher and ONE shared Python runtime.
 # Do not compile private duplicate GHOST/Python into this DSO.

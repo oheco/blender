@@ -13,6 +13,9 @@
 #endif
 
 #include "GHOST_Context.hh"
+#ifdef WITH_GHOST_OHOS
+#  include "GHOST_OHOSSwapchainRetirement.hh"
+#endif
 
 #ifdef _WIN32
 #  include "GHOST_SystemWin32.hh"
@@ -70,6 +73,9 @@ struct GHOST_ContextVK_WindowInfo {
 struct GHOST_FrameDiscard {
   std::vector<VkSwapchainKHR> swapchains;
   std::vector<VkSemaphore> semaphores;
+#ifdef WITH_GHOST_OHOS
+  uint64_t ohos_image_bytes = 0;
+#endif
 
   void destroy(VkDevice vk_device);
 };
@@ -94,6 +100,15 @@ struct GHOST_Frame {
   VkFence submission_fence = VK_NULL_HANDLE;
   /** Semaphore for acquiring; being signaled when the swap-chain image is ready to be updated. */
   VkSemaphore acquire_semaphore = VK_NULL_HANDLE;
+#ifdef WITH_GHOST_OHOS
+  /* Both acquisition synchronization objects stay owned by this slot across recreations. */
+  VkFence ohos_acquisition_fence = VK_NULL_HANDLE;
+  bool ohos_acquisition_pending = false;
+  bool ohos_submission_pending = false;
+  /* This discard pile is witnessed by the slot's CURRENT successful acquisition, never by an
+   * old signaled submission fence. Collect it before resetting ohos_acquisition_fence. */
+  bool ohos_retirement_witness = false;
+#endif
 
   GHOST_FrameDiscard discard_pile;
 
@@ -165,6 +180,8 @@ class GHOST_ContextVK : public GHOST_Context {
    */
   GHOST_TSuccess initializeDrawingContext() override;
 #ifdef WITH_GHOST_OHOS
+  /* Maintenance frames must continue after input stops to settle resize and collect witnesses. */
+  bool needsOHOSPresentProgress() const;
   /* Engine-frame-boundary WSI suspension preserves device/GPU resources. */
   GHOST_TSuccess detachOHOSWindow();
   GHOST_TSuccess attachOHOSWindow(void *native_window,
@@ -274,6 +291,25 @@ class GHOST_ContextVK : public GHOST_Context {
   bool ohos_device_user_acquired_ = false;
   VkExtent2D ohos_extent_max_ = {UINT32_MAX, UINT32_MAX};
   VkExtent2D ohos_requested_extent_ = {0, 0};
+  VkPresentModeKHR ohos_present_mode_ = VK_PRESENT_MODE_FIFO_KHR;
+  VkSurfaceTransformFlagBitsKHR ohos_surface_transform_ = VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR;
+  /* Forced invalidation prohibits acquiring current; a host request alone does not. */
+  bool ohos_recreate_pending_ = false;
+  bool ohos_settlement_pending_ = false;
+  bool ohos_terminal_failure_ = false;
+  bool ohos_surface_lost_ = false;
+  VkExtent2D ohos_latest_extent_ = {0, 0};
+  uint64_t ohos_host_changed_ms_ = 0;
+  uint64_t ohos_last_settlement_ms_ = 0;
+  uint32_t ohos_recreations_this_tick_ = 0;
+  uint64_t ohos_current_image_bytes_ = 0;
+  GHOST_OHOSSwapchainRetirement ohos_current_chain_;
+  /* Ancestors carry across successors that become out of date before a completion witness. */
+  GHOST_FrameDiscard ohos_pending_retirement_;
+
+  GHOST_TSuccess swapBufferAcquireOHOS();
+  GHOST_TSuccess recreateSwapchainOHOS(bool use_hdr_swapchain, bool force);
+  bool collectOHOSRetiredSwapchains();
 #endif
   const int context_major_version_;
   const int context_minor_version_;
@@ -306,7 +342,7 @@ class GHOST_ContextVK : public GHOST_Context {
   std::map<VkSwapchainKHR, std::vector<VkFence>> present_fences_;
 
   const char *getPlatformSpecificSurfaceExtension() const;
-  GHOST_TSuccess recreateSwapchain(bool use_hdr_swapchain);
+  GHOST_TSuccess recreateSwapchain(bool use_hdr_swapchain, bool force = true);
   GHOST_TSuccess initializeFrameData();
   GHOST_TSuccess destroySwapchain();
 

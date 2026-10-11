@@ -183,6 +183,10 @@ class VKDevice : public NonCopyable {
    * Must be externally synced by orphaned_data.mutex_get()
    */
   TimelineValue timeline_value_ = 0;
+#ifdef WITH_GHOST_OHOS
+  /* Failed submissions leave timeline/fence promises unsignaled. Stop admitting new batches. */
+  std::atomic<VkResult> submission_error_{VK_SUCCESS};
+#endif
 
   VKSamplers samplers_;
   VKDescriptorSetLayouts descriptor_set_layouts_;

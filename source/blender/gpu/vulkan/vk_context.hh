@@ -22,6 +22,12 @@
 #include "vk_resource_pool.hh"
 #include "vk_streaming_buffer.hh"
 
+#ifdef WITH_GHOST_OHOS
+#  include "GPU_context_ohos.hh"
+#  include "GPU_ohos_resize_settlement.hh"
+#  include <chrono>
+#endif
+
 namespace blender::gpu {
 class VKFrameBuffer;
 class VKVertexAttributeObject;
@@ -47,6 +53,12 @@ class VKContext : public Context, NonCopyable {
   VkExtent2D vk_extent_ = {};
   VkSurfaceFormatKHR swap_chain_format_ = {};
   gpu::Texture *surface_texture_ = nullptr;
+#ifdef WITH_GHOST_OHOS
+  /* The source composition survives WSI resize and cached presentation. */
+  bool ohos_surface_complete_ = false;
+  bool ohos_clear_present_ = false;
+  GPUOHOSResizeSettlement ohos_resize_settlement_;
+#endif
   GHOST_IContext *ghost_context_;
 
   Vector<std::unique_ptr<VKStreamingBuffer>> streaming_buffers_;
@@ -144,7 +156,16 @@ class VKContext : public Context, NonCopyable {
                             VKVertexAttributeObject &vao,
                             render_graph::VKPipelineDataGraphics &r_pipeline_data);
 
-  void sync_backbuffer();
+  bool sync_backbuffer(int width = 0, int height = 0);
+#ifdef WITH_GHOST_OHOS
+  GPUWindowDraw prepare_window_draw(int width,
+                                    int height,
+                                    GPUWindowDrawPolicy policy,
+                                    bool acquired);
+  bool needs_window_redraw() const;
+  void window_drawn();
+  bool window_draw_size(int &width, int &height) const;
+#endif
 
   static VKContext *get()
   {

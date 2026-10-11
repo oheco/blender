@@ -140,7 +140,10 @@ int32_t BlenderHostBridge::input(GHOST_OHOSEvent event)
 {
   if (event.type == GHOST_OHOS_EVENT_FOCUS) {
     const int32_t rc = blender_ime_focus(event.pressed != 0, event.generation);
-    if (rc != GHOST_OHOS_OK) return rc;
+    if (rc != GHOST_OHOS_OK) {
+      /* IME ownership errors must not block the core's focus-loss key release. */
+      OH_LOG_Print(LOG_APP, LOG_WARN, 0xB10, "BlenderIME", "Focus reconciliation: %{public}d", rc);
+    }
   }
   std::lock_guard<std::mutex> lock(surface_mutex_);
   const bool lifecycle = event.type == GHOST_OHOS_EVENT_RESIZE || event.type == GHOST_OHOS_EVENT_FOCUS;
@@ -151,6 +154,19 @@ int32_t BlenderHostBridge::input(GHOST_OHOSEvent event)
   event.struct_size = sizeof(event); event.window_id = window_id; event.generation = generation_;
   const int32_t result = retry_->submit(&event, 1);
   if (result != GHOST_OHOS_OK) { fail(result, "Reliable input storage exhausted or invalid"); }
+  return result;
+}
+int32_t BlenderHostBridge::key_batch(std::vector<GHOST_OHOSEvent> events, uint64_t generation)
+{
+  std::lock_guard<std::mutex> lock(surface_mutex_);
+  if (!accepting_) return GHOST_OHOS_CLOSED;
+  if (!window_ || detaching_ || core_done_ || generation != generation_) return GHOST_OHOS_UNAVAILABLE;
+  if (events.empty() || events.size() > 9) return GHOST_OHOS_INVALID;
+  for (auto &event : events) {
+    event.struct_size = sizeof(event); event.window_id = window_id; event.generation = generation;
+  }
+  const int32_t result = retry_->submit(events.data(), events.size());
+  if (result != GHOST_OHOS_OK) fail(result, "Physical key batch rejected by reliable storage");
   return result;
 }
 int32_t BlenderHostBridge::key_pair(int32_t code, uint64_t generation, int32_t count)
@@ -199,7 +215,7 @@ int32_t BlenderHostBridge::focus(bool focused)
 void BlenderHostBridge::foreground(bool active)
 {
   foreground_ = active;
-  focus(active);
+  /* Actual window activation and XComponent focus are reconciled by the host. */
 }
 int32_t BlenderHostBridge::detach()
 {
@@ -343,6 +359,7 @@ int32_t BlenderHostBridge::run(GHOST_OHOSHost *host, GHOST_OHOSEngine *engine, v
       else if (tick < 0) { error(tick, "Core pump error; session remains owned for drain"); }
       else if (tick != GHOST_OHOS_OK) { error(GHOST_OHOS_CALLBACK_FAILED, "Unknown creator pump status; preserve session"); }
       else if (self->accepting_ && !stop_sent && self->state_ == 2) {
+        blender_ime_sync();
         /* Only ordinary READY WM ticks dispatch new assets after earlier input. */
         GHOST_OHOSStats stats{};
         if (self->foreground_ && self->retry_->pending() == 0 &&

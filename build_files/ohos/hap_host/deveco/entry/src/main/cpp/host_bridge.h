@@ -11,6 +11,7 @@ static_assert(BLENDER_OHOS_CREATOR_ABI_VERSION == 2u, "Core and all lifecycle ca
 #include <pthread.h>
 #include <string>
 #include <unordered_set>
+#include <vector>
 class BlenderHostBridge {
  public:
   int32_t configure(const std::string &runtime, const std::string &config,
@@ -19,6 +20,7 @@ class BlenderHostBridge {
   int32_t resize(void *window, uint32_t width, uint32_t height);
   int32_t input(GHOST_OHOSEvent event);
   int32_t key_pair(int32_t code, uint64_t generation, int32_t count = 1);
+  int32_t key_batch(std::vector<GHOST_OHOSEvent> events, uint64_t generation);
   int32_t text(const std::string &text, uint64_t generation = 0);
   int32_t focus(bool focused);
   void foreground(bool active);

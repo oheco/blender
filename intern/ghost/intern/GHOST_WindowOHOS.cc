@@ -1,13 +1,14 @@
 /* SPDX-FileCopyrightText: 2026 Blender OHOS port contributors
  * SPDX-License-Identifier: GPL-2.0-or-later */
 #include "GHOST_WindowOHOS.hh"
-#include "GHOST_SystemOHOS.hh"
 #include "GHOST_ContextNone.hh"
 #include "GHOST_Event.hh"
+#include "GHOST_OHOSNative.h"
 #include "GHOST_Rect.hh"
-#include <memory>
-#include <cstdio>
+#include "GHOST_SystemOHOS.hh"
 #include <algorithm>
+#include <cstdio>
+#include <memory>
 GHOST_WindowOHOS::GHOST_WindowOHOS(GHOST_SystemOHOS *system, GHOST_OHOSHost *host,
                                    const GHOST_OHOSWindowInfo &surface, const char *title,
                                    GHOST_TWindowState state, const GHOST_GPUSettings &settings,
@@ -132,6 +133,10 @@ GHOST_TSuccess GHOST_WindowOHOS::hostAttach(const GHOST_OHOSWindowInfo &surface)
   window_info_.size[0] = int(surface.width); window_info_.size[1] = int(surface.height);
   if (drawing_context_type_ == GHOST_kDrawingContextTypeVulkan) {
     auto *context = static_cast<GHOST_ContextVK *>(getContext());
+    const int32_t scaling_result = ghost_ohos_native_resize_presentation(surface.native_window);
+    if (scaling_result != GHOST_OHOS_OK) {
+      std::fprintf(stderr, "GHOST OHOS: resize compositor scaling failed (%d)\n", scaling_result);
+    }
     if (context->attachOHOSWindow(surface.native_window, &window_info_) != GHOST_kSuccess) return GHOST_kFailure;
   }
 #endif
@@ -143,6 +148,10 @@ GHOST_Context *GHOST_WindowOHOS::newDrawingContext(GHOST_TDrawingContextType typ
   if (type == GHOST_kDrawingContextTypeNone) return new GHOST_ContextNone(want_context_params_);
 #ifdef WITH_VULKAN_BACKEND
   if (type == GHOST_kDrawingContextTypeVulkan && surface_.native_window) {
+    const int32_t scaling_result = ghost_ohos_native_resize_presentation(surface_.native_window);
+    if (scaling_result != GHOST_OHOS_OK) {
+      std::fprintf(stderr, "GHOST OHOS: resize compositor scaling failed (%d)\n", scaling_result);
+    }
     /* OHOS platform is explicit; do not smuggle the handle through X11/Wayland fields.
      * API 1.3 is needed for shader-tile-image feature negotiation by the GPU port. */
     auto *context = new GHOST_ContextVK(want_context_params_, GHOST_kVulkanPlatformOHOS,

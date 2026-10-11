@@ -71,6 +71,8 @@ if(WITH_GHOST_OHOS)
     intern/GHOST_OHOSHost.cc intern/GHOST_OHOSNative.cc intern/GHOST_OHOSEngine.cc
     intern/GHOST_SystemPathsOHOS.hh intern/GHOST_SystemPathsOHOS.cc
     intern/GHOST_SystemOHOS.hh intern/GHOST_SystemOHOS.cc
+    intern/GHOST_OHOSSwapchainRetirement.hh
+    intern/GHOST_OHOSWindowTransition.hh
     intern/GHOST_WindowOHOS.hh intern/GHOST_WindowOHOS.cc
   )
 endif()

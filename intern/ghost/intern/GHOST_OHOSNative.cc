@@ -1,6 +1,10 @@
 /* SPDX-FileCopyrightText: 2026 Blender OHOS port contributors
  * SPDX-License-Identifier: GPL-2.0-or-later */
 #include "GHOST_OHOSNative.h"
+#include "GHOST_OHOSWindowTransition.hh"
+#include <atomic>
+#include <chrono>
+#include <mutex>
 #include <native_window/external_window.h>
 #include <multimodalinput/oh_key_code.h>
 #include <multimodalinput/oh_input_manager.h>
@@ -11,6 +15,43 @@
 #include <cstdlib>
 #include <cstring>
 #include <memory>
+namespace {
+std::mutex resize_observation_mutex;
+GHOST_OHOSWindowTransition resize_transition;
+std::atomic<int64_t> resize_deadline_ms{0};
+int64_t resize_now_ms()
+{
+  return std::chrono::duration_cast<std::chrono::milliseconds>(
+             std::chrono::steady_clock::now().time_since_epoch()).count();
+}
+}
+extern "C" int32_t ghost_ohos_native_resize_observe(
+    uint32_t width, uint32_t height, uint32_t reason) noexcept
+{
+  if (!width || !height || width > INT32_MAX || height > INT32_MAX || reason > 2) {
+    return GHOST_OHOS_INVALID;
+  }
+  try {
+    std::lock_guard<std::mutex> lock(resize_observation_mutex);
+    const int64_t now_ms = resize_now_ms();
+    const int64_t deadline = resize_transition.observe(width, height, reason, now_ms);
+    resize_deadline_ms.store(deadline);
+    return deadline > now_ms ? int32_t(deadline - now_ms) : 0;
+  }
+  catch (...) {
+    return GHOST_OHOS_CALLBACK_FAILED;
+  }
+}
+extern "C" int64_t ghost_ohos_native_resize_deadline() noexcept
+{
+  int64_t deadline = resize_deadline_ms.load();
+  if (deadline && deadline <= resize_now_ms()) {
+    /* Never erase a later UI observation that raced this expiry check. */
+    resize_deadline_ms.compare_exchange_strong(deadline, 0);
+    return resize_deadline_ms.load();
+  }
+  return deadline;
+}
 extern "C" int32_t ghost_ohos_native_retain(void *, void *window) noexcept {
   return window ? OH_NativeWindow_NativeObjectReference(window) : GHOST_OHOS_INVALID;
 }
@@ -26,6 +67,20 @@ extern "C" int32_t ghost_ohos_native_geometry(void *window, uint32_t *width, uin
   if (result != 0) return result;
   if (w <= 0 || h <= 0) return GHOST_OHOS_UNAVAILABLE;
   *width = uint32_t(w); *height = uint32_t(h); return GHOST_OHOS_OK;
+}
+extern "C" int32_t ghost_ohos_native_resize_presentation(void *window) noexcept
+{
+  if (!window) {
+    return GHOST_OHOS_INVALID;
+  }
+  auto *native_window = static_cast<OHNativeWindow *>(window);
+  /* Both NDK operations are non-thread-safe. GHOST calls this on the engine thread before
+   * creating/attaching Vulkan WSI; host callbacks enqueue lifecycle events instead of using WSI.
+   * Keep the last native buffer visible, and let the compositor fit it to changing client bounds.
+   */
+  OH_NativeWindow_SetBufferHold(native_window);
+  return OH_NativeWindow_NativeWindowSetScalingModeV2(native_window,
+                                                      OH_SCALING_MODE_SCALE_TO_WINDOW_V2);
 }
 extern "C" char *ghost_ohos_native_clipboard_get(void) noexcept {
   std::unique_ptr<OH_Pasteboard, decltype(&OH_Pasteboard_Destroy)> board(OH_Pasteboard_Create(), OH_Pasteboard_Destroy);

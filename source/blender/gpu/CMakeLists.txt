@@ -135,6 +135,9 @@ set(SRC
   GPU_compilation_subprocess.hh
   GPU_compute.hh
   GPU_context.hh
+  GPU_context_ohos.hh
+  GPU_ohos_resize_settlement.hh
+  GPU_ohos_window_geometry.hh
   GPU_debug.hh
   GPU_format.hh
   GPU_framebuffer.hh

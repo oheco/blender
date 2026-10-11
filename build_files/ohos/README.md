@@ -2,7 +2,7 @@
 
 This branch starts at upstream `v5.2.2`, commit
 `d13f752e3b9c4f8c261cda552b1021f8bcc0382c`.
-It is **work in progress, not a usable Blender release**.
+The complete port remains **work in progress**. The user-confirmed host.15 editor is published as a **development preview**, with a self-signable DevEco project and a device-restricted developer HAP. See [host.15 release scope and usage](hap_host/RELEASE_HOST15.md); this preview does not establish full Blender editing/rendering acceptance.
 
 ## Product requirements
 
@@ -92,10 +92,12 @@ The GHOST OHOS system/window/path factories, bounded input queue, controlled
 32 MiB engine thread and native Vulkan surface adapter are integrated in the
 source tree. The shared diagnostic Core and real native/ArkTS host have been
 built, signed, update-installed and started on the current HarmonyOS device.
-The installed host.6 reaches `ready=true`. The tested host sources, IME/document
-bridge and verified layered application icon are preserved in
-[hap_host](hap_host/README.md). Startup acceptance does not establish complete
-editing, IME, provider file operations or GPU/resize behavior.
+The current host.15 retains the accepted resize repair and restores native
+physical-key ingress while preserving the working IME. The user confirmed
+resize, IME and shortcuts on MOR-M2/API26. The source and layered application
+icon are preserved in [hap_host](hap_host/README.md). Complete editing, provider
+file operations, cross-display candidate placement and broader rendering
+acceptance remain open; the preview reuses the incrementally built diagnostic Core.
 
 The first isolated native editor configuration now generates a real Ninja graph
 with Python 3.13, NumPy 2.3.4, HarfBuzz/FriBidi, static color/image libraries,

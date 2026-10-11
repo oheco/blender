@@ -1,7 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 #include "host_bridge.h"
+#include "GHOST_OHOSNative.h"
 #include "xcomponent_input.h"
 #include "ime_input.h"
+#include "keyboard_input.h"
+#include <window_manager/oh_window.h>
+#include <window_manager/oh_display_manager.h>
 #include <napi/native_api.h>
 #include <ace/xcomponent/native_interface_xcomponent.h>
 #include <multimodalinput/oh_key_code.h>
@@ -22,7 +26,12 @@
 namespace {
 std::atomic<uint32_t> document_request{0};
 std::mutex key_mutex;
-std::unordered_set<int32_t> keys;
+KeyboardInput keyboard;
+bool window_active = false, surface_focused = false, sent_focus = false;
+uint64_t focus_generation = 0;
+std::string function_key_trace;
+uint32_t function_key_trace_count = 0;
+void sync_focus_locked();
 #define CHECK_KEY(name) static_assert(int(KEY_##name) == int(KEYCODE_##name), "SDK key taxonomy changed")
 CHECK_KEY(A); CHECK_KEY(Z); CHECK_KEY(0); CHECK_KEY(9); CHECK_KEY(F1); CHECK_KEY(F12);
 CHECK_KEY(NUMPAD_0); CHECK_KEY(NUMPAD_9); CHECK_KEY(CTRL_LEFT); CHECK_KEY(CTRL_RIGHT);
@@ -55,8 +64,9 @@ void created(OH_NativeXComponent *component, void *window)
   sdk_guard([&] {
     uint32_t w, h;
     if (!size(component, window, w, h)) { check(GHOST_OHOS_INVALID, "Invalid native surface size"); return; }
-    { std::lock_guard<std::mutex> lock(key_mutex); keys.clear(); }
     check(blender_host_bridge().attach(window, w, h), "XComponent attach failed");
+    { std::lock_guard<std::mutex> lock(key_mutex);
+      keyboard.clear(); surface_focused = false; focus_generation = 0; sync_focus_locked(); }
   });
 }
 void changed(OH_NativeXComponent *component, void *window)
@@ -75,7 +85,8 @@ void destroyed(OH_NativeXComponent *, void *)
    * Framework pre-callback owner-unref ordering remains a real-device gate. */
   int32_t result = GHOST_OHOS_CALLBACK_FAILED;
   try {
-    { std::lock_guard<std::mutex> lock(key_mutex); keys.clear(); }
+    { std::lock_guard<std::mutex> lock(key_mutex);
+      keyboard.clear(); surface_focused = false; focus_generation = 0; }
     result = blender_host_bridge().detach();
   } catch (...) {}
   if (result != GHOST_OHOS_OK) {
@@ -119,40 +130,69 @@ void mouse(OH_NativeXComponent *component, void *window)
   });
 }
 void hover(OH_NativeXComponent *, bool) {} /* Hover is not focus loss. */
-void focus_event(void *window, bool focused)
+void sync_focus_locked()
 {
   uint64_t generation;
-  if (!blender_host_bridge().surface(generation, window)) { return; }
-  if (!focused) { std::lock_guard<std::mutex> lock(key_mutex); keys.clear(); }
+  if (!blender_host_bridge().surface(generation)) return;
+  const bool active = window_active && surface_focused;
+  if (focus_generation == generation && sent_focus == active) return;
+  if (!active) keyboard.clear();
   GHOST_OHOSEvent event{}; event.type = GHOST_OHOS_EVENT_FOCUS;
-  event.generation = generation; event.pressed = focused;
-  check(blender_host_bridge().input(event), "Focus enqueue failed");
+  event.generation = generation; event.pressed = active;
+  const int32_t result = blender_host_bridge().input(event);
+  check(result, "Focus enqueue failed");
+  if (result == GHOST_OHOS_OK) { focus_generation = generation; sent_focus = active; }
+}
+void focus_event(void *window, bool value)
+{
+  std::lock_guard<std::mutex> lock(key_mutex);
+  uint64_t generation;
+  if (!blender_host_bridge().surface(generation, window)) return;
+  surface_focused = value;
+  sync_focus_locked();
 }
 void focused(OH_NativeXComponent *, void *window) { sdk_guard([&] { focus_event(window, true); }); }
 void blurred(OH_NativeXComponent *, void *window) { sdk_guard([&] { focus_event(window, false); }); }
 void key(OH_NativeXComponent *component, void *window)
 {
   sdk_guard([&] {
-    uint64_t generation;
-    if (!blender_host_bridge().surface(generation, window)) { return; }
     OH_NativeXComponent_KeyEvent *native = nullptr;
     OH_NativeXComponent_KeyAction action{};
-    OH_NativeXComponent_KeyCode code{};
+    OH_NativeXComponent_KeyCode native_code{};
+    uint64_t modifiers = 0;
     if (OH_NativeXComponent_GetKeyEvent(component, &native) != 0 || !native ||
         OH_NativeXComponent_GetKeyEventAction(native, &action) != 0 ||
-        OH_NativeXComponent_GetKeyEventCode(native, &code) != 0) {
-      check(GHOST_OHOS_CALLBACK_FAILED, "Cannot read XComponent key event"); return;
+        OH_NativeXComponent_GetKeyEventCode(native, &native_code) != 0 ||
+        OH_NativeXComponent_GetKeyEventModifierKeyStates(native, &modifiers) != 0) {
+      check(GHOST_OHOS_CALLBACK_FAILED, "Cannot read native physical key"); return;
     }
-    if (action != OH_NATIVEXCOMPONENT_KEY_ACTION_DOWN && action != OH_NATIVEXCOMPONENT_KEY_ACTION_UP) { return; }
-    GHOST_OHOSEvent event{}; event.type = GHOST_OHOS_EVENT_KEY;
-    event.generation = generation; event.value = int32_t(code);
-    event.pressed = action == OH_NATIVEXCOMPONENT_KEY_ACTION_DOWN;
-    {
-      std::lock_guard<std::mutex> lock(key_mutex);
-      if (event.pressed) { event.repeat = !keys.insert(event.value).second; }
-      else { keys.erase(event.value); }
+    if (action != OH_NATIVEXCOMPONENT_KEY_ACTION_DOWN && action != OH_NATIVEXCOMPONENT_KEY_ACTION_UP) return;
+    const int32_t code = int32_t(native_code);
+    const bool down = action == OH_NATIVEXCOMPONENT_KEY_ACTION_DOWN;
+    std::lock_guard<std::mutex> lock(key_mutex);
+    uint64_t generation = 0;
+    int32_t result = GHOST_OHOS_UNAVAILABLE;
+    if (window_active && surface_focused && blender_host_bridge().accepting() &&
+        blender_host_bridge().surface(generation, window) && ghost_ohos_native_key(code) != GHOST_OHOS_KEY_UNKNOWN) {
+      auto next = keyboard;
+      // ArkUI's mask covers Ctrl/Shift/Alt/Fn; Meta follows its actual key transitions.
+      auto events = next.update(code, down, (modifiers & ARKUI_MODIFIER_KEY_CTRL) != 0,
+        (modifiers & ARKUI_MODIFIER_KEY_ALT) != 0, (modifiers & ARKUI_MODIFIER_KEY_SHIFT) != 0, next.meta_held());
+      result = blender_host_bridge().key_batch(std::move(events), generation);
+      if (result == GHOST_OHOS_OK) keyboard = std::move(next);
+      else check(result, "Native physical key enqueue failed");
     }
-    check(blender_host_bridge().input(event), "Key enqueue failed");
+    // Bounded diagnostics for function keys only; no entered text is recorded.
+    if ((code == KEYCODE_F3 || code == KEYCODE_ESCAPE || code == KEYCODE_TAB) &&
+        function_key_trace_count < 12 && !function_key_trace.empty()) {
+      ++function_key_trace_count;
+      if (FILE *trace = std::fopen(function_key_trace.c_str(), "a")) {
+        std::fprintf(trace, "key=%d down=%d modifiers=%llu window_active=%d surface_focus=%d generation=%llu result=%d ime=%d\n",
+          code, down, static_cast<unsigned long long>(modifiers), window_active, surface_focused,
+          static_cast<unsigned long long>(generation), result, blender_ime_active());
+        std::fclose(trace);
+      }
+    }
   });
 }
 void axis(OH_NativeXComponent *, ArkUI_UIInputEvent *native, ArkUI_UIInputEvent_Type type)
@@ -203,7 +243,8 @@ void register_component(napi_env env, napi_value exports)
   check(OH_NativeXComponent_RegisterMouseEventCallback(component, &mouse_callbacks), "Register mouse callbacks failed");
   check(OH_NativeXComponent_RegisterFocusEventCallback(component, focused), "Register focus callback failed");
   check(OH_NativeXComponent_RegisterBlurEventCallback(component, blurred), "Register blur callback failed");
-  check(OH_NativeXComponent_RegisterKeyEventCallback(component, key), "Register key callback failed");
+  // libraryname-backed SURFACE uses the native XComponent physical-key route.
+  check(OH_NativeXComponent_RegisterKeyEventCallback(component, key), "Register native key callback failed");
   check(OH_NativeXComponent_RegisterUIInputEventCallback(component, axis, ARKUI_UIINPUTEVENT_TYPE_AXIS), "Register ArkUI axis callback failed");
 }
 napi_value undefined(napi_env env) { napi_value value; napi_get_undefined(env, &value); return value; }
@@ -241,6 +282,8 @@ napi_value configure(napi_env env, napi_callback_info info)
   const double scale = number(env, args[4]), dpi = number(env, args[5]);
   require(scale > 0 && scale < 100 && dpi >= 1 && dpi <= UINT16_MAX && std::trunc(dpi) == dpi, "Invalid display density");
   success(blender_host_bridge().configure(string(env,args[0]),string(env,args[1]),string(env,args[2]),string(env,args[3]),float(scale),uint32_t(dpi)));
+  { std::lock_guard<std::mutex> lock(key_mutex);
+    function_key_trace = string(env, args[2]) + "/keyboard-function-route-host15.log"; }
   return undefined(env);
 }
 napi_value state(napi_env env, napi_callback_info info)
@@ -253,7 +296,39 @@ napi_value result(napi_env env, napi_callback_info info)
 }
 napi_value foreground(napi_env env, napi_callback_info info)
 {
-  auto args=arguments(env,info,1); blender_host_bridge().foreground(boolean(env,args[0])); return undefined(env);
+  auto args = arguments(env, info, 1); const bool active = boolean(env, args[0]);
+  blender_host_bridge().foreground(active);
+  if (!active) { std::lock_guard<std::mutex> lock(key_mutex); window_active = false; sync_focus_locked(); }
+  return undefined(env);
+}
+napi_value window_activation(napi_env env, napi_callback_info info)
+{
+  auto args = arguments(env, info, 1);
+  const bool active = boolean(env, args[0]);
+  std::lock_guard<std::mutex> lock(key_mutex);
+  window_active = active; sync_focus_locked();
+  return undefined(env);
+}
+napi_value physical_key(napi_env env, napi_callback_info info)
+{
+  auto args = arguments(env, info, 6);
+  const double code = number(env, args[0]);
+  require(code >= 0 && code <= INT32_MAX && std::trunc(code) == code, "Invalid physical key code");
+  const bool down = boolean(env, args[1]), ctrl = boolean(env, args[2]),
+             alt = boolean(env, args[3]), shift = boolean(env, args[4]), meta = boolean(env, args[5]);
+  bool accepted = false;
+  {
+    std::lock_guard<std::mutex> lock(key_mutex);
+    uint64_t generation;
+    if (window_active && surface_focused && blender_host_bridge().accepting() &&
+        blender_host_bridge().surface(generation) && ghost_ohos_native_key(int32_t(code)) != GHOST_OHOS_KEY_UNKNOWN) {
+      auto next = keyboard;
+      const int32_t result = blender_host_bridge().key_batch(next.update(int32_t(code), down, ctrl, alt, shift, meta), generation);
+      check(result, "Physical key enqueue failed");
+      if (result == GHOST_OHOS_OK) { keyboard = std::move(next); accepted = true; }
+    }
+  }
+  napi_value value; napi_get_boolean(env, accepted, &value); return value;
 }
 napi_value commit(napi_env env, napi_callback_info info)
 {
@@ -275,7 +350,34 @@ napi_value ime_geometry(napi_env env, napi_callback_info info)
   require(id > 0 && id <= INT32_MAX && std::trunc(id) == id &&
           left >= INT32_MIN && left <= INT32_MAX && top >= INT32_MIN && top <= INT32_MAX,
           "Invalid IME window geometry");
-  blender_ime_geometry(int32_t(id), left, top); return undefined(env);
+  /* These window APIs synchronously dispatch to ArkUI: query only here on
+   * its owner thread, before publishing to the engine's IME state. */
+  WindowManager_WindowProperties properties{};
+  int32_t display_x = 0, display_y = 0;
+  if (OH_WindowManager_GetWindowProperties(int32_t(id), &properties) != OK ||
+      OH_NativeDisplayManager_GetDisplayPosition(properties.displayId, &display_x, &display_y) != DISPLAY_MANAGER_OK) {
+    OH_LOG_Print(LOG_APP, LOG_WARN, 0xB10, "BlenderIME", "Window/display geometry unavailable");
+    return undefined(env);
+  }
+  blender_ime_geometry(int32_t(id), properties.displayId, left - display_x, top - display_y);
+  return undefined(env);
+}
+napi_value resize_observation(napi_env env, napi_callback_info info)
+{
+  auto args = arguments(env, info, 3);
+  const double width = number(env, args[0]), height = number(env, args[1]);
+  const double reason = number(env, args[2]);
+  require(width > 0 && width <= INT32_MAX && std::trunc(width) == width &&
+          height > 0 && height <= INT32_MAX && std::trunc(height) == height &&
+          reason >= 0 && reason <= 2 && std::trunc(reason) == reason,
+          "Invalid window resize observation");
+  uint64_t generation;
+  int32_t remaining = 0;
+  if (blender_host_bridge().accepting() && blender_host_bridge().surface(generation)) {
+    remaining = ghost_ohos_native_resize_observe(uint32_t(width), uint32_t(height), uint32_t(reason));
+    require(remaining >= 0, "Window resize observation failed");
+  }
+  napi_value value; napi_get_boolean(env, remaining > 0, &value); return value;
 }
 napi_value wheel(napi_env env, napi_callback_info info)
 {
@@ -449,10 +551,13 @@ napi_value initialize(napi_env env,napi_value exports) noexcept
       {"state",nullptr,contained<state>,nullptr,nullptr,nullptr,napi_default,nullptr},
       {"result",nullptr,contained<result>,nullptr,nullptr,nullptr,napi_default,nullptr},
       {"foreground",nullptr,contained<foreground>,nullptr,nullptr,nullptr,napi_default,nullptr},
+       {"windowActive",nullptr,contained<window_activation>,nullptr,nullptr,nullptr,napi_default,nullptr},
+       {"keyEvent",nullptr,contained<physical_key>,nullptr,nullptr,nullptr,napi_default,nullptr},
       {"commitText",nullptr,contained<commit>,nullptr,nullptr,nullptr,napi_default,nullptr},
        {"takeDocumentRequest",nullptr,contained<take_document_request>,nullptr,nullptr,nullptr,napi_default,nullptr},
        {"imeActive",nullptr,contained<ime_active>,nullptr,nullptr,nullptr,napi_default,nullptr},
        {"imeGeometry",nullptr,contained<ime_geometry>,nullptr,nullptr,nullptr,napi_default,nullptr},
+       {"resizeObservation",nullptr,contained<resize_observation>,nullptr,nullptr,nullptr,napi_default,nullptr},
       {"wheel",nullptr,contained<wheel>,nullptr,nullptr,nullptr,napi_default,nullptr},
       {"detach",nullptr,contained<detach>,nullptr,nullptr,nullptr,napi_default,nullptr},
       {"shutdown",nullptr,contained<shutdown>,nullptr,nullptr,nullptr,napi_default,nullptr},
