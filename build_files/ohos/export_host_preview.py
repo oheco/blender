@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0-or-later
-"""Export the accepted host.15 as a self-signable DevEco preview project.
+"""Export the accepted host.17 as a self-signable DevEco preview project.
 
 This packages the already-signed native inputs, not a fresh Core build. The
 allowlist starts from the public source template; no private project/profile,
@@ -17,11 +17,11 @@ import subprocess
 import tempfile
 import zipfile
 
-VERSION = '5.2.2-ohos.15'
-HAP_SHA256 = 'ea6f3f99651cb27143034a999d4928bfffc00de5c13bef3ad12b9cb68e54f683'
+VERSION = '5.2.2-ohos.17'
+HAP_SHA256 = '9a986a6402679b80079895d8760bed0d2e47395e22e34cdddda58e423a1299de'
 CORE_SHA256 = '5b659f4e3b64c1da64deec60e00d129fd71f8c7b6c7990d0a1d093b774a3c443'
-HOST_SHA256 = 'ce2bd83d5ba8d066dd3efac57c8b5d4a5e55682971664343d1f1d8811b1d2320'
-README = '''# Blender 5.2.2-ohos.15 — DevEco preview
+HOST_SHA256 = '14f05da77e6016bea44110a78cf9ad3ee63476b92af5f14092ec4030b4d71e99'
+README = '''# Blender 5.2.2-ohos.17 — DevEco preview
 
 This project contains the editor sources, runtime resources, and the
 same 94 signed ARM64 native libraries as the accepted development HAP. The
@@ -30,8 +30,12 @@ experimental editor preview, not complete Blender port acceptance.
 
 Use HarmonyOS API22 or later; only MOR-M2/Maleoon935 on API26 was exercised.
 Resize (120ms ordinary, 250ms maximize/recover), IME and shortcuts received
-user confirmation. Broad editing/rendering, other devices and cross-display
-candidate placement were not comprehensively accepted.
+user confirmation. This revision adds Desktop/Documents/Download authorization,
+SDK directory mapping, INTERNET permission, a relocatable CA bundle and the
+system HTTP/HTTPS browser bridge. The user confirmed all three directory
+shortcuts, browser opening and online extension-list refresh on the same device.
+Broad editing/rendering, other devices and cross-display candidate placement
+were not comprehensively accepted.
 
 ## Build and sign
 
@@ -44,10 +48,16 @@ libraries (`strip: false`); it does not rebuild the Blender Core or host.
 Allow DevEco to resolve the pinned build plugin. An offline build needs the
 official wrapper's package cache prepared first.
 
-Bundle: `org.oheco.blender`. Version code: 15. For an existing installation,
-use the SAME signing identity and update installation to retain projects and
-settings. A different identity cannot upgrade the existing bundle; do not
-uninstall an existing app merely to change signatures.
+Bundle: `org.oheco.blender`. Version code: 17. Configure a valid profile with
+Desktop directory permission approved in its ACL; Documents/Download also need
+the platform's provisioning authorization. At first launch, grant the requested
+directory access. INTERNET is a normal permission and has no user-grant dialog.
+
+For an existing installation, preserve its signing configuration and use update
+installation. In this device acceptance, the user regenerated signing material;
+the certificate public key changed and the update still preserved UID, token and
+application data. This does not establish signature-change compatibility on other
+devices. Do not uninstall an existing app merely to change signatures.
 
 If using hdc on an authorized device:
 
@@ -74,7 +84,7 @@ https://github.com/oheco/blender/tree/ohos/5.2.2/build_files/ohos .
 ## Source and licenses
 
 Upstream: https://github.com/blender/blender (v5.2.2).
-Adaptation: https://github.com/oheco/blender/tree/5.2.2-ohos.15 .
+Adaptation: https://github.com/oheco/blender/tree/5.2.2-ohos.17 .
 Blender is GPL-2.0-or-later. COPYING and third-party license notices are
 included. PREVIEW_MANIFEST.json binds the accepted HAP, native libraries,
 ABI/source inputs and bundled payload. Do not describe an app rebuild using
@@ -112,7 +122,7 @@ def main():
     repo = Path(__file__).resolve().parents[2]
     template = repo / 'build_files/ohos/hap_host/deveco'
     require(not args.output.exists() and args.output.parent.is_dir(), 'Output must be new')
-    require(digest(args.hap) == HAP_SHA256, 'Use the accepted, unchanged host.15 HAP')
+    require(digest(args.hap) == HAP_SHA256, 'Use the accepted, unchanged host.17 HAP')
     packaging = json.loads(args.hap_receipt.read_text())
     native = json.loads(args.host_receipt.read_text())
     require(packaging['status'] == native['status'] == 'success' and
@@ -134,7 +144,7 @@ def main():
             'compatibleSdkVersion': '6.0.2(22)', 'runtimeOS': 'HarmonyOS'}]},
             'modules': [{'name': 'entry', 'srcPath': './entry', 'targets': [{'name': 'default'}]}]}, indent=2) + '\n',
         'oh-package.json5': json.dumps({'name': 'blender-ohos-host', 'version': '5.2.2',
-            'description': 'Blender 5.2.2-ohos.15 preview with prebuilt signed native inputs',
+            'description': 'Blender 5.2.2-ohos.17 preview with prebuilt signed native inputs',
             'modelVersion': '6.0.0', 'devDependencies': {'@ohos/hvigor-ohos-plugin': '7.26.8'}}, indent=2) + '\n',
         'entry/build-profile.json5': json.dumps({'apiType': 'stageMode',
             'buildOption': {'nativeLib': {'debugSymbol': {'strip': False, 'exclude': []}}},
@@ -143,7 +153,7 @@ def main():
         '.gitignore': 'node_modules/\noh_modules/\n.hvigor/\nentry/build/\nlocal.properties\nsigning/\n',
     }
     app = json.loads((template / 'AppScope/app.json5').read_text())
-    app['app'].update(versionCode=15, versionName=VERSION)
+    app['app'].update(versionCode=17, versionName=VERSION)
     generated['AppScope/app.json5'] = json.dumps(app, indent=2) + '\n'
     inventory = {}
     names_seen = set()
@@ -214,7 +224,9 @@ def main():
             'native_libraries': native_members,
             'payload_files': payload_members, 'source_and_notices': {k: v for k, v in inventory.items()
                 if not k.startswith(('entry/libs/', 'entry/src/main/resources/rawfile/'))},
-            'signing_material_included': False, 'user_confirmed': ['resize', 'IME', 'shortcuts'],
+            'signing_material_included': False,
+            'user_confirmed': ['resize', 'IME', 'shortcuts', 'Desktop/Documents/Download shortcuts',
+                               'system browser links', 'online extension-list refresh'],
             'limits': ['incremental diagnostic Core: strict OFF, libmv OFF',
                        'MOR-M2 Maleoon935/API26 cohort only', 'no broad editing/rendering acceptance'],
             'source_repository': 'https://github.com/oheco/blender', 'source_tag': VERSION}

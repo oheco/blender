@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "public_version": "5.2.2-ohos.17",
+  "accepted_embedded_version": "5.2.2-ohos.host.17",
+  "version_code": 17,
+  "bundle": "org.oheco.blender",
+  "accepted_hap": {
+    "sha256": "9a986a6402679b80079895d8760bed0d2e47395e22e34cdddda58e423a1299de",
+    "size": 419669994
+  },
+  "native_inputs": {
+    "host_sha256": "14f05da77e6016bea44110a78cf9ad3ee63476b92af5f14092ec4030b4d71e99",
+    "core_sha256": "5b659f4e3b64c1da64deec60e00d129fd71f8c7b6c7990d0a1d093b774a3c443",
+    "runtime_manifest_id": "e4954f40ce64c019a3c574c0f6c854acf4f5667ccc374ec03cde9d7dfdfb9b85",
+    "browser_startup_sha256": "9fc60c5cb1fa7a8de0405f2dca7083bf1a8d8695e70cf14534746f848e7bd55f",
+    "fresh_host_build": true,
+    "core_rebuilt": false,
+    "all_core_imports_bound": true,
+    "all_94_packaged_libraries_equal_staged_inputs": true
+  },
+  "build": {
+    "platform": "HarmonyOS aarch64",
+    "sdk": "26.0.0.105 Release",
+    "hvigor_plugin": "7.26.8",
+    "arkts_compilation_passed": true,
+    "official_hap_verify_exit_code": 0,
+    "runtime_manifest_byte_parity": true,
+    "pinned_python_browser_regression_passed": true,
+    "moved_project_directory_with_spaces": true,
+    "moved_project_hvigor_exit_code": 0,
+    "moved_project_official_verify_exit_code": 0,
+    "moved_project_native_and_manifest_bytes_preserved": true
+  },
+  "device": {
+    "model": "MOR-M2",
+    "gpu": "Maleoon935",
+    "api": 26,
+    "update_install": true,
+    "uid_preserved": true,
+    "access_token_preserved": true,
+    "application_data_preserved": true,
+    "signing_public_key_changed_with_user_regenerated_profile": true,
+    "engine_ready": true,
+    "all_four_permissions_granted": true,
+    "three_sdk_directory_stat_and_bounded_list_probes_passed": true
+  },
+  "actual_directory_paths": {
+    "Desktop": "/storage/Users/currentUser/Desktop",
+    "Documents": "/storage/Users/currentUser/Documents",
+    "Download": "/storage/Users/currentUser/Download"
+  },
+  "user_acceptance": {
+    "recorded_at": "2026-10-14T10:14:52+08:00",
+    "directory_behavior": "三个都正常",
+    "browser_behavior": "能打开浏览器",
+    "network_behavior": "能联网刷新",
+    "method": "Separate native GUI observations reported by the user"
+  },
+  "automatic_console_probe": {
+    "receipt_generated": false,
+    "automated_tls_handshake_claimed": false,
+    "automated_filelist_selection_claimed": false
+  },
+  "limits": [
+    "Single MOR-M2/Maleoon935 API26 acceptance, minimum API22 is a compatibility declaration",
+    "Incremental diagnostic embedded Core: strict OFF and libmv OFF",
+    "Fresh full Core rebuild was previously stopped at the user's request",
+    "No new broad editing/rendering or cross-display acceptance",
+    "Permission rejection/revocation and signature rotation on other devices not accepted",
+    "Browser bridge covers default HTTP/HTTPS calls, up to 8192 UTF-8 bytes"
+  ]
+}

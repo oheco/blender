@@ -3,8 +3,11 @@ import native from 'libblender_host.so';
 import { common } from '@kit.AbilityKit';
 import { display, window } from '@kit.ArkUI';
 import { prepareRuntime } from '../runtime/Runtime';
+import { prepareUserDirectories } from '../runtime/Permissions';
 import { AssetExchange, AssetOperation, assetInfo } from '../runtime/AssetExchange';
 import { applicationIconDiagnostic } from '../runtime/IconDiagnostics';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
@@ -19,6 +22,7 @@ struct Index {
   private exchange: AssetExchange | undefined = undefined;
   private timer: number = -1;
   private disposed: boolean = false;
+  private browserBusy: boolean = false;
   private automaticClose: boolean = false;
   private appWindow: window.Window | undefined = undefined;
   private controller: XComponentController = new XComponentController();
@@ -92,6 +96,9 @@ struct Index {
       this.updateGeometry();
       const paths = await prepareRuntime(context);
       if (this.disposed) { return; }
+      this.message = '正在请求桌面、文档和下载目录的访问权限…';
+      this.assetMessage = await prepareUserDirectories(context, paths.config);
+      if (this.disposed) { return; }
       const screen = display.getDefaultDisplaySync();
       native.configure(paths.runtime, paths.config, paths.cache, paths.temp,
         screen.densityPixels, Math.round(screen.densityDPI));
@@ -110,6 +117,7 @@ struct Index {
             const operation: number = native.takeDocumentRequest();
             if (operation >= 1 && operation <= 6) { this.asset(operation as AssetOperation); }
           }
+          if (!this.assetBusy && !this.browserBusy) { this.consumeURL(context); }
         }
         if (state === 5 && !this.closing) { this.message = 'Blender 正在等待任务与资源所有权释放…'; }
         if ((state === 3 || state === 5 || state < 0) && !this.automaticClose) {
@@ -158,6 +166,26 @@ struct Index {
       this.assetBusy = false;
       setTimeout(() => this.requestSurfaceFocus(), 0);
     }
+  }
+  private consumeURL(context: common.UIAbilityContext): void {
+    try {
+      if (!this.appWindow?.isFocused()) { return; }
+      const target: string = native.takeURLRequest();
+      if (target.length > 0) { this.openURL(context, target); }
+    } catch (error) {
+      hilog.error(0xB10, 'BlenderBrowser', 'Browser request polling failed');
+    }
+  }
+  private async openURL(context: common.UIAbilityContext, target: string): Promise<void> {
+    if (this.disposed || this.closing || this.browserBusy) { return; }
+    this.browserBusy = true;
+    try {
+      await context.openLink(target, { appLinkingOnly: false });
+      hilog.info(0xB10, 'BlenderBrowser', 'System browser launch accepted');
+    } catch (error) {
+      hilog.error(0xB10, 'BlenderBrowser', 'System browser launch failed code=%{public}d', (error as BusinessError).code);
+      if (!this.disposed) { this.assetMessage = '无法打开系统浏览器，请稍后重试。'; }
+    } finally { this.browserBusy = false; }
   }
   private requestSurfaceFocus(): void {
     if (!this.ready || !this.mounted || this.assetBusy || this.closing || this.disposed) { return; }

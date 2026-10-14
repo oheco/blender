@@ -1,6 +1,8 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 """Blender File menu entry for OHOS document providers; normal selectors remain usable."""
 import bpy
+import sys
+import webbrowser
 from bpy.props import EnumProperty
 from bpy.types import Menu, Operator
 
@@ -14,7 +16,7 @@ _OPERATIONS = (
 )
 _host = None
 
-def _request(operation):
+def _native_host():
     global _host
     if _host is None:
         import ctypes
@@ -29,7 +31,41 @@ def _request(operation):
         _host = ctypes.CDLL(os.path.join(native_root, 'libblender_host.so'))
         _host.blender_hap_request_document.argtypes = [ctypes.c_uint32]
         _host.blender_hap_request_document.restype = ctypes.c_int32
-    return _host.blender_hap_request_document(int(operation))
+        _host.blender_hap_open_url.argtypes = [ctypes.c_char_p, ctypes.c_size_t]
+        _host.blender_hap_open_url.restype = ctypes.c_int32
+    return _host
+
+
+def _request(operation):
+    return _native_host().blender_hap_request_document(int(operation))
+
+
+class _OHOSBrowser(webbrowser.BaseBrowser):
+    def open(self, url, new=0, autoraise=True):
+        sys.audit('webbrowser.open', url)
+        if not isinstance(url, str) or '\x00' in url:
+            raise webbrowser.Error('无效的网页链接')
+        payload = url.encode('utf-8', 'strict')
+        if _native_host().blender_hap_open_url(payload, len(payload)) != 0:
+            raise webbrowser.Error('无法请求系统浏览器，请稍后重试')
+        return True
+
+
+def _register_browser():
+    # Pinned CPython 3.13 register() otherwise probes xdg-settings before adding
+    # a preferred controller. This HAP routes default browser calls through ArkUI.
+    with webbrowser._lock:
+        webbrowser._tryorder = []
+        webbrowser._os_preferred_browser = None
+        webbrowser.register('ohos-hap', None, _OHOSBrowser('ohos-hap'), preferred=True)
+
+
+def _unregister_browser():
+    with webbrowser._lock:
+        webbrowser._browsers.pop('ohos-hap', None)
+        # Keep an initialized list even during shutdown/reload, avoiding probes.
+        webbrowser._tryorder = [name for name in (webbrowser._tryorder or [])
+                               if name != 'ohos-hap']
 
 class WM_OT_ohos_document(Operator):
     bl_idname = 'wm.ohos_document'
@@ -59,6 +95,7 @@ def _file_menu(self, context):
     self.layout.menu('TOPBAR_MT_ohos_documents')
 
 def register():
+    _register_browser()
     bpy.utils.register_class(WM_OT_ohos_document)
     bpy.utils.register_class(TOPBAR_MT_ohos_documents)
     bpy.types.TOPBAR_MT_file.append(_file_menu)
@@ -67,3 +104,4 @@ def unregister():
     bpy.types.TOPBAR_MT_file.remove(_file_menu)
     bpy.utils.unregister_class(TOPBAR_MT_ohos_documents)
     bpy.utils.unregister_class(WM_OT_ohos_document)
+    _unregister_browser()

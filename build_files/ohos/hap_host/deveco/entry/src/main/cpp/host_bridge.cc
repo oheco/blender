@@ -64,6 +64,22 @@ int32_t BlenderHostBridge::configure(const std::string &runtime, const std::stri
   if (state_ != 0) { return GHOST_OHOS_BUSY; }
   if (!directory(runtime) || !directory(config) || !directory(cache) || !directory(temp) ||
       !std::isfinite(scale) || scale <= 0 || dpi == 0 || dpi > UINT16_MAX) { return GHOST_OHOS_INVALID; }
+  // The UI has requested grants and written SDK-resolved public directory paths.
+  // Set this before any engine thread reads the Unix file-browser bookmarks.
+  const std::string user_directories = config + "/public-directories";
+  if (!directory(user_directories) || ::setenv("XDG_CONFIG_HOME", user_directories.c_str(), 1) != 0) {
+    return GHOST_OHOS_UNAVAILABLE;
+  }
+  // Embedded Python skips Blender's desktop CA-path setup. Use the pinned
+  // certificate bundle staged with this runtime, preserving an explicit override.
+  if (!::getenv("SSL_CERT_FILE")) {
+    const std::string certificates = runtime + "/5.2/python/lib/python3.13/site-packages/certifi/cacert.pem";
+    struct stat st{};
+    if (::stat(certificates.c_str(), &st) != 0 || !S_ISREG(st.st_mode) ||
+        ::setenv("SSL_CERT_FILE", certificates.c_str(), 0) != 0) {
+      return GHOST_OHOS_UNAVAILABLE;
+    }
+  }
   GHOST_OHOSConfig cfg{};
   cfg.struct_size = sizeof(cfg); cfg.abi_version = GHOST_OHOS_ABI_VERSION; cfg.queue_capacity = 4096;
   cfg.runtime_path = runtime.c_str(); cfg.config_path = config.c_str();

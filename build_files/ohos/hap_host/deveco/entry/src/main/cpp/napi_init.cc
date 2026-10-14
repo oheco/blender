@@ -16,6 +16,7 @@
 #include <stdexcept>
 #include <cstdlib>
 #include <cstring>
+#include <strings.h>
 #include <fcntl.h>
 #include <memory>
 #include <string>
@@ -25,6 +26,8 @@
 #include <vector>
 namespace {
 std::atomic<uint32_t> document_request{0};
+std::mutex url_mutex;
+std::string pending_url;
 std::mutex key_mutex;
 KeyboardInput keyboard;
 bool window_active = false, surface_focused = false, sent_focus = false;
@@ -339,6 +342,16 @@ napi_value take_document_request(napi_env env, napi_callback_info info)
   arguments(env, info, 0); napi_value value;
   napi_create_uint32(env, document_request.exchange(0), &value); return value;
 }
+napi_value take_url_request(napi_env env, napi_callback_info info)
+{
+  arguments(env, info, 0);
+  std::lock_guard<std::mutex> lock(url_mutex);
+  napi_value value;
+  require(napi_create_string_utf8(env, pending_url.c_str(), pending_url.size(), &value) == napi_ok,
+          "Cannot read browser request");
+  pending_url.clear();
+  return value;
+}
 napi_value ime_active(napi_env env, napi_callback_info info)
 {
   arguments(env, info, 0); napi_value value; napi_get_boolean(env, blender_ime_active(), &value); return value;
@@ -413,7 +426,11 @@ napi_value lifecycle(napi_env env,napi_callback_info info,bool shutdown)
   arguments(env,info,0);
   /* Release queued asset waiters before a lifecycle worker needs the same SDK
    * worker pool. Never join or interrupt a running Blender operator on UI. */
-  if (shutdown) { blender_host_bridge().begin_shutdown(); }
+  if (shutdown) {
+    blender_host_bridge().begin_shutdown();
+    std::lock_guard<std::mutex> lock(url_mutex);
+    pending_url.clear();
+  }
   auto operation=std::make_unique<Async>(); operation->shutdown=shutdown;
   napi_value promise,name;
   require(napi_create_promise(env,&operation->deferred,&promise)==napi_ok,"Cannot create lifecycle promise");
@@ -555,6 +572,7 @@ napi_value initialize(napi_env env,napi_value exports) noexcept
        {"keyEvent",nullptr,contained<physical_key>,nullptr,nullptr,nullptr,napi_default,nullptr},
       {"commitText",nullptr,contained<commit>,nullptr,nullptr,nullptr,napi_default,nullptr},
        {"takeDocumentRequest",nullptr,contained<take_document_request>,nullptr,nullptr,nullptr,napi_default,nullptr},
+       {"takeURLRequest",nullptr,contained<take_url_request>,nullptr,nullptr,nullptr,napi_default,nullptr},
        {"imeActive",nullptr,contained<ime_active>,nullptr,nullptr,nullptr,napi_default,nullptr},
        {"imeGeometry",nullptr,contained<ime_geometry>,nullptr,nullptr,nullptr,napi_default,nullptr},
        {"resizeObservation",nullptr,contained<resize_observation>,nullptr,nullptr,nullptr,napi_default,nullptr},
@@ -576,6 +594,30 @@ extern "C" __attribute__((visibility("default"))) int32_t blender_hap_request_do
     return GHOST_OHOS_UNAVAILABLE;
   uint32_t empty = 0;
   return document_request.compare_exchange_strong(empty, operation) ? GHOST_OHOS_OK : GHOST_OHOS_BUSY;
+}
+// Python copies a bounded URL into the queue; only ArkUI launches the external app.
+extern "C" __attribute__((visibility("default"))) int32_t blender_hap_open_url(const char *url, size_t length) noexcept
+{
+  try {
+    if (!url) { return GHOST_OHOS_INVALID; }
+    if (length > 8192 ||
+        !((length > 7 && ::strncasecmp(url, "http://", 7) == 0) ||
+          (length > 8 && ::strncasecmp(url, "https://", 8) == 0))) {
+      return GHOST_OHOS_INVALID;
+    }
+    for (size_t i = 0; i < length; ++i) {
+      const unsigned char value = static_cast<unsigned char>(url[i]);
+      if (value < 32 || value == 127) { return GHOST_OHOS_INVALID; }
+    }
+    std::lock_guard<std::mutex> lock(url_mutex);
+    const uint32_t state = blender_host_bridge().state();
+    if ((state != 1 && state != 2) || !blender_host_bridge().accepting()) {
+      return GHOST_OHOS_UNAVAILABLE;
+    }
+    if (!pending_url.empty()) { return GHOST_OHOS_BUSY; }
+    pending_url.assign(url, length);
+    return GHOST_OHOS_OK;
+  } catch (...) { return GHOST_OHOS_CALLBACK_FAILED; }
 }
 static napi_module module={1,0,nullptr,initialize,"blender_host",nullptr,{0}};
 extern "C" __attribute__((constructor,visibility("default"))) void blender_host_register(void) noexcept

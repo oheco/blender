@@ -1,1 +1,8 @@
-{ "string": [{ "name": "app_name", "value": "Blender" }] }
+{
+  "string": [
+    { "name": "app_name", "value": "Blender" },
+    { "name": "reason_desktop_directory", "value": "用于在 Blender 中打开、保存和导入导出桌面中的工程与素材。" },
+    { "name": "reason_documents_directory", "value": "用于在 Blender 中打开、保存和导入导出文档中的工程与素材。" },
+    { "name": "reason_download_directory", "value": "用于在 Blender 中打开、保存和导入导出下载中的工程与素材。" }
+  ]
+}

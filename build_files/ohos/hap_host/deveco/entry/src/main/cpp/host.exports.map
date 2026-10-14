@@ -1,4 +1,4 @@
 BLENDER_OHOS_HOST_1 {
-  global: blender_host_register; blender_hap_request_document;
+  global: blender_host_register; blender_hap_request_document; blender_hap_open_url;
   local: *;
 };
